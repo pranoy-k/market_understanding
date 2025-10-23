@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0bad7112",
+  "workflow_id": "0bad7112",
+  "workflow_id_display": "0bad7112",
+  "workflow_name": "Manipulate PDF with Adobe developer API",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, PDF",
+  "tags": [],
+  "author_name": "digi-stud.io",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Document Processing Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adobe API Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Forward response to origin workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Asset",
+      "type": "Data Input"
+    },
+    {
+      "name": "Load a test pdf file",
+      "type": "Process"
+    },
+    {
+      "name": "Query + File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query + File + Asset information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Query",
+      "type": "Data Input"
+    },
+    {
+      "name": "Try to download the result",
+      "type": "Data Input"
+    },
+    {
+      "name": "Authenticartion (get token)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload PDF File (asset)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Adobe API Query"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

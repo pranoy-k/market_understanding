@@ -1,0 +1,226 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/36b7d2b3",
+  "workflow_id": "36b7d2b3",
+  "workflow_id_display": "36b7d2b3",
+  "workflow_name": "Automate Social Media Content with AI for Instagram, Facebook, LinkedIn & X",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "50",
+  "tools_integrations": "Facebook, Instagram, LinkedIn",
+  "tags": [
+    "facebook",
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/lukaszb/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate social media content from idea to publishing with AI. Create, schedule, and publish brand-consistent posts across all platforms in minutes.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, facebookGraphApi, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "IG Image generator",
+      "type": "Process"
+    },
+    {
+      "name": "FB Image generator",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn Image generator",
+      "type": "Process"
+    },
+    {
+      "name": "X Image generator",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Examples1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add to History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Examples",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get_Brand_Brief",
+      "type": "Process"
+    },
+    {
+      "name": "AI Content creator",
+      "type": "Process"
+    },
+    {
+      "name": "Get Brief",
+      "type": "Process"
+    },
+    {
+      "name": "Idea creator",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload media to Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Post on IG",
+      "type": "Process"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Merge5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get_Brand_Brief1",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Social Media Content1",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Post",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry IG",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry FB",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry X",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry LIn",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

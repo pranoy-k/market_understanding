@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6e25c683",
+  "workflow_id": "6e25c683",
+  "workflow_id_display": "6e25c683",
+  "workflow_name": "Complete Shopify to Odoo Integration: Sync Orders, Products & Customers",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Facebook, Shopify",
+  "tags": [],
+  "author_name": "Evozard",
+  "author_profile_url": "https://n8n.io/creators/evozardconsulting/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "It looks like I don't have a workflow summary provided. Please provide the summary or key details of your workflow, so I can write an effective and engaging meta description for you!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with odoo, shopifyTrigger, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sale Order1",
+      "type": "Process"
+    },
+    {
+      "name": "Code3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Odoo4",
+      "type": "Process"
+    },
+    {
+      "name": "Sale Order Line1",
+      "type": "Process"
+    },
+    {
+      "name": "Code4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Odoo",
+      "type": "Process"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Odoo5",
+      "type": "Process"
+    },
+    {
+      "name": "Odoo6",
+      "type": "Process"
+    },
+    {
+      "name": "Filter2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Odoo7",
+      "type": "Process"
+    },
+    {
+      "name": "Search Odoo Contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

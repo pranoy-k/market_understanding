@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Edit Image",
+      "type": "n8n-nodes-base.editImage",
+      "position": [
+        650,
+        300
+      ],
+      "parameters": {
+        "operation": "information"
+      },
+      "typeVersion": 1,
+      "id": "9411c00ac38cda13"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "url": "https://picsum.photos/200/300",
+        "options": {},
+        "responseFormat": "file"
+      },
+      "typeVersion": 1,
+      "id": "c1c178a01f6f445f"
+    }
+  ],
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Edit Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "5f134c9653e8a6ac",
+  "name": "Get information of an image",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

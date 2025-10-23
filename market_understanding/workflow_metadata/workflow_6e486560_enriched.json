@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6e486560",
+  "workflow_id": "6e486560",
+  "workflow_id_display": "6e486560",
+  "workflow_name": "Parse Gmail Inbox and Transform into Todoist tasks with Solve Propositions",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Åukasz",
+  "author_profile_url": "https://n8n.io/creators/lukaszpp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Structure Output Todoist Ready",
+      "type": "Process"
+    },
+    {
+      "name": "Create Todoist Task",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Message",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich Emails With Tasks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enrich Tasks with Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Close Task",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Starred and Unread Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Open Tasks",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

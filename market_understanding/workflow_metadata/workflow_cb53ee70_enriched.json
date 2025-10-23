@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cb53ee70",
+  "workflow_id": "cb53ee70",
+  "workflow_id_display": "cb53ee70",
+  "workflow_name": "Get an mp4 attachment from Gmail to Google Drive",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Gmail, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Wilbert Muza",
+  "author_profile_url": "https://n8n.io/creators/akhilv7/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Get attachment Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload File1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

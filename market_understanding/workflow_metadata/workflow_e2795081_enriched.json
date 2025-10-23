@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2795081",
+  "workflow_id": "e2795081",
+  "workflow_id_display": "e2795081",
+  "workflow_name": "Respond with file download to incoming HTTP request",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "http"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily trigger browser file downloads with Content-Disposition headers—keep your page open, ensure user-friendly filenames, and streamline your workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "On GET request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch binary file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond with attachment",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

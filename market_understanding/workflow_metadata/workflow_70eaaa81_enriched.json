@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/70eaaa81",
+  "workflow_id": "70eaaa81",
+  "workflow_id_display": "70eaaa81",
+  "workflow_name": "Split Test Different Agent Prompts with Supabase and OpenAI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Chris Carr",
+  "author_profile_url": "https://n8n.io/creators/chriscarr/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "A/B test OpenAI prompts with Supabase—randomly assign chat sessions to baseline or alternative prompts. Track, customize, and optimize results easily!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with agent, lmChatOpenAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define Path Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Correct Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Check If Session Exists",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Path To Session",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

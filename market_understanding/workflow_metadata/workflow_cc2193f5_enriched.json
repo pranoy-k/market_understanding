@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cc2193f5",
+  "workflow_id": "cc2193f5",
+  "workflow_id_display": "cc2193f5",
+  "workflow_name": "Send a private message on Zulip",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Calendar events with Slack. Get real-time updates, customized notifications, and keep your team informed—no manual work.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, zulip"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zulip",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

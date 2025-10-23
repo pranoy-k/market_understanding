@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/659c048c",
+  "workflow_id": "659c048c",
+  "workflow_id_display": "659c048c",
+  "workflow_name": "Get notified when your competitors change their pricing with Airtop and Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "Airtop",
+  "author_profile_url": "https://n8n.io/creators/cesar-at-airtop/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate competitor price tracking in n8n with Airtop and Google Sheets. Get instant alerts and real-time insights. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, airtop, merge"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Pricing URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update pricing",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check pricing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out similar",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

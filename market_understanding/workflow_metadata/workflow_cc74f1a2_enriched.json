@@ -1,0 +1,182 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cc74f1a2",
+  "workflow_id": "cc74f1a2",
+  "workflow_id_display": "cc74f1a2",
+  "workflow_name": "Sync Notion to Clockify including Clients Projects and Tasks",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "56",
+  "tools_integrations": "Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Notion Clients, Projects, and Tasks to Clockify. Ensure accurate, automated time tracking and seamless project management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Datasets1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new values1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map values5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Datasets2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new values2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structure output",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation",
+      "type": "Process"
+    },
+    {
+      "name": "Get active Clients from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get archived Client from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Store Clockify ID in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get active Projects from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Update Project in Clockify",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get completed Project from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Create Project in Clockify",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structure output1",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation1",
+      "type": "Process"
+    },
+    {
+      "name": "Store Clockify ID in Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing2",
+      "type": "Process"
+    },
+    {
+      "name": "Get active Tasks from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get completed Task from Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Structure output2",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation2",
+      "type": "Process"
+    },
+    {
+      "name": "Store Clockify ID in Notion2",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

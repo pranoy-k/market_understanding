@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/31fba68e",
+  "workflow_id": "31fba68e",
+  "workflow_id_display": "31fba68e",
+  "workflow_name": "Automate SIEM Alert Enrichment with MITRE ATT&CK, Qdrant & Zendesk in n8n",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Google Drive, OpenAI",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pull Mitre Data From Gdrive",
+      "type": "Process"
+    },
+    {
+      "name": "Embed JSON in Qdrant Collection",
+      "type": "Process"
+    },
+    {
+      "name": "Query Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store query",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Zendesk Tickets",
+      "type": "Process"
+    },
+    {
+      "name": "Update Zendesk with Mitre Data",
+      "type": "Process"
+    },
+    {
+      "name": "Move on to next ticket",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

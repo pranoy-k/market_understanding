@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/45c0b7c6",
+  "workflow_id": "45c0b7c6",
+  "workflow_id_display": "45c0b7c6",
+  "workflow_name": "Extract Website URLs from Sitemap.XML for SEO Analysis",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [
+    "xml"
+  ],
+  "author_name": "Le Thua Phu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract website URLs for SEO, audits, or monitoring with this n8n workflow. Crawl, parse, and export any sitemap. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Crawl sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crawl sitemap 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "XML 2",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out 2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/78263e5f",
+  "workflow_id": "78263e5f",
+  "workflow_id_display": "78263e5f",
+  "workflow_name": "Sync Youtube Video URLs with Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Google Sheets, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Aayushman Sharma",
+  "author_profile_url": "https://n8n.io/creators/ajstyle0411/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube video tracking with Google Sheets. Fetch latest videos from channels, organize data, and prepare for sentiment analysis. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger (When Clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format fields as required to save in google sheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Youtube Channel Ids from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert & Update Youtube Urls in Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Youtube Video Urls form specific channel",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

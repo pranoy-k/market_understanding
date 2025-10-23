@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/179a1941",
+  "workflow_id": "179a1941",
+  "workflow_id_display": "179a1941",
+  "workflow_name": "Scrape Books from URL with Dumpling AI, Clean HTML, Save to Sheets, Email as CSV",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "CSV, Email, Google Sheets",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate product data extraction from websites—scrape, sort, and deliver clean CSVs by email from Google Sheets. Boost efficiency, no manual work. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, html"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger- Watches For new URL in Spreadsheet",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to CSV File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract all books from the page",
+      "type": "Process"
+    },
+    {
+      "name": "Sort by price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract individual book price",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape Website Content with Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split HTML Array into Individual Books",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

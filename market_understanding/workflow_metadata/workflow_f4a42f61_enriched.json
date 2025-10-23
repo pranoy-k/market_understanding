@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f4a42f61",
+  "workflow_id": "f4a42f61",
+  "workflow_id_display": "f4a42f61",
+  "workflow_name": "Force AI to use a specific output format",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Chain",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

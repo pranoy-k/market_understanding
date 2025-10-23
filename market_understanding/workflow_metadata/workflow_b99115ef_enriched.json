@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b99115ef",
+  "workflow_id": "b99115ef",
+  "workflow_id_display": "b99115ef",
+  "workflow_name": "AI-Powered Employee Database Management via Telegram using OpenAI and Airtable",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Airtable, OpenAI, Telegram",
+  "tags": [
+    "telegram🗄"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate HR workflows with an AI-powered Telegram assistant and Airtable integration. Effortless employee management, smart onboarding, and real-time updates. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get departments data from airtable tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get job titles data from airtable tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get employees data from airtable tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Department Tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Job Title Tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete employee tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get departments data from airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get job titles data from airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Department",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Job Title",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create employee",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Employee Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Employee AI Agent tool",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Employee Management AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Create Employee AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

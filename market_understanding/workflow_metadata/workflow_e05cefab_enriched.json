@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e05cefab",
+  "workflow_id": "e05cefab",
+  "workflow_id_display": "e05cefab",
+  "workflow_name": "Send sales data from Webhook to Mautic",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "rangelstoilov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage Teachable webhook requests—automate user updates, assign tags for segmentation, and streamline course participant organization. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with switch, function, mautic"
+  ],
+  "nodes": [
+    {
+      "name": "Split Full Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "If not found return -1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set userFound",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Webhook Request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mautic",
+      "type": "Process"
+    },
+    {
+      "name": "Find User",
+      "type": "Process"
+    },
+    {
+      "name": "Update User",
+      "type": "Process"
+    },
+    {
+      "name": "Tag User",
+      "type": "Process"
+    },
+    {
+      "name": "Unsubscribe User",
+      "type": "Process"
+    },
+    {
+      "name": "@MAIN STUDENT DATA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove unsubscribe",
+      "type": "Process"
+    },
+    {
+      "name": "Find User To Tag Sale",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

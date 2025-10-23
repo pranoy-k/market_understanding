@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e95bf19",
+  "workflow_id": "5e95bf19",
+  "workflow_id_display": "5e95bf19",
+  "workflow_name": "Create Zoom meeting link from Google Calendar invite",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Zoom",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jason Foster",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily view your upcoming virtual Google Calendar events. Auto-filters in-person, Signal, and canceled meetings for a focused 12-hour schedule. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, googleCalendar, dateTime"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zoom",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Cron Once a Day",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

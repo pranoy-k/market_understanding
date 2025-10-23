@@ -1,0 +1,117 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/76eea8fa",
+  "workflow_id": "76eea8fa",
+  "workflow_id_display": "76eea8fa",
+  "workflow_name": "Create a new team for a project in Notion",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "API, Notion, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Will Stenzel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create a project team from webhook form data and link it to the current semester. Seamlessly integrate with larger systems—learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with function, set, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Get Team Members",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Semester ID and Projects Count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Use Default Name if Not Specified",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Project Showcase ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Project Name & Idea",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Semester ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Concatenate SemesterIDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Concatenate ProjectIDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Current Semester",
+      "type": "Process"
+    },
+    {
+      "name": "Create Project",
+      "type": "Process"
+    },
+    {
+      "name": "Create User",
+      "type": "Process"
+    },
+    {
+      "name": "Query for User",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Semester for User",
+      "type": "Process"
+    },
+    {
+      "name": "Query User",
+      "type": "Process"
+    },
+    {
+      "name": "Update Project Relation",
+      "type": "Process"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Team Creation",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

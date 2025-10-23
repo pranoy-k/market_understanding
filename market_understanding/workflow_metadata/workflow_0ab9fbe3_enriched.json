@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ab9fbe3",
+  "workflow_id": "0ab9fbe3",
+  "workflow_id_display": "0ab9fbe3",
+  "workflow_name": "Ultimate AI Assistant: Automate Email, Calendar, WebSearch, Notion, RAG & X",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Email, Notion, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Boost productivity with an AI assistant that manages emails, schedules, notes, social media, and more via Telegram. Easy setup with n8n workflow—learn how!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, googleSheetsTool, notionTool"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields_Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields_Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields_Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Get Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event with Attendee",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Events",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    },
+    {
+      "name": "Tavily WebSearch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Take notes in Notion",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

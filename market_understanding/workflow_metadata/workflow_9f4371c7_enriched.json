@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9f4371c7",
+  "workflow_id": "9f4371c7",
+  "workflow_id_display": "9f4371c7",
+  "workflow_name": "Generate Logos and Images with Consistent Visual Styles using Imagen 3.0",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Generate logos or images in any visual style with AI-powered n8n and Google Imagen 3.0. Save time, automate design tasks, and explore creative options.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Imagen 3.0",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retry Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Form Ending",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Gemini 2.0",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

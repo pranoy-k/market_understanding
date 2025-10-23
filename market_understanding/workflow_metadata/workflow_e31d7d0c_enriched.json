@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e31d7d0c",
+  "workflow_id": "e31d7d0c",
+  "workflow_id_display": "e31d7d0c",
+  "workflow_name": "Scrape business emails from Google Maps without the use of any third party APIs",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "API, Email",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Akram Kadri",
+  "author_profile_url": "https://n8n.io/creators/akramkadri/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead generation by scraping business emails from Google Maps—no APIs or extra cost. Ideal for sales and marketing pros. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Starts scraper workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Run workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save emails to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove Duplicate URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Loop over queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Google Maps with query",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scrape URLs from results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter irrelevant URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Request web page for URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop over URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape emails from page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate arrays of emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out into default data structure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove duplicate emails",
+      "type": "Process"
+    },
+    {
+      "name": "Filter irrelevant emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute scraper for query",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

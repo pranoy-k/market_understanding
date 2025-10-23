@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86502d50",
+  "workflow_id": "86502d50",
+  "workflow_id_display": "86502d50",
+  "workflow_name": "Simple Lead Capture and Follow-on with n8n Multi-Forms",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture leads with a simple, customizable n8n form workflow. Boost signup rates and automate data saving—perfect for startups. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with slack, googleSheets, form"
+  ],
+  "nodes": [
+    {
+      "name": "Sign Up Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Capture More Info",
+      "type": "Data Output"
+    },
+    {
+      "name": "Capture Email",
+      "type": "Data Output"
+    },
+    {
+      "name": "About You",
+      "type": "Data Input"
+    },
+    {
+      "name": "Your Interests",
+      "type": "Data Input"
+    },
+    {
+      "name": "Join Beta Testers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Show Completion Screen",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

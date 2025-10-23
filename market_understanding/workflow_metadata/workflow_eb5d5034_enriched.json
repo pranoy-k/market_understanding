@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb5d5034",
+  "workflow_id": "eb5d5034",
+  "workflow_id_display": "eb5d5034",
+  "workflow_name": "Build Production-Ready User Authentication with Airtable and JWT",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "NanaB",
+  "author_profile_url": "https://n8n.io/creators/nanabrown/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage user authentication with n8n and Airtable. Secure sign-up, login, JWT sessions, and easy profile updates—customizable to your needs!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtable, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Specify Current Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Specify New Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "add record to database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check if email in database",
+      "type": "Data Output"
+    },
+    {
+      "name": "check if user exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "get current details",
+      "type": "Data Output"
+    },
+    {
+      "name": "update with new details",
+      "type": "Data Output"
+    },
+    {
+      "name": "hash password",
+      "type": "Process"
+    },
+    {
+      "name": "respond with sign up successful",
+      "type": "Trigger"
+    },
+    {
+      "name": "request to sign up",
+      "type": "Trigger"
+    },
+    {
+      "name": "request to sign in",
+      "type": "Trigger"
+    },
+    {
+      "name": "respond with email already in use",
+      "type": "Trigger"
+    },
+    {
+      "name": "hash submitted password",
+      "type": "Process"
+    },
+    {
+      "name": "respond with wrong email submitted",
+      "type": "Trigger"
+    },
+    {
+      "name": "respond with successful login",
+      "type": "Trigger"
+    },
+    {
+      "name": "respond with wrong password submitted",
+      "type": "Trigger"
+    },
+    {
+      "name": "request to get user details",
+      "type": "Trigger"
+    },
+    {
+      "name": "request to update user details",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

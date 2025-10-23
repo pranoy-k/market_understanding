@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8b793ccb",
+  "workflow_id": "8b793ccb",
+  "workflow_id_display": "8b793ccb",
+  "workflow_name": "Automated Property Lead Generation with BatchData and CRM Integration",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Preston Zeller",
+  "author_profile_url": "https://n8n.io/creators/zellerhaus/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate real estate lead generation with scheduled property scans, high-equity filtering, and instant multi-channel alerts. Boost your investment success—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Market Scan",
+      "type": "Trigger"
+    },
+    {
+      "name": "BatchData API Configuration",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Email Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query BatchData Properties",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Previous Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter High Potential",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Property Details",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "BatchData API Configuration"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

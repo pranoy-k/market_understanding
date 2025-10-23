@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f57a3403",
+  "workflow_id": "f57a3403",
+  "workflow_id_display": "f57a3403",
+  "workflow_name": "Sync Entra User to Zammad User",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Microsoft Entra (Azure AD) and Zammad users. Automate onboarding, updates, and deactivation with custom field mapping. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zammad Univeral User Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find new Zammad Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find removed Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Groups from Entra",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove outer Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove outer Array from Entra User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Zammad Users",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Members of the default group",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Zammad User",
+      "type": "Process"
+    },
+    {
+      "name": "Create Zammad User",
+      "type": "Process"
+    },
+    {
+      "name": "Deactivate Zammad User",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

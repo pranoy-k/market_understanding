@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3207d101",
+  "workflow_id": "3207d101",
+  "workflow_id_display": "3207d101",
+  "workflow_name": "Travel AI Agent - AI-Powered Travel Planner",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate business travel planning via Telegram—AI finds and books flights/hotels, customizes itineraries, and delivers real-time options. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Flights",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Hotels",
+      "type": "Data Input"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Business Travel Agent",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

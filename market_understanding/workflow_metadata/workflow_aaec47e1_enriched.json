@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aaec47e1",
+  "workflow_id": "aaec47e1",
+  "workflow_id_display": "aaec47e1",
+  "workflow_name": "Extract Details from Receipts via Telegram with Tesseract and Llama",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track expenses via Telegram—send a photo or text and get instant, AI-powered summaries. Free, easy, and customizable. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with tesseract, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Text Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receipt Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Format Summary Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Telegram File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Categorizer",
+      "type": "Process"
+    },
+    {
+      "name": "AI Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Value From Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

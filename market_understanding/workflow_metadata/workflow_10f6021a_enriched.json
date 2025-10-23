@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/10f6021a",
+  "workflow_id": "10f6021a",
+  "workflow_id_display": "10f6021a",
+  "workflow_name": "Auto-label incoming Gmail messages with AI nodes",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [],
+  "author_name": "Oskar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Apply intelligent labels to Gmail messages using AI-based content analysis.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set label values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat",
+      "type": "Process"
+    },
+    {
+      "name": "Split out assigned labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge corresponding labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate label IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign labels for message",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

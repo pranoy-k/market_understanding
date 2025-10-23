@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01deda72",
+  "workflow_id": "01deda72",
+  "workflow_id_display": "01deda72",
+  "workflow_name": "Classify lemlist replies using OpenAI and automate reply handling",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [],
+  "author_name": "Lucas Perret",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically classify lemlist campaign replies and route them for appropriate handling.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Lemlist Trigger - On new reply",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Format text with Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Lemlist - Unsubscribe",
+      "type": "Process"
+    },
+    {
+      "name": "lemlist - Mark as interested",
+      "type": "Data Input"
+    },
+    {
+      "name": "Categorize lemlist reply",
+      "type": "Process"
+    },
+    {
+      "name": "Merge data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

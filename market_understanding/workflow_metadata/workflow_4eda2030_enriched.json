@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4eda2030",
+  "workflow_id": "4eda2030",
+  "workflow_id_display": "4eda2030",
+  "workflow_name": "LinkedIn Job Finder Automation using Bright Data API & Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "api"
+  ],
+  "author_name": "Dvir Sharon",
+  "author_profile_url": "https://n8n.io/creators/dvirsharon/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn job searches with Bright Data API and Google Sheets. Get real-time, detailed job data for efficient recruiting and job tracking. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, wait, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Job Lists in sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Snapshot ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scrape Data from SnapID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

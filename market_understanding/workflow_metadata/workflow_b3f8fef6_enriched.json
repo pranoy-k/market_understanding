@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b3f8fef6",
+  "workflow_id": "b3f8fef6",
+  "workflow_id_display": "b3f8fef6",
+  "workflow_name": "Download and post an image on LinkedIn",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "LinkedIn, PDF",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline LinkedIn automation in n8n with this easy-to-use companion workflow. Get step-by-step guides, documentation, and smooth onboarding. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, linkedIn, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

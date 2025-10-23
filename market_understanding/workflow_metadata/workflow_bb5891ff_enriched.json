@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bb5891ff",
+  "workflow_id": "bb5891ff",
+  "workflow_id_display": "bb5891ff",
+  "workflow_name": "Update time-tracking projects based on Syncro status changes",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Clockify project archiving based on Syncro ticket status changes. Seamless integration and real-time updates. Learn how to streamline your workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, if, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

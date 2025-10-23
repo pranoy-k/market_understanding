@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82066e3c",
+  "workflow_id": "82066e3c",
+  "workflow_id_display": "82066e3c",
+  "workflow_name": "Remote IOT Sensor monitoring via MQTT and InfluxDB",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Tony Duffy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture real-time IoT sensor data via MQTT in n8n and store it in InfluxDB. Flexible workflow for any device. Learn how to get started!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mqttTrigger, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Remote Sensor MQTT Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Data ingest to InfluxDB bucket",
+      "type": "Data Input"
+    },
+    {
+      "name": "Payload data preparation node",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

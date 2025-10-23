@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3bdd765",
+  "workflow_id": "a3bdd765",
+  "workflow_id_display": "a3bdd765",
+  "workflow_name": "Generate Comprehensive SEO Audit Reports with DataForSEO and Google Search Console",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Custom Workflows AI",
+  "author_profile_url": "https://n8n.io/creators/customworkflowsai/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate in-depth SEO audits for up to 1,000 pages. Generate branded HTML reports with actionable insights on site issues. Ideal for agencies—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Start’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map GSC Data to URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Task Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get RAW Audit Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query GSC API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge GSC Data with RAW Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Report Structure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate HTML Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract 404 & 301",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map URLs Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Source URLs Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Report",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Query GSC API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

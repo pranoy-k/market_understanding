@@ -1,0 +1,143 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/87d27a1a",
+  "workflow_id": "87d27a1a",
+  "workflow_id_display": "87d27a1a",
+  "workflow_name": "Generate AI Media with ComfyUI: Images, Video, 3D & Audio Bridge",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Nielo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate generative media—images, video, 3D, audio—by connecting n8n with ComfyUI. Enjoy scalable, flexible workflows. Learn how to set up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger LOCAL Workflow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fail Trigger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connection Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connection Config Duplicate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fallback Txt2Img SDXL Turbo",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fallback Img2Img SDXL Turbo",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return The Output JSON Instead",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Img2Img Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Txt2Img Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Generated Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fail Get History",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write to error log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🎨🏠 Run local ComfyUI workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Attachments LOCAL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fail Upload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Client ID",
+      "type": "Process"
+    },
+    {
+      "name": "Link This To Error Handling",
+      "type": "Process"
+    },
+    {
+      "name": "Read API Exported Img2Img ComfyUI Workflow from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Img2Img Comfy Workflow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read API Exported Txt2Img ComfyUI Workflow from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Txt2Img Comfy Workflow",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Read API Exported Img2Img ComfyUI Workflow from Disk",
+    "Read API Exported Txt2Img ComfyUI Workflow from Disk"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

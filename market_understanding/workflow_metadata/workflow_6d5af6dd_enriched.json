@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6d5af6dd",
+  "workflow_id": "6d5af6dd",
+  "workflow_id_display": "6d5af6dd",
+  "workflow_name": "Automate Your RFP Process with OpenAI Assistants",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Facebook, OpenAI, PDF, Webhook",
+  "tags": [
+    "Webhook🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Item List Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Answer Question with Context",
+      "type": "Process"
+    },
+    {
+      "name": "Get RFP Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "For Each Question...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new RFP Response Document",
+      "type": "Process"
+    },
+    {
+      "name": "Add Metadata to Response Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Record Question & Answer in Response Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Wait for Request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Questions From RFP",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

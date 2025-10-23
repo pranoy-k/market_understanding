@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/653d28d0",
+  "workflow_id": "653d28d0",
+  "workflow_id_display": "653d28d0",
+  "workflow_name": "Create, update and get a product from WooCommerce",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily create, update, and retrieve WooCommerce products with this workflow. Streamline catalog management and boost efficiency—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wooCommerce"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "WooCommerce",
+      "type": "Process"
+    },
+    {
+      "name": "WooCommerce1",
+      "type": "Process"
+    },
+    {
+      "name": "WooCommerce2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

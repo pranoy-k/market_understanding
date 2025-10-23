@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b978de6b",
+  "workflow_id": "b978de6b",
+  "workflow_id_display": "b978de6b",
+  "workflow_name": "Automated TikTok Video Creation Pipeline with GPT-4o-mini and Sisif.ai",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Vlad Temian",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate TikTok-style video creation with AI! Generate trend-aware, high-quality short videos every 6 hours—perfect for content creators & marketers. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Final Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create Sisif Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Video Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Idea creator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

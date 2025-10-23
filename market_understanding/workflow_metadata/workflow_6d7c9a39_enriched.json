@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6d7c9a39",
+  "workflow_id": "6d7c9a39",
+  "workflow_id_display": "6d7c9a39",
+  "workflow_name": "Get information about the weather for any city",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your blog with automated workflows—streamline content creation, publishing, and sharing across CMS and social platforms. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, openWeatherMap, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

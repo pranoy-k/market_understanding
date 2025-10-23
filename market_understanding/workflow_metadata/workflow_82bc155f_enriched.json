@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82bc155f",
+  "workflow_id": "82bc155f",
+  "workflow_id_display": "82bc155f",
+  "workflow_name": "Automate assigning GitHub issues",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "manohar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily auto-assign users to GitHub issues with a workflow that detects \"assign me.\" Update credentials for smooth, secure integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, noOp, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Issue Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp1",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Commenter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/91faee1e",
+  "workflow_id": "91faee1e",
+  "workflow_id_display": "91faee1e",
+  "workflow_name": "Auto Tweet: spreadsheet-to-Tweet Automation",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Emmanuel Bernard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly schedule tweets on X using a simple n8n workflow with Google Sheets. Maintain consistent posting and automate your social media presence today.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with twitter, scheduleTrigger, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Tweets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove from list",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post on X",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

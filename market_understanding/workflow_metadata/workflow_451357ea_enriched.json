@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/451357ea",
+  "workflow_id": "451357ea",
+  "workflow_id_display": "451357ea",
+  "workflow_name": "Send a daily summary of your Google Calendar events to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Sami Abid",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your mornings: get a daily summary of Google Calendar events delivered to Slack at 6am—easy setup with low-code filtering. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, googleCalendar, set"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date & Time2",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

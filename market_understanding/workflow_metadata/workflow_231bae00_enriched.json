@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/231bae00",
+  "workflow_id": "231bae00",
+  "workflow_id_display": "231bae00",
+  "workflow_name": "Write a WordPress post with AI (starting from a few keywords)",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Webhook, WordPress",
+  "tags": [
+    "Webhook",
+    "WordPress🤖 AI"
+  ],
+  "author_name": "Giulio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate featured image",
+      "type": "Process"
+    },
+    {
+      "name": "Create post title and structure",
+      "type": "Process"
+    },
+    {
+      "name": "Create chapters text",
+      "type": "Process"
+    },
+    {
+      "name": "Split out chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Upload media",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set image ID for the post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond: Success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond: Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

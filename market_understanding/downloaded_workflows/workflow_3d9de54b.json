@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        320
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        450,
+        320
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "key",
+              "value": "somevalue"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "cf6ce6264a761b3d"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "n8n-nodes-base.renameKeys",
+      "position": [
+        650,
+        320
+      ],
+      "parameters": {
+        "keys": {
+          "key": [
+            {
+              "newKey": "newkey",
+              "currentKey": "key"
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "id": "2bcb7a58f581f4d9"
+    }
+  ],
+  "connections": {
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Rename Keys",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "d0717b1c6e6fbc66",
+  "name": "Rename a key in n8n",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

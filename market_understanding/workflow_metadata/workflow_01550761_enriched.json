@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01550761",
+  "workflow_id": "01550761",
+  "workflow_id_display": "01550761",
+  "workflow_name": "Get Real-time NFT Marketplace Insights with OpenSea Marketplace Agent Tool",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Analytics",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Track real-time NFT listings, offers, and trait-based bids across blockchains with AI-powered OpenSea analytics. Gain market insights and find profitable deals!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Marketplace Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "Marketplace Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Marketplace Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Get All Listings by Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get All Offers by Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Best Listing by NFT",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Best Listings by Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Best Offer by NFT",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Collection Offers",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Item Offers",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Listings",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Trait Offers",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Order",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

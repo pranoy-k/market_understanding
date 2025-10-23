@@ -1,0 +1,182 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d55d5abe",
+  "workflow_id": "d55d5abe",
+  "workflow_id_display": "d55d5abe",
+  "workflow_name": "Scale Deal Flow with a Pitch Deck AI Vision, Chatbot and QDrant Vector Store",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "39",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly parse and extract insights from complex pitch decks using AI in n8n. Integrates with Airtable and supports RAG chatbots. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with noOp, textSplitterRecursiveCharacterTextSplitter, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Trigger For Pending Rows",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Update Pitchdecks Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Pending Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Pitch Deck Exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Sort Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split PDF into Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Zip File",
+      "type": "Process"
+    },
+    {
+      "name": "Images To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Images For AI",
+      "type": "Process"
+    },
+    {
+      "name": "Combine All Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Existing Vectors",
+      "type": "Data Input"
+    },
+    {
+      "name": "Continue With Pages Only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Vector Store Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Deck From Airtable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Transcribe to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Identify Companies In Question",
+      "type": "Data Input"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Ask Questions About Pitchdecks",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Pitchdecks Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

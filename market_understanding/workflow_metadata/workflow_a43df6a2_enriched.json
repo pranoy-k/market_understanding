@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a43df6a2",
+  "workflow_id": "a43df6a2",
+  "workflow_id_display": "a43df6a2",
+  "workflow_name": "Scrape Latest Github Trending Repositories",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Teddy",
+  "author_profile_url": "https://n8n.io/creators/teddysbeach/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track trending GitHub repositories. Automate extraction of repo details—names, authors, languages—with easy setup and custom integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Result Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Box",
+      "type": "Process"
+    },
+    {
+      "name": "Request to Github Trend",
+      "type": "Data Input"
+    },
+    {
+      "name": "Turn to a list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract repository data",
+      "type": "Process"
+    },
+    {
+      "name": "Extract all repositories",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

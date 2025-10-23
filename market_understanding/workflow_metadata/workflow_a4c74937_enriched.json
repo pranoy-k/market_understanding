@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a4c74937",
+  "workflow_id": "a4c74937",
+  "workflow_id_display": "a4c74937",
+  "workflow_name": "Extract Thai Bank Slip Data from LINE using SpaceOCR and Save to Google Sheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jaruphat J.",
+  "author_profile_url": "https://n8n.io/creators/jaruphatj/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate bank slip processing from LINE: extract and log transaction details into Google Sheets. Eliminate manual entry, reduce errors, and save time. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Image slip URL in Line",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Record in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get image to Binary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Chat Bot",
+      "type": "Trigger"
+    },
+    {
+      "name": "Upload image to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Send Image URL to OCR Space for Text Extraction",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Transaction Details",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

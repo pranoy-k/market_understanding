@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/11ac31b0",
+  "workflow_id": "11ac31b0",
+  "workflow_id_display": "11ac31b0",
+  "workflow_name": "Summarize YouTube Videos & Chat About Content with GPT-4o-mini via Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "OpenAI, Telegram, YouTube",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Grzegorz Hanus",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly summarize YouTube videos and chat about content via Telegram. Get AI-powered insights and Q&A with GPT-4o-mini. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleDocs, webhook, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger on Telegram Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract YouTube URL from Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Transcript into Segments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Video ID from URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Summary with GPT-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate Transcript Segments",
+      "type": "Process"
+    },
+    {
+      "name": "Extract YouTube Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Receive YouTube URL via Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Response to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve Transcript from Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Update Transcript in Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Handle User Questions via AI",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

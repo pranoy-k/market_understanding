@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/74706880",
+  "workflow_id": "74706880",
+  "workflow_id_display": "74706880",
+  "workflow_name": "Automate PDF Image Extraction & Analysis with GPT-4o and Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "Google Drive, OpenAI, PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "merfy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract images from PDFs on Google Drive, analyze them with GPT-4o, and export AI insights in seconds. Save time—automate PDF image analysis now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get all img_url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get image analyze content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze image",
+      "type": "Process"
+    },
+    {
+      "name": "Get pdf file",
+      "type": "Process"
+    },
+    {
+      "name": "Extract pdf image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get image data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Integrate all content to a a content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output content to a .txt file",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

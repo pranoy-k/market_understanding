@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fa1b92bc",
+  "workflow_id": "fa1b92bc",
+  "workflow_id_display": "fa1b92bc",
+  "workflow_name": "Medical Q&A Chatbot for Urology using RAG with Pinecone and GPT-4o",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "HoangSP",
+  "author_profile_url": "https://n8n.io/creators/hoangsp/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline your Urology clinic’s Q&A with an AI chatbot powered by RAG, GPT-4o, and Pinecone. Fast, verified answers for better patient support. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, vectorStorePinecone"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Answer questions with a vector store",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

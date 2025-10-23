@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/853504db",
+  "workflow_id": "853504db",
+  "workflow_id_display": "853504db",
+  "workflow_name": "Talk to your SQLite database with a LangChain AI Agent",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Yulia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Interact with SQLite databases using a LangChain AI agent for natural language database operations.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Combine chat input with the binary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save chinook.db locally",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get chinook.zip example",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract zip file",
+      "type": "Process"
+    },
+    {
+      "name": "Load local chinook.db",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

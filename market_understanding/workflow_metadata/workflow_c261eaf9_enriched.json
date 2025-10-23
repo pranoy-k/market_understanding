@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c261eaf9",
+  "workflow_id": "c261eaf9",
+  "workflow_id_display": "c261eaf9",
+  "workflow_name": "Automate Reddit Trend Analysis with GPT-4 and Slack/Gmail Distribution",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, OpenAI, Reddit, Slack",
+  "tags": [
+    "slack🤖 gmail",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Daily Reddit Scan",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate AI Insights",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Reddit Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Posts with AI",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

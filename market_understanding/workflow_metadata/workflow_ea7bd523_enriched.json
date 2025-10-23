@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea7bd523",
+  "workflow_id": "ea7bd523",
+  "workflow_id_display": "ea7bd523",
+  "workflow_name": "Manage WhatsApp Chats Centrally on Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Slack, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "slack"
+  ],
+  "author_name": "Usman Liaqat",
+  "author_profile_url": "https://n8n.io/creators/usmanliaqat/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly connect WhatsApp and Slack with n8n. Automate, organize, and sync messages and media for efficient customer support and team collaboration.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, whatsAppTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Slack Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter Channel by Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "download media",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Media",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

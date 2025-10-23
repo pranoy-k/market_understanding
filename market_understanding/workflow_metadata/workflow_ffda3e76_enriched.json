@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ffda3e76",
+  "workflow_id": "ffda3e76",
+  "workflow_id_display": "ffda3e76",
+  "workflow_name": "Sentiment Analysis Tracking on Support Issues with Linear and Slack",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Airtable, Google Analytics, OpenAI, Slack",
+  "tags": [
+    "Slack📊 Analytics",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Combine Sentiment Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Copy of Issue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Existing Sentiment",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Issues to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sentiment over Issue Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "For Each Issue...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Active Linear Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Deduplicate Notifications",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

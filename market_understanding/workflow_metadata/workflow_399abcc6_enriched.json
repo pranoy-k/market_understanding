@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/399abcc6",
+  "workflow_id": "399abcc6",
+  "workflow_id_display": "399abcc6",
+  "workflow_name": "Organize Email Attachments from Gmail to Structured Google Drive Folders",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Email, Gmail, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Michael Gullo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive1",
+      "type": "Process"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

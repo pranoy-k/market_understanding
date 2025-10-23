@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/890b603a",
+  "workflow_id": "890b603a",
+  "workflow_id_display": "890b603a",
+  "workflow_name": "OpenAI GPT-3: Company Enrichment from website content",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lempire/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, httpRequest, htmlExtract"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Update Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

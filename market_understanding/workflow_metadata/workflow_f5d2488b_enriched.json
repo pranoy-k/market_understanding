@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f5d2488b",
+  "workflow_id": "f5d2488b",
+  "workflow_id_display": "f5d2488b",
+  "workflow_name": "Monitor Dropbox Folders for New Files with DB Comparison",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, Dropbox, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "David Levesque",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor multiple Dropbox folders with instant webhook response, custom folder branches, and reliable file tracking. Learn more about this workflow!",
+  "key_benefits": [
+    "API integration",
+    "Integration with switch, webhook, dropbox"
+  ],
+  "nodes": [
+    {
+      "name": "set_folder A",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set_folder to watch B",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Dropbox - List watched folder",
+      "type": "Process"
+    },
+    {
+      "name": "NocoDB - Get know files to exclude",
+      "type": "Process"
+    },
+    {
+      "name": "Merge - Keep only new items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Just a quick answer to Dropbox - webhook validation",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Dropbox in less than 10sec",
+      "type": "Trigger"
+    },
+    {
+      "name": "Dropbox get files",
+      "type": "Process"
+    },
+    {
+      "name": "NocoDB - Add this file in the table",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow - what i want to do for this folder/file A",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow - Something to do for new files",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

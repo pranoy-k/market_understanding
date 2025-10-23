@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d4031d0f",
+  "workflow_id": "d4031d0f",
+  "workflow_id_display": "d4031d0f",
+  "workflow_name": "Multilanguage Telegram bot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create a scalable, multilingual Telegram bot without editing workflows. Easily add new languages and adapt to NocoDB API changes. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "chatID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "New user?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "botmessages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CheckUser",
+      "type": "Process"
+    },
+    {
+      "name": "LoadDictionary",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP AddUser",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP UpdateUser",
+      "type": "Data Input"
+    },
+    {
+      "name": "AddUser",
+      "type": "Process"
+    },
+    {
+      "name": "UpdateUser",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

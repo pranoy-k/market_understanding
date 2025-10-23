@@ -1,0 +1,135 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a130f61f",
+  "workflow_id": "a130f61f",
+  "workflow_id_display": "a130f61f",
+  "workflow_name": "AI-Powered RAG Document Processing & Chatbot with Google Drive, Supabase, OpenAI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Google Drive, OpenAI, PDF",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with limit, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set File ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Document Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download FIle",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Process Context",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize",
+      "type": "Process"
+    },
+    {
+      "name": "Add Data to Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Create Metadata Title & Description",
+      "type": "Process"
+    },
+    {
+      "name": "Split into chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

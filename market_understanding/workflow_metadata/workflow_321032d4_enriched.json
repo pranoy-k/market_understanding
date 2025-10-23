@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/321032d4",
+  "workflow_id": "321032d4",
+  "workflow_id_display": "321032d4",
+  "workflow_name": "Chat with a database using AI",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "MySQL, PostgreSQL",
+  "tags": [
+    "postgres",
+    "mysql"
+  ],
+  "author_name": "David Roberts",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock AI-powered natural language queries for Postgres, MySQL, and SQLite databases in n8n. Integrate with chat apps and boost data insights. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with agent, lmChatOpenAi, postgresTool"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

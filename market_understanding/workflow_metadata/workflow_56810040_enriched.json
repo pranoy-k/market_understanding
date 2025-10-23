@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/56810040",
+  "workflow_id": "56810040",
+  "workflow_id_display": "56810040",
+  "workflow_name": "Send a message via AWS SNS",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate AWS SNS notifications with customizable workflows. Trigger alerts on events, streamline setup, and enhance communication efficiency.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsSns"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS SNS",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

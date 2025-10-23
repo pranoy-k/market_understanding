@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c3c59c0f",
+  "workflow_id": "c3c59c0f",
+  "workflow_id_display": "c3c59c0f",
+  "workflow_name": "Extract Instagram Profile Data with Apify and Store in Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "API, Google Sheets, Instagram",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram profile research with powerful web scraping. Instantly gather key metrics and log insights to Google Sheets for smarter social analysis.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Provide Usernames",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Instagram Profile Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Profile to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Instagram Profile via Apify",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

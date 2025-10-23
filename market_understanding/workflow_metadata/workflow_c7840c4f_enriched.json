@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c7840c4f",
+  "workflow_id": "c7840c4f",
+  "workflow_id_display": "c7840c4f",
+  "workflow_name": "OpenAI-powered tweet generator",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Gareth Roll",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "FunctionItem",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Airtable API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

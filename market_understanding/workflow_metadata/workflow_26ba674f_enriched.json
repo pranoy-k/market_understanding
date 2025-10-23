@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/26ba674f",
+  "workflow_id": "26ba674f",
+  "workflow_id_display": "26ba674f",
+  "workflow_name": "Automate New Customer Onboarding with HubSpot, Google Calendar, and AI-Powered Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email, Gmail, HubSpot",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "HubSpot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Try Again",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Enter your company data here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Calendar Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event with Attendee",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Events",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    },
+    {
+      "name": "calendarAgent",
+      "type": "Process"
+    },
+    {
+      "name": "Get list of owners",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out owners",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get current owner",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all info about the contact",
+      "type": "Process"
+    },
+    {
+      "name": "Write a personalized message",
+      "type": "Process"
+    },
+    {
+      "name": "Set owner to contact",
+      "type": "Process"
+    },
+    {
+      "name": "Transforms markdown to HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

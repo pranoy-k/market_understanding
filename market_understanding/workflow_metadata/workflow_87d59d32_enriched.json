@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/87d59d32",
+  "workflow_id": "87d59d32",
+  "workflow_id_display": "87d59d32",
+  "workflow_name": "Error handling: Send email via Gmail on execution or trigger-level errors",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Olek",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Receive instant email alerts for n8n workflow execution and trigger errors with detailed info, direct links, and easy setup. Learn more now!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML for Trigger Error",
+      "type": "Process"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Constants",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML for Execution Error",
+      "type": "Process"
+    },
+    {
+      "name": "KeepEitherOfHTMLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

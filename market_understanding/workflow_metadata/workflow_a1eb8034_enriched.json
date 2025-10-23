@@ -1,0 +1,218 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a1eb8034",
+  "workflow_id": "a1eb8034",
+  "workflow_id_display": "a1eb8034",
+  "workflow_name": "GitHub Automation Hub: Complete API Controls for AI Agents",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "47",
+  "tools_integrations": "API, GitHub",
+  "tags": [
+    "api"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": "https://n8n.io/creators/cfomodz/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate GitHub with AI-powered n8n workflows. Triage issues, manage PRs, remove spam, and streamline reporting for major time savings.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpTrigger, stickyNote, httpRequestTool"
+  ],
+  "nodes": [
+    {
+      "name": "Github MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create File",
+      "type": "Process"
+    },
+    {
+      "name": "Delete File",
+      "type": "Process"
+    },
+    {
+      "name": "Edit File",
+      "type": "Process"
+    },
+    {
+      "name": "Get File",
+      "type": "Process"
+    },
+    {
+      "name": "List Files",
+      "type": "Process"
+    },
+    {
+      "name": "Create Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Lock Issue by number",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Comment on Existing Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Create Release",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Release",
+      "type": "Process"
+    },
+    {
+      "name": "Get Release",
+      "type": "Process"
+    },
+    {
+      "name": "Get Many Releases",
+      "type": "Process"
+    },
+    {
+      "name": "Update Releases",
+      "type": "Process"
+    },
+    {
+      "name": "Get Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Get Organization's Repositories",
+      "type": "Process"
+    },
+    {
+      "name": "Get User Repos by URL",
+      "type": "Process"
+    },
+    {
+      "name": "Get User Repos by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Invite User to Organization",
+      "type": "Process"
+    },
+    {
+      "name": "Update PR Review",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Reviews by PR Number",
+      "type": "Process"
+    },
+    {
+      "name": "Create PR Review",
+      "type": "Process"
+    },
+    {
+      "name": "Get a PR Review",
+      "type": "Process"
+    },
+    {
+      "name": "Get Repo",
+      "type": "Process"
+    },
+    {
+      "name": "Get Workflow by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Get Workflow by Name",
+      "type": "Process"
+    },
+    {
+      "name": "List workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Get Usage by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Get Usage by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Enable Workflow by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Enable Workflow by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Disable Workflow by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Disable Workflow by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Dispatch Worthflow by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Dispatch Worthflow by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Get Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Get License",
+      "type": "Process"
+    },
+    {
+      "name": "Get Profile",
+      "type": "Process"
+    },
+    {
+      "name": "Get Pull Requests",
+      "type": "Process"
+    },
+    {
+      "name": "List Popular Paths",
+      "type": "Process"
+    },
+    {
+      "name": "List Referrers",
+      "type": "Process"
+    },
+    {
+      "name": "Custom POST Github Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Custom PATCH Github Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Custom GET Github Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Custom PUT Github Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Custom DELETE Github Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

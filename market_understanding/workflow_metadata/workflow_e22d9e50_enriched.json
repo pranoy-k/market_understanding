@@ -1,0 +1,109 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e22d9e50",
+  "workflow_id": "e22d9e50",
+  "workflow_id_display": "e22d9e50",
+  "workflow_name": "Gmail campaign sender: Bulk-send emails and follow up automatically if no reply",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email, Gmail, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Every hour",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set message template",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email sequence",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compose message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare reply params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare first message params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update last contacted time",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get emails",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fill message placeholders",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Classify threads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Next message due?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Call message send sub-workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Call message send sub-workflow1",
+      "type": "Process"
+    },
+    {
+      "name": "To email?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decode messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decode placeholder values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Package placeholder values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Don't email on weekends",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

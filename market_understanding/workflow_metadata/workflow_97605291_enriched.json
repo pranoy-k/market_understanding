@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/97605291",
+  "workflow_id": "97605291",
+  "workflow_id_display": "97605291",
+  "workflow_name": "Get Colombian Peso to USD Exchange Rate with Telegram Bot and AI Date Recognition",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Juan Sanchez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get reliable TRM (Colombian Peso to US Dollar) rates for any date via Telegram. Instant results, AI date extraction, official data. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with limit, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Once a Telegram Message is received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Text only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Audio Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Local Current Date and Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get TRM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate an array with 10 numbers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Items for the loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get the last 10 responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get TRM for past date",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get non-empty rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort most recent data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get the last data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Extractor Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

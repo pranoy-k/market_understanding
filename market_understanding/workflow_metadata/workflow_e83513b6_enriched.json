@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e83513b6",
+  "workflow_id": "e83513b6",
+  "workflow_id_display": "e83513b6",
+  "workflow_name": "Automated AI image tagging and writing keywords into image (via community node)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Facebook, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": "https://n8n.io/creators/freddy-schuetz/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate image organization in Google Drive with AI-powered metadata tagging. Effortless workflow for self-hosted n8n—boost efficiency and accuracy!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with exifData, openAi, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger: New file added to Google Drive Folder",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analyze Image Content",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image File",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Metadata and Image File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Image File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

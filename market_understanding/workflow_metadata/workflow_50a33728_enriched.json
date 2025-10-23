@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/50a33728",
+  "workflow_id": "50a33728",
+  "workflow_id_display": "50a33728",
+  "workflow_name": "Auto-Post Medium.com Articles to LinkedIn with Telegram Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Airtable, LinkedIn, Telegram",
+  "tags": [
+    "linkedin",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Krishna Kumar Eswaran",
+  "author_profile_url": "https://n8n.io/creators/mrprogrammer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate sharing Medium articles to LinkedIn, prevent duplicates with Airtable, and get Telegram notifications. Boost engagement—hands-free. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, linkedIn"
+  ],
+  "nodes": [
+    {
+      "name": "Morning 9 Clock",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get List of records used",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the used node",
+      "type": "Data Output"
+    },
+    {
+      "name": "map used articls ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "filter only unused Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get random tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "fetch article ids from tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Medium post using Article Id",
+      "type": "Data Input"
+    },
+    {
+      "name": "make Linkedin post",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Medium post content",
+      "type": "Data Input"
+    },
+    {
+      "name": "download image for post",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

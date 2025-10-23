@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0fbe54f",
+  "workflow_id": "b0fbe54f",
+  "workflow_id_display": "b0fbe54f",
+  "workflow_name": "Auto-Generate And Post Tweet Threads Based On Google Trends Using Gemini AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "google",
+    "twitter",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate trend-based Twitter threads with AI using n8n, Google Trends & BigQuery. Boost engagement with daily, niche-relevant content—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trend Selector",
+      "type": "Process"
+    },
+    {
+      "name": "Tweet Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Trends AUS",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

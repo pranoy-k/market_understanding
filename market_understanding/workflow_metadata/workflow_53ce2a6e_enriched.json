@@ -1,0 +1,143 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/53ce2a6e",
+  "workflow_id": "53ce2a6e",
+  "workflow_id_display": "53ce2a6e",
+  "workflow_name": "HR Job Posting and Evaluation with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Airtable, Email, Google Drive, OpenAI",
+  "tags": [],
+  "author_name": "Francis Njenga",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "applicant details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "generate questionnaires",
+      "type": "Process"
+    },
+    {
+      "name": "Personalize email",
+      "type": "Process"
+    },
+    {
+      "name": "Book Meeting",
+      "type": "Process"
+    },
+    {
+      "name": "Screening Questions",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Rejected",
+      "type": "Data Output"
+    },
+    {
+      "name": "Potential Hire",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable2",
+      "type": "Data Output"
+    },
+    {
+      "name": "update questionnaires",
+      "type": "Data Output"
+    },
+    {
+      "name": "job_posting",
+      "type": "Data Output"
+    },
+    {
+      "name": "candidate_insights",
+      "type": "Data Output"
+    },
+    {
+      "name": "update phone meeting time",
+      "type": "Data Output"
+    },
+    {
+      "name": "job_posting1",
+      "type": "Data Output"
+    },
+    {
+      "name": "candidate_insights1",
+      "type": "Data Output"
+    },
+    {
+      "name": "screening questions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload CV to google drive",
+      "type": "Process"
+    },
+    {
+      "name": "download CV",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "questionnaires",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

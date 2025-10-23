@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4c48b3fb",
+  "workflow_id": "4c48b3fb",
+  "workflow_id_display": "4c48b3fb",
+  "workflow_name": "Send links from Telegram Channel to Hoarder and Readeck",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Sherlockes",
+  "author_profile_url": "https://n8n.io/creators/sherlockes/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate saving and organizing links from your Telegram channel to Hoarder and Readeck with n8n—easy setup, smart filtering, and efficient scheduling.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "saved_links_rd",
+      "type": "Data Processing"
+    },
+    {
+      "name": "saved_links_hd",
+      "type": "Data Processing"
+    },
+    {
+      "name": "not_saved_links_hd",
+      "type": "Data Processing"
+    },
+    {
+      "name": "not_saved_links_rd",
+      "type": "Data Processing"
+    },
+    {
+      "name": "save_link_rd",
+      "type": "Data Input"
+    },
+    {
+      "name": "save_link_hd",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get_links_rd",
+      "type": "Data Input"
+    },
+    {
+      "name": "get_links_hd",
+      "type": "Data Input"
+    },
+    {
+      "name": "channel_links_tg",
+      "type": "Data Processing"
+    },
+    {
+      "name": "channel_items_tg",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

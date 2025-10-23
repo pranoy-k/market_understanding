@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/16355ec2",
+  "workflow_id": "16355ec2",
+  "workflow_id_display": "16355ec2",
+  "workflow_name": "Manage Emails via WhatsApp with Gmail, GPT and Voice Recognition",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Email, Gmail, OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp🤖 gmail"
+  ],
+  "author_name": "Floyd Mahou",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Turn WhatsApp into an AI-powered email command center. Send, draft, and search Gmail by voice or text—quick setup for hands-free productivity.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Email",
+      "type": "Data Output"
+    },
+    {
+      "name": "Email Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

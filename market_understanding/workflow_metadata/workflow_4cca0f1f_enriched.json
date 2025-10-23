@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4cca0f1f",
+  "workflow_id": "4cca0f1f",
+  "workflow_id_display": "4cca0f1f",
+  "workflow_name": "AI Chat Agent: Dumpling AI + GPT-4o to Auto-Save Local Business Data to Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate local business lead generation with AI. Instantly find, enrich, and save leads to Airtable with real-time news. Flexible, scalable, and easy to customize.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Process Input with GPT-4o Mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save Business Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "News Agent",
+      "type": "Data Input"
+    },
+    {
+      "name": "Local Business Finder Agent",
+      "type": "Data Input"
+    },
+    {
+      "name": "Track Last 10 Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Route AI Tasks with Dumpling + GPT + Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

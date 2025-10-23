@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ec444c1",
+  "workflow_id": "8ec444c1",
+  "workflow_id_display": "8ec444c1",
+  "workflow_name": "Add data from a photo to Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "isa024787bel",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate expense receipt tracking—capture via Telegram, extract details with Mindee OCR, and store in Google Sheets with n8n automation.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Get receipts from bot",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set relevant data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse details from receipt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add to expense record",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

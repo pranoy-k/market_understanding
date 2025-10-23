@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4470bef",
+  "workflow_id": "c4470bef",
+  "workflow_id_display": "c4470bef",
+  "workflow_name": "AI-powered email processing autoresponder and response approval (Yes_No)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Davide",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Set Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DeepSeek R1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Email Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Write email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

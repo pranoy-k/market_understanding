@@ -1,0 +1,105 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e5b7dde8",
+  "workflow_id": "e5b7dde8",
+  "workflow_id_display": "e5b7dde8",
+  "workflow_name": "Send Google analytics data to A.I. to analyze then save results in Baserow",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Analytics",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow generates automated reports on a scheduled basis, collecting data from multiple sources, processing and formatting it, then delivering insights to stakeholders. It eliminates manual report creation while ensuring consistent, timely delivery of business intelligence.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Country views data for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Google Search Results for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Page Engagement Stats for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Page Engagement Stats for prior week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Google Search Results for last week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Country views data for last week",
+      "type": "Process"
+    },
+    {
+      "name": "Parse data from Google Analytics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse GA data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Google Analytics Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Google Analytics Data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Google analytics data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Google analytics data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send country view data to A.I.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send page data to A.I.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send page Search data to A.I.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Save A.I. output to Baserow",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Baserow API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c7aefd94",
+  "workflow_id": "c7aefd94",
+  "workflow_id_display": "c7aefd94",
+  "workflow_name": "Use REGEX to select date",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically detect and validate Close Dates with REGEX, generate fallback dates, and review results easily. Test and refine with flexible node controls.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Close Date 3 Weeks Later",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Close Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Close Date To Original",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

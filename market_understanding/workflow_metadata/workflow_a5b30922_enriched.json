@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a5b30922",
+  "workflow_id": "a5b30922",
+  "workflow_id_display": "a5b30922",
+  "workflow_name": "Convert web page to PDF using ConvertAPI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "ConvertAPI",
+  "author_profile_url": "https://n8n.io/creators/convertapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert web pages to PDF and save locally. Easily customize URLs, API, and settings for reliable, automated PDF generation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert web page to PDF",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read/Write Files from Disk",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

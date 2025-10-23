@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/181adc8b",
+  "workflow_id": "181adc8b",
+  "workflow_id_display": "181adc8b",
+  "workflow_name": "Automated Book Summarization with DeepSeek AI, Qdrant Vector DB & Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Adam Crafts",
+  "author_profile_url": "https://n8n.io/creators/adamcrafts/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly summarize and search books with AI—upload to Google Drive, get instant summaries, Q&A, and cloud storage. Boost productivity—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with vectorStoreQdrant, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive (create)",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "qdrant_search",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Cohere",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

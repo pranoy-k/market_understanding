@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e617312",
+  "workflow_id": "5e617312",
+  "workflow_id_display": "5e617312",
+  "workflow_name": "Sync Google Calendar Events to Outlook",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Email",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Alexander Bentlund",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync private Google Calendar events to your work Outlook Calendar. Automate reminders, cancellations, and email alerts. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with microsoftOutlook, googleCalendarTrigger, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Incoming Event Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cancel Event Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Outlook Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Event to Cancel",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Send E-mail with details",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

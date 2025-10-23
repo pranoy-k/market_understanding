@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92e1b73b",
+  "workflow_id": "92e1b73b",
+  "workflow_id_display": "92e1b73b",
+  "workflow_name": "Generating Image Embeddings via Textual Summarisation",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive, OpenAI, PDF",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Document for Embedding",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Image Keywords",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Color Information",
+      "type": "Process"
+    },
+    {
+      "name": "Resize Image",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Image Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "In-Memory Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Search for Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

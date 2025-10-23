@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb3eb293",
+  "workflow_id": "fb3eb293",
+  "workflow_id_display": "fb3eb293",
+  "workflow_name": "Actioning Your Meeting Next Steps using Transcripts and AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Meeting",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fallback Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Attendees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Meeting ConferenceRecords",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Meeting Transcript Location",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Transcript File",
+      "type": "Process"
+    },
+    {
+      "name": "PDF Loader",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Calendar Event",
+      "type": "Process"
+    },
+    {
+      "name": "Attendees List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Attendee to Invite",
+      "type": "Process"
+    },
+    {
+      "name": "Create Calendar Event1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

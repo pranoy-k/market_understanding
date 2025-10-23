@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/784924ff",
+  "workflow_id": "784924ff",
+  "workflow_id_display": "784924ff",
+  "workflow_name": "Monthly live music events newsletter",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Milorad Filipovic",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get monthly live music event lists for your city, sourced from Songkick and sent to your inbox. Easy setup, quick links, and simple ticket buying—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, htmlExtract"
+  ],
+  "nodes": [
+    {
+      "name": "🤖 Each month",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup location and email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get events page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all events from the page",
+      "type": "Process"
+    },
+    {
+      "name": "Get each event data",
+      "type": "Process"
+    },
+    {
+      "name": "Limit to one",
+      "type": "Process"
+    },
+    {
+      "name": "Split events",
+      "type": "Process"
+    },
+    {
+      "name": "Collect all results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "💄 Lick the stamp",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Each month"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

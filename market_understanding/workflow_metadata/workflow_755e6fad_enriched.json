@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/755e6fad",
+  "workflow_id": "755e6fad",
+  "workflow_id_display": "755e6fad",
+  "workflow_name": "Generate Visual Summary & Knowledge Graph Insights for Your Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "InfraNodus",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "User submits form",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Processing Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus Question Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean text and organize into statements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Filter emails by label",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Message text or snippet present?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate from full email texts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate from email snippets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus AI Summary & Graph Link",
+      "type": "Data Input"
+    },
+    {
+      "name": "InfraNodus Build a Social Knowledge Graph",
+      "type": "Data Input"
+    },
+    {
+      "name": "InfraNodus Build a Text Knowledge Graph",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

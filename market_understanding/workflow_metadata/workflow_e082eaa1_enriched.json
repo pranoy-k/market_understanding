@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e082eaa1",
+  "workflow_id": "e082eaa1",
+  "workflow_id_display": "e082eaa1",
+  "workflow_name": "Community Insights using Qdrant, Python and Information Extractor",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly cluster Hacker News comments with n8n to unlock community insights, AI-powered summaries, and sentiment analysis. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, vectorStoreQdrant, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Insights",
+      "type": "Process"
+    },
+    {
+      "name": "Prep Values For Trigger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Output For Export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Export To Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hacker News",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clear Existing Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Payload of Points",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clusters To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Clusters With 3+ points",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Apply K-means Clustering Algorithm",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

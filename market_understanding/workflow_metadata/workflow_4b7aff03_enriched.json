@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4b7aff03",
+  "workflow_id": "4b7aff03",
+  "workflow_id_display": "4b7aff03",
+  "workflow_name": "Entra Contacts to Zammad User Sync",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly sync Entra (Azure AD) contacts with Zammad. Automate user creation, updates, and deactivation. Boost accuracy—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zammad Univeral User Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find new Zammad Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find removed Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Zammad Users",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Zammad User",
+      "type": "Process"
+    },
+    {
+      "name": "Create Zammad User",
+      "type": "Process"
+    },
+    {
+      "name": "Deactivate Zammad User",
+      "type": "Process"
+    },
+    {
+      "name": "Get Contacts from Entra",
+      "type": "Data Input"
+    },
+    {
+      "name": "Entra Contacts",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8420eb32",
+  "workflow_id": "8420eb32",
+  "workflow_id_display": "8420eb32",
+  "workflow_name": "Automate Image Validation Tasks using AI Vision",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Photo URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Photos To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Photos",
+      "type": "Process"
+    },
+    {
+      "name": "Resize For AI",
+      "type": "Process"
+    },
+    {
+      "name": "Passport Photo Validator",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

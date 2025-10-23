@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f37b9e1",
+  "workflow_id": "0f37b9e1",
+  "workflow_id_display": "0f37b9e1",
+  "workflow_name": "USDT And TRC20 Wallet Tracker API Workflow for n8n",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track USDT TRC20 wallet transactions every 15 minutes with n8n—no API key needed. Customizable, automated, and easy to set up. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "TronScan API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "TronScan API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

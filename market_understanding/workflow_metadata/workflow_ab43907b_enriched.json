@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab43907b",
+  "workflow_id": "ab43907b",
+  "workflow_id_display": "ab43907b",
+  "workflow_name": "MCP Server Github Agent Tool",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, GitHub, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "William Lettieri",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Transform your LLM into a GitHub automation pro with this n8n workflow template. Simplify API tasks, reduce token usage, and boost productivity—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Github Username",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Github Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Github API",
+      "type": "Process"
+    },
+    {
+      "name": "Github AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Github API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb6b0f21",
+  "workflow_id": "fb6b0f21",
+  "workflow_id_display": "fb6b0f21",
+  "workflow_name": "Post unassigned Zendesk tickets to Slack",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan Bennetts",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily Slack updates with a list of unassigned Zendesk tickets. Customizable scheduling and seamless integration keep your team effortlessly informed.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, zendesk"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zendesk",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

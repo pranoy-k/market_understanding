@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2adca604",
+  "workflow_id": "2adca604",
+  "workflow_id_display": "2adca604",
+  "workflow_name": "Synchronize your Google Sheets with Postgres",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets, PostgreSQL",
+  "tags": [
+    "google",
+    "postgres",
+    "Scheduled"
+  ],
+  "author_name": "Bela",
+  "author_profile_url": "https://n8n.io/creators/bwiertz/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with scheduleTrigger, postgres, compareDatasets"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve Sheets Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out Relevant Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Rows in Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Rows",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

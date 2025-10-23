@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b811c55c",
+  "workflow_id": "b811c55c",
+  "workflow_id_display": "b811c55c",
+  "workflow_name": "fetch the public IP addresses of your n8n instance",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ger Longstacks",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly find all public IPs of your n8n instance for firewall whitelisting. Easy setup, deduplicated results, secure workflow. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Repeat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

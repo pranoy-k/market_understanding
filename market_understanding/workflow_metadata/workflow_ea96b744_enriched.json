@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea96b744",
+  "workflow_id": "ea96b744",
+  "workflow_id_display": "ea96b744",
+  "workflow_name": "GitLab Merge Request Review & Risk Analysis with Claude/GPT AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Vishal Kumar",
+  "author_profile_url": "https://n8n.io/creators/vishalquantana/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate GitLab code reviews with AI-powered risk assessment, actionable reports, and instant notifications to teams. Boost quality—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "GitLab Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "GitLab Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "GitLab Trigger2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Diff",
+      "type": "Data Input"
+    },
+    {
+      "name": "Distribution List Generator",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Comment Back on MR",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

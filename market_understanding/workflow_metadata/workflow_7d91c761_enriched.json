@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7d91c761",
+  "workflow_id": "7d91c761",
+  "workflow_id_display": "7d91c761",
+  "workflow_name": "Wikipedia Podcast Generator - AI-Powered Voice Content Creator via Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": "https://n8n.io/creators/freddy-schuetz/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform Wikipedia topics into 5-minute podcast episodes with this n8n Telegram bot. Supports voice & text, AI audio, and easy configuration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, agent, elevenLabs"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Text Message for AI Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transcribe Voice Message",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "ElevenLabs Text to Speech",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia Podcast Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

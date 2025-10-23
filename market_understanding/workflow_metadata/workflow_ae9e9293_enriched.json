@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ae9e9293",
+  "workflow_id": "ae9e9293",
+  "workflow_id_display": "ae9e9293",
+  "workflow_name": "Deploy Docker Grafana, API Backend for WHMCS/WISECP",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "API, Facebook",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PUQcloud",
+  "author_profile_url": "https://n8n.io/creators/puqcloud/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Of course! Please provide the n8n workflow description you have in mind, and I’ll craft a summary and meta description for you.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, ssh, set"
+  ],
+  "nodes": [
+    {
+      "name": "Parametrs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Inspect",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Connection1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Deploy",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Suspend",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Terminated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unsuspend",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mount Disk",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unmount Disk",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ChangePackage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Deploy-docker-compose",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Version",
+      "type": "Data Processing"
+    },
+    {
+      "name": "nginx",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ACL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SET ACL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET NET",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change Password",
+      "type": "Data Processing"
+    },
+    {
+      "name": "422-Invalid server domain",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API answer",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "API",
+    "API answer"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

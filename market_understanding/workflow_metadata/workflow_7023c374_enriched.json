@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7023c374",
+  "workflow_id": "7023c374",
+  "workflow_id_display": "7023c374",
+  "workflow_name": "Reach out via Email to new form submissions that meet a certain criteria",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead follow-ups by filtering and enriching new form submissions, identifying top B2B prospects, and sending targeted emails—all seamlessly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map email field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clearbit",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich Company",
+      "type": "Process"
+    },
+    {
+      "name": "Submission does not match criteria, don't do anything",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out personal emails",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

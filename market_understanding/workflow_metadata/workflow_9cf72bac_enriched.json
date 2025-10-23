@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9cf72bac",
+  "workflow_id": "9cf72bac",
+  "workflow_id_display": "9cf72bac",
+  "workflow_name": "Financial News Digest with Google Gemini AI to Outlook Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Email",
+  "tags": [
+    "google",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Louis",
+  "author_profile_url": "https://n8n.io/creators/louisdl/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate financial news summaries with AI-powered scraping, clean HTML extraction, and stylish daily email updates—no manual work required. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with microsoftOutlook, manualTrigger, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gather the elements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Item List Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get financial news online",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Send the summary by e-mail",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

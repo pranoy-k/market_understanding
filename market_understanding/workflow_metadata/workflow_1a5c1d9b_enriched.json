@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1a5c1d9b",
+  "workflow_id": "1a5c1d9b",
+  "workflow_id_display": "1a5c1d9b",
+  "workflow_name": "Generate Personalized Strava Ride Titles & Descriptions with DeepSeek AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Thibaud",
+  "author_profile_url": "https://n8n.io/creators/tderouze/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically generate catchy, personalized Strava ride titles and descriptions with AI. Save time, enhance your posts, and impress your community!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with strava, stravaTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Strava Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Everything",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Strava",
+      "type": "Process"
+    },
+    {
+      "name": "Strava Social Manager",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

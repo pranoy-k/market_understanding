@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0a2967c6",
+  "workflow_id": "0a2967c6",
+  "workflow_id_display": "0a2967c6",
+  "workflow_name": "Automate Solar Lead Qualification & Follow-ups with Google Sheets and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail, Google Sheets",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "[STEP 6] Detect New Leads",
+      "type": "Trigger"
+    },
+    {
+      "name": "[STEP 4] Create Bill Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "[STEP 5] Save Lead to Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "[STEP 8] Update Qualification Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "[STEP 1] Receive Form Submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "[STEP 2] Upload Utility Bill",
+      "type": "Process"
+    },
+    {
+      "name": "[STEP 3] Make Bill Viewable",
+      "type": "Process"
+    },
+    {
+      "name": "[STEP 7] Check Qualification Criteria",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bfb17b9b",
+  "workflow_id": "bfb17b9b",
+  "workflow_id_display": "bfb17b9b",
+  "workflow_name": "Summarize YouTube Videos from Transcript",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Ahmed Alnaqa",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "YouTube video URL",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarization Engine",
+      "type": "Process"
+    },
+    {
+      "name": "Request YouTube Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization of a YouTube script",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5a54705f",
+  "workflow_id": "5a54705f",
+  "workflow_id_display": "5a54705f",
+  "workflow_name": "Pattern for Parallel Sub-Workflow Execution Followed by Wait-For-All Loop",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Hubschrauber",
+  "author_profile_url": "https://n8n.io/creators/hubschrauber/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Efficiently run parallel sub-workflows in n8n and pause your main flow until all complete—no third-party tools needed. Learn this proven solution.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialize finishedSet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update finishedSet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simulate Multi-Item for Parallel Processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start Sub-Workflow via Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Acknowledge Finished",
+      "type": "Trigger"
+    },
+    {
+      "name": "Continue Workflow (noop)",
+      "type": "Process"
+    },
+    {
+      "name": "Call Resume on Parent Workflow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

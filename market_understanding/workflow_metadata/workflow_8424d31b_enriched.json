@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8424d31b",
+  "workflow_id": "8424d31b",
+  "workflow_id_display": "8424d31b",
+  "workflow_name": "Generate AI Videos with Google Veo3, Save to Google Drive and Upload to YouTube",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Drive, Google Sheets, OpenAI, YouTube",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and publish AI-generated YouTube videos from Google Sheets using Google Veo3 and GPT-4o. Automate, track, and optimize—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate title",
+      "type": "Process"
+    },
+    {
+      "name": "Update result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get new video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Youtube URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Url Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get File Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

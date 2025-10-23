@@ -1,0 +1,182 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9a25a141",
+  "workflow_id": "9a25a141",
+  "workflow_id_display": "9a25a141",
+  "workflow_name": "Automate B2B Lead Generation with Apollo, GPT-4o Scoring, and Brevo Email Outreach",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "48",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Luka Zivkovic",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Supercharge your lead generation with AI scoring, personalized email automation, and real-time tracking. Discover scalable outreach with top CRM integration!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email Opened",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email Unwanted",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ai Scoring",
+      "type": "Process"
+    },
+    {
+      "name": "Email Personalization",
+      "type": "Process"
+    },
+    {
+      "name": "NocoDB",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch data to prepare for scoring",
+      "type": "Process"
+    },
+    {
+      "name": "Add a score",
+      "type": "Process"
+    },
+    {
+      "name": "Crawl4AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crawl4AI resolve",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Personalized mail",
+      "type": "Process"
+    },
+    {
+      "name": "Personalized Mail Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark as contacted",
+      "type": "Process"
+    },
+    {
+      "name": "Email Exists -> Mark as Contacted",
+      "type": "Process"
+    },
+    {
+      "name": "Email Send",
+      "type": "Process"
+    },
+    {
+      "name": "Create Contact",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Trash",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape Leads From Apollo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get by email",
+      "type": "Process"
+    },
+    {
+      "name": "Lead Status -> Trash",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Contact In Brevo",
+      "type": "Process"
+    },
+    {
+      "name": "Lead Status -> Email Opened",
+      "type": "Process"
+    },
+    {
+      "name": "Lead Status -> Warm",
+      "type": "Process"
+    },
+    {
+      "name": "Apify Crawl Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process Apify Crawl",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as failed_to_process",
+      "type": "Process"
+    },
+    {
+      "name": "Get Entered Leads From Crawl4AI",
+      "type": "Process"
+    },
+    {
+      "name": "Get 'Entered' Leads From Apify",
+      "type": "Process"
+    },
+    {
+      "name": "Set Lead Status -> 'processed'",
+      "type": "Process"
+    },
+    {
+      "name": "Set Lead Status -> 'failed_to_process'",
+      "type": "Process"
+    },
+    {
+      "name": "Loop over entered leads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Entered Leads Crawl4AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch processed leads",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Processed Leads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Leads For Scoring",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Leads With Created Emails",
+      "type": "Process"
+    },
+    {
+      "name": "Get by user email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

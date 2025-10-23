@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6be863b6",
+  "workflow_id": "6be863b6",
+  "workflow_id_display": "6be863b6",
+  "workflow_name": "Automate LinkedIn Engagement with Phantombuster, OpenAI GPT & Google Sheets Tracking",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Boost LinkedIn networking with AI-powered automation: auto-engage, generate smart comments, and track performance. Build your professional network—learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger - 9 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Comment Generation Model",
+      "type": "Process"
+    },
+    {
+      "name": "Log Activity to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "LinkedIn Posts Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Scraper Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Commenter Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Like LinkedIn Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post LinkedIn Comment",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

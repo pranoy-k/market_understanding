@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/baf721f3",
+  "workflow_id": "baf721f3",
+  "workflow_id_display": "baf721f3",
+  "workflow_name": "Automate Blog Creation in Brand Voice with AI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Article Instruction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Save as Draft",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Voice Characteristics",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Blog",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Article",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Article URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Latest Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Article Content",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Article Style & Brand Voice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Capture Existing Article Structure",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Content Generation Agent",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/00bdb2c8",
+  "workflow_id": "00bdb2c8",
+  "workflow_id_display": "00bdb2c8",
+  "workflow_name": "Personalized LinkedIn Connection Requests with Apollo, GPT-4, Apify & PhantomBuster",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Nick Saraev",
+  "author_profile_url": "https://n8n.io/creators/nicksaraev/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn outreach: generate targeted Apollo leads, personalize messages with AI, and send connections via PhantomBuster. Boost responses—learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger PhantomBuster Agent",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Search URL",
+      "type": "Process"
+    },
+    {
+      "name": "Personalize Outreach",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Run Apify Actor & Get Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

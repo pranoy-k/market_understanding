@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/58d89c34",
+  "workflow_id": "58d89c34",
+  "workflow_id_display": "58d89c34",
+  "workflow_name": "CSV to JSON Converter with Error Handling and Slack Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, CSV, Slack",
+  "tags": [
+    "slack",
+    "api",
+    "csv",
+    "json"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert CSV files or raw text to JSON via API. Supports file uploads, error handling, and Slack alerts for seamless automation. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, if"
+  ],
+  "nodes": [
+    {
+      "name": "Change Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Error Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Success Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert Raw Text To CSV",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Raw CSV",
+      "type": "Data Input"
+    },
+    {
+      "name": "POST",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success Response2",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

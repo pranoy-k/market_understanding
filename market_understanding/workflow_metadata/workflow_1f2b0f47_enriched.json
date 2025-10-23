@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f2b0f47",
+  "workflow_id": "1f2b0f47",
+  "workflow_id_display": "1f2b0f47",
+  "workflow_name": "Slack-OpenAI Assistant Integration for Direct Messages & @mentions",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [
+    "slack🤖 openai"
+  ],
+  "author_name": "Bartosz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Integrate OpenAI Assistant into Slack for instant, context-aware AI replies to DMs and @mentions, with full support and easy setup. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "New message or app mention",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate response",
+      "type": "Process"
+    },
+    {
+      "name": "Ignore",
+      "type": "Process"
+    },
+    {
+      "name": "Remove citations from output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Set status and typing animation [Slack]",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

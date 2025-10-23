@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc39e89a",
+  "workflow_id": "bc39e89a",
+  "workflow_id_display": "bc39e89a",
+  "workflow_name": "Scrape ProductHunt using Google Gemini",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, Google Analytics, Webhook",
+  "tags": [
+    "google",
+    "json",
+    "gemini"
+  ],
+  "author_name": "Mauricio Perera",
+  "author_profile_url": "https://n8n.io/creators/rckflr/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily extract rich, structured product data from Product Hunt using AI and webhooks. Fast, accurate JSON output—perfect for analytics, research, and more.",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, chainLlm, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Product Request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Product HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Inline Scripts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Script with LLM",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Script with Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Format Product Data to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Send JSON Response to Client",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

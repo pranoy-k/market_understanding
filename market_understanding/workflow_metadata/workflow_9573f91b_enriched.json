@@ -1,0 +1,191 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9573f91b",
+  "workflow_id": "9573f91b",
+  "workflow_id_display": "9573f91b",
+  "workflow_name": "AI Real Estate Agent: End-to-End Ops Automation (Web, Data, Voice)",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "42",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate real estate lead qualification, research, and voice outreach with AI-powered workflows. Boost efficiency—integrate with Google Workspace & APIs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, if, code"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "RenameInputFields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ExtractClassification",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CreateStructuredLeadObject",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Lead Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Intro Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Extracted Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normalize User Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Lead Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Real Estate Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Log Lead",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Log Summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "IncomingLeadWebhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "CleanUserText",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ClassifyIntentUrgency",
+      "type": "Process"
+    },
+    {
+      "name": "StandardizeFields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PropertyCheckAPI",
+      "type": "Data Input"
+    },
+    {
+      "name": "CalculateLeadScore",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "ElevenLabs - Generate Voice",
+      "type": "Data Input"
+    },
+    {
+      "name": "Twilio - Place Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent - Extract Lead Info",
+      "type": "Process"
+    },
+    {
+      "name": "Format Timestamp",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Lead Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook - New Lead1",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "PropertyCheckAPI",
+    "SerpAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

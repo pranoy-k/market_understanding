@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a9026777",
+  "workflow_id": "a9026777",
+  "workflow_id_display": "a9026777",
+  "workflow_name": "Send Slack notifications when a new release is published for public Github repos",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "GitHub, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Damian Karzon",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically monitor GitHub repositories for new releases daily and get instant Slack notifications. Customizable, easy setup, and real-time tracking. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Github Repo Releases",
+      "type": "Data Input"
+    },
+    {
+      "name": "RepoConfig",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

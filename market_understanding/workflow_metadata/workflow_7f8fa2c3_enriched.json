@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7f8fa2c3",
+  "workflow_id": "7f8fa2c3",
+  "workflow_id_display": "7f8fa2c3",
+  "workflow_name": "Get entries from a Cockpit collection",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a streamlined workflow companion for Cockpit node docs. Boost setup efficiency with clear visuals and practical guidance. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, cockpit"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cockpit",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

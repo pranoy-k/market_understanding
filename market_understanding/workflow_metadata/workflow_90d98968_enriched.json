@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90d98968",
+  "workflow_id": "90d98968",
+  "workflow_id_display": "90d98968",
+  "workflow_name": "Automated Research Report Generation with AI, Wiki, Search & Gmail/Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email, Gmail, PDF, Telegram",
+  "tags": [
+    "telegram",
+    "pdf"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Executed by Main AI Agent",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Parse Research Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Store Research Metadata",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Search News",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query Refiner",
+      "type": "Process"
+    },
+    {
+      "name": "Research AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Search Web",
+      "type": "Data Input"
+    },
+    {
+      "name": "SerpApi",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input Validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Split Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate PDF HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert HTML to PDF",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download PDF",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Folder",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

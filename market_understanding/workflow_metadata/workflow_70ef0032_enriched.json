@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/70ef0032",
+  "workflow_id": "70ef0032",
+  "workflow_id_display": "70ef0032",
+  "workflow_name": "Enhance Customer Chat by Buffering Messages with Twilio and Redis",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, SMS",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Twilio Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Messages Buffer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Messages Stack",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Latest Message Stack",
+      "type": "Process"
+    },
+    {
+      "name": "Get Chat History",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

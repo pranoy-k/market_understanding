@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d6a46ce",
+  "workflow_id": "2d6a46ce",
+  "workflow_id_display": "2d6a46ce",
+  "workflow_name": "Provide latest euro exchange rates from European Central Bank via Webhook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "json"
+  ],
+  "author_name": "Monospace Design",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Instantly fetch up-to-date Euro exchange rates from the ECB via a no-auth webhook. Get all rates or a specific currency in clear JSON. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, xml, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Incoming Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond All Items",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond Asked Item",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get latest Euro exchange rates",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert XML to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter the currency symbol",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

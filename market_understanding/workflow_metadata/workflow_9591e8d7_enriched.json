@@ -1,0 +1,196 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9591e8d7",
+  "workflow_id": "9591e8d7",
+  "workflow_id_display": "9591e8d7",
+  "workflow_name": "📚 Auto-generate documentation for n8n workflows with GPT and Docsify",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "48",
+  "tools_integrations": "OpenAI, PDF, Webhook",
+  "tags": [
+    "Webhook📄 Document Processing🤖 AI"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "CONFIG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Blank Doc File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fill Workflow Table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Generated Doc",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save New Doc File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond OK on Save",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Main Page",
+      "type": "Process"
+    },
+    {
+      "name": "Instance overview",
+      "type": "Process"
+    },
+    {
+      "name": "Sort-workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Doc File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond with markdown",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with HTML",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Single Workflow1",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Respond with main page HTML",
+      "type": "Trigger"
+    },
+    {
+      "name": "Workflow Tags",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fallback file name",
+      "type": "Process"
+    },
+    {
+      "name": "mkdir",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Page",
+      "type": "Process"
+    },
+    {
+      "name": "Workflow md content",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Mermaid Chart",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Passthrough",
+      "type": "Process"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "single workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get All Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Get Workflow tags",
+      "type": "Process"
+    },
+    {
+      "name": "docsify",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

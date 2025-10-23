@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/235fd191",
+  "workflow_id": "235fd191",
+  "workflow_id_display": "235fd191",
+  "workflow_name": "Daily Insight Email from Structured Web Data with Firecrawl",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Automate With Marc",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatting AI",
+      "type": "Process"
+    },
+    {
+      "name": "POST Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP GET Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

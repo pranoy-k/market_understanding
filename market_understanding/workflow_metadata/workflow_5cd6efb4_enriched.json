@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5cd6efb4",
+  "workflow_id": "5cd6efb4",
+  "workflow_id_display": "5cd6efb4",
+  "workflow_name": "Get Weather Forecast via Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Receive instant weather updates on Telegram. Trigger real-time forecasts with a simple command—fast, detailed, and delivered directly to your chat. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with telegramTrigger, telegram, openWeatherMap"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

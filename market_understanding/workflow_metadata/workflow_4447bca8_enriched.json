@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4447bca8",
+  "workflow_id": "4447bca8",
+  "workflow_id_display": "4447bca8",
+  "workflow_name": "AI-Powered GitHub Bot: Auto-Triage Issues with GPT-4o, Pinecone & Discord Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Discord, GitHub, OpenAI, Webhook",
+  "tags": [
+    "discord",
+    "webhook"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "CHANGE THESE!!!",
+      "type": "Data Processing"
+    },
+    {
+      "name": "These too if you want",
+      "type": "Data Processing"
+    },
+    {
+      "name": "4o, 4o-mini, etc1",
+      "type": "Process"
+    },
+    {
+      "name": "Use Text Embedding 3 LARGE",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Github Issue Hints",
+      "type": "Process"
+    },
+    {
+      "name": "Code Vector Read",
+      "type": "Process"
+    },
+    {
+      "name": "Docs Vector Read",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

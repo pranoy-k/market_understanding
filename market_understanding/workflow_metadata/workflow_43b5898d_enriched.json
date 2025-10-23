@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43b5898d",
+  "workflow_id": "43b5898d",
+  "workflow_id_display": "43b5898d",
+  "workflow_name": "Arxiv Paper summarization with ChatGPT",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "12",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "chatgpt"
+  ],
+  "author_name": "Teddy",
+  "author_profile_url": "https://n8n.io/creators/teddysbeach/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Remove useless links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Reorganize Paper Summary",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Request to Paper Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Contents",
+      "type": "Process"
+    },
+    {
+      "name": "Split out All Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate summarzied content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Content Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

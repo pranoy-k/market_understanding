@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21e640bc",
+  "workflow_id": "21e640bc",
+  "workflow_id_display": "21e640bc",
+  "workflow_name": "AI-Powered Post-Sales Call Automated Proposal Generator",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Gerald Denor",
+  "author_profile_url": "https://n8n.io/creators/dominixai/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate proposal creation with AI—transform client info into polished, customized proposals in minutes. Boost sales efficiency and consistency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, openAi, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Replace Text",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

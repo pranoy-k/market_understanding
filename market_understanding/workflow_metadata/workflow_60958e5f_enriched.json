@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/60958e5f",
+  "workflow_id": "60958e5f",
+  "workflow_id_display": "60958e5f",
+  "workflow_name": "Suggest meeting slots using AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Stringify Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract start, end and name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Chat OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Chat OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Workflow Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Format response",
+      "type": "Process"
+    },
+    {
+      "name": "Filter only confirmed and with set time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Classify appointment",
+      "type": "Process"
+    },
+    {
+      "name": "Sort",
+      "type": "Process"
+    },
+    {
+      "name": "Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

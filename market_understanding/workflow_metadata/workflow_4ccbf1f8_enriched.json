@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ccbf1f8",
+  "workflow_id": "4ccbf1f8",
+  "workflow_id_display": "4ccbf1f8",
+  "workflow_name": "AI-Powered Stock Market Summary Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "kenandrewmiranda",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate stock analysis with RSI & MACD, get hourly AI-powered market summaries, and receive real-time updates in Slack. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ticker List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stock Analysis Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Stock Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Interpret Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Market is Closed",
+      "type": "Process"
+    },
+    {
+      "name": "Check Market Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "End of Flow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

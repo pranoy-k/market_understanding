@@ -1,0 +1,104 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b11c8f85",
+  "workflow_id": "b11c8f85",
+  "workflow_id_display": "b11c8f85",
+  "workflow_name": "Extract, Transform LinkedIn Data with Bright Data MCP Server & Google Gemini",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Analytics, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract, transform, and automate LinkedIn data collection with Bright Data MCP Server & Google Gemini. Boost analytics, sales, and CRM integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set the URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the LinkedIn Company URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for LinkedIn person info extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for LinkedIn company info extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bright Data MCP Client For LinkedIn Person",
+      "type": "Process"
+    },
+    {
+      "name": "List all tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client For LinkedIn Company",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook for LinkedIn Company Web Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "List all available tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write the LinkedIn person info to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write the LinkedIn company info to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook for LinkedIn Person Web Scraper",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

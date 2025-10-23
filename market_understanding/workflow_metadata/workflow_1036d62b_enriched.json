@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1036d62b",
+  "workflow_id": "1036d62b",
+  "workflow_id_display": "1036d62b",
+  "workflow_name": "Siri AI Agent_ Apple Shortcuts powered voice template",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Max Tkacz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Apple Shortcut",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "When called by Apple Shortcut",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

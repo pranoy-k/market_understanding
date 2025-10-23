@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/909aff3c",
+  "workflow_id": "909aff3c",
+  "workflow_id_display": "909aff3c",
+  "workflow_name": "Qualifying Appointment Requests with AI & n8n Forms",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Use AI to automatically qualify and prioritize appointment requests submitted through n8n forms.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Approval Process",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Form Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Form End",
+      "type": "Data Input"
+    },
+    {
+      "name": "Enter Date & Time",
+      "type": "Data Input"
+    },
+    {
+      "name": "Terms & Conditions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Appointment",
+      "type": "Process"
+    },
+    {
+      "name": "Decline",
+      "type": "Data Input"
+    },
+    {
+      "name": "Decline1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarise Enquiry",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

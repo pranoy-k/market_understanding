@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "HelpScout",
+      "type": "n8n-nodes-base.helpScout",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "resource": "mailbox",
+        "operation": "getAll"
+      },
+      "credentials": {
+        "helpScoutOAuth2Api": "helpscout_creds"
+      },
+      "typeVersion": 1,
+      "id": "23b6b8e107dc825a"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "HelpScout",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "1ea1776de62acef2",
+  "name": "Get all mailboxes from Help Scout",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

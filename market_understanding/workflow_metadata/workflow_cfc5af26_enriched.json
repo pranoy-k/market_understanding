@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfc5af26",
+  "workflow_id": "cfc5af26",
+  "workflow_id_display": "cfc5af26",
+  "workflow_name": "Collect YouTube Channel Stats & Contact Info with Google Sheets and SerpAPI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Supercharge YouTube channel research with automated insights: extract channel stats, video performance, and contact info for outreach and lead generation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, code"
+  ],
+  "nodes": [
+    {
+      "name": "New Channel Added",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare views to sum",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Sheet Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Channel Insights",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get info about channel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Channel Stats",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Recent Video Views",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sum Video Views",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channel Email (SerpAPI)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Get Channel Email (SerpAPI)"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

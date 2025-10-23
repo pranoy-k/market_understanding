@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7b69f885",
+  "workflow_id": "7b69f885",
+  "workflow_id_display": "7b69f885",
+  "workflow_name": "Transform Press Releases (PDF & Word) into Polished Articles with Gmail & OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Email, Gmail, OpenAI, PDF",
+  "tags": [
+    "pdf🤖 openai"
+  ],
+  "author_name": "Julian Reich",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform emailed press releases (PDF, Word) into AI-written articles with auto self-assessment. Streamline editorial workflows—learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI self assesment",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI self-assesment2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI self-assesment",
+      "type": "Process"
+    },
+    {
+      "name": "Extrahiere aus PDF1",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request2",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Code: delete all but pdf and word",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Article Writer 1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Article Writer 2",
+      "type": "Process"
+    },
+    {
+      "name": "AI Article Writer 3",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

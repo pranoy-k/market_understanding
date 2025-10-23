@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa1e02a8",
+  "workflow_id": "aa1e02a8",
+  "workflow_id_display": "aa1e02a8",
+  "workflow_name": "Send bulk messages to chats in Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly bypass Telegram’s 30-msg/sec cap. Send broadcasts to unlimited chats, automated and seamless. Learn how to reach all your users now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, splitInBatches, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

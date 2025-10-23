@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/89dd4709",
+  "workflow_id": "89dd4709",
+  "workflow_id_display": "89dd4709",
+  "workflow_name": "Create and update a channel, and send a message on Twist",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead collection and enrichment from Typeform to HubSpot CRM, with real-time Slack alerts. Boost insights and team productivity. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, twist"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Twist",
+      "type": "Process"
+    },
+    {
+      "name": "Twist1",
+      "type": "Process"
+    },
+    {
+      "name": "Twist2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

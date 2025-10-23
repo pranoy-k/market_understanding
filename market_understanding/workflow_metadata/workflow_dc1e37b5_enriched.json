@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dc1e37b5",
+  "workflow_id": "dc1e37b5",
+  "workflow_id_display": "dc1e37b5",
+  "workflow_name": "Google Search Engine Results Page Extraction and Summarization with Bright Data",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "google",
+    "webhook"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Google Search extraction with AI-powered cleanup, instant summaries, and seamless webhook delivery—customize for any workflow. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Google Search Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model For Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Search Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perform Google Search Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Search Expert AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

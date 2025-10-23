@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f79f3e7e",
+  "workflow_id": "f79f3e7e",
+  "workflow_id_display": "f79f3e7e",
+  "workflow_name": "One-way sync Stripe Invoice PDFs to a S3 Bucket",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "AWS, PDF, Stripe",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Marcel Claus-Ahrens",
+  "author_profile_url": "https://n8n.io/creators/geckse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Stripe invoice PDFs to your AWS S3 bucket monthly—organized by year and month. Customize, automate, and streamline document management.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsS3, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Every Month the First Day of the Month",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Inject s3 Subpath",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set-Subpath",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ENV*",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean and Escape ENV",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Invoices",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Invoice PDF from Stripe",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all Invoices*",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to S3 Bucket*",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

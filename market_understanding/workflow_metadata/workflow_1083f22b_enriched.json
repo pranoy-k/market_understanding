@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1083f22b",
+  "workflow_id": "1083f22b",
+  "workflow_id_display": "1083f22b",
+  "workflow_name": "Bright Data-Powered Competitive Price Lookup and Report Generator",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Gleb D",
+  "author_profile_url": "https://n8n.io/creators/glebd/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate e-commerce product analysis with n8n: collect listings, enrich with AI, and get HTML email reports of top offers. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error message (replace with webhook/other notifier if needed)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Process"
+    },
+    {
+      "name": "Snapshot Content",
+      "type": "Process"
+    },
+    {
+      "name": "Snapshot Request",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - Check If Snapshot is built",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - Extract Necessary Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Compare Prices and Generate Report",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Code - Build HTML",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

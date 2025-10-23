@@ -1,0 +1,166 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ec11d56d",
+  "workflow_id": "ec11d56d",
+  "workflow_id_display": "ec11d56d",
+  "workflow_name": "Build your own N8N Workflows MCP Server",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "38",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform n8n workflows into an MCP server for AI agents like Claude Desktop. Enable secure, autonomous workflow discovery, management, and execution. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, mcpClientTool, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "N8N Workflows MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AddTool Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AddTool Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Tool Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "listTools Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Workflows1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to JSON1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ExecuteTool Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get MCP-tagged Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Matching Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store In Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Matching IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store In Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Get MCP-tagged Workflows1",
+      "type": "Process"
+    },
+    {
+      "name": "listTools Success1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "executeTool Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Add Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "RemoveWorkflow",
+      "type": "Process"
+    },
+    {
+      "name": "List Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "SearchWorkflows",
+      "type": "Process"
+    },
+    {
+      "name": "ExecuteWorkflow",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow with PassThrough Variables",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Key",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

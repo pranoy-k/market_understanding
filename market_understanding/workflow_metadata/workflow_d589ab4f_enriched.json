@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d589ab4f",
+  "workflow_id": "d589ab4f",
+  "workflow_id_display": "d589ab4f",
+  "workflow_name": "Sync Google Sheets data with MySQL",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets, MySQL",
+  "tags": [
+    "google",
+    "mysql",
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, scheduleTrigger, compareDatasets"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename GSheet variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheet Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update GSheet status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send Notifications",
+      "type": "Process"
+    },
+    {
+      "name": "SQL Get inquiries from Google",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add MySQL records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Sync MySQL data",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

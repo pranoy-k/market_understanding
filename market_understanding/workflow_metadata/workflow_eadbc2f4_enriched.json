@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eadbc2f4",
+  "workflow_id": "eadbc2f4",
+  "workflow_id_display": "eadbc2f4",
+  "workflow_name": "Get Daily Weather and Save It in Airtable",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "WeblineIndia",
+  "author_profile_url": "https://n8n.io/creators/weblineindia/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline daily weather tracking with WeblineIndia’s automation. Auto-collect, store, and analyze key weather data using OpenWeatherMap and Airtable.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, scheduleTrigger, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Store Weather Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Weather Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

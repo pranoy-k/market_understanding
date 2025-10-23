@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0214e4e7",
+  "workflow_id": "0214e4e7",
+  "workflow_id_display": "0214e4e7",
+  "workflow_name": "Create Linear tickets from Notion content",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily import richly formatted tickets from Notion to Linear, maintain links, assign team members, and prevent duplicates. Streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with graphql, aggregate, linear"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare issue data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set page URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set team ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Shorten title",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Linear team details",
+      "type": "Process"
+    },
+    {
+      "name": "Get issue contents",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create linear issue",
+      "type": "Process"
+    },
+    {
+      "name": "Set assignee and title",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add link to Notion block",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get issue URL",
+      "type": "Process"
+    },
+    {
+      "name": "Unimported, unchecked to_do blocks only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get issues",
+      "type": "Process"
+    },
+    {
+      "name": "Convert contents to Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond with error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with error1",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

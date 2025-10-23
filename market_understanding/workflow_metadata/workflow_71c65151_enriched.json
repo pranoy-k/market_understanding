@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/71c65151",
+  "workflow_id": "71c65151",
+  "workflow_id_display": "71c65151",
+  "workflow_name": "Scrape Latest 20 TechCrunch Articles",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Teddy",
+  "author_profile_url": "https://n8n.io/creators/teddysbeach/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly retrieve the 20 latest TechCrunch articles—including URLs, titles, dates, and content—with this automated, customizable workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse a posts box",
+      "type": "Process"
+    },
+    {
+      "name": "Parse all posts",
+      "type": "Process"
+    },
+    {
+      "name": "Parse each post in detail",
+      "type": "Process"
+    },
+    {
+      "name": "Parse a post's content and metadata",
+      "type": "Process"
+    },
+    {
+      "name": "Save the values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Request Techcrunsh Latest Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "split out the posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Request a post detail page",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

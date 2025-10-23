@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f6167af3",
+  "workflow_id": "f6167af3",
+  "workflow_id_display": "f6167af3",
+  "workflow_name": "Joining different datasets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly merge two datasets in n8n with SQL-style rules. Streamline data workflows—append, filter new or existing items. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ingredients in stock from recipe",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Super Band",
+      "type": "Data Processing"
+    },
+    {
+      "name": "A. Ingredients Needed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "B. Ingredients in stock",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge recipe",
+      "type": "Data Processing"
+    },
+    {
+      "name": "A. Ingredients",
+      "type": "Data Processing"
+    },
+    {
+      "name": "B. Recipe quantities",
+      "type": "Data Processing"
+    },
+    {
+      "name": "A. Queen",
+      "type": "Data Processing"
+    },
+    {
+      "name": "B. Led Zeppelin",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

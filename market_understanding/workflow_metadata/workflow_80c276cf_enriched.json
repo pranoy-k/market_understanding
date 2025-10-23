@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/80c276cf",
+  "workflow_id": "80c276cf",
+  "workflow_id_display": "80c276cf",
+  "workflow_name": "Build an MCP Server with Google Calendar and Custom Functions",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly connect AI Agents to native and custom tools in n8n using official MCP nodes. Learn easy, auto-updating integration—no manual edits needed!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, mcpClientTool, debugHelper"
+  ],
+  "nodes": [
+    {
+      "name": "Google Calendar MCP",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "My Functions Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert Text to Upper Case",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Text to Lower Case",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return only some fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI 4o",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "SearchEvent",
+      "type": "Process"
+    },
+    {
+      "name": "CreateEvent",
+      "type": "Process"
+    },
+    {
+      "name": "UpdateEvent",
+      "type": "Process"
+    },
+    {
+      "name": "DeleteEvent",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Text",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar MCP",
+      "type": "Process"
+    },
+    {
+      "name": "My Functions",
+      "type": "Process"
+    },
+    {
+      "name": "Random user data",
+      "type": "Process"
+    },
+    {
+      "name": "Generate random user data",
+      "type": "Process"
+    },
+    {
+      "name": "Joke Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Random Jokes",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

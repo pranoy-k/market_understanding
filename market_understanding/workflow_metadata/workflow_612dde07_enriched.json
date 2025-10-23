@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/612dde07",
+  "workflow_id": "612dde07",
+  "workflow_id_display": "612dde07",
+  "workflow_name": "Daily Podcast Summary",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jay Hartley",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Genre",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize Podcast",
+      "type": "Process"
+    },
+    {
+      "name": "TaddyTopDaily",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Whisper Transcribe Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Request Audio Crop",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Download Link",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Cut MP3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Podcast",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

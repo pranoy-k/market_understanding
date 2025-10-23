@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18bc0df7",
+  "workflow_id": "18bc0df7",
+  "workflow_id_display": "18bc0df7",
+  "workflow_name": "Analyze CrowdStrike Detections - Search for IOCs in VirusTotal - Create a Ticket in Jira, and Post a Message in Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Jira, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate incident response with n8n: fetch, enrich, and process CrowdStrike detections, integrate VirusTotal data, create Jira issues, and notify via Slack.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, jira"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set behaviour descriptions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out detections",
+      "type": "Process"
+    },
+    {
+      "name": "Get recent detections from Crowdstrike",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get detection details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split out behaviours",
+      "type": "Process"
+    },
+    {
+      "name": "Look up SHA in Virustotal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Look up IOC in Virustotal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge behaviour descriptions",
+      "type": "Process"
+    },
+    {
+      "name": "Create Jira issue",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

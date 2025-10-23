@@ -1,0 +1,117 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7d5ed3ce",
+  "workflow_id": "7d5ed3ce",
+  "workflow_id_display": "7d5ed3ce",
+  "workflow_name": "AI Email Analyzer: Process PDFs, Images & Save to Google Drive + Telegram",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email, Google Drive, Google Sheets, PDF, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate email and attachment analysis with AI. Extract, summarize, and save content to Google Sheets, and get final summaries via Telegram. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with markdown, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map image summaries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DeepSeek R1",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze image",
+      "type": "Process"
+    },
+    {
+      "name": "Save summary PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save summary image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save summary text",
+      "type": "Data Output"
+    },
+    {
+      "name": "Email Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get PDF and images attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "PDF Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "All summaries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload attachments",
+      "type": "Process"
+    },
+    {
+      "name": "Create final summary",
+      "type": "Process"
+    },
+    {
+      "name": "Convert text",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "type": "Process"
+    },
+    {
+      "name": "Parsing",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

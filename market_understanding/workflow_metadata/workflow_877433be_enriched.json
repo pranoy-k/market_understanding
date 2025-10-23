@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/877433be",
+  "workflow_id": "877433be",
+  "workflow_id_display": "877433be",
+  "workflow_name": "ChatGPT Automatic Code Review in Gitlab MR",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "assert",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Last Diff Line",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Changes",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post Discussions",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

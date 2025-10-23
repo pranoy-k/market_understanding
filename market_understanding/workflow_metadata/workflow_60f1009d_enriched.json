@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/60f1009d",
+  "workflow_id": "60f1009d",
+  "workflow_id_display": "60f1009d",
+  "workflow_name": "Docker Registry Cleanup Workflow",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Muzaffer AKYIL",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Docker registry cleanup: preserve the latest 10 tags per image, delete old tags, run garbage collection, and get real-time email alerts. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Scheduled Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Manifest Digest",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Old Tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Image Tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "List Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Image Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Identify Tags to Remove",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Valid Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Manifest Digest for Blob",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group Tags by Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by Creation Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Garbage Collection",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

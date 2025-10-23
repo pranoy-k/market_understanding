@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3c4613d0",
+  "workflow_id": "3c4613d0",
+  "workflow_id_display": "3c4613d0",
+  "workflow_name": "AI-Powered Children_s Arabic Storytelling on Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Scheduled🤖 AI",
+    "Telegram"
+  ],
+  "author_name": "AlQaisi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Generate an Image for the Story",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Audio for the Story",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a Prompt for DALL-E",
+      "type": "Process"
+    },
+    {
+      "name": "Translate the Story to Arabic",
+      "type": "Process"
+    },
+    {
+      "name": "Create a Story for Kids",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

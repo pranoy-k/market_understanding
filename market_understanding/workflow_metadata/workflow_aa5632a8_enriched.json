@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa5632a8",
+  "workflow_id": "aa5632a8",
+  "workflow_id_display": "aa5632a8",
+  "workflow_name": "Automatically Create Cinematic Quote Videos with AI and Upload to YouTube",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Google Sheets, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jaruphat J.",
+  "author_profile_url": "https://n8n.io/creators/jaruphatj/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Thai vertical quote videos with AI-generated visuals, audio, and overlays. Seamless YouTube uploads & easy management via Google Sheets.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update image background URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get data from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sound background URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update video background URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Video Background Locally1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Music Background Locally1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Quote Upload Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image-to-Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Sound to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Binary Video Background",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare Overlay Text (Quote & Author)1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Final Video Clip1",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate YouTube Resumable Upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read output file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to YouTube",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

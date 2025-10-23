@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2716fe6d",
+  "workflow_id": "2716fe6d",
+  "workflow_id_display": "2716fe6d",
+  "workflow_name": "Automate Contact Enrichment from HubSpot to Salesforce using Explorium.ai",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Email, HubSpot, Salesforce",
+  "tags": [],
+  "author_name": "explorium",
+  "author_profile_url": "https://n8n.io/creators/explorium/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically enrich new HubSpot contacts in real time with professional emails and phone numbers from Explorium. Boost data quality and sales outreach!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, salesforce, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "HubSpot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Match_prospect",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Prospect IDs from Matched Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Explorium Enrich Contacts Information",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "Salesforce",
+      "type": "Process"
+    },
+    {
+      "name": "Code - flatten",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter - non matched",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Explorium Enrich Profiles",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

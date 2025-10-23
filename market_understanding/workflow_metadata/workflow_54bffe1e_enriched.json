@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/54bffe1e",
+  "workflow_id": "54bffe1e",
+  "workflow_id_display": "54bffe1e",
+  "workflow_name": "Automate Blog Content Creation with OpenAI, Google Sheets & Email Approval Flow",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with switch, scheduleTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Add Generated Content to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Topic Status on Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Topic from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Copywriter AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Copywriter Revision Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

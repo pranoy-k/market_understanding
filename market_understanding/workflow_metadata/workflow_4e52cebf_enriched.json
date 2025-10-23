@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4e52cebf",
+  "workflow_id": "4e52cebf",
+  "workflow_id_display": "4e52cebf",
+  "workflow_name": "Receive updates when a subscriber unsubscribes in Customer.io",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import, verify, and enrich leads from Google Sheets. Trigger personalized emails, Slack alerts, and track results in real time. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with customerIoTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Customer.io Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

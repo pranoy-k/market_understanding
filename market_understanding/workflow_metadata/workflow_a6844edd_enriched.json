@@ -1,0 +1,213 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6844edd",
+  "workflow_id": "a6844edd",
+  "workflow_id_display": "a6844edd",
+  "workflow_name": "Youtube RAG search with Frontend using Apify, Qdrant and AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "49",
+  "tools_integrations": "API, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly build a YouTube RAG search engine with n8n, Apify, and Qdrant. Enjoy fast, filterable search and instant video playback. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with markdown, redis, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Vectorise Subworkflow1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chunk Subtitles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Up Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Template",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Empty Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "429 Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Empty Response1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Video Subtitles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Video Ref",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Chunk",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort By Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "SEARCH API",
+      "type": "Trigger"
+    },
+    {
+      "name": "Answer Query",
+      "type": "Process"
+    },
+    {
+      "name": "Incr Rate Limit",
+      "type": "Process"
+    },
+    {
+      "name": "Vectorise Subworkflow",
+      "type": "Process"
+    },
+    {
+      "name": "WEB UI",
+      "type": "Trigger"
+    },
+    {
+      "name": "Qdrant Groups Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "For Each Group",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Group Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Transcripts to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ignore Already Seen",
+      "type": "Process"
+    },
+    {
+      "name": "Get Latest Youtube Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Chunks to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Render Page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Webpage",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Groups to Items1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "SEARCH API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

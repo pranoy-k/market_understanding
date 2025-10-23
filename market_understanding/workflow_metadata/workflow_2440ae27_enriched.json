@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2440ae27",
+  "workflow_id": "2440ae27",
+  "workflow_id_display": "2440ae27",
+  "workflow_name": "Send Telegram Notification for New WooCommerce Orders",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Mohammadreza azari",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant WooCommerce order alerts on Telegram with detailed info and a direct order link. Fast 5–10 min setup—connect your store seamlessly!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with stickyNote, telegram, wooCommerceTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "WooCommerce Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

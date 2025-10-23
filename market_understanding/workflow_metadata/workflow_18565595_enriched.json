@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18565595",
+  "workflow_id": "18565595",
+  "workflow_id_display": "18565595",
+  "workflow_name": "Upwork Job Listings Auto-Export to Google Sheets with Apify",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate your Upwork job search—extract listings to Google Sheets for real-time updates, easy sharing, analysis, and collaboration. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Check Upwork Jobs - Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format scrape Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Jobs to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Upwork Jobs using Apify",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

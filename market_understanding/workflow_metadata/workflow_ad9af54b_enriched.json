@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ad9af54b",
+  "workflow_id": "ad9af54b",
+  "workflow_id_display": "ad9af54b",
+  "workflow_name": "Read RSS feed from two different sources",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, RSS, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Deborah",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline data collection with automated form validation, Slack alerts, and personalized email follow-ups. Enhance team response—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, splitInBatches, code"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

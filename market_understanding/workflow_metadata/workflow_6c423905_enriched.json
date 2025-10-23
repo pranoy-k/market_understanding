@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6c423905",
+  "workflow_id": "6c423905",
+  "workflow_id_display": "6c423905",
+  "workflow_name": "AAVE Portfolio Professional AI Agent | Telegram + Email + GPT-4o + Moralis",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 gmail",
+    "Scheduled"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor Aave V3 DeFi wallets with AI-driven reports via Telegram & Gmail. Get real-time insights, risk alerts, and detailed summaries—learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Wallet Addresses to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "getDefiSummary",
+      "type": "Data Input"
+    },
+    {
+      "name": "getDefiPositionsSummary",
+      "type": "Data Input"
+    },
+    {
+      "name": "getDefiPositionsByProtocol",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AAVE Portfolio Professional AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

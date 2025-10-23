@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/144d38c0",
+  "workflow_id": "144d38c0",
+  "workflow_id_display": "144d38c0",
+  "workflow_name": "Automated SSL Certificate Monitoring and Renewal with Notion and Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Notion, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Frank Chen",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate SSL certificate checks for Notion domain records. Get Telegram alerts for expiring SSL, trigger Certbot renewals, and ensure seamless uptime. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Click Triggered",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Weekly Triggered",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set anotherWorkflow Triggered",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Who Triggered",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check SSL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get SSL Info",
+      "type": "Process"
+    },
+    {
+      "name": "Refresh SSL Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update SSL Info",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Renew Server Cert",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

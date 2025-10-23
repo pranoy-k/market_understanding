@@ -1,0 +1,99 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f6d359b4",
+  "workflow_id": "f6d359b4",
+  "workflow_id_display": "f6d359b4",
+  "workflow_name": "Add liked songs to a Spotify monthly playlist",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Lucas",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically save your Spotify liked songs to organized monthly playlists—no duplicates, fully automated. Requires Spotify & NocoDB API keys. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, noOp, spotify"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check if track is saved",
+      "type": "Process"
+    },
+    {
+      "name": "Get current date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create song entry",
+      "type": "Process"
+    },
+    {
+      "name": "Get monthly playlist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get playlist in DB",
+      "type": "Process"
+    },
+    {
+      "name": "Create playlist in DB1",
+      "type": "Process"
+    },
+    {
+      "name": "Create playlist in DB",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean op",
+      "type": "Process"
+    },
+    {
+      "name": "Clean op2",
+      "type": "Process"
+    },
+    {
+      "name": "Get this month playlist in DB",
+      "type": "Process"
+    },
+    {
+      "name": "Get this month tracks in DB",
+      "type": "Process"
+    },
+    {
+      "name": "For each tracks in liked song",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For each monthly tracks in DB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean op1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5629732b",
+  "workflow_id": "5629732b",
+  "workflow_id_display": "5629732b",
+  "workflow_name": "Comprehensive SEO Keyword Research with OpenAI & DataForSEO Analytics to NocoDB",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Google Analytics, OpenAI",
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with aggregate, webhook, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set relevant fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Topic Expansion",
+      "type": "Process"
+    },
+    {
+      "name": "Competitor Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Keyword Difficulty",
+      "type": "Process"
+    },
+    {
+      "name": "Search Volume & CPC",
+      "type": "Process"
+    },
+    {
+      "name": "split primary keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keyword Ranking per URL",
+      "type": "Process"
+    },
+    {
+      "name": "Final Keyword Strategy",
+      "type": "Process"
+    },
+    {
+      "name": "Get Input from NocoDB",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split the Competitor URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Json and add Competitor URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate SV & CPC",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate KWD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge SV, CPC & KWD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Topic Expansion, SV, CPC & KWD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Competitor Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Everything",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Content Brief",
+      "type": "Process"
+    },
+    {
+      "name": "Update Status - Done",
+      "type": "Process"
+    },
+    {
+      "name": "Update Status - Started",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

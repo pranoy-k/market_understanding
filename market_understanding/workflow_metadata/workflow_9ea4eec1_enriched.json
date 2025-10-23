@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9ea4eec1",
+  "workflow_id": "9ea4eec1",
+  "workflow_id_display": "9ea4eec1",
+  "workflow_name": "Generate Written Content with GPT-4o Recursive Writing & Editing Agents",
+  "category": "Content & Documentation",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Matty Reed",
+  "author_profile_url": "https://n8n.io/creators/mattyreed1/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Boost your content workflow with a recursive AI writing and editing template for n8n. Automate revisions, customize prompts, and publish faster. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "set variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "chatInput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "chatOutput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "handle edits",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Writing Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Editing Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

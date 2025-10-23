@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0babbf2f",
+  "workflow_id": "0babbf2f",
+  "workflow_id_display": "0babbf2f",
+  "workflow_name": "⚡AI-Powered YouTube Video Summarization & Analysis",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Analytics, OpenAI, Telegram, Webhook, YouTube",
+  "tags": [
+    "Webhook📊 Analytics🤖 AI"
+  ],
+  "author_name": "Joseph LePage",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow analyzes YouTube channel performance, extracting video metrics and audience insights. It can generate AI-powered recommendations for content optimization, track competitor channels, and create comprehensive reports on your YouTube growth and engagement.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Get YouTube URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "YouTube Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "YouTube Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get YouTube Video",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize & Analyze Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

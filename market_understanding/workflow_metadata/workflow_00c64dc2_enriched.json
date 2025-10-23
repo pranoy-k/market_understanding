@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/00c64dc2",
+  "workflow_id": "00c64dc2",
+  "workflow_id_display": "00c64dc2",
+  "workflow_name": "Forex News & Sentiment Telegram Alerts",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Malik Hashir",
+  "author_profile_url": "https://n8n.io/creators/malikx/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Forex news and sentiment analysis for any currency pair—get real-time, actionable updates on Telegram. Easy setup, no coding, unlimited use.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, agent, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Read - GOOGLE",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - FXSTREET",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - fxstreet news",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - DAILYFX technical",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - DAILYFX fundamental",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - DAILYFX forexnews",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - DAILYFX forex articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - FOREX LIVE technicals",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - FOREX LIVE central banks",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read - FOREX LIVE forexorders",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "EURUSD News and Sentiment Analyst",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

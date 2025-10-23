@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2805a867",
+  "workflow_id": "2805a867",
+  "workflow_id_display": "2805a867",
+  "workflow_name": "Get Live Crypto Market Data with AI-Powered CoinMarketCap Agent",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get real-time crypto prices, market rankings, global stats & token metadata—powered by AI and CoinMarketCap. Analyze markets smarter. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Crypto Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Crypto Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Crypto Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Price",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crypto Map",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crypto Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crypto Listings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Global Metrics",
+      "type": "Data Input"
+    },
+    {
+      "name": "Price Conversion",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

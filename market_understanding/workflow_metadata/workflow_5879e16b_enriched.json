@@ -1,0 +1,148 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5879e16b",
+  "workflow_id": "5879e16b",
+  "workflow_id_display": "5879e16b",
+  "workflow_name": "Survey Insights with Qdrant, Python and Information Extractor",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly cluster survey responses by similarity and generate actionable AI insights. Save research time—analyze trends and export results to Google Sheets.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, vectorStoreQdrant, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Insights",
+      "type": "Process"
+    },
+    {
+      "name": "Prep Values For Trigger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to Question Answer Pairs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Questions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Output For Export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Values For Export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Survey Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Survey Headers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Export To Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Export To Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Insights Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Questions to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find All Answers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Payload of Points",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clusters To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Question...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "QA Pairs to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Sheet Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Only Clusters With 3+ points",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Apply K-means Clustering Algorithm",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Survey Insights Agent",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

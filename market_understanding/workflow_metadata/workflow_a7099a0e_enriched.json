@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a7099a0e",
+  "workflow_id": "a7099a0e",
+  "workflow_id_display": "a7099a0e",
+  "workflow_name": "Baserow campaign database to Shopify with image upload & dynamic template update",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "Sascha",
+  "author_profile_url": "https://n8n.io/creators/m3tam3re/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate marketing campaign management by connecting Baserow, n8n, and Shopify. Streamline uploads, centralize assets, and launch campaigns faster. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with graphql, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set values here!",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save campaign.liquid",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Process"
+    },
+    {
+      "name": "Call from Baserow",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

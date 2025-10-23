@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/604c7414",
+  "workflow_id": "604c7414",
+  "workflow_id_display": "604c7414",
+  "workflow_name": "RSS feed for ARD Audiothek podcasts",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Create a valid RSS feed for ARD Audiothek podcasts and subscribe in any podcatcher—no app needed. Easy setup, W3C-validated, fully customizable.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define feed items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get overview page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract links",
+      "type": "Process"
+    },
+    {
+      "name": "Remove duplicate links",
+      "type": "Process"
+    },
+    {
+      "name": "Split out lists",
+      "type": "Process"
+    },
+    {
+      "name": "Get episode page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract script",
+      "type": "Process"
+    },
+    {
+      "name": "Feed",
+      "type": "Trigger"
+    },
+    {
+      "name": "Serve feed",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

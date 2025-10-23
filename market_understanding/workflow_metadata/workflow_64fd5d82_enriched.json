@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/64fd5d82",
+  "workflow_id": "64fd5d82",
+  "workflow_id_display": "64fd5d82",
+  "workflow_name": "Generate and Publish SEO-Optimized Blog Posts to Blogger with OpenAI & DALL-E",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and publish SEO-optimized, 10,000+ word Blogger posts from Telegram—complete with AI-generated text, custom images, and instant links.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "🟢 Start: Telegram Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "🧷 Embed Image in HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🖼️ Generate Blog Image",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 AI Model: Metadata Generator",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 AI Model: Article Writer",
+      "type": "Process"
+    },
+    {
+      "name": "☁️ Upload Image to Imgur",
+      "type": "Data Input"
+    },
+    {
+      "name": "🔑 Get Blogger Profile",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧠 Generate Blog Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "📄 Extract Metadata Structure",
+      "type": "Process"
+    },
+    {
+      "name": "✍️ Write Full Blog Content",
+      "type": "Process"
+    },
+    {
+      "name": "🔗 Create Custom Blog Post URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🚀 Publish Article to Blogger",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/72c8492f",
+  "workflow_id": "72c8492f",
+  "workflow_id_display": "72c8492f",
+  "workflow_name": "Generate Website Screenshots On-Demand with ScreenshotMachine API via Webhooks",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api",
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly generate secure, high-quality website screenshots via webhook in n8n. Perfect for developers and marketers. Block unsafe URLs. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, webhook, if"
+  ],
+  "nodes": [
+    {
+      "name": "Receive URL Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Resolve URL (HEAD Request)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Validate URL for SSRF",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take Screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond with Screenshot Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Validation Error",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

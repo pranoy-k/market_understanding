@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/74cfcdc9",
+  "workflow_id": "74cfcdc9",
+  "workflow_id_display": "74cfcdc9",
+  "workflow_name": "Parse PDF with LlamaParse and save to Airtable",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Airtable, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate invoice processing with n8n and LlamaParse—capture, parse, and store billing info seamlessly. Boost efficiency and accuracy. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Invoice",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Line Item",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Upload File",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Extract Line Items",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process Line Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

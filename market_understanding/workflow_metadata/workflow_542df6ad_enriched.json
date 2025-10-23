@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/542df6ad",
+  "workflow_id": "542df6ad",
+  "workflow_id_display": "542df6ad",
+  "workflow_name": "Automated Email Marketing Campaign Workflow",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate large-scale personalized email campaigns with n8n and AI. Generate unique content, boost engagement, and streamline outreach. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start Campaign Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Status to \"Sent\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Personalized Email",
+      "type": "Process"
+    },
+    {
+      "name": "Update Recipient Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Recipient Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process Recipients",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Random Delay",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9697dad8",
+  "workflow_id": "9697dad8",
+  "workflow_id_display": "9697dad8",
+  "workflow_name": "CrunchBase Competitor Intelligence Tracker",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Gain a competitive edge with automated tracking of competitor funding, leadership changes, and product launches using CrunchBase data. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, clickUp"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Competitor Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Crunchbase Slug",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Crunchbase Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Review Task in ClickUp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

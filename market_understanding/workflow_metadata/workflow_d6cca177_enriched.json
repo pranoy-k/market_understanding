@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d6cca177",
+  "workflow_id": "d6cca177",
+  "workflow_id_display": "d6cca177",
+  "workflow_name": "Handling Appointment Leads and Follow-up With Twilio, Cal.com and AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "OpenAI, SMS",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Every 24hrs",
+      "type": "Trigger"
+    },
+    {
+      "name": "Twilio Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reschedule Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Find Follow-Up Candidates",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Follow-Up Count and Date",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create/Update Session",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Chat Session",
+      "type": "Data Output"
+    },
+    {
+      "name": "User Request STOP",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Follow Up Message",
+      "type": "Process"
+    },
+    {
+      "name": "Get Availability",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Existing Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Find Existing Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cancel Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Appointment Scheduling Agent1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

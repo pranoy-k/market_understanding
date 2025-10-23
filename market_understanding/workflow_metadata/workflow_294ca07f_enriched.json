@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/294ca07f",
+  "workflow_id": "294ca07f",
+  "workflow_id_display": "294ca07f",
+  "workflow_name": "Google Sheets Duplication & Enrichment Automation",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Amit Mehta",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Sheets duplication and data enrichment. Replicate multi-sheet templates with consistent formatting—streamline setup and save time. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Spreadsheet1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create New Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

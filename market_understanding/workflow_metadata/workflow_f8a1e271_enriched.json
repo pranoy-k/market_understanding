@@ -1,0 +1,619 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f8a1e271",
+  "workflow_id": "f8a1e271",
+  "workflow_id_display": "f8a1e271",
+  "workflow_name": "Realtime Notion Todoist 2-way Sync with Redis",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "174",
+  "tools_integrations": "Notion",
+  "tags": [
+    "redis",
+    "Scheduled"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Manage all your Notion, Todoist, and calendar tasks in one place with real-time sync and daily consistency checks. Simplify workflow—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with todoist, redis, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion-Todoist Sync Setup Helper",
+      "type": "Trigger"
+    },
+    {
+      "name": "Todoist Webhook Setup Helper",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Todoist trigger reference",
+      "type": "Process"
+    },
+    {
+      "name": "Notion trigger reference",
+      "type": "Process"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pick Todoist Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add project ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Batching Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get mapped item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get mapped item1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare summary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare summary data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare summary data2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map summary fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get mapped item2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get todoist ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get todoist ID1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set tries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update tries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set tries1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update tries1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set tries2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update tries2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get sections",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Notion Databases",
+      "type": "Process"
+    },
+    {
+      "name": "Prep Dropdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Dropdown1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Choose Notion Database",
+      "type": "Data Input"
+    },
+    {
+      "name": "Choose Todoist Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate security token",
+      "type": "Process"
+    },
+    {
+      "name": "Store variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Redirect to Auth Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "OAuth redirect",
+      "type": "Trigger"
+    },
+    {
+      "name": "Exchange Tokens",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond with success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Notion Database ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Todoist Project ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return config JSON",
+      "type": "Data Input"
+    },
+    {
+      "name": "Todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get Todoist Task",
+      "type": "Process"
+    },
+    {
+      "name": "Store Todoist ID",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Incomplete in Todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Completed in Todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Task in Todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Notion Task",
+      "type": "Process"
+    },
+    {
+      "name": "Update Task in Todoist",
+      "type": "Data Input"
+    },
+    {
+      "name": "Map Notion to Todoist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update task in Todoist before closing",
+      "type": "Data Input"
+    },
+    {
+      "name": "Map Notion to Todoist1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle empty dates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle empty dates1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle empty dates2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create task in Todoist",
+      "type": "Data Input"
+    },
+    {
+      "name": "Lock Todoist ID",
+      "type": "Process"
+    },
+    {
+      "name": "Generate UUID",
+      "type": "Process"
+    },
+    {
+      "name": "Update section (Sync API)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Status changed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Lock Todoist ID1",
+      "type": "Process"
+    },
+    {
+      "name": "Lock Todoist ID2",
+      "type": "Process"
+    },
+    {
+      "name": "Update task in Todoist",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out status changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Todoist to Notion",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to HTML Table",
+      "type": "Process"
+    },
+    {
+      "name": "Generate email body",
+      "type": "Process"
+    },
+    {
+      "name": "Merge summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Differences exist1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Requires completion change1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create task in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Update task in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Done in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Obsolete in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as In Progress in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Only continue if not locked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Lock Notion ID",
+      "type": "Process"
+    },
+    {
+      "name": "Check if Todoist ID is locked",
+      "type": "Process"
+    },
+    {
+      "name": "Update Description in Todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Description has changed in Todoist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Description in Todoist1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate UUID1",
+      "type": "Process"
+    },
+    {
+      "name": "Update section (Sync API)1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Backlog Section ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if creating flag exists1",
+      "type": "Process"
+    },
+    {
+      "name": "Only continue if flag does not exist1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set creating flag1",
+      "type": "Process"
+    },
+    {
+      "name": "Neither focussed nor planned1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark as Focussed in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get Notion Task2",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Task found1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data1",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data2",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data3",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data4",
+      "type": "Process"
+    },
+    {
+      "name": "Map Todoist to Notion1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Todoist Task1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Notion Task1",
+      "type": "Process"
+    },
+    {
+      "name": "Requires completion change",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Differences exist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only continue if not locked1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if Notion ID is locked",
+      "type": "Process"
+    },
+    {
+      "name": "Get Notion task",
+      "type": "Process"
+    },
+    {
+      "name": "Check if creating flag exists",
+      "type": "Process"
+    },
+    {
+      "name": "Only continue if flag does not exist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set creating flag",
+      "type": "Process"
+    },
+    {
+      "name": "Todoist ID exists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status changed but not empty",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status is not Done",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Store Todoist ID1",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Completed in Todoist1",
+      "type": "Process"
+    },
+    {
+      "name": "Update task in Todoist1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mark as Incomplete in Todoist1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate UUID2",
+      "type": "Process"
+    },
+    {
+      "name": "Update section (Sync API)2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Lock Todoist ID4",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Task in Todoist2",
+      "type": "Process"
+    },
+    {
+      "name": "Map Notion to Todoist2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Todoist Task2",
+      "type": "Process"
+    },
+    {
+      "name": "Create task in Todoist1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execution Data5",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data6",
+      "type": "Process"
+    },
+    {
+      "name": "Todoist Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Split out Notion changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow1",
+      "type": "Process"
+    },
+    {
+      "name": "Due date empty",
+      "type": "Data Processing"
+    },
+    {
+      "name": "End here",
+      "type": "Process"
+    },
+    {
+      "name": "Turn Markdown into Notion Blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle each block separately",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Notion Block",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Update section (Sync API)",
+    "Update section (Sync API)1",
+    "Update section (Sync API)2"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/663e7f9e",
+  "workflow_id": "663e7f9e",
+  "workflow_id_display": "663e7f9e",
+  "workflow_name": "Transfer JSON data to CSV file",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "CSV, Google Analytics",
+  "tags": [
+    "json",
+    "csv"
+  ],
+  "author_name": "rrezart",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily convert JSON to CSV for fast data export. Simplify reporting, analytics, and sharing with automated, hassle-free transformation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with moveBinaryData, readBinaryFile, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "read json file",
+      "type": "Data Output"
+    },
+    {
+      "name": "move binary data 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ddefae2a",
+  "workflow_id": "ddefae2a",
+  "workflow_id_display": "ddefae2a",
+  "workflow_name": "Auto document your n8n workflows",
+  "category": "Content & Documentation",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "PDF",
+  "tags": [
+    "json"
+  ],
+  "author_name": "Marvin Wu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate n8n workflow documentation from JSON with AI-generated intros, trigger details, and setup steps. Save time and boost team consistency—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create input to open ai",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

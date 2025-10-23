@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/417c802c",
+  "workflow_id": "417c802c",
+  "workflow_id_display": "417c802c",
+  "workflow_name": "Automatically Generate Burn-in Video Captions with json2video",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Emmanuel Bernard",
+  "author_profile_url": "https://n8n.io/creators/n8ninja/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically add accurate, customizable captions to your videos with Json2Video. Boost accessibility, SEO, and engagement—fast and effortlessly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "json2video - Add Captions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Handle Error",
+      "type": "Process"
+    },
+    {
+      "name": "json2video - Get Status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

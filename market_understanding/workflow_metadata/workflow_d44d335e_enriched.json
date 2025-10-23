@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d44d335e",
+  "workflow_id": "d44d335e",
+  "workflow_id_display": "Data Processing",
+  "workflow_name": "Activate and deactivate workflows on schedule using native n8n API",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Olek",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily schedule activation and deactivation of n8n workflows using the n8n API. Customize timing, set Workflow ID, and enhance automation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, set, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Deactivate at 20:00 daily",
+      "type": "Trigger"
+    },
+    {
+      "name": "Activate at 08:00 daily",
+      "type": "Trigger"
+    },
+    {
+      "name": "Workflow ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "n8n Activate",
+      "type": "Process"
+    },
+    {
+      "name": "n8n Deactivate",
+      "type": "Process"
+    },
+    {
+      "name": "Merge in Workflow ID for deactivation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge in Workflow ID for activation",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,177 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de229e7e",
+  "workflow_id": "de229e7e",
+  "workflow_id_display": "de229e7e",
+  "workflow_name": "N8N Advanced URL Parsing and Shortening Workflow - Switchy.io Integration",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "47",
+  "tools_integrations": "API, Facebook",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate URL parsing and shortening with advanced metadata extraction, screenshot capture, and Switchy API integration. Boost link management—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse headers",
+      "type": "Process"
+    },
+    {
+      "name": "API Auth",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Method 1 - META",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Method 2 - META",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Method 3 - META1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Shortened URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Norton",
+      "type": "Data Processing"
+    },
+    {
+      "name": "bitdefender",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set unsafe",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Method 4 - META",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Headers",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenGraph API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Meta tags Scraper - dub.sh",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "CREATE",
+      "type": "Data Input"
+    },
+    {
+      "name": "UPDATE",
+      "type": "Data Input"
+    },
+    {
+      "name": "Final Meta",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Host Screenshot",
+      "type": "Process"
+    },
+    {
+      "name": "Host OGImage",
+      "type": "Process"
+    },
+    {
+      "name": "Host Favicon",
+      "type": "Process"
+    },
+    {
+      "name": "Download final OG",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Favicon",
+      "type": "Data Input"
+    },
+    {
+      "name": "Method 1 - SCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Method 2 - SCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Final SCR",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Scan URL (Community)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Reviews (Community)",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "(Fraud Check)",
+      "type": "Data Input"
+    },
+    {
+      "name": "(Others)",
+      "type": "Data Input"
+    },
+    {
+      "name": "PhishTank",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "API Auth",
+    "OpenGraph API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

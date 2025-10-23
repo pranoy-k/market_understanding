@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5b80673f",
+  "workflow_id": "5b80673f",
+  "workflow_id_display": "5b80673f",
+  "workflow_name": "Upload File to SharePoint Using Microsoft Graph API",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Greg Evseev",
+  "author_profile_url": "https://n8n.io/creators/greg/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate photo uploads to SharePoint with n8n using Microsoft Graph API. Secure, customizable workflow—perfect for IT admins & developers.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set config (sensitive data)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set destination",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload photo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get photo (for testing purposes)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Authentication",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

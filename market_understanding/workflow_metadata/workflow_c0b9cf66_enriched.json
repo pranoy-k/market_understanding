@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c0b9cf66",
+  "workflow_id": "c0b9cf66",
+  "workflow_id_display": "c0b9cf66",
+  "workflow_name": "Build Custom Workflows Automatically with GPT-4o, RAG, and Web Search",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Franz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Instantly turn chat requests into ready-to-import n8n workflow templates with AI agents and web search. Perfect for no-code builders—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Preferences",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Train Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to JSON File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

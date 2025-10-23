@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/83a3bbb1",
+  "workflow_id": "83a3bbb1",
+  "workflow_id_display": "83a3bbb1",
+  "workflow_name": "Check for Bargain Flights and get notified using Amadeus and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, Email, Gmail",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Jay Hartley",
+  "author_profile_url": "https://n8n.io/creators/jay/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get daily flight deals matching your itinerary and budget via the Amadeus API. Receive instant email alerts; easy setup with customizable search options.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "FromTo",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CarrierNameLookup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Dates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge & Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Under Price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Amadeus Flight Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Carrier Codes",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

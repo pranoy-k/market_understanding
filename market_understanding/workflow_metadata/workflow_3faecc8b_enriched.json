@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3faecc8b",
+  "workflow_id": "3faecc8b",
+  "workflow_id_display": "3faecc8b",
+  "workflow_name": "Personalized LinkedIn Responses with OpenAI GPT & Notion-based Routing",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "LinkedIn, Notion, OpenAI",
+  "tags": [
+    "linkedin🤖 openai"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn message replies with AI-powered, context-aware responses. Integrate with Notion and UniPile for accuracy, control, and easy setup. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with aggregate, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Isolate parent workflow data for AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format DB data for AI Context",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Request Router Directory Database",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate DB objects into one item",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

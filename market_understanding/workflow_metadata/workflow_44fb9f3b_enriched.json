@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/44fb9f3b",
+  "workflow_id": "44fb9f3b",
+  "workflow_id_display": "44fb9f3b",
+  "workflow_name": "Manage incident reporting in PagerDuty and CrateDB",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically monitor factory operations with real-time sensor data logging, instant incident reporting, and staff alerts when machines overheat. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Data from factory sensors",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set sensor data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set incident info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data enrichment (°C to °F)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ingest machine data",
+      "type": "Process"
+    },
+    {
+      "name": "Ingest incident data",
+      "type": "Process"
+    },
+    {
+      "name": "Create an incident",
+      "type": "Process"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

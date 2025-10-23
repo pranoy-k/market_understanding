@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4889f552",
+  "workflow_id": "4889f552",
+  "workflow_id_display": "4889f552",
+  "workflow_name": "Telegram Bot with Menu-Driven Commands",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Daniel Jimenez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Build Telegram bots with menu-driven, command-based interactions—no AI required. Enjoy precise control, easy customization, and guided user input. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, noOp, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Temp to Initiate Static Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clear State",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set waitingForContent1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set waitingForContent2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare IF Value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set waitingForContent3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Command1 processing",
+      "type": "Process"
+    },
+    {
+      "name": "Command2 processing",
+      "type": "Process"
+    },
+    {
+      "name": "Command3 processing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

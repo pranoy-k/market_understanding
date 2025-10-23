@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c140f445",
+  "workflow_id": "c140f445",
+  "workflow_id_display": "c140f445",
+  "workflow_name": "Update HubSpot contacts with Zendesk tickets",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Zendesk tickets with HubSpot contacts every 5 minutes. Ensure accurate, seamless updates and integration. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, zendesk, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Only keep needed data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get user data of Ticket requester",
+      "type": "Process"
+    },
+    {
+      "name": "Add user data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update existing ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Update Zendesk ticket with External Id",
+      "type": "Process"
+    },
+    {
+      "name": "Get tickets updated after last execution",
+      "type": "Process"
+    },
+    {
+      "name": "Every 5 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create new Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Update External Id in Zendesk for contact",
+      "type": "Process"
+    },
+    {
+      "name": "Create or update contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

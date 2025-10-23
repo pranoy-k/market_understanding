@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        50,
+        200
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Dropbox",
+      "type": "n8n-nodes-base.dropbox",
+      "position": [
+        250,
+        200
+      ],
+      "parameters": {
+        "path": "/n8n",
+        "resource": "folder"
+      },
+      "credentials": {
+        "dropboxApi": "dropbox_accesstoken"
+      },
+      "typeVersion": 1,
+      "id": "82c9efdefd4e3dab"
+    },
+    {
+      "name": "Dropbox1",
+      "type": "n8n-nodes-base.dropbox",
+      "position": [
+        650,
+        200
+      ],
+      "parameters": {
+        "path": "/n8n/file.png",
+        "binaryData": true
+      },
+      "credentials": {
+        "dropboxApi": "dropbox_accesstoken"
+      },
+      "typeVersion": 1,
+      "id": "fbc16178cefd43ec"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        450,
+        200
+      ],
+      "parameters": {
+        "url": "https://n8n.io/n8n-logo.png",
+        "options": {},
+        "responseFormat": "file"
+      },
+      "typeVersion": 1,
+      "id": "c1c178a01f6f445f"
+    },
+    {
+      "name": "Dropbox2",
+      "type": "n8n-nodes-base.dropbox",
+      "position": [
+        850,
+        200
+      ],
+      "parameters": {
+        "path": "/n8n",
+        "resource": "folder",
+        "operation": "list"
+      },
+      "credentials": {
+        "dropboxApi": "dropbox_accesstoken"
+      },
+      "typeVersion": 1,
+      "id": "e63f805ed0565cfe"
+    }
+  ],
+  "connections": {
+    "Dropbox": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dropbox1": {
+      "main": [
+        [
+          {
+            "node": "Dropbox2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Dropbox1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Dropbox",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "b88c270dc5e0390a",
+  "name": "Manage folders automatically in Dropbox",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4491f538",
+  "workflow_id": "4491f538",
+  "workflow_id_display": "4491f538",
+  "workflow_name": "KB Tool - Confluence Knowledge Base",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Return Tool Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Confluence",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

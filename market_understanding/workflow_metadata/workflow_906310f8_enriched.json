@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/906310f8",
+  "workflow_id": "906310f8",
+  "workflow_id_display": "906310f8",
+  "workflow_name": "Daily Startup Intelligence: Crunchbase Updates to Email Digest with GPT",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate your startup research with AI-powered CrunchBase updates sent to your inbox. Get targeted company insights and real-time market intelligence daily.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Manual Test",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Company Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Crunchbase Updates",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarizer Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

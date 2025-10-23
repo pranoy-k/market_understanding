@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6a977854",
+  "workflow_id": "6a977854",
+  "workflow_id_display": "6a977854",
+  "workflow_name": "Create OpenAI-Compatible API Using GitHub Models for Free AI Access",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, GitHub, OpenAI",
+  "tags": [
+    "api🤖 openai"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with aggregate, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "n8n Webhooks",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Github Models",
+      "type": "Data Input"
+    },
+    {
+      "name": "Github Chat Completions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Chat Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Models Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Powered By Github Models",
+      "type": "Process"
+    },
+    {
+      "name": "GET models",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST ChatCompletions",
+      "type": "Trigger"
+    },
+    {
+      "name": "Agent Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

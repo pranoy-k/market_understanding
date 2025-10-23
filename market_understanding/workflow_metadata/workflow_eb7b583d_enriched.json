@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb7b583d",
+  "workflow_id": "eb7b583d",
+  "workflow_id_display": "eb7b583d",
+  "workflow_name": "Summarize your emails with A.I. (via Openrouter) and send to Line messenger (1)",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Create email summaries using AI via Openrouter and send them to Line messenger.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Send email to A.I. to summarize",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send summarized content to messenger",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

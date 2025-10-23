@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e46fc5ca",
+  "workflow_id": "e46fc5ca",
+  "workflow_id_display": "e46fc5ca",
+  "workflow_name": "Automate LinkedIn Posts with Claude AI, DALL-E Images & Google Sheets Approval",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Usman Liaqat",
+  "author_profile_url": "https://n8n.io/creators/usmanliaqat/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your LinkedIn content strategy with daily AI-generated posts, custom images, Google Sheets review, and scheduled publishing. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule 2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Data for Instagram API",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Past Ideas",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Image",
+      "type": "Process"
+    },
+    {
+      "name": "Save Post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Ready Posts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Idea Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Research",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Join Ideas",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pick One",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Instagram Media Container",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Post to Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Style",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Post",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Prepare Data for Instagram API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

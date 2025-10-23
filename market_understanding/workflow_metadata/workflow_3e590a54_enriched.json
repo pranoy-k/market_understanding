@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3e590a54",
+  "workflow_id": "3e590a54",
+  "workflow_id_display": "3e590a54",
+  "workflow_name": "Generate Captions from Autocomplete Ideas using Dumpling AI + GPT-4o",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate fresh, AI-powered social media captions from trending Google searches—perfect for content creators and marketers. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Run Every Day at 12 PM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Suggestions into Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Caption from Suggestion (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Get Search Keywords from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Keyword & Generated Caption to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Autocomplete Suggestions (Dumpling AI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Through Each Autocomplete Suggestion",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

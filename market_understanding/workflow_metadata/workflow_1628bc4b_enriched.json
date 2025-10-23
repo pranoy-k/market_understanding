@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1628bc4b",
+  "workflow_id": "1628bc4b",
+  "workflow_id_display": "1628bc4b",
+  "workflow_name": "Sync GitHub Workflows to n8n After Pull Request Merges",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Bao Duy Nguyen",
+  "author_profile_url": "https://n8n.io/creators/duynb/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate n8n workflow updates from GitHub merges. Streamline CI/CD, reduce errors, and boost team efficiency. Learn how to simplify automation now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger - When there is new pull request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check if trigger event is pull request merged",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Local Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decode workflow content to json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decode workflow content to json1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch merged commit details via GitHub API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get files changes details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter modified workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter created workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch workflow content from Git",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch workflow content from Git1",
+      "type": "Process"
+    },
+    {
+      "name": "Update workflow in n8n",
+      "type": "Process"
+    },
+    {
+      "name": "Create new workflow in n8n",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Fetch merged commit details via GitHub API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

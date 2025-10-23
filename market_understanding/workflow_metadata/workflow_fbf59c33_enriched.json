@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fbf59c33",
+  "workflow_id": "fbf59c33",
+  "workflow_id_display": "fbf59c33",
+  "workflow_name": "Research AI Agent Team with auto citations using OpenRouter and Perplexity",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Derek Cheung",
+  "author_profile_url": "https://n8n.io/creators/derekcheungsa/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate well-researched, cited articles on any topic with an AI-powered workflow. Customize structure and tone—learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, toolWorkflow, agent"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ghost",
+      "type": "Process"
+    },
+    {
+      "name": "Create title",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity_tool",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity_tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Research Leader 🔬",
+      "type": "Process"
+    },
+    {
+      "name": "Delegate to Research Assistants",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Project Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Editor",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity_tool2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Perplexity API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

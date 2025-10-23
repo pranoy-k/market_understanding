@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9bf6928",
+  "workflow_id": "b9bf6928",
+  "workflow_id_display": "b9bf6928",
+  "workflow_name": "Document-Based Chatbot with Memory using OpenAI, Pinecone and Google Drive",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "20",
+  "tools_integrations": "Airtable, Google Drive, OpenAI, PDF",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Sally",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, aggregate, toolVectorStore"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking 'Test Workflow' button",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Save Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Memories",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Content",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Answer questions with a vector store",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6cdd5b4a",
+  "workflow_id": "6cdd5b4a",
+  "workflow_id_display": "6cdd5b4a",
+  "workflow_name": "AI_ Ask questions about any data source (using the n8n workflow retriever)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Example Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Workflow Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieval QA Chain2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e349d7d3",
+  "workflow_id": "e349d7d3",
+  "workflow_id_display": "e349d7d3",
+  "workflow_name": "Get company data and store it in Airtable",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect company logos, icons, and data, then store them in Airtable or any database. Easily customizable workflow—learn more inside!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, Brandfetch"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Brandfetch",
+      "type": "Process"
+    },
+    {
+      "name": "Brandfetch1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

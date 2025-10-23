@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2dea2e99",
+  "workflow_id": "2dea2e99",
+  "workflow_id_display": "2dea2e99",
+  "workflow_name": "Push and update files in GitHub",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Git operations with n8n: retrieve, edit, commit, push, and sync files to GitHub easily. Boost workflow efficiency—learn more now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GitHub push edited file",
+      "type": "Process"
+    },
+    {
+      "name": "Update README and add new file",
+      "type": "Process"
+    },
+    {
+      "name": "Add files",
+      "type": "Process"
+    },
+    {
+      "name": "Commit",
+      "type": "Process"
+    },
+    {
+      "name": "Push",
+      "type": "Process"
+    },
+    {
+      "name": "Pull",
+      "type": "Process"
+    },
+    {
+      "name": "GitHub get file",
+      "type": "Process"
+    },
+    {
+      "name": "Decode file",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

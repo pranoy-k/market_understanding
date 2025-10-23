@@ -1,0 +1,135 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1a9c44a4",
+  "workflow_id": "1a9c44a4",
+  "workflow_id_display": "1a9c44a4",
+  "workflow_name": "Find Top Keywords for Youtube And Google and Store them in NocoDB",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "28",
+  "tools_integrations": "YouTube",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Shannon Atkinson",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate keyword research for Google & YouTube. Filter by search volume & CPC, manage data in NocoDB, and power your SEO strategy with actionable insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gen Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NocoDB",
+      "type": "Process"
+    },
+    {
+      "name": "Second Order Google Autocomplete Keywords",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Search Volume",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Google Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YouTube Search Volume",
+      "type": "Data Input"
+    },
+    {
+      "name": "Second Order YouTube Autocomplete Keywords",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out YT Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YT Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Second Tier YT Keyword Data",
+      "type": "Process"
+    },
+    {
+      "name": "Add Second Tier G Keyword Data",
+      "type": "Process"
+    },
+    {
+      "name": "Format G Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format YT Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bulk Import G Monthly Search Volume",
+      "type": "Data Input"
+    },
+    {
+      "name": "Bulk Import YT Monthly Search Volume",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check for Google Keyword",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check for YT Keyword",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over YT Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Second Tier G Keyword Data",
+      "type": "Process"
+    },
+    {
+      "name": "Update Second Tier YT Keyword Data",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Google Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine G Keywords and Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine YT Keywords and Filter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

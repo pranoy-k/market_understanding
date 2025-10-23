@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8aac6f6",
+  "workflow_id": "c8aac6f6",
+  "workflow_id_display": "c8aac6f6",
+  "workflow_name": "Tesla 15min Indicators Tool (Short-Term AI Technical Analysis)",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Analyze Tesla (TSLA) 15-min charts with 6 indicators and AI-powered insights for intraday trading. Seamless integration for rapid decision-making. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla 15min Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "15min Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

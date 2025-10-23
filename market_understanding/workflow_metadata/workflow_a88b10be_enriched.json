@@ -1,0 +1,163 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a88b10be",
+  "workflow_id": "a88b10be",
+  "workflow_id_display": "a88b10be",
+  "workflow_name": "WhatsApp Expense Tracker with PostgreSQL Database & AI-Powered Reports",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "38",
+  "tools_integrations": "PostgreSQL, WhatsApp",
+  "tags": [
+    "whatsapp🗄",
+    "Scheduled"
+  ],
+  "author_name": "Roshan Ramani",
+  "author_profile_url": "https://n8n.io/creators/rawsun007/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track finances via WhatsApp with AI—auto-log transactions, get instant confirmations, and generate daily or custom financial reports. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, scheduleTrigger, whatsAppTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Daily 8AM Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Incoming WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Parse & Validate Transaction",
+      "type": "Process"
+    },
+    {
+      "name": "Date and time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres2",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "SQL Query Builder",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Build Daily Report Query",
+      "type": "Process"
+    },
+    {
+      "name": "Transform Query for Postgres",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Daily Report Query",
+      "type": "Process"
+    },
+    {
+      "name": "Build Daily Financial Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Transform Custom Query for Postgres",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Custom Report Query",
+      "type": "Data Output"
+    },
+    {
+      "name": "Format Custom Query Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Report to CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Build Custom Financial Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Message Intent Classifier",
+      "type": "Process"
+    },
+    {
+      "name": "Split Transaction Lines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Transaction JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate Transaction Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert Transaction into DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "Build Confirmation Message",
+      "type": "Process"
+    },
+    {
+      "name": "simple conversation",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

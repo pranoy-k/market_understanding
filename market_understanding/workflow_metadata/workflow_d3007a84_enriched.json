@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d3007a84",
+  "workflow_id": "d3007a84",
+  "workflow_id_display": "d3007a84",
+  "workflow_name": "Redis Locking for Concurrent Task Handling",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [
+    "redis"
+  ],
+  "author_name": "Geoffrey Saxena",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Prevent duplicate or overlapping n8n workflow runs using Redis locks. Ensure one-at-a-time processing, avoid data conflicts, and streamline automation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, set, redis"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Incoming Webhook Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Webhook Data & Declare lockValue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Redis Lock",
+      "type": "Process"
+    },
+    {
+      "name": "Acquire Redis Lock",
+      "type": "Process"
+    },
+    {
+      "name": "Discard Redis Lock",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

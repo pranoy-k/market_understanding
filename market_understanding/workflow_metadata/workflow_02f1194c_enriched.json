@@ -1,0 +1,117 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/02f1194c",
+  "workflow_id": "02f1194c",
+  "workflow_id_display": "02f1194c",
+  "workflow_name": "Find Content Gaps in Competitors' Websites with InfraNodus GraphRAG for SEO",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "InfraNodus",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Identify content gaps your competitors miss with this workflow. Enrich Google Sheets, visualize insights with InfraNodus, and boost your SEO strategy. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, formTrigger, googleDocs"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Read a Google Sheets File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheets with Content Insights",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get the content from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus GraphRAG Content Enhancer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus AI Advice",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus Question Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perplexity Research",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Wait to avoid API overload",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

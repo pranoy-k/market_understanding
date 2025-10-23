@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2bb898bb",
+  "workflow_id": "2bb898bb",
+  "workflow_id_display": "2bb898bb",
+  "workflow_name": "Scrape & Analyse Meta Ad Library Image Ads with Apify and OpenAI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Facebook, Google Drive, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Daniel Setzermann",
+  "author_profile_url": "https://n8n.io/creators/danielsetzermann/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Meta image ad analysis with AI: scrape, extract key insights, save images to Google Drive, and organize results in Google Sheets. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass relevant Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Runtime in Days",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save Image to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Store Data in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Clean Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Meta Ad Library with Apify",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sort by Reach or Days Running",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter only Image Ads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Images to Analyze",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze Image Contents",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/850da560",
+  "workflow_id": "850da560",
+  "workflow_id_display": "850da560",
+  "workflow_name": "Generate Guerrilla Marketing Campaign Plans with AI Swarm Intelligence",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sina",
+  "author_profile_url": "https://n8n.io/creators/sina2266/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Turbocharge guerrilla marketing with AI agents—instant campaign ideas, KPIs, budget, and more. Pitch-ready plans for founders, marketers, and creators. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, informationExtractor"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input Parser",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Introduction Writer",
+      "type": "Process"
+    },
+    {
+      "name": "Campaign Definition Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Campaign Objectives Specialist",
+      "type": "Process"
+    },
+    {
+      "name": "Current Situation Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Target Persona Researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Key Messaging Specialist",
+      "type": "Process"
+    },
+    {
+      "name": "Main Strategy Architect",
+      "type": "Process"
+    },
+    {
+      "name": "guerrilla Tactics Designer",
+      "type": "Process"
+    },
+    {
+      "name": "Channel Strategy Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Budget Planning Specialist",
+      "type": "Process"
+    },
+    {
+      "name": "Monitoring and KPIs Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Risk Management Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Do's and Don'ts Advisor",
+      "type": "Process"
+    },
+    {
+      "name": "Final To-Do List Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Post-Campaign Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Market Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Idea Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge failed results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "combine outputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge successful result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine outputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results 1/2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results 2/2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Result organizer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final result",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

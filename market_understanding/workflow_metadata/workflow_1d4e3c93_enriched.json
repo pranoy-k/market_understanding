@@ -1,0 +1,174 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1d4e3c93",
+  "workflow_id": "1d4e3c93",
+  "workflow_id_display": "1d4e3c93",
+  "workflow_name": "Spotify to YouTube Playlist Synchronization",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Lugnicca",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync your Spotify playlist to YouTube with smart video matching, automatic updates, and reliable Supabase backups. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "Every month",
+      "type": "Trigger"
+    },
+    {
+      "name": "Every day at midnight",
+      "type": "Trigger"
+    },
+    {
+      "name": "Every hour",
+      "type": "Trigger"
+    },
+    {
+      "name": "Every day at noon + 1mn",
+      "type": "Trigger"
+    },
+    {
+      "name": "Every day at noon",
+      "type": "Trigger"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "variables2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "variables1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Playlist items to be deleted",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check for deleted videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "variables3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "variables4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all musics",
+      "type": "Process"
+    },
+    {
+      "name": "Update to_delete to true",
+      "type": "Process"
+    },
+    {
+      "name": "Add music",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get all musics not in youtube playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Search video",
+      "type": "Process"
+    },
+    {
+      "name": "Get video duration",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add music to playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Add youtube id to row",
+      "type": "Process"
+    },
+    {
+      "name": "Set youtube id to NOTFOUND if no matching",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get playlist items",
+      "type": "Process"
+    },
+    {
+      "name": "Get all musics that should be in playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Remove video from playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Set youtube_video_id to null",
+      "type": "Process"
+    },
+    {
+      "name": "Get all musics to be deleted",
+      "type": "Process"
+    },
+    {
+      "name": "Delete music",
+      "type": "Process"
+    },
+    {
+      "name": "Reset NOTFOUND id to NULL",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

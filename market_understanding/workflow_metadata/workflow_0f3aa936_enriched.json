@@ -1,0 +1,153 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f3aa936",
+  "workflow_id": "0f3aa936",
+  "workflow_id_display": "0f3aa936",
+  "workflow_name": "Scheduled Multi-Photo Facebook Posts with Cloudinary from Windows Directory",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Facebook",
+  "tags": [
+    "facebook",
+    "Scheduled"
+  ],
+  "author_name": "SalmonRK-AI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate multi-photo Facebook posts from a Windows directory with n8n. Easily manage images, captions, and hashtags. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "ImgPath",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ImgPath2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ImagePath",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hastag",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move image to Posted date folder",
+      "type": "Process"
+    },
+    {
+      "name": "Description1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Facebook Graph API - Photo",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "upload to file server1",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Multi-Photo1",
+      "type": "Process"
+    },
+    {
+      "name": "Image3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hastag2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Description2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File5",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move image to Posted date folder2",
+      "type": "Process"
+    },
+    {
+      "name": "Caption",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PreparePost",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MoveFile",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API - Photo"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

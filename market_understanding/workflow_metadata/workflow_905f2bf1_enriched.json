@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/905f2bf1",
+  "workflow_id": "905f2bf1",
+  "workflow_id_display": "905f2bf1",
+  "workflow_name": "Scrape business leads from Google Maps using OpenAI and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Google Maps data extraction for fast, accurate lead generation. Boost efficiency with AI, easy setup, and structured Google Sheets output. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with aggregate, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger - When User Sends Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger - On Subworkflow Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "GPT-4o - Generate & Process Requests",
+      "type": "Process"
+    },
+    {
+      "name": "Save Extracted Data to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Website Data to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent - Lead Collection",
+      "type": "Process"
+    },
+    {
+      "name": "Memory - Track Recent Context",
+      "type": "Process"
+    },
+    {
+      "name": "Tool - Scrape Google Maps Business Data",
+      "type": "Process"
+    },
+    {
+      "name": "Fallback - Enrich with Google Search",
+      "type": "Process"
+    },
+    {
+      "name": "Tool - Crawl Business Website",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape Google Maps (via Apify)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Business Listings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Website Content (via Apify)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Website Content",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

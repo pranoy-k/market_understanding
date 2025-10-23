@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ff38dede",
+  "workflow_id": "ff38dede",
+  "workflow_id_display": "ff38dede",
+  "workflow_name": "Validate emails in a table using Mailcheck",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Airtable, Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily validate emails stored in your table with this workflow using Mailcheck and Airtable nodes. Streamline accuracy—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, airtable, mailcheck"
+  ],
+  "nodes": [
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mailcheck",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

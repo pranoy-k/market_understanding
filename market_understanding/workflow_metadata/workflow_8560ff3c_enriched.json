@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8560ff3c",
+  "workflow_id": "8560ff3c",
+  "workflow_id_display": "8560ff3c",
+  "workflow_name": "Protect PDF with the password using ConvertAPI",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "ConvertAPI",
+  "author_profile_url": "https://n8n.io/creators/convertapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly secure PDFs by auto-downloading, password-protecting, and saving files locally. Customize with ConvertAPI for flexible, reliable protection.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Write Result File to Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download PDF File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Protect File with Password",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

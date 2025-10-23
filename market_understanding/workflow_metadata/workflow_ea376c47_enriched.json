@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea376c47",
+  "workflow_id": "ea376c47",
+  "workflow_id_display": "ea376c47",
+  "workflow_name": "UTM Link Creator & QR Code Generator with Scheduled Google Analytics Reports",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Excel, Google Analytics, Google Sheets, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Marketing Canopy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automatically collects Google Analytics data on a schedule, processes it through AI for deep insights and trend analysis, then saves the results to a structured database or spreadsheet. It enables data-driven decision making by transforming raw analytics into actionable intelligence, complete with AI-generated summaries and recommendations.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Google Analytics Report To Marketing Manager",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create UTM Link & Send To Database",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set UTM Parameters For Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Submit UTM Link To Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Analytics",
+      "type": "Process"
+    },
+    {
+      "name": "Create UTM Link With Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create QR Code With Submitted QR Link",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Analytics Data Analysis Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

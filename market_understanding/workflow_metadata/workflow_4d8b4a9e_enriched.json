@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4d8b4a9e",
+  "workflow_id": "4d8b4a9e",
+  "workflow_id_display": "4d8b4a9e",
+  "workflow_name": "Simple Google indexing Workflow in N8N",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Joachim Brindeau",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Indexing for your website—extract sitemap URLs, submit via Indexing API, and boost SEO visibility. Fast setup and error handling. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "sitemap_parse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "url_set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "sitemap_set",
+      "type": "Data Input"
+    },
+    {
+      "name": "sitemap_convert",
+      "type": "Process"
+    },
+    {
+      "name": "url_index",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fdc39804",
+  "workflow_id": "fdc39804",
+  "workflow_id_display": "fdc39804",
+  "workflow_name": "Send Daily Meetings in Google Calendar to Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Emad",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get a daily summary of your meetings each morning via Telegram. Integrates Google Calendar and n8n—ideal for busy professionals and students. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, googleCalendar, function"
+  ],
+  "nodes": [
+    {
+      "name": "Every morning @ 6",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get meetings for today",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

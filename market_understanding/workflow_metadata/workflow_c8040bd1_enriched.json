@@ -1,0 +1,104 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8040bd1",
+  "workflow_id": "c8040bd1",
+  "workflow_id_display": "c8040bd1",
+  "workflow_name": "Create Daily Israeli Economic Newsletter using RSS and GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, OpenAI, RSS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Elay Guez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get the top 5 Israeli economic news stories daily at 8pm, expertly summarized in Hebrew by AI and delivered in a stylish RTL email. Set up in 10 mins!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, function, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - Mako",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - Calcalist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ChatGPT 4o",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Text",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove NaN",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merged RSS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS - Calcalist",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS - Mako",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

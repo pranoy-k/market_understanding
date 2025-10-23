@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ee9bdd93",
+  "workflow_id": "ee9bdd93",
+  "workflow_id_display": "ee9bdd93",
+  "workflow_name": "Receive updates for all changes in Pipedrive",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline lead management with automated inquiry collection, Slack alerts, and real-time status tracking. Boost your sales process—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with pipedriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Pipedrive Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

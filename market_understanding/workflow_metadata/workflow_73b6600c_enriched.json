@@ -1,0 +1,137 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/73b6600c",
+  "workflow_id": "73b6600c",
+  "workflow_id_display": "73b6600c",
+  "workflow_name": "Run Complete Technical SEO Audits with GPT-4o AI Analysis & Multi-format Reporting",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Email, Google Sheets, OpenAI",
+  "tags": [
+    "google",
+    "chatgpt"
+  ],
+  "author_name": "Oriol SeguÃ­",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "MANUAL",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LANGUAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "URL WEB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Iterar Páginas",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Maping Sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "XML1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out8",
+      "type": "Data Processing"
+    },
+    {
+      "name": "To html",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Html to JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out10",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML format viewer",
+      "type": "Process"
+    },
+    {
+      "name": "Eliminar Webs Duplicadas",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "UA Rotativo1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Method detect",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Req robots",
+      "type": "Data Input"
+    },
+    {
+      "name": "extract sitemap url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter URL Intern",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Obtener Contenido Web",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

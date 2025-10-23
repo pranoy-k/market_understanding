@@ -1,0 +1,151 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bb998f0d",
+  "workflow_id": "bb998f0d",
+  "workflow_id_display": "bb998f0d",
+  "workflow_name": "Perplexity-Style Iterative Research with Gemini and Google Search",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "[email protected]",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "AI-powered research workflow: Generate dynamic queries, leverage Google Search and Gemini, and deliver citation-rich answers. Customizable and seamless—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "search_query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "reflection_output_parse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set search_query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "generate_query",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "attach index as id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "web_search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "merge web_search_result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "history_web_research_result",
+      "type": "Process"
+    },
+    {
+      "name": "history_web_research_result1",
+      "type": "Process"
+    },
+    {
+      "name": "history_sources_gathered",
+      "type": "Process"
+    },
+    {
+      "name": "research_loop_count",
+      "type": "Process"
+    },
+    {
+      "name": "retrieve value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "number_of_ran_queries",
+      "type": "Process"
+    },
+    {
+      "name": "GeminiSearch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Build reflection request body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "reflection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "finalize_answer",
+      "type": "Process"
+    },
+    {
+      "name": "get:history_sources_gathered",
+      "type": "Process"
+    },
+    {
+      "name": "format answer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "web_search step record",
+      "type": "Data Processing"
+    },
+    {
+      "name": "push web_search step record",
+      "type": "Process"
+    },
+    {
+      "name": "push reflection step",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get:steps",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

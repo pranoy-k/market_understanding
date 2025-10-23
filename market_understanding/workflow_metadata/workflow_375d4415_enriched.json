@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/375d4415",
+  "workflow_id": "375d4415",
+  "workflow_id_display": "375d4415",
+  "workflow_name": "Extract and Organize Colombian Invoices with Gmail, GPT-4o & Google Workspace",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Email, Gmail, Google Drive, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Juan Sanchez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On Email receipt",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create or update row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Get Filename and mimeType",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter ZIP files only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unzip Invoice",
+      "type": "Process"
+    },
+    {
+      "name": "Just for style",
+      "type": "Process"
+    },
+    {
+      "name": "Get filename and mimeType on extracted docs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract PDF Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract XML Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Append both Docs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate all Data into 1 list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Data from PDF and XML",
+      "type": "Process"
+    },
+    {
+      "name": "Create initial PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Merge both flows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update PDF with actual name",
+      "type": "Process"
+    },
+    {
+      "name": "Get Current Date",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

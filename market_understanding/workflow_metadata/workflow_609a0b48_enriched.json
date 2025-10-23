@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/609a0b48",
+  "workflow_id": "609a0b48",
+  "workflow_id_display": "609a0b48",
+  "workflow_name": "Route User Requests to Specialized Agents with GPT-4o Mini",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Dhrumil Patel",
+  "author_profile_url": "https://n8n.io/creators/itechdp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate request routing with this n8n workflow template—LLM-powered, modular, and auto-correcting. Effortlessly process reminders, emails, & more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Output Parser Model",
+      "type": "Process"
+    },
+    {
+      "name": "Reminder Agent",
+      "type": "Process"
+    },
+    {
+      "name": "GPT 4o Mini",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reminder Agent Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email Agent Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Meeting Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Meeting Agent Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Document Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Document Agent2",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

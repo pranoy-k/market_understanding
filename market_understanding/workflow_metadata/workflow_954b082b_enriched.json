@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/954b082b",
+  "workflow_id": "954b082b",
+  "workflow_id_display": "954b082b",
+  "workflow_name": "Firecrawl AI-Powered Market Intelligence Bot: Automated News Insights Delivery",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate market research with n8n: AI-powered web crawling, smart content filtering, and instant Slack delivery for fast, actionable insights. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Market Research Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Crawl TechCrunch (FireCrawl)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Relevant Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarizer Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

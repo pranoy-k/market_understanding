@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0499cd32",
+  "workflow_id": "0499cd32",
+  "workflow_id_display": "0499cd32",
+  "workflow_name": "Add text to a downloaded image",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline lead capture, enrichment, and follow-up with automated emails, CRM integration, and real-time Slack alerts. Boost sales efficiency—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, editImage, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Image",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

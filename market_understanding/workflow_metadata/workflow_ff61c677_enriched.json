@@ -1,0 +1,107 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ff61c677",
+  "workflow_id": "ff61c677",
+  "workflow_id_display": "ff61c677",
+  "workflow_name": "Microsoft Outlook AI Email Assistant with contact support from Monday and Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Airtable, Email, OpenAI",
+  "tags": [
+    "Scheduled🤖 Email Automation"
+  ],
+  "author_name": "Cognitive Creators",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI assistant for Outlook with CRM integration from Monday.com and Airtable.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Update Contacts Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check Mail Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Email Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable - Contacts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Rules",
+      "type": "Data Output"
+    },
+    {
+      "name": "Categories",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Rules",
+      "type": "Data Output"
+    },
+    {
+      "name": "Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "Microsoft Outlook23",
+      "type": "Process"
+    },
+    {
+      "name": "Set Category",
+      "type": "Process"
+    },
+    {
+      "name": "Set Importance",
+      "type": "Process"
+    },
+    {
+      "name": "AI: Analyse Email",
+      "type": "Process"
+    },
+    {
+      "name": "Monday.com - Get Contacts",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

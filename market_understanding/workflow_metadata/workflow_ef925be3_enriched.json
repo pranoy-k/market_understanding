@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ef925be3",
+  "workflow_id": "ef925be3",
+  "workflow_id_display": "ef925be3",
+  "workflow_name": "Gmail AI Search Assistant on Telegram (Gemini-Powered)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Gmail, Telegram",
+  "tags": [
+    "telegram",
+    "gemini"
+  ],
+  "author_name": "Malik Hashir",
+  "author_profile_url": "https://n8n.io/creators/malikx/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly search your Gmail via Telegram chat using AI-powered queries. Enjoy instant, no-code setup and smart email retrieval—learn more now!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "User Request - Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Set Parameters From User Request (for fetching emails)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sets Parameters For Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

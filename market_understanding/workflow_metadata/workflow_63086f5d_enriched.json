@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/63086f5d",
+  "workflow_id": "63086f5d",
+  "workflow_id_display": "63086f5d",
+  "workflow_name": "Batch Delete Posts and Featured Images in WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "WordPress",
+  "tags": [],
+  "author_name": "Eric",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly delete multiple WordPress posts and featured images with automation. Customize filters, approvals, and scale easily. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "Change your Domain here",
+      "type": "Trigger"
+    },
+    {
+      "name": "delete img",
+      "type": "Data Input"
+    },
+    {
+      "name": "get img",
+      "type": "Data Input"
+    },
+    {
+      "name": "get post",
+      "type": "Data Input"
+    },
+    {
+      "name": "delete post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "delete post with img",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

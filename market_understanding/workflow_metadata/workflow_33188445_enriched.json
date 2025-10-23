@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33188445",
+  "workflow_id": "33188445",
+  "workflow_id_display": "33188445",
+  "workflow_name": "OpenAI Responses API Adapter for LLM and AI Agent Workflows",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, OpenAI, Webhook",
+  "tags": [
+    "api🤖 openai"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily integrate OpenAI’s Responses API into n8n workflows using webhooks and custom credentials. Enable flexible, streamlined AI automation—learn more!",
+  "key_benefits": [
+    "API integration"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "n8n Webhook",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Models",
+      "type": "Data Input"
+    },
+    {
+      "name": "POST ChatCompletions",
+      "type": "Trigger"
+    },
+    {
+      "name": "Models Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Remap to Response API Schema",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Responses API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Completion Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Text Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Stream Response",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Remap to Response API Schema",
+    "OpenAI Responses API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

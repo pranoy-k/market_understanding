@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dede730f",
+  "workflow_id": "dede730f",
+  "workflow_id_display": "dede730f",
+  "workflow_name": "Sync Dartagnan Email Templates to Braze",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Vincent LE ROUX",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Dartagnan email templates to Braze. Save time, ensure brand consistency, and automate updates—customizable for your workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Every 5 minutes start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filtering Dartagnan Campaigns",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filtering Braze Email Template",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encode Content To Update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encode Content to Create",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Token Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dartagnan Project list",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create email template",
+      "type": "Data Input"
+    },
+    {
+      "name": "List Available Email Template Braze",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filtered Project Campaign",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Not existing In Braze",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Existing In Braze",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Dartagnan HTML & MEDIA To Update",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dartagnan HTML & MEDIA Campagne to Create",
+      "type": "Data Input"
+    },
+    {
+      "name": "Embed image in HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embed image in HTML 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update existing email template in Braze",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

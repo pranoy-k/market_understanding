@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6afd9ef9",
+  "workflow_id": "6afd9ef9",
+  "workflow_id_display": "6afd9ef9",
+  "workflow_name": "Extract and Analyze Google AI Overviews with LLM for SEO Recommendations",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Roman Rozenberger",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily extract and analyze Google AI Overviews, automate SEO insights, and archive data in Sheets. Fast setup—perfect for SEO, content, and research.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, limit"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking 'Execute workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Current URL Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Webhook Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save AI Overview to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save SEO Guidelines to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get URLs to Analyze",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "myURL Exists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Page Title and H1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Page Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process URLs in Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gemini 2.5 Pro Model",
+      "type": "Process"
+    },
+    {
+      "name": "Convert AI Overview to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Generate SEO Recommendations",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Page Content to Markdown",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

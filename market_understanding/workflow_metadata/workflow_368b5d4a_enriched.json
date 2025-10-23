@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/368b5d4a",
+  "workflow_id": "368b5d4a",
+  "workflow_id_display": "368b5d4a",
+  "workflow_name": "Personal Portfolio CV Rag Chatbot - with Conversation Store and Email Summary",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Email, Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Sean Lon",
+  "author_profile_url": "https://n8n.io/creators/seanlon/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create an interactive personal portfolio CV chatbot with RAG, conversation storage, and daily email summaries. Easy setup and Google Drive integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, embeddingsGoogleGemini, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive - Resume CV File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive - Resume CV File Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save Conversation API - Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save Conversation - NocoDB",
+      "type": "Process"
+    },
+    {
+      "name": "Save Conversation API Webhook - Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Download CV File From Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone - Vector Store forr CV Content",
+      "type": "Process"
+    },
+    {
+      "name": "CV File Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "CV content - Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat API - webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Personal CV AI Agent Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Chat API Response - Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Memory - Window Buffer",
+      "type": "Process"
+    },
+    {
+      "name": "Resume lookup : Vector Store Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Resume Vector Store (Retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "Resume Embeddings Google Gemini (retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "Resume Google Gemini Chat Model (retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "NocoDB - get all todays conversation",
+      "type": "Process"
+    },
+    {
+      "name": "Group Conversation By Unique Session + Email - Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format HTML Display For email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Save Conversation API - Webhook",
+    "Save Conversation API Webhook - Response",
+    "Chat API - webhook",
+    "Chat API Response - Webhook"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

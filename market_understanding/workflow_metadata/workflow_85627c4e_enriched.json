@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/85627c4e",
+  "workflow_id": "85627c4e",
+  "workflow_id_display": "85627c4e",
+  "workflow_name": "Notion AI Assistant Generator",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Notion, OpenAI, RSS",
+  "tags": [
+    "Notion🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Max Tkacz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow enhances your Notion workspace with AI capabilities, automatically generating content, organizing information, and creating intelligent summaries. It can process Notion pages, use AI to analyze and enhance content, then update your workspace with enriched information.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Return success to chat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set schema for eval",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return error to chat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "standardize schema",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set schem for rerun",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add feedback prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Simplify properties object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set input data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Workflow Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

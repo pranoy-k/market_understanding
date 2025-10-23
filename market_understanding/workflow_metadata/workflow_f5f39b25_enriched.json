@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f5f39b25",
+  "workflow_id": "f5f39b25",
+  "workflow_id_display": "f5f39b25",
+  "workflow_name": "Reddit Sentiment Analysis for Apple WWDC25 with Gemini AI and Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Google Sheets, Reddit",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/imperolq/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate sentiment analysis of Reddit posts on Apple’s WWDC25. Extract, categorize, and analyze comments—results sent to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "format sentiment",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No category",
+      "type": "Data Processing"
+    },
+    {
+      "name": "edit for Sentiment analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Sentiments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get data",
+      "type": "Data Input"
+    },
+    {
+      "name": "scrap reddit",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sentiment Analysis per comment",
+      "type": "Process"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

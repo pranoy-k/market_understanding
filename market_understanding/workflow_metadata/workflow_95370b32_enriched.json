@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/95370b32",
+  "workflow_id": "95370b32",
+  "workflow_id_display": "95370b32",
+  "workflow_name": "Create AI-Ready Vector Datasets for LLMs with Bright Data, Gemini & Pinecone",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate AI-ready data collection with Bright Data & LLM agents. Extract, clean, and store structured content in Pinecone for fast, scalable LLM training.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, embeddingsGoogleGemini"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Fields - URL and Webhook URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Make a web request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured JSON Data Formatter",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook for structured data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook for structured AI agent response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Information Extractor with Data Formatter",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

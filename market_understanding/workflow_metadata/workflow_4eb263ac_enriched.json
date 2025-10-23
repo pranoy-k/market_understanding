@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4eb263ac",
+  "workflow_id": "4eb263ac",
+  "workflow_id_display": "4eb263ac",
+  "workflow_name": "Analyze Landing Page with OpenAI and Get Optimization Tips",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Not Another Marketer",
+  "author_profile_url": "https://n8n.io/creators/notanothermarketer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with agent, formTrigger, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Landing Page Url",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape Website",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

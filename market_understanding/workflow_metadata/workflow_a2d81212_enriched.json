@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a2d81212",
+  "workflow_id": "a2d81212",
+  "workflow_id_display": "a2d81212",
+  "workflow_name": "Automated Expense Approval System with GPT-4, Airtable & Pinecone Vector DB",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate expense reviews with AI-powered, CFO-level analysis. Flag policy violations, maintain audit trails, and ensure compliance—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, airtableTrigger, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Watch New Expense Requests",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse CFO Agent Response",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI GPT-4 Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Update Airtable Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "CFO Expense Review Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Store Decision in Pinecone",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Data for Pinecone",
+      "type": "Process"
+    },
+    {
+      "name": "Split Reasoning Text",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

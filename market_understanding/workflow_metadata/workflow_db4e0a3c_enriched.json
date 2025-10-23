@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/db4e0a3c",
+  "workflow_id": "db4e0a3c",
+  "workflow_id_display": "db4e0a3c",
+  "workflow_name": "Update Zammad Roles by Excel",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Excel",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Zammad user role updates with this n8n workflow. Import roles from Excel, enjoy robust error handling, and streamline your user management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Basic Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad Univeral User Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Excel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Find Zammad User by email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update User Roles",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

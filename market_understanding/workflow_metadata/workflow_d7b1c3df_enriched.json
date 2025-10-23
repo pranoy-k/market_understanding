@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d7b1c3df",
+  "workflow_id": "d7b1c3df",
+  "workflow_id_display": "d7b1c3df",
+  "workflow_name": "Create a Session-Based Telegram Chatbot with GPT-4o-mini and Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Build an AI Telegram chatbot with GPT-4, session management, Google Sheets logging, and intuitive commands. Easy to set up—organize chats effortlessly!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Get message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get message1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get message2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Get session",
+      "type": "Data Output"
+    },
+    {
+      "name": "Disable previous session",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set new session",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set to expire",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get session1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set new current session",
+      "type": "Data Output"
+    },
+    {
+      "name": "Response + Text",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Trim resume",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt + Resume",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trim question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "fullText",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram Chatbot",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

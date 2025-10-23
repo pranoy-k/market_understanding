@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/93281d23",
+  "workflow_id": "93281d23",
+  "workflow_id_display": "93281d23",
+  "workflow_name": "Download a file from Google Drive",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your n8n automation with our Google Drive workflow guide—step-by-step setup, visual aids, and seamless file management. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, writeBinaryFile, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

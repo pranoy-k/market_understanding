@@ -1,0 +1,127 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4a5aa4cc",
+  "workflow_id": "4a5aa4cc",
+  "workflow_id_display": "4a5aa4cc",
+  "workflow_name": "Telegram AI Chatbot with Document-Based Answers using OpenAI and PGVector RAG",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "OpenAI, PDF, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "Victor Gold",
+  "author_profile_url": "https://n8n.io/creators/victorlucky/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow creates an intelligent Telegram bot powered by AI that can understand natural language, answer questions, and perform automated tasks. The bot processes incoming messages, uses AI to generate contextual responses, and can integrate with other services to provide comprehensive assistance to users.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set File ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "TestData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Document Text",
+      "type": "Data Output"
+    },
+    {
+      "name": "RAG AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Chunks From Doc",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chunks To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Contextual Text",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Old Doc Records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Docs RAG Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

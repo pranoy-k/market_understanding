@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/75ca89bf",
+  "workflow_id": "75ca89bf",
+  "workflow_id_display": "75ca89bf",
+  "workflow_name": "Get Real-time NFT Insights with OpenSea AI-Powered NFT Agent Tool",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly access AI-powered NFT insights from OpenSea—get metadata, collections, traits, and ownership info for traders and collectors. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "NFT Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "NFT Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea NFT Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Get Account",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Collections",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Contract",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get NFT",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get NFTs by Account",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get NFTs by Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get NFTs by Contract",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Payment Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Traits",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

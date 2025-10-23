@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/06df1e3f",
+  "workflow_id": "06df1e3f",
+  "workflow_id_display": "06df1e3f",
+  "workflow_name": "Execute an SQL query in Microsoft SQL",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline support with automated email capture, instant Slack alerts, and ticket tracking. Connect tools in real time for faster customer service. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, microsoftSql"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Microsoft SQL",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

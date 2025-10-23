@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d317c74",
+  "workflow_id": "8d317c74",
+  "workflow_id_display": "8d317c74",
+  "workflow_name": "Enrich Linkedin Profiles from Google Sheets via RapidAPI",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "API, Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn profile enrichment for lead generation and talent sourcing. Save time, ensure accuracy, and update Google Sheets with detailed data. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Encode URI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update the profile",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pull linkedin profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Call Rapid API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter already enriched",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FiIter out all arrays",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Call Rapid API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

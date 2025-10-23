@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0a3e65f3",
+  "workflow_id": "0a3e65f3",
+  "workflow_id_display": "0a3e65f3",
+  "workflow_name": "AI Telegram Bot Agent: Smart Assistant & Content Summarizer",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform Telegram into an AI-powered assistant! Instantly summarize articles, generate images, and boost team productivity with smart automation. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, openAi, html"
+  ],
+  "nodes": [
+    {
+      "name": "Listener",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Image Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Fetcher",
+      "type": "Data Input"
+    },
+    {
+      "name": "Text Extractor",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

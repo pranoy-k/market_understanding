@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/041e70a7",
+  "workflow_id": "041e70a7",
+  "workflow_id_display": "041e70a7",
+  "workflow_name": "Automate Lead Qualification with RetellAI Phone Agent, OpenAI GPT-4 & Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Gmail, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 gmail🤖 openai"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Detect new lead in Google Sheets",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate call summary with OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Check if phone number exists in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update lead record in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Call new lead using RetellAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive inbound call from RetellAI (webhook)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send response to inbound webhook call",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive post-call data from RetellAI (webhook)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter for analyzed calls only",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

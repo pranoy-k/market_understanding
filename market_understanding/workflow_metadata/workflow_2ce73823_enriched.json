@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2ce73823",
+  "workflow_id": "2ce73823",
+  "workflow_id_display": "2ce73823",
+  "workflow_name": "Get Exchange & Sentiment Insights with CoinMarketCap AI Agent",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Analyze real-time exchange data, holdings, and market sentiment with AI-powered CoinMarketCap tools. Discover top indexes and insights—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Exchange and Community Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Exchange and Community Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Exchange and Community Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Exchange Map",
+      "type": "Data Input"
+    },
+    {
+      "name": "Exchange Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "CMC 100 Index",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fear and Greed Latest",
+      "type": "Data Input"
+    },
+    {
+      "name": "Exchange Assets",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

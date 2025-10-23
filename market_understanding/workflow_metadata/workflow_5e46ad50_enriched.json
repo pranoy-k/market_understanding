@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e46ad50",
+  "workflow_id": "5e46ad50",
+  "workflow_id_display": "5e46ad50",
+  "workflow_name": "Send AI-Generated Emails via Telegram Using GPT-4o-mini and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 gmail🤖 openai"
+  ],
+  "author_name": "Automate With Marc",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Transform Telegram into your AI email assistant—draft, send, and confirm Gmail messages with OpenAI, all from your Telegram chat. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

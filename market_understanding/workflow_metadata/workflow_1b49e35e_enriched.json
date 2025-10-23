@@ -1,0 +1,113 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b49e35e",
+  "workflow_id": "1b49e35e",
+  "workflow_id_display": "1b49e35e",
+  "workflow_name": "Evaluate RAG Response Accuracy with OpenAI: Document Groundedness Metric",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "21",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, evaluationTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Documents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remap Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Datasheet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Simple Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluation",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Document Grounding",
+      "type": "Process"
+    },
+    {
+      "name": "Set Outputs",
+      "type": "Process"
+    },
+    {
+      "name": "Set Metrics",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

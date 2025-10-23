@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2272002",
+  "workflow_id": "e2272002",
+  "workflow_id_display": "e2272002",
+  "workflow_name": "ServiceNow Incident Notifications to Slack Workflow",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate ServiceNow to Slack incident alerts for real-time updates, faster response, and streamlined IT ops. Customizable, reliable, and easy to set up. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, serviceNow"
+  ],
+  "nodes": [
+    {
+      "name": "Run Every 5 Minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get 5 Minute Ago Timestamp",
+      "type": "Process"
+    },
+    {
+      "name": "Get Incidents from ServiceNow",
+      "type": "Process"
+    },
+    {
+      "name": "Sort Incidents in Ascending Order",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Incidents, Do Nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

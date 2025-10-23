@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cdd9e547",
+  "workflow_id": "cdd9e547",
+  "workflow_id_display": "cdd9e547",
+  "workflow_name": "Send daily affirmations to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "malgamves",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Receive daily uplifting affirmations on Telegram—automated via Cron and affirmations.dev API. Start your mornings inspired. Learn how it works here!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with telegram, httpRequest, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

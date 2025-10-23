@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9324bcea",
+  "workflow_id": "9324bcea",
+  "workflow_id_display": "9324bcea",
+  "workflow_name": "Assistant for Hubspot Chat using OpenAi and Airtable",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Airtable, HubSpot, OpenAI",
+  "tags": [],
+  "author_name": "Tiberiu S - Makeitfuture.com",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "createThread",
+      "type": "Data Output"
+    },
+    {
+      "name": "getHubspotMessage",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAi Create Thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI Run",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Run",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Last Message",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Submit Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Submit Data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "respondHubspotMessage1",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI Run1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

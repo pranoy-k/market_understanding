@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e87f27b",
+  "workflow_id": "8e87f27b",
+  "workflow_id_display": "8e87f27b",
+  "workflow_name": "Auto-Create Podcast from YouTube Transcript using Dumpling AI and GPT-4o",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily convert YouTube videos into polished podcast scripts with automated transcripts and summaries. Save time, boost reach, and streamline workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, airtable, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Watch for New YouTube Video via RSS",
+      "type": "Trigger"
+    },
+    {
+      "name": "Transform Transcript into Podcast Script using GPT-4o",
+      "type": "Process"
+    },
+    {
+      "name": "Save Podcast Script and Metadata to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Transcript from YouTube Video using Dumpling AI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

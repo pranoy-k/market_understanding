@@ -1,0 +1,123 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/898f0e28",
+  "workflow_id": "898f0e28",
+  "workflow_id_display": "898f0e28",
+  "workflow_name": "AI Chatbot Call Center: Demo Call Center (Production-Ready, Part 2)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "ChatPayLabs",
+  "author_profile_url": "https://n8n.io/creators/chatpaylabs/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Build a scalable n8n demo call center chatbot with multi-service support, Telegram integration, rate limiting, and easy customization. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Test Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Flow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rated Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat Memory",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Error Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save User Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Session",
+      "type": "Process"
+    },
+    {
+      "name": "Rate Limit",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "xAI @grok-2-1212",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Load User Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Taxi Service",
+      "type": "Process"
+    },
+    {
+      "name": "Provider",
+      "type": "Process"
+    },
+    {
+      "name": "New Session",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Taxi Service Redirect",
+      "type": "Process"
+    },
+    {
+      "name": "Call Back",
+      "type": "Process"
+    },
+    {
+      "name": "Taxi Booking Worker",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

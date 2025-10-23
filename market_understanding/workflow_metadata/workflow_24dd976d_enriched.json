@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/24dd976d",
+  "workflow_id": "24dd976d",
+  "workflow_id_display": "24dd976d",
+  "workflow_name": "Send daily weather updates to a phone number using the Vonage node",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly capture and enrich form submissions, auto-update Google Sheets, and alert your team on Slack. Streamline lead management—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with openWeatherMap, vonage, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Vonage",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

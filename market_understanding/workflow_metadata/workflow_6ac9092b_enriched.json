@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6ac9092b",
+  "workflow_id": "6ac9092b",
+  "workflow_id_display": "6ac9092b",
+  "workflow_name": "Extract Structured Data from Brave Search with Bright Data MCP & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Extract structured data from Brave search results—news, images, videos, and more—automatically. Fast, accurate insights. See how to streamline analysis!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, function"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set the input for image search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set the input for video search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the Search Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the input fields for news search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the search criteria's",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the input fields for All search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Data Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client for Brave Image Search",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client for Brave Video Search",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client for Brave News Search",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client for Brave All Search",
+      "type": "Process"
+    },
+    {
+      "name": "Write the structured content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Initiate a Webhook Notification for the Structured Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4fc2a51c",
+  "workflow_id": "4fc2a51c",
+  "workflow_id_display": "4fc2a51c",
+  "workflow_name": "Receive updates on a subscriber added in ConvertKit",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline lead capture with real-time form submissions, data validation, instant emails, CRM updates, and automated onboarding. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with convertKitTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "ConvertKit Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

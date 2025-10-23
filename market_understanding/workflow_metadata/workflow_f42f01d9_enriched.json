@@ -1,0 +1,189 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f42f01d9",
+  "workflow_id": "f42f01d9",
+  "workflow_id_display": "f42f01d9",
+  "workflow_name": "Generate AI Stock Images with Flux1-schnell, Metadata Tagging & Google Integration",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "46",
+  "tools_integrations": "Facebook, Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "victor Adriano",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Generate up to 2,000 AI stock images daily for under $3—fully automated with prompt creation, metadata, Google Drive upload, and error logging. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse OpenAI Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Loop Indexes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze images",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Error",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set Date Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Folder for images",
+      "type": "Process"
+    },
+    {
+      "name": "Create New Sheet",
+      "type": "Process"
+    },
+    {
+      "name": "Set Folder ID sheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Folder ID drive folder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check the folder",
+      "type": "Process"
+    },
+    {
+      "name": "Check sheet",
+      "type": "Process"
+    },
+    {
+      "name": "Comp Images",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Image X2",
+      "type": "Process"
+    },
+    {
+      "name": "Numbering",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "filter data date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Images",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Generator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

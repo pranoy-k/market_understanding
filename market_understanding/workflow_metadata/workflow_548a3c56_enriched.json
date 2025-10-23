@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/548a3c56",
+  "workflow_id": "548a3c56",
+  "workflow_id_display": "548a3c56",
+  "workflow_name": "Summarize Google Sheets form feedback via OpenAI_s GPT-4",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, Google Sheets, OpenAI, RSS",
+  "tags": [],
+  "author_name": "Yulia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarize via GPT model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Google Sheets records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Aggregate responses into arrays",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convet from Markdown to HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

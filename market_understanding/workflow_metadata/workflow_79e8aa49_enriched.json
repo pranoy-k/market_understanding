@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/79e8aa49",
+  "workflow_id": "79e8aa49",
+  "workflow_id_display": "79e8aa49",
+  "workflow_name": "Line Message API : Push Message & Reply",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api"
+  ],
+  "author_name": "darrell_tw",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LINE Messaging with seamless webhooks, smart replies, and push notifications. Secure setup and clear workflow—learn more to boost engagement!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Line : Reply with token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook from Line Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Line : Push Message",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

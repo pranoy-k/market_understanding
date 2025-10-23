@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d39540b",
+  "workflow_id": "8d39540b",
+  "workflow_id_display": "8d39540b",
+  "workflow_name": "Analyze Client Transcripts & Route Feedback with GPT-4o Mini, HubSpot, and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, HubSpot, OpenAI, RSS",
+  "tags": [],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Enter Client Transcript",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define routing emails here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot1",
+      "type": "Process"
+    },
+    {
+      "name": "Router Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Form",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

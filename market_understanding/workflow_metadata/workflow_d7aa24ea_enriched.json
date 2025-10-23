@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d7aa24ea",
+  "workflow_id": "d7aa24ea",
+  "workflow_id_display": "d7aa24ea",
+  "workflow_name": "Real Estate Cold Call Scripts for Price Reduced FSBO Properties (Zillow Data)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "T Zero",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover motivated FSBO sellers on Zillow with recent price drops. Automate deal screening, analysis, and outreach for smarter, faster real estate investing.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, airtable, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "FSBO",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FSBO Property Criteria Set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Call Script Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Call Script Database Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Zillow Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "RentZestimate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "market_overview",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Investment Calculator",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Historical Market Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Historical Market Results Indicator",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

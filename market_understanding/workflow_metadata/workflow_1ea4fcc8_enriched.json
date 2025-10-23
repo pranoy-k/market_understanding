@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ea4fcc8",
+  "workflow_id": "1ea4fcc8",
+  "workflow_id_display": "1ea4fcc8",
+  "workflow_name": "Automated Generation of AI Advertising Photos for Product Marketing",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Julian Ivanov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform product images into professional photos with human models using AI. Seamlessly integrates with Google Sheets and Drive. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Images",
+      "type": "Process"
+    },
+    {
+      "name": "Read Image URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert Image URL in Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Product Photography Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Send Image with Prompt to OpenAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Base64 to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

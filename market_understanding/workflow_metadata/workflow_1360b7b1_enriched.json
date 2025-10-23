@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1360b7b1",
+  "workflow_id": "1360b7b1",
+  "workflow_id_display": "1360b7b1",
+  "workflow_name": "Enrich new Hubspot contacts with contact and company data from ExactBuyer",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Mutasem",
+  "author_profile_url": "https://n8n.io/creators/mutasem/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly enrich HubSpot contacts with social profiles, contact data, and location info using ExactBuyer. Automate updates for better CRM results. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On contact created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set keys",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Could not find user",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich user from ExactBuyer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update contact from Hubspot",
+      "type": "Process"
+    },
+    {
+      "name": "Get HubSpot contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

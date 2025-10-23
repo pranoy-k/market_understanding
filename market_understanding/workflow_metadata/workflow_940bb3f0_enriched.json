@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/940bb3f0",
+  "workflow_id": "940bb3f0",
+  "workflow_id_display": "940bb3f0",
+  "workflow_name": "Context-Aware Google Calendar Management with MCP Protocol",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Simeon",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline Google Calendar management with context-aware, conflict-free automation. Prevent overlaps, enable smart scheduling, and ensure safe, reliable updates. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, googleCalendar, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "map_data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "response_data_get_data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "validate_busy_time",
+      "type": "Process"
+    },
+    {
+      "name": "create_new_event",
+      "type": "Process"
+    },
+    {
+      "name": "delete_event",
+      "type": "Process"
+    },
+    {
+      "name": "update_event",
+      "type": "Process"
+    },
+    {
+      "name": "validate_availability_event",
+      "type": "Process"
+    },
+    {
+      "name": "check_availability_to_create",
+      "type": "Process"
+    },
+    {
+      "name": "create_event",
+      "type": "Process"
+    },
+    {
+      "name": "delete_event1",
+      "type": "Process"
+    },
+    {
+      "name": "get_event_in_time_gap",
+      "type": "Process"
+    },
+    {
+      "name": "update_calendar",
+      "type": "Process"
+    },
+    {
+      "name": "get_events_in_gap_time",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

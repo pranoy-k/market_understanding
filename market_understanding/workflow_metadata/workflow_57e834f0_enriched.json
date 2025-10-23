@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/57e834f0",
+  "workflow_id": "57e834f0",
+  "workflow_id_display": "57e834f0",
+  "workflow_name": "Asynchronous Bulk Web Scraping with Bright Data & Webhook Notifications",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate high-volume web data extraction with Bright Data: reliable async scraping, webhook delivery, and flexible storage for engineers & researchers. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, function, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Snapshot Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Dataset Id, Request URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Initiate a Webhook Notification",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate JSON Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write the file to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request to the specified URL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

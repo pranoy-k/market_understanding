@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9bf2e0fa",
+  "workflow_id": "9bf2e0fa",
+  "workflow_id_display": "9bf2e0fa",
+  "workflow_name": "Verify emails & enrich new form leads and save them to HubSpot",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Email, HubSpot",
+  "tags": [],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead collection with email validation, enrichment, and instant Hubspot CRM entry. Eliminate junk leads and boost quality—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with hunter, noOp, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hunter",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich company",
+      "type": "Process"
+    },
+    {
+      "name": "Add lead to Hubspot",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich person",
+      "type": "Process"
+    },
+    {
+      "name": "Email is not valid, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

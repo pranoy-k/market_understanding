@@ -1,0 +1,172 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5eb75af7",
+  "workflow_id": "5eb75af7",
+  "workflow_id_display": "5eb75af7",
+  "workflow_name": "Import workflows and map their credentials using a Multi-Form",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import n8n workflows from files or remote instances. Easily map or create credentials using a guided form. Learn more about seamless setup!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, removeDuplicates, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Old Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Export Credentials",
+      "type": "Process"
+    },
+    {
+      "name": "Get Credentials Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Binary to JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Collect Credentials to Replace",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Request Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Workflows",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation",
+      "type": "Process"
+    },
+    {
+      "name": "Error1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Workflow Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by updatedAt DESC",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation1",
+      "type": "Process"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "Process"
+    },
+    {
+      "name": "Create Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Upload File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Choose Workflow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Choose Instance",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Instance Options",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Selected Workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Out Nodes Having Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicate Credentials by Name",
+      "type": "Process"
+    },
+    {
+      "name": "Map Credentials",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Selected Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace Credentials in Workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Credential Options",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Empty Credentials",
+      "type": "Process"
+    },
+    {
+      "name": "Get Missing Credentials",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

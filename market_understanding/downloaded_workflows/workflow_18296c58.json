@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        270,
+        320
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Redis",
+      "type": "n8n-nodes-base.redis",
+      "position": [
+        470,
+        320
+      ],
+      "parameters": {
+        "key": "hello",
+        "options": {},
+        "operation": "get"
+      },
+      "credentials": {
+        "redis": "redis-docker_creds"
+      },
+      "typeVersion": 1,
+      "id": "a99aa8b83f14b0da"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Redis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "d6d8f82d00beea50",
+  "name": "Get the value of a key from Redis",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "redis"
+  ]
+}

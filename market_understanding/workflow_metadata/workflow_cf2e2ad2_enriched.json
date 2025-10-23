@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf2e2ad2",
+  "workflow_id": "cf2e2ad2",
+  "workflow_id_display": "cf2e2ad2",
+  "workflow_name": "AI agent chat",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, OpenAI",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

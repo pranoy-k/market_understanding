@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b4bf968c",
+  "workflow_id": "b4bf968c",
+  "workflow_id_display": "b4bf968c",
+  "workflow_name": "Monitor GitHub Releases with Gemini AI Chinese Translation & Slack Notifications",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "GitHub, Slack",
+  "tags": [
+    "slack",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "tbphp",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub release monitoring with AI-powered summaries and Chinese translations, direct Slack notifications, error handling, and duplicate prevention. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with limit, scheduleTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "Cron Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Null",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GitHub Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date Format",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Redis Set Id",
+      "type": "Process"
+    },
+    {
+      "name": "Code for Slack Tpl",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS for Release",
+      "type": "Data Input"
+    },
+    {
+      "name": "Redis Get",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

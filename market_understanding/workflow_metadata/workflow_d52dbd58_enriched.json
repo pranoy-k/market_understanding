@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d52dbd58",
+  "workflow_id": "d52dbd58",
+  "workflow_id_display": "d52dbd58",
+  "workflow_name": "Automate Etsy Data Mining with Bright Data Scrape & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Etsy data mining with Bright Data & Google Gemini—extract, enrich, and analyze product insights at scale. Boost eCommerce research now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Esty Search Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Perform Esty Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perform Esty web request over the loop",
+      "type": "Data Input"
+    },
+    {
+      "name": "Initiate a Webhook Notification for the extracted data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Item List with the Product Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model for product info",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Paginated Resultset",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the scraped content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Paginated Resultset With OpenAI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

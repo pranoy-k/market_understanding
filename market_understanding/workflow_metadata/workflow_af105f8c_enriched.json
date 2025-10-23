@@ -1,0 +1,99 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/af105f8c",
+  "workflow_id": "af105f8c",
+  "workflow_id_display": "af105f8c",
+  "workflow_name": "Telegram giveaways among channel subscribers (Module \"Giveaway\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Run fair Telegram giveaways with automated subscriber verification, easy participant tracking, and seamless winner selection. Learn more and get started!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Variables TG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add participant in Giveaway",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add channel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Participants",
+      "type": "Data Output"
+    },
+    {
+      "name": "Random Participants",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union Statuses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Participants",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on GIVEAWAY RUN",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on GIVEAWAY REQUEST CHANNEL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status and referal",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on START",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

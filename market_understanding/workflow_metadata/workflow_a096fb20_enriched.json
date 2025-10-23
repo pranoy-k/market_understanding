@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a096fb20",
+  "workflow_id": "a096fb20",
+  "workflow_id_display": "a096fb20",
+  "workflow_name": "Telegram Bot with Supabase memory and OpenAI assistant integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Get New Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "OPENAI - Create thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create User",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OPENAI - Send message",
+      "type": "Data Input"
+    },
+    {
+      "name": "OPENAI - Run assistant",
+      "type": "Data Input"
+    },
+    {
+      "name": "OPENAI - Get messages",
+      "type": "Data Input"
+    },
+    {
+      "name": "Find User",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

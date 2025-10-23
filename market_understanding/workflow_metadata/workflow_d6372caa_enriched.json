@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d6372caa",
+  "workflow_id": "d6372caa",
+  "workflow_id_display": "d6372caa",
+  "workflow_name": "Extract Product Info from Webpage Screenshots using Dumpling AI and GPT-4o",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture and analyze product data from protected websites. This workflow uses OCR, GPT-4o, and Google Sheets—no scraping headaches. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, openAi, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger on New URL in Sheet",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Product Info from Screenshot Text with GPT-4o",
+      "type": "Process"
+    },
+    {
+      "name": "Save Screenshot to Drive Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Log Screenshot URL to Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Products info to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Take Full-Page Screenshot using Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract All Visible Data from Screenshot (Dumpling AI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Screenshot File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Each Product into Individual Record",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

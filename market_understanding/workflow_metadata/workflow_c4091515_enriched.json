@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4091515",
+  "workflow_id": "c4091515",
+  "workflow_id_display": "c4091515",
+  "workflow_name": "Generate Collaborative Handbooks with GPT-4o Multi-Agent Orchestration & Human Review",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "35",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Fabrizio Terzi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Generate collaborative Markdown handbooks with AI agents and human review. Modular, open-source workflow for educators, teams, and knowledge creators. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, emailSend, function"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Orchestration Plan",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Agent Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Handbook Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Content for Review",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Review ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Approved Contribution Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate GitHub File Path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Human Rejection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Evaluate Board Consensus",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle Redraft",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Agent Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Meta-Orchestrator",
+      "type": "Process"
+    },
+    {
+      "name": "Summarizer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Synthesizer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Peer Reviewer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Sensemaking Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Prompt Engineer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Onboarding/Explainer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Save to handbook_entries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Agent Contribution (Approved)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Start",
+      "type": "Process"
+    },
+    {
+      "name": "Check DB Connection",
+      "type": "Data Output"
+    },
+    {
+      "name": "Commit to GitHub (Approved)",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Archivist Paths",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

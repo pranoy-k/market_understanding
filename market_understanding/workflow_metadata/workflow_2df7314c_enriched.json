@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2df7314c",
+  "workflow_id": "2df7314c",
+  "workflow_id_display": "2df7314c",
+  "workflow_name": "WordPress-to-Pipedrive Integration: Automating Contact & Lead Management",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "WordPress",
+  "tags": [],
+  "author_name": "kapio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Efficiently sync WordPress CF7 contact requests to Pipedrive. Automate lead capture, task creation, and notes with easy setup. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, pipedrive"
+  ],
+  "nodes": [
+    {
+      "name": "Create Lead",
+      "type": "Process"
+    },
+    {
+      "name": "Search Person in Pipedrive",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check if person is in Pipedrive and output the ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Person ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Note",
+      "type": "Process"
+    },
+    {
+      "name": "Create Activity",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

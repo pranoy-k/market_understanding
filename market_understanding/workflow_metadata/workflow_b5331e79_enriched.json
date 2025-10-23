@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b5331e79",
+  "workflow_id": "b5331e79",
+  "workflow_id_display": "b5331e79",
+  "workflow_name": "Automated Video Analysis: AI-Powered Insight Generation from Google Drive",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform videos into actionable insights with AI-powered automation, Google Drive integration, and secure, zero-touch content analysis. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Analysis Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Video from Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Check File Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

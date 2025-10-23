@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/feca583e",
+  "workflow_id": "feca583e",
+  "workflow_id_display": "feca583e",
+  "workflow_name": "Enrich Company Data with Airtop and Hubspot",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Airtop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly enrich company data and calculate an AI-powered ICP score, then auto-update HubSpot for smarter onboarding, qualification, and CRM enrichment. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, set, executeWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Unify Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save company Hubspot",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Company info",
+      "type": "Process"
+    },
+    {
+      "name": "Is corporate email?",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

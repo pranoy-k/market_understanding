@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8bc1c55c",
+  "workflow_id": "8bc1c55c",
+  "workflow_id_display": "8bc1c55c",
+  "workflow_name": "Extract Invoice Data from Email to Google Sheets using GPT-4o AI Automation",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create blank spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Final Spreadsheet with Invoice data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move spreadsheet in invoice folder",
+      "type": "Process"
+    },
+    {
+      "name": "Attachment Verification",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Invoice data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Preparing Final data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Invoice AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

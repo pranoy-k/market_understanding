@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f57761ef",
+  "workflow_id": "f57761ef",
+  "workflow_id_display": "f57761ef",
+  "workflow_name": "Save Typeform survey results to Airtable",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Typeform responses to Airtable in real time. Automate data collection and organization—streamline your workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with typeformTrigger, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

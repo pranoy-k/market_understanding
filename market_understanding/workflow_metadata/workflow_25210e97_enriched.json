@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/25210e97",
+  "workflow_id": "25210e97",
+  "workflow_id_display": "25210e97",
+  "workflow_name": "YouTube Report Generator",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, YouTube",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Mauricio Perera",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate thematic reports from YouTube subtitles—no API key needed. Get concise, AI-powered insights for research or content creation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, chainLlm, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Subtitles URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Video HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Subtitles Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Analytical Report",
+      "type": "Process"
+    },
+    {
+      "name": "AI Model Configuration",
+      "type": "Process"
+    },
+    {
+      "name": "Return Analytical Report",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

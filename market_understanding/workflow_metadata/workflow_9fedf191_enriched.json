@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9fedf191",
+  "workflow_id": "9fedf191",
+  "workflow_id_display": "9fedf191",
+  "workflow_name": "Automate Hyper-Personalized Outreach at Scale With Bright Data and LLMs",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn outreach by enriching profiles and generating AI-powered ice breakers right in Google Sheets. Boost personalized prospecting—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Run Workflow on a certain Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adjust_input_for_loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get rows to enrich",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Update Row with data From API",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Update Row with Ice Breaker",
+      "type": "Data Output"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain- Ice Breaker",
+      "type": "Process"
+    },
+    {
+      "name": "BrightData_Get_Linkedin",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP_Request_Post_Request_BrightData",
+      "type": "Data Input"
+    },
+    {
+      "name": "API_Call_Snapshot_Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items- All Prospects",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Google Sheets - Update Row with data From API",
+    "Wait_For_API_Call_Results",
+    "API_Call_Snapshot_Progress",
+    "IF-Checking_Status_API_Call"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

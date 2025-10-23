@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/98b0d5a1",
+  "workflow_id": "98b0d5a1",
+  "workflow_id_display": "98b0d5a1",
+  "workflow_name": "Create an issue on GitLab on every GitHub release",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically create GitLab issues for every new GitHub release. Easy n8n setup, supports repos you don't own. Streamline workflows—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, github, merge"
+  ],
+  "nodes": [
+    {
+      "name": "No issue for release?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get latest release",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create issue",
+      "type": "Process"
+    },
+    {
+      "name": "List issues",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

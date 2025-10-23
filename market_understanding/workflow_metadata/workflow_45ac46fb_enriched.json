@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/45ac46fb",
+  "workflow_id": "45ac46fb",
+  "workflow_id_display": "45ac46fb",
+  "workflow_name": "Import data from Google Sheets into MySQL",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, MySQL",
+  "tags": [
+    "google",
+    "mysql🗄"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily import Google Sheets data into MySQL. Automate transfers, save time, reduce errors, and keep your database always up to date. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with mySql, googleSheets, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets - read",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "MySQL - insert",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

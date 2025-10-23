@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6cbcdc5",
+  "workflow_id": "a6cbcdc5",
+  "workflow_id_display": "a6cbcdc5",
+  "workflow_name": "Automatic Squarespace Order Fulfillment Process",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Squarespace order fulfillment—mark orders as fulfilled instantly, eliminate manual tasks, and streamline your workflow. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Order",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query pending Orders",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fulfill Order",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Orders",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

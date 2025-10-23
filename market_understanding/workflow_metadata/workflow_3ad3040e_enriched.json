@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ad3040e",
+  "workflow_id": "3ad3040e",
+  "workflow_id_display": "3ad3040e",
+  "workflow_name": "Update Hubspot engagement by parsing inbox mail with AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, HubSpot",
+  "tags": [],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate HubSpot CRM email engagement tracking using AI. Instantly log interactions, update or create contacts, and simplify workflow—no manual entry.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, chainLlm, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Parse the mail with AI",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Creates an email engagement",
+      "type": "Process"
+    },
+    {
+      "name": "Search for the contact via email",
+      "type": "Process"
+    },
+    {
+      "name": "Set the output Json",
+      "type": "Process"
+    },
+    {
+      "name": "Creates contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

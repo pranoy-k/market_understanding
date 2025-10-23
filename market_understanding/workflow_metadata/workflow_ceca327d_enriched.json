@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ceca327d",
+  "workflow_id": "ceca327d",
+  "workflow_id_display": "ceca327d",
+  "workflow_name": "Facebook Token Retrieval & Management",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Facebook",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "L Hung",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Facebook token management with an n8n workflow—secure OAuth, manage Page Tokens, customize permissions, and streamline posting. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Short-Lived Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Long-Lived Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Redirect URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Redirect",
+      "type": "Trigger"
+    },
+    {
+      "name": "Token",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

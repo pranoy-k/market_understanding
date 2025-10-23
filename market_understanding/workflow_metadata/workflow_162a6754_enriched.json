@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/162a6754",
+  "workflow_id": "162a6754",
+  "workflow_id_display": "162a6754",
+  "workflow_name": "Transcribe audio files from Cloud Storage",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "AWS, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily transcribe audio files from AWS S3 and save results in Google Sheets. Automate uploads, transcription, and data storage for streamlined workflows.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with awsS3, awsTranscribe, set"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "AWS Transcribe 2",
+      "type": "Process"
+    },
+    {
+      "name": "AWS Transcribe 1",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3 1",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

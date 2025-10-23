@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ebc48ec",
+  "workflow_id": "1ebc48ec",
+  "workflow_id_display": "1ebc48ec",
+  "workflow_name": "Verify mailing address deliverability of new contacts in HighLevel Using Lob",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Belmont Digital",
+  "author_profile_url": "https://n8n.io/creators/belmontdigital/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Verify mailing addresses in HighLevel automatically with this n8n workflow using Lob. Ensure deliverability, streamline CRM accuracy—setup in just 10 minutes!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, highLevel"
+  ],
+  "nodes": [
+    {
+      "name": "CRM Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Address Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Address Verification",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update HighLevel - Deliverable",
+      "type": "Process"
+    },
+    {
+      "name": "Update HighLevel - NOT Deliverable",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

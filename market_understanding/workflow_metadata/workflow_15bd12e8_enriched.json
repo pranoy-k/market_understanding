@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/15bd12e8",
+  "workflow_id": "15bd12e8",
+  "workflow_id_display": "15bd12e8",
+  "workflow_name": "Meraki Packet Loss and Latency Alerts to Microsoft Teams",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Gavin",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor Meraki Dashboard uplinks and receive instant team alerts. Quick setup, API guidance, and Teams integration—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Org Name & ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Makes Latency and Loss Filterable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sets Network Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Meraki Organizations",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Network IDs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine latency to its respective Network",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filters Problematic sites",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Average Latency & Loss over 5m",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Uplink Loss and Latency",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if Alert Exists",
+      "type": "Process"
+    },
+    {
+      "name": "Create Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Message Techs",
+      "type": "Process"
+    },
+    {
+      "name": "Log the Alert",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

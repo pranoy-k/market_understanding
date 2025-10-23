@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ec9dddbc",
+  "workflow_id": "ec9dddbc",
+  "workflow_id_display": "ec9dddbc",
+  "workflow_name": "Send a notification to Slack when a new high-quality lead is added to Hubspot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "HubSpot, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Ricardo Espinoza",
+  "author_profile_url": "https://n8n.io/creators/n8nricardoe105/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically detect and flag high-value Hubspot CRM leads ($5M+ revenue) every 5 minutes, and get instant Slack alerts. Boost sales—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, hubspot, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger every 5 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get leads created last 5 minutes",
+      "type": "Process"
+    },
+    {
+      "name": "Keep the ones that make more than $5M in revenue",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

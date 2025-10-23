@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e0c797b6",
+  "workflow_id": "e0c797b6",
+  "workflow_id_display": "e0c797b6",
+  "workflow_name": "Hacker News to Video Content",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "39",
+  "tools_integrations": "API, Dropbox, Google Drive, Instagram, LinkedIn, OpenAI, YouTube",
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Transform trending Hacker News stories into video content scripts using AI for content creation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "News1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Settings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Image Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Article Prep",
+      "type": "Process"
+    },
+    {
+      "name": "Hacker News",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Minio",
+      "type": "Process"
+    },
+    {
+      "name": "Leo - Improve Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runway - Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runway - Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Article Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft OneDrive",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Leo - Improve Prompt2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runway - Create Video2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runway - Get Video2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cre - Generate Video1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cre - Get Video",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

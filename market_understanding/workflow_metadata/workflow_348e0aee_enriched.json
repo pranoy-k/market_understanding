@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/348e0aee",
+  "workflow_id": "348e0aee",
+  "workflow_id_display": "348e0aee",
+  "workflow_name": "Receive updates when a subscriber is added to a group in MailerLite",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Google Analytics",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your sales with real-time lead capture, data enrichment, automated CRM updates, and analytics dashboards. Streamline outreach—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, mailerLiteTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "MailerLite Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

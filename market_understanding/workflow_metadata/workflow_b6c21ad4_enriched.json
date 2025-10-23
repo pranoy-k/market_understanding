@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b6c21ad4",
+  "workflow_id": "b6c21ad4",
+  "workflow_id_display": "b6c21ad4",
+  "workflow_name": "Get bibliographic data from your Zotero Library",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "Diego",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract and customize metadata from your Zotero Library collections. Securely connect, filter, and optimize your bibliography with ease—learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "User ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Discount",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Collections",
+      "type": "Data Input"
+    },
+    {
+      "name": "Select Collection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge 100+",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

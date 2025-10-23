@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/68aa9b8b",
+  "workflow_id": "68aa9b8b",
+  "workflow_id_display": "68aa9b8b",
+  "workflow_name": "Automate LinkedIn Requests & Icebreaker with Browserflow and Google sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn outreach with this n8n template: extract contacts, check connections, and send personalized AI icebreakers. Boost networking efficiently—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, limit"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set your data here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set response to 0 - 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set response to 0 - 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set is_connection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Update message sent",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update invite sent",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update is relation",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate email",
+      "type": "Process"
+    },
+    {
+      "name": "Search for user profile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get profile posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get company posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Subject and cover letter based on match",
+      "type": "Process"
+    },
+    {
+      "name": "Is it a connection?",
+      "type": "Process"
+    },
+    {
+      "name": "Send message with LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Send connection request",
+      "type": "Process"
+    },
+    {
+      "name": "Next item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

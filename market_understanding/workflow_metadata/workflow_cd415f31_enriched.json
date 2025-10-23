@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cd415f31",
+  "workflow_id": "cd415f31",
+  "workflow_id_display": "cd415f31",
+  "workflow_name": "Populate Retell Dynamic Variables with Google Sheets Data for Call Handling",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly personalize Retell Voice Agents—populate dynamic variables from Google Sheets via phone numbers for more engaging, flexible conversations. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, googleSheets, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Get user in DB by Phone Number",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

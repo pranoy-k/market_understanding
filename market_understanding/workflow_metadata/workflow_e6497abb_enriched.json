@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e6497abb",
+  "workflow_id": "e6497abb",
+  "workflow_id_display": "e6497abb",
+  "workflow_name": "AI Agent with charts capabilities using OpenAI Structured Output and Quickchart",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Execute \"Generate a chart\" tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Generate a chart",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Generate Chart definition with Structured Output",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

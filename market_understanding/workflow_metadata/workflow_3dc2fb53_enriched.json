@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3dc2fb53",
+  "workflow_id": "3dc2fb53",
+  "workflow_id_display": "3dc2fb53",
+  "workflow_name": "Sync Google Drive files with OpenAI vector store for Assistants",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Google Drive, OpenAI",
+  "tags": [
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Bartosz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Drive with your OpenAI vector store. Automate updates, ensure AI accuracy, and simplify setup—learn more today!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, switch, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "\"Test workflow\" clicked",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set vector store file",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Google Drive file",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Google Drive file to create in vector store",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Google Drive file to update in vector store",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Google Drive file to delete from vector store",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Google Drive file to ignore",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Google Drive files with vector store files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload new or updated file",
+      "type": "Process"
+    },
+    {
+      "name": "Loop over files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "End loop",
+      "type": "Process"
+    },
+    {
+      "name": "End workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Search for existing file in vector store [OpenAI]",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add uploaded file to vector store [OpenAI]",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download new or updated file",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate vector store files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List vector store files [OpenAI]",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split vector store files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List files from folder",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Google Drive files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out files to ignore",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete outdated file or previous version",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

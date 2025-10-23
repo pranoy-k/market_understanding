@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/483bb0ec",
+  "workflow_id": "483bb0ec",
+  "workflow_id_display": "483bb0ec",
+  "workflow_name": "Bitrix24 Chatbot Application Workflow example with Webhook Integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Webhook",
+  "tags": [
+    "Webhook🤖 Chatbot"
+  ],
+  "author_name": "Ferenc Erb",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Join",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Install",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bitrix24 Handler",
+      "type": "Trigger"
+    },
+    {
+      "name": "Register Bot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Message",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Join Message",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process Delete",
+      "type": "Process"
+    },
+    {
+      "name": "Success Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

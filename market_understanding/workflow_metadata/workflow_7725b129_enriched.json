@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7725b129",
+  "workflow_id": "7725b129",
+  "workflow_id_display": "7725b129",
+  "workflow_name": "Parse and Extract Data from Documents/Images with Mistral OCR",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract data from PDFs or images with AI-powered Mistral OCR. Enjoy page splitting, markdown conversion, and secure cloud integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Document URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Document URL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image URL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mistral Upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral Signed URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Import PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Import Image",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Upload1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral Signed URL1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral DOC OCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral IMAGE OCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral DOC OCR1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral IMAGE OCR1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Document Understanding",
+      "type": "Data Input"
+    },
+    {
+      "name": "Document Mis-Understanding?",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

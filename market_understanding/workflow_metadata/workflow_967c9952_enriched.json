@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/967c9952",
+  "workflow_id": "967c9952",
+  "workflow_id_display": "967c9952",
+  "workflow_name": "Watchdog: Update All Workflows With Default Error Workflow",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Darien Kindlund",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Never miss setting a Default Error Workflow again—this helper auto-scans all n8n workflows every 4 hours, ensuring error handling is always in place. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Default Error Workflow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Exclude default_error:false Tagged Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get All Workflows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

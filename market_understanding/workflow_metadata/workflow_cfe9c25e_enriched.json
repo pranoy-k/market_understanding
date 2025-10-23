@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfe9c25e",
+  "workflow_id": "cfe9c25e",
+  "workflow_id_display": "cfe9c25e",
+  "workflow_name": "LinkedIn Post Automation with AI (GPT-4o) Generation & Slack Approval",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI, Slack",
+  "tags": [
+    "linkedin",
+    "slack",
+    "google"
+  ],
+  "author_name": "Amit Mehta",
+  "author_profile_url": "https://n8n.io/creators/amitswba/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn posts with AI-powered GPT-4 content and Slack approvals. Save time, ensure quality, and manage everything easily from Google Sheets. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with limit, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Linkedin-Post-Topic",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set-Final-Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload-Image-data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get-Group-id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update-Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Linedin-Post-Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Format-Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format-Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Linkedin-User-Detail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Linkedin-post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Pick 1 by 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Linkedin-Groups",
+      "type": "Data Input"
+    },
+    {
+      "name": "Register Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image Binary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Topics and Images for Processing",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,365 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f6e15918",
+  "workflow_id": "f6e15918",
+  "workflow_id_display": "f6e15918",
+  "workflow_name": "AI-Powered MIS Agent",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "95",
+  "tools_integrations": "Email, Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Kumar Shivam",
+  "author_profile_url": "https://n8n.io/creators/shivam840708/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Supercharge data management with an AI-powered MIS Agent: auto-classify emails, process attachments, and organize files in Google Drive. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with postgres, postgresTool, textSplitterRecursiveCharacterTextSplitter"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Daily Sales",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Address",
+      "type": "Data Processing"
+    },
+    {
+      "name": "customer_info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Drive Folders URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Drive Folders URL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields10",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields12",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON PARSER (Join)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Edit Fields8",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields9",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields11",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields13",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields14",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields15",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model7",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets6",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets8",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive2",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive3",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive4",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive5",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive6",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive10",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Daily Sales Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Address Folder",
+      "type": "Process"
+    },
+    {
+      "name": "customer_info folder",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Master",
+      "type": "Process"
+    },
+    {
+      "name": "Code3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive7",
+      "type": "Process"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive8",
+      "type": "Process"
+    },
+    {
+      "name": "Code8",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Call n8n Workflow Tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "MIS Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Knowledge_base",
+      "type": "Process"
+    },
+    {
+      "name": "Download files",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code10",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive9",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

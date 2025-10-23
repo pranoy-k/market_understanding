@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ed06b096",
+  "workflow_id": "ed06b096",
+  "workflow_id_display": "ed06b096",
+  "workflow_name": "Merge and filter several Rss & send to Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Sherlockes",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly combine, curate, and send fresh content from multiple RSS feeds to any Telegram channel. Easy setup, automated delivery, and rich Markdown formatting. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, set, sort"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Olimpo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merged Rss",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Torrent",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

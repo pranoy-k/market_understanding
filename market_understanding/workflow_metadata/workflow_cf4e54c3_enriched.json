@@ -1,0 +1,170 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf4e54c3",
+  "workflow_id": "cf4e54c3",
+  "workflow_id_display": "cf4e54c3",
+  "workflow_name": "Convert Reddit threads into short vertical videos with AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "40",
+  "tools_integrations": "Reddit",
+  "tags": [],
+  "author_name": "Artur",
+  "author_profile_url": "https://n8n.io/creators/arlusm1/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Turn Reddit threads into TikTok-ready vertical videos with AI. Automate narration, subtitles & b-roll. Fast, customizable, and cloud-friendly—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get the URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI (ChatGPT)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate TTS",
+      "type": "Process"
+    },
+    {
+      "name": "Split Clips",
+      "type": "Process"
+    },
+    {
+      "name": "Pexels Query",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get video urls",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract 3 videos per item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine 3 into 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get reddit token",
+      "type": "Data Input"
+    },
+    {
+      "name": "get reddit thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "create timeline with video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge media, audio and subtitles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split Out TTS settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out redditLink",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert url to reddit api url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "combine token and url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out videoLength",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge length and reddit json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "extract text field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge clips and TTS settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "Process"
+    },
+    {
+      "name": "Wait for inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge upload links and TTS audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get audio URLs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get upload links",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload TTS to Shotstack",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload videos to ShotStack",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit comments length",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge timeline and HTTP req",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Render the video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get video link",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

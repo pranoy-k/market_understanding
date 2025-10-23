@@ -1,0 +1,147 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6751874a",
+  "workflow_id": "6751874a",
+  "workflow_id_display": "6751874a",
+  "workflow_name": "Automate LinkedIn Contact Requests & Icebreaker with Unipile and Google sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "31",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn contact requests and send personalized icebreakers with this n8n template—perfect for efficient, scalable outreach. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start HERE",
+      "type": "Trigger"
+    },
+    {
+      "name": "Use this worflow to start the whole pocess",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split the DSN",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return attendee ID and Chat ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get linkedin profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Populate profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get linkedin profiles1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update status1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update status2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook status response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send contact request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Response Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get chat participants",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read file1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read file2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send Icebreaker",
+      "type": "Process"
+    },
+    {
+      "name": "Send Icebreaker1",
+      "type": "Process"
+    },
+    {
+      "name": "Get user Linkedin data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract username from Linkedin Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start chat",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

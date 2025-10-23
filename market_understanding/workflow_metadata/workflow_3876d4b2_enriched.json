@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3876d4b2",
+  "workflow_id": "3876d4b2",
+  "workflow_id_display": "3876d4b2",
+  "workflow_name": "Collect WhatsApp questionnaire responses in Postgres (Module \"Anketa\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "PostgreSQL, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "postgres"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect and store WhatsApp questionnaire responses in Postgres. Automate data entry, customize surveys, and streamline analysis. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, whatsAppTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get First Question",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on ANKETA",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Available Questions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add prev Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get prev Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert Bot Status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add prev Answer",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

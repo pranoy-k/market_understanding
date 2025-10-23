@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e6766553",
+  "workflow_id": "e6766553",
+  "workflow_id_display": "e6766553",
+  "workflow_name": "Add product ideas to Notion via a Slack command",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Notion, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect and manage team ideas by integrating Slack and Notion. Log suggestions with `/idea` and streamline innovation. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Set me up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Hidden message to add feature details",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

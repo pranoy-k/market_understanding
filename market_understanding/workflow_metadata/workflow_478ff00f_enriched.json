@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/478ff00f",
+  "workflow_id": "478ff00f",
+  "workflow_id_display": "478ff00f",
+  "workflow_name": "Add a bug to Linear via Slack command",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily report bugs from Slack to Linear with a simple /bug command. Set up fast, customize labels, automate notifications—enhance your bug tracking now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with stickyNote, set, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Set me up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set team ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bug Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hidden message to add bug details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create linear issue",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all linear teams",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get linear labels for a team",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

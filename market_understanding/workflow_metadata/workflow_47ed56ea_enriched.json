@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/47ed56ea",
+  "workflow_id": "47ed56ea",
+  "workflow_id_display": "47ed56ea",
+  "workflow_name": "Monitor if a page is alive and notify via Twilio SMS if not",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "SMS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Rui Borges",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor service uptime with automatic checks and instant Twilio SMS alerts when issues arise. Easy setup—customizable to your needs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

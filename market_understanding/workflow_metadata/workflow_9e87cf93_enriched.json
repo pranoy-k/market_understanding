@@ -1,0 +1,216 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e87cf93",
+  "workflow_id": "9e87cf93",
+  "workflow_id_display": "9e87cf93",
+  "workflow_name": "Automated HR Service System with WhatsApp, GPT-4 Classification & Google Workspace",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "57",
+  "tools_integrations": "OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "google"
+  ],
+  "author_name": "Tanay Agarwal",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate and streamline HR WhatsApp interactions with AI-powered message routing, instant responses, and seamless integration. Boost efficiency—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleCalendarTool, if, code"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Personalize email",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model7",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "JD tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "applicants",
+      "type": "Data Output"
+    },
+    {
+      "name": "dept head email",
+      "type": "Data Output"
+    },
+    {
+      "name": "getrows",
+      "type": "Data Output"
+    },
+    {
+      "name": "putrows",
+      "type": "Data Output"
+    },
+    {
+      "name": "update leaves",
+      "type": "Data Output"
+    },
+    {
+      "name": "get leaves",
+      "type": "Data Output"
+    },
+    {
+      "name": "read sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "get mail",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delegatory LLM",
+      "type": "Process"
+    },
+    {
+      "name": "Leave Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HR Chatbot",
+      "type": "Process"
+    },
+    {
+      "name": "policy_vector_store",
+      "type": "Process"
+    },
+    {
+      "name": "Attendance Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Email Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Shortlist Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Book Meeting",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

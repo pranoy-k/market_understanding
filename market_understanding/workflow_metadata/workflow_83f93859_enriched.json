@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/83f93859",
+  "workflow_id": "83f93859",
+  "workflow_id_display": "83f93859",
+  "workflow_name": "Track SEO Keyword Rankings in Google Search with ScrapingBee API",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Gegenfeld",
+  "author_profile_url": "https://n8n.io/creators/gegenfeld/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google SERP data collection and SEO reporting. Instantly create client-ready reports, track rankings, and export results—no coding needed. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, mailjet, formTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Build HTML Data Tables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Valid Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Google SERPs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Build CSV Data Tables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download SEO Report",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mail SEO Report",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

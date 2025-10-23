@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3913eb8",
+  "workflow_id": "a3913eb8",
+  "workflow_id_display": "a3913eb8",
+  "workflow_name": "Generate audio from text using OpenAI and Webhook _ Text to Speech Workflow",
+  "category": "IT & Development",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "3",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Ayoub",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fd8c452c",
+  "workflow_id": "fd8c452c",
+  "workflow_id_display": "fd8c452c",
+  "workflow_name": "Automate Service Ticket Triage with GPT-4o & Taiga",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "GitHub, OpenAI",
+  "tags": [],
+  "author_name": "Eric Mooney",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Taiga ticket triage with AI: auto-classify, set priorities, and block incomplete tickets. Boost efficiency—learn setup steps on GitHub.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Service Ticket Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Set Type to Question",
+      "type": "Process"
+    },
+    {
+      "name": "Set Type to Enhancement",
+      "type": "Process"
+    },
+    {
+      "name": "Set Type to Bug",
+      "type": "Process"
+    },
+    {
+      "name": "Set to Needs Info & Block",
+      "type": "Process"
+    },
+    {
+      "name": "Set Type to Onboarding",
+      "type": "Process"
+    },
+    {
+      "name": "Set Severity to Wishlist",
+      "type": "Process"
+    },
+    {
+      "name": "Set Severity to Minor",
+      "type": "Process"
+    },
+    {
+      "name": "Set Severity to Normal",
+      "type": "Process"
+    },
+    {
+      "name": "Set Severity to Critical",
+      "type": "Process"
+    },
+    {
+      "name": "Set Severity to Important",
+      "type": "Process"
+    },
+    {
+      "name": "Set Priority To Low",
+      "type": "Process"
+    },
+    {
+      "name": "Set Priority To High",
+      "type": "Process"
+    },
+    {
+      "name": "Set Priority To Normal",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

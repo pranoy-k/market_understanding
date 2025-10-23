@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b7e6b3a6",
+  "workflow_id": "b7e6b3a6",
+  "workflow_id_display": "b7e6b3a6",
+  "workflow_name": "Slack chatbot powered by AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly integrate AI-powered chatbots in Slack with seamless info retrieval, dynamic context storage, and streamlined messaging. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with toolSerpApi, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

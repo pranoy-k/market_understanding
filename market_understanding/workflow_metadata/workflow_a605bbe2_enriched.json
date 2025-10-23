@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a605bbe2",
+  "workflow_id": "a605bbe2",
+  "workflow_id_display": "a605bbe2",
+  "workflow_name": "Generate Knowledge Base Articles with GPT & Perplexity AI for Contentful CMS",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Cristiano Varriale",
+  "author_profile_url": "https://n8n.io/creators/varritech/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate knowledge base articles from chat prompts—AI drafting, deep research, iterative editing, and instant publishing to Contentful. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "JSON.parse1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON.parse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initialize Count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Increment Count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON.parse3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Create Perplexity Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Writer Agent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Editor Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Accept and Publish",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Perplexity Output & Add Citations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stop Here",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

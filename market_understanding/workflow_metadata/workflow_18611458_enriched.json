@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18611458",
+  "workflow_id": "18611458",
+  "workflow_id_display": "18611458",
+  "workflow_name": "API that extracts engaging moments from YouTube videos",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, YouTube",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Max T",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically detect the most engaging moments in YouTube videos by video ID. Ideal for creators—streamline content, highlights & alerts. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Input variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create each moment (human readable)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "millisecs to seconds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "prepare response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No intensity data available for video",
+      "type": "Process"
+    },
+    {
+      "name": "intensity > 0.6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out moments close to each other",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with \"no results\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with moments",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

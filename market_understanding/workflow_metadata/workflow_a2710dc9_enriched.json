@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a2710dc9",
+  "workflow_id": "a2710dc9",
+  "workflow_id_display": "a2710dc9",
+  "workflow_name": "Notion to Pinecone Vector Store Integration",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Facebook, Notion",
+  "tags": [
+    "Notion",
+    "RAG"
+  ],
+  "author_name": "Udit Rawat",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 notion Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Notion - Page Added Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion - Retrieve Page Content",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Non-Text Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize - Concatenate Notion's blocks content",
+      "type": "Process"
+    },
+    {
+      "name": "Create metadata and load content",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

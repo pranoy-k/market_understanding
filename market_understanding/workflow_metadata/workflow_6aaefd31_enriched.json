@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6aaefd31",
+  "workflow_id": "6aaefd31",
+  "workflow_id_display": "6aaefd31",
+  "workflow_name": "Post latest Twitter mentions to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Slack, Twitter",
+  "tags": [
+    "twitter",
+    "slack"
+  ],
+  "author_name": "Nisarag",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track Twitter mentions and sync them to Rocket.Chat. Automatically filter out duplicates for real-time, organized updates. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, rocketchat"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter Tweet Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only get new tweets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "n8n.io mentions",
+      "type": "Process"
+    },
+    {
+      "name": "RocketChat",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

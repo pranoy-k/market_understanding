@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cb2a0f49",
+  "workflow_id": "cb2a0f49",
+  "workflow_id_display": "cb2a0f49",
+  "workflow_name": "Configure Telegram Bot Webhooks with Form Automation",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Telegram, Webhook",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Un tal Camilo Medina",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly configure Telegram bot webhooks with an automated web form—no manual URL building. Fast, secure, and easy for individuals or teams. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook Configuration Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Build Telegram API URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Redirect to Telegram API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Build Telegram API URL",
+    "Redirect to Telegram API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

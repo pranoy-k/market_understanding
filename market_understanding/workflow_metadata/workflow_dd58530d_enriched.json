@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dd58530d",
+  "workflow_id": "dd58530d",
+  "workflow_id_display": "dd58530d",
+  "workflow_name": "Find Facebook Hidden Interests via Telegram",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "10",
+  "tools_integrations": "API, CSV, Facebook, Telegram",
+  "tags": [
+    "facebook",
+    "telegram",
+    "api",
+    "csv"
+  ],
+  "author_name": "Ibrahim",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract #interest topics from Telegram chats, fetch detailed info via Facebook Graph API, and get organized insights in a ready-to-use CSV. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with facebookGraphApi, spreadsheetFile, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Get interest name",
+      "type": "Trigger"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Extract message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connect to Graph API",
+      "type": "Process"
+    },
+    {
+      "name": "Split Interests into a Table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a Spreadsheet",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Connect to Graph API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de223181",
+  "workflow_id": "de223181",
+  "workflow_id_display": "de223181",
+  "workflow_name": "Automate Blog Content Creation with GPT-4, Perplexity & WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, WordPress",
+  "tags": [],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate end-to-end blog creation with AI—research, SEO content, WordPress publishing, and notifications. Save time and boost consistency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start with Research Query Submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Research Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Workflow Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate SEO Blog Content (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Research",
+      "type": "Data Input"
+    },
+    {
+      "name": "Slack-List",
+      "type": "Process"
+    },
+    {
+      "name": "Copywriting AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Article to WordPress",
+      "type": "Process"
+    },
+    {
+      "name": "Notify Slack Channel",
+      "type": "Process"
+    },
+    {
+      "name": "Notion-List",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Article in Notion",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

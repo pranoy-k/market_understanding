@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/28a4253f",
+  "workflow_id": "28a4253f",
+  "workflow_id_display": "28a4253f",
+  "workflow_name": "Create a new Freshdesk ticket",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance Freshdesk with a companion workflow—visual guides, practical steps, and hands-on examples to boost automation and master ticket management.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, freshdesk"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Freshdesk",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

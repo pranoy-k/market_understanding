@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/951358e5",
+  "workflow_id": "951358e5",
+  "workflow_id_display": "951358e5",
+  "workflow_name": "UniPile LinkedIn Profile Lookup Subworkflow",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Enrich LinkedIn leads in n8n with unified sender profiles using UniPile APIs. Streamline automation, preserve context, and customize for deeper insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set User Data from Unipile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Linkedin Org Data from Unipile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set unable to find data object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Linkedin User Data from Unipile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group in one object - User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Linkedin Org Data from Unipile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group in one object - Org",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        320
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "position": [
+        650,
+        320
+      ],
+      "parameters": {
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "e41a6bcf65d8aa7d"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "position": [
+        450,
+        320
+      ],
+      "parameters": {
+        "filePath": "/data/sample_spreadsheet.csv"
+      },
+      "typeVersion": 1,
+      "id": "73c99f623f86df40"
+    }
+  ],
+  "connections": {
+    "Read Binary File": {
+      "main": [
+        [
+          {
+            "node": "Spreadsheet File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Read Binary File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "f0879486ff06c55d",
+  "name": "Read in an Excel spreadsheet file",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "excel"
+  ]
+}

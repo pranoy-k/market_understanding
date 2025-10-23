@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/238fcc47",
+  "workflow_id": "238fcc47",
+  "workflow_id_display": "238fcc47",
+  "workflow_name": "Convert an XML file to JSON via webhook call",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Slack, Webhook",
+  "tags": [
+    "slack",
+    "webhook",
+    "xml",
+    "json"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Already JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Error Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST",
+      "type": "Trigger"
+    },
+    {
+      "name": "Success Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

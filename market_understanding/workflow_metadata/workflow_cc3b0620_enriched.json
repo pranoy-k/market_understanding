@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cc3b0620",
+  "workflow_id": "cc3b0620",
+  "workflow_id_display": "cc3b0620",
+  "workflow_name": "Monitor SEO Keyword Rankings with LLaMA AI & Apify Google SERP Scraping",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Gegenfeld",
+  "author_profile_url": "https://n8n.io/creators/gegenfeld/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate SEO keyword rank tracking across 24 countries & 12 languages. Get AI-powered recommendations and professional reports for smarter SEO decisions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Localize",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Groq AI",
+      "type": "Process"
+    },
+    {
+      "name": "SEO Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Send Feedback Email",
+      "type": "Process"
+    },
+    {
+      "name": "Send Result Table Email",
+      "type": "Process"
+    },
+    {
+      "name": "Build Table",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

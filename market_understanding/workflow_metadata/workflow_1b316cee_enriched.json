@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b316cee",
+  "workflow_id": "1b316cee",
+  "workflow_id_display": "1b316cee",
+  "workflow_name": "Author and Publish Blog Posts From Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Daniel Nolde",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "ScheduleTrigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "ManualTrigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule",
+      "type": "Data Output"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AgentLLM",
+      "type": "Process"
+    },
+    {
+      "name": "fetchConfig",
+      "type": "Data Output"
+    },
+    {
+      "name": "SaveBackToSheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "SetToPublish",
+      "type": "Data Output"
+    },
+    {
+      "name": "LogStatus",
+      "type": "Data Output"
+    },
+    {
+      "name": "LogPublished",
+      "type": "Data Output"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PreparedData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RecombinedDataRow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "CreatePost",
+      "type": "Data Input"
+    },
+    {
+      "name": "PrepareXmlPost",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HandleXMLRPCResponse",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

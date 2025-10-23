@@ -1,0 +1,34 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8983dc25",
+  "workflow_id": "8983dc25",
+  "workflow_id_display": "8983dc25",
+  "workflow_name": "Add a song to your Spotify queue",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "eem2188",
+  "author_profile_url": "https://n8n.io/creators/erin2722/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, enrichment, email outreach, and notifications—directly from Google Sheets. Boost sales efficiency. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, spotify"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

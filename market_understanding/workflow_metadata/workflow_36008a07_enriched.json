@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/36008a07",
+  "workflow_id": "36008a07",
+  "workflow_id_display": "36008a07",
+  "workflow_name": "Send a random recipe once a day to Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Airtable, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Hilary Torn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Team Communication Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger - people join bot",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get recipes from API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get recipes",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Get recipes from API",
+    "Airtable API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

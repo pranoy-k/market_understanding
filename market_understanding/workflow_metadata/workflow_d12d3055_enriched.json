@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d12d3055",
+  "workflow_id": "d12d3055",
+  "workflow_id_display": "d12d3055",
+  "workflow_name": "Create ticket on specific customer messages in Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Seamlessly collect customer feedback on Telegram, auto-tag Freshdesk tickets, reply instantly, and track issues in Monday.com. Learn how it works!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with mondayCom, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Monday.com",
+      "type": "Process"
+    },
+    {
+      "name": "Monday.com1",
+      "type": "Process"
+    },
+    {
+      "name": "Freshdesk",
+      "type": "Process"
+    },
+    {
+      "name": "Freshdesk1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

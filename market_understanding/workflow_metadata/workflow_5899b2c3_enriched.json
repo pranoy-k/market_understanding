@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5899b2c3",
+  "workflow_id": "5899b2c3",
+  "workflow_id_display": "5899b2c3",
+  "workflow_name": "Receive messages for a MQTT queue",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Gmail, Google Drive, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily auto-download Gmail attachments, filter emails, save files to Google Drive, and get instant Slack alerts. Streamline inbox management today!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "MQTT Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

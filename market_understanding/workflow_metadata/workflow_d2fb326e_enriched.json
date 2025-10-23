@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d2fb326e",
+  "workflow_id": "d2fb326e",
+  "workflow_id_display": "d2fb326e",
+  "workflow_name": "AI SEO Readability Audit: Check Website Friendliness for LLMs",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "chatgpt"
+  ],
+  "author_name": "Leonard",
+  "author_profile_url": "https://n8n.io/creators/leonardvanhemert/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, lmChatOpenAi, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get HTML from Website",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sanitize Website URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract HTML Features",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI SEO Analysis",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

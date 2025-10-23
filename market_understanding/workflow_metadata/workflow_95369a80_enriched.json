@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/95369a80",
+  "workflow_id": "95369a80",
+  "workflow_id_display": "95369a80",
+  "workflow_name": "Catch MailChimp subscribe events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily automate Mailchimp with n8n workflows. Instantly trigger actions, streamline subscriber management, and boost audience engagement. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mailchimpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Mailchimp Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

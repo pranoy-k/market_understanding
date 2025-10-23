@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2b4b38b2",
+  "workflow_id": "2b4b38b2",
+  "workflow_id_display": "2b4b38b2",
+  "workflow_name": "AI web researcher for sales",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate sales prospecting with AI-powered account research. Get curated company info, pricing, LinkedIn, and more—customizable workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "AI Researcher Output Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Update Row with data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get rows to enrich",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get website content",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI - Search Google",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI company researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Search Google with ScrapingBee",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI - Search Google",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

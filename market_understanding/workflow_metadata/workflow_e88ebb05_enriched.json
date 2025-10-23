@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e88ebb05",
+  "workflow_id": "e88ebb05",
+  "workflow_id_display": "e88ebb05",
+  "workflow_name": "Evaluation metric example: String similarity",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily evaluate AI workflows in n8n! Automatically test handwritten code images, extract data, and measure accuracy with flexible, actionable insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with evaluationTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Match webhook format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract code from image",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Evaluating?",
+      "type": "Process"
+    },
+    {
+      "name": "Set metrics",
+      "type": "Process"
+    },
+    {
+      "name": "Calc string distance",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

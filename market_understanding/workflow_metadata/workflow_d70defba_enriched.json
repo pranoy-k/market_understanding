@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d70defba",
+  "workflow_id": "d70defba",
+  "workflow_id_display": "d70defba",
+  "workflow_name": "Build Your Own Counseling Chatbot on LINE to Support Mental Health Conversations",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "[email protected]",
+  "author_profile_url": "https://n8n.io/creators/linlinmhee/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Build a 24/7 counseling chatbot on LINE with GPT-4 for scalable, empathetic mental health support. Easy setup, secure, and fully customizable. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Format Reply",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Azure OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loading Animation",
+      "type": "Data Input"
+    },
+    {
+      "name": "ReplyMessage - Not supported",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "ReplyMessage - Line",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Chatbot",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33f55dcd",
+  "workflow_id": "33f55dcd",
+  "workflow_id_display": "33f55dcd",
+  "workflow_name": "AI Social Media Caption Creator creates social media post captions in Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Airtable Trigger: New Record",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Airtable Record Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post Caption into Airtable Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Background Info",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

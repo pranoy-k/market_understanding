@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/afa23fbd",
+  "workflow_id": "afa23fbd",
+  "workflow_id_display": "afa23fbd",
+  "workflow_name": "Convert Image Files (JPG, PNG) to URLs and Reduce File Size for FREE",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "simonscrapes",
+  "author_profile_url": "https://n8n.io/creators/simonscrapes/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly host and optimize images for the web—get instant URLs, reduce file size, and create AI images. Streamline your image workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, openAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set image description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Img to ImgBB for URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "ReSmush.it Image Optimisation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Store Optimised Image ImgBB",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

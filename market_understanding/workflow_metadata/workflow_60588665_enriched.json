@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/60588665",
+  "workflow_id": "60588665",
+  "workflow_id_display": "60588665",
+  "workflow_name": "Generate Amazon FBA keywords using Amazon Completion API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, AWS, Airtable",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": "https://n8n.io/creators/rumjahn/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate high-converting Amazon keywords with seamless Airtable integration. Boost your ad campaigns—discover more effective keywords now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Clean Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get airtable data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save keywords",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Amazon keywords",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine into string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receive Keyword",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

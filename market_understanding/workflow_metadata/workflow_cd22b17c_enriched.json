@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cd22b17c",
+  "workflow_id": "cd22b17c",
+  "workflow_id_display": "cd22b17c",
+  "workflow_name": "Query Google Sheets/CSV data through an AI Agent using PostgreSQL",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "CSV, Google Sheets, PostgreSQL",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "Leonardo Grigorio",
+  "author_profile_url": "https://n8n.io/creators/leonardogrig/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze Google Sheets or CSV financial data using AI-generated SQL queries—no SQL skills needed. Fast, accurate, open-source solution. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualChatTrigger, toolWorkflow, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "change_this",
+      "type": "Data Processing"
+    },
+    {
+      "name": "response output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "fetch sheet data",
+      "type": "Data Output"
+    },
+    {
+      "name": "create table query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "create insertion query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "execute_query_tool",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "get_postgres_schema",
+      "type": "Process"
+    },
+    {
+      "name": "table exists?",
+      "type": "Data Output"
+    },
+    {
+      "name": "remove table",
+      "type": "Data Output"
+    },
+    {
+      "name": "create table",
+      "type": "Data Output"
+    },
+    {
+      "name": "perform insertion",
+      "type": "Data Output"
+    },
+    {
+      "name": "sql query executor",
+      "type": "Data Output"
+    },
+    {
+      "name": "schema finder",
+      "type": "Data Output"
+    },
+    {
+      "name": "schema to string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent With SQL Query Prompt",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

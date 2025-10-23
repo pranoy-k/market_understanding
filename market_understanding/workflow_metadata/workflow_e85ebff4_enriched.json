@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e85ebff4",
+  "workflow_id": "e85ebff4",
+  "workflow_id_display": "e85ebff4",
+  "workflow_name": "Automate Meeting Prep & Lead Enrichment with Bright Data, Cal.com & Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Airtable, Email, LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/imperolq/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate meeting prep with LinkedIn lead research, CRM integration, and AI summaries sent to your email. Save time and attend every call fully prepared.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, markdown, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Map needed fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "create json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit bio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update lead data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add to CRM",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update meeting summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "If has linkedin",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Meeting Prep Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Scrap Linkedin",
+      "type": "Process"
+    },
+    {
+      "name": "create HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

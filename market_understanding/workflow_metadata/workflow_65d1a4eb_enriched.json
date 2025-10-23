@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/65d1a4eb",
+  "workflow_id": "65d1a4eb",
+  "workflow_id_display": "65d1a4eb",
+  "workflow_name": "Build your own Google Drive MCP server",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily search and extract Google Drive files with this MCP server integration. Convert files to text, support natural language queries, and customize workflows.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, toolWorkflow, set"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get PDF Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get CSV Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyse Image",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Download File1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read File From GDrive",
+      "type": "Process"
+    },
+    {
+      "name": "Search Files from Gdrive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

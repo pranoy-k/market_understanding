@@ -1,0 +1,196 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82c144e3",
+  "workflow_id": "82c144e3",
+  "workflow_id_display": "82c144e3",
+  "workflow_name": "AI Agent To Chat With Files In Supabase Storage and Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "49",
+  "tools_integrations": "Google Drive, PDF",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Build AI-powered document workflows in N8N with Supabase & Google Drive. Automate uploads, parsing, and chat-based file queries. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with textSplitterRecursiveCharacterTextSplitter, if, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set File ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Parsed Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Text1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Parsed Data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Text3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI3",
+      "type": "Process"
+    },
+    {
+      "name": "Get All files",
+      "type": "Data Input"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create File record2",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Files",
+      "type": "Process"
+    },
+    {
+      "name": "Download",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert into Supabase Vectorstore",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Old Doc Rows",
+      "type": "Process"
+    },
+    {
+      "name": "Create File record1",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader1",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert into Supabase Vectorstore1",
+      "type": "Process"
+    },
+    {
+      "name": "Upload File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Processing Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload File1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Processing Status1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

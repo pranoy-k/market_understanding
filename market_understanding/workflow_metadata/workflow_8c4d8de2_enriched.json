@@ -1,0 +1,101 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8c4d8de2",
+  "workflow_id": "8c4d8de2",
+  "workflow_id_display": "8c4d8de2",
+  "workflow_name": "Automate Lead Calls with an AI Agent using OpenAI, Twilio & Vapi",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "API, Email, Google Sheets, OpenAI, SMS, Slack",
+  "tags": [
+    "google",
+    "slack🤖 openai"
+  ],
+  "author_name": "Èugui DragoÈ",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead calls with an AI voice agent—capture transcripts, extract emails, log to Google Sheets, and get Slack alerts. No coding required. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Step 4 - Set (Parse Call Result)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Loop Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Setup Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Step 5.1 - Update Lead (No Answer)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Step 5.1.2 - Update Lead (Completed)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Sync Updated Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Load Lead Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Step 1 - Create Customer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Step 2 - Initiate Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Step 3 - Get Call Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Step 5.1.1- Extract Email (Regex)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Attempt Count + Init Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Call Status from VAPI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Final Status + shouldContinue Logic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Phone Number",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Valid Leads",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Get Call Status from VAPI",
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

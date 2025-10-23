@@ -1,0 +1,101 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dafe6178",
+  "workflow_id": "dafe6178",
+  "workflow_id_display": "dafe6178",
+  "workflow_name": "Automated AI Content Creation & Instagram Publishing from Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Sheets, Instagram",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Onur",
+  "author_profile_url": "https://n8n.io/creators/onurpolat05/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram posts from Google Sheets using AI. Instantly generate images, captions, and publish—saving time and ensuring consistency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Scheduled Start: Check for New Posts",
+      "type": "Trigger"
+    },
+    {
+      "name": "2. Prepare Input Variables (Topic, Audience, etc.)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "(Parse Concept JSON)",
+      "type": "Process"
+    },
+    {
+      "name": "(Parse Prompts JSON)",
+      "type": "Process"
+    },
+    {
+      "name": "(Parse Caption JSON)",
+      "type": "Process"
+    },
+    {
+      "name": "5. Prepare Data for Instagram API",
+      "type": "Data Processing"
+    },
+    {
+      "name": "1. Get Next Post Idea from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "7. Update Post Status in Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "3a. Generate Content Concept (Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "(LLM Model for Concept)",
+      "type": "Process"
+    },
+    {
+      "name": "3b. Generate Image Prompt Options (Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "(LLM Model for Prompts)",
+      "type": "Process"
+    },
+    {
+      "name": "3c. Generate Post Caption (Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "(LLM Model for Caption)",
+      "type": "Process"
+    },
+    {
+      "name": "4. Generate Image using Prompt 1 (Replicate Flux)",
+      "type": "Data Input"
+    },
+    {
+      "name": "6a. Create Instagram Media Container",
+      "type": "Process"
+    },
+    {
+      "name": "6c. Publish Post to Instagram",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "5. Prepare Data for Instagram API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

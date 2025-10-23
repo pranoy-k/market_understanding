@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90e6054b",
+  "workflow_id": "90e6054b",
+  "workflow_id_display": "90e6054b",
+  "workflow_name": "Turn YouTube RSS videos into social posts with Dumpling AI and Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Airtable, Facebook, RSS, YouTube",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "It looks like you haven't provided the summary or workflow description yet. Please share the summary you'd like me to use, and I'll create a clear and engaging meta description for you!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, airtable, set"
+  ],
+  "nodes": [
+    {
+      "name": "Get YouTube Uploads",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structure Posts & Prompts by Platform",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Social Posts + Image Prompts",
+      "type": "Process"
+    },
+    {
+      "name": "Save Instagram Caption to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Facebook Caption to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save LinkedIn Caption to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get YouTube Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Instagram Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Facebook Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate LinkedIn Image (Dumpling AI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Instagram Image to Airtable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Facebook Image to Airtable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload LinkedIn Image to Airtable",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0fd3cca",
+  "workflow_id": "b0fd3cca",
+  "workflow_id_display": "b0fd3cca",
+  "workflow_name": "Capture Website Screenshots with Bright Data Web Unlocker and Save to Disk",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture high-quality website screenshots—even behind anti-bot protections—with Bright Data Web Unlocker. Automate, customize, and simplify visual recordkeeping. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL, Filename and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write a file to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Capture a screenshot",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

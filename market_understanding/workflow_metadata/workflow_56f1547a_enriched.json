@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/56f1547a",
+  "workflow_id": "56f1547a",
+  "workflow_id_display": "56f1547a",
+  "workflow_name": "QR Code Generator via Webhook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate dynamic QR codes from any text or URL in your automated workflows. Fast setup, custom options—learn how to streamline QR code creation!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Generate QR Code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Data Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with QR Code",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

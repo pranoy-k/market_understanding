@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/15462ac4",
+  "workflow_id": "15462ac4",
+  "workflow_id_display": "15462ac4",
+  "workflow_name": "Turn YouTube Videos into Summaries, Transcripts, and Visual Insights",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Colleen Brady",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube video analysis with AI: extract summaries, transcripts, and shareable clips. Boost productivity—customize output for any workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set: Define Initial Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Scene Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Summarize Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Transcript Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Fallback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Transcript with Timestamps Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Scene Clips",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Fields: Define Outcome",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set: Merged Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request to Google",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code: Merge data from prior nodes with HTTP Output",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

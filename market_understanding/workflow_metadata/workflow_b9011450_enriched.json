@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9011450",
+  "workflow_id": "b9011450",
+  "workflow_id_display": "b9011450",
+  "workflow_name": "Monitor SSL certificate of any domain with uProc",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, MySQL, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "mysql"
+  ],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with manualTrigger, if, uproc"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Domain Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get SSL Certificate",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

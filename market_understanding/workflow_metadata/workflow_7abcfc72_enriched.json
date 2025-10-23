@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7abcfc72",
+  "workflow_id": "7abcfc72",
+  "workflow_id_display": "7abcfc72",
+  "workflow_name": "Daily meetings summarization with Gemini AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Johnny Rafael",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Calendar - Get Events",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

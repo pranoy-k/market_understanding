@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d3798424",
+  "workflow_id": "d3798424",
+  "workflow_id_display": "d3798424",
+  "workflow_name": "Personalized Outreach for Lawyers with LinkedIn Scraping, GPT-4o, Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Ibrahim Malick",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly find and personalize outreach to solo lawyers on LinkedIn—no scraping or browser automation. Fast, scalable, and fully TOS-compliant. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Outreach Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Google",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Research Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pages",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

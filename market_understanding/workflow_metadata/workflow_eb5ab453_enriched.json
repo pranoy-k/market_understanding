@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb5ab453",
+  "workflow_id": "eb5ab453",
+  "workflow_id_display": "eb5ab453",
+  "workflow_name": "Automated AI Product Photography and Instagram Post Generator (Deepseek/Segmind)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Instagram, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate pro-quality product photos and Instagram posts with AI, delivered to Telegram for fast approval. Easy setup—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "InputYourImageURL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "ImageInstruction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "WithHumanModel",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoHumanModel",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SegmindAPIKey",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RetrieveImageURL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set seed field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram ChatID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get image description",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "RetrieveGeneratedImage",
+      "type": "Data Input"
+    },
+    {
+      "name": "DownloadImage",
+      "type": "Data Input"
+    },
+    {
+      "name": "GenerateRandomSeedNumber",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetImage_Segmind",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "SegmindAPIKey",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

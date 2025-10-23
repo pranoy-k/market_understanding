@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2adc94b9",
+  "workflow_id": "2adc94b9",
+  "workflow_id_display": "2adc94b9",
+  "workflow_name": "Complete Lesson Automation for Modern UK Teachers",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Praveena",
+  "author_profile_url": "https://n8n.io/creators/pankstr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Save hours on lesson planning with AI-powered tools for UK teachers. Instantly create tailored lessons, assessments, and streamline your workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, googleCalendar, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Teacher Input Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Prep Reminder",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Content Creation Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Assessment & Marking Agent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Integration Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Package Compiler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Google Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Add Content to Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch File From Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

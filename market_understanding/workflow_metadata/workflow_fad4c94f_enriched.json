@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fad4c94f",
+  "workflow_id": "fad4c94f",
+  "workflow_id_display": "fad4c94f",
+  "workflow_name": "Sample error workflow",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "SMS",
+  "tags": [],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant error alerts via Mattermost & SMS. Ensure your team never misses critical issues with seamless, multi-channel notifications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, errorTrigger, twilio"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

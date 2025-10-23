@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e03c459a",
+  "workflow_id": "e03c459a",
+  "workflow_id_display": "e03c459a",
+  "workflow_name": "AI-Powered Multi-Social Media Post Automation: Google Trends & Perplexity AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Facebook, LinkedIn, Twitter",
+  "tags": [
+    "google",
+    "linkedin",
+    "twitter",
+    "facebook",
+    "Scheduled"
+  ],
+  "author_name": "Gerald Denor",
+  "author_profile_url": "https://n8n.io/creators/dominixai/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate trending content creation for LinkedIn, Twitter, and Facebook with AI. Discover, research, and schedule viral posts to boost your social reach!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "2 Most Trending",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Choosing Topic",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Facebook Graph API1",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Topic- Perplexity",
+      "type": "Data Input"
+    },
+    {
+      "name": "High search volume keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Trends",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API1",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

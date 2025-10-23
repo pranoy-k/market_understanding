@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b1556e8d",
+  "workflow_id": "b1556e8d",
+  "workflow_id_display": "b1556e8d",
+  "workflow_name": "Create Professional Marketing Assets with Google Imagen, Ideogram & Placid for Ads & Social",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Daniel Setzermann",
+  "author_profile_url": "https://n8n.io/creators/danielsetzermann/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform product images into stunning marketing visuals with AI-powered backgrounds, smart copywriting, and branded templates. Try it today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "BG Prompt Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Copy Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "gpt-4.1-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Result",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Status1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Result1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Background Image Prompt Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Copywriting Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Fal.ai Replace Background",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fal.ai Time of Day Relight",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Image via Template with Placid.app",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get a temporary file url for the upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Status2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fal.ai Google Image Gen4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Style Reference Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

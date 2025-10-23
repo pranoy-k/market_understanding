@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/279c8b2a",
+  "workflow_id": "279c8b2a",
+  "workflow_id_display": "279c8b2a",
+  "workflow_name": "Validate Seatable Webhooks with HMAC SHA256 Authentication",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "Vitali",
+  "author_profile_url": "https://n8n.io/creators/vquie/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Securely authenticate Seatable webhooks with HMAC SHA256. Validates signatures, ensures data integrity, and is easy to customize. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with noOp, stickyNote, if"
+  ],
+  "nodes": [
+    {
+      "name": "Calculate sha256",
+      "type": "Process"
+    },
+    {
+      "name": "Seatable Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add nodes for processing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

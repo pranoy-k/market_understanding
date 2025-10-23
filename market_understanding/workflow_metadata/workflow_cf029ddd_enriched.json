@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf029ddd",
+  "workflow_id": "cf029ddd",
+  "workflow_id_display": "cf029ddd",
+  "workflow_name": "Extract Invoice Data from PDFs with AI - Google Sheets Email Alerts",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Google Drive, Google Sheets, PDF",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Aashit Sharma",
+  "author_profile_url": "https://n8n.io/creators/aashitsharma/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract invoice data from Google Drive PDFs, log to Google Sheets, and notify your team—AI-powered, automated, and fully integrated. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, openAi, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger - file creation",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Email Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Update DB - spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Ollama Model",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Download Binary - file",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

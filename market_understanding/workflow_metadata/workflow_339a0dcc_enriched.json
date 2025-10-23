@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/339a0dcc",
+  "workflow_id": "339a0dcc",
+  "workflow_id_display": "339a0dcc",
+  "workflow_name": "Analyze & Sort Suspicious Email Contents with ChatGPT",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, Gmail, Google Analytics, Jira, OpenAI",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Microsoft Outlook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Outlook Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Gmail Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Jira ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Email with ChatGPT",
+      "type": "Process"
+    },
+    {
+      "name": "Screenshot HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Headers of Email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Potentially Malicious Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Create Potentially Benign Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Rename Screenshot",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Screenshot of Email to Jira",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Email Body to Jira",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Email Body to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Rename Email Body Screenshot",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

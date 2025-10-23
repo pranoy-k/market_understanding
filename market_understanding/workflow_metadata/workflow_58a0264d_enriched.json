@@ -1,0 +1,150 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/58a0264d",
+  "workflow_id": "58a0264d",
+  "workflow_id_display": "58a0264d",
+  "workflow_name": "Ultimate Content Generator for WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Airtable, WordPress",
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate content creation, SEO optimization, and publishing on WordPress with AI and Airtable. Save time and scale your strategy—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with toolWikipedia, if, toolHttpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create post title and structure",
+      "type": "Process"
+    },
+    {
+      "name": "Create chapters text",
+      "type": "Process"
+    },
+    {
+      "name": "P1 Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "SEO Update for RankMath",
+      "type": "Process"
+    },
+    {
+      "name": "GET Keywords",
+      "type": "Data Output"
+    },
+    {
+      "name": "GET Brand Guidelines",
+      "type": "Data Output"
+    },
+    {
+      "name": "UPDATE Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split out chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Upload media",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set image ID for the post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond: Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Leo - Get imageId",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Leo - Improve Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST RankMath Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

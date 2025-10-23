@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a22aa13f",
+  "workflow_id": "a22aa13f",
+  "workflow_id_display": "a22aa13f",
+  "workflow_name": "Automated Repository Migration from GitLab Groups to Gitea Organizations",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "nepomuc",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly migrate all Gitlab group repositories to Gitea, skipping duplicates. Simple setup and secure token authentication. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup (CHANGE ME)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gitea: Migrate repo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gitea: Search for repo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gitlab: Get projects",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/31f90208",
+  "workflow_id": "31f90208",
+  "workflow_id_display": "31f90208",
+  "workflow_name": "Line Chatbot Handling AI Responses with Groq and Llama3",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "Sirisak Chantanate",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your LINE chatbot with Meta’s llama 3.3 AI for dynamic, reliable conversations. Handles complex texts easily. Learn more about seamless integration!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Get Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Line: Messaging API",
+      "type": "Trigger"
+    },
+    {
+      "name": "Groq AI Assistant",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line: Reply Message",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Line: Messaging API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

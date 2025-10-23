@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62d6ce6c",
+  "workflow_id": "62d6ce6c",
+  "workflow_id_display": "62d6ce6c",
+  "workflow_name": "Receive the weather information of any city",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture with seamless Typeform to HubSpot integration. Boost insights, enable real-time alerts, and streamline your sales workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, openWeatherMap, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

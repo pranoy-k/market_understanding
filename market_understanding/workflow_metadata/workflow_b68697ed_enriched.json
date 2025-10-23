@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b68697ed",
+  "workflow_id": "b68697ed",
+  "workflow_id_display": "b68697ed",
+  "workflow_name": "Telegram sticker bot",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically detect stickers in Telegram messages and reply with their ID. Enhance user interaction with instant, real-time sticker identification. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, telegramTrigger, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

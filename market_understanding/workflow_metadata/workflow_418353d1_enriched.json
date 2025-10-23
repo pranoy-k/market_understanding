@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/418353d1",
+  "workflow_id": "418353d1",
+  "workflow_id_display": "418353d1",
+  "workflow_name": "Crypto Market Alert System with Binance and Telegram Integration",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Stay ahead in crypto trading with an n8n workflow that tracks Binance prices & alerts you via Telegram in real time. Fast setup. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter by 10% Change rate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Binance 24h Price Change",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split By 1K chars",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

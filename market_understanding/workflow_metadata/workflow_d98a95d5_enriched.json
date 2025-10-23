@@ -1,0 +1,135 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d98a95d5",
+  "workflow_id": "d98a95d5",
+  "workflow_id_display": "d98a95d5",
+  "workflow_name": "Generate Monthly Financial Reports with Gemini AI, SQL, and Outlook",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "27",
+  "tools_integrations": null,
+  "tags": [
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate monthly business performance reports with AI-driven insights, dynamic SQL, and custom dashboards—no manual work. Learn more and boost efficiency!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with microsoftOutlook, scheduleTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "CostCentrs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Selected Cost Center",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YTD vs Prevoius Month1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "PreviousMonth",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Cost Centers with Budgets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "verticalPL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Microsoft Outlook2",
+      "type": "Process"
+    },
+    {
+      "name": "CostCenter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "WIP1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Employees",
+      "type": "Data Output"
+    },
+    {
+      "name": "Employees1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Financial Performance",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Business Performance AI Agent (Analyst)",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Departments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Projects",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

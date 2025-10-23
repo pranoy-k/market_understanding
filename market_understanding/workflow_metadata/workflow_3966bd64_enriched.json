@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3966bd64",
+  "workflow_id": "3966bd64",
+  "workflow_id_display": "3966bd64",
+  "workflow_name": "Search & Summarize Web Data with Perplexity, Gemini AI & Bright Data to Webhooks",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and summarize Perplexity Search results into clean, structured insights with n8n—AI-powered, customizable, and ready for instant integration. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Snapshot Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook Notifier",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perplexity Search Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Readable Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarization of search result",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

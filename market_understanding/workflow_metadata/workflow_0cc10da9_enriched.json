@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0cc10da9",
+  "workflow_id": "0cc10da9",
+  "workflow_id_display": "0cc10da9",
+  "workflow_name": "RSS Feed News Processing and Distribution Workflow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "RSS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate RSS feed monitoring and Trello updates—filter, format, and deliver curated news to your team with ease. Customizable and easy to set up.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Transform date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Read Testing Catalog",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter by date (more than 7 days)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit news to x",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transform new to MD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Publish comment",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Read marktechpost",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Read",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

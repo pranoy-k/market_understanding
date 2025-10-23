@@ -1,0 +1,131 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4995187f",
+  "workflow_id": "4995187f",
+  "workflow_id_display": "4995187f",
+  "workflow_name": "CSV to HubSpot Uploader with Dynamic Field Mapping and Google Sheets Integration",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "CSV, Google Sheets, HubSpot, SMS",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate CSV uploads in HubSpot with n8n—streamline data validation, mapping, and imports for CSMs, marketers, and sales. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start here to update your field list",
+      "type": "Trigger"
+    },
+    {
+      "name": "File upload form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define array of objects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the real fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append to Google sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Erase Google sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get the fields from the sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split by object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch properties from Hubspot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Define crm_type",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transforms the results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "To get the first line of file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge fields and data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if all fields from input are defined",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Creates the correspondance table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Form to set the correponding field for each input field",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get the content of file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split all records to import",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Uploads to Hubspot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Form response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove hidden and starting with hs_ props fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the values for each field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the values for each field1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/25e8fe88",
+  "workflow_id": "25e8fe88",
+  "workflow_id_display": "25e8fe88",
+  "workflow_name": "Create Daily YouTube Playlist, using Google Sheets, and get notified in Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets, Telegram, YouTube",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Dustin",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create daily YouTube playlists of the latest videos from your favorite channels with n8n. Auto-delete old lists, get Telegram alerts, and stay organized!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "0715 Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Channel Names",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Playlist ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Channel Names1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Old Playlist",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Out Upcoming",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3cb6eb90",
+  "workflow_id": "3cb6eb90",
+  "workflow_id_display": "3cb6eb90",
+  "workflow_name": "LINE Assistant with Google Calendar and Gmail Integration",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Gmail, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 Chatbot🤖 AI🤖 Email Automation🤖 Gmail"
+  ],
+  "author_name": "Boriwat Chanruang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Text Cleansing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Line Receiving",
+      "type": "Trigger"
+    },
+    {
+      "name": "Line Answering (Error Case)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Answering (Ordinary Case)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Calendar Create",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar Read",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

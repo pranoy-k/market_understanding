@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9534164b",
+  "workflow_id": "9534164b",
+  "workflow_id_display": "9534164b",
+  "workflow_name": "Add product ideas to Google Sheets via a Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect and manage team ideas from Slack to Google Sheets. Automate notifications, voting, and reporting. Boost collaboration—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Set me up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hidden message to Slack to add feature details",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

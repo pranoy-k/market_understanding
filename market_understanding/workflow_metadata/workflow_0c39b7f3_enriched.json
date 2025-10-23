@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0c39b7f3",
+  "workflow_id": "0c39b7f3",
+  "workflow_id_display": "0c39b7f3",
+  "workflow_name": "Get a Telegram alert when a great lead submits form with MadKudu and Hunter",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Mutasem",
+  "author_profile_url": "https://n8n.io/creators/mutasem/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly qualify leads with MadKudu, enrich with Hunter, and get instant Telegram alerts for your top prospects. Easily customize and automate now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, hunter, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email is not valid, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Score lead with MadKudu",
+      "type": "Data Input"
+    },
+    {
+      "name": "Verify email with Hunter",
+      "type": "Process"
+    },
+    {
+      "name": "Not interesting enough",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

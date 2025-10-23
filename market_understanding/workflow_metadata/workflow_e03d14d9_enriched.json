@@ -1,0 +1,190 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e03d14d9",
+  "workflow_id": "e03d14d9",
+  "workflow_id_display": "e03d14d9",
+  "workflow_name": "Automate Sales Meeting Prep with AI & APIFY Sent To WhatsApp",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "47",
+  "tools_integrations": "API, Email, Facebook, LinkedIn, OpenAI, WhatsApp",
+  "tags": [
+    "WhatsApp",
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return LinkedIn Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return LinkedIn Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return Email Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return Email Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Route Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Route Linkedin",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return LinkedIn Error1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return Email Error1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set LinkedIn Cookie",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Attendee with Summaries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get About Section",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Activity Section",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Check For Upcoming Meetings",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Attendee Information",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sections To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Attendees to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Correspondance",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Attendees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Activities To Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Profile Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "Activities To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "APIFY Web Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Activity Details",
+      "type": "Process"
+    },
+    {
+      "name": "Get Sections",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Activities",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract About",
+      "type": "Process"
+    },
+    {
+      "name": "Get LinkedIn Profile & Activity",
+      "type": "Process"
+    },
+    {
+      "name": "Correspondance Recap Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Attendee Research Agent",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn Summarizer Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "APIFY Web Scraper",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

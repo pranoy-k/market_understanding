@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7b89168f",
+  "workflow_id": "7b89168f",
+  "workflow_id_display": "7b89168f",
+  "workflow_name": "Create a Telegram Customer Support Bot with GPT4-mini and Google Docs Knowledge",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Automate With Marc",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Turn your Telegram bot into a 24/7 AI support agent that answers complex queries using your Google Docs knowledge base—no coding required. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Customer Support AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

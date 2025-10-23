@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/11f53945",
+  "workflow_id": "11f53945",
+  "workflow_id_display": "11f53945",
+  "workflow_name": "Upsert huge documents in a vector store with Supabase and Notion",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Notion, OpenAI, PDF",
+  "tags": [
+    "Notion",
+    "RAG",
+    "Scheduled"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow enhances your Notion workspace with AI capabilities, automatically generating content, organizing information, and creating intelligent summaries. It can process Notion pages, use AI to analyze and enhance content, then update your workspace with enriched information.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete old embeddings if exist",
+      "type": "Process"
+    },
+    {
+      "name": "Get page blocks",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Input Reference",
+      "type": "Process"
+    },
+    {
+      "name": "Get updated pages",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate to single string",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

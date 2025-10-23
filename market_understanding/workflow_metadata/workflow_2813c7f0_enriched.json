@@ -1,0 +1,307 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2813c7f0",
+  "workflow_id": "2813c7f0",
+  "workflow_id_display": "2813c7f0",
+  "workflow_name": "Multilingual WhatsApp Translator with OpenAI Whisper & GPT-4 and HubSpot Integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "80",
+  "tools_integrations": "HubSpot, OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Amanda Benks",
+  "author_profile_url": "https://n8n.io/creators/amanda/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Delete Every Day",
+      "type": "Trigger"
+    },
+    {
+      "name": "Text Mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Mapping1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Mapping2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Language Map",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "WhatsApp2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "WhatsApp1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Think1",
+      "type": "Process"
+    },
+    {
+      "name": "PrefixMap",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Calculator2",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "WhatsApp",
+      "type": "Data Input"
+    },
+    {
+      "name": "Think2",
+      "type": "Process"
+    },
+    {
+      "name": "GET Media",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Media1",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Media2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Phone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter the Country",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "React",
+      "type": "Data Input"
+    },
+    {
+      "name": "React1",
+      "type": "Data Input"
+    },
+    {
+      "name": "React2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Executions",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Execution",
+      "type": "Process"
+    },
+    {
+      "name": "Loops",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace Me",
+      "type": "Process"
+    },
+    {
+      "name": "ReactFlag",
+      "type": "Data Input"
+    },
+    {
+      "name": "React Flags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Group Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Contact",
+      "type": "Process"
+    },
+    {
+      "name": "Create Contact",
+      "type": "Data Input"
+    },
+    {
+      "name": "WhatsApp Notification",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Client",
+      "type": "Data Processing"
+    },
+    {
+      "name": "History",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data&Hora",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Messages",
+      "type": "Data Input"
+    },
+    {
+      "name": "History1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Messages1",
+      "type": "Data Input"
+    },
+    {
+      "name": "My History",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update My Messages",
+      "type": "Data Input"
+    },
+    {
+      "name": "Brasil",
+      "type": "Data Processing"
+    },
+    {
+      "name": "WhatsApp3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "React3",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8c2bd99f",
+  "workflow_id": "8c2bd99f",
+  "workflow_id_display": "8c2bd99f",
+  "workflow_name": "Get Qualified Leads in One Click from Apollo to Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Not Another Marketer",
+  "author_profile_url": "https://n8n.io/creators/notanothermarketer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn your Apollo contacts into enriched, outreach-ready leads—no pricey subscription. Fast, automated, and CRM-ready. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Leads in database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Leads",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

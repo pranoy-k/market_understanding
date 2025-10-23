@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/efd11962",
+  "workflow_id": "efd11962",
+  "workflow_id_display": "efd11962",
+  "workflow_name": "Advanced AI-Powered YouTube SEO Optimization & Auto-Update",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Lucas Correia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your YouTube video's SEO automatically with AI-powered title, description, and tag optimization. Save time and increase your channel’s reach!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Form: Input Video URL",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory3",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Code - Get Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YouTube: Get Video Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Youtube SEO Generator",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube: Update Video Tags",
+      "type": "Process"
+    },
+    {
+      "name": "Form: Completion Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Form: Confirmation Page",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

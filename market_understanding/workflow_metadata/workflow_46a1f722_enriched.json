@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/46a1f722",
+  "workflow_id": "46a1f722",
+  "workflow_id_display": "46a1f722",
+  "workflow_name": "Automate Time Tracking Enforcement & Cleanup for Awork Tasks",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Gregor",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track time in Awork with automatic task checks, billing interval enforcement, and accurate entry adjustments. Streamline compliance—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch task changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out task changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter task status change",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook call by Awork",
+      "type": "Trigger"
+    },
+    {
+      "name": "Process tags and check if found in configured tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add comment to tasks",
+      "type": "Data Input"
+    },
+    {
+      "name": "Roll back task status from done to previous state",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add comment to tasks1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Roll back task status from done to previous state1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculate time for added time tracking",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate time for added time tracking1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Roll back task status from done to previous state4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process tags and check if found in configured tags1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load task details for time tracking item",
+      "type": "Data Input"
+    },
+    {
+      "name": "Load system type of work",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add tracked time to match min time settings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add start time to time tracking entry",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

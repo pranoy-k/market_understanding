@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ddf379e4",
+  "workflow_id": "ddf379e4",
+  "workflow_id_display": "ddf379e4",
+  "workflow_name": "Automatically Store Shopify Orders in Google Sheets with Telegram Notifications",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Facebook, Google Sheets, Shopify, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "RedOne",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "It looks like there wasn't any summary or content provided. Please share the summary or main features and benefits you'd like the meta description based on, and I'll be happy to help!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Transform Order Data to Standard Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Order to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Receive New Shopify Order",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

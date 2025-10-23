@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5556d4b6",
+  "workflow_id": "5556d4b6",
+  "workflow_id_display": "5556d4b6",
+  "workflow_name": "Telegram to Spotify with OpenAI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Alexander Bentlund",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Message parser",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Not found error message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Now Playing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI - Ask about a track",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

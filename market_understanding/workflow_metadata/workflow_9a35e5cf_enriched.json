@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9a35e5cf",
+  "workflow_id": "9a35e5cf",
+  "workflow_id_display": "9a35e5cf",
+  "workflow_name": "Create, update, and get an entry in Strapi",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Email, Google Sheets, RSS, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate feedback collection: capture web form responses, store in Google Sheets, send thank-you emails, and notify your team via Slack. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, strapi, set"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strapi",
+      "type": "Process"
+    },
+    {
+      "name": "Strapi1",
+      "type": "Process"
+    },
+    {
+      "name": "Strapi2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

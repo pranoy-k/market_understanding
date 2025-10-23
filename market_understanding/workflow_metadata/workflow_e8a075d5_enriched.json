@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e8a075d5",
+  "workflow_id": "e8a075d5",
+  "workflow_id_display": "e8a075d5",
+  "workflow_name": "Receive updates when a sale is made in Gumroad",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, enrich CRM data, send instant welcome emails, and get real-time Slack alerts. Boost sales with seamless, accurate workflows—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with gumroadTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Gumroad Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b64dab06",
+  "workflow_id": "b64dab06",
+  "workflow_id_display": "b64dab06",
+  "workflow_name": "Food Delivery Notifications and Easy Expense Tracking",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "darrell_tw",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Click to Test Flow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive certain keyword Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Price, Shop, Date, TIme",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

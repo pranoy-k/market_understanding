@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b43f5471",
+  "workflow_id": "b43f5471",
+  "workflow_id_display": "b43f5471",
+  "workflow_name": "Get DNS entries of any domain with uProc",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor and verify DNS records in real time. Ensure accurate domain setup with uProc's workflow—customizable and easy to integrate. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, uproc, functionItem"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Domain Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get DNS records",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/35158ac3",
+  "workflow_id": "35158ac3",
+  "workflow_id_display": "35158ac3",
+  "workflow_name": "Message Buffer System with Redis and GPT-4 for Efficient Processing",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "redis"
+  ],
+  "author_name": "Edisson Garcia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Efficiently batch and merge user messages with Redis and GPT-4. Dynamic wait times, seamless cleanup, and flexible triggers. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lmChatOpenAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mod input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map ouput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mock input data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing1",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "get wait seconds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set last_seen",
+      "type": "Process"
+    },
+    {
+      "name": "Get waiting_reply",
+      "type": "Process"
+    },
+    {
+      "name": "Set waiting_reply",
+      "type": "Process"
+    },
+    {
+      "name": "Get buffer",
+      "type": "Process"
+    },
+    {
+      "name": "Delete buffer_in",
+      "type": "Process"
+    },
+    {
+      "name": "Delete waiting_reply",
+      "type": "Process"
+    },
+    {
+      "name": "Buffer messages",
+      "type": "Process"
+    },
+    {
+      "name": "Set buffer_count increment",
+      "type": "Process"
+    },
+    {
+      "name": "Get last_seen",
+      "type": "Process"
+    },
+    {
+      "name": "Get buffer_count",
+      "type": "Process"
+    },
+    {
+      "name": "Delete waiting_reply1",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing2",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

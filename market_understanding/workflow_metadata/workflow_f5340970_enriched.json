@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f5340970",
+  "workflow_id": "f5340970",
+  "workflow_id_display": "f5340970",
+  "workflow_name": "MongoDB AI Agent - Intelligent Movie Recommendations",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "MongoDB, OpenAI",
+  "tags": [],
+  "author_name": "Pavel Duchovny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An intelligent agent for MongoDB that provides movie recommendations and handles complex database queries through conversation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDBAggregate",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "insertFavorite",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Movie Recommendation",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

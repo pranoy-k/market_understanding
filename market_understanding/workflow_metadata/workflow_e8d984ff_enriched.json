@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e8d984ff",
+  "workflow_id": "e8d984ff",
+  "workflow_id_display": "e8d984ff",
+  "workflow_name": "Find out which Chrome extensions are tracked by Linkedin",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Anthony",
+  "author_profile_url": "https://n8n.io/creators/scrapeninja/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover which Chrome extensions LinkedIn detects. Automate extraction, web scrape Google, and create a detailed Google Sheet of 1,300+ extensions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Load already processed items",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set extension IDs var",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exclude processed items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SERP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

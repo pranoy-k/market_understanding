@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/45dfa63d",
+  "workflow_id": "45dfa63d",
+  "workflow_id_display": "45dfa63d",
+  "workflow_name": "Extract & Categorize Receipt Data with Google OCR, OpenRouter AI & Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track expenses with MoneyMate—scan receipts via Telegram, get AI-powered summaries, instant categorization, and privacy-first simplicity. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with tesseract, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Text Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receipt Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Format Summary Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Telegram File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Categorizer",
+      "type": "Process"
+    },
+    {
+      "name": "AI Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Value From Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

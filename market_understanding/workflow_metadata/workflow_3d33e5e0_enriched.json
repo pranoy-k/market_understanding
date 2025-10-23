@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d33e5e0",
+  "workflow_id": "3d33e5e0",
+  "workflow_id_display": "3d33e5e0",
+  "workflow_name": "Run weekly inventories on Shopify sales",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets, Shopify, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate weekly Shopify sales reports: collect orders, calculate totals, log data in Google Sheets, and get instant Slack notifications. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, if, dateTime"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

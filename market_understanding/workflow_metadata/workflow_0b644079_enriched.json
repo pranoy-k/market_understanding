@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b644079",
+  "workflow_id": "0b644079",
+  "workflow_id_display": "0b644079",
+  "workflow_name": "YouTube Advanced RSS Generator with Telegram Formation",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "API, RSS, Telegram, YouTube",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate advanced RSS feeds from any YouTube channel—no API key needed. Supports multiple formats and easy setup. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set XML URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Channel Username",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set XML Feed URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set XML Feed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Youtube Channel Videos RSS Formats",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Youtube Channel Community RSS Formats",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channel ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video ID Channel ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Temporary Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Validation Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format response as HTML Table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merga Data of Youtube & Community RSS",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

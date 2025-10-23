@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b871fb53",
+  "workflow_id": "b871fb53",
+  "workflow_id_display": "b871fb53",
+  "workflow_name": "Automate LinkedIn Outreach with Notion and OpenAI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "LinkedIn, Notion, OpenAI",
+  "tags": [
+    "Notion🤖 AI",
+    "Scheduled"
+  ],
+  "author_name": "Paul Mikulskis",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reformat Post Text",
+      "type": "Process"
+    },
+    {
+      "name": "Set post status to \"Done\"",
+      "type": "Process"
+    },
+    {
+      "name": "Post on LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Combine text+image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch image from post",
+      "type": "Data Input"
+    },
+    {
+      "name": "get all content from post page",
+      "type": "Process"
+    },
+    {
+      "name": "Pull together all text blocks + image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "query entries from Notion table for today",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

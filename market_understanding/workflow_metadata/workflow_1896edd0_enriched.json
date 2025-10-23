@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1896edd0",
+  "workflow_id": "1896edd0",
+  "workflow_id_display": "1896edd0",
+  "workflow_name": "AI-Powered Telegram Task Manager with MCP Server",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Francis Njenga",
+  "author_profile_url": "https://n8n.io/creators/gatura/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline task management via Telegram with Google Tasks integration and AI-powered chat. Create, update, and track tasks easily—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with mcpClientTool, switch, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Incoming Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "chatInput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "chatOutput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "audio_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "audioInput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "transcribeAudio",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "create_todays_task",
+      "type": "Process"
+    },
+    {
+      "name": "create_upcoming_task",
+      "type": "Process"
+    },
+    {
+      "name": "complete_task",
+      "type": "Process"
+    },
+    {
+      "name": "get_todays_tasks",
+      "type": "Process"
+    },
+    {
+      "name": "get_upcoming_tasks",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

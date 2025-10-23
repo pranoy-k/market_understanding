@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c17e4367",
+  "workflow_id": "c17e4367",
+  "workflow_id_display": "c17e4367",
+  "workflow_name": "Send RSS feed data to webhook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "API, MongoDB, RSS, Webhook",
+  "tags": [
+    "webhook",
+    "mongodb"
+  ],
+  "author_name": "dave",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow processes incoming webhook data in real-time, validates and transforms the information, then stores it in your database for further processing. It provides a reliable way to capture and persist data from external systems while maintaining data quality and consistency.",
+  "key_benefits": [
+    "API integration",
+    "Data integration",
+    "Integration with manualTrigger, httpRequest, mongoDb"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "SplitInBatches1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "End1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MongoDB: Find Article",
+      "type": "Data Output"
+    },
+    {
+      "name": "MongoDB: Find Article1",
+      "type": "Data Output"
+    },
+    {
+      "name": "MongoDB: Insert",
+      "type": "Data Output"
+    },
+    {
+      "name": "MongoDB: Insert1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

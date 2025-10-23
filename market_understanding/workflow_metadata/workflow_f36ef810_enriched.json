@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f36ef810",
+  "workflow_id": "f36ef810",
+  "workflow_id_display": "f36ef810",
+  "workflow_name": "Simple Social: Instagram Single Image Post with Facebook API",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Facebook, Instagram",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "Edoardo Guzzi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram single image posts with the Facebook API. Save time, ensure consistent content delivery—ideal for businesses and creators. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Instagram params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Instagram prepare media",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram publish media",
+      "type": "Process"
+    },
+    {
+      "name": "Node just for retrive id of instagram page",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram check status of media uploaded before",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram check status of media published before",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

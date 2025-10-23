@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/829e1cc6",
+  "workflow_id": "829e1cc6",
+  "workflow_id_display": "829e1cc6",
+  "workflow_name": "Assign Zammad Users to Organizations Based on Email Domain",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate user-organization assignment in Zammad with n8n by email domain. Streamline admin tasks and improve data accuracy. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Domain from User E-Mail",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad",
+      "type": "Process"
+    },
+    {
+      "name": "Zammad1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update User",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

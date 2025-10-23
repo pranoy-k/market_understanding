@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3984ad69",
+  "workflow_id": "3984ad69",
+  "workflow_id_display": "3984ad69",
+  "workflow_name": "Start a Whereby video call from Mattermost",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance blog posts with a companion workflow—automate content sourcing, organization, and formatting for efficient, engaging, and impactful publishing.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, set, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

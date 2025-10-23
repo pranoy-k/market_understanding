@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/12189377",
+  "workflow_id": "12189377",
+  "workflow_id_display": "12189377",
+  "workflow_name": "Publish image & video to multiple social media (X, Instagram, Facebook and more)",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Facebook, Instagram, LinkedIn",
+  "tags": [
+    "facebook",
+    "linkedin"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly publish images or videos to Instagram, LinkedIn, TikTok, and more from one form. Automate posting with error handling—learn how it works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, if, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Result Photo",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Result Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post photo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post video",
+      "type": "Data Input"
+    },
+    {
+      "name": "KO Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "OK Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "KO Photo",
+      "type": "Data Input"
+    },
+    {
+      "name": "OK Photo",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

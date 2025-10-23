@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5cb29c5b",
+  "workflow_id": "5cb29c5b",
+  "workflow_id_display": "5cb29c5b",
+  "workflow_name": "Two-way sync between Pipedrive and HubSpot",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync contacts between Pipedrive and HubSpot every minute. Ensure up-to-date records on both platforms. Learn more about seamless integration!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with merge, hubspot, pipedrive"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "Update Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "Update HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

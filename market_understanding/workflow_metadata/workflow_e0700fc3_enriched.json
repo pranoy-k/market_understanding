@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e0700fc3",
+  "workflow_id": "e0700fc3",
+  "workflow_id_display": "e0700fc3",
+  "workflow_name": "Transfer credentials to other n8n instances using a Multi-Form",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily transfer credentials between self-hosted n8n instances with a guided, multi-step workflow. Simple setup and instant feedback—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Credential",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Instance Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Export Credentials",
+      "type": "Process"
+    },
+    {
+      "name": "Get Credentials Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Binary to JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Credential Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Choose Instance",
+      "type": "Data Input"
+    },
+    {
+      "name": "Choose Credential",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare Request Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/30a6a4de",
+  "workflow_id": "30a6a4de",
+  "workflow_id_display": "30a6a4de",
+  "workflow_name": "Analyze & Tag User Feedback in Notion with GPT-4 Sentiment Analysis",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Notion, OpenAI, RSS",
+  "tags": [],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate user feedback in Notion with GPT-4—analyze sentiment, tag insights, and centralize data. Perfect for product teams. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with notionTool, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "on database item update",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set the Product information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI - Parser fixing",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Parser fixing",
+      "type": "Process"
+    },
+    {
+      "name": "update feedback sentiment analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Get database structure",
+      "type": "Process"
+    },
+    {
+      "name": "Get all feedback",
+      "type": "Process"
+    },
+    {
+      "name": "Get all insights",
+      "type": "Process"
+    },
+    {
+      "name": "Sentiment Analysis1",
+      "type": "Process"
+    },
+    {
+      "name": "Create New Insight",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Update Feedback",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean the database propertied",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

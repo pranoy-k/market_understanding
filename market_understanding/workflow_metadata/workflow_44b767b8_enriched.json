@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/44b767b8",
+  "workflow_id": "44b767b8",
+  "workflow_id_display": "44b767b8",
+  "workflow_name": "Turn any RSS feed into email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, RSS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mutasem",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn any RSS feed into a personal newsletter! Get real-time email alerts for new posts and customize notifications via n8n. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "Every 1 hour",
+      "type": "Trigger"
+    },
+    {
+      "name": "List of RSS feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

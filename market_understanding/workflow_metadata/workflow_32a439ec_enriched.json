@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/32a439ec",
+  "workflow_id": "32a439ec",
+  "workflow_id_display": "32a439ec",
+  "workflow_name": "Chinese Translator via Line x OpenRouter",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "[email protected]",
+  "author_profile_url": "https://n8n.io/creators/linlinmhee/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly translate Line messages into Chinese characters, pinyin, and English. Fast, accurate, real-time results with interactive features. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Line Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Use OpenRouter",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Reply",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Loading Animation",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/31c16d2e",
+  "workflow_id": "31c16d2e",
+  "workflow_id_display": "31c16d2e",
+  "workflow_name": "Create Dynamic Workflows Programmatically via Webhooks & n8n API",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, RSS, Webhook",
+  "tags": [
+    "api",
+    "http",
+    "webhook",
+    "json"
+  ],
+  "author_name": "Mauricio Perera",
+  "author_profile_url": "https://n8n.io/creators/rckflr/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily create n8n workflows via a secure HTTP webhook with JSON validation, instant deployment, error feedback, and direct workflow access. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validation Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Validate JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Workflow",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "API Error",
+    "API Successful?"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

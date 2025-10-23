@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6cb28e99",
+  "workflow_id": "6cb28e99",
+  "workflow_id_display": "6cb28e99",
+  "workflow_name": "Using the Merge Node - Merge by Key",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "mike",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly merge data from multiple sources in n8n using Merge by Key. Learn how to prepare, convert, and unify data for seamless automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Data 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Data 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Data 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

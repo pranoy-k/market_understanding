@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a97ea35e",
+  "workflow_id": "a97ea35e",
+  "workflow_id_display": "a97ea35e",
+  "workflow_name": "Create Teams Notifications for new Tickets in ConnectWise with Redis",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "redis",
+    "Scheduled"
+  ],
+  "author_name": "Gavin",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly pull tickets from ConnectWise Manage and get instant Microsoft Teams alerts for new updates. Streamline dispatch—learn more in our video!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, redis"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add Filterable Parameter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Database",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Out Tickets that have already been sent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get New Tickets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine like Companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Teams to Dispatch",
+      "type": "Process"
+    },
+    {
+      "name": "Log in Redis",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

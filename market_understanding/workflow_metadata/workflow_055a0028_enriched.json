@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/055a0028",
+  "workflow_id": "055a0028",
+  "workflow_id_display": "055a0028",
+  "workflow_name": "Daily GBP exchange rate",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Inga Kruger",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get up-to-date GBP exchange rates delivered to your inbox as a clear HTML table—just click to run. Effortless, accurate, and convenient currency updates.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,126 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5050ebd2",
+  "workflow_id": "5050ebd2",
+  "workflow_id_display": "5050ebd2",
+  "workflow_name": "Automate Sales for Digital Products & SaaS with AI (GPT-4o)",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate sales outreach: discover leads, scrape emails, and send personalized, SEO-optimized messages with GPT-4o in n8n. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "MANUAL TRIGGER: Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse AI Email Output (JSON)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Google Maps Queries (OpenAI)",
+      "type": "Process"
+    },
+    {
+      "name": "Configure OpenAI Chat Model (GPT-4o-mini)",
+      "type": "Process"
+    },
+    {
+      "name": "Extract URLs from Google Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicate URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicate Emails",
+      "type": "Process"
+    },
+    {
+      "name": "Split Emails into Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Email Lists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Google Maps",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Out Google/Schema URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Through Unique URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Website Content (via URL)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Through Website Content Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract and Filter Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Through Search Queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process AI-Generated Queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Domain from Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Through Unique Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Website Content (Jina.ai)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Truncate Website Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Random Delay",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Personalized Email (LLM Chain)",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp (If URL Invalid)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

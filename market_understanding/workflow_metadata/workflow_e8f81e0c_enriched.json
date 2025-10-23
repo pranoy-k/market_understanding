@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e8f81e0c",
+  "workflow_id": "e8f81e0c",
+  "workflow_id_display": "e8f81e0c",
+  "workflow_name": "Discover Business Ideas from HackerNews Posts with GPT-4.1 Analysis and Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Ari Nakos",
+  "author_profile_url": "https://n8n.io/creators/just-aristides/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Monitor top Hacker News posts, detect business pain points with GPT-4.1, and auto-save insights to Google Sheets. Set up easily and discover trends now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Select Key Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Sheet Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output The Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hacker News",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

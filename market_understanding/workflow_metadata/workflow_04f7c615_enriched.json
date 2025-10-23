@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/04f7c615",
+  "workflow_id": "04f7c615",
+  "workflow_id_display": "04f7c615",
+  "workflow_name": "Import Google Keep notes to Google Sheets using OpenAI and Google Drive",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Drive, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set the fields for export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Add to google sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "If extension is json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search in \"Keep\" folder",
+      "type": "Process"
+    },
+    {
+      "name": "Loop every 10 items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download the files",
+      "type": "Process"
+    },
+    {
+      "name": "Put some AI treatment here if you need it",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

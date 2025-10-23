@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/466ae238",
+  "workflow_id": "466ae238",
+  "workflow_id_display": "466ae238",
+  "workflow_name": "Create Google Calendar Meetings from Trello Cards with Auto-Meeting Link",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Prompt and Paste",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically schedule Google Calendar meetings from Trello cards. Invite attendees and add meeting links seamlessly. Perfect for free Trello users—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendar, httpRequest, trello"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Move Card in Trello",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get List ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Action",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trello: Get Card Info",
+      "type": "Process"
+    },
+    {
+      "name": "Get Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Separates Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trello: Add Meeting Link",
+      "type": "Process"
+    },
+    {
+      "name": "Get Organization ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calendar: Create Meeting",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

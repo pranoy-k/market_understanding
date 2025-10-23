@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ca164c5c",
+  "workflow_id": "ca164c5c",
+  "workflow_id_display": "ca164c5c",
+  "workflow_name": "Binance SM 1day Indicators Tool",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Elevate your Binance Spot Market analysis with automated AI-driven indicators—RSI, MACD, EMA & more—for confident, long-term trading decisions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 1day Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request 1d Indicators Tool",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

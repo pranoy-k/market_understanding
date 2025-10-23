@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2da2c92a",
+  "workflow_id": "2da2c92a",
+  "workflow_id_display": "2da2c92a",
+  "workflow_name": "Hostinger Form Lead Capture & Qualification with OpenAI, Beehiiv & Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture on your Hostinger site with AI-powered n8n workflows. Instantly qualify leads, sync to Beehiiv, and log in Google Sheets. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, openAi, gmailTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "New form trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract & Qualify",
+      "type": "Process"
+    },
+    {
+      "name": "insert in Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "List Beehiiv publications",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Beehiiv subscriber",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

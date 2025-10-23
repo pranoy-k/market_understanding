@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dded411e",
+  "workflow_id": "dded411e",
+  "workflow_id_display": "dded411e",
+  "workflow_name": "Extract & Summarize Wikipedia Data with Bright Data and Gemini AI",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Wikipedia data extraction and summarization with Bright Data Web Unlocker. Clean, structure, and send results to any webhook for instant integration.",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Wikipedia URL with Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model For Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Summary Webhook Notifier",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wikipedia Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "LLM Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Concise Summary Generator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

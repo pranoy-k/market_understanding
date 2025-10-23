@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e7fd1e3",
+  "workflow_id": "5e7fd1e3",
+  "workflow_id_display": "5e7fd1e3",
+  "workflow_name": "Create Viral Instagram Reel Scenarios from Ideas with GPT-4o and Telegram",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "12",
+  "tools_integrations": "Instagram, OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Alexander K.",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Turn your ideas into viral Instagram Reel scripts in seconds! AI-powered workflow delivers hooks, scripts, captions & visuals via Telegram. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Start: Receive Message on Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Error Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set User Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Model: GPT-4o",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Voice to Text",
+      "type": "Process"
+    },
+    {
+      "name": "Optional: Log Ideas to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Memory for Chat Context",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Reels Scenario with AI",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aede3201",
+  "workflow_id": "aede3201",
+  "workflow_id_display": "aede3201",
+  "workflow_name": "Jotform to KlickTipp Integration - Webinar registration",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ricardo KlÃ¼nter",
+  "author_profile_url": "https://n8n.io/creators/KlickTipp/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync JotForm webinar registrations with KlickTipp. Automate data validation, mapping, and subscriber updates for accurate, seamless integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, jotFormTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "New webinar booking via JotForm",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert and set webinar data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Array of tags from Jotform",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subscribe contact in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Jotform tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tag contact directly in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate tags to add to contact",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create the tag in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate array of created tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tag contact KlickTipp after trag creation",
+      "type": "Process"
+    },
+    {
+      "name": "Get list of all existing tags",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/07706bfe",
+  "workflow_id": "07706bfe",
+  "workflow_id_display": "07706bfe",
+  "workflow_name": "Automate WhatsApp tests and rank results with PostgreSQL (Module \"Quiz\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "PostgreSQL, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate quiz and test management via WhatsApp with results stored in PostgreSQL. Boost efficiency, get instant rankings, and customize to your needs.",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, whatsAppTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert Bot Status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on TEST",
+      "type": "Data Output"
+    },
+    {
+      "name": "Randomize questions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Non-Answered Questions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Tests",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union list",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate answers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Test",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Tests",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Questions AND Answers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert pred Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Question variants",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on START",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

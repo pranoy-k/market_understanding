@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0dbe49d1",
+  "workflow_id": "0dbe49d1",
+  "workflow_id_display": "0dbe49d1",
+  "workflow_name": "Amazon Affiliate Links to Mastodon with AI Descriptions & Shlink Tracking",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "AWS, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Joachim Hummel",
+  "author_profile_url": "https://n8n.io/creators/jhummel/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Amazon affiliate posts to Mastodon with images, AI-generated text, and tracked short links—powered by n8n, Google Sheets, and Shlink. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Parameter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mastodon",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Picture",
+      "type": "Data Input"
+    },
+    {
+      "name": "Picture to Mastodon",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

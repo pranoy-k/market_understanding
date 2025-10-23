@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1fc3ef59",
+  "workflow_id": "1fc3ef59",
+  "workflow_id_display": "1fc3ef59",
+  "workflow_name": "Notion Status-Based Alert Messages (Slack, Telegram, WhatsApp, Discord, Email)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Discord, Email, Notion, Slack, Telegram, WhatsApp",
+  "tags": [
+    "slack",
+    "telegram",
+    "whatsapp",
+    "discord"
+  ],
+  "author_name": "Matty Reed",
+  "author_profile_url": "https://n8n.io/creators/mattyreed1/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Notion task updates with instant alerts to Slack, Telegram, or email. Map statuses to the right team member. Easy setup—boost productivity now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, emailSend, set"
+  ],
+  "nodes": [
+    {
+      "name": "Notion Trigger (Polling)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion Trigger (Webhook)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Notion Page Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set On Deck",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set In Progress",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Ready For Review",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Ready To Publish",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5c2a1825",
+  "workflow_id": "5c2a1825",
+  "workflow_id_display": "5c2a1825",
+  "workflow_name": "Convert text to speech with OpenAI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, OpenAI",
+  "tags": [],
+  "author_name": "Kevin Cole",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set input text and TTS voice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send HTTP Request to OpenAI's TTS Endpoint",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

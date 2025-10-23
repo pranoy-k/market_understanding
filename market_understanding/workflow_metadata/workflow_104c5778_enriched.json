@@ -1,0 +1,138 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/104c5778",
+  "workflow_id": "104c5778",
+  "workflow_id_display": "104c5778",
+  "workflow_name": "Monitor Favorite YouTube Channels Through RSS feeds and Receive Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Email, RSS, Telegram, YouTube",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Joseph LePage",
+  "author_profile_url": "https://n8n.io/creators/joe/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Stay updated on new YouTube videos with automated RSS monitoring and customizable email or Telegram alerts. Easy setup. Professional, flexible, and reliable.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Every Day",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create RSS Feed URLs1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channel Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default YouTube Channel Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YouTube Channel Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare For Telegram Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare YouTube Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create RSS Feed URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YouTube Channel Ids1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Create YouTube API URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get YouTube Video Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Read - Max 15 Latest Videos per Channel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Label New Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get New Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "One List Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create List of Channel Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Email per Video",
+      "type": "Process"
+    },
+    {
+      "name": "Create One Email for All Videos",
+      "type": "Process"
+    },
+    {
+      "name": "RSS Read - Max 15 Latest Videos per Channel1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create List of Channel Ids1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Create YouTube API URL",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

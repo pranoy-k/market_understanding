@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/08a98db0",
+  "workflow_id": "08a98db0",
+  "workflow_id_display": "08a98db0",
+  "workflow_name": "Automate RSS Content to Blog Posts with GPT-4o, WordPress & LinkedIn Publishing",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "LinkedIn, OpenAI, RSS, WordPress",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate blog publishing from RSS feeds with streamlined review, approval, and multi-platform posting to LinkedIn, WordPress & Medium. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Fields Foor Notification",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate SEO Keywords",
+      "type": "Process"
+    },
+    {
+      "name": "Store Blog Posts Initial",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Approve Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Blog Posts Final",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Publish Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge RSS Feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Full Article",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Article Body",
+      "type": "Process"
+    },
+    {
+      "name": "RSS TheVerge",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS TechCrunch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Blog Post",
+      "type": "Process"
+    },
+    {
+      "name": "Set Blog Creation Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Fields for Storage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Featured Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Approval Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Apply Blog Template",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Blog Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post to Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

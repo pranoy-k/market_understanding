@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a498cd03",
+  "workflow_id": "a498cd03",
+  "workflow_id_display": "a498cd03",
+  "workflow_name": "Auto-classify Gmail emails with AI and apply labels for inbox organization",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Alex Dunlop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "New Gmail Email Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate Gmail Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Labels & Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Classify Email with AI",
+      "type": "Process"
+    },
+    {
+      "name": "Map Label Names to IDs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ec9373ba",
+  "workflow_id": "ec9373ba",
+  "workflow_id_display": "ec9373ba",
+  "workflow_name": "Restore your credentials from GitHub",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly restore all your n8n credentials from GitHub backups. Fast setup, secure recovery, and seamless migration. Learn how this workflow works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all files in given path",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split the result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get file content from GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Convert files to JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Restore n8n Credentials",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/77e5815f",
+  "workflow_id": "77e5815f",
+  "workflow_id_display": "77e5815f",
+  "workflow_name": "Insert data into a new row for a table in Coda",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Airtable, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily track Google Sheets updates, enrich data via APIs, get Slack alerts, and organize info in Airtable. Optimize your workflow today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, set, coda"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Coda",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

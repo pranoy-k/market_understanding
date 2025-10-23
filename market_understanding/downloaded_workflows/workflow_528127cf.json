@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    {
+      "name": "Invoice Ninja Trigger",
+      "type": "n8n-nodes-base.invoiceNinjaTrigger",
+      "position": [
+        890,
+        400
+      ],
+      "webhookId": "97be21b3-ebf5-48cf-b291-5d954657a544",
+      "parameters": {
+        "event": "create_invoice"
+      },
+      "credentials": {
+        "invoiceNinjaApi": "invoice_ninja_creds"
+      },
+      "typeVersion": 1,
+      "id": "9ae7d653726f7b62"
+    }
+  ],
+  "connections": {},
+  "id": "402c24942bbfb168",
+  "name": "Receive updates on a new invoice via Invoice Ninja",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

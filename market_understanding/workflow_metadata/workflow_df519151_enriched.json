@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df519151",
+  "workflow_id": "df519151",
+  "workflow_id_display": "df519151",
+  "workflow_name": "Compare Lists and Identify Common Items & Differences Using Custom Keys",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Tenkay",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily compare two object lists by key (email, ID, etc.) to find matches, uniques, and overlaps. Ideal for deduplication and data reconciliation—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, set, executeWorkflowTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "validation_message 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "validation_message 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "validation_message 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

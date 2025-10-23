@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2834bbef",
+  "workflow_id": "2834bbef",
+  "workflow_id_display": "2834bbef",
+  "workflow_name": "Get data from Hacker News and send to Airtable or via SMS",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Airtable, SMS",
+  "tags": [],
+  "author_name": "isa024787bel",
+  "author_profile_url": "https://n8n.io/creators/isabel/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily tech vocabulary SMS alerts with n8n and Vonage. Get new words, translations, and definitions—no coding needed. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, set, vonage"
+  ],
+  "nodes": [
+    {
+      "name": "Daily trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract words",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Craft message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save today's words",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get top 3 articles",
+      "type": "Process"
+    },
+    {
+      "name": "Translate",
+      "type": "Process"
+    },
+    {
+      "name": "Send SMS",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

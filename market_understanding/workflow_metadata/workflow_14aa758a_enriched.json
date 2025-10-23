@@ -1,0 +1,266 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/14aa758a",
+  "workflow_id": "14aa758a",
+  "workflow_id_display": "14aa758a",
+  "workflow_name": "Automated LinkedIn Lead Generation, Scoring & Communication with AI-Agent",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "65",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Andrey",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead generation with AI—find, score, and message top prospects. Enrich leads and manage outreach with Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, if, code"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise user posts",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise company news",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise company posts",
+      "type": "Process"
+    },
+    {
+      "name": "Company Score Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets5",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets6",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets7",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets8",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets9",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets10",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets11",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets12",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets13",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets14",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets15",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets16",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets17",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HDW LinkedIn SN",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get Company Website",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HDW Get User Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HDW Get Company News",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get Company Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HDW Site-map",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise company website",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items8",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HDW LinkedIn Send Message",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Connections",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Send LinkedIn Connection",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent: ICP -> LinkedIn search filters",
+      "type": "Process"
+    },
+    {
+      "name": "Split LinkedIn connections to items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

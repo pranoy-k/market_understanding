@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66718ef4",
+  "workflow_id": "66718ef4",
+  "workflow_id_display": "66718ef4",
+  "workflow_name": "Incident Response Workflow - Part 3",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Jira",
+  "tags": [],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly resolve incidents with this workflow: auto-update PagerDuty & Jira, notify Mattermost channels, and streamline cross-platform incident closure.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, pagerDuty, jira"
+  ],
+  "nodes": [
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    },
+    {
+      "name": "Mattermost1",
+      "type": "Process"
+    },
+    {
+      "name": "Jira",
+      "type": "Process"
+    },
+    {
+      "name": "PagerDuty",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

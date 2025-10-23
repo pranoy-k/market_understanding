@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d45680c6",
+  "workflow_id": "d45680c6",
+  "workflow_id_display": "d45680c6",
+  "workflow_name": "Gravity Forms to KlickTipp Integration - Feedback form",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "KlickTipp",
+  "author_profile_url": "https://n8n.io/creators/KlickTipp/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline Gravity Forms feedback into KlickTipp with automated data transformation, error handling, and seamless subscriber management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Convert and set feedback data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Array of tags from Gravityforms",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subscribe contact in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Tag contact directly in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate tags to add to contact",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create the tag in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate array of created tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tag contact KlickTipp after trag creation",
+      "type": "Process"
+    },
+    {
+      "name": "Get list of all existing tags",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Gravityforms tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "New submission via Gravityforms",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

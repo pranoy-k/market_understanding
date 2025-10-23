@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8b1f24a2",
+  "workflow_id": "8b1f24a2",
+  "workflow_id_display": "8b1f24a2",
+  "workflow_name": "Receive updates for specified tasks in Flow",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Google Drive, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate email workflows: extract key details, save attachments, notify Slack, archive to Google Drive. Boost team efficiency—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with flowTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Flow Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

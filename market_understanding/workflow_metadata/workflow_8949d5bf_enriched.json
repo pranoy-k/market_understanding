@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8949d5bf",
+  "workflow_id": "8949d5bf",
+  "workflow_id_display": "8949d5bf",
+  "workflow_name": "Enrich Pipedrive CRM Contact Data with LinkedIn Profiles using GPT & Multi-CRM Support",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "HubSpot, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Andrey",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly enrich Pipedrive and HubSpot contacts with LinkedIn data using AI automation in n8n. Boost your CRM with real-time insights—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "HubSpot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pipedrive Trigger New Contact",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pipedrive Trigger Update Data for Existing Client",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Get Company from CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Get Company from CRM1",
+      "type": "Process"
+    },
+    {
+      "name": "Data Enrichment AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn profile by Email",
+      "type": "Process"
+    },
+    {
+      "name": "Update data in Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Search LinkedIn Profile",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Details",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Posts",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn profile by Email1",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn profile by Email2",
+      "type": "Process"
+    },
+    {
+      "name": "Data Enrichment AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Data Enrichment AI Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "Update data in Pipedrive1",
+      "type": "Process"
+    },
+    {
+      "name": "Update data in HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Search LinkedIn Profile1",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Search LinkedIn Profile2",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Details1",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Details2",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Posts1",
+      "type": "Process"
+    },
+    {
+      "name": "HDW Get LinkedIn Profile Posts2",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot Get Contact Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

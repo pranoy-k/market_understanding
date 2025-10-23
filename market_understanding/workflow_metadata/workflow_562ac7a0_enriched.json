@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/562ac7a0",
+  "workflow_id": "562ac7a0",
+  "workflow_id_display": "562ac7a0",
+  "workflow_name": "Export Search Console Results to Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export Google Search Console data to Google Sheets for easy SEO analysis and reporting. Streamline setup and automate website performance tracking.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set your domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update queries to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Pages to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update date report to sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "date",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get query Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Page Report",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

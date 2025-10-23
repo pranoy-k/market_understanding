@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fc859d36",
+  "workflow_id": "fc859d36",
+  "workflow_id_display": "fc859d36",
+  "workflow_name": "Automatic Weekly Digital PR Stories Suggestions with Reddit and Anthropic",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "28",
+  "tools_integrations": "Reddit",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Custom Workflows AI",
+  "author_profile_url": "https://n8n.io/creators/customworkflowsai/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate weekly Reddit trend discovery for digital PR, with AI-driven sentiment analysis and strategic reports—boost collaboration and campaign impact.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Reddit Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set for Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Final Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Topics into Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Top Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get News Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Compress files",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Binary Files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive6",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive7",
+      "type": "Process"
+    },
+    {
+      "name": "Send files to Mattermost3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Keep Last",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Comments Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "News Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Stories Report",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

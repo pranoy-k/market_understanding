@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a4ed67e6",
+  "workflow_id": "a4ed67e6",
+  "workflow_id_display": "a4ed67e6",
+  "workflow_name": "Auto Update n8n to Latest Version with Coolify",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Haqi Ramadhani",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate n8n deployments on Coolify. Monitor GitHub releases, update environment variables, and deploy with smart, secure workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Auto Update Beta Release",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto Update Latest Release",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Release",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update ENV",
+      "type": "Data Input"
+    },
+    {
+      "name": "Deploy",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Get Releases",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

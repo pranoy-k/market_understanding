@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/516cba62",
+  "workflow_id": "516cba62",
+  "workflow_id_display": "516cba62",
+  "workflow_name": "High-Level Service Page SEO Blueprint Report Generator",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Custom Workflows AI",
+  "author_profile_url": "https://n8n.io/creators/customworkflowsai/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Create high-performing service pages with our AI-powered SEO blueprint. Analyze competitors, identify content gaps, and optimize for conversions—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, chainLlm, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Competitor Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set User Intent Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Synthesis & Gap Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Page Outline",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set UX & Conversions Enhancements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert URLs to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get URL HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract HTML Elements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Competitors Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "User Intent Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Synthesis & Gap Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Ideal Page Outline Generation",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "UX, Conversion & Copywriting Enhancement",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "Final Service Page Blueprint",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

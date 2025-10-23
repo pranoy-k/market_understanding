@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c7c9fced",
+  "workflow_id": "c7c9fced",
+  "workflow_id_display": "c7c9fced",
+  "workflow_name": "Insert and update data in Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "Airtable, Email, Gmail, HubSpot, LinkedIn, Slack",
+  "tags": [
+    "linkedin",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable2",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

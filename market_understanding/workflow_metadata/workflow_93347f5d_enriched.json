@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/93347f5d",
+  "workflow_id": "93347f5d",
+  "workflow_id_display": "93347f5d",
+  "workflow_name": "AI-Powered Invoice Data Extraction from Email PDFs to Airtable with GPT-4o",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Airtable, Email, OpenAI, PDF",
+  "tags": [],
+  "author_name": "Milan Vasarhelyi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline invoice processing with automated email capture, data extraction to Airtable, and payment tracking. Watch a demo or book a tailored solution!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, airtable, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all img_url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze image",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get list of vendors",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Apply Data Extraction Rules",
+      "type": "Process"
+    },
+    {
+      "name": "Get image data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PDF -> JPG - ConvertAPI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "PDF -> JPG - ConvertAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

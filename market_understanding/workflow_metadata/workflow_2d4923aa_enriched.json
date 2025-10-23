@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d4923aa",
+  "workflow_id": "2d4923aa",
+  "workflow_id_display": "2d4923aa",
+  "workflow_name": "AI Youtube Trend Finder Based On Niche",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [],
+  "author_name": "Leonardo Grigorio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "chat_message_received",
+      "type": "Trigger"
+    },
+    {
+      "name": "response1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "group_data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "openai_llm",
+      "type": "Process"
+    },
+    {
+      "name": "save_data_to_memory1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "youtube_search",
+      "type": "Process"
+    },
+    {
+      "name": "window_buffer_memory",
+      "type": "Process"
+    },
+    {
+      "name": "find_video_data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "get_videos1",
+      "type": "Process"
+    },
+    {
+      "name": "retrieve_data_from_memory1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "loop_over_items1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

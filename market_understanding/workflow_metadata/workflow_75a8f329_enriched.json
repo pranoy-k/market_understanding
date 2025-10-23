@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/75a8f329",
+  "workflow_id": "75a8f329",
+  "workflow_id_display": "75a8f329",
+  "workflow_name": "Send Google Sheets data as a message to a Discord channel",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Discord, Google Sheets",
+  "tags": [
+    "google",
+    "discord"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically send custom messages to Discord when your Google Sheet is updated. Keep your team informed with real-time, effortless notifications.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with discord, stickyNote, googleSheetsTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On new or updated row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to ASCII table",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8f06d4e1",
+  "workflow_id": "8f06d4e1",
+  "workflow_id_display": "8f06d4e1",
+  "workflow_name": "Scrape and summarize posts of a news site without RSS feed using AI and save them to a NocoDB",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "API, Excel, Google Sheets, OpenAI, RSS",
+  "tags": [
+    "Web Scraping",
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Askan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates web scraping to extract valuable data from websites, processes and cleans the information, then stores it in your database or spreadsheet for analysis. It runs on a schedule to keep your data current and can handle pagination, authentication, and complex data extraction scenarios.",
+  "key_benefits": [
+    "Data extraction and monitoring"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger each week",
+      "type": "Trigger"
+    },
+    {
+      "name": "Rename keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Keywords",
+      "type": "Process"
+    },
+    {
+      "name": "Extract the HTML with the right css class",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract date",
+      "type": "Process"
+    },
+    {
+      "name": "Select posts of last 7 days",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge date & links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Content with Date & Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract individual posts",
+      "type": "Process"
+    },
+    {
+      "name": "Merge ChatGPT output with Date & Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve the web page for further processsing",
+      "type": "Data Input"
+    },
+    {
+      "name": "NocoDB news database",
+      "type": "Process"
+    },
+    {
+      "name": "Create single link items",
+      "type": "Process"
+    },
+    {
+      "name": "Create single date items",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

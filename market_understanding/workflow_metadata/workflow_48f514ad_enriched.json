@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/48f514ad",
+  "workflow_id": "48f514ad",
+  "workflow_id_display": "48f514ad",
+  "workflow_name": "Google SERP + Trends and Recommendations with Bright Data & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "CSV",
+  "tags": [
+    "google",
+    "csv",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track Google rankings and trends with AI. Get actionable SEO recommendations, CSV reports, and real-time notifications. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set input fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser for Google Search",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser for Recommendation",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser for Trend Data",
+      "type": "Process"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Search Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trends Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Google Search",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Trend Data",
+      "type": "Process"
+    },
+    {
+      "name": "Recommendation Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Recommendation",
+      "type": "Process"
+    },
+    {
+      "name": "Code for Recommendations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code for Trends",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File for Trends",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File for Recommendations",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write the trends csv file to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write the recommendations csv file to disk",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e78ac9e3",
+  "workflow_id": "e78ac9e3",
+  "workflow_id_display": "e78ac9e3",
+  "workflow_name": "Creates a time tracking project from Syncro to Clockify",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate project creation in Clockify and streamline time tracking with seamless Syncro integration. Perfect for MSPs. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, clockify"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

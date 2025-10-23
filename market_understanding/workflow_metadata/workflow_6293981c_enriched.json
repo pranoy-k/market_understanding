@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6293981c",
+  "workflow_id": "6293981c",
+  "workflow_id_display": "6293981c",
+  "workflow_name": "Store responses from Typeform into Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Airtable, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly save Typeform responses to Airtable and send instant Slack notifications. Easily customize for your form fields. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, set, typeformTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

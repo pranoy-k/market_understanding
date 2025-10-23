@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a5a18de1",
+  "workflow_id": "a5a18de1",
+  "workflow_id_display": "a5a18de1",
+  "workflow_name": "Loading JSON via FTP to Qdrant Vector Database Embedding Pipeline",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "json"
+  ],
+  "author_name": "Ghaith Alsirawan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly bulk-upload pre-cleaned JSON articles from FTP to Qdrant for fast LLM-powered search and RAG. Modular, automated, and AI-ready. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, vectorStoreQdrant, documentDefaultDataLoader"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List all the files",
+      "type": "Process"
+    },
+    {
+      "name": "Loop over one item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Downloading item",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "name": "To JSON",
+      "type": "n8n-nodes-base.xml",
+      "position": [
+        700,
+        300
+      ],
+      "parameters": {
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "470835ce759cdcd9"
+    },
+    {
+      "name": "Change title",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "slideshow.title",
+              "value": "New Title Name"
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "id": "7a2499bc0c98b2f8"
+    },
+    {
+      "name": "Get XML Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        500,
+        300
+      ],
+      "parameters": {
+        "url": "https://httpbin.org/xml",
+        "responseFormat": "string"
+      },
+      "typeVersion": 1,
+      "id": "48ddadf6cda2f259"
+    },
+    {
+      "name": "Dropbox",
+      "type": "n8n-nodes-base.dropbox",
+      "position": [
+        1300,
+        300
+      ],
+      "parameters": {
+        "path": "/my-xml-file.xml",
+        "fileContent": "={{$node[\"To XML\"].data[\"data\"]}}"
+      },
+      "credentials": {
+        "dropboxApi": ""
+      },
+      "typeVersion": 1,
+      "id": "82c9efdefd4e3dab"
+    },
+    {
+      "name": "To XML",
+      "type": "n8n-nodes-base.xml",
+      "position": [
+        1100,
+        300
+      ],
+      "parameters": {
+        "mode": "jsonToxml",
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "ea4731c6c1642ab9"
+    }
+  ],
+  "connections": {
+    "To XML": {
+      "main": [
+        [
+          {
+            "node": "Dropbox",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "To JSON": {
+      "main": [
+        [
+          {
+            "node": "Change title",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Change title": {
+      "main": [
+        [
+          {
+            "node": "To XML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get XML Data": {
+      "main": [
+        [
+          {
+            "node": "To JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "298ae1232705174a",
+  "name": "Transform XML data and upload to Dropbox",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "xml",
+    "json"
+  ]
+}

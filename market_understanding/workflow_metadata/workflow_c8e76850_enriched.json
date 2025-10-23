@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8e76850",
+  "workflow_id": "c8e76850",
+  "workflow_id_display": "c8e76850",
+  "workflow_name": "Sync Discord scheduled events to Google Calendar",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Discord scheduled events to Google Calendar. Detects and updates only new or changed events. Simplify event management—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, googleCalendar, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "List scheduled events from Discord",
+      "type": "Data Input"
+    },
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update event details",
+      "type": "Process"
+    },
+    {
+      "name": "Create event",
+      "type": "Process"
+    },
+    {
+      "name": "Get events",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

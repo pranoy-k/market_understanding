@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/68ad1cc5",
+  "workflow_id": "68ad1cc5",
+  "workflow_id_display": "68ad1cc5",
+  "workflow_name": "AI-Powered Information Monitoring with OpenAI, Google Sheets, Jina AI and Slack",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Sheets, OpenAI, RSS, Slack",
+  "tags": [
+    "Slack",
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set field - existing_url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - Not relevant articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Fields - Relevant Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Get RSS Feed url followed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Get article monitored database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Add relevant articles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Add relevant article",
+      "type": "Data Output"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Jina AI - Read URL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b9c954e",
+  "workflow_id": "0b9c954e",
+  "workflow_id_display": "0b9c954e",
+  "workflow_name": "Analyze Crypto Markets with the AI-Powered CoinMarketCap Data Analyst",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Unlock unified crypto insights in Telegram! Get real-time CEX, DEX, and exchange data with AI-powered analysis via CoinMarketCap APIs. Learn more now.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with agent, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adds SessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CoinMarketCap Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap AI Data Analyst Agent",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Memory",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Crypto Agent Tool",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Exchange and Community Agent Tool",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap DEXScan Agent Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

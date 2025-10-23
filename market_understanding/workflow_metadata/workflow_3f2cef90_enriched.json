@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3f2cef90",
+  "workflow_id": "3f2cef90",
+  "workflow_id_display": "3f2cef90",
+  "workflow_name": "Post new RSS feed items as BlueSky posts",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "Nukeador",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate BlueSky posts from any RSS feed, including title, image, link, & preview. Easy setup & customization. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with dateTime, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "RSS Feed Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get current datetime",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f3233c1",
+  "workflow_id": "6f3233c1",
+  "workflow_id_display": "6f3233c1",
+  "workflow_name": "Supabase Insertion & Upsertion & Retrieval",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Google Drive, OpenAI, PDF",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Ria",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Manage data operations in Supabase with intelligent insertion, upsertion, and retrieval workflows.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Customize Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Placeholder (File/Content to Upsert)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI Retrieval",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI Insertion",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI Upserting",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve by Query",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Documents",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Rows from Table",
+      "type": "Process"
+    },
+    {
+      "name": "Update Documents",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

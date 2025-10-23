@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d1993dae",
+  "workflow_id": "d1993dae",
+  "workflow_id_display": "d1993dae",
+  "workflow_name": "Analyze Brand Mentions on Reddit with GPT-4o Mini and Notion Integration",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Notion, OpenAI, Reddit",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Ian Dikhtiar",
+  "author_profile_url": "https://n8n.io/creators/ian-dikhtiar/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Monitor brand mentions on Reddit, analyze sentiment with AI, and store insights in Notion. Improve engagement and reputation—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add Your Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "json schema",
+      "type": "Process"
+    },
+    {
+      "name": "Report to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "analyze",
+      "type": "Process"
+    },
+    {
+      "name": "iterate_on_misspellings",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Misspellings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "misspellings",
+      "type": "Process"
+    },
+    {
+      "name": "Exclude Existing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "search for existing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Reddit Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "search brand name",
+      "type": "Process"
+    },
+    {
+      "name": "json schema",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

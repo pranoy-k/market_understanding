@@ -1,0 +1,151 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/00e3eedf",
+  "workflow_id": "00e3eedf",
+  "workflow_id_display": "00e3eedf",
+  "workflow_name": "AI Data Extraction with Dynamic Prompts and Baserow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "API, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Get Event Body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Result1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Baserow Event",
+      "type": "Trigger"
+    },
+    {
+      "name": "Table Fields API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Prompt Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Table API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Valid Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Row",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Row Reference",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Field Value",
+      "type": "Process"
+    },
+    {
+      "name": "Get Row",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rows to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fields to Update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Row Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Get File Data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Row1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Field Value1",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Valid Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Valid Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Event Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Event Ref1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Table Fields API",
+    "List Table API",
+    "Baserow API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

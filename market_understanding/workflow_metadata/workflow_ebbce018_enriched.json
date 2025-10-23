@@ -1,0 +1,197 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ebbce018",
+  "workflow_id": "ebbce018",
+  "workflow_id_display": "ebbce018",
+  "workflow_name": "Discover Hidden Website API Endpoints Using Regex and AI",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "42",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Yulia",
+  "author_profile_url": "https://n8n.io/creators/yulia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly discover undocumented API endpoints from JavaScript in website HTML. AI-powered, minimal setup—ideal for automation, integration & security. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with outputParserAutofixing, noOp, if"
+  ],
+  "nodes": [
+    {
+      "name": "Start API Discovery",
+      "type": "Trigger"
+    },
+    {
+      "name": "Regex Validation Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Configuration",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract API Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Source Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format AI Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass File Name, No Binary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse AI Regex Output",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluate LLM Regex",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Data for Regex Extraction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute LLM Regex",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reorder Output Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Endpoints File(s)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Website HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract URLs of JS files",
+      "type": "Process"
+    },
+    {
+      "name": "Split URLs of JS files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep Relevant JS Files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch JS Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "AI Endpoints Analysis",
+      "type": "Data Input"
+    },
+    {
+      "name": "Reference for Source Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "Process Each Analyzed File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Endpoints File(s)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge AI Analysis & File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Endpoints Regex With AI",
+      "type": "Process"
+    },
+    {
+      "name": "Regex Generation LLM",
+      "type": "Process"
+    },
+    {
+      "name": "Validate LLM Regex",
+      "type": "Process"
+    },
+    {
+      "name": "Load Reference Endpoints",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Endpoints File Text",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Regex, File Name & Reference Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Initial AI Analysis & AI Agent Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split LLM-extracted Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove LLM Endpoints Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Original And LLM Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Merge with Enriched File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort Merged Endpoints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Export Comparison Results To Excel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Prepare Source & File Name for Merge",
+      "type": "Process"
+    },
+    {
+      "name": "Insufficient Endpoints",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Start API Discovery",
+    "Extract API Endpoints"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

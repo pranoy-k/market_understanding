@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f5a61845",
+  "workflow_id": "f5a61845",
+  "workflow_id_display": "f5a61845",
+  "workflow_name": "Speed Up Social Media Banners With BannerBear.com",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Discord",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate AI Banner Image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send to Bannerbear Template",
+      "type": "Process"
+    },
+    {
+      "name": "Download Banner",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

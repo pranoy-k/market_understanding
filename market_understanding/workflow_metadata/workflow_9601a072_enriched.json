@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9601a072",
+  "workflow_id": "9601a072",
+  "workflow_id_display": "9601a072",
+  "workflow_name": "Create Product Satisfaction Surveys with Telegram, Google Sheets and AI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate product satisfaction surveys with an AI-powered Telegram chatbot. Fetch questions from Google Sheets, store responses, and gain deeper insights.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, memoryManager, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Command1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Survey State1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Responses1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Get Columns1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Record1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Record2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Record1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get State2",
+      "type": "Process"
+    },
+    {
+      "name": "Memory3",
+      "type": "Process"
+    },
+    {
+      "name": "Reset Agent Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Memory4",
+      "type": "Process"
+    },
+    {
+      "name": "Start Session1",
+      "type": "Process"
+    },
+    {
+      "name": "Get State3",
+      "type": "Process"
+    },
+    {
+      "name": "Increment Index1",
+      "type": "Process"
+    },
+    {
+      "name": "Interview Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Update Answer2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Last Bot Message1",
+      "type": "Process"
+    },
+    {
+      "name": "Update Answer3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execution Data2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

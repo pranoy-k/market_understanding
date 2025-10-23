@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5f19b796",
+  "workflow_id": "5f19b796",
+  "workflow_id_display": "5f19b796",
+  "workflow_name": "Personalized AI Tech Newsletter Using RSS, OpenAI and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Email, Gmail, OpenAI, RSS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Miha",
+  "author_profile_url": "https://n8n.io/creators/miha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Send Weekly Summary",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Articles Daily",
+      "type": "Trigger"
+    },
+    {
+      "name": "Normalize Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Your topics of interest",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Tech News RSS Feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "News reader AI",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Response to an Email-Friendly Format",
+      "type": "Process"
+    },
+    {
+      "name": "Store News Articles",
+      "type": "Process"
+    },
+    {
+      "name": "Read RSS News Feeds",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get News Articles",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

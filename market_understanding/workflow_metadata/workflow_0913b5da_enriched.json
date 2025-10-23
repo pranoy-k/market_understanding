@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0913b5da",
+  "workflow_id": "0913b5da",
+  "workflow_id_display": "0913b5da",
+  "workflow_name": "Send alert when data is created in app/database",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Jira, Slack",
+  "tags": [
+    "slack🗄"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor events, filter urgent Linear bugs, and send Slack alerts. Customize for Jira, Asana, and more. Easy setup—learn how now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, linearTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "Linear Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

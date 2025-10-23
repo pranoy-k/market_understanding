@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e2d8632",
+  "workflow_id": "9e2d8632",
+  "workflow_id_display": "9e2d8632",
+  "workflow_name": "RAG_Context-Aware Chunking _ Google Drive to Pinecone via OpenRouter & Gemini",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive, PDF",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Udit Rawat",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 google drive & google sheets Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Concatenate the context and section text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Document From Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Text Data From Google Document",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Document Text Into Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Sections For Looping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent - Prepare Context",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

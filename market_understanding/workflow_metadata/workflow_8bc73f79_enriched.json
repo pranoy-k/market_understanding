@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8bc73f79",
+  "workflow_id": "8bc73f79",
+  "workflow_id_display": "8bc73f79",
+  "workflow_name": "Automatic Event Creation in Google Calendar from Google Sheets Data",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "WeblineIndia",
+  "author_profile_url": "https://n8n.io/creators/weblineindia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Google Calendar events from Google Sheets. Enjoy instant syncing, error-free creation, and advanced customization. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with code, stickyNote, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "New Event Entry Listener",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event Date Formatter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Calendar Event Creator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

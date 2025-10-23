@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/805f3321",
+  "workflow_id": "805f3321",
+  "workflow_id_display": "805f3321",
+  "workflow_name": "RSS Feed Reader that saves the feeds of the last 3 days in Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Google Sheets, RSS",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Holger",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track and archive recent RSS feed updates in Google Sheets. Automatically keeps your news current while avoiding API blocks. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, markdown, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete News",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read News",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save News",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Links",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

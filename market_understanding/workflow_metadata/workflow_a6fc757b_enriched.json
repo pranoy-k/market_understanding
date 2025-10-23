@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6fc757b",
+  "workflow_id": "a6fc757b",
+  "workflow_id_display": "a6fc757b",
+  "workflow_name": "N8N Español - Bot Multi Idioma NoCode",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "The { AI } rtist",
+  "author_profile_url": "https://n8n.io/creators/tuxed/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly add multilingual translation to your Telegram chats—no coding needed. Follow our guide and join the community for instant, easy integration!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, executeCommand, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execute Command",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

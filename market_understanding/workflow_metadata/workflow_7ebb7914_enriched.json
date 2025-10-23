@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7ebb7914",
+  "workflow_id": "7ebb7914",
+  "workflow_id_display": "7ebb7914",
+  "workflow_name": "dub.co URL Shortener",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Murtaja Ziad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Shorten and manage URLs seamlessly with this n8n workflow for Dub.co. Supports custom domains and easy setup. Click to learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "API Auth",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Shortened URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Done",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CREATE",
+      "type": "Data Input"
+    },
+    {
+      "name": "RETRIEVE",
+      "type": "Data Input"
+    },
+    {
+      "name": "UPDATE",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "API Auth"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

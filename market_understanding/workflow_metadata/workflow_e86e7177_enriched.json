@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e86e7177",
+  "workflow_id": "e86e7177",
+  "workflow_id_display": "e86e7177",
+  "workflow_name": "Summarize Glassdoor Company Info with Google Gemini and Bright Data Web Scraper",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Glassdoor review analysis for HR: gather, summarize, and deliver actionable employee insights to your dashboard. Boost employer brand—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Snapshot Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download the Snapshot Response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarization of Glassdoor Response",
+      "type": "Process"
+    },
+    {
+      "name": "Configure Webhook Notification",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request to Glassdoor",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

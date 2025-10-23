@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/42e716c0",
+  "workflow_id": "42e716c0",
+  "workflow_id_display": "42e716c0",
+  "workflow_name": "Fetch Random Dog Images from Dog CEO API via Webhook",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api",
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly fetch random dog images via webhook with this n8n template—perfect for developers and creators. Fast setup, flexible integrations. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Random Dog Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond with Image URL",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6dedd7ac",
+  "workflow_id": "6dedd7ac",
+  "workflow_id_display": "6dedd7ac",
+  "workflow_name": "TradingView Signal Extractor with Gmail, Google Sheets & Telegram Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Gmail, Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Dhrumil Patel",
+  "author_profile_url": "https://n8n.io/creators/itechdp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Email Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Clean Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Company Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Current Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Formatted Date & Time",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

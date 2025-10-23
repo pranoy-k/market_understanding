@@ -1,0 +1,139 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8960975",
+  "workflow_id": "a8960975",
+  "workflow_id_display": "a8960975",
+  "workflow_name": "Support Automation with GPT-4o Chatbot in Intercom & Discord Thread Reports",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Discord, OpenAI",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "Niten Musa",
+  "author_profile_url": "https://n8n.io/creators/nitenmusa/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Connect Intercom to Discord for real-time, AI-powered chat support with full conversation logs, instant control, and seamless team collaboration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Intercom Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "conversation -> JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "conversation info -> JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "sorting data (cuz we join 2 different flows here)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "preparing data for Agentic use",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tokens and Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "new conversation prepared data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "[Intercom] GET conversation",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] Create Thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] Type first message into the thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Intercom] Store the thread ID as a 'note'",
+      "type": "Data Input"
+    },
+    {
+      "name": "Isolating the 'note' to get the thread ID stored",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Isolating all textual messages contents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "not going through if bot deactivated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "[Discord] Reply",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Intercom] Reply",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] Notify bot re-activation notification",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] Notify bot de-activation",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] User message",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Discord] Human admin reply",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prevents from running when event is 'bot reply'",
+      "type": "Data Processing"
+    },
+    {
+      "name": "conversation prepared data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

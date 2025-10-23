@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7f5e593e",
+  "workflow_id": "7f5e593e",
+  "workflow_id_display": "7f5e593e",
+  "workflow_name": "Extract text from PDF and image using Vertex AI (Gemini) into CSV",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "CSV, Google Drive, PDF",
+  "tags": [],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Get PDF or Images",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send data to A.I.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Download PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image",
+      "type": "Process"
+    },
+    {
+      "name": "Extract data from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to CSV2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Google Drive1",
+      "type": "Process"
+    },
+    {
+      "name": "Vertex A.I. extract text",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

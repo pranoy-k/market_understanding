@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90ad703b",
+  "workflow_id": "90ad703b",
+  "workflow_id_display": "90ad703b",
+  "workflow_name": "Automate VIRAL Youtube Titles & Thumbnails Creation (FLUX.1 + Apify)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "API, YouTube",
+  "tags": [],
+  "author_name": "Nasser",
+  "author_profile_url": "https://n8n.io/creators/nasser/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Transform raw content ideas into viral YouTube titles and thumbnails with AI. Boost your strategy—perfect for creators, automation, and marketing teams.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Content Idea",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Image",
+      "type": "Process"
+    },
+    {
+      "name": "Create Keywords",
+      "type": "Process"
+    },
+    {
+      "name": "YTB Search Scrape",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get DataSet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Check IF Finished",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral Cloud Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate CTR",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Titles",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Create List of Titles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mistral Cloud Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Create Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Create List of Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Keep Top Performing Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Pattern & Create Prompt",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

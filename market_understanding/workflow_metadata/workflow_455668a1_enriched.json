@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/455668a1",
+  "workflow_id": "455668a1",
+  "workflow_id_display": "455668a1",
+  "workflow_name": "Reschedule Google Calendar Appointments with Stream Deck (15/30/60 min)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": "https://n8n.io/creators/cfomodz/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly delay Google Calendar appointments by 15/30/60 minutes with one Stream Deck press. Instant rescheduling and attendee updates—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, googleCalendar, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Get the Events for the Rest of the Day",
+      "type": "Process"
+    },
+    {
+      "name": "Respond with 200",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hit this URL from Streamdeck http request button",
+      "type": "Trigger"
+    },
+    {
+      "name": "Push All Meetings 30 Minutes Later",
+      "type": "Process"
+    },
+    {
+      "name": "Push All Meetings 60 Minutes Later",
+      "type": "Process"
+    },
+    {
+      "name": "Push All Meetings 15 Minutes Later",
+      "type": "Process"
+    },
+    {
+      "name": "Get the Events for the Rest of the Day 60",
+      "type": "Process"
+    },
+    {
+      "name": "Hit this URL from Streamdeck http request button 60",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hit this URL from Streamdeck http request button 15",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get the Events for the Rest of the Day 15",
+      "type": "Process"
+    },
+    {
+      "name": "Respond with 500",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

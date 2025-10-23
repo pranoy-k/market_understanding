@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f6a4f8b",
+  "workflow_id": "4f6a4f8b",
+  "workflow_id_display": "4f6a4f8b",
+  "workflow_name": "Store Notion_s Pages as Vector Documents into Supabase with OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Facebook, Notion, OpenAI, PDF",
+  "tags": [
+    "Notion🤖 AI",
+    "RAG"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow enhances your Notion workspace with AI capabilities, automatically generating content, organizing information, and creating intelligent summaries. It can process Notion pages, use AI to analyze and enhance content, then update your workspace with enriched information.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Notion - Page Added Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion - Retrieve Page Content",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Non-Text Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize - Concatenate Notion's blocks content",
+      "type": "Process"
+    },
+    {
+      "name": "Create metadata and load content",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

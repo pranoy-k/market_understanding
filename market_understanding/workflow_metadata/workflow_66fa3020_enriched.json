@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66fa3020",
+  "workflow_id": "66fa3020",
+  "workflow_id_display": "66fa3020",
+  "workflow_name": "Proxmox AI Agent with n8n and Generative AI Integration",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API, Email, Gmail, PDF, Telegram, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Amjid Ali",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Proxmox API Documentation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Proxmox",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Proxmox API Wiki",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structure Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structgure Response from Proxmox",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response and Hide Sensitive Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Proxmox API Documentation",
+    "Proxmox API Wiki",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/28f2baca",
+  "workflow_id": "28f2baca",
+  "workflow_id_display": "28f2baca",
+  "workflow_name": "Auto-Update Notion CRM and Send Email from Google Form Submissions",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Facebook, Notion",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Harsh Sharma",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "No workflow description detected. Please provide details about your n8n workflow for a tailored summary and optimized meta description.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, googleSheetsTrigger, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

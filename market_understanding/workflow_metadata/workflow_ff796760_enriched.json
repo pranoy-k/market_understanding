@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ff796760",
+  "workflow_id": "ff796760",
+  "workflow_id_display": "ff796760",
+  "workflow_name": "Summarize Google Drive Documents with Mistral AI and Send via Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Gmail, Google Drive, PDF",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "Swot.AI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Download uploaded File from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization Chain to summarize a file",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,107 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8b7d01bf",
+  "workflow_id": "8b7d01bf",
+  "workflow_id_display": "8b7d01bf",
+  "workflow_name": "AI-Generated Summary Block for WordPress Posts",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Google Sheets, OpenAI, Slack, Webhook, WordPress",
+  "tags": [
+    "Webhook",
+    "WordPress🤖 AI",
+    "Scheduled"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fields - From Webhook input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - Prepare data for Gsheets & Slack",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Get rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Add Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wordpress - Update Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time - Substract",
+      "type": "Process"
+    },
+    {
+      "name": "WordPress - Get Post2",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "WordPress - Get Last Posts",
+      "type": "Process"
+    },
+    {
+      "name": "WordPress - Get Post1",
+      "type": "Process"
+    },
+    {
+      "name": "WordPress - Get All Posts",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

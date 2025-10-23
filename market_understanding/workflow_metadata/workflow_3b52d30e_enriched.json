@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3b52d30e",
+  "workflow_id": "3b52d30e",
+  "workflow_id_display": "3b52d30e",
+  "workflow_name": "Create HubSpot contacts from LinkedIn post interactions",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Airtable, Email, HubSpot, LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead gen: scrape, enrich, sync to Airtable, send cold emails, connect on LinkedIn, and push to HubSpot. Learn more—streamline your outreach!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, phantombuster, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "Set - Update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set - New",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable - List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable - Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable - Create",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Lemlist",
+      "type": "Process"
+    },
+    {
+      "name": "Hubspot",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn Post Commenters",
+      "type": "Process"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    },
+    {
+      "name": "Phantombuster",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn Post Liker",
+      "type": "Process"
+    },
+    {
+      "name": "Get Likers",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

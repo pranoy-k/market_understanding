@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/19584ef2",
+  "workflow_id": "19584ef2",
+  "workflow_id_display": "19584ef2",
+  "workflow_name": "Form with Dynamic Dropdown Field",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Obsidi8n",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Create dynamic forms with dropdowns that auto-update from Google Sheets or any data source. Customize easily—keep options current, no coding needed. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, code, n8n"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Replace values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format to 'values'",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all values",
+      "type": "Data Output"
+    },
+    {
+      "name": "n8n | get wf",
+      "type": "Process"
+    },
+    {
+      "name": "n8n | update",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Write JSON",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

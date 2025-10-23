@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4abdb58",
+  "workflow_id": "c4abdb58",
+  "workflow_id_display": "c4abdb58",
+  "workflow_name": "Vector Database as a Big Data Analysis Tool for AI Agents [1_3 anomaly][1_2 KNN]",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Google Analytics",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Jenny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get fields for Qdrant",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant cluster variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Batches in the API's format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Cloud Storage",
+      "type": "Process"
+    },
+    {
+      "name": "Embed crop image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Qdrant Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Qdrant Collection Existence",
+      "type": "Data Input"
+    },
+    {
+      "name": "Batch Upload to Qdrant",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split in batches, generate uuids for Qdrant points",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Payload index on crop_name",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filtering out tomato to test anomalies",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Batches in the API's format"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

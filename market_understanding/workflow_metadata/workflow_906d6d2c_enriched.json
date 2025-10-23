@@ -1,0 +1,37 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/906d6d2c",
+  "workflow_id": "906d6d2c",
+  "workflow_id_display": "906d6d2c",
+  "workflow_name": "Set alert on the website changes",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Discord, Webhook",
+  "tags": [
+    "discord",
+    "webhook"
+  ],
+  "author_name": "darkesthour111",
+  "author_profile_url": "https://n8n.io/creators/rons4/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

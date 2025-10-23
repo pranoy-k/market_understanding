@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/618b372d",
+  "workflow_id": "618b372d",
+  "workflow_id_display": "618b372d",
+  "workflow_name": "Turn BBC News Articles into Podcasts using Hugging Face and Google Gemini",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Onur",
+  "author_profile_url": "https://n8n.io/creators/onurpolat05/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn BBC news articles into podcasts with this no-code n8n workflow using Google Gemini and Hugging Face. Fast, easy, and customizable!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract News Block",
+      "type": "Process"
+    },
+    {
+      "name": "Extract News Content",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch BBC News Detail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Detail",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Empty Detail",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic Podcast LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch BBC News Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit 10 Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hugging Face Text-to-Speech.",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

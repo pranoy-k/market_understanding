@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/09294c91",
+  "workflow_id": "09294c91",
+  "workflow_id_display": "09294c91",
+  "workflow_name": "Add new customers from WooCommerce to Mautic",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically add new WooCommerce customers to Mautic for seamless marketing. Easy setup—connect your accounts for efficient, automated integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, wooCommerceTrigger, mautic"
+  ],
+  "nodes": [
+    {
+      "name": "Customer Created or Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check for Existing",
+      "type": "Process"
+    },
+    {
+      "name": "Create Contact",
+      "type": "Process"
+    },
+    {
+      "name": "Update Contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33820979",
+  "workflow_id": "33820979",
+  "workflow_id_display": "33820979",
+  "workflow_name": "Merge greetings with the users based on the language",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to merge datasets in n8n using Code and Merge nodes. Generate and combine lists by language, perfect for testing and workflow automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, code, merge"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sample data (name + language)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sample data (greeting + language)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge (name + language + greeting)",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

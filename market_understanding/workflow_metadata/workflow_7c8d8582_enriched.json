@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7c8d8582",
+  "workflow_id": "7c8d8582",
+  "workflow_id_display": "7c8d8582",
+  "workflow_name": "Automated Work Attendance with Location Triggers",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Rui Borges",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track work hours with automated check-in/out via iPhone location triggers. Instantly log time to Google Sheets in just 5 minutes. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, set, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Set Logging Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Worksheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Return if Null",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

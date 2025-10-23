@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8c49185",
+  "workflow_id": "c8c49185",
+  "workflow_id_display": "c8c49185",
+  "workflow_name": "Analyze Stock Charts with GPT-4 Vision and Send Results via Telegram",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Fenngbrotalk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze stock charts in Telegram—just send an image. Get instant, professional insights powered by GPT-4 Vision. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, chainLlm, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

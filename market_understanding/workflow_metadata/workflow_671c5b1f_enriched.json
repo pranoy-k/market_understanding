@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/671c5b1f",
+  "workflow_id": "671c5b1f",
+  "workflow_id_display": "671c5b1f",
+  "workflow_name": "Forward Netflix emails to multiple email addresses with GMail and Mailjet",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Manuel",
+  "author_profile_url": "https://n8n.io/creators/automate-everything/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-forward all Netflix emails from Gmail to friends and family in real time. Easy setup, secure delivery—never miss a message. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set all recipients",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mailjet",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out recipients",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

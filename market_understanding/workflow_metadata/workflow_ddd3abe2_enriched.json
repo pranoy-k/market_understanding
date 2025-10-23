@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ddd3abe2",
+  "workflow_id": "ddd3abe2",
+  "workflow_id_display": "ddd3abe2",
+  "workflow_name": "Currency Conversion Workflow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Mauricio Perera",
+  "author_profile_url": "https://n8n.io/creators/rckflr/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate real-time currency conversions using webhooks and Google data—no APIs needed. Fast, accurate, and easy to integrate. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, set, html"
+  ],
+  "nodes": [
+    {
+      "name": "Format Currency Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Exchange Rate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Conversion Data",
+      "type": "Process"
+    },
+    {
+      "name": "Capture Conversion Query",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Conversion Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

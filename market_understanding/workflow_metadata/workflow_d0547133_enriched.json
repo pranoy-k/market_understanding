@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d0547133",
+  "workflow_id": "d0547133",
+  "workflow_id_display": "d0547133",
+  "workflow_name": "Promote YouTube Videos on Reddit with AI-Generated Comments and Email Digest",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email, Reddit, YouTube",
+  "tags": [],
+  "author_name": "Ari Nakos",
+  "author_profile_url": "https://n8n.io/creators/just-aristides/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube growth with AI-powered Reddit marketing. Find top threads, get ready-to-post comments, and weekly email digests. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, youTube, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Keep Certain Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Append Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Humanized Comment",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Reddit Posts & Proposed Responses",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Email HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output",
+      "type": "Process"
+    },
+    {
+      "name": "AI Brain",
+      "type": "Process"
+    },
+    {
+      "name": "Reddit",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "YT Keyword Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Brain",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured_Output",
+      "type": "Process"
+    },
+    {
+      "name": "Social Post Comment",
+      "type": "Process"
+    },
+    {
+      "name": "Brain1",
+      "type": "Process"
+    },
+    {
+      "name": "Is this post relevant?",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

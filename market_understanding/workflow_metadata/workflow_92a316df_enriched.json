@@ -1,0 +1,99 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92a316df",
+  "workflow_id": "92a316df",
+  "workflow_id_display": "92a316df",
+  "workflow_name": "Upload images to an S3 Bucket via a Slack Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "AWS, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly upload and organize public images to a Cloudflare S3 bucket directly from Slack. Fast, seamless, and fully integrated—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Failure Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Close Modal Popup",
+      "type": "Trigger"
+    },
+    {
+      "name": "Idea Selector Modal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Data Input"
+    },
+    {
+      "name": "Select Folder",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "move on to next",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Slack Webhook - Success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Slack Webhook - No Action",
+      "type": "Trigger"
+    },
+    {
+      "name": "Download File Binary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to S3 Bucket",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Files",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

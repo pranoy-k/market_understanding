@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4370878c",
+  "workflow_id": "4370878c",
+  "workflow_id_display": "4370878c",
+  "workflow_name": "Send a file from S3 to AWS Textract",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily download receipt images from AWS S3 and extract text with Amazon Textract in a simple two-node workflow. Discover how to automate now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsTextract, awsS3"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS Textract",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

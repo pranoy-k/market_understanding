@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4acc80ea",
+  "workflow_id": "4acc80ea",
+  "workflow_id_display": "4acc80ea",
+  "workflow_name": "Better Oauth2.0 workflow for Pipedrive CRM with Supabase",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "API",
+  "tags": [
+    "api🗄"
+  ],
+  "author_name": "Priya Jain",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate OAuth 2.0 token refresh for any app using your own database. Gain control, transparency, and seamless API access. Learn more with video guides!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "combine client id and secret",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert",
+      "type": "Process"
+    },
+    {
+      "name": "Get Pipedrive Token",
+      "type": "Process"
+    },
+    {
+      "name": "Get contact from Pipedrive",
+      "type": "Data Input"
+    },
+    {
+      "name": "Success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Refresh Access Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "convert clientId and secret to base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Refresh Token from authcode",
+      "type": "Data Input"
+    },
+    {
+      "name": "Look for the related record in Supabase",
+      "type": "Process"
+    },
+    {
+      "name": "Update tokns in the record",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase- look for the record",
+      "type": "Process"
+    },
+    {
+      "name": "Get Pipedrive acess token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update thr row with new access token",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive request",
+      "type": "Trigger"
+    },
+    {
+      "name": "catch Auth code",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

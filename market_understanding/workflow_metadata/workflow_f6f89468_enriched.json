@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f6f89468",
+  "workflow_id": "f6f89468",
+  "workflow_id_display": "f6f89468",
+  "workflow_name": "Host your own Uptime Monitoring with Scheduled Triggers",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Monitor multiple websites’ uptime with n8n—automated checks, instant email/Slack alerts, and customizable logs. Simple, cost-effective, and flexible.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Calculate Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Sites",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Uptime Event",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Site Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Perform Site Test",
+      "type": "Data Input"
+    },
+    {
+      "name": "For Each Site...",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

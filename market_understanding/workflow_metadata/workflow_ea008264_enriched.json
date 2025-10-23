@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea008264",
+  "workflow_id": "ea008264",
+  "workflow_id_display": "ea008264",
+  "workflow_name": "Backup Workflows to Git Repository on Gitea",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Octoleo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate n8n workflow backups to Gitea with scheduled Git commits, secure token auth, and fast setup. Gain version control and disaster recovery—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetDataUpdateNode",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetDataCreateNode",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Base64EncodeUpdate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Base64EncodeCreate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PutGitea",
+      "type": "Data Input"
+    },
+    {
+      "name": "GetGitea",
+      "type": "Data Input"
+    },
+    {
+      "name": "PostGitea",
+      "type": "Data Input"
+    },
+    {
+      "name": "ForEach",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

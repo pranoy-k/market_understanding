@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/49831349",
+  "workflow_id": "49831349",
+  "workflow_id_display": "49831349",
+  "workflow_name": "Organise an Event using Slack, Google Calendar and AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn Slack invites into Google Calendar events with AI-driven parsing, location lookup, and automatic attendee management. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, googleCalendar, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Old EventId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get User Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "For Each User ID...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Existing Invite EventID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Invite Reactions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Attendee to Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Event Details",
+      "type": "Process"
+    },
+    {
+      "name": "Is Attending",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar Event Booking Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

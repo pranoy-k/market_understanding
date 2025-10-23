@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b93b0b70",
+  "workflow_id": "b93b0b70",
+  "workflow_id_display": "b93b0b70",
+  "workflow_name": "Build your own SQLite MCP server",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage local SQLite databases in your self-hosted n8n with secure MCP integration. Enable safe BI queries and easy customization. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, toolWorkflow, toolCode"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "SQLite MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "CreateRecord",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UpdateRecord",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ReadRecords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DescribeTables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ListTables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CreateRecords",
+      "type": "Process"
+    },
+    {
+      "name": "UpdateRows",
+      "type": "Process"
+    },
+    {
+      "name": "ReadRows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

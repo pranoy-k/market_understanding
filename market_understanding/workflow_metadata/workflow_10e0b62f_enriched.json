@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/10e0b62f",
+  "workflow_id": "10e0b62f",
+  "workflow_id_display": "10e0b62f",
+  "workflow_name": "Travel Planning Agent with Couchbase Vector Search, Gemini 2.0 Flash and OpenAI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "gemini🤖 openai"
+  ],
+  "author_name": "Elliot Scribner",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with vectorStoreCouchbaseSearch, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate OpenAI Embeddings using text-embedding-3-small",
+      "type": "Process"
+    },
+    {
+      "name": "Generate OpenAI Embeddings using text-embedding-3-small1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Travel Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve docs with Couchbase Search Vector",
+      "type": "Process"
+    },
+    {
+      "name": "Insert docs with Couchbase Search Vector",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

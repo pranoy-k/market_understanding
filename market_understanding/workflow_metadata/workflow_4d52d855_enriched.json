@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4d52d855",
+  "workflow_id": "4d52d855",
+  "workflow_id_display": "4d52d855",
+  "workflow_name": "Connect Retell Voice Agents to Custom Functions",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Trigger custom n8n workflows from Retell Voice Agents in real time. Capture call data, respond dynamically, and extend with custom API or AI logic. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, set, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "[Replace me!] Set response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

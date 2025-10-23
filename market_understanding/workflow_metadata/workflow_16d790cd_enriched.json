@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/16d790cd",
+  "workflow_id": "16d790cd",
+  "workflow_id_display": "16d790cd",
+  "workflow_name": "Find, Scrape & Analyze Twitter Posts by Name with Bright Data & Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Google Sheets, Twitter",
+  "tags": [
+    "twitter",
+    "google",
+    "gemini"
+  ],
+  "author_name": "Gleb D",
+  "author_profile_url": "https://n8n.io/creators/glebd/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate collection & analysis of any public X (Twitter) profile’s posts. Get AI-powered summaries & insights saved to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, outputParserStructured, set"
+  ],
+  "nodes": [
+    {
+      "name": "When User Completes Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Url Google Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Parse X Url",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Adding Posts and Summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Body and Title from Website",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Form Not Found",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Form Error",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Snapshot Content",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Snapshot Request",
+      "type": "Process"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Process"
+    },
+    {
+      "name": "BrightData",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

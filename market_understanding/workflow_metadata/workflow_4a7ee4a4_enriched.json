@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4a7ee4a4",
+  "workflow_id": "4a7ee4a4",
+  "workflow_id_display": "4a7ee4a4",
+  "workflow_name": "Evaluation metric example: Categorization",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Evaluate your n8n AI workflows with confidence—automatically score and analyze results, pinpoint weaknesses, and optimize for reliable performance. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with evaluationTrigger, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Check categorization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Match webhook format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Evaluating?",
+      "type": "Process"
+    },
+    {
+      "name": "Set metrics",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

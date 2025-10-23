@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ce35adaa",
+  "workflow_id": "ce35adaa",
+  "workflow_id_display": "ce35adaa",
+  "workflow_name": "Generate & Publish SEO-Optimized WordPress Blog Posts with AI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate SEO-optimized blog post creation and publishing in WordPress with BlogBlitz. Save hours—generate, format, and post high-quality content effortlessly!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with wordpress, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Topic Chooser and Title Maker Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Generate Image",
+      "type": "Process"
+    },
+    {
+      "name": "Article Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Topic Chooser and Title Maker",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Wordpress Post Draft",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Image to WP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wordpress - Set Featured Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Title, category, meta, keyphrase generator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

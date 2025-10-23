@@ -1,0 +1,127 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/433f0220",
+  "workflow_id": "433f0220",
+  "workflow_id_display": "433f0220",
+  "workflow_name": "Automated Lead Generation & Contact Enrichment with Hunter.io and Perplexity AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Velebit from Innovatio",
+  "author_profile_url": "https://n8n.io/creators/innovatio/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate B2B lead generation with no-code tools—discover, enrich, and log leads in Google Sheets using AI and verified email data. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Leads List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Leads List2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Leads List3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Leads List4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read all from your Google Sheet \"Leads List\" sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read all \"new\" Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Company Finder",
+      "type": "Process"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Company Finder1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Slice down to 10",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find real user data with Hunter",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Hunter output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "JSON cleaner code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chunk into separate items code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep only non-duplicates code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List existing domains code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

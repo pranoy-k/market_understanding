@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f27bcdd6",
+  "workflow_id": "f27bcdd6",
+  "workflow_id_display": "f27bcdd6",
+  "workflow_name": "Scrape any web page into structured JSON data with ScrapeNinja and AI",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "json"
+  ],
+  "author_name": "Anthony",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly fix broken web scrapers with ScrapeNinja for n8n. Auto-generate adaptive extractors using LLMs. Install easily on self-hosted n8n!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, chainLlm, scrapeNinja"
+  ],
+  "nodes": [
+    {
+      "name": "Generate custom web scraper",
+      "type": "Trigger"
+    },
+    {
+      "name": "ScrapeNinja",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Cleanup HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Generate JS eval code via LLM",
+      "type": "Process"
+    },
+    {
+      "name": "Eval generated code to extract data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

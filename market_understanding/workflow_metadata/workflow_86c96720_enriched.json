@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86c96720",
+  "workflow_id": "86c96720",
+  "workflow_id_display": "86c96720",
+  "workflow_name": "Manage Adobe Acrobat e-signatures with webhooks",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "Aaron Smusz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and streamline Acrobat Sign signature management. Instantly respond to webhooks, customize workflows, and boost efficiency. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, function, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetWebhookData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST",
+      "type": "Trigger"
+    },
+    {
+      "name": "reg-GET",
+      "type": "Trigger"
+    },
+    {
+      "name": "webhook-response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

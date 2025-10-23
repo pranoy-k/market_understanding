@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4a0a61e5",
+  "workflow_id": "4a0a61e5",
+  "workflow_id_display": "4a0a61e5",
+  "workflow_name": "Migrate Customer Data from Odoo v15 to v18",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Evozard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly migrate customer data from Odoo v15 to v18—no manual exports needed. Fast, automated, and ideal for seamless Odoo upgrades. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, splitInBatches, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Customers from v15",
+      "type": "Process"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Customers in v18",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

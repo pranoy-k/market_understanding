@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/127b4643",
+  "workflow_id": "127b4643",
+  "workflow_id_display": "127b4643",
+  "workflow_name": "mart Sales Support Chatbot with GPT-4o and Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Babish Shrestha",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate webshop support with a simple chatbot for solopreneurs. Manage orders, queries, and inventory via Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Place order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Stock",
+      "type": "Data Output"
+    },
+    {
+      "name": "GetStock",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Support Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

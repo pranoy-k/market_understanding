@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "name": "Clockify Trigger",
+      "type": "n8n-nodes-base.clockifyTrigger",
+      "position": [
+        450,
+        480
+      ],
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "workspaceId": "5f115b31e3f0ad7f90326b39"
+      },
+      "credentials": {
+        "clockifyApi": "clockify_creds"
+      },
+      "typeVersion": 1,
+      "id": "f4e86fa047c201c9"
+    }
+  ],
+  "connections": {},
+  "id": "a2eee955287490f1",
+  "name": "Receive updates for new events in Clockify",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

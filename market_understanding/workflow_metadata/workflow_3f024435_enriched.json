@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3f024435",
+  "workflow_id": "3f024435",
+  "workflow_id_display": "3f024435",
+  "workflow_name": "Create PDF from Images for free via Google Slides and Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Google Drive, PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "Nadia Privalikhina",
+  "author_profile_url": "https://n8n.io/creators/n8ninja/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily batch-convert Google Drive images to a custom PDF with this free n8n template. Set page size, layout, and automate the process—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Pdf File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by Created Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Image Permissions",
+      "type": "Process"
+    },
+    {
+      "name": "Convert slides to PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Limit: 1Page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter: Only Images",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Final PDF File",
+      "type": "Process"
+    },
+    {
+      "name": "Delete First Empty Slide",
+      "type": "Data Input"
+    },
+    {
+      "name": "CopyPdfTemplate",
+      "type": "Process"
+    },
+    {
+      "name": "Get Created Presentation",
+      "type": "Process"
+    },
+    {
+      "name": "Get Folder Id w Presentation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get All Files From the Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create An Empty Slide",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Image To The Slide",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

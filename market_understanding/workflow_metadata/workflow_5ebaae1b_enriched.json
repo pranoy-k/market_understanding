@@ -1,0 +1,148 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5ebaae1b",
+  "workflow_id": "5ebaae1b",
+  "workflow_id_display": "5ebaae1b",
+  "workflow_name": "Automatically create YouTube short videos using Elevenlabs, Hailuo AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Nguyen Quoc Hai",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and share engaging promotional videos with AI-driven automation—voiceovers, animation, and easy management for marketers and businesses. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Video Catagory",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Public Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Music and Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Final Video URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Save Image",
+      "type": "Process"
+    },
+    {
+      "name": "Save Video",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hailuo AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Elevenlabs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a list of Image Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Image Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image Base 64",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Hailuo Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Hailuo Download Link",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Open AI Whisper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Captions",
+      "type": "Data Input"
+    },
+    {
+      "name": "JSON to Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Base64 to Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit only first Image to video",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

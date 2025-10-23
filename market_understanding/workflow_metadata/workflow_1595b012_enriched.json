@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1595b012",
+  "workflow_id": "1595b012",
+  "workflow_id_display": "1595b012",
+  "workflow_name": "DNB Company Search & Extract with Bright Data and OpenAI 4o mini",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set input fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Data Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser for URL",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser for Structured Extract",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for URL Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for DNB Structured Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "List all tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client for Search Engine",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client For DNB",
+      "type": "Process"
+    },
+    {
+      "name": "DNB URL Data Extract Using LLM",
+      "type": "Process"
+    },
+    {
+      "name": "DNB Structured Data Extract Using LLM",
+      "type": "Process"
+    },
+    {
+      "name": "Write the structured content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Structured Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

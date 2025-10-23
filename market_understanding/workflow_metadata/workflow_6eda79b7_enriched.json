@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6eda79b7",
+  "workflow_id": "6eda79b7",
+  "workflow_id_display": "6eda79b7",
+  "workflow_name": "Automated PR Code Reviews with GitHub, GPT-4, and Google Sheets Best Practices",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "GitHub, Google Sheets, OpenAI, RSS",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Jihene",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub code reviews with OpenAI—extract PR diffs, enrich with internal best practices, and post AI-driven feedback. Boost code quality now!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "PR Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Code Best Practices",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get file's Diffs from PR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create target Prompt from PR Diffs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GitHub Robot",
+      "type": "Process"
+    },
+    {
+      "name": "Add Label to PR",
+      "type": "Process"
+    },
+    {
+      "name": "Code Review Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

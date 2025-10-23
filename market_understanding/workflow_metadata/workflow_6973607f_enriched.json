@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6973607f",
+  "workflow_id": "6973607f",
+  "workflow_id_display": "6973607f",
+  "workflow_name": "Automated Faceless YouTube Video Generator Using Leonardo AI and Creatomate",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create high-quality, faceless videos with AI-powered scriptwriting, image generation, and editing. Perfect for creators and marketers. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Cre - Generate Video1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cre - Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Image 1 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 1 URL - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image 2 URL - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Image 2 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Image 3 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Image 4 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Image 5 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Image 6 - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 3 URL - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 4 URL - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 5 URL - LeonadoAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 6 URL - LeonadoAI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

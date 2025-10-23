@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90346411",
+  "workflow_id": "90346411",
+  "workflow_id_display": "90346411",
+  "workflow_name": "HR & IT Helpdesk Chatbot with Audio Transcription",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "API, OpenAI, PostgreSQL, Telegram",
+  "tags": [],
+  "author_name": "Felipe Braga",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates an intelligent Telegram bot powered by AI that can understand natural language, answer questions, and perform automated tasks. The bot processes incoming messages, uses AI to generate contextual responses, and can integrate with other services to provide comprehensive assistance to users.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create HR Policies",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Answer questions with a vector store",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

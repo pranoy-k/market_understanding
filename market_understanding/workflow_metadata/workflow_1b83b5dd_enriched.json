@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b83b5dd",
+  "workflow_id": "1b83b5dd",
+  "workflow_id_display": "1b83b5dd",
+  "workflow_name": "Auto-Generate & Publish SEO Blog Posts to WordPress with OpenRouter & Runware",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WordPress blog creation with AI-powered workflows. Generate SEO-optimized articles and images at ultra-low cost. Fast, easy, and customizable—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with wordpress, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "⏱️ Auto Trigger (Every 3 Hours)",
+      "type": "Trigger"
+    },
+    {
+      "name": "🔎 Parse Blog Metadata Output",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 Article Writer (GPT-4 mini)",
+      "type": "Process"
+    },
+    {
+      "name": "🔖 Generate Blog Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "✍️ Compose SEO Article Content",
+      "type": "Process"
+    },
+    {
+      "name": "📝 Create WordPress Draft Post",
+      "type": "Process"
+    },
+    {
+      "name": "🔍 Set Yoast SEO Metadata",
+      "type": "Data Input"
+    },
+    {
+      "name": "🖼️ Generate Featured Image (Runware)",
+      "type": "Data Input"
+    },
+    {
+      "name": "📥 Fetch Generated Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "📤 Upload Image to WordPress Media",
+      "type": "Data Input"
+    },
+    {
+      "name": "📎 Attach Image to Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧠 Article Writer (LLaMA)",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 Article Writer (Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "🔖 Metadata Generator (Nemotron)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

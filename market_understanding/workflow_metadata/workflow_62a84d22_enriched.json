@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62a84d22",
+  "workflow_id": "62a84d22",
+  "workflow_id_display": "62a84d22",
+  "workflow_name": "Send feedback from Google Sheets to Mattermost",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and streamline your n8nConf blog with this companion workflow—sync, schedule, and manage posts efficiently. Discover seamless content management!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, googleSheets, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

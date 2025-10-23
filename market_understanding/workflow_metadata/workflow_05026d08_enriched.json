@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/05026d08",
+  "workflow_id": "05026d08",
+  "workflow_id_display": "05026d08",
+  "workflow_name": "Auto-reply to FAQs on WhatsApp using Postgres (Module \"FAQ\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "PostgreSQL, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "postgres🗄"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WhatsApp FAQ responses using a Postgres Q&A database. Reduce manual work, boost support speed, and offer live help when needed. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, whatsAppTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union list",
+      "type": "Process"
+    },
+    {
+      "name": "Get FAQ",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get FAQs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get FAQs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on MANAGER",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Consultation request",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Bot Status on START",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

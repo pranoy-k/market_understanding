@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/954bd302",
+  "workflow_id": "954bd302",
+  "workflow_id_display": "954bd302",
+  "workflow_name": "Automatic Background Removal for Images in Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Drive",
+  "tags": [],
+  "author_name": "Simon",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 google drive & google sheets Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Watch for new images",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "remove background",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Picture to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "remove background fixed size",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Picture to Google Drive1",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image",
+      "type": "Process"
+    },
+    {
+      "name": "Get Image Size",
+      "type": "Process"
+    },
+    {
+      "name": "loop all over your images",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

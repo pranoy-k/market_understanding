@@ -1,0 +1,163 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f80a507e",
+  "workflow_id": "f80a507e",
+  "workflow_id_display": "f80a507e",
+  "workflow_name": "Automate Sprint Planning with OpenAI, Google Calendar, and Gmail for Agile Teams",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "42",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "google🤖 gmail🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Willemijn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start Here: Set Environment Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Scrum Master Emailer",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Scrum Master Story Feedback",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Scrum Master DoR Check",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Sprint Goal Email Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Read DoR criteria",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Scrum feedback in Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Select Stories Ready for Sprint Planning from Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Open Stories in Current Sprint",
+      "type": "Data Output"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Load Calendar of Scrum Master",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items for DoR check",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare User Story to DoR Criterium",
+      "type": "Process"
+    },
+    {
+      "name": "If no event do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Take backlog link for further referral",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate DoR check to User Story Level",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add DoR feedback to User Story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Provide Scrum Master Feedback on the story",
+      "type": "Process"
+    },
+    {
+      "name": "Combine stories into one list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take DoR link for further referral",
+      "type": "Process"
+    },
+    {
+      "name": "Check for Upcoming Sprint Planning Project A",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Draft Email for Sprint Planning",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate Stories for Form Creation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Dynamic Form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Feedback on Index",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Feedback to Story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Draft Email for Sprint Goal Suggestions",
+      "type": "Process"
+    },
+    {
+      "name": "Keep stories that were not committed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Sprint Spill over with Ready for Sprint Planning",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Stories with DoR feedback",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

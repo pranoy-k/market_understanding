@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/690de796",
+  "workflow_id": "690de796",
+  "workflow_id_display": "690de796",
+  "workflow_name": "CallForge - 03 - Gong Transcript Processor and Salesforce Enricher",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Analytics, Salesforce",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Transform Gong.io call transcripts into structured, AI-ready sales data. Automate transcript enrichment, boost insights, and streamline analytics—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Join Transcript to String",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Isolate Notion Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract SF Opp Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract SF Opp Data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get External Attendees Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve detailed call data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Join Affiliation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Join conversation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Opp Data",
+      "type": "Process"
+    },
+    {
+      "name": "Get account data",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Call Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge call and transcript Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Gong Call Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Salesforce Opp Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Salesforce data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Enriched Transcript Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

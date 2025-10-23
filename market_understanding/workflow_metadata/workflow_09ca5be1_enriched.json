@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/09ca5be1",
+  "workflow_id": "09ca5be1",
+  "workflow_id_display": "09ca5be1",
+  "workflow_name": "Namesilo Bulk Domain Availability Checker",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "API, Excel",
+  "tags": [
+    "api",
+    "excel"
+  ],
+  "author_name": "n8n custom workflows",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly check bulk domain availability with the Namesilo API. Save time, automate up to 200 domains per batch, and export clear Excel results. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert & Split Domains",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Domains",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Namesilo Requests",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Excel",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6d6fdf29",
+  "workflow_id": "6d6fdf29",
+  "workflow_id_display": "6d6fdf29",
+  "workflow_name": "Generate and Edit Images with OpenAI's GPT-Image-1 Model",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Edoardo Guzzi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, convertToFile, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Image (OpenAI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create image call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert json binary to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert json binary to File final",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

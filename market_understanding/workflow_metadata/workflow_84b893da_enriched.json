@@ -1,0 +1,210 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/84b893da",
+  "workflow_id": "84b893da",
+  "workflow_id_display": "84b893da",
+  "workflow_name": "Create & Approve POV Videos with AI, ElevenLabs & Multi-Posting (TikTok/IG/YT)",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "53",
+  "tools_integrations": "Facebook, Google Sheets, Instagram, YouTube",
+  "tags": [
+    "facebook",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate TikTok-style POV video creation, approval, and posting across Instagram, Facebook & YouTube with AI, Google Sheets, and powerful error handling. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, if, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Latest Approved Video",
+      "type": "Trigger"
+    },
+    {
+      "name": "Item List Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Audio Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Topics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Topics",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Video Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Script",
+      "type": "Process"
+    },
+    {
+      "name": "Store Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Render Video Link",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert new Prompt, Caption and Title/Topic",
+      "type": "Data Output"
+    },
+    {
+      "name": "Video Update1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark Rejected",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Title",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Store Sound",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Text-to-Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Text-to-Sound",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Elements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Final Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Access Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rendor with Creatomate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Handle Approval/Rejection1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reverse Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Newest Row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Facebook Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram Container",
+      "type": "Process"
+    },
+    {
+      "name": "Post to Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Sound Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Allow Access",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Ideas",
+      "type": "Process"
+    },
+    {
+      "name": "Tiktok Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Bin Video",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

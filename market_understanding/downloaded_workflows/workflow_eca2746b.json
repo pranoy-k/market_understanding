@@ -1,0 +1,101 @@
+{
+  "name": "Store the data received from the CocktailDB API in JSON",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        400,
+        300
+      ],
+      "parameters": {
+        "url": "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "c1c178a01f6f445f"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "n8n-nodes-base.moveBinaryData",
+      "position": [
+        550,
+        300
+      ],
+      "parameters": {
+        "mode": "jsonToBinary",
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "5ff5d5e781ae2e1b"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "position": [
+        700,
+        300
+      ],
+      "parameters": {
+        "fileName": "cocktail.json"
+      },
+      "typeVersion": 1,
+      "id": "71e38fa94206825b"
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Move Binary Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Move Binary Data": {
+      "main": [
+        [
+          {
+            "node": "Write Binary File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "30c7f4284f1d47de",
+  "staticData": null,
+  "tags": [
+    "webhook",
+    "api",
+    "json"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/642169fe",
+  "workflow_id": "642169fe",
+  "workflow_id_display": "642169fe",
+  "workflow_name": "Post New Google Calendar Events to Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "WeblineIndia",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Stay updated on new Google Calendar events with instant Telegram notifications. Get event details automatically—easy setup, secure, and fully automated!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleCalendarTrigger, telegram, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Google Calendar Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

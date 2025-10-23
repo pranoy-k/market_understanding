@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2c9cd9b9",
+  "workflow_id": "2c9cd9b9",
+  "workflow_id_display": "2c9cd9b9",
+  "workflow_name": "Summarize Umami data with AI (via Openrouter) and save it to Baserow",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Analytics",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Process web analytics data from Umami through AI for insights and save to Baserow for tracking.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Umami data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Umami data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Umami",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send data to A.I.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send data to A.I.1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Save data to Baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get view stats from Umami",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get page data from Umami",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get page view data from Umami",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Baserow API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

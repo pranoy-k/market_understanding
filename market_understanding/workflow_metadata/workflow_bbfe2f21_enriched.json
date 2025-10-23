@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bbfe2f21",
+  "workflow_id": "bbfe2f21",
+  "workflow_id_display": "bbfe2f21",
+  "workflow_name": "IT Support Chatbot with Google Drive, Pinecone & Gemini | AI Doc Processing",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "AI Incarnation",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline IT support with this n8n template—automate Google Drive doc ingestion and instant AI-powered answers. Enhance support and reduce workload. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with embeddingsGoogleGemini, agent, code"
+  ],
+  "nodes": [
+    {
+      "name": "Monitor Google Drive for New Files",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Message Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Download File from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Extract PDF Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert Document into Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Document Embeddings (Google Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "Clean and Normalize PDF Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Document Data for Processing",
+      "type": "Process"
+    },
+    {
+      "name": "Split Document Text into Chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve Relevant Documents from Pinecone",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Query Embeddings (Google Gemini)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Chat Prompt with Context",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model Interface",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

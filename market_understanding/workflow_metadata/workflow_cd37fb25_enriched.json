@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cd37fb25",
+  "workflow_id": "cd37fb25",
+  "workflow_id_display": "cd37fb25",
+  "workflow_name": "Reddit API Hub: Manage Posts, Comments & Subreddits via Server-Sent Events",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "API, Reddit",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Simeon",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Reddit content tasks with a powerful MCP Server workflow for n8n. Easily manage posts, comments, and subreddit data programmatically—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, toolWorkflow, set"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "map_post_get_many",
+      "type": "Data Processing"
+    },
+    {
+      "name": "map_post_get_search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "map_comment_get_many",
+      "type": "Data Processing"
+    },
+    {
+      "name": "create_post",
+      "type": "Process"
+    },
+    {
+      "name": "get_many_posts",
+      "type": "Process"
+    },
+    {
+      "name": "delete_post",
+      "type": "Process"
+    },
+    {
+      "name": "get_post_by_id",
+      "type": "Process"
+    },
+    {
+      "name": "create_comment",
+      "type": "Process"
+    },
+    {
+      "name": "get_many_comments",
+      "type": "Process"
+    },
+    {
+      "name": "delete_comment",
+      "type": "Process"
+    },
+    {
+      "name": "reply_comment",
+      "type": "Process"
+    },
+    {
+      "name": "get_subreddit_about",
+      "type": "Process"
+    },
+    {
+      "name": "get_subreddit_rules",
+      "type": "Process"
+    },
+    {
+      "name": "subreddit_get_many",
+      "type": "Process"
+    },
+    {
+      "name": "post_operation",
+      "type": "Process"
+    },
+    {
+      "name": "subReddit_operation",
+      "type": "Process"
+    },
+    {
+      "name": "comment_operation",
+      "type": "Process"
+    },
+    {
+      "name": "search_posts",
+      "type": "Process"
+    },
+    {
+      "name": "split_out_get_many_comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "posts_split_out",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

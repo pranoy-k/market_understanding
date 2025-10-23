@@ -1,0 +1,37 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/406a2276",
+  "workflow_id": "406a2276",
+  "workflow_id_display": "406a2276",
+  "workflow_name": "Insert a document in MongoDB",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "MongoDB, PDF",
+  "tags": [
+    "mongodb"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline MongoDB node tasks in n8n with practical examples and ready-to-use snippets. Simplify learning, testing, and workflow automation—discover more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, set, mongoDb"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "MongoDB",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

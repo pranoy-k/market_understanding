@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86f3b9f5",
+  "workflow_id": "86f3b9f5",
+  "workflow_id_display": "86f3b9f5",
+  "workflow_name": "Create Social Media Content from Telegram with AI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Onur",
+  "author_profile_url": "https://n8n.io/creators/onurpolat05/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create AI-powered social media posts and image prompts via Telegram voice or text. Automate content research and boost creativity—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, toolSerpApi, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Telegram Messages",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare for LLM",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Final Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transcribe Voice to Text",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

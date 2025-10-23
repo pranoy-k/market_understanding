@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fd623120",
+  "workflow_id": "fd623120",
+  "workflow_id_display": "fd623120",
+  "workflow_name": "Generate n8n Forms from Airtable and BaseRow Tables",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate dynamic n8n forms from Airtable or Baserow schemas—no coding needed. Auto-create forms, map data, and boost workflow flexibility. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Base Schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Create Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter Unsupported FieldTypes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Render Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Files To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fields to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Covert to n8n Form Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Baserow List Fields",
+      "type": "Data Input"
+    },
+    {
+      "name": "Covert to n8n Form Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Unsupported FieldTypes1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Render Form1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Baserow Create Row",
+      "type": "Data Input"
+    },
+    {
+      "name": "Files To List1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Baserow Upload File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Baserow Update Row",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group By FieldName",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Airtable Row",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prep Data for Insert1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Data for Insert",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show Completion!",
+      "type": "Data Input"
+    },
+    {
+      "name": "Show Completion!1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

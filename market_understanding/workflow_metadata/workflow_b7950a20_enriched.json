@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b7950a20",
+  "workflow_id": "b7950a20",
+  "workflow_id_display": "b7950a20",
+  "workflow_name": "Save Mastodon Bookmarks to Raindrop Automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Aymeric Besset",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Mastodon bookmarks to Raindrop.io for organized, searchable archiving. Secure, automated, and customizable—learn how it works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Triggers the workflow on a set interval",
+      "type": "Trigger"
+    },
+    {
+      "name": "Allows manual testing of the workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Saves the new min_id to workflow static data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Saves valid bookmark using post metadata (e.g., title, card.url)",
+      "type": "Process"
+    },
+    {
+      "name": "Saves bookmark using alternate fields if card data is missing",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieves the last processed min_id to avoid duplicates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Makes authenticated request to Mastodon’s bookmarks API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extracts pagination data (like next min_id) from HTTP headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Splits API response into individual bookmark items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Makes authenticated request to Mastodon’s bookmarks API",
+    "Splits API response into individual bookmark items"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

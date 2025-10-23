@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b1db1f02",
+  "workflow_id": "b1db1f02",
+  "workflow_id_display": "b1db1f02",
+  "workflow_name": "AI-Powered Email Automation for Business_ Summarize & Respond with RAG",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "RAG🤖 Email Automation"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "DeepSeek R1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI 4-o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Email Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Write email",
+      "type": "Process"
+    },
+    {
+      "name": "Review email",
+      "type": "Process"
+    },
+    {
+      "name": "Create collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Refresh collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get folder",
+      "type": "Process"
+    },
+    {
+      "name": "Download Files",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

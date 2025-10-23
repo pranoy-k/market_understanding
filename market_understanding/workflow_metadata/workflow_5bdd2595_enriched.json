@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5bdd2595",
+  "workflow_id": "5bdd2595",
+  "workflow_id_display": "5bdd2595",
+  "workflow_name": "Clone Nested Folder Structures in Google Drive with Custom Naming",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jagged Frontiersman",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly clone Google Drive folder structures with custom naming—ideal for agencies. Quickly set up, handle nested folders, and avoid duplicates. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "⚙️ CONFIG - Edit the 3 variables above",
+      "type": "Data Processing"
+    },
+    {
+      "name": "📁 Get All Folders",
+      "type": "Data Input"
+    },
+    {
+      "name": "🔄 Process Folders",
+      "type": "Data Processing"
+    },
+    {
+      "name": "✨ Create Folder",
+      "type": "Data Input"
+    },
+    {
+      "name": "📊 Final Report",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/95a1b9be",
+  "workflow_id": "95a1b9be",
+  "workflow_id_display": "95a1b9be",
+  "workflow_name": "Automated News Summarizer with GPT-4o + Email Delivery",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Amit Mehta",
+  "author_profile_url": "https://n8n.io/creators/amitswba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get top news headlines every 10 minutes, summarized by GPT-4o, and sent as a concise email digest. Stay informed—easy setup, fully customizable!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Email list",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Pull News",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6104eab5",
+  "workflow_id": "6104eab5",
+  "workflow_id_display": "6104eab5",
+  "workflow_name": "Automate Video Creation with Luma AI Dream Machine and Airtable (Part 2)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate video creation by linking Luma AI Dream Machine with Airtable. Instantly update video and thumbnail URLs for streamlined content tracking. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, executionData, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Video JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Global SETTINGS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ADD Video and Thumbnail URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

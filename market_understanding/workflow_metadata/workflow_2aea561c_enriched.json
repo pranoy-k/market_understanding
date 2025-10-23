@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2aea561c",
+  "workflow_id": "2aea561c",
+  "workflow_id_display": "2aea561c",
+  "workflow_name": "Perform speech-to-text on recorded audio clips using Wit.ai",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transcribe audio to text with Wit.ai’s advanced speech recognition. Add your Server Access Token to start seamless, accurate transcription now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, readBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

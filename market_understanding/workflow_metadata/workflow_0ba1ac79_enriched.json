@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ba1ac79",
+  "workflow_id": "0ba1ac79",
+  "workflow_id_display": "0ba1ac79",
+  "workflow_name": "Convert Squarespace Profiles to Shopify Customers in Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "CSV, Google Sheets, Shopify",
+  "tags": [
+    "google"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert Squarespace contact exports to Shopify customer CSVs with a ready-to-use Google Sheets template. Automate workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, webhook, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Manual trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Shopify Customers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Squarespace profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Squarespace profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract items from webhook submission",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

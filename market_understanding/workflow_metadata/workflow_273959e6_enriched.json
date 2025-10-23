@@ -1,0 +1,105 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/273959e6",
+  "workflow_id": "273959e6",
+  "workflow_id_display": "273959e6",
+  "workflow_name": "Birthday and Ephemeris Notification (Google Contact, Telegram & Home Assistant)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Thibaud",
+  "author_profile_url": "https://n8n.io/creators/tderouze/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get daily birthday reminders from Google Contacts at 7:30 am, with instant Telegram alerts & Google Home announcements. Easy setup—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Everyday at 7am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get One first name list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compose Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Single list Birthday",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Nominis URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Date Offset",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List of Saints of the day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "\"Bonne fête\" celebration message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Birthday celebration message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Contacts",
+      "type": "Process"
+    },
+    {
+      "name": "First names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nominis - Saints du jour",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Firstname & Saints",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if any firstname match a Saints of the day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Birthdays",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate No Birthday",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Birthday + Fête Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send to Google Home Speaker",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

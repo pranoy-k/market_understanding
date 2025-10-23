@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1faed5da",
+  "workflow_id": "1faed5da",
+  "workflow_id_display": "1faed5da",
+  "workflow_name": "Import Odoo Product Images from Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "AArtIntelligent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate product image sync from Google Drive to Odoo. Eliminate manual uploads, ensure up-to-date catalogs, and get instant notifications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Click Manual",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter Images",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Files",
+      "type": "Process"
+    },
+    {
+      "name": "Decorate Images",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Move Images",
+      "type": "Process"
+    },
+    {
+      "name": "Sum Images",
+      "type": "Process"
+    },
+    {
+      "name": "Announce",
+      "type": "Process"
+    },
+    {
+      "name": "Find Templates",
+      "type": "Process"
+    },
+    {
+      "name": "Download Images Templates",
+      "type": "Process"
+    },
+    {
+      "name": "Update Images Templates",
+      "type": "Process"
+    },
+    {
+      "name": "Find Products",
+      "type": "Process"
+    },
+    {
+      "name": "Download Images Products",
+      "type": "Process"
+    },
+    {
+      "name": "Update Images Products",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Base64 Images Templates",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert Base64 Images Products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Old Images",
+      "type": "Process"
+    },
+    {
+      "name": "Drop Old Images",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

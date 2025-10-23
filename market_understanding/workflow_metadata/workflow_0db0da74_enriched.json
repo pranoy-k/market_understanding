@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0db0da74",
+  "workflow_id": "0db0da74",
+  "workflow_id_display": "0db0da74",
+  "workflow_name": "Enrich Linkedin profile URLs stored in a Google Sheet",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "AlQaisi",
+  "author_profile_url": "https://n8n.io/creators/omar/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect LinkedIn email addresses and auto-update Google Sheets. Streamline lead generation with secure, automated data syncing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Field Editing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get links from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the sheet with information",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request - Utilize Prospeo.io LinkedIn Email Finder API1",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Data Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request - Utilize Prospeo.io LinkedIn Email Finder API1"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

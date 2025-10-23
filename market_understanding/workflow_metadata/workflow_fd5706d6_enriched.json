@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fd5706d6",
+  "workflow_id": "fd5706d6",
+  "workflow_id_display": "fd5706d6",
+  "workflow_name": "Detect toxic language in Telegram messages",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "api"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Detect and flag toxic language in Telegram chats with real-time analysis using Google Perspective API. Learn to set up this workflow step-by-step.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googlePerspective, noOp, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Perspective",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf77d3a9",
+  "workflow_id": "cf77d3a9",
+  "workflow_id_display": "cf77d3a9",
+  "workflow_name": "Export Zammad Objects (Users, Roles, Groups, Organizations) to Excel",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Excel",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export Zammad Users, Roles, Groups, and Organizations to Excel files for easy data management, reporting, and sharing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zammad Univeral User Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad Univeral Organization Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad Univeral Role Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad Univeral Group Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all Organizations",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Roles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Excel Organizations",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to Excel Roles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to Excel Users",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get all Users",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Groups",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Excel Groups",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

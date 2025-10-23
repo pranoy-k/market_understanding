@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33793aad",
+  "workflow_id": "33793aad",
+  "workflow_id_display": "33793aad",
+  "workflow_name": "Prevent simultaneous workflow executions with Redis",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [
+    "redis",
+    "Scheduled"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Prevent overlapping scheduled workflows with a Redis-based monitor. Ensure each run starts only after the previous ends. Easy setup for seamless automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, redis"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Get Status",
+      "type": "Process"
+    },
+    {
+      "name": "Set Running",
+      "type": "Process"
+    },
+    {
+      "name": "Set Idle",
+      "type": "Process"
+    },
+    {
+      "name": "Continue if Idle",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation",
+      "type": "Process"
+    },
+    {
+      "name": "Reset to Idle",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

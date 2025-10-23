@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5c7e026b",
+  "workflow_id": "5c7e026b",
+  "workflow_id_display": "5c7e026b",
+  "workflow_name": "Parse Incoming Invoices From Outlook using AI Document Understanding",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Excel, PDF",
+  "tags": [
+    "excel",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate invoice processing from Outlook with this n8n template—AI-powered data extraction and seamless Excel integration. Boost efficiency, learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with microsoftOutlook, scheduleTrigger, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Attachments",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Message Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Invoices",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Recent Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Model",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Excel 365",
+      "type": "Process"
+    },
+    {
+      "name": "Invoice Classifier With Gemini 2.0",
+      "type": "Data Input"
+    },
+    {
+      "name": "File-Based OCR with Gemini 2.0",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

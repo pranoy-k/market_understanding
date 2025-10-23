@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c1946e8",
+  "workflow_id": "1c1946e8",
+  "workflow_id_display": "1c1946e8",
+  "workflow_name": "Post Hourly Crypto Market Summaries via Coingecko to X and to Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get real-time crypto market updates with AI-powered formatting. Share to X & email, customize assets & schedule—stay informed with flexible notifications!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Crypto Hourly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Bitcoin Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Crypto Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post Crypto Update on X",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

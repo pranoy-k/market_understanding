@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/30b32aaa",
+  "workflow_id": "30b32aaa",
+  "workflow_id_display": "30b32aaa",
+  "workflow_name": "Automate Sales Pipeline: BuiltWith Technology Data to Trello Lead Cards with Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate sales lead generation from BuiltWith data into Trello. Visualize your pipeline, qualify leads by tech stack, and boost team collaboration—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, trello"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Domains from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch detail via BuiltWith",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Tech Stack Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trello",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

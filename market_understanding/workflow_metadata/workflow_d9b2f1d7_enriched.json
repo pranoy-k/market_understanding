@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9b2f1d7",
+  "workflow_id": "d9b2f1d7",
+  "workflow_id_display": "d9b2f1d7",
+  "workflow_name": "Automate Cal.com Meeting Attendee Management with Google Sheets, Beehiiv & Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Cal.com guest management with n8n: log attendees to Google Sheets, grow your Beehiiv newsletter, and get real-time Telegram alerts. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "on New Booking",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Attendee",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add users",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Attendees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add subscriber",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

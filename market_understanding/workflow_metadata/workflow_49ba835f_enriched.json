@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/49ba835f",
+  "workflow_id": "49ba835f",
+  "workflow_id_display": "49ba835f",
+  "workflow_name": "Get your website indexed by Google automatically",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": "https://n8n.io/creators/eduard/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and speed up website indexing with this powerful n8n workflow. Easily submit new or updated pages to Google for faster SEO results—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Force urlset.url to array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign mandatiry sitemap fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "URL Updated",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get content-specific sitemaps",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert sitemap to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "convert page data to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Get sitemap.xml",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get content of each sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

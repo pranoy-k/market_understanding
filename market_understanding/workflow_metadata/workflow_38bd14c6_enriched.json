@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/38bd14c6",
+  "workflow_id": "38bd14c6",
+  "workflow_id_display": "38bd14c6",
+  "workflow_name": "Customer Authentication for Chat Support with OpenAI and Redis Session Management",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "redis🤖 openai"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily integrate dynamic customer authentication into your chat with this n8n template. Allow guests or login anytime. Learn more about secure setup!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with switch, formTrigger, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Login Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Auth Url Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Customer Profile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Session",
+      "type": "Process"
+    },
+    {
+      "name": "Get Auth URL",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session",
+      "type": "Process"
+    },
+    {
+      "name": "Confirm Login Success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Customer Support Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Replace Me!",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bd6de8ad",
+  "workflow_id": "bd6de8ad",
+  "workflow_id_display": "bd6de8ad",
+  "workflow_name": "Save n8n Cloud invoices received in Gmail in Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail, Google Drive, PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only keep invoice link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Do nothing on other emails",
+      "type": "Process"
+    },
+    {
+      "name": "Download Invoice PDF from URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rename file",
+      "type": "Process"
+    },
+    {
+      "name": "Move to the correct folder",
+      "type": "Process"
+    },
+    {
+      "name": "Upload PDF to Drive",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract \"a-tags\" from email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

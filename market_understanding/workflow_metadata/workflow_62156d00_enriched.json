@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62156d00",
+  "workflow_id": "62156d00",
+  "workflow_id_display": "62156d00",
+  "workflow_name": "Automatically Correct Wrong Shipping Addresses in Billbee Orders",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Simon",
+  "author_profile_url": "https://n8n.io/creators/simonfes/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and correct shipping addresses in Billbee with Endereco API. Streamline e-commerce fulfillment, reduce errors, and ensure accurate deliveries. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set Address Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set value of addressline2 as housenumber",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set value of addressline2 as housenumber number+letter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ConfigNode",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get order data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Order Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Address endereco api",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Corrected Address",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set new delivery address to billbee",
+      "type": "Data Input"
+    },
+    {
+      "name": "set billbee tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Out PickUpShops",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set billbee tag manual check",
+      "type": "Data Input"
+    },
+    {
+      "name": "set billbee success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

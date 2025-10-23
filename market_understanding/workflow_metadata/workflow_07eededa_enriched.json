@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/07eededa",
+  "workflow_id": "07eededa",
+  "workflow_id_display": "07eededa",
+  "workflow_name": "Push your public IP to Namecheaps Dynamic DNS",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Mario",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly update Namecheap Dynamic DNS for multiple subdomains. Enter your domain, DDNS password, subdomains, and manage IP updates with ease.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Checks IP if new",
+      "type": "Data Processing"
+    },
+    {
+      "name": "subdomains",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loops trough Subdomain list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "yourdomain.com",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send data to Namecheap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Public IP address",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

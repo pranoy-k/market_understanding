@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/88946325",
+  "workflow_id": "88946325",
+  "workflow_id_display": "88946325",
+  "workflow_name": "Extract & Classify Invoices & Receipts with Gmail, OpenAI and Google Drive",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Email, Gmail, Google Drive, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly organize invoices and receipts with AI—auto-fetch from Gmail, categorize, and upload to Google Drive. Perfect for freelancers and SMBs. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Iterate over email attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Not a PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload file to folder",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create folder",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read PDF email attachments",
+      "type": "Process"
+    },
+    {
+      "name": "Optional filter for emails",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

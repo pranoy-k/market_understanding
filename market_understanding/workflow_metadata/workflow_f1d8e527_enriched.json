@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f1d8e527",
+  "workflow_id": "f1d8e527",
+  "workflow_id_display": "f1d8e527",
+  "workflow_name": "Compose reply draft in Gmail with OpenAI Assistant",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "Scheduled🤖 Email Automation🤖 Gmail"
+  ],
+  "author_name": "Oskar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Generate contextual email reply drafts using OpenAI Assistant integrated with Gmail.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule trigger (1 min)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map fields for further processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build email raw",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ask OpenAI Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Convert raw to base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add email draft to thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert response to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Loop over threads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return last message in thread",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

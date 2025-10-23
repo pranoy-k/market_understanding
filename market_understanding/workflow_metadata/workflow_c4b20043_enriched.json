@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4b20043",
+  "workflow_id": "c4b20043",
+  "workflow_id_display": "c4b20043",
+  "workflow_name": "Query and Monitor Shopify Orders via Telegram Bot Commands",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Shopify, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Roninimous",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage Shopify orders from Telegram with interactive commands via n8n. View, track, and customize orders in real time. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, if, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Orders",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Order",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Up Order",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Order ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Orders to Telegram",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

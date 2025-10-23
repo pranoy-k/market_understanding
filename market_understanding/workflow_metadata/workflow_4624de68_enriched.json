@@ -1,0 +1,117 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4624de68",
+  "workflow_id": "4624de68",
+  "workflow_id_display": "4624de68",
+  "workflow_name": "Flexible Currency Rate Uploads for SAP B1 with AI Validation & Multiple Sources",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "json"
+  ],
+  "author_name": "Raquel Giugliano",
+  "author_profile_url": "https://n8n.io/creators/raquelgiugliano/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate SAP Business One currency rate uploads from JSON, SQL, Google Sheets, or manual sources with AI validation, secure logging, and flexible integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Extraer Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Comprobar Fecha",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Success",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fallo",
+      "type": "Data Output"
+    },
+    {
+      "name": "Success1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fallo1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Success2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fallo2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Success3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fallo3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Enviar SAP (JSON)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Conectar SAP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Microsoft SQL",
+      "type": "Process"
+    },
+    {
+      "name": "Enviar SAP (SQL)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enviar SAP (MANUAL)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enviar SAP (SHEET)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

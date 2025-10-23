@@ -1,0 +1,259 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b5f9cbae",
+  "workflow_id": "b5f9cbae",
+  "workflow_id_display": "b5f9cbae",
+  "workflow_name": "AI Sales Agent: WhatsApp & Website Sales Agent with RAG",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "63",
+  "tools_integrations": "WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Electrabot",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Boost lead conversion with instant, personalized WhatsApp and web chat automation. Qualify leads, book meetings, and drive sales—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleCalendarTool, postgres, postgresTool"
+  ],
+  "nodes": [
+    {
+      "name": "Contact Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "WhatsApp",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields - chat1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - chat2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output - chat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Try Again",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Try Again1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Try Again2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Personalised First Message",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar Agent",
+      "type": "Process"
+    },
+    {
+      "name": "CRM Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Get Lead",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini1",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event with Attendee",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Events",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Create Opportunity",
+      "type": "Data Output"
+    },
+    {
+      "name": "List Records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Opportunity",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Opportunity",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Create Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "CRM Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Create Charge",
+      "type": "Process"
+    },
+    {
+      "name": "Create Discount Coupon",
+      "type": "Process"
+    },
+    {
+      "name": "Get Customer Card",
+      "type": "Process"
+    },
+    {
+      "name": "Get Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Create Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Update Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Billing Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Billing Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "technical_and_sales_knowledge",
+      "type": "Process"
+    },
+    {
+      "name": "Create Contact1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

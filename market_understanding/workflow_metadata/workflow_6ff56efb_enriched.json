@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6ff56efb",
+  "workflow_id": "6ff56efb",
+  "workflow_id_display": "6ff56efb",
+  "workflow_name": "Build an endpoint to perform CRUD operations with multiple HTTP methods",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "http",
+    "api"
+  ],
+  "author_name": "Giulio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Build flexible CRUD API endpoints in n8n with just 2 nodes. Integrate Airtable or any service, customize logic, and deploy quickly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, stickyNote, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Create",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Single",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Single1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook5",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook (with ID)",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

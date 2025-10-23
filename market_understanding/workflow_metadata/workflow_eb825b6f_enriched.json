@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb825b6f",
+  "workflow_id": "eb825b6f",
+  "workflow_id_display": "eb825b6f",
+  "workflow_name": "Unsubscribe Mautic contacts from automated unsubscribe emails",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Victor Gonzalez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add to unsubscribed segment",
+      "type": "Process"
+    },
+    {
+      "name": "Remove newsletter segment",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Do Not Contact List",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Email from 'From' Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Unique Email Addresses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Mautic Contact ID from Email Address",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

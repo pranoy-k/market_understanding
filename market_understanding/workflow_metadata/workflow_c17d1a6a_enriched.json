@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c17d1a6a",
+  "workflow_id": "c17d1a6a",
+  "workflow_id_display": "c17d1a6a",
+  "workflow_name": "Qualys Vulnerability Trigger Scan SubWorkflow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "API, Slack",
+  "tags": [
+    "slack",
+    "api"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate vulnerability scans via Slack using Qualys API integration. Get real-time notifications, smart status monitoring, and streamlined result processing.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Demo Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save receipt message timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Global Variables & Slack Channel",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start VM Scan in Qualys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert XML to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Scan Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert XML to JSON1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Begin Wait Loop",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

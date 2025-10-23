@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9f1f7b97",
+  "workflow_id": "9f1f7b97",
+  "workflow_id_display": "9f1f7b97",
+  "workflow_name": "Automate Employee Onboarding with Slack, Jira, and Google Workspace Integration",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "Jira, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "Velebit from Innovatio",
+  "author_profile_url": "https://n8n.io/creators/innovatio/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate onboarding with this no-code n8n workflow: create tasks, send welcomes, share files, and notify hires—perfect for HR, startups, and remote teams.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, httpRequest, jira"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HubSpot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Activate on new Slack User",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract & Clean Hire Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subtask Manual Setting",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Full Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract New Hire data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new hire sub-tasks manually here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Needed Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Drive & Jira links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Welcome Email here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Sheet Data on Hire",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log \"Onboarding started\"",
+      "type": "Data Output"
+    },
+    {
+      "name": "Jira Software",
+      "type": "Process"
+    },
+    {
+      "name": "Jira Subtask Writer",
+      "type": "Process"
+    },
+    {
+      "name": "Task Splitter Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sub-tasks on Jira",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Onboarding Folder on Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Copy Onboarding File to New Folder on Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Share New Folder with New Hire's private email to start",
+      "type": "Process"
+    },
+    {
+      "name": "Create Sub-tasks for New Hire",
+      "type": "Process"
+    },
+    {
+      "name": "Task Splitter Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get New Jira Account Id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa3c2fca",
+  "workflow_id": "aa3c2fca",
+  "workflow_id_display": "aa3c2fca",
+  "workflow_name": "Automate Research-Based Newsletters with Perplexity, GPT-4, and Image Generation",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate personalized newsletter creation with AI-generated content and images. Seamlessly integrates with Google, includes video guides. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "SetImageURL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "GetClientList",
+      "type": "Data Output"
+    },
+    {
+      "name": "GetNewsletterTopic",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateStatus",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Cloud Storage 2",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetFirstTopic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GPT Image Generation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Tavily WebSearch",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2aa605b2",
+  "workflow_id": "2aa605b2",
+  "workflow_id_display": "2aa605b2",
+  "workflow_name": "Assign Requests Using AI and Send Reminders Based On NocoDB Kanban Board Status",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Åukasz",
+  "author_profile_url": "https://n8n.io/creators/lukaszpp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate incident management for support teams with AI-driven prioritization, Kanban tracking, and instant email/Slack notifications. Easy setup—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Check status every day",
+      "type": "Trigger"
+    },
+    {
+      "name": "Incident Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "On schedule or during flow",
+      "type": "Process"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format for Noco",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Category",
+      "type": "Process"
+    },
+    {
+      "name": "Structure Output Todoist Ready1",
+      "type": "Process"
+    },
+    {
+      "name": "Get incident definitions",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Incident",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate for AI parsing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Unpicked Tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Get Unfinished Tasks",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

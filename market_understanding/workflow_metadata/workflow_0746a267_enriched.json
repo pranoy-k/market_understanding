@@ -1,0 +1,266 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0746a267",
+  "workflow_id": "0746a267",
+  "workflow_id_display": "0746a267",
+  "workflow_name": "Shopify Multi-Module Automation with GPT-4o, Langchain Agents & Integrations",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "78",
+  "tools_integrations": "OpenAI, Shopify",
+  "tags": [],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Supercharge Shopify & e-commerce with AI-powered n8n workflow: automate support, cart recovery, inventory, marketing, & more. Discover seamless integration!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with toolCode, if, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Detect Abandoned Cart",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Restock Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Order Delivered Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Campaign Schedule (e.g., Daily at 9 AM)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Preprocess Input for Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Interaction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize Request & Get Filters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by Rating",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Product Carousel",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Product Suggestion",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Cart & Customer Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Segment Audience Logic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Campaign Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Adjust Campaign (Implement Suggestions)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Agent6",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Get FAQs Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Export to Sheets (Low Stock Log)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Review to Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Campaign Outcome & Adjustments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Incoming Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Lookup Order API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send AI Response to Customer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Store to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Product Inquiry Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Search Products API",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent1 (Product Selection Refinement)",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to User with Carousel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Customer Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent2 (Cart Recovery)",
+      "type": "Process"
+    },
+    {
+      "name": "Send Recovery Email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Hourly Check",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent3 (Low Stock Reporting)",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Customer Data (for Review)",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent4 (Review Request Email)",
+      "type": "Process"
+    },
+    {
+      "name": "Listen for Review Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Target Audience API",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent5 (Campaign Content Generation)",
+      "type": "Process"
+    },
+    {
+      "name": "Track Campaign Metrics API",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent6 (Campaign Adjustment)",
+      "type": "Process"
+    },
+    {
+      "name": "SearchFAQs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LookupOrderStatus",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RefineProductSelection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DetermineDiscount",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FormatLowStockReport",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DraftReviewRequestEmail",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "GenerateCampaignEmailVariant",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SuggestCampaignAdjustments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AnalyzeCampaignPerformance",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Lookup Order API",
+    "Search Products API",
+    "Fetch Target Audience API",
+    "Track Campaign Metrics API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

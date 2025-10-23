@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7b328d06",
+  "workflow_id": "7b328d06",
+  "workflow_id_display": "7b328d06",
+  "workflow_name": "Automated Breaking News Headlines with LLaMA3, Google Search and X Posting",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "google",
+    "twitter",
+    "Scheduled"
+  ],
+  "author_name": "Afnan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate breaking news on X (Twitter) with n8n: fetch, summarize, and post trending headlines using Google Search and Groq LLaMA 3. Customizable & secure.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Groq AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

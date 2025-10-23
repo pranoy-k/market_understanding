@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ac7877a",
+  "workflow_id": "4ac7877a",
+  "workflow_id_display": "4ac7877a",
+  "workflow_name": "Generate and Content From Google Sheets to X with GPT-4",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Subham SIngh",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate social media content creation with AI! Effortlessly generate, schedule, and track posts across platforms—save time and boost engagement. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, twitter, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Generate Post with OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Get Content Ideas",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post to Twitter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

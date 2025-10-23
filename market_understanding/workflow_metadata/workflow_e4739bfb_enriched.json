@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e4739bfb",
+  "workflow_id": "e4739bfb",
+  "workflow_id_display": "e4739bfb",
+  "workflow_name": "Paul Graham Essay Search & Chat with Milvus Vector Database",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Cheney Zhang",
+  "author_profile_url": "https://n8n.io/creators/zc277584121/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly search and chat about Paul Graham's essays using AI and Milvus vector database. Fast setup, semantic search, and insightful conversations—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Essay List",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract essay names",
+      "type": "Process"
+    },
+    {
+      "name": "Split out into items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch essay texts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit to first 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Text Only",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Milvus Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Milvus Vector Store as tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9816380b",
+  "workflow_id": "9816380b",
+  "workflow_id_display": "9816380b",
+  "workflow_name": "Restore backed up workflows from GitHub to n8n",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly restore n8n workflows from GitHub backups to your workspace with no duplicates. Fast, easy recovery—set up in minutes. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set n8n existing workflows names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set name and content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow name already exists",
+      "type": "Process"
+    },
+    {
+      "name": "GitHub - get all files",
+      "type": "Process"
+    },
+    {
+      "name": "n8n - get all workflows",
+      "type": "Process"
+    },
+    {
+      "name": "GitHub - get each file",
+      "type": "Process"
+    },
+    {
+      "name": "n8n - create workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Merge globals and files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Github and n8n workflows - Keep only non existing workflows based on the name",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

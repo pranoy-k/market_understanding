@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a04a0148",
+  "workflow_id": "a04a0148",
+  "workflow_id_display": "a04a0148",
+  "workflow_name": "Check To Do on Notion and send message on Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Notion, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync your Notion To-Do list to Slack with daily automated updates. Stay organized and keep your team in the loop. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with notion, slack, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Get To Dos",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

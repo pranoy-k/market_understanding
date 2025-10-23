@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ff68645",
+  "workflow_id": "4ff68645",
+  "workflow_id_display": "4ff68645",
+  "workflow_name": "Chat with local LLMs using n8n and Ollama",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Mihai Farcas",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 openai & llms Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Chat LLM Chain",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

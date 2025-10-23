@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3533c8ae",
+  "workflow_id": "3533c8ae",
+  "workflow_id_display": "3533c8ae",
+  "workflow_name": "Create AI Generated Videos 4x cheaper than veo3 with Google Sheets & Fal.AI",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Maximiliano Rojas-Delgado",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn ideas in Google Sheets into 5-second videos with Fal.AI—no tech skills needed! Fast, affordable, and seamless. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set variables for Video generation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate prompt for Kling 2.1 model",
+      "type": "Process"
+    },
+    {
+      "name": "Update sheet with video url and prompt used in Kling 2.1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get video url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Submit Request to generate video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check video status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

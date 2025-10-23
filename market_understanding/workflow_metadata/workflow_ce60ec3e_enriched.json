@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ce60ec3e",
+  "workflow_id": "ce60ec3e",
+  "workflow_id_display": "ce60ec3e",
+  "workflow_name": "Simple file based key value store (WriteKey)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "Peter",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly store and manage multiple key-value pairs in local JSON files with n8n workflows. Secure, organized, and flexible. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, readBinaryFiles, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetKeyValue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Done",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary Files",
+      "type": "Data Output"
+    },
+    {
+      "name": "BinaryToJSON",
+      "type": "Process"
+    },
+    {
+      "name": "JSONToBinary",
+      "type": "Process"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/09a486eb",
+  "workflow_id": "09a486eb",
+  "workflow_id_display": "09a486eb",
+  "workflow_name": "Recipe Recommendations with Qdrant and Mistral",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Build a personalized recipe chatbot with Qdrant's Recommendation API. Filter suggestions by preference or exclusions. Learn to create smart AI agents now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, embeddingsMistralCloud, vectorStoreQdrant"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Course Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Documents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Tool Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Recipes to DB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get This Week's Menu",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Available Courses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Server Data",
+      "type": "Process"
+    },
+    {
+      "name": "Get Recipe",
+      "type": "Data Input"
+    },
+    {
+      "name": "Embeddings Mistral Cloud",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Course & Recipe",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Recipe Details",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Recommend API",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Mistral Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Use Qdrant Recommend API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Recipes From DB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Qdrant Recommend API",
+    "Use Qdrant Recommend API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

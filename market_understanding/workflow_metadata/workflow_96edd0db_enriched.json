@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/96edd0db",
+  "workflow_id": "96edd0db",
+  "workflow_id_display": "96edd0db",
+  "workflow_name": "Prevent Concurrent Workflow Runs Using Redis",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": null,
+  "tags": [
+    "redis"
+  ],
+  "author_name": "Hugues Stock",
+  "author_profile_url": "https://n8n.io/creators/hpstock/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Guarantee only one workflow run at a time with a smart Redis lock. Prevent job overlaps, monitor live progress, and avoid rate limits. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Timeout",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set continue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Is Workflow Active",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow Active",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow Finished",
+      "type": "Process"
+    },
+    {
+      "name": "Get Key",
+      "type": "Process"
+    },
+    {
+      "name": "Set Key",
+      "type": "Process"
+    },
+    {
+      "name": "UnSet Key",
+      "type": "Process"
+    },
+    {
+      "name": "Is Workflow Active1",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow Active1",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow Finished1",
+      "type": "Process"
+    },
+    {
+      "name": "Is Workflow Active2",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow Finished2",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow \"started\"",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow \"finishing\"",
+      "type": "Process"
+    },
+    {
+      "name": "Set Workflow \"loading\"",
+      "type": "Process"
+    },
+    {
+      "name": "Is Workflow Active3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

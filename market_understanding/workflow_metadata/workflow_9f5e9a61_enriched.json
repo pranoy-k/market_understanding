@@ -1,0 +1,173 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9f5e9a61",
+  "workflow_id": "9f5e9a61",
+  "workflow_id_display": "9f5e9a61",
+  "workflow_name": "AI Data Extraction with Dynamic Prompts and Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "Airtable, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 Airtable🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Result1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Row ID to Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Airtable Vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get \"Input\" Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Table Schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Table Schema1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Prompt Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Row Reference",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Field Value",
+      "type": "Process"
+    },
+    {
+      "name": "Fields to Update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Row Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Get File Data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Field Value1",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Valid Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Valid Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Event Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Event Ref1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Webhook Payload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Airtable Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "RecordsChanged Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "FieldsChanged Webhook",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

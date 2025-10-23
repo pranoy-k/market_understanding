@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2640ef72",
+  "workflow_id": "2640ef72",
+  "workflow_id_display": "2640ef72",
+  "workflow_name": "AI Agent: Find the Right LinkedIn Profiles in Seconds",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn prospecting with AI: find relevant profiles using natural language queries and save results directly to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Search Page Numbers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Call n8n Workflow Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Split Search Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Custom Search API Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter LinkedIn Profiles",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Google Custom Search API Request",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

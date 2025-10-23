@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/12d3383b",
+  "workflow_id": "12d3383b",
+  "workflow_id_display": "12d3383b",
+  "workflow_name": "Get all the tasks in Flow",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead collection, data enrichment, and CRM updates with seamless Typeform, Clearbit, Slack, and HubSpot integration. Boost sales and efficiency—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, flow"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Flow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

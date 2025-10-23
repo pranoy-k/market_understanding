@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0141c243",
+  "workflow_id": "0141c243",
+  "workflow_id_display": "0141c243",
+  "workflow_name": "Get Real-time Crypto Token Insights via Telegram with DexScreener and GPT-4o",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Google Analytics, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Access real-time DEX insights in Telegram! Instantly analyze tokens, liquidity, and trends with AI-powered analytics—no API key required. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adds SessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Blockchain DEX Screener Insights Agent",
+      "type": "Process"
+    },
+    {
+      "name": "DexScreener Latest Token Profiles",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Latest Boosted Tokens",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Top Token Boosts",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Search Pairs",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Check Orders Paid for Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Get Pairs by Chain and Pair Address",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Token Pools",
+      "type": "Data Input"
+    },
+    {
+      "name": "DexScreener Pairs by Token Address",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

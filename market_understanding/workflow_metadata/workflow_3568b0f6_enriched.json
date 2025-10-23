@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3568b0f6",
+  "workflow_id": "3568b0f6",
+  "workflow_id_display": "3568b0f6",
+  "workflow_name": "Create Song Lyric Documents and Spotify Playlists for Singers with Google Docs",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "PDF",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Eric Mooney",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate setlist creation: generate a Spotify playlist and lyric-filled Google Doc from your Google Sheet. Perfect for easy, organized band practice!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, googleDocs, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "get data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Lyrics",
+      "type": "Data Input"
+    },
+    {
+      "name": "Populate Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Create Doc",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

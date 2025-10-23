@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2862b1a0",
+  "workflow_id": "2862b1a0",
+  "workflow_id_display": "2862b1a0",
+  "workflow_name": "Generate Custom AI Images with OpenAI GPT-Image-1 Model",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api🤖 openai"
+  ],
+  "author_name": "Max aka Mosheh",
+  "author_profile_url": "https://n8n.io/creators/aiwithapex/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenAI - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Separate Image Outputs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

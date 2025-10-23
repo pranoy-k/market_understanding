@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0c6fee2b",
+  "workflow_id": "0c6fee2b",
+  "workflow_id_display": "0c6fee2b",
+  "workflow_name": "AI-Powered Receipt and Expense Tracker with Telegram, Google Sheets & OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "Google Sheets, OpenAI, PDF, Telegram",
+  "tags": [
+    "telegram",
+    "google🤖 openai"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate expense tracking with AI: capture receipts, PDFs, or voice notes. Smart categorization, Telegram & Google Sheets integration—learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract OCR Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "📥 Get Parsed Markdown Result",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Transaction Type",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Text Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "check price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Save Income to Redis",
+      "type": "Process"
+    },
+    {
+      "name": "Save Expenses to Redis",
+      "type": "Process"
+    },
+    {
+      "name": "Append Expenses",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Income",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to Base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Vision OCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check OCR Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "☁️ Upload PDF to LlamaIndex",
+      "type": "Data Input"
+    },
+    {
+      "name": "⏳ Check Parsing Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download VN",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Categorizer",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Transaction Type",
+      "type": "Process"
+    },
+    {
+      "name": "Ambil Vn",
+      "type": "Data Input"
+    },
+    {
+      "name": "Transform to Sheets Format",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

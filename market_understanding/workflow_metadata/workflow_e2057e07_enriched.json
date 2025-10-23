@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2057e07",
+  "workflow_id": "e2057e07",
+  "workflow_id_display": "e2057e07",
+  "workflow_name": "Automated Customer Reservations via Telegram and PostgreSQL (Module \"Booking\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "39",
+  "tools_integrations": "PostgreSQL, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate reservations with a Telegram bot and PostgreSQL. Capture bookings, reduce errors, and streamline appointment management. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, whatsAppTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Name",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Hour",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Work Hours",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Work Days",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert Bot Status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get book",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union list",
+      "type": "Process"
+    },
+    {
+      "name": "Update bot status on BOOKING",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Work Days",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Book",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union list1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Date AND Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update status on BOOKED",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Phone",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on PAYMENTS",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

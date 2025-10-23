@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3004dda",
+  "workflow_id": "a3004dda",
+  "workflow_id_display": "a3004dda",
+  "workflow_name": "create single new masked email address with fastmail",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Vitali",
+  "author_profile_url": "https://n8n.io/creators/vquie/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily generate disposable, privacy-focused email addresses via Fastmail using this n8n workflow template. Secure, customizable & ideal for testing—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "get fields for creation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "prepare output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "create random masked email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

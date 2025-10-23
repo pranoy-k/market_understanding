@@ -1,0 +1,34 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/145b9610",
+  "workflow_id": "145b9610",
+  "workflow_id_display": "145b9610",
+  "workflow_name": "Clean out unwanted emails from Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

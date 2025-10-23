@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6b4643f5",
+  "workflow_id": "6b4643f5",
+  "workflow_id_display": "6b4643f5",
+  "workflow_name": "Get Multiple Attachments from Gmail and upload them to GDrive",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Gmail, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Ria",
+  "author_profile_url": "https://n8n.io/creators/riascho/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger - New Email",
+      "type": "Trigger"
+    },
+    {
+      "name": "attach binary data outputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "upload files to google drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

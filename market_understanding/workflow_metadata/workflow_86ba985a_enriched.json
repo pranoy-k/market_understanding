@@ -1,0 +1,144 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86ba985a",
+  "workflow_id": "86ba985a",
+  "workflow_id_display": "86ba985a",
+  "workflow_name": "Strategic Social Media Goal Tracker Automation",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "39",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Divyarajsinh Vaghela",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline social media marketing with n8n's automation workflow: set data-driven goals, track performance in real time, and gain actionable insights. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, function, instagram"
+  ],
+  "nodes": [
+    {
+      "name": "Monthly Report Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create SMART Goals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Performance Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Monthly Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create HTML Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Strategy Review",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Strategy Review Document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Content Calendar",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Content Calendar HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Client Intake Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Store Client Profile",
+      "type": "Data Output"
+    },
+    {
+      "name": "Daily Data Collection",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get All Clients",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split By Client",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Instagram Data",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Data",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn Data",
+      "type": "Process"
+    },
+    {
+      "name": "Twitter/X Data",
+      "type": "Process"
+    },
+    {
+      "name": "Store Performance Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Clients for Reports",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split By Client for Reports",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Client Performance History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Quarterly Strategy Review",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Clients for Strategy Review",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split By Client for Review",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Quarterly Performance Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Content Calendar Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Client for Content Calendar",
+      "type": "Data Output"
+    },
+    {
+      "name": "Return Content Calendar",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

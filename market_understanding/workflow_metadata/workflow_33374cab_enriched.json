@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33374cab",
+  "workflow_id": "33374cab",
+  "workflow_id_display": "33374cab",
+  "workflow_name": "Manage User Authentication with Telegram, Redis Cache and Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "redis"
+  ],
+  "author_name": "Archit Jain",
+  "author_profile_url": "https://n8n.io/creators/architjn/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Connect your Telegram bot to Google Sheets and Redis for fast, seamless user management and authentication. Easy setup—integrate in under an hour!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, set, redis"
+  ],
+  "nodes": [
+    {
+      "name": "Get Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find User",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create User",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get User",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get UserId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UserId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Cached User",
+      "type": "Process"
+    },
+    {
+      "name": "Cache User",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

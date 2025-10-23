@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d3464fe3",
+  "workflow_id": "d3464fe3",
+  "workflow_id_display": "d3464fe3",
+  "workflow_name": "Save Telegram daily messages to Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Nicholas Lewanowicz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Stay on track with your 2022 goals—get daily Telegram reminders, reply to log achievements, and save entries automatically to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with functionItem, telegramTrigger, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Get journal reply",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add entry to sheet",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

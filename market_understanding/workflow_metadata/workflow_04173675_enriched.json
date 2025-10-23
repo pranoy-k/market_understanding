@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/04173675",
+  "workflow_id": "04173675",
+  "workflow_id_display": "04173675",
+  "workflow_name": "Analyze emails with S1EM",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "v1d1an",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze emails for threats by integrating n8n with TheHive and Cortex. Automate SOAR workflows and enhance security. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with theHive, cortex, emailReadImap"
+  ],
+  "nodes": [
+    {
+      "name": "TheHive",
+      "type": "Process"
+    },
+    {
+      "name": "Create Case",
+      "type": "Process"
+    },
+    {
+      "name": "Case",
+      "type": "Process"
+    },
+    {
+      "name": "Observable",
+      "type": "Process"
+    },
+    {
+      "name": "Analyzer Email",
+      "type": "Process"
+    },
+    {
+      "name": "Cortex",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case Domain",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case Email",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case Ip",
+      "type": "Process"
+    },
+    {
+      "name": "Email Reputation",
+      "type": "Process"
+    },
+    {
+      "name": "OTX IP",
+      "type": "Process"
+    },
+    {
+      "name": "OTX DOMAIN",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5f6e38b5",
+  "workflow_id": "5f6e38b5",
+  "workflow_id_display": "5f6e38b5",
+  "workflow_name": "Create an AI-Powered WhatsApp Bot using Google Drive and Pinecone Vector DB",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Google Drive, PDF, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "google",
+    "api"
+  ],
+  "author_name": "Cecilia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Enable AI-powered, real-time answers in WhatsApp groups using your own documents—no WhatsApp Business API needed. Easy setup; smart, custom replies.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Every minute check if file is updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set max chunks to send to model",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Question & Answer",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Whatsapp Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get top chunks matching query",
+      "type": "Process"
+    },
+    {
+      "name": "Listen to Whatsapp webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Download the file from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Index Pinecone Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

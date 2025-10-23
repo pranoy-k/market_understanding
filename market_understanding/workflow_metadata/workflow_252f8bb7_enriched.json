@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/252f8bb7",
+  "workflow_id": "252f8bb7",
+  "workflow_id_display": "252f8bb7",
+  "workflow_name": "Rate limiting and waiting for external events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Optimize workflow efficiency with precise data rate limits and event-driven triggers. Prevent overload and ensure seamless integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, n8nTrainingCustomerDatastore"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create approval URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rest of the workflow placeholder",
+      "type": "Process"
+    },
+    {
+      "name": "Customer Datastore",
+      "type": "Process"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Customer Messenger - Send URL to merchant",
+      "type": "Process"
+    },
+    {
+      "name": "Customer Messenger - Send message to client",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

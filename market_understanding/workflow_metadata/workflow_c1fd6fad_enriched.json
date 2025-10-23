@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c1fd6fad",
+  "workflow_id": "c1fd6fad",
+  "workflow_id_display": "c1fd6fad",
+  "workflow_name": "Handling Job Application Submissions with AI and n8n Forms",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Airtable, OpenAI, PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate job application processing using AI analysis and n8n forms integrated with Airtable for applicant tracking.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Step 1 of 2 - Upload CV",
+      "type": "Trigger"
+    },
+    {
+      "name": "Step 2 of 2 - Application Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload File to Record",
+      "type": "Data Input"
+    },
+    {
+      "name": "Form Success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Application Suitability Agent",
+      "type": "Process"
+    },
+    {
+      "name": "File Upload Retry",
+      "type": "Data Input"
+    },
+    {
+      "name": "Redirect To Step 2 of 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Submission Success",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

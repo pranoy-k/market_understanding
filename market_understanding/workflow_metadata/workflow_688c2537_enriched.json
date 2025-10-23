@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/688c2537",
+  "workflow_id": "688c2537",
+  "workflow_id_display": "688c2537",
+  "workflow_name": "Segment PDFs by Table of Contents with Gemini AI and Chunkr.ai",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Google Analytics, PDF",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Lukas Kunhardt",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Intelligently segment PDFs by Table of Contents—split documents into structured sections for targeted extraction, advanced analytics, and AI integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with outputParserAutofixing, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Sections headers as fallback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take beginning of Document to look for Table of contents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert the PDF to base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download PDF from URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download PDF from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Return each section individually",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Table of Content Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Return the whole document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create HTML document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Create Markdown Document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "GET Chunkr Task",
+      "type": "Data Input"
+    },
+    {
+      "name": "POST Chunkr Task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2a176733",
+  "workflow_id": "2a176733",
+  "workflow_id_display": "2a176733",
+  "workflow_name": "YouTube Video to WordPress Blog Automation with Gemini AI & Affiliate Integration",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "WordPress, YouTube",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn YouTube videos into SEO-optimized WordPress blog posts with AI. Boost traffic, automate publishing, and monetize—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "RSS Feed Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all Posts for AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "EGet Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "affiliate_links",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Image Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Details of Video from Youtube",
+      "type": "Process"
+    },
+    {
+      "name": "Get Post SiteMap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Conver to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Extract URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "URL Lists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "wp_category",
+      "type": "Data Input"
+    },
+    {
+      "name": "wp_tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Technical Blog Writer",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Post WP",
+      "type": "Data Input"
+    },
+    {
+      "name": "BlogPost",
+      "type": "Data Processing"
+    },
+    {
+      "name": "rename image",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

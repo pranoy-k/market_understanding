@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8158542f",
+  "workflow_id": "8158542f",
+  "workflow_id_display": "8158542f",
+  "workflow_name": "Competitor Price Monitoring with Web Scraping,Google Sheets & Telegram",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Tony Paul",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate daily price tracking with Google Sheets and Telegram alerts. Monitor changes, log history, and get instant notifications—all setup in 15 minutes.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, html"
+  ],
+  "nodes": [
+    {
+      "name": "Daily 8 AM Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Clean Up Parsed Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Product List from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Price History to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Last Price in Master Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process Each Product in Batches of 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Product Page HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Current Price from HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Normalize Price Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compute Price Change",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Telegram Alert Message",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

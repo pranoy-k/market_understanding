@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d37087bb",
+  "workflow_id": "d37087bb",
+  "workflow_id_display": "d37087bb",
+  "workflow_name": "Automate Droplet Snapshots on DigitalOcean",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Darryn",
+  "author_profile_url": "https://n8n.io/creators/optimus01/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate DigitalOcean Droplet snapshot management—limit excess, save storage costs, and keep regular backups. Customizable for efficient, hands-free upkeep. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, httpRequest, filter"
+  ],
+  "nodes": [
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Snapshots for a Droplet",
+      "type": "Data Input"
+    },
+    {
+      "name": "List All Droplets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete a Snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Droplet Actions snapshot (n8n.optimus01.co.za)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runs every 48hrs",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

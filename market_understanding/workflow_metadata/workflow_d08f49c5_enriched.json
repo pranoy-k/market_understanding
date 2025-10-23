@@ -1,0 +1,126 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d08f49c5",
+  "workflow_id": "d08f49c5",
+  "workflow_id_display": "d08f49c5",
+  "workflow_name": "Generate AI YouTube Shorts with Flux, Runway, Eleven Labs and Creatomate",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Google Sheets, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate video creation from Google Sheets ideas with n8n—generate, animate, add audio, and publish to YouTube. Boost productivity. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Idea",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Grab Idea",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Video Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Image Prompt Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Remove \\n",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flash 2.0",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Share File",
+      "type": "Process"
+    },
+    {
+      "name": "Render Video1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Video",
+      "type": "Process"
+    },
+    {
+      "name": "Image Generation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Audio Prompt Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

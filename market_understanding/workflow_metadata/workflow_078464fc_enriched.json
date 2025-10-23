@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/078464fc",
+  "workflow_id": "078464fc",
+  "workflow_id_display": "078464fc",
+  "workflow_name": "Backup Squarespace code Injections to Github",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up your Squarespace header and footer code to GitHub. Easy setup, secure storage, and organized backups. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Footer Injection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Header Injection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Squarespace data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean up Footers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean up Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Injection data",
+      "type": "Process"
+    },
+    {
+      "name": "Create Injection data",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Injections",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1e7774cc",
+  "workflow_id": "1e7774cc",
+  "workflow_id_display": "1e7774cc",
+  "workflow_name": "Translate audio using AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set ElevenLabs voice ID and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate French Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Translate Text to English",
+      "type": "Process"
+    },
+    {
+      "name": "Translate English text to speech",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Filename",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

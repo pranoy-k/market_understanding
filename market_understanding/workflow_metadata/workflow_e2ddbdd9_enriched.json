@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2ddbdd9",
+  "workflow_id": "e2ddbdd9",
+  "workflow_id_display": "e2ddbdd9",
+  "workflow_name": "Text automations using Apple Shortcuts",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI - Make Shorter",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Make Longer",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Correct Grammar",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - To Spanish",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - To English",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Shortcut",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook from Shortcut",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

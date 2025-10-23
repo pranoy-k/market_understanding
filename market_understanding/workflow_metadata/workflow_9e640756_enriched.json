@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e640756",
+  "workflow_id": "9e640756",
+  "workflow_id_display": "9e640756",
+  "workflow_name": "Fetch Squarespace Blog & Event Collections to Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Squarespace blog and event data to Google Sheets with automated, paginated imports. Keep your content organized and up-to-date. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Squarespace collection Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Squarespace blog",
+      "type": "Data Input"
+    },
+    {
+      "name": "Iterate the collection items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

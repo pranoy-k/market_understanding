@@ -1,0 +1,385 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1213259b",
+  "workflow_id": "1213259b",
+  "workflow_id_display": "1213259b",
+  "workflow_name": "Explore n8n Nodes in a Visual Reference Library",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "97",
+  "tools_integrations": "PDF",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "I versus AI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Visual guide to n8n nodes: explore triggers, AI tools, and app connectors. Easy 5-min setup, bonus video & PDFs. Learn more and streamline workflows!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with postgresTool, toolCode, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail Trigger App",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger App",
+      "type": "Trigger"
+    },
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gumroad Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Local File Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Item List Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets App",
+      "type": "Data Output"
+    },
+    {
+      "name": "googleSheetsTool App",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory Manager",
+      "type": "Process"
+    },
+    {
+      "name": "Bitly App",
+      "type": "Process"
+    },
+    {
+      "name": "Dropbox App",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar App",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs App",
+      "type": "Process"
+    },
+    {
+      "name": "Pushbullet App",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube App",
+      "type": "Process"
+    },
+    {
+      "name": "Bluesky App",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity App",
+      "type": "Process"
+    },
+    {
+      "name": "ElevenLabs App",
+      "type": "Process"
+    },
+    {
+      "name": "Reddit App",
+      "type": "Process"
+    },
+    {
+      "name": "Call n8n Workflow Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Code Tool",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Redis",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Wolfram Alpha",
+      "type": "Process"
+    },
+    {
+      "name": "googleCalendarTool App",
+      "type": "Process"
+    },
+    {
+      "name": "googleDocsTool App",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Answer questions with a vector store",
+      "type": "Process"
+    },
+    {
+      "name": "In-Memory Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Redis Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "Process"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace Me",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Command",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Transform",
+      "type": "Data Input"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

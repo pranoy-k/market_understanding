@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ad68f794",
+  "workflow_id": "ad68f794",
+  "workflow_id_display": "ad68f794",
+  "workflow_name": "Monitor changes in Google Sheets every 45 mins",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Mattermost alerts for new Google Sheets entries. Customizable timing & easy integration with other sources. Streamline team notifications now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, function, interval"
+  ],
+  "nodes": [
+    {
+      "name": "Check if new data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send message",
+      "type": "Process"
+    },
+    {
+      "name": "Execute every 45 mins",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f10e365",
+  "workflow_id": "6f10e365",
+  "workflow_id_display": "6f10e365",
+  "workflow_name": "Send trending \"Show HN\" to email",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get daily Hacker News highlights at 1pm. See top submissions, “Show HN” picks, and key info—summarized in a concise email delivered to your inbox.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML Extract Items",
+      "type": "Process"
+    },
+    {
+      "name": "HTML Extract Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

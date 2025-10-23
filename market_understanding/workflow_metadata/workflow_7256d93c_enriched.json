@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7256d93c",
+  "workflow_id": "7256d93c",
+  "workflow_id_display": "7256d93c",
+  "workflow_name": "AI-Powered Financial Chart Analyzer | OpenRouter, MarketStack, macOS Shortcuts",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Udit Rawat",
+  "author_profile_url": "https://n8n.io/creators/ailistmaster/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze stock and crypto charts with AI-powered automation. Get real-time market insights and predictions using n8n and macOS Shortcuts. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with toolSerpApi, markdown, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Fields_Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Base64_To_Binary_Image",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Marketstack",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

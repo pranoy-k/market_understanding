@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a1c67ceb",
+  "workflow_id": "a1c67ceb",
+  "workflow_id_display": "a1c67ceb",
+  "workflow_name": "Sync Shopify customers to Google Sheets + Squarespace compatible csv",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, CSV, Google Sheets, Shopify",
+  "tags": [
+    "google",
+    "rest",
+    "api",
+    "csv",
+    "Scheduled"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export all Shopify customers to Google Sheets using the Admin REST API with automated pagination. Create Squarespace-ready CSVs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign page_info parameter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract customers data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Customers Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract page_info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Loop items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Customers",
+      "type": "Data Input"
+    },
+    {
+      "name": "List Customers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to Squarespace contacts csv",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/11ce2d71",
+  "workflow_id": "11ce2d71",
+  "workflow_id_display": "11ce2d71",
+  "workflow_name": "Convert URL HTML to Markdown Format and Get Page Links",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "simonscrapes",
+  "author_profile_url": "https://n8n.io/creators/simonscrapes/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform web pages into AI-ready markdown with Firecrawl.dev. Extract clean text and links, handle rate limits, and enjoy flexible, batch processing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Example fields from data source",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown data and Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connect to your own data source",
+      "type": "Process"
+    },
+    {
+      "name": "Get urls from own data source",
+      "type": "Process"
+    },
+    {
+      "name": "40 items at a time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "10 at a time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out page URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve Page Markdown and Links",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

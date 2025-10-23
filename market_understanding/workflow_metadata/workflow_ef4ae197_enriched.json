@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ef4ae197",
+  "workflow_id": "ef4ae197",
+  "workflow_id_display": "ef4ae197",
+  "workflow_name": "Generate Images and Convert to Video Using Flux, Kraken & Runway",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate AI image-to-video creation—generate, host, and customize videos with affordable tools. Perfect for creators. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "get_image_url",
+      "type": "Data Input"
+    },
+    {
+      "name": "get_image",
+      "type": "Data Input"
+    },
+    {
+      "name": "upload to kraken",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image3",
+      "type": "Data Input"
+    },
+    {
+      "name": "upload to kraken1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Generation Status1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "generate image (flux)",
+      "type": "Data Input"
+    },
+    {
+      "name": "generate image (flux-rapid-api)",
+      "type": "Data Input"
+    },
+    {
+      "name": "image to video (runway-rapid-api)",
+      "type": "Data Input"
+    },
+    {
+      "name": "image to video (runway)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/acbfb939",
+  "workflow_id": "acbfb939",
+  "workflow_id_display": "acbfb939",
+  "workflow_name": "Create Smart URLs with BioURL.link's Geo, Device & Language Targeting",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Google Analytics",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Naser Emad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create smart, trackable short URLs with geo, device, and language targeting, deep links, analytics, and branded splash pages using BioURL.link API. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond with Shortened URL",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive Link Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

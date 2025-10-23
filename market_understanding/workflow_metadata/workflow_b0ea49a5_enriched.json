@@ -1,0 +1,261 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0ea49a5",
+  "workflow_id": "b0ea49a5",
+  "workflow_id_display": "b0ea49a5",
+  "workflow_name": "Content Generator for WordPress v3",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "65",
+  "tools_integrations": "Airtable, OpenAI, WordPress",
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with toolWikipedia, if, toolHttpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Prompt Settings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create post title and structure",
+      "type": "Process"
+    },
+    {
+      "name": "Create chapters text",
+      "type": "Process"
+    },
+    {
+      "name": "P1 Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "SEO Update for RankMath",
+      "type": "Process"
+    },
+    {
+      "name": "SEO Update for RankMath1",
+      "type": "Process"
+    },
+    {
+      "name": "P1 Image Prompt1",
+      "type": "Process"
+    },
+    {
+      "name": "GET Keywords",
+      "type": "Data Output"
+    },
+    {
+      "name": "GET Brand Guidelines",
+      "type": "Data Output"
+    },
+    {
+      "name": "UPDATE Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "UPDATE Status1",
+      "type": "Data Output"
+    },
+    {
+      "name": "UPDATE Status2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split out chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Upload media",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set image ID for the post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond: Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Leo - Get imageId",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Leo - Improve Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST RankMath Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia2",
+      "type": "Process"
+    },
+    {
+      "name": "Merge chapters title and text1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post on Wordpress1",
+      "type": "Process"
+    },
+    {
+      "name": "POST RankMath Info1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request2",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent - Create Post Title and Structure",
+      "type": "Process"
+    },
+    {
+      "name": "Upload media1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set image ID for the post1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Prompt1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Leo - Improve Prompt1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

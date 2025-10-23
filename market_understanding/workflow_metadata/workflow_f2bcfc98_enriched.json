@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f2bcfc98",
+  "workflow_id": "f2bcfc98",
+  "workflow_id_display": "f2bcfc98",
+  "workflow_name": "Upload Large Files to Kommo/AmoCRM with Automatic File Chunking",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "yatolstoy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily upload files from any source to Kommo or amoCRM. Supports large files, quick setup, and seamless client communication. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start testing",
+      "type": "Trigger"
+    },
+    {
+      "name": "getUrl",
+      "type": "Data Processing"
+    },
+    {
+      "name": "loadFile",
+      "type": "Data Input"
+    },
+    {
+      "name": "getFileSizeInBytes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "createSession",
+      "type": "Data Input"
+    },
+    {
+      "name": "SplitFileToChunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over File Chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert file to base64 string",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload file",
+      "type": "Process"
+    },
+    {
+      "name": "Get drive url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert parts to File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

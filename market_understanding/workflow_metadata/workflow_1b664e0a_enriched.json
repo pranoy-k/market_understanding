@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b664e0a",
+  "workflow_id": "1b664e0a",
+  "workflow_id_display": "1b664e0a",
+  "workflow_name": "Monitor Amazon Product Prices with Bright Data and Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, AWS, Google Sheets",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Cyril Nicko Gaspar",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor Amazon prices with a Google Sheet and Bright Data’s API. Automate real-time tracking for research, analysis, or personal use. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read data from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the records by ASIN",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Status by Snapshot ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get the data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Initiate request from URLs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process URLs by batch of 10s",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine the batch",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/602126db",
+  "workflow_id": "602126db",
+  "workflow_id_display": "602126db",
+  "workflow_name": "Generate Qualified Finance Leads from LinkedIn with Apify, GPT- 4, and Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Airtable, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Javier Hita",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate finance lead prospecting with AI: scrape LinkedIn jobs, qualify leads, and manage data in Airtable for efficient sales outreach. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Data Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI GPT-4 Mini",
+      "type": "Process"
+    },
+    {
+      "name": "Get Existing Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape LinkedIn Jobs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Job Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Categorize Leads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter by Company Size",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process in Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Lead Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "Structure AI Output",
+      "type": "Process"
+    },
+    {
+      "name": "Workflow Complete",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

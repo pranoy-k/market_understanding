@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2fcc85fa",
+  "workflow_id": "2fcc85fa",
+  "workflow_id_display": "2fcc85fa",
+  "workflow_name": "Binance SM 1hour Indicators Tool",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Unlock precision swing trading with 1H Binance indicators powered by GPT-4.1-mini. Get real-time, AI-driven market signals for smarter trades—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 1hour Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request 1h Indicators Tool",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

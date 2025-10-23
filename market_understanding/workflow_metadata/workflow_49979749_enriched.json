@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/49979749",
+  "workflow_id": "49979749",
+  "workflow_id_display": "49979749",
+  "workflow_name": "Generate Company Stories from LinkedIn with Bright Data & Google Gemini",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn company research with AI: extract, summarize, and deliver polished narratives in seconds. Ideal for sales, marketing, and recruiting.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Snapshot Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set LinkedIn URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Perform LinkedIn Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Concise Summary Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook Notifier for Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook Notifier for Summary Generator",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

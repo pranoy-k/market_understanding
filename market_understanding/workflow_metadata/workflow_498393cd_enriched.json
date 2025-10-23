@@ -1,0 +1,129 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/498393cd",
+  "workflow_id": "498393cd",
+  "workflow_id_display": "498393cd",
+  "workflow_name": "WooCommerce AI Post-Sales Chatbot with GPT4o, RAG, Google Drive and Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Email, Google Drive, OpenAI, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Transform WooCommerce support with an AI chatbot: instant order tracking, strict email verification, FAQ answers, and seamless human escalation via Telegram.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with stickyNote, agent, toolCalculator"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set tracking code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "GPT 4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "get_order",
+      "type": "Process"
+    },
+    {
+      "name": "get_orders",
+      "type": "Process"
+    },
+    {
+      "name": "get_user",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Create collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Refresh collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get folder",
+      "type": "Process"
+    },
+    {
+      "name": "Download Files",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "get_tracking",
+      "type": "Process"
+    },
+    {
+      "name": "Post-Sales Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get tracking",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

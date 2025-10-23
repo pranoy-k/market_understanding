@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/25f92067",
+  "workflow_id": "25f92067",
+  "workflow_id_display": "25f92067",
+  "workflow_name": "Automated LinkedIn Job Hunter: Get Your Best Daily Job Matches by Email",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, LinkedIn",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your LinkedIn job search with AI: get daily, personalized top 5 job matches emailed to you—no subscription, just $0.10/day. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "SetResumeField",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Combine all job information into a single text string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DownloadResume",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Information from Resume PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "ScrapeLinkedin",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent: Find Best-matched jobs",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate all returned items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

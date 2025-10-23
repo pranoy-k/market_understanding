@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/787fc2b1",
+  "workflow_id": "787fc2b1",
+  "workflow_id_display": "787fc2b1",
+  "workflow_name": "Smart Email Assistant: Automate Customer Support with AI & Supabase",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Email, PDF",
+  "tags": [],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate customer support with AI-driven email monitoring, smart routing, and instant replies using a vector database and seamless document management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Email Monitor",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set File ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Email Classifier",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "AI Response Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Document Text",
+      "type": "Data Output"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Old Doc Rows",
+      "type": "Process"
+    },
+    {
+      "name": "Insert into Supabase Vectorstore",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

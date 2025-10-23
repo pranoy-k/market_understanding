@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2cfbc837",
+  "workflow_id": "2cfbc837",
+  "workflow_id_display": "2cfbc837",
+  "workflow_name": "Track Technology Changes with BuiltWith and Log to Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor tech stack changes in target companies with real-time alerts sent to your email or Slack. Fast setup, instant insights—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Technology",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch BuiltWith Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Site Info",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

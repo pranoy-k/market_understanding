@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/593b1f91",
+  "workflow_id": "593b1f91",
+  "workflow_id_display": "593b1f91",
+  "workflow_name": "AI Chatbot Call Center: General Exception Flow (Production-Ready, Part 8)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ChatPayLabs",
+  "author_profile_url": "https://n8n.io/creators/chatpaylabs/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly detect n8n workflow errors and get real-time Slack alerts. Easy setup, low skill required. Flexible for any automation—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, errorTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

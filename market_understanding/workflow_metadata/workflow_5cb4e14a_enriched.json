@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5cb4e14a",
+  "workflow_id": "5cb4e14a",
+  "workflow_id_display": "5cb4e14a",
+  "workflow_name": "IOT device control with MQTT and webhook",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Tony Duffy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly control IoT devices using MQTT and Webhooks in n8n. Includes ready-to-use ESP32 code, HTML page, and step-by-step workflow setup.",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, mqtt, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Set data for MQTT message payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MQTT Publish Topic Node",
+      "type": "Process"
+    },
+    {
+      "name": "IOT control Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

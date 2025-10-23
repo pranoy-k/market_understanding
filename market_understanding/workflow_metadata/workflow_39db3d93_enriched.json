@@ -1,0 +1,192 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/39db3d93",
+  "workflow_id": "39db3d93",
+  "workflow_id_display": "39db3d93",
+  "workflow_name": "Raw Materials Inventory Management with Google Sheets, Supabase and Email Approvals",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "48",
+  "tools_integrations": "Email, Gmail, Google Sheets",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Standardize Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Standardize Raw Material Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Approval Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Material Request",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Current Stock1",
+      "type": "Data Output"
+    },
+    {
+      "name": "LookUp Current stock1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Raw Materials",
+      "type": "Data Output"
+    },
+    {
+      "name": "Initialize New Product stock",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Current Stock",
+      "type": "Data Output"
+    },
+    {
+      "name": "LookUp Current stock",
+      "type": "Data Output"
+    },
+    {
+      "name": "Lookup Existing Stock",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Available Stock for Issue",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Issue Request Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Stock for Issue Update from Current",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Stock After Issue",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Approvals",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Stock",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receive Issue Request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Approval",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Record Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Search Product ID",
+      "type": "Process"
+    },
+    {
+      "name": "Searck Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Update Current Stck",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Lookups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Low stock Detection1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Total Price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Updated Current Stock",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate Quantity Received",
+      "type": "Data Processing"
+    },
+    {
+      "name": "New Row Current Stock",
+      "type": "Process"
+    },
+    {
+      "name": "Current Stock Update",
+      "type": "Process"
+    },
+    {
+      "name": "Search Current Stock",
+      "type": "Process"
+    },
+    {
+      "name": "Format response",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Low stock Detection2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receive Raw Materials Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Record Row",
+      "type": "Process"
+    },
+    {
+      "name": "Validate Issue Request Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Verify Requested Quantity",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Verify Approval Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Materials Issue Table Update",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3f62126f",
+  "workflow_id": "3f62126f",
+  "workflow_id_display": "3f62126f",
+  "workflow_name": "Capture Website Screenshots via Google Sheets to Google Drive with CustomJS",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Drive, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate website screenshots from Google Sheets with n8n! Capture, upload, and organize images in Google Drive for seamless web monitoring. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with websiteScreenshot, googleSheetsTrigger, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Take a screenshot of a website",
+      "type": "Process"
+    },
+    {
+      "name": "Store Screenshots",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

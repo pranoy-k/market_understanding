@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/af287089",
+  "workflow_id": "af287089",
+  "workflow_id_display": "af287089",
+  "workflow_name": "AI-Powered Blog Post Promoter for Instagram, Facebook & X with GPT",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Facebook, Instagram, OpenAI",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/lukaszb/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly promote your blog with automated, AI-powered social sharing to Instagram, Facebook & X. Boost reach, save time, and stay consistent—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "RSS Feed Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4.1 mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save Image to imgbb.com3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Save Image to imgbb.com",
+      "type": "Data Input"
+    },
+    {
+      "name": "History BLOG",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Blog History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add too Data Bank",
+      "type": "Data Output"
+    },
+    {
+      "name": "Social Media Content",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Social Media Content Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Create image open ai2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get image from imgbb",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload media to Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Post on IG",
+      "type": "Process"
+    },
+    {
+      "name": "Create image open ai",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get image from imgbb1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post image Cloudianry1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Facebook Post1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

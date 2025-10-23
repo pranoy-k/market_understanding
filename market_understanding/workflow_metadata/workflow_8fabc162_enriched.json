@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8fabc162",
+  "workflow_id": "8fabc162",
+  "workflow_id_display": "8fabc162",
+  "workflow_name": "Gmail Cold Email Sequence with Google Sheets Tracking & Slack Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "55",
+  "tools_integrations": "Email, Gmail, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Electrabot",
+  "author_profile_url": "https://n8n.io/creators/vansh404/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets9",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets8",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets6",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets7",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets10",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets11",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets12",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets13",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets14",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items8",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

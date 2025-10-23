@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e63b6249",
+  "workflow_id": "e63b6249",
+  "workflow_id_display": "e63b6249",
+  "workflow_name": "Automatically document n8n workflows directly in Notion database",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Notion, PDF",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mutasem",
+  "author_profile_url": "https://n8n.io/creators/mutasem/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync and document your n8n workflows to Notion with the `sync-to-notion` tag. Stay organized and track ownership easily. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Every 15 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all workflows with tag",
+      "type": "Process"
+    },
+    {
+      "name": "Get notion page with workflow id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Update in Notion",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

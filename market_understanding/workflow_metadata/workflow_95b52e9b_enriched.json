@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/95b52e9b",
+  "workflow_id": "95b52e9b",
+  "workflow_id_display": "95b52e9b",
+  "workflow_name": "Convert image to text using GROQ LLaVA V1.5 7B",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "felipe biava cataneo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly set up a Telegram bot to get instant, AI-powered image descriptions using the fast GROQ LLAVA V1.5 7B API. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get only the text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request GROQ LLAVA",
+      "type": "Data Input"
+    },
+    {
+      "name": "convert the image file to base64",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

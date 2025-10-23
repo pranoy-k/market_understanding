@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b18189a3",
+  "workflow_id": "b18189a3",
+  "workflow_id_display": "b18189a3",
+  "workflow_name": "Auto-Generate MVP Startup Ideas from Reddit with AI & Excel Storage",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Excel, Reddit",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "Jesse White",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Auto-generate actionable startup ideas from real Reddit pain points. Scan trends, analyze comments, and get structured MVPs with Excel integration. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, outputParserStructured, microsoftExcel"
+  ],
+  "nodes": [
+    {
+      "name": "Select a subreddit",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Get Trending Posts",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get used reddit post slugs",
+      "type": "Process"
+    },
+    {
+      "name": "Flatten list of slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract subreddits and post ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create post slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create list of posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge used post slugs with new post slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create list of all post slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove duplicate post slugs",
+      "type": "Process"
+    },
+    {
+      "name": "Split out post slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update \"Used Posts\" with new post slugs",
+      "type": "Process"
+    },
+    {
+      "name": "Merge new post slugs with post data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out used posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge post with comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flatten post and comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI powered MVP Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Split llm output prep for spreadsheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append new row to Excel sheet",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/88f15969",
+  "workflow_id": "88f15969",
+  "workflow_id_display": "88f15969",
+  "workflow_name": "Update people through Zulip about open tickets in Zammad",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ghazi Triki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically fetches Zammad tickets daily at 08:30 and shares them on Zulip. Keep your support team updated for efficient daily standups. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, function"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ticket Filtering",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Tickets",
+      "type": "Process"
+    },
+    {
+      "name": "Notify for Standup",
+      "type": "Process"
+    },
+    {
+      "name": "Standup Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

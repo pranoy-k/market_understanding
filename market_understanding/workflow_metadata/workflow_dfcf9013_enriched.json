@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dfcf9013",
+  "workflow_id": "dfcf9013",
+  "workflow_id_display": "dfcf9013",
+  "workflow_name": "AI Content Creation and Publishing Engine with Mistral, Creatomate, and YouTube",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Telegram, YouTube",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "NanaB",
+  "author_profile_url": "https://n8n.io/creators/nanabrown/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate AI video creation and YouTube publishing from Telegram with n8n. Real-time updates, easy setup, and full workflow customization. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "Recieve Message From YTAdmin",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Upload Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Video File URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Image URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Voice over Using OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Background Image Using OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Video File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video To Youtube",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Content",
+      "type": "Process"
+    },
+    {
+      "name": "Split into Categories for Processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert file into Base 64 string",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to MongoDB",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Categories into Complete Scenes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Consolidate Scene Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Title and Description",
+      "type": "Process"
+    },
+    {
+      "name": "Render Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Response from Creatomate",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

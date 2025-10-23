@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1953e00b",
+  "workflow_id": "1953e00b",
+  "workflow_id_display": "1953e00b",
+  "workflow_name": "Simple file based key value store (GetKey)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "Peter",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly retrieve values by key from a local JSON file in n8n. Set up secure access, automate lookups, and streamline your workflows—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, functionItem, readBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ReturnValue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "BinaryToJSON",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

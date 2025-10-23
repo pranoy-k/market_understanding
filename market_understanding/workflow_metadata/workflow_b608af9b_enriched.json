@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b608af9b",
+  "workflow_id": "b608af9b",
+  "workflow_id_display": "b608af9b",
+  "workflow_name": "AppSheet Intelligent Query Orchestrator- Query any data!",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Mohammed Rifad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create precise, context-driven AppSheet queries. Fetch the latest schema, filter data intelligently, and streamline workflows across industries. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "AggregateRanked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Reranked Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetListOfWorksheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "GetHeaders",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cohere Rerank",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "CallAppsheetAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Appsheet Schema Analyser",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Cleanup and structure the input",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "CallAppsheetAPI"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

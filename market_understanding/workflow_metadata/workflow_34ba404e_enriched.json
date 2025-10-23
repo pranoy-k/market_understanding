@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/34ba404e",
+  "workflow_id": "34ba404e",
+  "workflow_id_display": "34ba404e",
+  "workflow_name": "Binance SM 15min Indicators Tool",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get fast, AI-driven 15m technical analysis for Binance Spot pairs—RSI, MACD, BBANDS, ADX, SMA/EMA—optimized for analysts & Telegram trading bots.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 15min Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request 15m Indicators Tool",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

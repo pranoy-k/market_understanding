@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d12591ed",
+  "workflow_id": "d12591ed",
+  "workflow_id_display": "d12591ed",
+  "workflow_name": "Telegram bot for item multi select and saving to Postgres (Module \"Checkbox\")",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "42",
+  "tools_integrations": "PostgreSQL, Telegram",
+  "tags": [
+    "telegram",
+    "postgres"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create a Telegram bot to collect user selections from a predefined list and save them to Postgres. Clean chat, easy setup, and fully customizable workflow.",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, postgres, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables TG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Shop List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Shop List Choice",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Shop List Choice",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Shop List Choice",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert statuses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert statuses and antistatuses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Shop List Choices",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union List",
+      "type": "Process"
+    },
+    {
+      "name": "Get Shop List Choices",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert statuses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get message_id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get message_id",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

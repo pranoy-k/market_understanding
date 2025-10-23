@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/23c61a62",
+  "workflow_id": "23c61a62",
+  "workflow_id_display": "23c61a62",
+  "workflow_name": "Analyze Telegram Messages with OpenAI and Send Notifications via Gmail & Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Gmail, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 gmail🤖 openai"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Listen for Telegram Updates",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb Execute",
+      "type": "Process"
+    },
+    {
+      "name": "Brave Search",
+      "type": "Process"
+    },
+    {
+      "name": "Brave Execute",
+      "type": "Process"
+    },
+    {
+      "name": "FireCrawl Execute",
+      "type": "Process"
+    },
+    {
+      "name": "FireCrawl List",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Message with AI",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb Search",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

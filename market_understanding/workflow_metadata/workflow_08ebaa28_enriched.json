@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/08ebaa28",
+  "workflow_id": "08ebaa28",
+  "workflow_id_display": "08ebaa28",
+  "workflow_name": "Convert Time Zones with TimeZoneDB API Integration",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert times across global time zones in n8n using the TimeZoneDB API—ideal for remote teams, event planning, travel, and more. Learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Time Conversion Request",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Converted Time",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert Timezone (TimeZoneDB)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

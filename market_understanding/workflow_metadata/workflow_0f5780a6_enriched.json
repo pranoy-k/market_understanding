@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f5780a6",
+  "workflow_id": "0f5780a6",
+  "workflow_id_display": "0f5780a6",
+  "workflow_name": "Get a Slack alert when a workflow went wrong",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant Slack alerts for n8n workflow errors—no activation needed. Stay informed with real-time, customizable notifications. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, errorTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

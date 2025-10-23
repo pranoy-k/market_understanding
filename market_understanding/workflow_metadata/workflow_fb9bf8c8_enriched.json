@@ -1,0 +1,109 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb9bf8c8",
+  "workflow_id": "fb9bf8c8",
+  "workflow_id_display": "fb9bf8c8",
+  "workflow_name": "Verify Telegram Channel Subscriptions with Access Control using Postgres",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "41",
+  "tools_integrations": "PostgreSQL, Telegram",
+  "tags": [
+    "telegram",
+    "postgres"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Verify Telegram channel subscriptions automatically and reward users with files. Flexible, easy setup for bot admins and marketers. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, aggregate, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables TG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union statuses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File",
+      "type": "Process"
+    },
+    {
+      "name": "Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Add Channel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on CHECK SUBSCRIPTION REQUEST CHANNEL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on CHECK SUBSCRIPTION REQUEST CHANNEL1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Channel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Divide Channels",
+      "type": "Process"
+    },
+    {
+      "name": "Update bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status and referal",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Referal",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

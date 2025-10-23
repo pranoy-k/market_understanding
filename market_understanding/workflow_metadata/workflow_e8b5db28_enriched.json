@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e8b5db28",
+  "workflow_id": "e8b5db28",
+  "workflow_id_display": "e8b5db28",
+  "workflow_name": "Merge multiple runs into one",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly merge items from multiple loop runs into a single list for streamlined n8n workflows. Customizable and user-friendly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, n8nTrainingCustomerDatastore, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Customer Datastore",
+      "type": "Process"
+    },
+    {
+      "name": "Merge loop items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

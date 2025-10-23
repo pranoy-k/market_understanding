@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/553e2558",
+  "workflow_id": "553e2558",
+  "workflow_id_display": "553e2558",
+  "workflow_name": "Transcribe & Summarize Telegram Voice Notes with OpenAI and DeepSeek Chat to Google Docs",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google🤖 openai"
+  ],
+  "author_name": "Rahim Kara",
+  "author_profile_url": "https://n8n.io/creators/rahimin3d/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Telegram voice note transcription and AI-powered summary creation, with seamless saving to organized Google Drive folders. Learn more today!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

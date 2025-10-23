@@ -1,0 +1,156 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43244f51",
+  "workflow_id": "43244f51",
+  "workflow_id_display": "43244f51",
+  "workflow_name": "Automate Instagram Influencer Content with GPT-4.1, Supabase and Human Approvals",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "Instagram, OpenAI",
+  "tags": [],
+  "author_name": "NICKYAI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow supports manual triggering and automate your business processes efficiently. It connects multiple services and systems to create a seamless automation that saves time and reduces manual work.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change request fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change request fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Weekly plan change fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add share link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add post change request fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save monthly plan",
+      "type": "Process"
+    },
+    {
+      "name": "Save weekly plan",
+      "type": "Process"
+    },
+    {
+      "name": "Save quarterly plan",
+      "type": "Process"
+    },
+    {
+      "name": "Save the post",
+      "type": "Process"
+    },
+    {
+      "name": "Get monthly plan",
+      "type": "Process"
+    },
+    {
+      "name": "Get weekly plan",
+      "type": "Process"
+    },
+    {
+      "name": "merge previous week's posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate image with OpenAI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert response to image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Facebook Graph API",
+      "type": "Process"
+    },
+    {
+      "name": "Generate unique id",
+      "type": "Process"
+    },
+    {
+      "name": "Upload image to Supabase",
+      "type": "Data Input"
+    },
+    {
+      "name": "Facebook Graph API1",
+      "type": "Process"
+    },
+    {
+      "name": "Get quarterly plan",
+      "type": "Process"
+    },
+    {
+      "name": "Download the reference image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get posts from the past 7 days",
+      "type": "Process"
+    },
+    {
+      "name": "Generate new Instagram post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate quarterly plan",
+      "type": "Data Input"
+    },
+    {
+      "name": "Quaterly plan aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Monthly plan aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Weekly plan aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate monthly plan",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate weekly plan",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API",
+    "Facebook Graph API1",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

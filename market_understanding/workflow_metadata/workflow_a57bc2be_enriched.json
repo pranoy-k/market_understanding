@@ -1,0 +1,228 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a57bc2be",
+  "workflow_id": "a57bc2be",
+  "workflow_id_display": "a57bc2be",
+  "workflow_name": "Automated Music Video Creation & YouTube Publishing with AI-Generated Metadata from Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "65",
+  "tools_integrations": "Discord, Facebook, Google Drive, YouTube",
+  "tags": [
+    "google",
+    "discord"
+  ],
+  "author_name": "danejw",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-upload music to YouTube—just drop your MP3 in Google Drive. Automate metadata, scheduling, cover art, and Discord updates. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Watch New Song in Drive",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Schedule",
+      "type": "Data Output"
+    },
+    {
+      "name": "Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pop Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "EDM Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Country Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Disco Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reggae Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Random Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Style",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Description",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe",
+      "type": "Process"
+    },
+    {
+      "name": "Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Cover Art",
+      "type": "Process"
+    },
+    {
+      "name": "Tags",
+      "type": "Process"
+    },
+    {
+      "name": "Update Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Art",
+      "type": "Process"
+    },
+    {
+      "name": "Download Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Audio + Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload",
+      "type": "Process"
+    },
+    {
+      "name": "Search Art",
+      "type": "Process"
+    },
+    {
+      "name": "Search Video",
+      "type": "Process"
+    },
+    {
+      "name": "Download Video",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Art",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Video",
+      "type": "Process"
+    },
+    {
+      "name": "Format Date For Youtube",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execution Data6",
+      "type": "Process"
+    },
+    {
+      "name": "Log2",
+      "type": "Process"
+    },
+    {
+      "name": "Log1",
+      "type": "Process"
+    },
+    {
+      "name": "Log3",
+      "type": "Process"
+    },
+    {
+      "name": "Log4",
+      "type": "Process"
+    },
+    {
+      "name": "Log5",
+      "type": "Process"
+    },
+    {
+      "name": "Log6",
+      "type": "Process"
+    },
+    {
+      "name": "Log7",
+      "type": "Process"
+    },
+    {
+      "name": "Log8",
+      "type": "Process"
+    },
+    {
+      "name": "Log9",
+      "type": "Process"
+    },
+    {
+      "name": "Format",
+      "type": "Process"
+    },
+    {
+      "name": "Reggae",
+      "type": "Process"
+    },
+    {
+      "name": "Determine Playlist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format1",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Video",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Title",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Country",
+      "type": "Process"
+    },
+    {
+      "name": "Disco",
+      "type": "Process"
+    },
+    {
+      "name": "Truncate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Genre",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

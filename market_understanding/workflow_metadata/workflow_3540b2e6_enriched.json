@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3540b2e6",
+  "workflow_id": "3540b2e6",
+  "workflow_id_display": "3540b2e6",
+  "workflow_name": "Analyze DEX Liquidity, Trades & Spot Pairs with CoinMarketCap AI Agent",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Gain real-time and historical DEX insights with CoinMarketCap’s AI-powered DEXScan API. Track liquidity, trading pairs, and activity across major blockchains.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "DEXScan Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap DEXScan Agent",
+      "type": "Process"
+    },
+    {
+      "name": "DEXScan Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "DEX Metadata",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX Networks List",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX Listings Quotes",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX Pair Quotes Latest",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX OHLCV Historical",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX OHLCV Latest",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX Trades Latest",
+      "type": "Data Input"
+    },
+    {
+      "name": "DEX Spot Pairs Latest",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

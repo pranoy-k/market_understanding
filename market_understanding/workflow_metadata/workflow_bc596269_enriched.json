@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc596269",
+  "workflow_id": "bc596269",
+  "workflow_id_display": "bc596269",
+  "workflow_name": "Youtube Outlier Detector (Find trending content based on your competitors)",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "PostgreSQL, YouTube",
+  "tags": [],
+  "author_name": "Leonardo Grigorio",
+  "author_profile_url": "https://n8n.io/creators/leonardogrig/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube competitor tracking, detect trending videos, and analyze engagement with outlier detection and PostgreSQL integration. Learn more now!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "already_populated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "map_data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "find_video_data1",
+      "type": "Data Input"
+    },
+    {
+      "name": "fetch_last_registered",
+      "type": "Data Output"
+    },
+    {
+      "name": "get_videos",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "insert_items",
+      "type": "Data Output"
+    },
+    {
+      "name": "create_table",
+      "type": "Data Output"
+    },
+    {
+      "name": "remove_shorts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "create_query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "structure_data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "sanitize_data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "see table",
+      "type": "Data Output"
+    },
+    {
+      "name": "drop table",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

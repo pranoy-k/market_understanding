@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bda8b288",
+  "workflow_id": "bda8b288",
+  "workflow_id_display": "bda8b288",
+  "workflow_name": "Conversational Kubernetes Management with GPT-4o and MCP Integration",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Reza Gholizade",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Conversationally manage Kubernetes clusters with n8n, GPT-4o, and MCP integration. Simplify operations—turn natural language into secure, real-time actions.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "getAPIResources",
+      "type": "Process"
+    },
+    {
+      "name": "listResources",
+      "type": "Process"
+    },
+    {
+      "name": "describeResource",
+      "type": "Process"
+    },
+    {
+      "name": "getPodMetrics",
+      "type": "Process"
+    },
+    {
+      "name": "getNodeMetrics",
+      "type": "Process"
+    },
+    {
+      "name": "createorUpdateResource",
+      "type": "Process"
+    },
+    {
+      "name": "getResource",
+      "type": "Process"
+    },
+    {
+      "name": "getPodsLogs",
+      "type": "Process"
+    },
+    {
+      "name": "getEvents",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "getAPIResources",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

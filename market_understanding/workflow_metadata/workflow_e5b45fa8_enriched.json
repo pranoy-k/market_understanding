@@ -1,0 +1,175 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e5b45fa8",
+  "workflow_id": "e5b45fa8",
+  "workflow_id_display": "e5b45fa8",
+  "workflow_name": "Build an AI-Powered Tech Radar Advisor with SQL DB, RAG, and Routing Agents",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sean Lon",
+  "author_profile_url": "https://n8n.io/creators/seanlon/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage tech adoption with this AI-powered Tech Radar Advisor. Visualize trends, analyze data, and get smart insights. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, lmChatGroq, textSplitterRecursiveCharacterTextSplitter"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive - Doc File Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets - Tech Radar",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Read TechRadar",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download Doc File From Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Doc File Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "MySQL -delete all data",
+      "type": "Data Output"
+    },
+    {
+      "name": "MySQL - insert all from sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code - Transform table into rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Docs - Update GDoc",
+      "type": "Process"
+    },
+    {
+      "name": "Content - Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - Simplify Mapping to Original Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Codes - Simplify Mapping to Original Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow - Sql Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow - RAG Agent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Output Guardrail",
+      "type": "Process"
+    },
+    {
+      "name": "LLM - Determine - Agent Input Router",
+      "type": "Process"
+    },
+    {
+      "name": "1_Get DB Schema and Tables List",
+      "type": "Data Output"
+    },
+    {
+      "name": "2_Get Table Definition",
+      "type": "Data Output"
+    },
+    {
+      "name": "3_Execute actual query",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent -DB Sql Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store (Retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "4_RagTool",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - RAG",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings - Tech Radar Data Embedding",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone - Vector Store for Embedding Content",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Embeddings - Tech Radar Vector DB",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Retrieval",
+      "type": "Process"
+    },
+    {
+      "name": "AI Chat Model - Claude 3.5 Sonnet",
+      "type": "Process"
+    },
+    {
+      "name": "AI Chat Model - QwQ 32b",
+      "type": "Process"
+    },
+    {
+      "name": "AI Chatmodel - Deepseek 32B",
+      "type": "Process"
+    },
+    {
+      "name": "AI Chat Model - llama3-8b",
+      "type": "Process"
+    },
+    {
+      "name": "API Response - Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "API Request - Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "User Conversation history",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "API Response - Respond to Webhook",
+    "API Request - Webhook"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

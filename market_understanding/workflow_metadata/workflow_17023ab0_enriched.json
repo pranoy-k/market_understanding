@@ -1,0 +1,221 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/17023ab0",
+  "workflow_id": "17023ab0",
+  "workflow_id_display": "17023ab0",
+  "workflow_name": "WordPress Auto-Blogging Pro - Content Automation Machine for SEO topics",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "50",
+  "tools_integrations": "Google Drive, WordPress",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate SEO-optimized WordPress blog posts with custom images and internal links. Back up everything to Google Drive. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, limit, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get title chapter and content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FInal article in HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article in Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate featured image",
+      "type": "Process"
+    },
+    {
+      "name": "Generate chapter image",
+      "type": "Process"
+    },
+    {
+      "name": "Save texts to Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Create post title and structure",
+      "type": "Process"
+    },
+    {
+      "name": "Write chapter text",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get post sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get XML file",
+      "type": "Process"
+    },
+    {
+      "name": "Split out links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload chapter images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Post on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Resize featured image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload featured image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set featured image for post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update image meta data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update featured image meta data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set excerpt",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add featured image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Upload featured image to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Upload chapter images to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Create Drive folder",
+      "type": "Process"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get the latest topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine into article",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate internal links",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

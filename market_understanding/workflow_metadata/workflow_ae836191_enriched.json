@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ae836191",
+  "workflow_id": "ae836191",
+  "workflow_id_display": "ae836191",
+  "workflow_name": "Save your workflows into a Gitlab repository",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Julien DEL RIO",
+  "author_profile_url": "https://n8n.io/creators/shraddha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up and sync your n8n workflows to GitLab. Only save real changes, get detailed status reports, and enjoy seamless configuration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status new",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status diff",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status same",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save each version in a different field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Result",
+      "type": "Process"
+    },
+    {
+      "name": "Current workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get file",
+      "type": "Process"
+    },
+    {
+      "name": "File status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "End Loop",
+      "type": "Process"
+    },
+    {
+      "name": "Create file",
+      "type": "Process"
+    },
+    {
+      "name": "Extract From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "New file version",
+      "type": "Process"
+    },
+    {
+      "name": "Error output to normal output",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve all workflows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

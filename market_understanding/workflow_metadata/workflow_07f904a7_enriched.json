@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/07f904a7",
+  "workflow_id": "07f904a7",
+  "workflow_id_display": "07f904a7",
+  "workflow_name": "Archive empty pages in Notion database",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Archive empty pages in Notion databases automatically with this easy n8n workflow. Simple setup, customizable schedule. Boost your productivity today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, notion, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Process Blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check for empty properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get All Databases",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Database Pages",
+      "type": "Process"
+    },
+    {
+      "name": "Get Page Blocks",
+      "type": "Process"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Archive Page",
+      "type": "Process"
+    },
+    {
+      "name": "Every day @ 2am",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

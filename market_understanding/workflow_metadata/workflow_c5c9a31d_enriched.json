@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c5c9a31d",
+  "workflow_id": "c5c9a31d",
+  "workflow_id_display": "c5c9a31d",
+  "workflow_name": "Upload to Instagram and Tiktok from Google Drive",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Drive, Instagram, Telegram",
+  "tags": [],
+  "author_name": "Juan Carlos Cavero Gracia",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Audio from Video",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Description for Videos in Tiktok and Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Read video from Google Drive",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Video from Google Drive",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Video from Google Drive2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video and Description to Tiktok",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video and Description to Instagram",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

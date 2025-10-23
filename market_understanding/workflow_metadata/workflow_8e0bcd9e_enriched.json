@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e0bcd9e",
+  "workflow_id": "8e0bcd9e",
+  "workflow_id_display": "8e0bcd9e",
+  "workflow_name": "CV Screening with OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parsed JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Document PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download File",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Analyze CV",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

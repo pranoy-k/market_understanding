@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c98832b6",
+  "workflow_id": "c98832b6",
+  "workflow_id_display": "c98832b6",
+  "workflow_name": "Get the last five SpaceX launches from the spacex.land API using GraphQL",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "graphql"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline GraphQL queries with our companion workflow—visual guides, step-by-step instructions, and ready-made examples for fast, easy integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, graphql"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "GraphQL",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

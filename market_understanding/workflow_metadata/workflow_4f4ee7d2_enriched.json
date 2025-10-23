@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f4ee7d2",
+  "workflow_id": "4f4ee7d2",
+  "workflow_id_display": "4f4ee7d2",
+  "workflow_name": "Multi-platform Video Publishing from Google Sheets to 9 Social Networks via Blotato API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate publishing from Google Sheets to all major social platforms. Distribute videos, captions, and AI images seamlessly. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup Social Accounts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Google Drive ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Instagram] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Facebook] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Linkedin] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Tiktok] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Blotato - Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Pinterest] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Youtube] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Threads] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Twitter] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Bluesky] Publish via Blotato",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

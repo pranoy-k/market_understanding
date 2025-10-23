@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4cd42543",
+  "workflow_id": "4cd42543",
+  "workflow_id_display": "4cd42543",
+  "workflow_name": "Automate Docker Container Updates with Telegram Approval System",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "GitHub, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Jaber Zare",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and control Docker image updates with scheduled GitHub checks and Telegram alerts. Streamline upgrades with secure, customizable workflows—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Default variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Version String",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pull n8n Image",
+      "type": "Process"
+    },
+    {
+      "name": "docker compose pull",
+      "type": "Process"
+    },
+    {
+      "name": "check n8n installed version",
+      "type": "Process"
+    },
+    {
+      "name": "docker compose up",
+      "type": "Process"
+    },
+    {
+      "name": "Github HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Results",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

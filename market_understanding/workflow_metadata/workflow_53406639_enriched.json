@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/53406639",
+  "workflow_id": "53406639",
+  "workflow_id_display": "53406639",
+  "workflow_name": "Enrich lead captured by ConvertKit and save it in Hubspot",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Ricardo Espinoza",
+  "author_profile_url": "https://n8n.io/creators/n8nricardoe105/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture from ConvertKit, enrich data with Clearbit, and update HubSpot CRM seamlessly. Boost efficiency—learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with convertKitTrigger, noOp, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "ConvertKit Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Enrich company",
+      "type": "Process"
+    },
+    {
+      "name": "Search company",
+      "type": "Process"
+    },
+    {
+      "name": "Upsert lead",
+      "type": "Process"
+    },
+    {
+      "name": "Create company",
+      "type": "Process"
+    },
+    {
+      "name": "Upsert contact",
+      "type": "Process"
+    },
+    {
+      "name": "Update company",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out personal emails1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Contact not found, do nothing1",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

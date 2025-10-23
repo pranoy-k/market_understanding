@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4a1b3501",
+  "workflow_id": "4a1b3501",
+  "workflow_id_display": "4a1b3501",
+  "workflow_name": "Get all contacts of Hubspot account",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "sshaligr",
+  "author_profile_url": "https://n8n.io/creators/shraddha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Capture new leads seamlessly! Auto-validate contacts, update HubSpot, send welcome emails, and alert sales via Slack. Streamline prospect management now.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hubspot",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

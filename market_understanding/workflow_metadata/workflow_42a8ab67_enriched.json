@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/42a8ab67",
+  "workflow_id": "42a8ab67",
+  "workflow_id_display": "42a8ab67",
+  "workflow_name": "Import multiple CSV to Google Sheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "CSV, Google Sheets",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import, filter, and update multiple CSV files in Google Sheets. Ensure up-to-date, duplicate-free subscriber data—streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, readBinaryFiles, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign source file name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload to spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary Files",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Keep only subscribers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort by date",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

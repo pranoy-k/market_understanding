@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa12105c",
+  "workflow_id": "aa12105c",
+  "workflow_id_display": "aa12105c",
+  "workflow_name": "Get only new RSS with photo",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Vlad Knyzhnyk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically capture new RSS feed posts and share them with your chosen service, like Telegram. Supports images and real-time workflow automation.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, htmlExtract, set"
+  ],
+  "nodes": [
+    {
+      "name": "Filter RSS Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only get new RSS1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Image1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

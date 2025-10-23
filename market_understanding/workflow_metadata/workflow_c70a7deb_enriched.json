@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c70a7deb",
+  "workflow_id": "c70a7deb",
+  "workflow_id_display": "c70a7deb",
+  "workflow_name": "Dynamically Run SuiteQL Queries in NetSuite via HTTP Webhook in n8n",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "http",
+    "webhook"
+  ],
+  "author_name": "DataAnts",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Dynamically run SuiteQL queries in NetSuite via n8n Webhook. Automate real-time data access and reporting. Self-hosted n8n required. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, webhook, netsuite"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "NetSuite",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

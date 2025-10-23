@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/31f89ce9",
+  "workflow_id": "31f89ce9",
+  "workflow_id_display": "31f89ce9",
+  "workflow_name": "Tesla Financial Market Data Analyst Tool (Multi-Timeframe Technical AI Agent)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Unify your Tesla trading with AI-powered, multi-timeframe TSLA signals and actionable insights. Boost your strategies—discover how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla Financial Market Data Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla 15min Indicators Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla 1hour Indicators Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla 1day Indicators Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla 1hour and 1day Klines Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,37 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a2617128",
+  "workflow_id": "a2617128",
+  "workflow_id_display": "a2617128",
+  "workflow_name": "Control Discord Bot with Natural Language via MCP Server",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": "https://n8n.io/creators/cfomodz/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly set up an MCP server for your Discord bot. Simple authentication, seamless automation in n8n workflows—manage bots with ease. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with stickyNote, discordTool, httpRequestTool"
+  ],
+  "nodes": [
+    {
+      "name": "Discord MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Discord Server IDs",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

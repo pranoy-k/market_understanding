@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "name": "Read Binary File",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "position": [
+        450,
+        650
+      ],
+      "parameters": {
+        "filePath": "spreadsheet.xls"
+      },
+      "typeVersion": 1,
+      "id": "73c99f623f86df40"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "position": [
+        600,
+        650
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "bb416a6701d9154b"
+    },
+    {
+      "name": "Insert Rows1",
+      "type": "n8n-nodes-base.postgres",
+      "position": [
+        750,
+        650
+      ],
+      "parameters": {
+        "table": "product",
+        "columns": "name,ean"
+      },
+      "credentials": {
+        "postgres": "postgres"
+      },
+      "typeVersion": 1,
+      "id": "32a04ebdac4b4fa6"
+    }
+  ],
+  "connections": {
+    "Read Binary File": {
+      "main": [
+        [
+          {
+            "node": "Spreadsheet File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Spreadsheet File1": {
+      "main": [
+        [
+          {
+            "node": "Insert Rows1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "5d48e0f2670c936d",
+  "name": "Insert Excel data to Postgres",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "postgres",
+    "excel",
+    "json"
+  ]
+}

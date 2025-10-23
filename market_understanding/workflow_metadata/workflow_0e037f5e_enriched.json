@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0e037f5e",
+  "workflow_id": "0e037f5e",
+  "workflow_id_display": "0e037f5e",
+  "workflow_name": "Generate Daily E-Commerce Order Reports with Supabase, GPT-4.1 and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Daily 8am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Orders",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Order Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Clients",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Products",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Sender Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

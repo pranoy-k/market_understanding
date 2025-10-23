@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d1a23cd",
+  "workflow_id": "3d1a23cd",
+  "workflow_id_display": "3d1a23cd",
+  "workflow_name": "Automate LinkedIn Profile Search & Cold Email Outreach with OpenAI and Hunter",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin🤖 openai"
+  ],
+  "author_name": "Abhijay Vuyyuru",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, hunter, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate a Boolean Search String",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Contact Details",
+      "type": "Process"
+    },
+    {
+      "name": "Create a new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add columns to new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Appends the results to the sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "set page number for google search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Boolean Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extracts fname, lname, domainname",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extracts all linkedin urls and workplace context from the google http response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Adds 10 to start - Go to next page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hunter",
+      "type": "Process"
+    },
+    {
+      "name": "Columns to add: linkedin_url, first_name, last_name, email, context, domain",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

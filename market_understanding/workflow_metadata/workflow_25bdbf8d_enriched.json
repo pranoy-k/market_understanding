@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/25bdbf8d",
+  "workflow_id": "25bdbf8d",
+  "workflow_id_display": "25bdbf8d",
+  "workflow_name": "Download recently liked songs automatically with Spotify",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically sync and listen to your latest favorite Spotify songs offline in high quality, while saving storage. Simple setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out new tracks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get tracks to remove",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out Downloads Playlist",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

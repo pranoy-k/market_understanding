@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43366e9b",
+  "workflow_id": "43366e9b",
+  "workflow_id_display": "43366e9b",
+  "workflow_name": "Schedule & Publish All Instagram Content Types with Facebook Graph API",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "API, Facebook, Instagram",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "Lakshit",
+  "author_profile_url": "https://n8n.io/creators/lakshit1996/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram posting for agencies, creators & businesses. Supports all content types, offers smart scheduling, and reliable delivery. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "🚀 Manual Trigger - Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "🔍 Check Processing Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "⚙️ Configure Post Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Container HTTP Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container HTTP Reels",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container FB Image",
+      "type": "Process"
+    },
+    {
+      "name": "Container FB Story Image",
+      "type": "Process"
+    },
+    {
+      "name": "Container HTTP Story Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container FB Reels",
+      "type": "Process"
+    },
+    {
+      "name": "Container HTTP Story Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container FB Story Video",
+      "type": "Process"
+    },
+    {
+      "name": "Container Carousel Image 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container Carousel Image 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Container HTTP Carousel",
+      "type": "Data Input"
+    },
+    {
+      "name": "📤 Publish via HTTP API",
+      "type": "Data Input"
+    },
+    {
+      "name": "📤 Publish via Facebook SDK",
+      "type": "Process"
+    },
+    {
+      "name": "🔍 Check Processing Status1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "🔀 HTTP vs FB API Router",
+    "📤 Publish via HTTP API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

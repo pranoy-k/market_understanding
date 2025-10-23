@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {
+      "name": "Mailjet Trigger",
+      "type": "n8n-nodes-base.mailjetTrigger",
+      "position": [
+        530,
+        400
+      ],
+      "parameters": {
+        "event": "sent"
+      },
+      "credentials": {
+        "mailjetEmailApi": "mailjet creds"
+      },
+      "typeVersion": 1,
+      "id": "351ff6c6f4bb9ce7"
+    }
+  ],
+  "connections": {},
+  "id": "a1218d2207bf23a0",
+  "name": "Receive updates on emails sent via Mailjet",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

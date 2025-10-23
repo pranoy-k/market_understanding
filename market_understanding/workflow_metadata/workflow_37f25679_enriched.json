@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37f25679",
+  "workflow_id": "37f25679",
+  "workflow_id_display": "37f25679",
+  "workflow_name": "Move data between JSON and spreadsheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google",
+    "json"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily convert JSON to binary and import data into Google Sheets or local spreadsheets. Streamline your data management—learn how today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, writeBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move Binary Data1",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

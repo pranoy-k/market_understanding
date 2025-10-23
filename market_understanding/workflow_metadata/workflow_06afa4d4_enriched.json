@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/06afa4d4",
+  "workflow_id": "06afa4d4",
+  "workflow_id_display": "06afa4d4",
+  "workflow_name": "Create Shopify customers from a Google Sheet",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Google Sheets, Shopify",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Richard Uren",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import or migrate customers to Shopify from Google Sheets using n8n. Easy setup, secure API connection, and step-by-step instructions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, graphql, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheet, Fetch Customers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Shopify, CustomerCreate",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

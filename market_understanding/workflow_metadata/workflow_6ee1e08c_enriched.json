@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6ee1e08c",
+  "workflow_id": "6ee1e08c",
+  "workflow_id_display": "6ee1e08c",
+  "workflow_name": "Automatically Create and Upload YouTube Videos with Quotes in Thai Using FFmpeg",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Jaruphat J.",
+  "author_profile_url": "https://n8n.io/creators/jaruphatj/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create multilingual, motivational quote videos with localized fonts. Automate YouTube Shorts and tracking using a self-hosted n8n workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start AutoClip Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure Music Background Folder ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve Video Background Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Quote Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Music Background Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Video Background Locally",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Music Background Locally",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Quote Upload Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark Background as Used",
+      "type": "Data Output"
+    },
+    {
+      "name": "List Video Background Files",
+      "type": "Process"
+    },
+    {
+      "name": "List Music Background Files",
+      "type": "Process"
+    },
+    {
+      "name": "Merge File Selection Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Random Video, Music & Quote",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Selected Video Background",
+      "type": "Process"
+    },
+    {
+      "name": "Download Selected Music Background",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Overlay Text (Quote & Author)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Final Video Clip",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate YouTube Resumable Upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read output file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to YouTube",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0260a7e4",
+  "workflow_id": "0260a7e4",
+  "workflow_id_display": "0260a7e4",
+  "workflow_name": "Automated video creation using Google V3 and n8n workflow",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Lakshit",
+  "author_profile_url": "https://n8n.io/creators/lakshit1996/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate video production from Google Sheets with AI—no cameras or editing skills needed. Easily create, customize & manage videos. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "📝 Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "📊 Fetch Ready Ideas from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "📊 Update Sheet with Video URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "🤖 VEO3 Prompt Generator (GPT-4.1)",
+      "type": "Process"
+    },
+    {
+      "name": "🎬 Create Video with VEO3 (Fal AI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "🔍 Check Video Generation Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "📥 Download Generated Video",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "VEO3 Prompt Generator (GPT-4.1)",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

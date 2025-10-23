@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e15f8c02",
+  "workflow_id": "e15f8c02",
+  "workflow_id_display": "e15f8c02",
+  "workflow_name": "Build a Personal Assistant with Google Gemini, Gmail and Calendar using MCP",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "google🤖 gmail",
+    "gemini"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add new row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Find row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Create event",
+      "type": "Process"
+    },
+    {
+      "name": "Update event",
+      "type": "Process"
+    },
+    {
+      "name": "Personal Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Find single event",
+      "type": "Process"
+    },
+    {
+      "name": "Find multiple events",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

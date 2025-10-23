@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b5f551b",
+  "workflow_id": "1b5f551b",
+  "workflow_id_display": "1b5f551b",
+  "workflow_name": "Send a welcome private message to your new BlueSky followers",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Nukeador",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically sends personalized welcome messages on BlueSky to new followers every 60 minutes. Easy setup and customizable schedule. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Each 60 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define welcome message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save followers to file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "List followers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find new followers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read followers from file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send message",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get conversation ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

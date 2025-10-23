@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7127c864",
+  "workflow_id": "7127c864",
+  "workflow_id_display": "7127c864",
+  "workflow_name": "AI-Driven WooCommerce Product Importer from Google Sheet with Yoast SEO meta",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Facebook, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WooCommerce product creation from Google Sheets with AI-powered SEO optimization for Yoast. Streamline inventory and boost search rankings—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wooCommerce, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Creation done",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update meta",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "SEO Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Map categories",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create product",
+      "type": "Process"
+    },
+    {
+      "name": "Set SEO meta",
+      "type": "Process"
+    },
+    {
+      "name": "Loop products",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

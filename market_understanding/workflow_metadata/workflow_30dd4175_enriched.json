@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/30dd4175",
+  "workflow_id": "30dd4175",
+  "workflow_id_display": "30dd4175",
+  "workflow_name": "Export WordPress Posts to CSV and Upload to Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "CSV, Google Drive, WordPress",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "Codez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate WordPress post exports to CSV and upload to Google Drive with n8n. Streamline backups, SEO audits, and migrations. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adjust Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Wordpress Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to CSV File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

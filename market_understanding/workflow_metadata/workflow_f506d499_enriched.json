@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f506d499",
+  "workflow_id": "f506d499",
+  "workflow_id_display": "f506d499",
+  "workflow_name": "Sync Jira issues with subsequent comments to Notion database",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Jira, Notion",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Sync Jira issues with Notion in real time—automatically create, update, or delete Notion pages as Jira issues change. Easily customizable and secure workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, jiraTrigger, notion"
+  ],
+  "nodes": [
+    {
+      "name": "On issues created/updated/deleted",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    },
+    {
+      "name": "Find database page",
+      "type": "Process"
+    },
+    {
+      "name": "Delete issue",
+      "type": "Process"
+    },
+    {
+      "name": "Lookup table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create custom Notion filters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update issue",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

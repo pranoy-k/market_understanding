@@ -1,0 +1,113 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/28b986a9",
+  "workflow_id": "28b986a9",
+  "workflow_id_display": "28b986a9",
+  "workflow_name": "Automate Telegram Channel Posts Using Postgres (Module \"Cross-Posting\")",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "43",
+  "tools_integrations": "PostgreSQL, Telegram",
+  "tags": [
+    "telegram",
+    "postgres🗄"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate posting to multiple Telegram channels using your Postgres database. Schedule, customize, and manage text or image posts with ease. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, postgres, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables TG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Channel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Channel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Divide Channels",
+      "type": "Process"
+    },
+    {
+      "name": "Get Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on ADD CHANNEL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on DELETE CHANNEL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on POST TEXT REQUEST",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on POST IMAGE REQUEST TEXT",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on POST IMAGE REQUEST IMAGE",
+      "type": "Data Output"
+    },
+    {
+      "name": "Select Channels",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update bot status on START",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert bot status on START",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,179 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc276068",
+  "workflow_id": "bc276068",
+  "workflow_id_display": "bc276068",
+  "workflow_name": "Generate a YouTube Bedtime Story using OpenAI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "41",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Samautomation.work",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare OpenAI TTS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Public Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Music",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Correct Video Url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Audio GSC",
+      "type": "Process"
+    },
+    {
+      "name": "Save images to GC",
+      "type": "Process"
+    },
+    {
+      "name": "Append GS",
+      "type": "Data Output"
+    },
+    {
+      "name": "Grab Video from GS",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upgrade Progress on GS",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create a list of Image Text1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get image Base",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Transcript1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Random BG music",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube Seos Kanaal",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Voice Over",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Voice Over",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OPENai TTS",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Audio from GSC",
+      "type": "Data Input"
+    },
+    {
+      "name": "Transcribe with OpenAI Whisper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Image Style and Elements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out - Image prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Make Image Prompts Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Image prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pick Random song From GSC",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Json to Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Transcript With AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Title with AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Grab Animal",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,157 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6fde3471",
+  "workflow_id": "6fde3471",
+  "workflow_id_display": "6fde3471",
+  "workflow_name": "AI-Powered Auto-Generate Exam Questions and Answers from Google Docs with Gemini",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate open-ended and multiple-choice exam questions from Google Docs with AI—save time, ensure quality, and automate assessments. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Item List Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Item List Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Write open",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write closed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Create collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Refresh collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Converto di MD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store2",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Open questions",
+      "type": "Process"
+    },
+    {
+      "name": "Closed questions",
+      "type": "Process"
+    },
+    {
+      "name": "Answer questions",
+      "type": "Process"
+    },
+    {
+      "name": "Answer and create options",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

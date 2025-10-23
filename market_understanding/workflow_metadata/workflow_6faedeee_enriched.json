@@ -1,0 +1,99 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6faedeee",
+  "workflow_id": "6faedeee",
+  "workflow_id_display": "6faedeee",
+  "workflow_name": "Conversational PostgreSQL Agent with Visuals, Multi-KPI, and Data Editing (MCP)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "PostgreSQL",
+  "tags": [],
+  "author_name": "hippolyte-hu",
+  "author_profile_url": "https://n8n.io/creators/hippolyte-hu/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly query your PostgreSQL with natural language for instant insights, visual charts, and secure updates—powered by n8n’s advanced AI agent. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with switch, mcpClientTool, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "PostgreSQL MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "GetTableSchema",
+      "type": "Data Output"
+    },
+    {
+      "name": "ListTables",
+      "type": "Data Output"
+    },
+    {
+      "name": "CreateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "ReadTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "CreateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "get table details",
+      "type": "Process"
+    },
+    {
+      "name": "ReadTableRows",
+      "type": "Process"
+    },
+    {
+      "name": "Plot tool",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

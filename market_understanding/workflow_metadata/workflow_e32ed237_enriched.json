@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e32ed237",
+  "workflow_id": "e32ed237",
+  "workflow_id_display": "e32ed237",
+  "workflow_name": "Send Webflow form submissions to Slack dynamically",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "kreonovo",
+  "author_profile_url": "https://n8n.io/creators/kreonovo/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Webflow form submissions to Slack: create dedicated channels, send notifications, and boost team collaboration. Learn more with a full step-by-step guide.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with set, slack, if"
+  ],
+  "nodes": [
+    {
+      "name": "Webflow Form Submission Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Transform data to send message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compose Slack message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if Webflow form has an existing channel",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

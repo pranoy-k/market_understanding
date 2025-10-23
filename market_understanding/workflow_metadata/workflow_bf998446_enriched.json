@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bf998446",
+  "workflow_id": "bf998446",
+  "workflow_id_display": "bf998446",
+  "workflow_name": "Save new Files received on Telegram to Google Drive",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Drive, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Manuel",
+  "author_profile_url": "https://n8n.io/creators/automate-everything/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically save files from your Telegram Bot to Google Drive. Streamline backup, organize files, and boost collaboration with easy n8n setup. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, telegramTrigger, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "On new Telegram Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Upload File to GDrive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

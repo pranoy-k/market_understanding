@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f87d94a2",
+  "workflow_id": "f87d94a2",
+  "workflow_id_display": "f87d94a2",
+  "workflow_name": "Automatically Upload Scanned Documents to Nextcloud via ScanservJS",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "PDF",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Joachim Hummel",
+  "author_profile_url": "https://n8n.io/creators/jhummel/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate USB scanning to Nextcloud with ScanservJS and n8n. Schedule, retrieve, and upload scans every 5 minutes—ideal for home or office use!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Nextcloud",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

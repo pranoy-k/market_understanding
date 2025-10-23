@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/baab54a9",
+  "workflow_id": "baab54a9",
+  "workflow_id_display": "baab54a9",
+  "workflow_name": "Automated Workflow Backup System with Google Drive, Gmail and Discord Alerts'",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Discord, Email, Gmail, Google Drive",
+  "tags": [
+    "google🤖 gmail",
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "HoChien Chang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "firstWorkflowJson",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all n8n Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Backup to Google Drive2",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Backup to Google Drive4",
+      "type": "Process"
+    },
+    {
+      "name": "JsonToFile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CodeJsonToFile1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Data",
+      "type": "Process"
+    },
+    {
+      "name": "getDriveFileData",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

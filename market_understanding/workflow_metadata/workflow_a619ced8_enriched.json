@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a619ced8",
+  "workflow_id": "a619ced8",
+  "workflow_id_display": "a619ced8",
+  "workflow_name": "Googleform submission to create a Github issue bug report",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Discord, GitHub",
+  "tags": [
+    "google",
+    "discord"
+  ],
+  "author_name": "xerang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Form submissions into GitHub issues with AI-powered formatting and real-time Discord alerts. Streamline team workflow—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Google Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Add new Form submissions to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Github link to the sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out already posted issues",
+      "type": "Process"
+    },
+    {
+      "name": "format message /output parsing",
+      "type": "Process"
+    },
+    {
+      "name": "Add issue to GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Send notification to discord w link",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

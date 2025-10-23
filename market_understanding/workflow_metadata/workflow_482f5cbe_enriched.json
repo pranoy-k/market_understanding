@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/482f5cbe",
+  "workflow_id": "482f5cbe",
+  "workflow_id_display": "482f5cbe",
+  "workflow_name": "Add new products to Stripe when product added to Pipedrive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Stripe",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically sync new products from Pipedrive to Stripe. Effortlessly create and merge products and prices for seamless, unified data management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, pipedriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On product created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set item to only current product data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep only productId of created product",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create product in Stripe",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add created product Id to data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create price records in Stripe",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split prices to seperate items",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

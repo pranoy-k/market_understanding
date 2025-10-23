@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c339fb52",
+  "workflow_id": "c339fb52",
+  "workflow_id_display": "c339fb52",
+  "workflow_name": "Automate AI Image Generation & Telegram Delivery with Google Drive and Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Google Drive, Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google🤖 openai"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/samirsaci/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create AI images from Telegram prompts with OpenAI and LangChain. Auto-log to Google Sheets & Drive. Works with self-hosted or cloud n8n.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Image Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Ai model",
+      "type": "Process"
+    },
+    {
+      "name": "Create Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

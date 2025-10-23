@@ -1,0 +1,163 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bac50ff2",
+  "workflow_id": "bac50ff2",
+  "workflow_id_display": "bac50ff2",
+  "workflow_name": "Control Your n8n Instance Remotely with Telegram Bot Commands",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "65",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Arthur Braghetto",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Remotely control your self-hosted n8n instance via Telegram. Easily manage workflows, backups, and get real-time alerts—setup in minutes! Learn more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, errorTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "n8n Started Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cmd Parse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Executions Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Archived List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Activate Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Deactivate Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "List Workflows 1",
+      "type": "Process"
+    },
+    {
+      "name": "List Workflows 2",
+      "type": "Process"
+    },
+    {
+      "name": "List Workflows 3",
+      "type": "Process"
+    },
+    {
+      "name": "List Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Not Archived",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Workflow 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Workflow 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Workflow 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Workflows 4",
+      "type": "Process"
+    },
+    {
+      "name": "Find Workflow 4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Workflow Executions",
+      "type": "Process"
+    },
+    {
+      "name": "Executions Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflows Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "List Archived",
+      "type": "Process"
+    },
+    {
+      "name": "Only Archived",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Archived Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Archived",
+      "type": "Process"
+    },
+    {
+      "name": "Backup Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Backup Credentials",
+      "type": "Process"
+    },
+    {
+      "name": "Backup Tarball",
+      "type": "Process"
+    },
+    {
+      "name": "Cleanup Files",
+      "type": "Process"
+    },
+    {
+      "name": "Read File",
+      "type": "Data Output"
+    },
+    {
+      "name": "n8n Nodes",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

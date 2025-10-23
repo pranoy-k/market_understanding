@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/11097775",
+  "workflow_id": "11097775",
+  "workflow_id_display": "11097775",
+  "workflow_name": "Bulk File Upload to Google Drive with Folder Management",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Julian Kaiser",
+  "author_profile_url": "https://n8n.io/creators/jksr/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly upload and organize multiple files to Google Drive. Automated folder management, bulk uploads, and easy setup—streamline your workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, googleDrive, if"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Folder Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search specific folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Files",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Files for Upload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Files for New Folder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload to New Folder",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

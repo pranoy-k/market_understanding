@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f271d5f9",
+  "workflow_id": "f271d5f9",
+  "workflow_id_display": "f271d5f9",
+  "workflow_name": "Restore and Recover n8n Credentials from Google Drive Backups with Duplication Protection",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily restore n8n credentials from Google Drive backups with this self-hosted workflow. Prevent overwrites, streamline recovery, and ensure data security.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "On Click Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert Files To JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Restore N8n Credentials",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Get Credentials File",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Command Get All Cridentials",
+      "type": "Process"
+    },
+    {
+      "name": "JSON Formatting Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Cridentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ed7ee9f1",
+  "workflow_id": "ed7ee9f1",
+  "workflow_id_display": "ed7ee9f1",
+  "workflow_name": "Centralized n8n Error Management System with Automated Email Alerts via Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML For Trigger Error",
+      "type": "Process"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "N8n Get Error Handler",
+      "type": "Process"
+    },
+    {
+      "name": "N8n Get All Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "N8n Update Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Set Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML For Execution Error",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

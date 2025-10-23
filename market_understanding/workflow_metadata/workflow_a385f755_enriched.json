@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a385f755",
+  "workflow_id": "a385f755",
+  "workflow_id_display": "a385f755",
+  "workflow_name": "Sync tasks data between Notion and Asana",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync tasks and updates between Notion and Asana in real time. Ensure both platforms stay updated—learn how easy setup can be!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, notion, if"
+  ],
+  "nodes": [
+    {
+      "name": "On update",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get unique tasks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Determine",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update task",
+      "type": "Process"
+    },
+    {
+      "name": "Create task",
+      "type": "Process"
+    },
+    {
+      "name": "Get tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Find tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Update deadline",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

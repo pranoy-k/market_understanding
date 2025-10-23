@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cadb717a",
+  "workflow_id": "cadb717a",
+  "workflow_id_display": "cadb717a",
+  "workflow_name": "AI Customer feedback sentiment analysis",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Google Analytics, Google Sheets, OpenAI, RSS",
+  "tags": [],
+  "author_name": "MilanWR",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Submit form with customer feedback",
+      "type": "Trigger"
+    },
+    {
+      "name": "Classify feedback with OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Add customer feedback to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge sentiment with form content",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

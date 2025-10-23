@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "name": "Bitbucket Trigger",
+      "type": "n8n-nodes-base.bitbucketTrigger",
+      "position": [
+        880,
+        390
+      ],
+      "webhookId": "97ca8044-5835-4547-801d-c27dd7f10c2d",
+      "parameters": {
+        "events": [
+          "repo:push"
+        ],
+        "resource": "repository",
+        "repository": "test"
+      },
+      "credentials": {
+        "bitbucketApi": "bitbucket_creds"
+      },
+      "typeVersion": 1,
+      "id": "9b704c5e25ae6f10"
+    }
+  ],
+  "connections": {},
+  "id": "0d9e45e721580a02",
+  "name": "Receive updates for Bitbucket events",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

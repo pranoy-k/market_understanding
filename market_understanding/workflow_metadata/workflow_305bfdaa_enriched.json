@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/305bfdaa",
+  "workflow_id": "305bfdaa",
+  "workflow_id_display": "305bfdaa",
+  "workflow_name": "Optimize & Update Printify Title and Description Workflow",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Google Sheets",
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Brand Guidelines + Custom Instructions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Number of Options",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remember Options",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Title and Desc",
+      "type": "Process"
+    },
+    {
+      "name": "GS - Add Product Option",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Product Option",
+      "type": "Data Output"
+    },
+    {
+      "name": "Printify - Get Shops",
+      "type": "Data Input"
+    },
+    {
+      "name": "Printify - Get Products",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split - id, title, desc",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Printify - Update Product",
+      "type": "Data Input"
+    },
+    {
+      "name": "Printify - Get Shops1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculate Options",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

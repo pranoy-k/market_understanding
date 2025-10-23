@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2cd4e07d",
+  "workflow_id": "2cd4e07d",
+  "workflow_id_display": "2cd4e07d",
+  "workflow_name": "Generate Conversational Twitter/X Threads with GPT-4o AI",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "joseph",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate engaging Twitter/X threads with GPT-4o and n8n. Instantly create, customize, and publish narrative threads—ideal for creators and brands. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "first tweet",
+      "type": "Process"
+    },
+    {
+      "name": "hilo",
+      "type": "Process"
+    },
+    {
+      "name": "Agente X",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

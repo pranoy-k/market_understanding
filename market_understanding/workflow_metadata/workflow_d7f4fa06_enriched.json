@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d7f4fa06",
+  "workflow_id": "d7f4fa06",
+  "workflow_id_display": "d7f4fa06",
+  "workflow_name": "Score LinkedIn Profiles Against Your ICP with Airtop",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Airtop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Score LinkedIn profiles against your ICP by analyzing AI interest, technical depth, and seniority. Prioritize leads with enriched profiles and clear scoring—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, airtop, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ICP PersonScoring",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

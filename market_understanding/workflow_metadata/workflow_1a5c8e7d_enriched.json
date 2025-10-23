@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1a5c8e7d",
+  "workflow_id": "1a5c8e7d",
+  "workflow_id_display": "1a5c8e7d",
+  "workflow_name": "Validate and Create LEDGERS Contacts from Google Sheets with Error Handling",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "LEDGERS",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Sheets contacts with LEDGERS using automated validation, real-time error handling, and flexible field mapping. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, code, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Sheet Contact Creation",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace Me",
+      "type": "Process"
+    },
+    {
+      "name": "LEDGERS",
+      "type": "Process"
+    },
+    {
+      "name": "Email & Mobile Format Checker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mobile Formatter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Created Time",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

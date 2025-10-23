@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/74642523",
+  "workflow_id": "74642523",
+  "workflow_id_display": "74642523",
+  "workflow_name": "Grist: On row confirmed, create row in other table",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Manually confirm rows in Grist to trigger n8n workflows for precise, one-time record transfers—no duplicates, easy setup, and full control. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, stickyNote, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Row",
+      "type": "Process"
+    },
+    {
+      "name": "get existing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

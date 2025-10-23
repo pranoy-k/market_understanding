@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/edb31cdc",
+  "workflow_id": "edb31cdc",
+  "workflow_id_display": "edb31cdc",
+  "workflow_name": "AI Data Analyst Agent for Spreadsheets with NocoDB",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [],
+  "author_name": "Derek Cheung",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn spreadsheet data into an AI-powered knowledge base with NocoDB. Enjoy natural language searches, in-depth insights, and easy setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract_Columns",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "NocoDB",
+      "type": "Process"
+    },
+    {
+      "name": "nocodb_extract_table",
+      "type": "Data Input"
+    },
+    {
+      "name": "Data Analyst Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

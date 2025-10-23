@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7064d9e3",
+  "workflow_id": "7064d9e3",
+  "workflow_id_display": "7064d9e3",
+  "workflow_name": "Telegram chat with PDF",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "OpenAI, PDF, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "felipe biava cataneo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Change to application/pdf",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Limit to 1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

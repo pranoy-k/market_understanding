@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/46353cc8",
+  "workflow_id": "46353cc8",
+  "workflow_id_display": "46353cc8",
+  "workflow_name": "Monitor USDT ERC-20 Wallet Balance with Etherscan and Telegram Notifications",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "FORK SOFTWARE TECHNOLOGIES INC.",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate USDT ERC-20 wallet monitoring with 5-min checks, customizable filters, and real-time Telegram alerts—no API authentication needed.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "userData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "balanceChecker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Balance Every 5 Minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch USDT Balance from Etherscan",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

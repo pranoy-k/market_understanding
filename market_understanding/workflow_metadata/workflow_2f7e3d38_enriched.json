@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f7e3d38",
+  "workflow_id": "2f7e3d38",
+  "workflow_id_display": "2f7e3d38",
+  "workflow_name": "Automate Face Swapping for GIFs with Fal.run AI and Google Services",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate AI face swaps in GIFs using Google Sheets—no coding needed. Fast, scalable, and perfect for creators. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get File image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Url image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Process"
+    },
+    {
+      "name": "Create Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

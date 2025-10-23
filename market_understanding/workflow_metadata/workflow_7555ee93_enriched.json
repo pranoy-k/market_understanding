@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7555ee93",
+  "workflow_id": "7555ee93",
+  "workflow_id_display": "7555ee93",
+  "workflow_name": "Auto Meeting Summarizer with Google Drive, OpenAI Whisper & GPT-4 to Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with dateTime, openAi, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Looking for uploading file",
+      "type": "Trigger"
+    },
+    {
+      "name": "Transcribe the file",
+      "type": "Process"
+    },
+    {
+      "name": "Create summary",
+      "type": "Process"
+    },
+    {
+      "name": "Save the summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download file",
+      "type": "Process"
+    },
+    {
+      "name": "Get date",
+      "type": "Process"
+    },
+    {
+      "name": "Format date",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

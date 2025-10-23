@@ -1,0 +1,252 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/790340ba",
+  "workflow_id": "790340ba",
+  "workflow_id_display": "790340ba",
+  "workflow_name": "AI YouTube Playlist & Video Analyst Chatbot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "60",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "dmr",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform YouTube playlists or videos into chat-ready AI knowledge bases. Instantly get summaries, key takeaways & insights—no viewing required. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, redis, textSplitterRecursiveCharacterTextSplitter"
+  ],
+  "nodes": [
+    {
+      "name": "Chat",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Handle Queries",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize & Analyze Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini1",
+      "type": "Process"
+    },
+    {
+      "name": "Video Titles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Full Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Message Intent",
+      "type": "Process"
+    },
+    {
+      "name": "Update Context Intent",
+      "type": "Process"
+    },
+    {
+      "name": "Get Previous Context Intent",
+      "type": "Process"
+    },
+    {
+      "name": "Process Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory3",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "Numb of Videos",
+      "type": "Process"
+    },
+    {
+      "name": "Default Intent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Fields for Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Context Process Done1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model8",
+      "type": "Process"
+    },
+    {
+      "name": "Playlist HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "YouTube Transcript1",
+      "type": "Process"
+    },
+    {
+      "name": "Video HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Title and Desc",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Concatenate1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Playlist Videos Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings Google Gemini2",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store3",
+      "type": "Process"
+    },
+    {
+      "name": "Answer questions with a vector store",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store4",
+      "type": "Process"
+    },
+    {
+      "name": "Answer questions with a vector store1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini4",
+      "type": "Process"
+    },
+    {
+      "name": "Count Content",
+      "type": "Process"
+    },
+    {
+      "name": "Update Context Intent1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

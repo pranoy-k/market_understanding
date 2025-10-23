@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/76f7a277",
+  "workflow_id": "76f7a277",
+  "workflow_id_display": "76f7a277",
+  "workflow_name": "Automated Google Drive to Facebook Ads: One-Click Video Marketing Workflow",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Facebook, Google Drive",
+  "tags": [
+    "google",
+    "facebook"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform Google Drive videos into Facebook ad creatives with automated workflows. Boost efficiency, accelerate campaigns, and streamline marketing.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Drive Videos",
+      "type": "Process"
+    },
+    {
+      "name": "Download Video",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Video to FB",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Ad Creative",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

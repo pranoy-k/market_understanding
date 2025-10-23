@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/324e2743",
+  "workflow_id": "324e2743",
+  "workflow_id_display": "324e2743",
+  "workflow_name": "Store and send information about the weather for any city via SMS",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "SMS",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline your blogpost workflow with automated content triggers and tool integration. Boost productivity and keep your posts timely and consistent.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtable, set, openWeatherMap"
+  ],
+  "nodes": [
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

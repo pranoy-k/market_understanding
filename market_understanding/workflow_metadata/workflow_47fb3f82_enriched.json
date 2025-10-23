@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/47fb3f82",
+  "workflow_id": "47fb3f82",
+  "workflow_id_display": "47fb3f82",
+  "workflow_name": "Send Jira task notifications to Telegram user via Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Jira, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Abolfazl Akbarzadeh",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate real-time Jira notifications via Telegram. Instantly alert your team to new issues with easy setup, seamless integration, and improved workflow.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "telegram account",
+      "type": "Data Processing"
+    },
+    {
+      "name": "jira-webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

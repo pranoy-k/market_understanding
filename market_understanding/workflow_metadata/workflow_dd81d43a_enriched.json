@@ -1,0 +1,244 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dd81d43a",
+  "workflow_id": "dd81d43a",
+  "workflow_id_display": "dd81d43a",
+  "workflow_name": "Build a Multi-functional Telegram Bot with Gemini, RAG PDF Search & Google Suite",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "65",
+  "tools_integrations": "PDF, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "pdf",
+    "gemini"
+  ],
+  "author_name": "Issam AGGOUR",
+  "author_profile_url": "https://n8n.io/creators/devgor/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create a powerful AI-powered Telegram assistant: automate Google Suite, search PDFs, use voice/text commands, and access real-time web info. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleDocs, googleCalendar, googleCalendarTool"
+  ],
+  "nodes": [
+    {
+      "name": "Listen for incoming events",
+      "type": "Trigger"
+    },
+    {
+      "name": "Combine content and set properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert audio to text",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Call Replicate API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Replicate Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Brave Search 2",
+      "type": "Process"
+    },
+    {
+      "name": "Brave Search",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar Next Holiday",
+      "type": "Process"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini for RAG Answer",
+      "type": "Process"
+    },
+    {
+      "name": "Refresh collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search PDFs",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral Signed URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mistral DOC OCR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Get PDF",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Think1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time1",
+      "type": "Process"
+    },
+    {
+      "name": "Brave Search1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar Create Event1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar Next Holiday1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent3",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb MCP",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb Tools",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb MCP1",
+      "type": "Process"
+    },
+    {
+      "name": "Airbnb Tools1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive2",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Call Replicate API",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

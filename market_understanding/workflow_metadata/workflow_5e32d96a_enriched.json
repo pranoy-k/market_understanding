@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e32d96a",
+  "workflow_id": "5e32d96a",
+  "workflow_id_display": "5e32d96a",
+  "workflow_name": "Convert HTML to PDF and Compress Files with CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert and compress HTML to PDF in n8n using customJS’s PDF Toolkit. Ideal for self-hosted setups—learn how to automate document workflows!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, html2Pdf, CompressPDF"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Compress PDF file",
+      "type": "Process"
+    },
+    {
+      "name": "Compress PDF file1",
+      "type": "Process"
+    },
+    {
+      "name": "Set PDF URL",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

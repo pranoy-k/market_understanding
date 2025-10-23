@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f7cff926",
+  "workflow_id": "f7cff926",
+  "workflow_id_display": "f7cff926",
+  "workflow_name": "Twitter Keyword & Public-Figure Monitor with Automated Airtable Archiving",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Airtable, Facebook, Twitter",
+  "tags": [
+    "twitter",
+    "Scheduled"
+  ],
+  "author_name": "Roshan Ramani",
+  "author_profile_url": "https://n8n.io/creators/rawsun007/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor and archive tweets by keyword to Airtable with daily automation, rich metadata, and zero duplicates. Customizable and easy to use—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "8 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set_AT_list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set twitter data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get airtable list",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append new tweets to airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Twitter",
+      "type": "Process"
+    },
+    {
+      "name": "Leave only new tweets",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

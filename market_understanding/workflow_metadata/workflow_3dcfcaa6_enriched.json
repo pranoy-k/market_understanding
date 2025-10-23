@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3dcfcaa6",
+  "workflow_id": "3dcfcaa6",
+  "workflow_id_display": "3dcfcaa6",
+  "workflow_name": "🤖 Telegram Messaging Agent for Text_Audio_Images",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "OpenAI, Telegram, Webhook",
+  "tags": [
+    "Webhook🤖 AI",
+    "Telegram"
+  ],
+  "author_name": "Joseph LePage",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Image Schema",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram Token & Webhooks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Image",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Recording",
+      "type": "Process"
+    },
+    {
+      "name": "gpt-4o-mini1",
+      "type": "Process"
+    },
+    {
+      "name": "Listen for Telegram Events",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Webhook Test URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Telegram Webhook Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Webhook Production URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Image File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File to Base64",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

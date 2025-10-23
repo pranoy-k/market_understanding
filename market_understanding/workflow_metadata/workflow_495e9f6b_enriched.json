@@ -1,0 +1,113 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/495e9f6b",
+  "workflow_id": "495e9f6b",
+  "workflow_id_display": "495e9f6b",
+  "workflow_name": "Generate Instagram Content from Top Trends with AI Image Generation",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API, Instagram, Telegram",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "mustafa kendigÃ¼zel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Instagram params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rapid Api params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replicate params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Image and give the content",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Content And Generate Instagram Caption",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "filter the image content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get top trends on instagram #blender3d",
+      "type": "Data Input"
+    },
+    {
+      "name": "get top trends on instagram #isometric",
+      "type": "Data Input"
+    },
+    {
+      "name": "merge the array content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Data on Database Is Exist",
+      "type": "Data Output"
+    },
+    {
+      "name": "insert data on db",
+      "type": "Data Output"
+    },
+    {
+      "name": "Prepare data on Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Check Status Of Media Before Uploaded",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Media on Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Check status of post",
+      "type": "Process"
+    },
+    {
+      "name": "filter the image content-2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate image on flux",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

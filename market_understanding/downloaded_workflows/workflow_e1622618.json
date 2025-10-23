@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "name": "IMAP Email",
+      "type": "n8n-nodes-base.emailReadImap",
+      "position": [
+        760,
+        400
+      ],
+      "parameters": {
+        "options": {
+          "allowUnauthorizedCerts": false
+        }
+      },
+      "credentials": {
+        "imap": "imap_creds"
+      },
+      "typeVersion": 1,
+      "id": "7a9689634f5d8e26"
+    }
+  ],
+  "connections": {},
+  "id": "a4db15521c277b30",
+  "name": "Receive email updates via IMAP",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

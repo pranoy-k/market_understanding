@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2e9d4be2",
+  "workflow_id": "2e9d4be2",
+  "workflow_id_display": "2e9d4be2",
+  "workflow_name": "Create Character-Consistent Images with FLUX Kontext & Post to Social via Upload Post",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Eduard",
+  "author_profile_url": "https://n8n.io/creators/eduard/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform and share images across multiple scenes with FLUX.1 Kontext—maintain character consistency and auto-post to all your social platforms.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Number of Steps",
+      "type": "Data Processing"
+    },
+    {
+      "name": "All Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Current Step",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check FLUX status",
+      "type": "Data Input"
+    },
+    {
+      "name": "FLUX Kontext",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File from GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Download Initial Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Run FLUX",
+      "type": "Process"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Post",
+      "type": "Process"
+    },
+    {
+      "name": "Image to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c3fdfbb3",
+  "workflow_id": "c3fdfbb3",
+  "workflow_id_display": "c3fdfbb3",
+  "workflow_name": "Generate Audio from Text Scripts using Self-Hosted Bark Model and Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, Google Drive",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Flavien",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Generate lifelike audio from Google Drive text scripts with a secure, free, local Bark model. Fast, accurate, and 100% API-free. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start: External Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start: Manual Test",
+      "type": "Trigger"
+    },
+    {
+      "name": "Test Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Script",
+      "type": "Data Output"
+    },
+    {
+      "name": "Aggregate Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Scripts",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Scripts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Script",
+      "type": "Process"
+    },
+    {
+      "name": "Generate WAV",
+      "type": "Process"
+    },
+    {
+      "name": "Read Audio",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Audio",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

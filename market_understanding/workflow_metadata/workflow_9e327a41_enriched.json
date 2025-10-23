@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e327a41",
+  "workflow_id": "9e327a41",
+  "workflow_id_display": "9e327a41",
+  "workflow_name": "Sync Zendesk tickets to Slack thread",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically create Slack threads for new Zendesk tickets and sync ticket comments as Slack replies. Streamline team collaboration—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with set, slack, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Update ticket",
+      "type": "Process"
+    },
+    {
+      "name": "On new Zendesk ticket",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

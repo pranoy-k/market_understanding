@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/634bbdc6",
+  "workflow_id": "634bbdc6",
+  "workflow_id_display": "634bbdc6",
+  "workflow_name": "AI-Powered HR Interview System with BeyondPresence",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "M Shehroz Sajjad",
+  "author_profile_url": "https://n8n.io/creators/mshehrozsajjad/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate candidate screening with AI interviewers for objective, 24/7 assessments. Fast setup, Google Sheets integration, and efficient HR workflows—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, beyondPresence, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "▶️ Click to Start Setup",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analyze Interview",
+      "type": "Process"
+    },
+    {
+      "name": "Save Agent Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "📝 Your Job Description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Interview Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Interview Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Receive Interview Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Confirm Receipt",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format for Sheets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data checks",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

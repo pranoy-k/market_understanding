@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ee2909ea",
+  "workflow_id": "ee2909ea",
+  "workflow_id_display": "ee2909ea",
+  "workflow_name": "Time Tracking with Notion and iOS shortcut",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "David",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track work hours on iPhone with an n8n workflow, Notion integration, and iOS shortcut. Easy setup, instant notifications—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set Break Duration",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - End time already tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - End time tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Start time not yet tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Start not yet tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Break time tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Break time updated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Start time already tracked",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Message - Start time already tracked1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new page",
+      "type": "Process"
+    },
+    {
+      "name": "Update page with end date",
+      "type": "Process"
+    },
+    {
+      "name": "Update break duration for current day",
+      "type": "Process"
+    },
+    {
+      "name": "Set break duration for current day",
+      "type": "Process"
+    },
+    {
+      "name": "Get notion page by date",
+      "type": "Process"
+    },
+    {
+      "name": "Get notion page with todays date",
+      "type": "Process"
+    },
+    {
+      "name": "Get notion page with todays date1",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook - Track Time",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

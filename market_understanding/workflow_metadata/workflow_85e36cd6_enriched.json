@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/85e36cd6",
+  "workflow_id": "85e36cd6",
+  "workflow_id_display": "85e36cd6",
+  "workflow_name": "Automate Actions After PDF Generation with PDFMonkey",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "Vincent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate actions after PDFMonkey PDF generation in n8n. Instantly email, store, or integrate files with seamless setup, customization, and support.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On PDFMonkey generation process end",
+      "type": "Trigger"
+    },
+    {
+      "name": "On success: download the PDF file",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

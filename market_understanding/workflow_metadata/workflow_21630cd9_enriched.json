@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21630cd9",
+  "workflow_id": "21630cd9",
+  "workflow_id_display": "21630cd9",
+  "workflow_name": "Automated daily workflow backup to GitHub",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Hugo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up n8n workflows daily to GitHub. Enjoy automated version control, secure storage, and fast disaster recovery. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Commit date & file name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List files from repo",
+      "type": "Process"
+    },
+    {
+      "name": "Update file",
+      "type": "Process"
+    },
+    {
+      "name": "Upload file",
+      "type": "Process"
+    },
+    {
+      "name": "Json file",
+      "type": "Data Output"
+    },
+    {
+      "name": "To base64",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

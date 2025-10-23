@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fd4d5b24",
+  "workflow_id": "fd4d5b24",
+  "workflow_id_display": "fd4d5b24",
+  "workflow_name": "Time logging on Clockify using Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Blockia Labs",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track and manage time in Slack with AI-powered Clockify integration. Log, update, or delete entries without leaving Slack. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, toolCalculator, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Slack Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Create New Time Entry",
+      "type": "Data Input"
+    },
+    {
+      "name": "GetClientsTool",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get All Time Entries",
+      "type": "Data Input"
+    },
+    {
+      "name": "Current loggedin user",
+      "type": "Data Input"
+    },
+    {
+      "name": "GetProjectsTool",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Time Entry",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Time Entry",
+      "type": "Data Input"
+    },
+    {
+      "name": "DateConverter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ClockifyBlockia",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

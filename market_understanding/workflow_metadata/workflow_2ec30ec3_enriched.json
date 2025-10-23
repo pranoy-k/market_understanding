@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2ec30ec3",
+  "workflow_id": "2ec30ec3",
+  "workflow_id_display": "2ec30ec3",
+  "workflow_name": "Organise Your Local File Directories With AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Local File Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Files and Folders to Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Files and Folders",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Move Files into Folders",
+      "type": "Process"
+    },
+    {
+      "name": "Get Suggestions to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI File Manager",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

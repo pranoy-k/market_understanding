@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9225f7b6",
+  "workflow_id": "9225f7b6",
+  "workflow_id_display": "9225f7b6",
+  "workflow_name": "Domain Outbound : Automate Lead Extraction, and Targeted Outreach",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Badr",
+  "author_profile_url": "https://n8n.io/creators/b4dr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate domain sales with Domain Outbound Machine: generate leads, extract emails, personalize outreach, and track results—all in one seamless n8n workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Email content",
+      "type": "Process"
+    },
+    {
+      "name": "Generate queries",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates2",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get website with Jina.ai",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "fomate queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Domain Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Markdown",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

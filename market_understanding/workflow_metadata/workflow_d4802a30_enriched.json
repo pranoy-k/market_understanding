@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d4802a30",
+  "workflow_id": "d4802a30",
+  "workflow_id_display": "d4802a30",
+  "workflow_name": "🚀 Local Multi-LLM Testing & Performance Tracker",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [],
+  "author_name": "Wildkick",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Data for Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add System Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run Model with Dunamic Inputs",
+      "type": "Process"
+    },
+    {
+      "name": "Save Results to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Models",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get timeDifference",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze LLM Response Metrics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Capture End Time",
+      "type": "Process"
+    },
+    {
+      "name": "Capture Start Time",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Model IDsto Run Separately",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LLM Response Analysis",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1911f03f",
+  "workflow_id": "1911f03f",
+  "workflow_id_display": "1911f03f",
+  "workflow_name": "Voice Activated Multi-Agent Demo for Vagent.io using Notion and Google Calendar",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Notion",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": "https://n8n.io/creators/octionic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly interact with a smart AI Supervisor via voice using the Vagent App—access custom workflows, manage tasks, and boost team productivity. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exclude Previews from Speech",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format output1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "calendarAgent",
+      "type": "Process"
+    },
+    {
+      "name": "taskAgent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Main Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notion Task Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Get calendar availability",
+      "type": "Data Input"
+    },
+    {
+      "name": "Book appointment",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Calendar Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/608d018c",
+  "workflow_id": "608d018c",
+  "workflow_id_display": "608d018c",
+  "workflow_name": "Update HubSpot when a new invoice is registered in Stripe",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "HubSpot, Slack, Stripe",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Slack notifications for new Stripe invoices and update HubSpot deals instantly. Boost accuracy and efficiency with seamless integration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, hubspot, stripeTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When Invoice Paid",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Deal to Paid",
+      "type": "Process"
+    },
+    {
+      "name": "Find Deal based on PO Number",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

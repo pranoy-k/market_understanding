@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21e3f060",
+  "workflow_id": "21e3f060",
+  "workflow_id_display": "21e3f060",
+  "workflow_name": "AI-Powered RAG Workflow For Stock Earnings Report Analysis",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Analytics, Google Drive, Google Sheets, OpenAI",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Mihai Farcas",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save Report to Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "List Of Files To Load (Google Sheets)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store (Retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini (retrieval)",
+      "type": "Process"
+    },
+    {
+      "name": "Download File From Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

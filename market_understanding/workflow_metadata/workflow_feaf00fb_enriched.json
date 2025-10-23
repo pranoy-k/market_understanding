@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/feaf00fb",
+  "workflow_id": "feaf00fb",
+  "workflow_id_display": "feaf00fb",
+  "workflow_name": "Enrich new Intercom users with contact details and more from ExactBuyer",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Mutasem",
+  "author_profile_url": "https://n8n.io/creators/mutasem/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly enrich Intercom contacts by auto-updating profiles with ExactBuyer data. Boost insights, accuracy, and engagement. Learn how to set up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "set key fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Could not find user",
+      "type": "Process"
+    },
+    {
+      "name": "On Webhook event from Intercom",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update data in Intercom",
+      "type": "Data Input"
+    },
+    {
+      "name": "Other event",
+      "type": "Process"
+    },
+    {
+      "name": "Intercom",
+      "type": "Process"
+    },
+    {
+      "name": "massage data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enrich user from ExactBuyer",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

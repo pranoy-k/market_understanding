@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d8b44ebf",
+  "workflow_id": "d8b44ebf",
+  "workflow_id_display": "d8b44ebf",
+  "workflow_name": "Search the Web with MCP-based Brave Search Engine on Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Perform web searches with Brave directly from Telegram using /brave—get fast, private results in chat. Easy setup, seamless and secure browsing!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with mcpClient, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Get Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Brave Tools",
+      "type": "Process"
+    },
+    {
+      "name": "Exec Brave tool",
+      "type": "Process"
+    },
+    {
+      "name": "Clean query",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

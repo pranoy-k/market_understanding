@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/292c965e",
+  "workflow_id": "292c965e",
+  "workflow_id_display": "292c965e",
+  "workflow_name": "SQL to XML export with XSL template formatting",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "xml"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export SQL data to well-formatted XML with XSLT. Automate workflow, ensure CORS compliance, and display data beautifully. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, xml, set"
+  ],
+  "nodes": [
+    {
+      "name": "Define file structure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Show 16 random products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Concatenate Items",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to XML",
+      "type": "Process"
+    },
+    {
+      "name": "Create HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get XSLT",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Request xsl template",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

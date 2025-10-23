@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/949a2ce8",
+  "workflow_id": "949a2ce8",
+  "workflow_id_display": "949a2ce8",
+  "workflow_name": "Low-code API for Flutterflow apps",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "http🗄"
+  ],
+  "author_name": "Matheus Weckwerth",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Trigger automation with an HTTP GET request, retrieve and aggregate customer data from your database, and seamlessly integrate it into FlutterFlow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "insert into variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Customer Datastore (n8n training)",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "On new flutterflow call",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to flutterflow",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

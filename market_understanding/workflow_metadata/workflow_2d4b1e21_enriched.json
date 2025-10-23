@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d4b1e21",
+  "workflow_id": "2d4b1e21",
+  "workflow_id_display": "2d4b1e21",
+  "workflow_name": "Spotify: Discover Weekly Archive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "JYLN",
+  "author_profile_url": "https://n8n.io/creators/trey/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly archive your Spotify Discover Weekly tracks to a custom playlist—no duplicates. Automate with n8n. Simple setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, spotify"
+  ],
+  "nodes": [
+    {
+      "name": "CRON",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

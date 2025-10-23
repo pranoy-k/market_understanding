@@ -1,0 +1,315 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1e2376cf",
+  "workflow_id": "1e2376cf",
+  "workflow_id_display": "1e2376cf",
+  "workflow_name": "API Schema Extractor",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "82",
+  "tools_integrations": "API, PDF",
+  "tags": [],
+  "author_name": "Polina Medvedieva",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Content Chunking @ 50k Chars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Embedding Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response Empty",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response OK",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Templates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query & Docs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract API Templates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query & Docs1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response OK1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response Empty1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Upload Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response OK2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response Scrape Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response No API Docs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Research Pending",
+      "type": "Data Output"
+    },
+    {
+      "name": "Research Result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Research Error",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Pending",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Error",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get API Operations",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Pending",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Error",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Extract",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Research",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Generate",
+      "type": "Data Output"
+    },
+    {
+      "name": "Web Search For API Schema",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scrape Webpage Contents",
+      "type": "Data Input"
+    },
+    {
+      "name": "Results to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Recursive Character Text Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Successful Runs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Document...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Store Document Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Google Gemini1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract API Operations",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search in Relevant Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Dupes",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Docs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Template to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Template...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Identify Service Products",
+      "type": "Data Input"
+    },
+    {
+      "name": "Embeddings Google Gemini2",
+      "type": "Process"
+    },
+    {
+      "name": "Search in Relevant Docs1",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Docs1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Template...1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Lists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Contruct JSON Schema",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Generate",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Research...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Extract...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Generate...",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Extract API Templates",
+    "Response No API Docs",
+    "Get API Operations",
+    "Web Search For API Schema",
+    "Has API Documentation?",
+    "Extract API Operations"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

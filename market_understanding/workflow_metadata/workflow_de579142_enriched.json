@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de579142",
+  "workflow_id": "de579142",
+  "workflow_id_display": "de579142",
+  "workflow_name": "Get all the contacts from GetResponse and update them",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline customer support with AI-driven email monitoring, automated ticket creation, Slack notifications, and smart workflows for faster issue resolution.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, noOp, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "GetResponse",
+      "type": "Process"
+    },
+    {
+      "name": "GetResponse1",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

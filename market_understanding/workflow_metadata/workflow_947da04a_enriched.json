@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/947da04a",
+  "workflow_id": "947da04a",
+  "workflow_id_display": "947da04a",
+  "workflow_name": "Convert PDF Documents to AI Podcasts with Google Gemini and Text-to-Speech",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "PDF",
+  "tags": [
+    "google",
+    "pdf",
+    "gemini"
+  ],
+  "author_name": "Mathis",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert PDF documents into natural-sounding podcasts with Google Gemini AI and TTS. Repurpose content into engaging audio. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "🎬 Start: Upload PDF File",
+      "type": "Trigger"
+    },
+    {
+      "name": "💾 Save Podcast Audio",
+      "type": "Data Output"
+    },
+    {
+      "name": "📄 Extract Text from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "🤖 Generate Podcast Script",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Flash 2.0",
+      "type": "Process"
+    },
+    {
+      "name": "⚙️ Prepare TTS Request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🎙️ Convert Text to Speech With Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "🔧 Process Audio Response",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Generate Podcast Script"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

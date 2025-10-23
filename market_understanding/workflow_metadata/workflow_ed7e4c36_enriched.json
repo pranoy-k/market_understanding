@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ed7e4c36",
+  "workflow_id": "ed7e4c36",
+  "workflow_id_display": "ed7e4c36",
+  "workflow_name": "Collect LinkedIn Profiles with AI Processing using SerpAPI, OpenAI, and NocoDB",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API, Excel, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "excel🤖 openai"
+  ],
+  "author_name": "Askan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Discard meta data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search parameter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Company name & followers",
+      "type": "Process"
+    },
+    {
+      "name": "Google search w/ SerpAPI",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn profiles in Excel for download",
+      "type": "Data Output"
+    },
+    {
+      "name": "Turn search results into individual items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate final data via merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store data in a NocoDB table",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Google search w/ SerpAPI",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

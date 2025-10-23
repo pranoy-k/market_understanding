@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a7b95e08",
+  "workflow_id": "a7b95e08",
+  "workflow_id_display": "a7b95e08",
+  "workflow_name": "Automate RSS Content with AI: Summarize, Notify & Archive",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Discord, Google Sheets, RSS",
+  "tags": [
+    "discord",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Victor",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate RSS feed monitoring with n8n: AI summaries, Discord digests, Google Sheets storage. No-code setup for tech news, curation & content updates!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, aggregate, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Tech News RSS Feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save News",
+      "type": "Data Output"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "filterYesterdayNews",
+      "type": "Data Processing"
+    },
+    {
+      "name": "aggregateNews",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

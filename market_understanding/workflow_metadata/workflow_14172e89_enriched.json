@@ -1,0 +1,123 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/14172e89",
+  "workflow_id": "14172e89",
+  "workflow_id_display": "14172e89",
+  "workflow_name": "Build a Smart Knowledge Assistant using GPT-4o-mini, RAG and RLHF on Telegram with MongoDB",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "MongoDB, OpenAI, RSS, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "mongodb"
+  ],
+  "author_name": "NovaNode",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Boost support efficiency with an AI-powered assistant for internal teams—auto-index Google Docs in MongoDB and answer queries via Telegram with real-time feedback.",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with manualTrigger, googleDocs, memoryMongoDbChat"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive Message on Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set feedback fields for collection storage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Embeddings Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Embeddings Generator1",
+      "type": "Process"
+    },
+    {
+      "name": "Knowledge Base Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Document Section Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Document Chunker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Docs Importer",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDB Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Positive Interactions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Documentation",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Negative Interactions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Map feedback data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Submit embedded chat feedback",
+      "type": "Data Output"
+    },
+    {
+      "name": "MongoDB Documentation Inserter",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

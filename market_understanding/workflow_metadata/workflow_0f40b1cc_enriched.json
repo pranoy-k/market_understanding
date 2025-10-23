@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f40b1cc",
+  "workflow_id": "0f40b1cc",
+  "workflow_id_display": "0f40b1cc",
+  "workflow_name": "Sync Zendesk tickets with subsequent comments to Asana tasks",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly sync Zendesk tickets with Asana tasks—auto-create tasks and sync comments for efficient, real-time team collaboration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, zendesk, if"
+  ],
+  "nodes": [
+    {
+      "name": "Determine",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Create task",
+      "type": "Process"
+    },
+    {
+      "name": "Update ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Create comment on existing task",
+      "type": "Process"
+    },
+    {
+      "name": "On new Zendesk ticket",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

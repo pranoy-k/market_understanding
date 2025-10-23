@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/20edf0fd",
+  "workflow_id": "20edf0fd",
+  "workflow_id_display": "20edf0fd",
+  "workflow_name": "Classify Emails & Extract Structured Data from Job Applications with GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Sleak",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly organize job applications with AI-powered email classification, data extraction, and seamless CRM integration. Streamline your HR workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with textClassifier, lmChatOpenAi, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model 2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Extract variables - email & attachment",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract data from attachment",
+      "type": "Data Output"
+    },
+    {
+      "name": "Workflow 2",
+      "type": "Process"
+    },
+    {
+      "name": "Workflow 3",
+      "type": "Process"
+    },
+    {
+      "name": "workflow 4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

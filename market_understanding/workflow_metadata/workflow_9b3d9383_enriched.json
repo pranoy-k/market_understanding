@@ -1,0 +1,147 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b3d9383",
+  "workflow_id": "9b3d9383",
+  "workflow_id_display": "9b3d9383",
+  "workflow_name": "Build a Tax Code Assistant with Qdrant, Mistral.ai and OpenAI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Facebook, OpenAI, PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Build a smarter knowledgebase assistant with n8n: split documents by chapters and sections, use metadata tagging, and boost AI chatbot accuracy with Qdrant.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with textSplitterRecursiveCharacterTextSplitter, stickyNote, compression"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract From Chapter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map To Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Content Chunking @ 50k Chars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Search Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Ask Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Mistral Cloud",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Tax Code Zip File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Zip Files",
+      "type": "Process"
+    },
+    {
+      "name": "Files as Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract PDF Contents",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Mistral Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Section...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sections To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Valid Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Use Qdrant Search API1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Use Qdrant Scroll API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Ask Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Search Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Use Qdrant Search API1",
+    "Use Qdrant Scroll API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

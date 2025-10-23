@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7d1c7096",
+  "workflow_id": "7d1c7096",
+  "workflow_id_display": "7d1c7096",
+  "workflow_name": "Create Snapshot of Contabo VPS instances on a daily basis",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "DUBCOM",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily VPS backups on Contabo with hands-free snapshot management. Quick setup, secure retention, and reliable data protection. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set snapshot attributes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Credential",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set snapshot attributes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Authorization",
+      "type": "Data Input"
+    },
+    {
+      "name": "List instances",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UUID",
+      "type": "Data Input"
+    },
+    {
+      "name": "TRACE ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "List snapshots",
+      "type": "Data Input"
+    },
+    {
+      "name": "UUID1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Delete existing snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a new snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a new snapshot1",
+      "type": "Data Input"
+    },
+    {
+      "name": "UUID2",
+      "type": "Data Input"
+    },
+    {
+      "name": "UUID3",
+      "type": "Data Input"
+    },
+    {
+      "name": "UUID4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Formatted Date",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

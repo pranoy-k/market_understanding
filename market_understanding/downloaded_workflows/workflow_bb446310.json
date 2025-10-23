@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "n8n-nodes-base.dropcontact",
+      "position": [
+        650,
+        300
+      ],
+      "parameters": {
+        "email": "={{$json[\"email\"]}}",
+        "options": {
+          "siren": true,
+          "language": "fr"
+        },
+        "additionalFields": {
+          "company": "={{$json[\"companyName\"]}}",
+          "website": "={{$json[\"website\"]}}",
+          "linkedin": "={{$json[\"LinkedIn\"]}}",
+          "full_name": "={{$json[\"fullName\"]}}",
+          "last_name": "={{$json[\"lastName\"]}}",
+          "first_name": "={{$json[\"firstName\"]}}"
+        }
+      },
+      "credentials": {
+        "dropcontactApi": {
+          "id": "6",
+          "name": ""
+        }
+      },
+      "typeVersion": 1,
+      "id": "757f3e99d05c35a0"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "range": "A:K",
+        "options": {
+          "continue": false
+        },
+        "sheetId": "",
+        "authentication": "oAuth2"
+      },
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "7",
+          "name": "Google Sheets account"
+        }
+      },
+      "typeVersion": 1,
+      "id": "0d5471e1b433e442"
+    },
+    {
+      "name": "Lemlist",
+      "type": "n8n-nodes-base.lemlist",
+      "position": [
+        850,
+        300
+      ],
+      "parameters": {
+        "email": "={{$node[\"Dropcontact\"].json[\"email\"][0][\"email\"]}}",
+        "resource": "lead",
+        "campaignId": "",
+        "additionalFields": {
+          "lastName": "={{$node[\"Dropcontact\"].json[\"last_name\"]}}",
+          "firstName": "={{$node[\"Dropcontact\"].json[\"first_name\"]}}",
+          "companyName": "={{$node[\"Dropcontact\"].json[\"company\"]}}"
+        }
+      },
+      "credentials": {
+        "lemlistApi": {
+          "id": "9",
+          "name": "Lemlist account"
+        }
+      },
+      "typeVersion": 1,
+      "id": "0b7e539a16c9d621"
+    }
+  ],
+  "connections": {
+    "Dropcontact": {
+      "main": [
+        [
+          {
+            "node": "Lemlist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Dropcontact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "85c3147a8cbcdda1",
+  "name": "Enrich Google Sheet contacts with Dropcontact",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "google"
+  ]
+}

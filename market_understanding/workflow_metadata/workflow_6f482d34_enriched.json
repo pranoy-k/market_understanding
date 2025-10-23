@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f482d34",
+  "workflow_id": "6f482d34",
+  "workflow_id_display": "6f482d34",
+  "workflow_name": "Export PDF invoices from SmartBill to Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Google Drive, PDF",
+  "tags": [
+    "google",
+    "api",
+    "pdf"
+  ],
+  "author_name": "Codez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate invoice retrieval from Smartbill API, save PDFs to Google Drive by last month’s date, and ensure structured filenames—easy, efficient, and secure.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "SetData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Folder ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Smartbill get invoice pdf",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set mime",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Default Folder Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Drive Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create Drive Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Set the loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload file to Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

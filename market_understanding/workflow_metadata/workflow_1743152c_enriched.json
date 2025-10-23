@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1743152c",
+  "workflow_id": "1743152c",
+  "workflow_id_display": "1743152c",
+  "workflow_name": "Airtable Batch Update / Insert rows (send faster + save API call requests)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Simon Mayerhofer",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Batch update or insert Airtable rows in groups of 10 to boost performance and cut API usage. Easy setup and custom field mapping—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, debugHelper"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Subprocess",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "upsert",
+      "type": "Data Input"
+    },
+    {
+      "name": "random data",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "batch 10",
+      "type": "Data Processing"
+    },
+    {
+      "name": "insert",
+      "type": "Data Input"
+    },
+    {
+      "name": "retry request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "retry request1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "retry request2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "update",
+      "type": "Data Input"
+    },
+    {
+      "name": "Airtable Batch",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "return merged output",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/be857d2d",
+  "workflow_id": "be857d2d",
+  "workflow_id_display": "be857d2d",
+  "workflow_name": "Low Stock & Sold Out Watcher for Shopify",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Discord, Shopify",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "siyad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Shopify inventory monitoring with n8n—get real-time alerts, detailed product info, and timely Discord notifications for efficient stock management.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with graphql, httpRequest, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "GraphQL1- shopify",
+      "type": "Process"
+    },
+    {
+      "name": "GraphQL - shopify",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

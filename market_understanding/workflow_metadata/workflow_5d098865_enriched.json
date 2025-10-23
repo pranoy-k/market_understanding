@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5d098865",
+  "workflow_id": "5d098865",
+  "workflow_id_display": "5d098865",
+  "workflow_name": "Health Check Websites with Google Sheets & Telegram Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Google Sheets, Slack, Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Hugues Stock",
+  "author_profile_url": "https://n8n.io/creators/hpstock/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor website uptime with scheduled health checks from Google Sheets and get instant outage alerts via Telegram, Slack, or Email. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Urls",
+      "type": "Data Output"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Check URL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

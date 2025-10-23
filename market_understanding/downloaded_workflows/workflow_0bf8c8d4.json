@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "AWS SES",
+      "type": "n8n-nodes-base.awsSes",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "body": "This is a sample message body in an email\n",
+        "subject": "n8n Rocks",
+        "fromEmail": "n8n@n8n.io",
+        "toAddresses": [
+          "user@example.com",
+          "user2@example.com"
+        ],
+        "additionalFields": {}
+      },
+      "credentials": {
+        "aws": "aws"
+      },
+      "typeVersion": 1,
+      "id": "07e042b09146c499"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "AWS SES",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "b7328ce9fff4e75f",
+  "name": "Send an email using AWS SES",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

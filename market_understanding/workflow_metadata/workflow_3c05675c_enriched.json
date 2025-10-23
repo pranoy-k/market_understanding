@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3c05675c",
+  "workflow_id": "3c05675c",
+  "workflow_id_display": "3c05675c",
+  "workflow_name": "Automate WooCommerce SEO with Yoast & AI-Powered Meta Tag Generation for FREE",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Facebook, Google Sheets",
+  "tags": [
+    "google",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WooCommerce SEO meta titles and descriptions with n8n. Use Google Sheets, Gemini 2.0 Flash (free), and Yoast for fast, consistent optimization.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, wooCommerce"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get product ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get product",
+      "type": "Process"
+    },
+    {
+      "name": "Generate metatitle e metadescription",
+      "type": "Process"
+    },
+    {
+      "name": "Update product",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini 2.0 Flash Exp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

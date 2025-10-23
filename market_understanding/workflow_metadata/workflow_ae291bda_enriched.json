@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ae291bda",
+  "workflow_id": "ae291bda",
+  "workflow_id_display": "ae291bda",
+  "workflow_name": "Creating an API endpoint",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api",
+    "webhook"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create API endpoints with Webhook and Respond to Webhook nodes—prototype or replace backend logic without coding. Discover how it works!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, set, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Create URL string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

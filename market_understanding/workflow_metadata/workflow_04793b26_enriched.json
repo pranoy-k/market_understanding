@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/04793b26",
+  "workflow_id": "04793b26",
+  "workflow_id_display": "04793b26",
+  "workflow_name": "Dynamically generate a webpage from user request using OpenAI Structured Output (1)",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI - JSON to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Open AI - Using Structured Output",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format the HTML result",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

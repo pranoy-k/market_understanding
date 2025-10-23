@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fee2bb0e",
+  "workflow_id": "fee2bb0e",
+  "workflow_id_display": "fee2bb0e",
+  "workflow_name": "YouTube Video Summary to Discord with GPT-4o, Slack Approval, and Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Discord, Google Sheets, OpenAI, Slack, YouTube",
+  "tags": [
+    "discord",
+    "slack",
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube content discovery and distribution with AI-powered summaries, Slack approval, and multi-platform sharing. Streamline your workflow now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "YouTube RSS Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI GPT Summary Model",
+      "type": "Process"
+    },
+    {
+      "name": "Store results to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Channel ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Video Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

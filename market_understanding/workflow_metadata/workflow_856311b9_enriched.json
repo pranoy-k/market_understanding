@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/856311b9",
+  "workflow_id": "856311b9",
+  "workflow_id_display": "856311b9",
+  "workflow_name": "General 3D Presentation Workflow with Midjourney, GPT-4o-image and Kling APIs",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "14",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PiAPI",
+  "author_profile_url": "https://n8n.io/creators/piapi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create 360° spinning videos of high-quality 3D models with PiAPI API. Perfect for designers and creators—discover easy setup and stunning results!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Midjourney Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "GPT-4o Image Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Kling Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image URL of Midjourney",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image URL of GPT-4o-image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Final Video URL",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

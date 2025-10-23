@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/94526918",
+  "workflow_id": "94526918",
+  "workflow_id_display": "94526918",
+  "workflow_name": "Get data from multiple RSS feeds to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Valor",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly fetch and categorize RSS feeds from multiple sources using conditional logic. Streamline info management—discover flexible, proven workflows!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, splitInBatches, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "only get new RSS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Source",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clear Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

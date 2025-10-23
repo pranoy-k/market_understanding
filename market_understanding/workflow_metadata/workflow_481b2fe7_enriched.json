@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/481b2fe7",
+  "workflow_id": "481b2fe7",
+  "workflow_id_display": "481b2fe7",
+  "workflow_name": "Visualize your SQL Agent queries with OpenAI and Quickchart.io",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Agent Studio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Execute \"Generate a chart\" tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Text output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Text + Chart output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "User question + Agent initial response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model Classifier",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI - Generate Chart definition with Structured Output",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor - User question",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

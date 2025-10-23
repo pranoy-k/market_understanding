@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/344b3b3f",
+  "workflow_id": "344b3b3f",
+  "workflow_id_display": "344b3b3f",
+  "workflow_name": "Generate instant google meet links with a slack command",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Connect Slack to Google Calendar for instant Google Meet links. Quickly schedule meetings and post links in channels with a simple Slack command. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, stickyNote, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create event with google meet link",
+      "type": "Process"
+    },
+    {
+      "name": "Delete temporary calendar event",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

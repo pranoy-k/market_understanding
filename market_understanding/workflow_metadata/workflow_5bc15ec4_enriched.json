@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5bc15ec4",
+  "workflow_id": "5bc15ec4",
+  "workflow_id_display": "5bc15ec4",
+  "workflow_name": "Create LinkedIn Contributions with AI and Notify Users On Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "LinkedIn, Slack",
+  "tags": [
+    "linkedin",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Darryn",
+  "author_profile_url": "https://n8n.io/creators/optimus01/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn engagement with weekly AI-generated contributions to trending advice articles. Post insights to Slack & store in NocoDB. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger Every Monday, @ 08:00am",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Topic for Google search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LinkedIn Contribution Writer",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get advice articles from a Google search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge data and keep unique google search results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Article links for LinkedIn advice articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out all links for LinkedIn advice articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post new LinkedIn contributions to NocoDB (CreateRows)",
+      "type": "Process"
+    },
+    {
+      "name": "Get all LinkedIn contributions from database NocoDB (GetRows)",
+      "type": "Process"
+    },
+    {
+      "name": "HTML extract LinkedIn article & other users contributions",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request to get LinkedIn advice articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all LinkedIn contributions from database NocoDB (GetRows)1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

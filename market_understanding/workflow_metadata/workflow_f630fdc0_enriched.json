@@ -1,0 +1,207 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f630fdc0",
+  "workflow_id": "f630fdc0",
+  "workflow_id_display": "f630fdc0",
+  "workflow_name": "Generate & Enrich LinkedIn Leads with Apollo.io, LinkedIn API, Mail.so & GPT-3.5",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "44",
+  "tools_integrations": "API, Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead gen and enrichment with Apollo.io, RapidAPI, Google Sheets & Mail.so. Personalized, up-to-date leads for sales & B2B—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger5",
+      "type": "Trigger"
+    },
+    {
+      "name": "Clean Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Posts AI Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "AI Profile Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Add Leads to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Linkedin Username",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Pending Username Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Email Address",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark Invalid Email",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Pending Email Statuses",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Pending About and Posts Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Pending About and Posts Rows1",
+      "type": "Data Output"
+    },
+    {
+      "name": "get invalid email rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "update_to_pending",
+      "type": "Data Output"
+    },
+    {
+      "name": "get_failed_profile_summary_rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "update_to_pending1",
+      "type": "Data Output"
+    },
+    {
+      "name": "get_failed_posts_summary_rows1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Profile Summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Posts Summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Completely Enriched Profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "update_to_unscraped",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append to Enriched Leads Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "update status to failed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Email from Apollo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Confirm Email Validity",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Profile Posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get About Profile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Profile Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Posts Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stringify Profile Data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stringify Posts Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Leads with Apollo.io",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

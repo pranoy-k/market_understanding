@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/87a71ef0",
+  "workflow_id": "87a71ef0",
+  "workflow_id_display": "87a71ef0",
+  "workflow_name": "Transparent Tracking Pixel for Email Open Detection",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, Email, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Julien DEL RIO",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track email opens with a 1x1 transparent PNG via webhook. Capture user IDs, enable robust logging, and ensure privacy compliance. Learn more.",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, noOp, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Create data pix",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create img bin",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Request img",
+      "type": "Trigger"
+    },
+    {
+      "name": "Do anything to log",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

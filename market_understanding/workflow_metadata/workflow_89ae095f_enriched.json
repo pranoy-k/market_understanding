@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/89ae095f",
+  "workflow_id": "89ae095f",
+  "workflow_id_display": "89ae095f",
+  "workflow_name": "LinkedIn Auto Message Router and Responder with Request Detection",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline LinkedIn message replies with AI-powered, human-approved automation. Boost productivity and control brand tone—learn how this workflow works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Isolate Message and Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Isolate Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Isolate parent workflow data for AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format DB data for AI Context",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set User Data from Unipile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Linkedin Org Data from Unipile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set unable to find data object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set all potential Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Response, No action",
+      "type": "Process"
+    },
+    {
+      "name": "New Message",
+      "type": "Process"
+    },
+    {
+      "name": "Slack Button Press",
+      "type": "Trigger"
+    },
+    {
+      "name": "Verify Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send webhook to Coworker Workflow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Message to LinkedIn via Unipile",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Request Router Directory Database",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate DB objects into one item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Linkedin User Data from Unipile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group in one object - User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Linkedin Org Data from Unipile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Group in one object - Org",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

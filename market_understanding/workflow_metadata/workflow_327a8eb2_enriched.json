@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/327a8eb2",
+  "workflow_id": "327a8eb2",
+  "workflow_id_display": "327a8eb2",
+  "workflow_name": "Download and Merge Multiple PDFs from URLs with the CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly merge multiple PDFs from public URLs in n8n with the PDF Toolkit from customjs.space. Automate document handling—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, mergePdfs"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read/Write Files from Disk2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read/Write Files from Disk3",
+      "type": "Data Output"
+    },
+    {
+      "name": "PDF Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge PDF",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

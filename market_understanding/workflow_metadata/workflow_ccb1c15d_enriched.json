@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ccb1c15d",
+  "workflow_id": "ccb1c15d",
+  "workflow_id_display": "ccb1c15d",
+  "workflow_name": "Cron routines with Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Hermilio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate scheduled routines and receive instant Telegram alerts. Ensure timely notifications for important updates. Learn more about our seamless solution.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, mySql, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "limparPacoteCliente1",
+      "type": "Data Output"
+    },
+    {
+      "name": "limpaPacoteCliente0",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

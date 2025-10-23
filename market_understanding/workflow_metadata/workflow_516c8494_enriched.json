@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/516c8494",
+  "workflow_id": "516c8494",
+  "workflow_id_display": "516c8494",
+  "workflow_name": "Website Downtime Alert via LINE + Supabase Log",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "12",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "sayamol thiramonpaphakul",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Monitor your websites automatically with UptimeRobot, get witty LINE alerts via GPT-4o, and log downtime to Supabase. Easy setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, uptimeRobot, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI GPT-4o Mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Supabase",
+      "type": "Process"
+    },
+    {
+      "name": "Get Monitors",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Message Format",
+      "type": "Process"
+    },
+    {
+      "name": "Escape Newlines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send to LINE",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Down Monitors",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Monitors",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Status 9",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

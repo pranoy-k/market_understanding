@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/24af6ce7",
+  "workflow_id": "24af6ce7",
+  "workflow_id_display": "24af6ce7",
+  "workflow_name": "AI-Powered Technical Analyst with Perplexity R1 Research",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Derek Cheung",
+  "author_profile_url": "https://n8n.io/creators/derekcheungsa/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock smarter trading with our AI-powered Technical Analysis Agent. Get visual chart insights, up-to-date research, and automated reports. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set 'response' value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Download Chart",
+      "type": "Data Input"
+    },
+    {
+      "name": "Tradingview Chart",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract analyst question and management response",
+      "type": "Process"
+    },
+    {
+      "name": "Sonnet 3_7",
+      "type": "Process"
+    },
+    {
+      "name": "Technical Analysis Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Lookup Exchange",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Sonar",
+      "type": "Process"
+    },
+    {
+      "name": "Sonnet 37",
+      "type": "Process"
+    },
+    {
+      "name": "Technical Analyst Leader",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

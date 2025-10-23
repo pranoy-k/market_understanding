@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/14bdbb2d",
+  "workflow_id": "14bdbb2d",
+  "workflow_id_display": "14bdbb2d",
+  "workflow_name": "Get notified when Meta Ads balance is low",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Facebook, Slack, WhatsApp",
+  "tags": [
+    "facebook",
+    "whatsapp",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant alerts when your Facebook Ads balance is low. Choose from two detection methods & customize notifications via WhatsApp, Slack, Email, and more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Every 12h",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Method 2",
+      "type": "Process"
+    },
+    {
+      "name": "Method 1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

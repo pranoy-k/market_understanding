@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7eb5a642",
+  "workflow_id": "7eb5a642",
+  "workflow_id_display": "7eb5a642",
+  "workflow_name": "RSS Telegram bot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Instagram, RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "vicdorke",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Stay updated with rss-telegramBot: automatic 1-minute RSS checks, send updates as text or photo, now with Instagram RSS support. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "test",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "写入图片的属性",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron1",
+      "type": "Trigger"
+    },
+    {
+      "name": "SplitInBatches1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "instagram rss",
+      "type": "Data Input"
+    },
+    {
+      "name": "weibo rss",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

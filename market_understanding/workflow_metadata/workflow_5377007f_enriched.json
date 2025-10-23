@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5377007f",
+  "workflow_id": "5377007f",
+  "workflow_id_display": "5377007f",
+  "workflow_name": "AI Linux system administrator for managing Linux VPS instance",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Hostinger",
+  "author_profile_url": "https://n8n.io/creators/hostinger/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Linux VPS management with an AI SysAdmin for n8n—execute secure SSH commands through chat. Boost efficiency and simplify server control. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, toolWorkflow, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic SSH commands",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execute SSH",
+      "type": "Process"
+    },
+    {
+      "name": "AI SysAdmin",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

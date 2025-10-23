@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/70a4fbad",
+  "workflow_id": "70a4fbad",
+  "workflow_id_display": "70a4fbad",
+  "workflow_name": "Convert Documents to Markdown with MinerU API and GPT-4o-mini",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, OpenAI, PDF",
+  "tags": [
+    "api"
+  ],
+  "author_name": "AdrianWang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert PDFs, Word docs, and PPTs to Markdown with advanced OCR and table recognition. Simple n8n setup—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "初始化files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "添加文件路径到",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "文件保存到本地",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

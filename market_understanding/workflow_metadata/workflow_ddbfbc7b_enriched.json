@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ddbfbc7b",
+  "workflow_id": "ddbfbc7b",
+  "workflow_id_display": "ddbfbc7b",
+  "workflow_name": "Send Linkedin Connection Request with Airtop",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Airtop",
+  "author_profile_url": "https://n8n.io/creators/cesar-at-airtop/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate LinkedIn connection requests to prospects with secure profile access, personalized notes, CRM integration, and streamlined outreach. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, airtop, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Unify Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Click on connect",
+      "type": "Process"
+    },
+    {
+      "name": "Send connection w/out message",
+      "type": "Process"
+    },
+    {
+      "name": "Click add a note",
+      "type": "Process"
+    },
+    {
+      "name": "Type the message",
+      "type": "Process"
+    },
+    {
+      "name": "Send connection w/ message",
+      "type": "Process"
+    },
+    {
+      "name": "Create a Session",
+      "type": "Process"
+    },
+    {
+      "name": "Create a window",
+      "type": "Process"
+    },
+    {
+      "name": "Click More button",
+      "type": "Process"
+    },
+    {
+      "name": "Terminate session",
+      "type": "Process"
+    },
+    {
+      "name": "Terminate session1",
+      "type": "Process"
+    },
+    {
+      "name": "Check connection status",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

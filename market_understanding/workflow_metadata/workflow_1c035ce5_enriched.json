@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c035ce5",
+  "workflow_id": "1c035ce5",
+  "workflow_id_display": "1c035ce5",
+  "workflow_name": "Track Amazon Product Prices with ScrapeOps API & Google Sheets Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, AWS, Email, Google Sheets",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "ScrapeOps",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track Amazon prices in real time, get instant email alerts on price drops, and analyze trends with automated Google Sheets updates. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Last Price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Price Change",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Alert Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Products to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert - Price History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update - Products to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrapeops - Amazon Product",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

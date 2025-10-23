@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ead967c",
+  "workflow_id": "1ead967c",
+  "workflow_id_display": "1ead967c",
+  "workflow_name": "Working with Excel spreadsheet files (xls & xlsx)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily obtain, edit, and save spreadsheet files to local or cloud storage. Streamline your workflow and keep your data organized—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, microsoftOneDrive"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Work out Age",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Download from Microsoft OneDrive",
+      "type": "Process"
+    },
+    {
+      "name": "Download Excel File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to SFTP",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to Microsoft OneDrive",
+      "type": "Process"
+    },
+    {
+      "name": "Read Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Spreadsheet File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/34960851",
+  "workflow_id": "34960851",
+  "workflow_id_display": "34960851",
+  "workflow_name": "Automated Upwork Job Alerts with MongoDB & Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "MongoDB, Slack",
+  "tags": [
+    "slack",
+    "mongodb",
+    "Scheduled"
+  ],
+  "author_name": "Artur",
+  "author_profile_url": "https://n8n.io/creators/arlusm1/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track Upwork jobs in real time—automate job retrieval, filter duplicates with MongoDB, and get instant Slack alerts. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query For Upwork Job Posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Find Existing Entries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Output New Entries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add New Entries To MongoDB",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

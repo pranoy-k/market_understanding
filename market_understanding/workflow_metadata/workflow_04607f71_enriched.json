@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/04607f71",
+  "workflow_id": "04607f71",
+  "workflow_id_display": "04607f71",
+  "workflow_name": "Weekly Coffee Chat (Matrix Version)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create groups of three in any Matrix room and send personalized invitations automatically. Streamline group management—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, matrix, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly trigger on monday1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Divide into groups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Greetings",
+      "type": "Process"
+    },
+    {
+      "name": "Employees in coffee chat channel",
+      "type": "Process"
+    },
+    {
+      "name": "Announce groups",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

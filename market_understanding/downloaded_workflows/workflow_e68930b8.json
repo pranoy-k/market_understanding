@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Hunter",
+      "type": "n8n-nodes-base.hunter",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "email": "user@example.com",
+        "operation": "emailVerifier"
+      },
+      "credentials": {
+        "hunterApi": "hunter api creds"
+      },
+      "typeVersion": 1,
+      "id": "1c300ee2ce73d854"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Hunter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "8657ad6ff87a51a3",
+  "name": "Verify email deliverability with Hunter",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

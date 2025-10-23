@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c633f515",
+  "workflow_id": "c633f515",
+  "workflow_id_display": "c633f515",
+  "workflow_name": "Create a new user in Notion based on the signup form submission",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "Notion, OpenAI",
+  "tags": [],
+  "author_name": "Will Stenzel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline enrollment with automated user creation and program linking from form submissions. Instantly process data and ensure up-to-date records. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, set, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Extract Name and Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Semester ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Concatenate Semester IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sign Up",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create User",
+      "type": "Process"
+    },
+    {
+      "name": "Query for User",
+      "type": "Process"
+    },
+    {
+      "name": "Query Current Semester",
+      "type": "Process"
+    },
+    {
+      "name": "Update Semester for User",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Semester ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query User",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3554b5eb",
+  "workflow_id": "3554b5eb",
+  "workflow_id_display": "3554b5eb",
+  "workflow_name": "Automated Investor Intelligence: CrunchBase to Google Sheets Data Harvester",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate investor research with seamless CrunchBase-to-Google Sheets integration. Get real-time insights, smart filtering, and zero manual effort. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Investor Data Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Append to Investor Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Crunchbase Investor Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Investor Fields",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

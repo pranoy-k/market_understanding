@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e870518e",
+  "workflow_id": "e870518e",
+  "workflow_id_display": "e870518e",
+  "workflow_name": "Automate Sleep Meditation Content Creation with ElevenLabs V3 & DeepSeek AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": "https://n8n.io/creators/cfomodz/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create ad-friendly guided meditation voiceovers—generate trend-based scripts, lifelike audio, and store files in Google Drive. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, textClassifier, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Titles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Exact Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Video Object Checker",
+      "type": "Process"
+    },
+    {
+      "name": "Ensure Query is single string",
+      "type": "Process"
+    },
+    {
+      "name": "Title Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Video Search",
+      "type": "Process"
+    },
+    {
+      "name": "Search Query Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Style Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Script No Comments",
+      "type": "Process"
+    },
+    {
+      "name": "TTS Voiceover",
+      "type": "Process"
+    },
+    {
+      "name": "input_validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "VO Gen",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

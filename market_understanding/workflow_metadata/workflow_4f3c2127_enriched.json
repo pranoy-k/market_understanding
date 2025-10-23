@@ -1,0 +1,142 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f3c2127",
+  "workflow_id": "4f3c2127",
+  "workflow_id_display": "4f3c2127",
+  "workflow_name": "Digest new YouTube videos to Slack with Google Sheets, RapidAPI & GPT-4o-mini",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "API, Google Sheets, OpenAI, Slack, YouTube",
+  "tags": [
+    "slack",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Naveen Choudhary",
+  "author_profile_url": "https://n8n.io/creators/n8nstein/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant, AI-generated YouTube video summaries delivered to Slack. Save time, automate channel monitoring, and boost team insights—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleSheetsTool, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Slack Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse RSS XML",
+      "type": "Process"
+    },
+    {
+      "name": "Link is Processed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Summary",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get RSS Links",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter for New Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log New Videos",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Subtitles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Timestamps",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatted Chapter Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Slack Blocks - Detailed Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatted Transcript w/o Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "If newly published",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Batch RSS Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch RSS Feed",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Video Details",
+      "type": "Process"
+    },
+    {
+      "name": "Build AI Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Subtitles URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get Channel ID",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

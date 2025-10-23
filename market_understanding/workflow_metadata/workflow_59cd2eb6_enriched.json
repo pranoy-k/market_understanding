@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/59cd2eb6",
+  "workflow_id": "59cd2eb6",
+  "workflow_id_display": "59cd2eb6",
+  "workflow_name": "Send SMS via ClickSend API Worldwide without a Phone number",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, SMS",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly send SMS worldwide via API—no phone needed. Automate SMS alerts or marketing with easy ClickSend integration in your n8n workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set SMS data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send SMS",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

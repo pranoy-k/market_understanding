@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/68fe9897",
+  "workflow_id": "68fe9897",
+  "workflow_id_display": "68fe9897",
+  "workflow_name": "Send Telegram Text and Audio Messages to Notion with DeepSeek Summaries & OpenAI Transcription",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Notion, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "Rahim Kara",
+  "author_profile_url": "https://n8n.io/creators/rahimin3d/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Telegram messages and audio to Notion with AI-powered summaries and transcriptions. Boost productivity—organize tasks automatically. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Notion2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

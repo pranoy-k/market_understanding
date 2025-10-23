@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea6e4bbf",
+  "workflow_id": "ea6e4bbf",
+  "workflow_id_display": "ea6e4bbf",
+  "workflow_name": "Send Telegram messages on RSS feed read",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "teaker",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Integrate Telegram for seamless automation. Instantly send messages, automate notifications, and boost real-time team communication. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, noOp, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Latest Read",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Latest Read",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

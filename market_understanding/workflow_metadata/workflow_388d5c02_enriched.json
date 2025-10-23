@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/388d5c02",
+  "workflow_id": "388d5c02",
+  "workflow_id_display": "388d5c02",
+  "workflow_name": "Run Apache Airflow DAG and Retrieve XCom Value",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Antonio Cheong",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly trigger Apache Airflow DAGs and retrieve XCom results with n8n automation. Configure endpoints, authenticate securely, and monitor runs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "in data",
+      "type": "Trigger"
+    },
+    {
+      "name": "airflow-api",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airflow: dag_run",
+      "type": "Data Input"
+    },
+    {
+      "name": "Airflow: dag_run - state",
+      "type": "Data Input"
+    },
+    {
+      "name": "count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airflow: dag_run - get result",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

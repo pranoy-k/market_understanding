@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/15eb019f",
+  "workflow_id": "15eb019f",
+  "workflow_id_display": "15eb019f",
+  "workflow_name": "Resume Screening & Behavioral Interviews with Gemini, Elevenlabs, & Notion ATS",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Notion",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Brian Coyle",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate hiring with AI resume screening, voice interviews, and detailed applicant insights in Notion. Simplify early-stage recruiting—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Application Form 1 of 3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Application Form 2 of 3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Application form 3 of 3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Application Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ai_convo_items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resume URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Job Description Mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Applicant Data Backup",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HR Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Upload CV",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Resume",
+      "type": "Data Output"
+    },
+    {
+      "name": "Applicant Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Job Description Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Applicant Qualifications",
+      "type": "Data Input"
+    },
+    {
+      "name": "Applicant Personal Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "ElevenLabs Web Hook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract_Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter_Notion_db",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Link Audio in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get Applicant Record",
+      "type": "Process"
+    },
+    {
+      "name": "Embed Resume in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Get Job Description",
+      "type": "Process"
+    },
+    {
+      "name": "Create Applicant Record",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Audio to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluation Criteria",
+      "type": "Process"
+    },
+    {
+      "name": "Applicant Record",
+      "type": "Process"
+    },
+    {
+      "name": "Update_Applicant_Record",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

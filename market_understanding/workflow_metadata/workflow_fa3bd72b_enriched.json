@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fa3bd72b",
+  "workflow_id": "fa3bd72b",
+  "workflow_id_display": "fa3bd72b",
+  "workflow_name": "Build Your First AI Data Analyst Chatbot",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock AI-powered data analysis in Google Sheets or databases. Automate data retrieval and calculations. Easy setup—perfect for first-time AI agents!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleSheetsTool, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get transactions by product name",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get all transactions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get transactions by status",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Records by date",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Filter by status",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

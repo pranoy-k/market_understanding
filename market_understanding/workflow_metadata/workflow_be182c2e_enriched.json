@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/be182c2e",
+  "workflow_id": "be182c2e",
+  "workflow_id_display": "be182c2e",
+  "workflow_name": "Enhance AI Prompts with GPT-4o-mini and Telegram Delivery",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Jesse Davids",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Enhance your prompts with AI for clarity and precision. Instantly receive refined instructions via Telegram. Optimize your workflows—learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with agent, lmChatOpenAi, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Split into chunks1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

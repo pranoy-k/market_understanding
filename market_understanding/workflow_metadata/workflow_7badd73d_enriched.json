@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7badd73d",
+  "workflow_id": "7badd73d",
+  "workflow_id_display": "7badd73d",
+  "workflow_name": "Send daily weather updates via a notification in Line",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture and enrichment with Typeform, Clearbit, Slack, and Airtable. Qualify leads instantly and boost your sales pipeline efficiency. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with line, openWeatherMap, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Line",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

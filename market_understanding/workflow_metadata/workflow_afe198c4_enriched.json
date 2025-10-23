@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/afe198c4",
+  "workflow_id": "afe198c4",
+  "workflow_id_display": "afe198c4",
+  "workflow_name": "Error Handler send Telegram: Real-Time Workflow Failure Alerts",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "L Hung",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get instant Telegram alerts for failed n8n workflows. Receive detailed error info for fast troubleshooting. Easy setup—learn more about seamless integration!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with errorTrigger, telegram, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

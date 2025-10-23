@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eddceb06",
+  "workflow_id": "eddceb06",
+  "workflow_id_display": "eddceb06",
+  "workflow_name": "Audit Google Drive File Permissions for Access Control Management",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Drive file audits with this n8n template—detect open permissions, improve compliance, and keep your data secure. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Normalise Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flatten Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create New Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append to New Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Has Shared with External Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "File Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Permissions To Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rows to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Recently Active Documents",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Out Owner of Document",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dace0583",
+  "workflow_id": "dace0583",
+  "workflow_id_display": "dace0583",
+  "workflow_name": "Create, update, and get a document in Google Cloud Firestore",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "PDF",
+  "tags": [
+    "google🗄"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create, update, and retrieve Google Cloud Firestore documents with a customizable, automated workflow. Learn how to streamline your database tasks.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, googleFirebaseCloudFirestore"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Cloud Firestore",
+      "type": "Process"
+    },
+    {
+      "name": "Google Cloud Firestore1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Cloud Firestore2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5bbb5790",
+  "workflow_id": "5bbb5790",
+  "workflow_id_display": "5bbb5790",
+  "workflow_name": "Allow your AI to call an API to fetch data",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Deborah",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily connect any API to your AI-powered chat with n8n. Refine requests in real time and fetch data effortlessly. Requires n8n 1.28.0+. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set 'response' value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Work out activity type and number of people1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call the API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Activity Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Combine",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Call the API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

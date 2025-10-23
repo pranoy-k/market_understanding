@@ -1,0 +1,210 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/034c7006",
+  "workflow_id": "034c7006",
+  "workflow_id_display": "034c7006",
+  "workflow_name": "AI marketing report (Google Analytics & Ads, Meta Ads), sent via email/Telegram",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "46",
+  "tools_integrations": "Email, Facebook, Google Analytics, Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": "https://n8n.io/creators/freddy-schuetz/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate weekly online marketing reports from Google Analytics, Google Ads & Meta Ads. Get AI-analyzed insights via email & Telegram. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign data from input (current year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign input (previous year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Meta data from input (current year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Meta data input (previous year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Google Analytics data input (current year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Google Analytics data input (previous year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Processing for Google Ads report",
+      "type": "Process"
+    },
+    {
+      "name": "Processing for Meta Ads Report",
+      "type": "Process"
+    },
+    {
+      "name": "Processing for Google Analytics Report",
+      "type": "Process"
+    },
+    {
+      "name": "Processing for Telegram Report",
+      "type": "Process"
+    },
+    {
+      "name": "Google_Ads",
+      "type": "Process"
+    },
+    {
+      "name": "Meta_Ads",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics_Domain_1",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics_Domain_3",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics_Domain_2",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics_Domain_4",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics_Domain_5",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator3",
+      "type": "Process"
+    },
+    {
+      "name": "Call Google Analytics data: Last 7 days",
+      "type": "Process"
+    },
+    {
+      "name": "Call Google Analytics data: Last 7 days (previous year)",
+      "type": "Process"
+    },
+    {
+      "name": "Calculation same period previous year",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format data input (previous year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format data input (current year)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize input (current year)",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize input (previous year)",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate date format for Google Ads request (last 7 days)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Call Google Ads Data: Last 7 days",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call Google Ads Data: Last 7 days (previous year)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call Meta Ads Data: Last 7 days",
+      "type": "Process"
+    },
+    {
+      "name": "Call Meta Ads Data: Last 7 days (previous year)",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Meta input (current year)",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Meta data input (previous year)",
+      "type": "Process"
+    },
+    {
+      "name": "Format all Meta data for LLM",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format all Google data for LLM",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize Google Analytics input (current year)",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate date format for meta ads request s",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculation same period previous year1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize Google Analytics input (previous year)",
+      "type": "Process"
+    },
+    {
+      "name": "Weekly Report Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

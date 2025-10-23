@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/05cc5f25",
+  "workflow_id": "05cc5f25",
+  "workflow_id_display": "05cc5f25",
+  "workflow_name": "Automatic Jest Test Generation for GitHub PRs with Dual AI Review",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Cristiano Varriale",
+  "author_profile_url": "https://n8n.io/creators/varritech/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically generate and refine Jest unit tests for React/TypeScript pull requests using AI. Get instant, reviewed test suggestions in your GitHub PRs.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, githubTool, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "o3-mini",
+      "type": "Process"
+    },
+    {
+      "name": "gpt4.1-mini",
+      "type": "Process"
+    },
+    {
+      "name": "GH - Get PR",
+      "type": "Process"
+    },
+    {
+      "name": "GET .diff file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Splits text into array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FIlter for components",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extrat API URL, owner and repo",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Files",
+      "type": "Process"
+    },
+    {
+      "name": "Merge info needed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Maker",
+      "type": "Process"
+    },
+    {
+      "name": "Get Repo",
+      "type": "Process"
+    },
+    {
+      "name": "Code Reviewer",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare for POST",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "2nd Node for Testing",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Extrat API URL, owner and repo",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

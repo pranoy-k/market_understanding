@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7137b0d9",
+  "workflow_id": "7137b0d9",
+  "workflow_id_display": "7137b0d9",
+  "workflow_name": "Automate Product Training & Customer Support via WhatsApp, GPT-4 & Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Google Sheets, OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "google"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate product data entry and customer support on WhatsApp with AI. Instantly train product info, log issues, and boost response times. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, googleSheetsTool, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Incoming Message Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Save Raw Product Info",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Product Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Product Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Customer Issues",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract URL from Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch HTML Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean HTML Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Short-Term Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Customer Support Agent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Enhance Product Details",
+      "type": "Process"
+    },
+    {
+      "name": "Conversation Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/429bbb0e",
+  "workflow_id": "429bbb0e",
+  "workflow_id_display": "429bbb0e",
+  "workflow_name": "Call analyzer with AssemblyAI transcription and OpenAI assistant integration",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set link to audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AssemblyAI - Transcribe",
+      "type": "Data Input"
+    },
+    {
+      "name": "AssemblyAI - Get transcription",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Analyze call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create record",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

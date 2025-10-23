@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6d1802d",
+  "workflow_id": "a6d1802d",
+  "workflow_id_display": "a6d1802d",
+  "workflow_name": "Automate Figma Versioning and Jira Updates with n8n Webhook Integration",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Jira, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "omid dev",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Figma design change tracking and sync updates to Jira with this n8n template. Streamline collaboration—keep teams aligned and tasks updated. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with figmaTrigger, stickyNote, jira"
+  ],
+  "nodes": [
+    {
+      "name": "Figma Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Find Jira Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment in Issue",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

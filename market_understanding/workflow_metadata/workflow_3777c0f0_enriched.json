@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3777c0f0",
+  "workflow_id": "3777c0f0",
+  "workflow_id_display": "3777c0f0",
+  "workflow_name": "Automatic Workflow & Credentials Backup to GitHub with Change Detection",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Hamed Nickmehr",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up n8n workflows and credentials with automated change detection, GitHub integration, and storage-efficient commits. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, set, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hash Maker",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Workflow Path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Credential Path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get New Workflow Hash",
+      "type": "Process"
+    },
+    {
+      "name": "Get Old Workflow Hash",
+      "type": "Process"
+    },
+    {
+      "name": "Read Workflow Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Execute Workflow Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Read File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hash Data",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Workflow Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "GitHub Workflow Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Get New Credential Hash",
+      "type": "Process"
+    },
+    {
+      "name": "Get Old Credential Hash",
+      "type": "Process"
+    },
+    {
+      "name": "Read Credential Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Execute Credential Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Credential Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "GitHub Credential Backup",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

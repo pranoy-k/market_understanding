@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9a406f63",
+  "workflow_id": "9a406f63",
+  "workflow_id_display": "9a406f63",
+  "workflow_name": "Validate email of new contacts in Hubspot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Email, HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Hubspot contact detection, email validation with OneSimpleAPI, and instant Slack notifications. Easy setup—learn how to streamline workflows!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, oneSimpleApi, slack"
+  ],
+  "nodes": [
+    {
+      "name": "When contact created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get contact email address",
+      "type": "Process"
+    },
+    {
+      "name": "validate the email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/44e5cec4",
+  "workflow_id": "44e5cec4",
+  "workflow_id_display": "44e5cec4",
+  "workflow_name": "Scrape TikTok Profile & Transcript with Dumpling AI and Save to Google Sheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate TikTok profile and video analysis—track stats, get full transcripts, and update Google Sheets instantly. Perfect for marketers and agencies. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Watch for New TikTok Links in Sheet",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Username from TikTok URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Profile Stats and Transcript to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get TikTok Profile Data using Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get TikTok Video Transcript using Dumpling AI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

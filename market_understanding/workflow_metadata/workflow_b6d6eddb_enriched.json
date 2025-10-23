@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b6d6eddb",
+  "workflow_id": "b6d6eddb",
+  "workflow_id_display": "b6d6eddb",
+  "workflow_name": "Get Comments from Facebook Page",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Facebook",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "Sira Ekabut",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect and organize Facebook Page comments with automated workflows. Get clean, structured data for analysis or integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, code"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Select Result Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set PageID & Number of Latest Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Out Null Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Facebook Graph API : Get Post from Page",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook : Get Each Post Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Post & Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reverse Item to Match another Branch",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API : Get Post from Page"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

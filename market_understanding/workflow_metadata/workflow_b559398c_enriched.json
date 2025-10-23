@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b559398c",
+  "workflow_id": "b559398c",
+  "workflow_id_display": "b559398c",
+  "workflow_name": "Send YouTube Video Summaries to Obsidian via Dropbox",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Dropbox, OpenAI, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "I versus AI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, httpRequest, dropbox"
+  ],
+  "nodes": [
+    {
+      "name": "Run Workflow on Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Combine Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assemble Note",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Links",
+      "type": "Process"
+    },
+    {
+      "name": "Create Frontmatter",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Video",
+      "type": "Process"
+    },
+    {
+      "name": "Save Note to Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "Remove from Source Playlist",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Video Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Playlist Videos",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e1ead2d5",
+  "workflow_id": "e1ead2d5",
+  "workflow_id_display": "e1ead2d5",
+  "workflow_name": "PostgreSQL Conversational Agent with Claude & DeepSeek (Multi-KPI, Secure)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "PostgreSQL",
+  "tags": [],
+  "author_name": "hippolyte-hu",
+  "author_profile_url": "https://n8n.io/creators/hippolyte-hu/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "AI-powered PostgreSQL agent for secure, multi-KPI chat reports. Fast, affordable, and easy to integrate—get insights from natural prompts. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with switch, mcpClientTool, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "PostgreSQL MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "GetTableSchema",
+      "type": "Data Output"
+    },
+    {
+      "name": "ListTables",
+      "type": "Data Output"
+    },
+    {
+      "name": "CreateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "ReadTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "CreateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "get table details",
+      "type": "Process"
+    },
+    {
+      "name": "ReadTableRows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

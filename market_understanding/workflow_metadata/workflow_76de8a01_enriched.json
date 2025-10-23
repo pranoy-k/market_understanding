@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/76de8a01",
+  "workflow_id": "76de8a01",
+  "workflow_id_display": "76de8a01",
+  "workflow_name": "Search Business Prospects with Natural Language using Claude AI and Explorium MCP",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "CSV",
+  "tags": [
+    "csv"
+  ],
+  "author_name": "explorium",
+  "author_profile_url": "https://n8n.io/creators/explorium/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly find and export targeted business prospects with an AI-powered chatbot. Search, filter, and get CRM-ready CSV lists—no coding needed. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Extract \"data\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge All Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare for CSV",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API Call Validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validation Prompter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat or Refinement",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Explorium MCP",
+      "type": "Process"
+    },
+    {
+      "name": "Explorium Prospects API Call",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "API Call Validation",
+    "Is API Call Valid?",
+    "Explorium Prospects API Call"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

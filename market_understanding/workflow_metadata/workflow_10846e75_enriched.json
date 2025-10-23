@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/10846e75",
+  "workflow_id": "10846e75",
+  "workflow_id_display": "10846e75",
+  "workflow_name": "Auto-Publish YouTube Videos to Facebook & Instagram with AI-Generated Captions",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Facebook, Instagram, YouTube",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically turn new YouTube uploads into engaging Facebook & Instagram posts with AI-powered captions. Boost reach & save hours—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Pull Youtube Video From Channel",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Post on Facebook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Publish Post On Instagram",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get IG Business Account ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Media Container",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

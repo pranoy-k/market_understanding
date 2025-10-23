@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/80a00c00",
+  "workflow_id": "80a00c00",
+  "workflow_id_display": "80a00c00",
+  "workflow_name": "Send Zendesk tickets to Pipedrive contacts and assign tasks",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Zendesk ticket assignment in Pipedrive every 5 minutes. Sync contacts, boost accountability, and ensure real-time, accurate ticket management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, if, set"
+  ],
+  "nodes": [
+    {
+      "name": "Get last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep only needed requester information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep only requester owner email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep only email and Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get tickets created after last execution",
+      "type": "Process"
+    },
+    {
+      "name": "Get requester information",
+      "type": "Process"
+    },
+    {
+      "name": "Every 5 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add requester information to ticket data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search requester in pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "Get owner information of Pipedrive contact",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get agents and admins",
+      "type": "Process"
+    },
+    {
+      "name": "Add Pipedrive agent data to pipedrive contact information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add contact owner to ticket data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change assignee to Pipedrive contact owner",
+      "type": "Process"
+    },
+    {
+      "name": "Add a note requester not found",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f595b3e",
+  "workflow_id": "6f595b3e",
+  "workflow_id_display": "6f595b3e",
+  "workflow_name": "Transcribing Bank Statements To Markdown Using Gemini Vision AI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Sort Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Bank Statement",
+      "type": "Process"
+    },
+    {
+      "name": "Split PDF into Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Zip File",
+      "type": "Process"
+    },
+    {
+      "name": "Images To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Images For AI",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Combine All Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract All Deposit Table Rows",
+      "type": "Data Input"
+    },
+    {
+      "name": "Transcribe to Markdown",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

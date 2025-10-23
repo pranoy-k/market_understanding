@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/afb7dd00",
+  "workflow_id": "afb7dd00",
+  "workflow_id_display": "afb7dd00",
+  "workflow_name": "Publish WordPress Posts to Social Media X, Facebook, LinkedIn, Instagram with AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Facebook, Instagram, LinkedIn, Twitter, WordPress",
+  "tags": [
+    "facebook",
+    "linkedin",
+    "twitter"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate social media posts from WordPress ideas using AI for captions and images. Publish to Twitter, Facebook, LinkedIn, Instagram, and save time!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Image Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Image Facebook e Linkedin",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Linkedin OK",
+      "type": "Data Output"
+    },
+    {
+      "name": "Facebook Ok",
+      "type": "Data Output"
+    },
+    {
+      "name": "Instagram OK",
+      "type": "Data Output"
+    },
+    {
+      "name": "X OK",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Social Media Manager",
+      "type": "Process"
+    },
+    {
+      "name": "Get Post",
+      "type": "Process"
+    },
+    {
+      "name": "Publish on X",
+      "type": "Process"
+    },
+    {
+      "name": "Publish on LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Publish on Facebook",
+      "type": "Process"
+    },
+    {
+      "name": "Publish on Instagram",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

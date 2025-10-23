@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/066cca6f",
+  "workflow_id": "066cca6f",
+  "workflow_id_display": "066cca6f",
+  "workflow_name": "Automate Candidate Screening with LlamaIndex & GPT-4o-mini for Personalized Email Responses",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline recruitment with HRMate: auto-parse emails, AI score candidates, send personalized replies, and centralize updates—no manual work needed. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger - Incoming Applications",
+      "type": "Trigger"
+    },
+    {
+      "name": "📥 Get Parsed Markdown Result",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Job Criteria Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Email Body Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Data for OpenAI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark as Accepted",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark as Rejected",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Evaluate Candidate with OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Update Candidate Status on Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "☁️ Upload PDF to LlamaIndex",
+      "type": "Data Input"
+    },
+    {
+      "name": "⏳ Check Parsing Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧼 Clean Markdown Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

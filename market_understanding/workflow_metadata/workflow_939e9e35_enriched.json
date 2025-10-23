@@ -1,0 +1,164 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/939e9e35",
+  "workflow_id": "939e9e35",
+  "workflow_id_display": "939e9e35",
+  "workflow_name": "Customer Feedback Analysis with AI, QuickChart & HTML Report Generator",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Google Sheets, RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "hippolyte-hu",
+  "author_profile_url": "https://n8n.io/creators/hippolyte-hu/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly transform Google Sheets feedback into actionable insights with AI-powered analysis, visualization, and automated reports. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Prompts1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser3",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser4",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser5",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model7",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "analysis topics proposal",
+      "type": "Process"
+    },
+    {
+      "name": "Merge original table and the prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unified AI Agent for analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Transform results into columns",
+      "type": "Data Processing"
+    },
+    {
+      "name": "All unique elements merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "proposal refinement agent",
+      "type": "Process"
+    },
+    {
+      "name": "Second iteration of analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarization of the unalysed results",
+      "type": "Process"
+    },
+    {
+      "name": "Final report editor",
+      "type": "Process"
+    },
+    {
+      "name": "Revisor and HTML formating agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get the first n rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "wrap up the whole results into one Json file",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merging first sample rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Completion agents (optional)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

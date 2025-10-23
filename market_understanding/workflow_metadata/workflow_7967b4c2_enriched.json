@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7967b4c2",
+  "workflow_id": "7967b4c2",
+  "workflow_id_display": "7967b4c2",
+  "workflow_name": "Validate website of new companies in Hubspot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically monitor new Hubspot companies and get instant Slack alerts if their website is missing. Simple setup—connect your Hubspot and Slack accounts.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, slack, hubspot"
+  ],
+  "nodes": [
+    {
+      "name": "On new company created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get company information",
+      "type": "Process"
+    },
+    {
+      "name": "Try to load the domain",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

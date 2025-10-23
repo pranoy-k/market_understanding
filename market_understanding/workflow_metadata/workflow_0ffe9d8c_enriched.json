@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ffe9d8c",
+  "workflow_id": "0ffe9d8c",
+  "workflow_id_display": "0ffe9d8c",
+  "workflow_name": "Slack Webhook - Verify Signature",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, Slack, Webhook",
+  "tags": [
+    "slack",
+    "webhook"
+  ],
+  "author_name": "Henri",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Protect your n8n workflows from unauthorized Slack webhook requests. Instantly verify Slack signatures and block third-party attacks. Learn more now!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Verified to True",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Make Slack Verif Token",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encode Secret String",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

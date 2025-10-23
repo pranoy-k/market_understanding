@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c68cdf49",
+  "workflow_id": "c68cdf49",
+  "workflow_id_display": "c68cdf49",
+  "workflow_name": "Auto-Post LinkedIn Updates from Spreadsheet Topics using GPT-4o",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Excel, Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Amit Mehta",
+  "author_profile_url": "https://n8n.io/creators/amitswba/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn content creation and posting using AI and Google Sheets. Effortlessly schedule, customize, and track posts across profiles and groups. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Linkedin-Post-Topic",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get-Group-id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update-Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Linedin-Post-Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Format-Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Linkedin-User-Detail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Linkedin-post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Pick 1 by 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Linkedin-Groups",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

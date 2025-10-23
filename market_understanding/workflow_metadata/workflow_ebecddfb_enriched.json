@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ebecddfb",
+  "workflow_id": "ebecddfb",
+  "workflow_id_display": "ebecddfb",
+  "workflow_name": "Automated Content Generation & Publishing - Wordpress",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Sunny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WordPress publishing with AI-generated content, keyword-rich SEO, auto image selection, and scheduled posting. Streamline your blog workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "3. Schedule Your Posts",
+      "type": "Trigger"
+    },
+    {
+      "name": "1. Auto Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "2. When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate AI Content",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create posts on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Processing Delay",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Automated Image Retrieval from Pexels",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

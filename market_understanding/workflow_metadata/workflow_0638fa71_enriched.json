@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0638fa71",
+  "workflow_id": "0638fa71",
+  "workflow_id_display": "0638fa71",
+  "workflow_name": "IOT Button Remote / Spotify Control Integration with MQTT",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Hubschrauber",
+  "author_profile_url": "https://n8n.io/creators/hubschrauber/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Connect your IoT multi-button switch to Spotify playback using MQTT and n8n. Follow step-by-step guides for easy smart audio control and customization. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, mqttTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "MQTT Trigger - Remote Switch",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Spotify API - Volume up 5pct",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spotify API - Volume down 5pct",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spotify API - Get Available Devices",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Individual Devices",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Device by Name to get device_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Custom Function 1 - P1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spotify API - Activate Target Playback Device",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Oops. How was this reached?",
+      "type": "Process"
+    },
+    {
+      "name": "Spotify API - Get Device Status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Spotify API - Volume up 5pct",
+    "Spotify API - Volume down 5pct",
+    "Spotify API - Get Available Devices",
+    "Spotify API - Activate Target Playback Device",
+    "Spotify API - Get Device Status"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

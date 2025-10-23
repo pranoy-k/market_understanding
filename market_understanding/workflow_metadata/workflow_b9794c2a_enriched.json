@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9794c2a",
+  "workflow_id": "b9794c2a",
+  "workflow_id_display": "b9794c2a",
+  "workflow_name": "Automated Revenue Predictions from Stripe Data with GPT-4 and Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Sheets, OpenAI, Stripe",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate revenue forecasting with AI. Get daily, CFO-grade Stripe sales predictions, trend analysis, and easy reporting. Boost accuracy—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Run Daily Forecast",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Save Forecast to Supabase",
+      "type": "Process"
+    },
+    {
+      "name": "Log Forecast in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Stripe Charges",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Sales",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Forecaster agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

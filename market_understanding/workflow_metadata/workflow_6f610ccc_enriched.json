@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f610ccc",
+  "workflow_id": "6f610ccc",
+  "workflow_id_display": "6f610ccc",
+  "workflow_name": "Upload & Rename Videos to Google Drive via Apps Script from URL",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly upload large files to Google Drive from any URL via n8n using a secure Google Apps Script. Fast setup, instant Drive links. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Rename Uploaded Video",
+      "type": "Process"
+    },
+    {
+      "name": "Send URL to GDrive Script and Upload",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/06ecd993",
+  "workflow_id": "06ecd993",
+  "workflow_id_display": "06ecd993",
+  "workflow_name": "Send events to Facebook Events Manager using the Meta Conversions API",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Facebook",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Boost Meta Ads tracking by sending any events directly to Facebook Events Manager via Conversions API. Improve tracking, save costs—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, code"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Normalize data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encrypt data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send event to Meta",
+      "type": "Process"
+    },
+    {
+      "name": "Example data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

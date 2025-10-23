@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/96d2225b",
+  "workflow_id": "96d2225b",
+  "workflow_id_display": "96d2225b",
+  "workflow_name": "Scrape and summarize webpages with AI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "Web Scraping🤖 AI"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "A general-purpose web scraping workflow that extracts content and generates AI summaries of any webpage.",
+  "key_benefits": [
+    "Data extraction and monitoring"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Clean up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch essay list",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract essay names",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch essay texts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract title",
+      "type": "Process"
+    },
+    {
+      "name": "Split out into items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit to first 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

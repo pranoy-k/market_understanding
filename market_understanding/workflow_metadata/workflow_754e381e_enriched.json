@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/754e381e",
+  "workflow_id": "754e381e",
+  "workflow_id_display": "754e381e",
+  "workflow_name": "Transcribe YouTube Videos with AI Enhancement via Chat Interface",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "ivn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube video transcription with this workflow—quick, accurate text from any video URL. Ideal for fast content extraction. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields - Respond to Chat Message 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - Respond to Chat Message 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - Respond to Chat Message 4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook - Chat Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

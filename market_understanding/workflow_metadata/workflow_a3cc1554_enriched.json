@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3cc1554",
+  "workflow_id": "a3cc1554",
+  "workflow_id_display": "a3cc1554",
+  "workflow_name": "Build your own PostgreSQL MCP server",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "PostgreSQL",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage HR, Payroll, Sales, and Inventory in PostgreSQL with a secure, customizable MCP server. Connect any client and streamline operations.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with switch, toolWorkflow, postgresTool"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "PostgreSQL MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "GetTableSchema",
+      "type": "Data Output"
+    },
+    {
+      "name": "ListTables",
+      "type": "Data Output"
+    },
+    {
+      "name": "CreateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "ReadTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "UpdateTableRecords",
+      "type": "Process"
+    },
+    {
+      "name": "CreateTableRecord",
+      "type": "Data Output"
+    },
+    {
+      "name": "ReadTableRows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

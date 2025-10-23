@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d61ca5e2",
+  "workflow_id": "d61ca5e2",
+  "workflow_id_display": "d61ca5e2",
+  "workflow_name": "Summarize Calls & Notify Teams via HubSpot, Slack, Email, WhatsApp",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, HubSpot, Slack, WhatsApp",
+  "tags": [
+    "slack",
+    "whatsapp"
+  ],
+  "author_name": "Encoresky",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate transcription processing, extract key insights, and instantly notify teams via email, WhatsApp, Slack, and HubSpot. Boost communication—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Define routing emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot Save Notes",
+      "type": "Process"
+    },
+    {
+      "name": "Router Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HubSpot Search Client",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

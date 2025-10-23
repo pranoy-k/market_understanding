@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ae7bb848",
+  "workflow_id": "ae7bb848",
+  "workflow_id_display": "ae7bb848",
+  "workflow_name": "Automatically Create JIRA Issues from Outlook Email Support Requests",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Jira",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate support workflows: watch a shared Outlook inbox, triage with AI, and create actionable JIRA issues seamlessly. Learn how to streamline support.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with microsoftOutlook, scheduleTrigger, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Recent Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Create Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Seen",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Issue From Support Request",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

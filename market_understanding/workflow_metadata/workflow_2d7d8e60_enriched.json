@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d7d8e60",
+  "workflow_id": "2d7d8e60",
+  "workflow_id_display": "2d7d8e60",
+  "workflow_name": "Check for preview for a link",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly check if a link preview exists and fetch rich previews for valid URLs. Seamlessly integrate results with Slack, Mattermost, and more. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, peekalink, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Peekalink",
+      "type": "Process"
+    },
+    {
+      "name": "Peekalink1",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

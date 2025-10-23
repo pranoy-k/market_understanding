@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c063083a",
+  "workflow_id": "c063083a",
+  "workflow_id_display": "c063083a",
+  "workflow_name": "Automate Rank Math SEO Field Updates for Posts and Products",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Facebook, WordPress",
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": "https://n8n.io/creators/phil/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Rank Math SEO meta updates for WordPress & WooCommerce via n8n. Save time, boost accuracy, & streamline bulk SEO management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request - Update Rank Math Meta",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

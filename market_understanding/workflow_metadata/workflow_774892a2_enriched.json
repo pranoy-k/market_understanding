@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/774892a2",
+  "workflow_id": "774892a2",
+  "workflow_id_display": "774892a2",
+  "workflow_name": "Stock Market Information Assistant with Telegram, Yahoo Finance, and GPT-4 Nano",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Archit Jain",
+  "author_profile_url": "https://n8n.io/creators/architjn/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically delivers real-time stock prices and stats on Telegram. Easy 10–15 min setup with guided onboarding—learn more about this smart workflow!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, toolWorkflow, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Ticker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Ticker Name",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Ticker Name Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Stock Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Stock Market Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

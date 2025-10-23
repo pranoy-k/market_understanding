@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/70fb8612",
+  "workflow_id": "70fb8612",
+  "workflow_id_display": "70fb8612",
+  "workflow_name": "AI_ Summarize podcast episode and enhance using Wikipedia",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "GPT3.5 - Research",
+      "type": "Process"
+    },
+    {
+      "name": "GPT 4 - Extract",
+      "type": "Process"
+    },
+    {
+      "name": "GPT3.5 - Summarize",
+      "type": "Process"
+    },
+    {
+      "name": "Podcast Episode Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Input to JSON Document",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Topics",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia1",
+      "type": "Process"
+    },
+    {
+      "name": "Format topic text & title",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Topics & Questions",
+      "type": "Process"
+    },
+    {
+      "name": "Research & Explain Topics",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

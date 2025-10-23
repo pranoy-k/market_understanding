@@ -1,0 +1,163 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4067240a",
+  "workflow_id": "4067240a",
+  "workflow_id_display": "4067240a",
+  "workflow_name": "Automated Stock Analysis Reports with Technical & News Sentiment using GPT-4o",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Elay Guez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get actionable, AI-driven stock insights in Hebrew—weekly analysis, technical indicators, market sentiment, and personalized email reports. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Final Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Stock Symbol and API Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GPT 4o",
+      "type": "Process"
+    },
+    {
+      "name": "ChatGPT 4o",
+      "type": "Process"
+    },
+    {
+      "name": "First Technical Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Refine Text",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Generate HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Adjust HTML Colors",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Variables For API",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get News Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyse API Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Chart",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Chart URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Price History",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Bollinger Bands",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get MACD",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Support Resistance",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Organizing Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge-2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Warp as JSON for GPT",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Technical Analysis Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Trends Analysis Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Set Stock Symbol and API Key",
+    "Generate Variables For API",
+    "Analyse API Input",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

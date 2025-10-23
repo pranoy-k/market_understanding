@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a356464d",
+  "workflow_id": "a356464d",
+  "workflow_id_display": "a356464d",
+  "workflow_name": "Convert Parquet, Feather, ORC & Avro Files with ParquetReader",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Facebook",
+  "tags": [
+    "json"
+  ],
+  "author_name": "ParquetReader",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Upload Parquet, Avro, ORC, or Feather files and preview data, schema, and metadata in JSON—no coding needed. Fast, free file validation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, code, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Parse API Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send to Parquet API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Parse API Response",
+    "Send to Parquet API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

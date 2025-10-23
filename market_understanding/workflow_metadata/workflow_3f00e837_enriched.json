@@ -1,0 +1,208 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3f00e837",
+  "workflow_id": "3f00e837",
+  "workflow_id_display": "3f00e837",
+  "workflow_name": "Generate AI Songs + Music Videos Using Suno API, Flux, Runway and Creatomate",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "57",
+  "tools_integrations": "API, Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "api"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Create AI-powered music tracks, cover art, and videos from Telegram chats—auto-logged in Google Sheets, no coding needed. Learn more inside!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with telegram, stickyNote, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Track Ideas Agent Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger: Start Processing Tracks",
+      "type": "Trigger"
+    },
+    {
+      "name": "Render Video Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Set Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Field to \"text\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Voice Note",
+      "type": "Process"
+    },
+    {
+      "name": "Append Music Tracks to GSheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Rows: Confirm Tracks in GSheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get one Pending Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Audio URL in GSheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Cover Photo & Video URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Pending Render Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Music Video URL + Render Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "get_image_url1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "get_image_url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Music Agent",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI: Browse the internet for Music Ideas",
+      "type": "Process"
+    },
+    {
+      "name": "Lyrics AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Music Generation API Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Music Generation Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Audio Track",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Audio Track to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Cover Image and Video Prompts AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Cover Image 1:1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Cover Image 3:1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Cover Image 1:1 to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to kraken to get url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Cover Image 3:1 to Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Generation Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Converted Video to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Render Audio Track + Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send URL to GDrive Script and Upload",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rename Uploaded Video",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI: Browse the internet for Music Ideas",
+    "Music Generation API Request",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

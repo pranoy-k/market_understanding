@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2023b9c7",
+  "workflow_id": "2023b9c7",
+  "workflow_id_display": "2023b9c7",
+  "workflow_name": "SEO Blog Generator with GPT-4o, Perplexity, and Telegram Integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Facebook, OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "HoangSP",
+  "author_profile_url": "https://n8n.io/creators/hoangsp/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate SEO-optimized blog posts with AI-powered topic research, structured metadata, and Telegram integration. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tele HoangSP_Social_Media",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Metadata Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Blog Content Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Blog Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity_Searcher",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Metadata Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

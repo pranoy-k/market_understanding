@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/547bc5c9",
+  "workflow_id": "547bc5c9",
+  "workflow_id_display": "547bc5c9",
+  "workflow_name": "Suspicious Login Detection",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate security monitoring in n8n: detect suspicious logins, analyze threats with GreyNoise/IP-API, and alert users. Learn more about this workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract relevant data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse User Agent",
+      "type": "Data Input"
+    },
+    {
+      "name": "🔴 Priority: HIGH",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🟡 Priority: MEDIUM",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🟢 Priority: LOW",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UserParser",
+      "type": "Data Input"
+    },
+    {
+      "name": "New /login event",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get last 10 logins from the same user",
+      "type": "Data Output"
+    },
+    {
+      "name": "Query IP API1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Complete login info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query user by ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "New Location",
+      "type": "Process"
+    },
+    {
+      "name": "New Device/Browser",
+      "type": "Process"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "GreyNoise",
+      "type": "Data Input"
+    },
+    {
+      "name": "IP API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Example event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Known, Do Nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Known Location",
+      "type": "Process"
+    },
+    {
+      "name": "Old Device/Browser",
+      "type": "Process"
+    },
+    {
+      "name": "Not Riot",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Query IP API1",
+    "IP API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

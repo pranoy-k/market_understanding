@@ -1,0 +1,180 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fc4b9205",
+  "workflow_id": "fc4b9205",
+  "workflow_id_display": "fc4b9205",
+  "workflow_name": "Generate Complete Stories with GPT-4o and Save Them in Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "Google Drive, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Ian Dikhtiar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate, refine, and save complete stories with GPT-4o and Google Drive integration. Automate storytelling—perfect for writers and creators!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "$INPUTS$",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connect",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convince",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Explain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Impress",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Lead",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Motivate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sell",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser3",
+      "type": "Process"
+    },
+    {
+      "name": "gpt-4o1",
+      "type": "Process"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "pick cards",
+      "type": "Process"
+    },
+    {
+      "name": "story baseline",
+      "type": "Process"
+    },
+    {
+      "name": "story plot",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "story enhancement",
+      "type": "Process"
+    },
+    {
+      "name": "characters",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "story timeline",
+      "type": "Process"
+    },
+    {
+      "name": "json schema",
+      "type": "Process"
+    },
+    {
+      "name": "story draft",
+      "type": "Process"
+    },
+    {
+      "name": "edit notes",
+      "type": "Process"
+    },
+    {
+      "name": "character json",
+      "type": "Process"
+    },
+    {
+      "name": "story rules",
+      "type": "Process"
+    },
+    {
+      "name": "rules json",
+      "type": "Process"
+    },
+    {
+      "name": "story enhancements json",
+      "type": "Process"
+    },
+    {
+      "name": "edit notes json",
+      "type": "Process"
+    },
+    {
+      "name": "story_final",
+      "type": "Process"
+    },
+    {
+      "name": "create_story_file",
+      "type": "Process"
+    },
+    {
+      "name": "timeline json",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

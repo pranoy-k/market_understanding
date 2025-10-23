@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fbc469b7",
+  "workflow_id": "fbc469b7",
+  "workflow_id_display": "fbc469b7",
+  "workflow_name": "Replace Images in Google Docs Documents and Download as PDF/Docx",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "simonscrapes",
+  "author_profile_url": "https://n8n.io/creators/simonscrapes/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate image replacement in Google Docs with ease—batch update templates using image URLs, create custom versions, and generate shareable documents.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Image URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Image ID in Docx",
+      "type": "Data Input"
+    },
+    {
+      "name": "Make file shareable publically (optional)",
+      "type": "Process"
+    },
+    {
+      "name": "Find & Copy Docx Template",
+      "type": "Process"
+    },
+    {
+      "name": "Own datasource",
+      "type": "Process"
+    },
+    {
+      "name": "Replace Image in Docx",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download File - Docx",
+      "type": "Process"
+    },
+    {
+      "name": "Download File - PDF",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

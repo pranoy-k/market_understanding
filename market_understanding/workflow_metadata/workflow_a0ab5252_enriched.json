@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a0ab5252",
+  "workflow_id": "a0ab5252",
+  "workflow_id_display": "a0ab5252",
+  "workflow_name": "Starred Slack Messages to Notion Database with AI Auto-Tagging",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Notion, Slack",
+  "tags": [
+    "slack🗄",
+    "Scheduled"
+  ],
+  "author_name": "Matty Reed",
+  "author_profile_url": "https://n8n.io/creators/mattyreed1/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture and organize key Slack messages in Notion with AI-powered titles and tags. Automate archiving and never lose important chats—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Write Title & Tag",
+      "type": "Process"
+    },
+    {
+      "name": "Create Notion Page",
+      "type": "Process"
+    },
+    {
+      "name": "Choose Notion DB",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

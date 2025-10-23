@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9f221b00",
+  "workflow_id": "9f221b00",
+  "workflow_id_display": "9f221b00",
+  "workflow_name": "National Weather Service 7-Day Forecast in Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get instant, real-time weather updates in Slack with a simple /weather command. Easily customizable for other platforms. Learn more and boost team productivity!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenStreetMap",
+      "type": "Data Input"
+    },
+    {
+      "name": "NWS1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

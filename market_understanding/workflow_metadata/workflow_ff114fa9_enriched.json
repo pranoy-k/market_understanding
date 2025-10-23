@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ff114fa9",
+  "workflow_id": "ff114fa9",
+  "workflow_id_display": "ff114fa9",
+  "workflow_name": "Weekly Coffee Chat (Mattermost Version)",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create groups of three in any Mattermost channel with automated invites. Boost team coordination and collaboration—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, function, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly trigger on monday",
+      "type": "Trigger"
+    },
+    {
+      "name": "Divide into groups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Greetings",
+      "type": "Process"
+    },
+    {
+      "name": "Announce groups",
+      "type": "Process"
+    },
+    {
+      "name": "Employees in coffee chat channel",
+      "type": "Process"
+    },
+    {
+      "name": "Send calendar invites",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

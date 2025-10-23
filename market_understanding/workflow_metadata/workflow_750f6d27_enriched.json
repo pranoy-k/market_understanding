@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/750f6d27",
+  "workflow_id": "750f6d27",
+  "workflow_id_display": "750f6d27",
+  "workflow_name": "Discover HIDDEN Youtube Trends / Outlier Videos in Your Niche (Apify + Airtable)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Airtable, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Nasser",
+  "author_profile_url": "https://n8n.io/creators/nasser/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube keyword research and video data collection, summarize scripts, and upload insights directly to Airtable. Streamline your workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, lmChatMistralCloud"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check IF Finished",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Videos Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Videos Dataset",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Text Cleaning",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Synthesis",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

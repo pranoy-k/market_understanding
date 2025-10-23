@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da19463c",
+  "workflow_id": "da19463c",
+  "workflow_id_display": "da19463c",
+  "workflow_name": "N8N Contact Form Workflow",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Akhil Varma Gadiraju",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect contact form submissions in n8n, notify your support team instantly, and redirect users with confirmation and error handling. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, if, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Redirect Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Confirmation Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "End (Success)",
+      "type": "Process"
+    },
+    {
+      "name": "End (Error)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

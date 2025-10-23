@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ba64c371",
+  "workflow_id": "ba64c371",
+  "workflow_id_display": "ba64c371",
+  "workflow_name": "Build your own FileSystem MCP server",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily set up a secure MCP FileSystem server with n8n to list, read, and create files or folders. Boost productivity—see how it works today.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, toolWorkflow, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "FileSystem MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "ListDirectory",
+      "type": "Process"
+    },
+    {
+      "name": "CreateDirectory",
+      "type": "Process"
+    },
+    {
+      "name": "readOneOrMultipleFiles",
+      "type": "Process"
+    },
+    {
+      "name": "ReadFiles",
+      "type": "Process"
+    },
+    {
+      "name": "WriteFiles",
+      "type": "Process"
+    },
+    {
+      "name": "writeOneOrMultipleFiles",
+      "type": "Process"
+    },
+    {
+      "name": "SearchDirectory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

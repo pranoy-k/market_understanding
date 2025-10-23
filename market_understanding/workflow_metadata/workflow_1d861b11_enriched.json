@@ -1,0 +1,421 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1d861b11",
+  "workflow_id": "1d861b11",
+  "workflow_id_display": "1d861b11",
+  "workflow_name": "Homey Pro - Smarthouse integration with LLM",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "98",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Ole Andre Torjussen",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with lmChatOpenAi, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Smarthus Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Slå_På_Tv_i_stuen",
+      "type": "Process"
+    },
+    {
+      "name": "Slå_av_Tv_i_stuen",
+      "type": "Process"
+    },
+    {
+      "name": "steng_gardiner_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "apne_gardiner_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "Sla_pa_apple_tv_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "sla_på_mac_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_peis_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "steng_gardiner_mot_ost",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_taklys_i_stuen",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_taklys_i_stuen",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_belysning_0",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_belysning_10",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_belysning_25",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_belysning_50",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_belysning_75",
+      "type": "Process"
+    },
+    {
+      "name": "hovedetasjen_full_belysning",
+      "type": "Process"
+    },
+    {
+      "name": "film_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "vekk_siri_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "hent_tempratur_i_stuen",
+      "type": "Process"
+    },
+    {
+      "name": "demp_belysning_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_begge_tv_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_lg_tv_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_samsung_tv_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_taklyset_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_apple_tv_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_mac_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "solskjerming_dag",
+      "type": "Process"
+    },
+    {
+      "name": "solskjerming_lufting_nede",
+      "type": "Process"
+    },
+    {
+      "name": "solskjerming_lufting_overst",
+      "type": "Process"
+    },
+    {
+      "name": "solskjerming_natt",
+      "type": "Process"
+    },
+    {
+      "name": "hjemmekontor",
+      "type": "Process"
+    },
+    {
+      "name": "hjemmekontor_kveld",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_mac_i_soverom_med_en_skjerm",
+      "type": "Process"
+    },
+    {
+      "name": "apne_solskjerming",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_taklys_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_taklys_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_10_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_20_prosent1",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_30_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_40_prosent1",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_50_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_60_prosent1",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_70_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_80_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_90_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "dimme_taklys_pa_soverom_100_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "hent_tempratur_pa_soverom",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_prosjektor_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_prosjektor_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "Sla_pa_apple_tv_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "Sla_pa_mac_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_musikk_i_hele_kjelleren",
+      "type": "Process"
+    },
+    {
+      "name": "sla_pa_disco",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_disco",
+      "type": "Process"
+    },
+    {
+      "name": "19_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "21_grader_i_kino_",
+      "type": "Process"
+    },
+    {
+      "name": "20_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "22_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "23_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "24_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "25_grader_i_kino",
+      "type": "Process"
+    },
+    {
+      "name": "hent_tempratur_ute",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_100_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_20_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_40_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_60_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_80_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "sla_av_belysning_i_hovedetasjen",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_5_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_10_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_20_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_30_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_40_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_50_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_60_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_70_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_80_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_90_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "kino_belysning_av",
+      "type": "Process"
+    },
+    {
+      "name": "tempratur_i_badebasseng",
+      "type": "Process"
+    },
+    {
+      "name": "avfukter_pa_vaskerom_av",
+      "type": "Process"
+    },
+    {
+      "name": "avfukter_pa_vaskerom_pa",
+      "type": "Process"
+    },
+    {
+      "name": "blalys_kino_pa",
+      "type": "Process"
+    },
+    {
+      "name": "blalys_kino_av",
+      "type": "Process"
+    },
+    {
+      "name": "Ylva_solskjerming_lukket",
+      "type": "Process"
+    },
+    {
+      "name": "Ylva_solskjerming_apen",
+      "type": "Process"
+    },
+    {
+      "name": "kjeller_belysning_0_prosent",
+      "type": "Process"
+    },
+    {
+      "name": "xAI Grok Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "pause spotify",
+      "type": "Process"
+    },
+    {
+      "name": "sjekk_garasjeport",
+      "type": "Process"
+    },
+    {
+      "name": "apne_garasjeport",
+      "type": "Process"
+    },
+    {
+      "name": "steng_garasjeport",
+      "type": "Process"
+    },
+    {
+      "name": "sjekk_status_alle_enheter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

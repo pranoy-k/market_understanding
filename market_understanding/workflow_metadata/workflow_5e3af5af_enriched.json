@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e3af5af",
+  "workflow_id": "5e3af5af",
+  "workflow_id_display": "5e3af5af",
+  "workflow_name": "Discover & Enrich Decision-Makers with Apollo and Human Verification",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Uche Madu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead generation by identifying and enriching decision-maker contacts with Apollo and Google Sheets. Streamline your sales process—learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly Report Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Determine Contact's Department",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Core Business",
+      "type": "Process"
+    },
+    {
+      "name": "Add Contacts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Enrich Contacts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Company Website",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Company Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Verified Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "Apollo Organization Enrichment",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Apollo People Search URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items (1000 per Batch)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Apollo Find Decision Makers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Apollo Enrich Decision Makers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Apollo People Enrichment Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items For Bulk Enrichment (10 per batch)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Apollo Organization Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Select Unprocessed Companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Batched Decision Maker Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Batched Enrichment Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Derive Past Week's Lead Gen. Metrics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Rows Which Now All Contain Domains",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

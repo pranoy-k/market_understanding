@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d700193b",
+  "workflow_id": "d700193b",
+  "workflow_id_display": "d700193b",
+  "workflow_name": "Track Personal Finances with GPT-4 via Telegram & Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Md. Nazmul Islam",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Discover key features and benefits of the n8n workflow. Learn how it streamlines automation for businesses. Explore more to boost your productivity!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Input Via Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "User's Text Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transcribe Voice Message",
+      "type": "Process"
+    },
+    {
+      "name": "Generate User's Reply With OpenAi",
+      "type": "Process"
+    },
+    {
+      "name": "Watch Existing Finance Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add New Finance Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Finance Tracker Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Remember Chat History",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

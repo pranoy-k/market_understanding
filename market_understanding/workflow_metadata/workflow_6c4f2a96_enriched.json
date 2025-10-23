@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6c4f2a96",
+  "workflow_id": "6c4f2a96",
+  "workflow_id_display": "6c4f2a96",
+  "workflow_name": "Upload leads with custom fields from Typeform to Pipedrive",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert Typeform responses into Pipedrive leads with custom fields and notes. Streamline your CRM workflow—learn how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with typeformTrigger, set, pipedrive"
+  ],
+  "nodes": [
+    {
+      "name": "On form completion",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Organization",
+      "type": "Process"
+    },
+    {
+      "name": "Create Person",
+      "type": "Process"
+    },
+    {
+      "name": "Create Lead",
+      "type": "Process"
+    },
+    {
+      "name": "Create Note",
+      "type": "Process"
+    },
+    {
+      "name": "Map company size",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

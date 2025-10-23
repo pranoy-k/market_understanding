@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3df1c38b",
+  "workflow_id": "3df1c38b",
+  "workflow_id_display": "3df1c38b",
+  "workflow_name": "Monitor G2 competitors reviews [Google Sheets, ScrapingBee, Slack]",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lucasperret/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor G2 reviews, get instant Slack alerts, and auto-log entries in Google Sheets. Quick setup—learn more with our step-by-step guide.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Execute workflow every day",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get all past reviews",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add new review to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add your competitors here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get G2 data with ScrapingBee",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get review section HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Iterate on reviews",
+      "type": "Process"
+    },
+    {
+      "name": "Extract structured data",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Review HTML to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Continue only if review is new",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

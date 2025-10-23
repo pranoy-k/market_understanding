@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0fe904df",
+  "workflow_id": "0fe904df",
+  "workflow_id_display": "0fe904df",
+  "workflow_name": "Sync Shopify orders with your Zendesk contacts",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Shopify orders with Zendesk contacts—update or create records automatically, ensure unified profiles, and simplify customer management.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with shopifyTrigger, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On customer updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Keep only UserId and email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Zendesk contact Id to Shopify data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Create contact in Zendesk",
+      "type": "Process"
+    },
+    {
+      "name": "Update contact in Zendesk",
+      "type": "Process"
+    },
+    {
+      "name": "Search contact by email adress",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

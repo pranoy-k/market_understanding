@@ -1,0 +1,105 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9fa050ee",
+  "workflow_id": "9fa050ee",
+  "workflow_id_display": "9fa050ee",
+  "workflow_name": "Automate Multi-Channel Customer Support with Gmail, Telegram, and GPT AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Email, Gmail, Google Analytics, OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "RedOne",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "💬 Telegram Customer Message Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "📧 Gmail Customer Inquiry Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "🚨 Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "📋 Process Telegram Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "📋 Process Gmail Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🧠 OpenAI Chat Model - Telegram",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 OpenAI Chat Model - Gmail",
+      "type": "Process"
+    },
+    {
+      "name": "📊 Log Gmail Interaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "📊 Log Telegram Interaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "Gmail Escalation Logger",
+      "type": "Data Output"
+    },
+    {
+      "name": "knowledge base",
+      "type": "Data Output"
+    },
+    {
+      "name": "knowledge base1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Telegram Escalation Logger",
+      "type": "Data Output"
+    },
+    {
+      "name": "🤖 Telegram AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 Telegram Memory",
+      "type": "Process"
+    },
+    {
+      "name": "🤖 Gmail AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "🧠 Gmail Memory",
+      "type": "Process"
+    },
+    {
+      "name": "📢 Notify Admin of Error",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram AI Agent",
+    "Gmail AI Agent",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

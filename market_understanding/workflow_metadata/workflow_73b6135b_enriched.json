@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/73b6135b",
+  "workflow_id": "73b6135b",
+  "workflow_id_display": "73b6135b",
+  "workflow_name": "Recognize invoices / receipts from Google Drive and put them into Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Drive, Google Sheets, PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "Anthony",
+  "author_profile_url": "https://n8n.io/creators/scrapeninja/",
+  "primary_use_case": "🎯 google drive & google sheets Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly process receipts or invoices in PDF, PNG, or JPG. Real-time folder monitoring, Google Drive/Sheets integration, and easy dual triggers—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, code"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "On new file in Google Drive",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save OCR result into Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get already processed rows from Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "OCR recognize",
+      "type": "Data Input"
+    },
+    {
+      "name": "Unserialize response JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load files from Google Drive folder",
+      "type": "Process"
+    },
+    {
+      "name": "Filter processed files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download file for OCR",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

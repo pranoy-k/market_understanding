@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9270c795",
+  "workflow_id": "9270c795",
+  "workflow_id_display": "9270c795",
+  "workflow_name": "AI-Powered Gratitude Reminder Workflow for LINE",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "[email protected]",
+  "author_profile_url": "https://n8n.io/creators/linlinmhee/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Cultivate daily gratitude with AI-powered, personalized reminders sent to LINE at 9 PM. Boost wellness and engagement. Customizable and easy to set up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, lmChatAzureOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger 2100 Bear Gratitude Jar Notice",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reformat Output from Chat Model",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Azure OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "WriteReminder",
+      "type": "Process"
+    },
+    {
+      "name": "Line Push Message",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

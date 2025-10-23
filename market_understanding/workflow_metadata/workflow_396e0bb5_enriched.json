@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/396e0bb5",
+  "workflow_id": "396e0bb5",
+  "workflow_id_display": "396e0bb5",
+  "workflow_name": "Manage Webflow form submissions in Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "kreonovo",
+  "author_profile_url": "https://n8n.io/creators/kreonovo/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Webflow form submissions to dynamically created Airtable tables. Prevent mix-ups and streamline your workflow—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Webflow Submission Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare form submission for workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "[AIRTABLE] Get Base Schema from list",
+      "type": "Data Output"
+    },
+    {
+      "name": "[AIRTABLE] Insert Record In Form Index Reference Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "[AIRTABLE] Insert Record In Webflow Form Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "[AIRTABLE] Find Webflow Form Record In Form Index Reference Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Form Index Reference Table ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "[AIRTABLE] Create Index Reference Table",
+      "type": "Data Input"
+    },
+    {
+      "name": "[AIRTABLE] Create Webflow Form Table",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set New Webflow Form Table ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Webflow Form Table ID",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3eaf6bec",
+  "workflow_id": "3eaf6bec",
+  "workflow_id_display": "3eaf6bec",
+  "workflow_name": "Automated AI Lead Enrichment: Salesforce to Explorium for Enhanced Prospect Data",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Salesforce",
+  "tags": [],
+  "author_name": "explorium",
+  "author_profile_url": "https://n8n.io/creators/explorium/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance Salesforce lead management with real-time, automated enrichment from Explorium. Boost sales with up-to-date contact data and streamlined setup.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, salesforceTrigger, salesforce"
+  ],
+  "nodes": [
+    {
+      "name": "Salesforce Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Lead",
+      "type": "Process"
+    },
+    {
+      "name": "Match_prospect",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Prospect IDs from Matched Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Explorium Enrich Contacts Information",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter non-matched",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - flatten",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Explorium Enrich Profiles",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

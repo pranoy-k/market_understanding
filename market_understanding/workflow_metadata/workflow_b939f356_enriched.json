@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b939f356",
+  "workflow_id": "b939f356",
+  "workflow_id_display": "b939f356",
+  "workflow_name": "Save email attachments to Nextcloud",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly upload email attachments from any folder to Nextcloud with automatic renaming and customizable filters. Streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, nextCloud, emailReadImap"
+  ],
+  "nodes": [
+    {
+      "name": "Map each attachment",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nextcloud",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

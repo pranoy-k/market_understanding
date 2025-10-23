@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Check for Close Date",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        660,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json[\"Close Date\"]}}",
+              "value2": "/\\d\\d\\d\\d-\\d\\d-\\d\\d/i",
+              "operation": "regex"
+            }
+          ]
+        },
+        "combineOperation": "any"
+      },
+      "typeVersion": 1,
+      "id": "b2343f2373a047c0"
+    },
+    {
+      "name": "Set Close Date 3 Weeks Later",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        910,
+        370
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "Close Date",
+              "value": "={{new Date(new Date().setDate(new Date().getDate() + 21)).toISOString()}}"
+            }
+          ]
+        },
+        "options": {},
+        "keepOnlySet": true
+      },
+      "typeVersion": 1,
+      "id": "b491a06a8c4949d9"
+    },
+    {
+      "name": "NoOp",
+      "type": "n8n-nodes-base.noOp",
+      "position": [
+        1140,
+        280
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "f4b80294a7bd7d23"
+    },
+    {
+      "name": "Set Close Date",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "Close Date",
+              "value": "2021-11-29T00:00:00.000Z"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "typeVersion": 1,
+      "id": "40d3a5e8b86798a2"
+    },
+    {
+      "name": "Set Close Date To Original",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        910,
+        210
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "Close Date",
+              "value": "={{$node[\"Set Close Date\"].json[\"Close Date\"]}}"
+            }
+          ]
+        },
+        "options": {},
+        "keepOnlySet": true
+      },
+      "typeVersion": 1,
+      "id": "5824d14d079cba70"
+    }
+  ],
+  "connections": {
+    "Set Close Date": {
+      "main": [
+        [
+          {
+            "node": "Check for Close Date",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for Close Date": {
+      "main": [
+        [
+          {
+            "node": "Set Close Date To Original",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set Close Date 3 Weeks Later",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Set Close Date",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Close Date To Original": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Close Date 3 Weeks Later": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "9c1335a0cec638b5",
+  "name": "Use REGEX to select date",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

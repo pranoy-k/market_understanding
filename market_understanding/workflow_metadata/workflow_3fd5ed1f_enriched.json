@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3fd5ed1f",
+  "workflow_id": "3fd5ed1f",
+  "workflow_id_display": "3fd5ed1f",
+  "workflow_name": "Deploy Docker NextCloud, API Backend for WHMCS/WISECP",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "43",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PUQcloud",
+  "author_profile_url": "https://n8n.io/creators/puqcloud/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate NextCloud & Office Docker deployment with the WHMCS n8n workflow—secure API, easy setup, custom configs, and robust server management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, ssh"
+  ],
+  "nodes": [
+    {
+      "name": "Parametrs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Inspect",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mount Disk",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unmount Disk",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Deploy-docker-compose",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Version",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change Password",
+      "type": "Data Processing"
+    },
+    {
+      "name": "nginx",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Connection",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ChangePackage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Terminated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unsuspend",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Suspend",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Deploy",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Dependent containers Stat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ACL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SET ACL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET NET",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DNS Parametrs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "422-Invalid server domain",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add record",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete record",
+      "type": "Data Input"
+    },
+    {
+      "name": "API answer1",
+      "type": "Trigger"
+    },
+    {
+      "name": "d01-test.uuq.pl",
+      "type": "Process"
+    },
+    {
+      "name": "d02-test.uuq.pl",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API answer2",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "API",
+    "API answer1",
+    "API answer2"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

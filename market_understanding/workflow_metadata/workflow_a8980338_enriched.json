@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8980338",
+  "workflow_id": "a8980338",
+  "workflow_id_display": "a8980338",
+  "workflow_name": "Manage newsletter signups in Baserow",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline event registrations with n8n and Baserow.io—securely collect, process, and manage attendee data with easy deployment and customization. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Create HTML Form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Submitted Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Response Page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract GUID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Confirmation Page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Form File",
+      "type": "Process"
+    },
+    {
+      "name": "Signup Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Submit Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Confirm Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Subscribers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add New Subscriber",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Subscriber",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4beb7f30",
+  "workflow_id": "4beb7f30",
+  "workflow_id_display": "4beb7f30",
+  "workflow_name": "Automatic Media Download from WhatsApp Business Messages with HTTP Storage",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "WhatsApp",
+  "tags": [
+    "whatsapp",
+    "http"
+  ],
+  "author_name": "Usman Liaqat",
+  "author_profile_url": "https://n8n.io/creators/usmanliaqat/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate WhatsApp media downloads from incoming messages, archive files, and integrate with cloud storage. Easy setup—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, stickyNote, whatsApp"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger WhatsApp Media",
+      "type": "Trigger"
+    },
+    {
+      "name": "Download Media File",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/036fb8ba",
+  "workflow_id": "036fb8ba",
+  "workflow_id_display": "036fb8ba",
+  "workflow_name": "YouTube Comment Scraper & Analyzer with GPT-4o + Email Summary Report",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Google Sheets, OpenAI, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Amit Mehta",
+  "author_profile_url": "https://n8n.io/creators/amitswba/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube comment analysis with GPT-4o—get sentiment insights and summary reports via email. Easy Google Sheets setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Pick Video Ids from Google sheet",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Video Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Update Status on Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get Youtube Video Details",
+      "type": "Process"
+    },
+    {
+      "name": "Get Youtube Video Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare Comments Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare HTML for Email",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

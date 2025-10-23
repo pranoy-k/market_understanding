@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/be59325c",
+  "workflow_id": "be59325c",
+  "workflow_id_display": "be59325c",
+  "workflow_name": "Preconfigured nodes for Systeme.io API requests",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily work with Systeme API’s pagination and rate limits using this ready-to-use n8n template. Preconfigured nodes let you automate faster—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with splitOut, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Systeme | Get all contacts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Systeme | Get All tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Systeme | Get contacts with tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Systeme | Add contact",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

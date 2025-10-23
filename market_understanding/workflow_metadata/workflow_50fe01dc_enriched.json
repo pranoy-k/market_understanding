@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/50fe01dc",
+  "workflow_id": "50fe01dc",
+  "workflow_id_display": "50fe01dc",
+  "workflow_name": "Receive updates for Eventbrite events",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily integrate Eventbrite’s Trigger node for real-time event workflows. Get visual guidance and seamless onboarding with this companion documentation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with eventbriteTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Eventbrite Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

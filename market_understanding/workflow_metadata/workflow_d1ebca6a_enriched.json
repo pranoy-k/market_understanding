@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d1ebca6a",
+  "workflow_id": "d1ebca6a",
+  "workflow_id_display": "d1ebca6a",
+  "workflow_name": "Set up cluster centres&thresholds for anomaly detection [2/3 - anomaly]",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jenny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly detect image anomalies with Qdrant and Voyage AI embeddings. Adaptable pipelines, cluster center setup, and easy cloud integration—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Scipy Sparse Matrix",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare for Searching Threshold",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Threshold Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Textual (visual) crop descriptions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare for Searching Threshold1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Threshold Score1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Medoids Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Medoids Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qdrant cluster variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Info About Crop Clusters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Total Points in Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cluster Distance Matrix",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set medoid id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Medoid Vector",
+      "type": "Data Input"
+    },
+    {
+      "name": "Searching Score",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set medoid threshold score",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embed text",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Medoid by Text",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set text medoid id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Searching Text Medoid Score",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crop Counts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set text medoid threshold score",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

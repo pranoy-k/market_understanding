@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d68e834",
+  "workflow_id": "2d68e834",
+  "workflow_id_display": "2d68e834",
+  "workflow_name": "Real-time Crypto News & Sentiment Analysis via Telegram with GPT-4o",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get instant, AI-powered crypto news and market sentiment summaries on Telegram. Smart alerts from 9 top sources—ideal for traders and investors. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "Send Crypto or Company Name for Analysis",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Adds the sessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Telegram Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize News & Sentiment (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Crypto News & Sentiment Agent",
+      "type": "Process"
+    },
+    {
+      "name": "RSS Cointelegraph",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Bitcoinmagazine",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Coindesk",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Bitcoinist",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Newsbtc",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Cryptopotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS 99bitcoins",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Cryptobriefing",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSS Crypto.news",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge All Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter by Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Prompt",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

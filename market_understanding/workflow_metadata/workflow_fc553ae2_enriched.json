@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fc553ae2",
+  "workflow_id": "fc553ae2",
+  "workflow_id_display": "fc553ae2",
+  "workflow_name": "Summarize Microsoft 365 Outage Alerts with ChatGPT and Send to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [
+    "slack",
+    "chatgpt"
+  ],
+  "author_name": "Luke",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate M365 outage alerts with AI summaries sent directly to Slack. Customizable, secure, and easy to set up—ideal for IT admins and MSPs. Learn more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with microsoftOutlook, openAi, microsoftOutlookTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Check for 365 Service Alert",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarize service alert",
+      "type": "Process"
+    },
+    {
+      "name": "Clear email alert from mailbox",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Slack Block",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract M365 Incident text & link",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

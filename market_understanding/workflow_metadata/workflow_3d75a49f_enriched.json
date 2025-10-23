@@ -1,0 +1,130 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d75a49f",
+  "workflow_id": "3d75a49f",
+  "workflow_id_display": "3d75a49f",
+  "workflow_name": "Create a REST API for PDF Digital Signatures with Webhooks",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API, PDF, Webhook",
+  "tags": [
+    "rest",
+    "api",
+    "pdf"
+  ],
+  "author_name": "Ferenc Erb",
+  "author_profile_url": "https://n8n.io/creators/fefehun/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Create secure, RESTful PDF digital signing APIs with n8n webhooks. Upload, sign, and download documents using robust, easy-to-integrate endpoints. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with switch, set, readWriteFile"
+  ],
+  "nodes": [
+    {
+      "name": "Prepare Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare input params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set file path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check PDF file is OK",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check PFX file is OK",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set downlowd file info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate Key Gen Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate PDF Sign Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate PDF Upload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate Key Upload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Keys",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sign PDF",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert PDF to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write PDF File to Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read PDF File from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert PFX to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write PFX File to Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read PFX File from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read download file from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "API POST Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "API GET Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST Success Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST Error Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "GET Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "API POST Endpoint",
+    "API GET Endpoint"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

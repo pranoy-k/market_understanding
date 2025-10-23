@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/13e850ce",
+  "workflow_id": "13e850ce",
+  "workflow_id_display": "13e850ce",
+  "workflow_name": "Export AI Agent Conversation Logs from Postgres to Google Sheets",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Sheets, OpenAI, PostgreSQL",
+  "tags": [
+    "google",
+    "postgres",
+    "Scheduled"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set session_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clear Sheet Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add conversations",
+      "type": "Data Output"
+    },
+    {
+      "name": "add create_at column",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get conversations by sessionId",
+      "type": "Data Output"
+    },
+    {
+      "name": "Duplicate template sheet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rename Sheet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Postgres - Get session ids",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Session IDs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

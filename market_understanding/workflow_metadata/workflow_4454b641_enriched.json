@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4454b641",
+  "workflow_id": "4454b641",
+  "workflow_id_display": "4454b641",
+  "workflow_name": "AI-Powered Telegram Bot for Data Extraction with Bright Data MCP",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Cyril Nicko Gaspar",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate backend tasks via chat with AI and Bright Data MCP integration. Deploy easily, scale data workflows, and customize for support, leads, and more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, mcpClientTool, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive Message Trigger from Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sub-workflow to trigger Typing Action",
+      "type": "Process"
+    },
+    {
+      "name": "Trigger by the main workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Set Telegram Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Check if the execution in N8N is finished",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

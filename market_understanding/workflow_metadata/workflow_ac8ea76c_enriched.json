@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ac8ea76c",
+  "workflow_id": "ac8ea76c",
+  "workflow_id_display": "ac8ea76c",
+  "workflow_name": "Automatically Send a Direct Message (DM) to New Followers on Bluesky using Baserow",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Gareth B. Davies",
+  "author_profile_url": "https://n8n.io/creators/garethbdavies/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically send personalized welcome messages to new Bluesky followers, boost early engagement, and save time. Easy setup. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Run Daily at 9 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Bluesky Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Follower Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Follower Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All New Followers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Follower Record to SentWelcome = TRUE",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Bluesky Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Followers Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Welcome Message",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Welcome Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop New Followers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Followers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "END OF WORKFLOW",
+      "type": "Process"
+    },
+    {
+      "name": "Get Firstname",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Latest Followers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ConvoId",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

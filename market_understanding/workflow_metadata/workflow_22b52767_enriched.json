@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/22b52767",
+  "workflow_id": "22b52767",
+  "workflow_id_display": "22b52767",
+  "workflow_name": "Read XML file and store content in Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "xml"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly parse XML files and export data to Google Sheets with this low-code n8n workflow. Fast setup, automated sync, and easy collaboration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse XML content",
+      "type": "Process"
+    },
+    {
+      "name": "Define header row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new spreadsheet file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write header row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write data to sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download XML File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split out food items",
+      "type": "Process"
+    },
+    {
+      "name": "Wait for spreadsheet creation",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

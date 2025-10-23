@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9944401d",
+  "workflow_id": "9944401d",
+  "workflow_id_display": "9944401d",
+  "workflow_name": "Scheduled Workflow Backups from n8n to Google Drive with Auto Cleanup",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/joe/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate hourly n8n workflow backups to Google Drive. Protect against data loss, simplify migration, and ensure fast recovery. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, dateTime, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date Time",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time Format",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time Hour",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Backup Folder Every Hour",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive Upload Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time Format 2",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Search",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Delete",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time Subtract Coverage Period",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

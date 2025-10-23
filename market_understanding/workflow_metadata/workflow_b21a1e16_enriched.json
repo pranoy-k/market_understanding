@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b21a1e16",
+  "workflow_id": "b21a1e16",
+  "workflow_id_display": "b21a1e16",
+  "workflow_name": "Generate LinkedIn Posts with GPT-4, Preview on WhatsApp, and Auto-Publish",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "LinkedIn, OpenAI, WhatsApp",
+  "tags": [
+    "linkedin",
+    "whatsapp",
+    "Scheduled"
+  ],
+  "author_name": "papcy",
+  "author_profile_url": "https://n8n.io/creators/papcy/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly grow your LinkedIn presence with AI-driven automation—generate, review, and auto-post quality thought leadership content. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, function, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Search Topics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process AI Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format LinkedIn Post",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI GPT-4 Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Content Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Publish to LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Restart Content Generation",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

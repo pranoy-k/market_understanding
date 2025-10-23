@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/018b97d3",
+  "workflow_id": "018b97d3",
+  "workflow_id_display": "018b97d3",
+  "workflow_name": "Automated Workflow Backups to GitHub with PR Creation & Slack Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "GitHub, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Bao Duy Nguyen",
+  "author_profile_url": "https://n8n.io/creators/duynb/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate n8n workflow backups to GitHub with ease. Streamline team collaboration, get Slack notifications, and enjoy full version control—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Click me to trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define Local Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Base64decode workflow content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find new workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find updated workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wait for GitHub create/edit file finished",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new PR via GitHub API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all workflows on GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Get content for each workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Wait for finished",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Create new branch via GitHub API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get latest commit SHA on main via GitHub API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wait until branch created",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wait until branch created1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter empty data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter empty data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new commit to add new workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Create new commit to update changed workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Create new PR via GitHub API",
+    "Create new branch via GitHub API",
+    "Get latest commit SHA on main  via GitHub API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/93bc22f2",
+  "workflow_id": "93bc22f2",
+  "workflow_id_display": "93bc22f2",
+  "workflow_name": "Daylight Saving Time Notification For Different Timezones",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Åukasz",
+  "author_profile_url": "https://n8n.io/creators/lukaszpp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Never miss a meeting due to DST changes. Get daily Slack or email alerts when DST shifts in your monitored timezones. Perfect for global teams!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Calculate Zone Date and Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check If Daylight Saving Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Timezones List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Tomorrow's Date",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

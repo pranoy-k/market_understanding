@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/98f42d3d",
+  "workflow_id": "98f42d3d",
+  "workflow_id_display": "98f42d3d",
+  "workflow_name": "Transform Voice Transcripts to LinkedIn Posts with Claude AI and Email Automation",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Kyle Morse",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Turn messy voice memo transcripts into polished LinkedIn posts with AI. Effortlessly get professional, on-brand content—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Clean JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Doc Post Inspiration",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean JSON Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit email sender",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit email sender1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

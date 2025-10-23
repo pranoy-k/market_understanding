@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5d162605",
+  "workflow_id": "5d162605",
+  "workflow_id_display": "5d162605",
+  "workflow_name": "Daily GitHub Release notification by Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, GitHub, Gmail, Slack",
+  "tags": [
+    "slack🤖 gmail",
+    "Scheduled"
+  ],
+  "author_name": "Dionysus",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Github Repo Releases",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Markdown to HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

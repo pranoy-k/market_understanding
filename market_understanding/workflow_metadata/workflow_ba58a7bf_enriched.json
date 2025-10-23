@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ba58a7bf",
+  "workflow_id": "ba58a7bf",
+  "workflow_id_display": "ba58a7bf",
+  "workflow_name": "Summarise Slack Channel Activity for Weekly Reports with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "40",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly summarize your team’s weekly Slack activity with AI-driven reports. Spot trends, keep everyone aligned, and boost remote team focus—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Monday @ 6am",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Thread Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Reply UserIds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reply Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get User Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge with Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Group By User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Messages to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Message Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise Threads",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Reply Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Users to Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Message Replies",
+      "type": "Process"
+    },
+    {
+      "name": "Messages to Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Team Member Weekly Report Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Team Weekly Report Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Message Threads",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

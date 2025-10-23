@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f97c6009",
+  "workflow_id": "f97c6009",
+  "workflow_id_display": "f97c6009",
+  "workflow_name": "Chat with OpenAIs GPT via a simple Telegram Bot",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Mike",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow creates an intelligent Telegram bot powered by AI that can understand natural language, answer questions, and perform automated tasks. The bot processes incoming messages, uses AI to generate contextual responses, and can integrate with other services to provide comprehensive assistance to users.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

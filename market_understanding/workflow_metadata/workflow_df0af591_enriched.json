@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df0af591",
+  "workflow_id": "df0af591",
+  "workflow_id_display": "df0af591",
+  "workflow_name": "Generate PDF Invoices with CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF, Webhook",
+  "tags": [
+    "api",
+    "webhook",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate professional invoice PDFs in n8n with webhook-triggered automation. Fast, customizable, and easy to send. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, html2Pdf, code"
+  ],
+  "nodes": [
+    {
+      "name": "Set data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Preprocess",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

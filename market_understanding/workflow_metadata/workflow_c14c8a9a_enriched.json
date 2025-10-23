@@ -1,0 +1,130 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c14c8a9a",
+  "workflow_id": "c14c8a9a",
+  "workflow_id_display": "c14c8a9a",
+  "workflow_name": "Generate 9_16 Images from Content and Brand Guidelines",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Alex Kim",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Guidelines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Settings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Script Prep",
+      "type": "Process"
+    },
+    {
+      "name": "Get Brand Guidelines",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get SEO Keywords",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Asset Info",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Asset Info1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Keyword Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Scenes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out TN Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Leo - Improve Prompt1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Improve Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

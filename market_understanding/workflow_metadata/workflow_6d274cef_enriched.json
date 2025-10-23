@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6d274cef",
+  "workflow_id": "6d274cef",
+  "workflow_id_display": "6d274cef",
+  "workflow_name": "Build an IT Support Assistant Chatbot Leveraging Existing Support Portal",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly power chatbots using your support site's search API—no data duplication or indexing needed. Simplify support with this easy n8n template!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "KnowledgeBase Tool Subworkflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Relevant Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Acuity Support Search API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Results to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Knowledgebase Tool",
+      "type": "Process"
+    },
+    {
+      "name": "AcuityScheduling Support Chatbot",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Acuity Support Search API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

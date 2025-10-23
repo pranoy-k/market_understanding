@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8e3825e",
+  "workflow_id": "c8e3825e",
+  "workflow_id_display": "c8e3825e",
+  "workflow_name": "Transform Image to Lego Style Using Line and Dall-E",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Webhook",
+  "tags": [
+    "Webhook"
+  ],
+  "author_name": "Boriwat Chanruang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Creating an Image using Dall-E",
+      "type": "Process"
+    },
+    {
+      "name": "Creating a Prompt for Dall-E (Lego Style)",
+      "type": "Process"
+    },
+    {
+      "name": "Receive a Line Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive Line Messages",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Back an Image through Line",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

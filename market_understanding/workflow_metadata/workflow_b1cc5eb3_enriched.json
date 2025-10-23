@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b1cc5eb3",
+  "workflow_id": "b1cc5eb3",
+  "workflow_id_display": "b1cc5eb3",
+  "workflow_name": "Scrape LinkedIn Job Listings for Hiring Signals & Prospecting with Bright Data",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Spot LinkedIn job leads fast! Scrape new postings with Bright Data, auto-clean & sync to Google Sheets—ideal for job search or B2B prospecting. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, wait"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission - Discover Jobs",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets - Adding All Job Posts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request- Post API call to Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Getting data from Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code - Cleaning Up",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request- Post API call to Bright Data"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

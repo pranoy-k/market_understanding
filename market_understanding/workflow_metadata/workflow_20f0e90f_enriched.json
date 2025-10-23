@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/20f0e90f",
+  "workflow_id": "20f0e90f",
+  "workflow_id_display": "20f0e90f",
+  "workflow_name": "Transform Raw Hiring Transcripts into Briefs & Scorecards with AI and Google Docs",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Nicolas Le Gallo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline hiring with this template: turn messy intake transcripts into polished briefs & scorecards in under 1 minute. Customizable & easy to use!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, openAi, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Sending raw hiring brief transcript",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarizing raw transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Generating scorecards",
+      "type": "Process"
+    },
+    {
+      "name": "Extracting text",
+      "type": "Data Output"
+    },
+    {
+      "name": "Creating hiring brief file",
+      "type": "Process"
+    },
+    {
+      "name": "Adding brief to file",
+      "type": "Process"
+    },
+    {
+      "name": "Creating Scorecards file",
+      "type": "Process"
+    },
+    {
+      "name": "Adding scorecards to File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

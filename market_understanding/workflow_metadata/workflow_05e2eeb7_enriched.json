@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/05e2eeb7",
+  "workflow_id": "05e2eeb7",
+  "workflow_id_display": "05e2eeb7",
+  "workflow_name": "Manage attendee registrations and send emails",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate n8nConf blog creation: collect ideas, draft, approve, and schedule posts. Streamline content workflow and boost productivity—learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, typeformTrigger, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "Attendee Registrations",
+      "type": "Trigger"
+    },
+    {
+      "name": "Array to Rows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add to Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Session Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Account",
+      "type": "Process"
+    },
+    {
+      "name": "Add to team",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add to channels",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Event",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ce6810e7",
+  "workflow_id": "ce6810e7",
+  "workflow_id_display": "ce6810e7",
+  "workflow_name": "Create Secure Interactive Applications with WhatsApp Flows End-to-End Encryption",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "API, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "api"
+  ],
+  "author_name": "Flavio Angeleu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Enable secure, end-to-end encrypted data exchange in WhatsApp Flows with RSA and AES-GCM. Fast setup, API-ready. Protect sensitive business interactions—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, webhook, code"
+  ],
+  "nodes": [
+    {
+      "name": "Json Parser",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Data Extraction Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Data Extraction Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "move to base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decryption Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encrypt Return",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encrypt Return1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b050048",
+  "workflow_id": "0b050048",
+  "workflow_id_display": "0b050048",
+  "workflow_name": "Multi-Platform Social Media Publisher with Blotato, GPT-4 Mini & Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Max aka Mosheh",
+  "author_profile_url": "https://n8n.io/creators/aiwithapex/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate social media posting with AI content, multi-platform support, and easy setup. Integrates Airtable, n8n, and Blotato—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pinterest System (tm)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare for Publish",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable Record ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ensure Valid YouTube Title",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable: Posted Instagram",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable: Posted Instagram1",
+      "type": "Data Output"
+    },
+    {
+      "name": "[Instagram] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Facebook] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Linkedin] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Tiktok] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Pinterest] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Youtube] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Threads] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Twitter] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Bluesky] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Grab Pinterest Board Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Pinterest Page Sleuth",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

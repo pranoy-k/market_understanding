@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/357b1982",
+  "workflow_id": "357b1982",
+  "workflow_id_display": "357b1982",
+  "workflow_name": "Currency Converter via Webhook using ExchangeRate.host",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly convert over 170 currencies in real time with this n8n template. Perfect for e-commerce, finance, and business. Fast, secure, and easy to set up!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Convert Currency",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Conversion Request Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Converted Amount",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

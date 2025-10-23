@@ -1,0 +1,156 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d4ac4b4b",
+  "workflow_id": "d4ac4b4b",
+  "workflow_id_display": "d4ac4b4b",
+  "workflow_name": "Automate SEO Blog Content Creation with GPT-4, Perplexity AI and WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "OpenAI, WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate SEO blog publishing—generate, optimize, and post long-form content to WordPress with images, tracking, and zero manual work. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with markdown, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cleanup Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cleanup HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI 4.1 mini",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI 4.1 mini1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI 4.1 mini2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI 4.1 mini3",
+      "type": "Process"
+    },
+    {
+      "name": "Update list of blog post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update base post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Image to Wordpress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Image on Wordpress Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "get brand brief",
+      "type": "Process"
+    },
+    {
+      "name": "Idea creator",
+      "type": "Process"
+    },
+    {
+      "name": "Get Image from Pexcel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "WordPress excerpt add",
+      "type": "Data Input"
+    },
+    {
+      "name": "Excerpt creator",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write prompt to search image",
+      "type": "Process"
+    },
+    {
+      "name": "Content writer",
+      "type": "Process"
+    },
+    {
+      "name": "Category rewrite",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity Research",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

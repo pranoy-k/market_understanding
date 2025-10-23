@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2a33d2eb",
+  "workflow_id": "2a33d2eb",
+  "workflow_id_display": "2a33d2eb",
+  "workflow_name": "Real Estate Intelligence Tracker with Bright Data & OpenAI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, OpenAI, Webhook",
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate real estate data collection and analysis at scale. Extract structured listing insights with AI, bypass bot blocks, and export to Sheets or webhooks. Learn more!",
+  "key_benefits": [
+    "API integration"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Data Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model for Markdown to Textual",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Structured Data",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Review Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Review Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the structured content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge the responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate the responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initiate a Webhook Notification for the Structured Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

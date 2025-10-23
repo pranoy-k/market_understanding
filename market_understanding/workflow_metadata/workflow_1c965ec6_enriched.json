@@ -1,0 +1,113 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c965ec6",
+  "workflow_id": "1c965ec6",
+  "workflow_id_display": "1c965ec6",
+  "workflow_name": "Automated Invoice Processing with Telegram, GPT-4o, OCR and SAP Integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Raquel Giugliano",
+  "author_profile_url": "https://n8n.io/creators/raquelgiugliano/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate invoice processing from Telegram to SAP with OCR, Google Sheets integration, and instant confirmations. Streamline your workflow—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Callback Waiting Answer",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Receive Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Capture Telegram Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser (Example)",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Header",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Row Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Detail",
+      "type": "Data Output"
+    },
+    {
+      "name": "Header",
+      "type": "Data Output"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Connect to SAP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate DocumentLines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST PurchaseInvoices",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload File LlamaIndex",
+      "type": "Data Input"
+    },
+    {
+      "name": "Validate Status LlamaIndex",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Results LlamaIndex",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e459d8ca",
+  "workflow_id": "e459d8ca",
+  "workflow_id_display": "e459d8ca",
+  "workflow_name": "Generate Invoices, Save to Drive and Send Email to Customer with JS + G Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Email, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate invoice generation from form submissions: create unique order IDs, PDF invoices, email customers, store files, and track easily. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if ID Already Exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Details to Invoices Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook Simulator",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Invoice ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Invoice HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload PDF to GDrive",
+      "type": "Process"
+    },
+    {
+      "name": "Download PDF from API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Download PDF from API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

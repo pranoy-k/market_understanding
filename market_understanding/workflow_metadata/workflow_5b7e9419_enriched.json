@@ -1,0 +1,150 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5b7e9419",
+  "workflow_id": "5b7e9419",
+  "workflow_id_display": "5b7e9419",
+  "workflow_name": "AI-Powered Customer Service Automation with GPT, LangChain & Smart Routing",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Paul",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline customer service with AI-powered automation, smart routing, real-time knowledge, and secure escalation. Fast setup. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with noOp, telegram, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Supabase1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transcribe1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model8",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model10",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model11",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "orders database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Historial Chat and feedback",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Think1",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "sentiment classifier",
+      "type": "Process"
+    },
+    {
+      "name": "intent classifier",
+      "type": "Process"
+    },
+    {
+      "name": "privacy classifier",
+      "type": "Process"
+    },
+    {
+      "name": "Knowledge base",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normal path / success",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aliment context for next messages",
+      "type": "Process"
+    },
+    {
+      "name": "Generate conv context",
+      "type": "Process"
+    },
+    {
+      "name": "Customer service AGENT",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

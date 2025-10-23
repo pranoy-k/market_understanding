@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dae9bbc2",
+  "workflow_id": "dae9bbc2",
+  "workflow_id_display": "dae9bbc2",
+  "workflow_name": "Automate GitLab Merge Requests Using APIs with n8n",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Aditya Gaur",
+  "author_profile_url": "https://n8n.io/creators/autom8r/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate GitLab merge requests using n8n. Streamline approvals & pipelines, boost efficiency, and reduce manual work. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "setValueForMerge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API to Check existing merge request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create New Merge Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "API to CLOSE existing Merge Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Custom Notes To Merge Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge When Pipeline Succeeds",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "API to Check existing merge request",
+    "API to CLOSE existing Merge Request"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

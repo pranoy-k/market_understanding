@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9c20a429",
+  "workflow_id": "9c20a429",
+  "workflow_id_display": "9c20a429",
+  "workflow_name": "Free YouTube Video Analyzer with AI-Powered Summaries & Email Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, YouTube",
+  "tags": [],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Analyze YouTube videos in minutes: extract transcripts, get AI-powered summaries, and receive results via email. Fast, customizable, and easy to set up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set YouTube URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Get Fulltext",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

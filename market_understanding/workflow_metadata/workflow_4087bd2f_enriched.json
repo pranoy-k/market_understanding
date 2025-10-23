@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4087bd2f",
+  "workflow_id": "4087bd2f",
+  "workflow_id_display": "4087bd2f",
+  "workflow_name": "Extract Specific Pages from PDFs with CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract selected PDF pages in n8n using the powerful CustomJS PDF Toolkit. Fast setup, flexible triggers—perfect for seamless PDF management!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, ExtractPages"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Pages From PDF1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

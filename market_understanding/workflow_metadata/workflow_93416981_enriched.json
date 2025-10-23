@@ -1,0 +1,133 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/93416981",
+  "workflow_id": "93416981",
+  "workflow_id_display": "93416981",
+  "workflow_name": "Generate & Auto-post AI Videos to Social Media with Veo3 and Blotato",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Instagram, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate AI video creation and auto-post to Instagram, TikTok, YouTube, and more. Save time, boost reach, and streamline your content workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger: Run Daily Script Generator",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Social Media IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parser: Extract JSON from Idea",
+      "type": "Process"
+    },
+    {
+      "name": "LLM: Generate Idea & Caption (GPT-4.1)",
+      "type": "Process"
+    },
+    {
+      "name": "LLM: Format Prompt for Veo3 (GPT-4.1)",
+      "type": "Process"
+    },
+    {
+      "name": "Get my video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets: Save Script Idea",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets: Log Final Video Output",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "INSTAGRAM",
+      "type": "Data Input"
+    },
+    {
+      "name": "YOUTUBE",
+      "type": "Data Input"
+    },
+    {
+      "name": "TIKTOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "FACEBOOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "THREADS",
+      "type": "Data Input"
+    },
+    {
+      "name": "TWETTER",
+      "type": "Data Input"
+    },
+    {
+      "name": "LINKEDIN",
+      "type": "Data Input"
+    },
+    {
+      "name": "BLUESKY",
+      "type": "Data Input"
+    },
+    {
+      "name": "PINTEREST",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent: Generate Video Concept",
+      "type": "Process"
+    },
+    {
+      "name": "Tool: Inject Creativity",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent: Create Veo3-Compatible Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Tool: Build Prompt Structure",
+      "type": "Process"
+    },
+    {
+      "name": "Call Veo3 API to Generate Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Final Video URL from Veo3",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Call Veo3 API to Generate Video",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

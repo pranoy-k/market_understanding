@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c41ef3f2",
+  "workflow_id": "c41ef3f2",
+  "workflow_id_display": "c41ef3f2",
+  "workflow_name": "Translate SRT Files with Google Translate",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "DanielV",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly translate SRT subtitle files with Google Translate—automate, preserve formatting, and support global audiences. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, set, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Receive SRT File to Translate",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Translate",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split SRT Lines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Binary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Parts for Translate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Translations & Group Titles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Join completed text with double new line",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond with file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract text from Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Expose Binary",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

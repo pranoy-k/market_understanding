@@ -1,0 +1,101 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c99cfca5",
+  "workflow_id": "c99cfca5",
+  "workflow_id_display": "c99cfca5",
+  "workflow_name": "Automate Testing and Collect Responses via Telegram in Postgres (Module \"Quiz\")",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "PostgreSQL, Telegram",
+  "tags": [
+    "telegram",
+    "postgres"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate test distribution and response collection via Telegram, with secure Postgres storage and instant rankings. Discover seamless testing now!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, postgres, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Variables TG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Randomize questions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Bot Status on start",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Questions AND Answers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Answer",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Non-Answered Questions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Tests",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union list",
+      "type": "Process"
+    },
+    {
+      "name": "Get Test",
+      "type": "Data Output"
+    },
+    {
+      "name": "Calculate answers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upsert pred Answer",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

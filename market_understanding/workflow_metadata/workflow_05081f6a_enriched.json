@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/05081f6a",
+  "workflow_id": "05081f6a",
+  "workflow_id_display": "05081f6a",
+  "workflow_name": "Waitlist Form Stored in GoogleSheet with Email Verification Step",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Marcel Claus-Ahrens",
+  "author_profile_url": "https://n8n.io/creators/geckse/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly collect user info with interactive forms, manage waitlists in Google Sheets, and ensure secure user verification—customizable and automated.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, if, set"
+  ],
+  "nodes": [
+    {
+      "name": "Waitlist Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Clean and Standardize",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all Data from the Prev Form + Current",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Every Step Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add to Waitlist Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Intend to List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save as Verified",
+      "type": "Data Output"
+    },
+    {
+      "name": "Validate with Verification Code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Additional Data for the Sheet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Let the User Reenter Code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Random Verification Code",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

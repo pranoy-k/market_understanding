@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6469d46a",
+  "workflow_id": "6469d46a",
+  "workflow_id_display": "6469d46a",
+  "workflow_name": "Switch Between Work and Personal Contexts with GPT-4.1 and iPhone Automation",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Praveena",
+  "author_profile_url": "https://n8n.io/creators/pankstr/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly switch from work to your side projects with this automation. Boost focus, clear distractions, and set up easily on iPhone with n8n and OpenAI.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with webhook, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Flatten JSON",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

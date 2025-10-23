@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/02850f3d",
+  "workflow_id": "02850f3d",
+  "workflow_id_display": "02850f3d",
+  "workflow_name": "Invoice Verification and Validation with Gmail, Drive, Sheets and OCR AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Dhrumil Patel",
+  "author_profile_url": "https://n8n.io/creators/itechdp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Raw Text Again",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Unique Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Invoice Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Master Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Totals",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get last Index",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Invoices",
+      "type": "Process"
+    },
+    {
+      "name": "Get Attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Month Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create Day Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Search Month Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Search Day Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Get Parent Folder ID",
+      "type": "Process"
+    },
+    {
+      "name": "Get Day Folder ID",
+      "type": "Process"
+    },
+    {
+      "name": "Today's Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Date From Email Subject",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

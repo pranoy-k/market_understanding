@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f69b17ed",
+  "workflow_id": "f69b17ed",
+  "workflow_id_display": "f69b17ed",
+  "workflow_name": "Create a QuickBooks invoice on a new Onfleet Task creation",
+  "category": "Finance & Accounting",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate last-mile delivery invoicing by connecting Onfleet with QuickBooks Online. Streamline workflows, reduce manual tasks, and improve customer payments.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with quickbooks, onfleetTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "QuickBooks Online",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

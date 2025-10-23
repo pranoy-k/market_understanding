@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a451c821",
+  "workflow_id": "a451c821",
+  "workflow_id_display": "a451c821",
+  "workflow_name": "Automated Invoice Management with Nextcloud, Email and Telegram Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, PDF, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Joachim Hummel",
+  "author_profile_url": "https://n8n.io/creators/jhummel/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate daily invoice processing from Nextcloud—email PDFs, get Telegram alerts, and archive files effortlessly. Ideal for freelancers and small businesses.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, scheduleTrigger, nextCloud"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Incoming Invoices",
+      "type": "Process"
+    },
+    {
+      "name": "Download Invoice",
+      "type": "Process"
+    },
+    {
+      "name": "Archive File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e70cef60",
+  "workflow_id": "e70cef60",
+  "workflow_id_display": "e70cef60",
+  "workflow_name": "Save Qualys Reports to TheHive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Qualys report retrieval and case creation in TheHive with n8n. Enhance SOC efficiency and vulnerability management. Learn how to streamline now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Reports from Qualys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Already Processed Reports",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Timestamp",
+      "type": "Process"
+    },
+    {
+      "name": "Get Last Timestamp",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Case",
+      "type": "Process"
+    },
+    {
+      "name": "Download Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Report As Attachment",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/48568c2e",
+  "workflow_id": "48568c2e",
+  "workflow_id_display": "48568c2e",
+  "workflow_name": "Realtime Job Description & Salary Extraction using Bright Data MCP & OpenAI 4o mini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, function, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set input fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model for Salary Info Extract",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Job Desc Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Update Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Bright Data MCP Client List Tools",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client for Job Data Extract with Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client for Salary Data Extraction",
+      "type": "Process"
+    },
+    {
+      "name": "Salary Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Job Description Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge the response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook Notification for Job Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the salary info to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

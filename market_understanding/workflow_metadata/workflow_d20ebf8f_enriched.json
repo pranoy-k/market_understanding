@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d20ebf8f",
+  "workflow_id": "d20ebf8f",
+  "workflow_id_display": "d20ebf8f",
+  "workflow_name": "Convert 3-View Drawings to 360° Videos with GPT-4o-Image and Kling API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PiAPI",
+  "author_profile_url": "https://n8n.io/creators/piapi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Transform orthographic three-view drawings into stunning 360° rotation videos using PiAPI’s GPT-4o-Image—perfect for designers, sellers, and creators. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Basic Params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Kling Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Kling Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GPT-4o Generator: Front View",
+      "type": "Data Input"
+    },
+    {
+      "name": "GPT-4o Generator: Side View",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image URL of Front Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image URL of Side Image",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

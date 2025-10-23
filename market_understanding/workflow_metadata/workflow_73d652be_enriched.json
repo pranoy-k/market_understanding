@@ -1,0 +1,207 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/73d652be",
+  "workflow_id": "73d652be",
+  "workflow_id_display": "73d652be",
+  "workflow_name": "WordPress - GenAI App to enhance user experience with Supabase and OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "OpenAI, WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": "https://n8n.io/creators/dataki/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with markdown, postgres, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Every 30 seconds",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Default Data Loader1",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown1",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wordpress - Get all posts",
+      "type": "Process"
+    },
+    {
+      "name": "Wordpress - Get all pages",
+      "type": "Process"
+    },
+    {
+      "name": "Filter - Only published & unprotected content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML To Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase - Store workflow execution",
+      "type": "Process"
+    },
+    {
+      "name": "Wordpress - Get posts modified after last workflow execution",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wordpress - Get posts modified after last workflow execution1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter - Only published and unprotected content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store documents on Supabase",
+      "type": "Process"
+    },
+    {
+      "name": "Store workflow execution id and timestamptz",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate documents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres - Create documents table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres - Create workflow execution history table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Wordpress Posts and Pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge retrieved WordPress posts and pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres - Filter on existing documents",
+      "type": "Data Output"
+    },
+    {
+      "name": "Supabase - Delete row if documents exists",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase - Retrieve documents from chatinput",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f8b1af2",
+  "workflow_id": "2f8b1af2",
+  "workflow_id_display": "2f8b1af2",
+  "workflow_name": "Generate SEO Keywords with AI: Topic to Keyword List in Seconds",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Gegenfeld",
+  "author_profile_url": "https://n8n.io/creators/gegenfeld/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your keyword research with this AI-powered workflow—generate 15-20 targeted keywords in minutes and boost your SEO strategy. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, agent, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Input Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Data from Form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select your Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Keyword Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate Data Points for AI Keyword Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract and Format",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

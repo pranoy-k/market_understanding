@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e78ed515",
+  "workflow_id": "e78ed515",
+  "workflow_id_display": "e78ed515",
+  "workflow_name": "Display project data on a smashing dashboard",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get real-time GitHub, Docker, npm, and Product Hunt data every minute on a Smashing dashboard. Easy Docker install—stay updated effortlessly!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Dashboard Configuration",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Massage npm Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Massage Product Hunt Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Massage Docker Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Massage GitHub Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve Docker Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Docker Pulls",
+      "type": "Data Input"
+    },
+    {
+      "name": "Docker Stars",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve npm Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "GitHub Watchers",
+      "type": "Data Input"
+    },
+    {
+      "name": "GitHub Forks",
+      "type": "Data Input"
+    },
+    {
+      "name": "GitHub Open Issues",
+      "type": "Data Input"
+    },
+    {
+      "name": "GitHub Stars",
+      "type": "Data Input"
+    },
+    {
+      "name": "npm Maintenance",
+      "type": "Data Input"
+    },
+    {
+      "name": "npm Popularity",
+      "type": "Data Input"
+    },
+    {
+      "name": "npm Quality",
+      "type": "Data Input"
+    },
+    {
+      "name": "npm Final",
+      "type": "Data Input"
+    },
+    {
+      "name": "Product Hunt Rating",
+      "type": "Data Input"
+    },
+    {
+      "name": "Product Hunt Reviews",
+      "type": "Data Input"
+    },
+    {
+      "name": "Product Hunt Votes",
+      "type": "Data Input"
+    },
+    {
+      "name": "Product Hunt Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Product Hunt Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

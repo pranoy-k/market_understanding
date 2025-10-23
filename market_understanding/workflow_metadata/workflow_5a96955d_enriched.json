@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5a96955d",
+  "workflow_id": "5a96955d",
+  "workflow_id_display": "5a96955d",
+  "workflow_name": "Notify a team channel about new software releases via Slack and GitHub",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "GitHub, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Primary Use Case\t🎯 AI Process Automation",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Stay instantly updated on GitHub releases—this workflow auto-notifies your Slack channel with release details. Connect and streamline your team today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

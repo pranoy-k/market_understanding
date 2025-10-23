@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fbbd2fd8",
+  "workflow_id": "fbbd2fd8",
+  "workflow_id_display": "fbbd2fd8",
+  "workflow_name": "Modular & Customizable AI-Powered Email Routing_ Text Classifier for eCommerce",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Davide",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Implement sophisticated email routing for eCommerce using AI text classification.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Quote DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "Prod DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "General DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "Order DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "Other DB",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

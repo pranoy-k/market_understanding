@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e532eea",
+  "workflow_id": "9e532eea",
+  "workflow_id_display": "9e532eea",
+  "workflow_name": "Save Telegram Text, Voice & Audio to Notion with DeepSeek & OpenAI Summaries",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Notion, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "Rahim Kara",
+  "author_profile_url": "https://n8n.io/creators/rahimin3d/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly save Telegram chats, voice notes, and files to Notion with AI summaries. Boost productivity and organization—discover TeleNotion Scribe now!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Notion2",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Notion3",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "Notion4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

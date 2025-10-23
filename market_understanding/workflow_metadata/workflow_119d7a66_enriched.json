@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/119d7a66",
+  "workflow_id": "119d7a66",
+  "workflow_id_display": "119d7a66",
+  "workflow_name": "Automate CSAT Surveys with Freshdesk & Store Responses in Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets, RSS",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate CSAT surveys after Freshdesk ticket resolution, collect feedback in Google Sheets, and improve customer support with easy setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Survey",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set your data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create the email text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Updates status",
+      "type": "Data Output"
+    },
+    {
+      "name": "get existing tickets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save survey to google sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "get client",
+      "type": "Process"
+    },
+    {
+      "name": "get tickets",
+      "type": "Process"
+    },
+    {
+      "name": "Convert the email text to HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

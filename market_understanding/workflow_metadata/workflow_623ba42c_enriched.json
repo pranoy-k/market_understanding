@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/623ba42c",
+  "workflow_id": "623ba42c",
+  "workflow_id_display": "623ba42c",
+  "workflow_name": "Smart Email Classifier & Auto-Responder with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Email, Gmail, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Ian Dikhtiar",
+  "author_profile_url": "https://n8n.io/creators/ian-dikhtiar/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "$INPUTS$",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Azure OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "important?",
+      "type": "Process"
+    },
+    {
+      "name": "Draft Reply",
+      "type": "Process"
+    },
+    {
+      "name": "needs reply?",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "json schema",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

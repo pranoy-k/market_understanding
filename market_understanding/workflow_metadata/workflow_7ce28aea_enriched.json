@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7ce28aea",
+  "workflow_id": "7ce28aea",
+  "workflow_id_display": "7ce28aea",
+  "workflow_name": "Segment WooCommerce Customers for Targeted Marketing with RFM Analysis",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mohammadreza azari",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly segment WooCommerce customers with RFM analysis. Identify high-value buyers, boost retention, and tailor marketing—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, wooCommerce, html"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Manual Start",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Orders From WooCommerce",
+      "type": "Process"
+    },
+    {
+      "name": "Compute RFM Segmentation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Segment Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Report Page",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

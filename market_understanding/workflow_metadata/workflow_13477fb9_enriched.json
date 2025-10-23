@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/13477fb9",
+  "workflow_id": "13477fb9",
+  "workflow_id_display": "13477fb9",
+  "workflow_name": "TrustPilot SaaS Product Review Tracker with Bright Data & OpenAI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "OpenAI, RSS",
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, function, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Data Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Structured Data",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Structured JSON Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the structured content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Summarization Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Merge the responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code to extract the first element",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate the responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initiate a Webhook Notification for the Structured Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

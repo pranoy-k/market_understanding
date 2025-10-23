@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/32c18d58",
+  "workflow_id": "32c18d58",
+  "workflow_id_display": "32c18d58",
+  "workflow_name": "Create screenshots with uProc, save to Dropbox and send by email",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Dropbox, Email",
+  "tags": [],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture website screenshots—no browser extensions needed. Use uProc and n8n to customize, save, and email screenshots with ease. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, dropbox"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Web + Email Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Email",
+      "type": "Process"
+    },
+    {
+      "name": "Generate FullPage",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Screenshot",
+      "type": "Process"
+    },
+    {
+      "name": "Get File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get File1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Screenshot",
+      "type": "Process"
+    },
+    {
+      "name": "Upload fullpage",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86345820",
+  "workflow_id": "86345820",
+  "workflow_id_display": "86345820",
+  "workflow_name": "AI Blog Generator for Shopify Product listings: Using GPT-4o and Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, OpenAI, Shopify",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Kumar Shivam",
+  "author_profile_url": "https://n8n.io/creators/shivam840708/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate SEO-rich Shopify blogs with AI. Sync products, extract nutrition info, publish in HTML, and track progress—no manual writing required. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, if, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Main Product info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Read Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Create Blog id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Blog Poster",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

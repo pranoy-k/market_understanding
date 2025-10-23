@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43af0138",
+  "workflow_id": "43af0138",
+  "workflow_id_display": "43af0138",
+  "workflow_name": "Webhooks with Mattermost",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate tasks via slash commands with a Webhook node. Replicate workflow features and trigger seamless automation. Learn how it works now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with mattermost, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

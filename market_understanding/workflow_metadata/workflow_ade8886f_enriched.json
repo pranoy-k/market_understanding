@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ade8886f",
+  "workflow_id": "ade8886f",
+  "workflow_id_display": "ade8886f",
+  "workflow_name": "Predict End of Utterance for smoother AI agent chats with Telegram and Gemini",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "gemini"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance AI chat on Telegram with this n8n template—predict user message end, reduce interruptions, and enable natural, seamless conversations. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, textClassifier, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prediction Subworkflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Updated Session Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Redis Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session",
+      "type": "Process"
+    },
+    {
+      "name": "Get Session",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Session2",
+      "type": "Process"
+    },
+    {
+      "name": "Session Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session2",
+      "type": "Process"
+    },
+    {
+      "name": "Resume Wait Node",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call Prediction Subworkflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

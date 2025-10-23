@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9c24404d",
+  "workflow_id": "9c24404d",
+  "workflow_id_display": "9c24404d",
+  "workflow_name": "Manage contacts in Automizy",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate data collection, filtering, and reporting with real-time alerts and seamless integration. Streamline your workflow—discover more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, automizy"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Automizy",
+      "type": "Process"
+    },
+    {
+      "name": "Automizy1",
+      "type": "Process"
+    },
+    {
+      "name": "Automizy2",
+      "type": "Process"
+    },
+    {
+      "name": "Automizy3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

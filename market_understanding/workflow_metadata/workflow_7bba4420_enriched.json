@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7bba4420",
+  "workflow_id": "7bba4420",
+  "workflow_id_display": "7bba4420",
+  "workflow_name": "Search and download torrents using transmission-daemon",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Danger",
+  "author_profile_url": "https://n8n.io/creators/dangerblack/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate movie torrent searches and downloads with voice commands using n8n, Transmission, Google Assistant, and IFTTT. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, httpRequest, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "SearchTorrent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start download",
+      "type": "Data Input"
+    },
+    {
+      "name": "Start download new token",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

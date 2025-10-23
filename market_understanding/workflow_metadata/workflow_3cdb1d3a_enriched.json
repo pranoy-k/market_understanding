@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3cdb1d3a",
+  "workflow_id": "3cdb1d3a",
+  "workflow_id_display": "3cdb1d3a",
+  "workflow_name": "Create and Send Multi-Item PayPal Invoices via Email",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Email, Facebook, PayPal",
+  "tags": [],
+  "author_name": "Andrew",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "It looks like there’s no workflow description provided yet. Please share the n8n workflow description you’d like summarized, and I’ll create a compelling meta description for you!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Collect Invoice Details",
+      "type": "Trigger"
+    },
+    {
+      "name": "Remove Client ID and Secret Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PayPal | Encode Basic Auth Token",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Invoice Number and Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add href link for Preview",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Preview URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reformat JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Another Item",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Add Decision",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reformat newItem JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append newItem into items with currency_code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt for Additional Line-Item",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prompt for Additional Line-Item 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine New Items Into Master List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch OAuth Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call PayPal Create Invoice",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dispatch Invoice via PayPal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Base Invoice & Add-Item Decision",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Updated Items & Add-Item Decision",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strip Add-Item Loop Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Invoice Creation Response & Preview Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f1f10ed5",
+  "workflow_id": "f1f10ed5",
+  "workflow_id_display": "f1f10ed5",
+  "workflow_name": "Send Daily Weather Forecasts from OpenWeatherMap to Telegram with Smart Formatting",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "AurÃ©lien P.",
+  "author_profile_url": "https://n8n.io/creators/devgor/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get beautifully formatted daily weather forecasts on Telegram with n8n. See hourly updates, smart alerts, and local insights. Learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Morning Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeather API Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Weather Data Processor",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenWeather API Request",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

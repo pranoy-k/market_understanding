@@ -1,0 +1,206 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/279b66b7",
+  "workflow_id": "279b66b7",
+  "workflow_id_display": "279b66b7",
+  "workflow_name": "Binance SM Indicators Webhook Tool",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "44",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "api"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Centralized API gateway for Binance Spot Market Quant AI. Instantly get multi-timeframe RSI, MACD, EMA, and more. Power advanced trading insights now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, stickyNote, merge"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook 15m Indicators",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge Into 1 Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Bollinger Bands",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate RSI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate MACD",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate SMA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate EMA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ADX",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 15 min Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to 15m Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook 1h Indicators",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to 1h Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge 1h Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Into 1 Array 1h",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Bollinger Bands(1h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate RSI(1h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate MACD(1h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate SMA(1h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate EMA(1h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ADX1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request 1h",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook 4h Indicators",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request 4h",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Into 1 Array 4h",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Bollinger Bands(4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate RSI(4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate MACD(4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate SMA(4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate EMA(4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ADX (4h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 4h Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to 4h Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook 1d Indicators",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request 1d",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Into 1 Array 1d",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Bollinger Bands(1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate RSI(1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate MACD(1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate SMA(1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate EMA(1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ADX (1d)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 1d Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to 1d Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

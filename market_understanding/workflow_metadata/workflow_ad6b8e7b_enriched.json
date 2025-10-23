@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ad6b8e7b",
+  "workflow_id": "ad6b8e7b",
+  "workflow_id_display": "ad6b8e7b",
+  "workflow_name": "AI-powered Student Assistant for Course Information via Twilio SMS",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Airtable, OpenAI, SMS",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate course enquiries with this n8n template—AI chatbot answers SMS questions using Airtable data via Twilio. Boost efficiency and lead gen—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "Twilio Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get User Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Model",
+      "type": "Process"
+    },
+    {
+      "name": "Search Available Courses",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Course Database Schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append to Call Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get List of Professors",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get List of Departments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Course Assistant Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

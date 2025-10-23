@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/00c8c936",
+  "workflow_id": "00c8c936",
+  "workflow_id_display": "00c8c936",
+  "workflow_name": "Tesla Quant Trading AI Agent using Telegram + GPT-4.1 (Main InterFace)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get fast, AI-powered Tesla (TSLA) trading signals on Telegram. Real-time market data, technical analysis & news sentiment for smarter decisions. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add SessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "User Authentication (Replace Telegram ID)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tesla Quant Trading AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla Financial Market Data Analyst Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Tesla News and Sentiment Analyst Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Splits message is more than 4000 characters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

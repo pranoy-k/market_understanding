@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f69ab8c",
+  "workflow_id": "1f69ab8c",
+  "workflow_id_display": "1f69ab8c",
+  "workflow_name": "N8N for Beginners: Looping over Items",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Dominik Baranowski",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Master n8n looping with this beginner-friendly guide! Learn built-in vs explicit loops, process arrays efficiently, and automate tasks step by step.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, noOp, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Paste JSON into this node",
+      "type": "Trigger"
+    },
+    {
+      "name": "Result1",
+      "type": "Process"
+    },
+    {
+      "name": "Result2",
+      "type": "Process"
+    },
+    {
+      "name": "Split Array of Strings into Array of Objects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Result3",
+      "type": "Process"
+    },
+    {
+      "name": "Result4",
+      "type": "Process"
+    },
+    {
+      "name": "Result5",
+      "type": "Process"
+    },
+    {
+      "name": "Add param1 to output5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add param1 to output1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over Items 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over Items 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add param1 to output2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add param1 to output3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add param1 to output4",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

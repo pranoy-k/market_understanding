@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b5a8cf80",
+  "workflow_id": "b5a8cf80",
+  "workflow_id_display": "b5a8cf80",
+  "workflow_name": "Overlay or Watermark Images by Merging with Another Image",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Marcel Claus-Ahrens",
+  "author_profile_url": "https://n8n.io/creators/geckse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly overlay watermarks or logos on images with precise positioning. Perfect for branding—customize placement and enhance your workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Nest Top Meta",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nest Bg Meta",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Meta BG",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate Center",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Logo for the Watermark",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get the Image for Background",
+      "type": "Data Input"
+    },
+    {
+      "name": "Wait for both Images and merge Binary in one Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Image Binary Top Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Image Binary Background Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Meta Top",
+      "type": "Process"
+    },
+    {
+      "name": "Let \"top\" overlay \"bg\"",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

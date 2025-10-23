@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e15ae23a",
+  "workflow_id": "e15ae23a",
+  "workflow_id_display": "e15ae23a",
+  "workflow_name": "Sync New Files From Google Drive with Airtable",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Email, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "WeblineIndia",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Google Drive file sharing: instantly email new files to recipients and log file details in Airtable for easy tracking. Streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, googleDriveTrigger, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive",
+      "type": "Trigger"
+    },
+    {
+      "name": "Log File Metadata",
+      "type": "Data Output"
+    },
+    {
+      "name": "Share File with Recipient",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/36acb733",
+  "workflow_id": "36acb733",
+  "workflow_id_display": "36acb733",
+  "workflow_name": "Get notified on Gmail, Telegram and Slack on new Stripe purchase",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Gmail, Slack, Stripe, Telegram",
+  "tags": [
+    "telegram",
+    "slack"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant, detailed Stripe checkout notifications—including all products and add-ons—sent to your favorite app. Easy setup. Stay on top of every sale!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Stripe Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stripe | Get checkout line items",
+      "type": "Data Input"
+    },
+    {
+      "name": "split templates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stripe | Get product info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter by paid only",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

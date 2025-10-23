@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ad999d9e",
+  "workflow_id": "ad999d9e",
+  "workflow_id_display": "ad999d9e",
+  "workflow_name": "Automate Job Search and Matching with Adzuna API, GPT-3.5, and Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets, OpenAI",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Gerald Denor",
+  "author_profile_url": "https://n8n.io/creators/dominixai/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate job search with real-time Adzuna API, AI-powered summaries, and candidate-matching. Save time—discover top job matches effortlessly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Job Title1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Score Job",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Job1",
+      "type": "Process"
+    },
+    {
+      "name": "Write Cover Letter1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Jobs from Adzuna1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Jobs1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

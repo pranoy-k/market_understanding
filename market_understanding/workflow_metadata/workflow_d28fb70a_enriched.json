@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d28fb70a",
+  "workflow_id": "d28fb70a",
+  "workflow_id_display": "d28fb70a",
+  "workflow_name": "Send new YouTube channel videos to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram, YouTube",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Alessio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically send new YouTube videos from any channel to your Telegram chat at customizable intervals. Easy setup ensures timely, non-duplicate updates!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, interval, set"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CheckTime",
+      "type": "Process"
+    },
+    {
+      "name": "GetVideosYT",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

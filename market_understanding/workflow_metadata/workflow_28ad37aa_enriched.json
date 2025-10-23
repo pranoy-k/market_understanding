@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/28ad37aa",
+  "workflow_id": "28ad37aa",
+  "workflow_id_display": "28ad37aa",
+  "workflow_name": "Backlink Monitoring Automation with Google Sheets + DataForSEO",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Mykolas Bartkus",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly check backlink status and type in Google Sheets using n8n and DataForSEO API. Track live, lost, dofollow, and nofollow links—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reads Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Sends data to Google sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cleans backlink url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sends HTTP POST Request to DataForSEO",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sends HTTP links request to DataforSeo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Checks which backlinks exists on the landing page",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

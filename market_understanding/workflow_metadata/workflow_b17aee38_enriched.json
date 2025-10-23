@@ -1,0 +1,169 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b17aee38",
+  "workflow_id": "b17aee38",
+  "workflow_id_display": "b17aee38",
+  "workflow_name": "Process Multiple Prompts in Parallel with Azure OpenAI Batch API",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "38",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api🤖 openai"
+  ],
+  "author_name": "Greg Evseev",
+  "author_profile_url": "https://n8n.io/creators/greg/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, memoryManager, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Run example",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "One query example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete original properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Parsed Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set desired 'api-version'",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove original requests",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append custom_id for single query example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append custom_id for chat memory example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Setup defaults",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Construct 'requests' array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build batch 'request' object for single query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory Store",
+      "type": "Process"
+    },
+    {
+      "name": "Fill Chat Memory with example data",
+      "type": "Process"
+    },
+    {
+      "name": "Build batch 'request' object from Chat Memory and execution data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Chat Memory Data",
+      "type": "Process"
+    },
+    {
+      "name": "First Prompt Result",
+      "type": "Process"
+    },
+    {
+      "name": "Second Prompt Result",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Second Prompt Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter First Prompt Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Join two example requests into array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Truncate Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "JSON requests to JSONL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change file name and mimetype",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Track file upload status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create batch job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Track batch job progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve batch job output file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge File and API Version",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert requests jsonl to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set defaults if not set already",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow 'Process Multiple Prompts in Parallel with Azure OpenAI Batch API'",
+      "type": "Process"
+    },
+    {
+      "name": "Upload batch file",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Merge File and API Version",
+    "Execute Workflow 'Process Multiple Prompts in Parallel with Azure OpenAI Batch API'",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

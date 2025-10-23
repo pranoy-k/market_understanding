@@ -1,0 +1,138 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb65b46e",
+  "workflow_id": "fb65b46e",
+  "workflow_id_display": "fb65b46e",
+  "workflow_name": "AI Agent to chat with Airtable and analyze data",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Build an AI agent for Airtable in n8n! Interact with data via chat, use powerful filters, and visualize results—perfect for fast, insightful analysis.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set schema and prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Bases",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Base/Tables schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search records",
+      "type": "Process"
+    },
+    {
+      "name": "Process data with code",
+      "type": "Process"
+    },
+    {
+      "name": "Create map image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get list of bases",
+      "type": "Process"
+    },
+    {
+      "name": "Get base schema",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable - Search records",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Generate search filter",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload file to get link",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Download File",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Get messages",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Run assistant",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Send message",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenAI - Create thread",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

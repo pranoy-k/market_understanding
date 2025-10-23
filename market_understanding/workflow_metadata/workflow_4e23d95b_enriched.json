@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4e23d95b",
+  "workflow_id": "4e23d95b",
+  "workflow_id_display": "4e23d95b",
+  "workflow_name": "MCP Supabase Server for AI Agent with RAG & Multi-Tenant CRUD",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Luciano Gutierrez",
+  "author_profile_url": "https://n8n.io/creators/koresoluciones/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Elevate your AI apps with Supabase AI Agent: persistent RAG memory, real-time CRUD, multi-tenant data isolation & secure workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with supabaseTool, embeddingsOpenAi, vectorStoreSupabase"
+  ],
+  "nodes": [
+    {
+      "name": "MCP_SUPABASE",
+      "type": "Trigger"
+    },
+    {
+      "name": "DELETE_ROW_INSCRICOES_CURSOS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_ROW_AGENT_MESSAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CREATE_ROW_AGENT_MESSAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DELETE_ROW_AGENT_MESSAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UPDATE_ROW_AGENT_MESSAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_MANY_ROW_AGENT_MESSAGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CREATE_ROW_AGENT_TASKS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_ROW_AGENT_TASKS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DELETE_ROW_AGENT_TASKS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UPDATE_ROW_AGENT_TASKS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_MANY_ROW_AGENT_TASKS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CREATE_ROW_AGENT_STATUS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_ROW_AGENT_STATUS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DELETE_ROW_AGENT_STATUS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UPDATE_ROW_AGENT_STATUS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_MANY_ROW_AGENT_STATUS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CREATE_ROW_AGENT_KNOWLEDGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_ROW_AGENT_KNOWLEDGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UPDATE_ROW_INSCRICOES_AGENT_KNOWLEDGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET_MANY_ROW_AGENT_KNOWLEDGE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

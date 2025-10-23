@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/89e74dc9",
+  "workflow_id": "89e74dc9",
+  "workflow_id_display": "89e74dc9",
+  "workflow_name": "Evaluate AI Agent Response Relevance using OpenAI and Cosine Similarity",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with evaluationTrigger, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Remap Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Input Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate Relevance Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluation",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Update Output",
+      "type": "Process"
+    },
+    {
+      "name": "Update Metrics",
+      "type": "Process"
+    },
+    {
+      "name": "Answer Relevance",
+      "type": "Process"
+    },
+    {
+      "name": "Get Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculate Similarity Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Questions to Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

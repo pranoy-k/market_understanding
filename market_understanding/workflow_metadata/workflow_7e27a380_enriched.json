@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7e27a380",
+  "workflow_id": "7e27a380",
+  "workflow_id_display": "7e27a380",
+  "workflow_name": "Daily Birthday Reminders from Google Contacts to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "google",
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "WeblineIndia",
+  "author_profile_url": "https://n8n.io/creators/weblineindia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Never miss a team birthday! Automate daily Google Contacts checks and send personalized Slack reminders. Boost engagement—learn how with WeblineIndia.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, slack, googleContacts"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Contacts",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Contact",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

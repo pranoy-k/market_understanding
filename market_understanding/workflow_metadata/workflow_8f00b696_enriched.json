@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8f00b696",
+  "workflow_id": "8f00b696",
+  "workflow_id_display": "8f00b696",
+  "workflow_name": "Reddit AI digest",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Reddit, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly get weekly summaries of n8n Reddit mentions via email or Slack. AI-powered workflow ensures relevance and clarity. Learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, set, reddit"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "SetFinal",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Summary",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Classify",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Summary Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Reddit",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

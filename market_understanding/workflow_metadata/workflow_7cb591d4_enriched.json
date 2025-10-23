@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7cb591d4",
+  "workflow_id": "7cb591d4",
+  "workflow_id_display": "7cb591d4",
+  "workflow_name": "Nightly n8n backup to Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Jeyson Orozco",
+  "author_profile_url": "https://n8n.io/creators/akhilv7/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up n8n workflows to Google Drive nightly, with automated retention, easy setup, and organized archives. Safeguard your data today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, googleDrive, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "IGNORE FILES",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create n8n_backups",
+      "type": "Process"
+    },
+    {
+      "name": "Create n8n_old",
+      "type": "Process"
+    },
+    {
+      "name": "GET CURRENT FOLDER",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET CURRENT FOLDER CREATES",
+      "type": "Process"
+    },
+    {
+      "name": "Merge mensage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET CURRENT BACKUPS1",
+      "type": "Process"
+    },
+    {
+      "name": "MOVE INTO OLD FOLDER",
+      "type": "Process"
+    },
+    {
+      "name": "UPLOAD WORKFLOWS",
+      "type": "Process"
+    },
+    {
+      "name": "Item Lists",
+      "type": "Process"
+    },
+    {
+      "name": "Split In Batches2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LIST OLD BACKUPS",
+      "type": "Process"
+    },
+    {
+      "name": "DELETE OLD BACKUP",
+      "type": "Process"
+    },
+    {
+      "name": "Item Lists old",
+      "type": "Process"
+    },
+    {
+      "name": "Split In Batches old",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

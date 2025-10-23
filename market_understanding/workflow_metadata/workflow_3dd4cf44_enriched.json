@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3dd4cf44",
+  "workflow_id": "3dd4cf44",
+  "workflow_id_display": "3dd4cf44",
+  "workflow_name": "Upload Carousel of Images to Tiktok and Instagram with upload-post.com",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Instagram",
+  "tags": [],
+  "author_name": "Juan Carlos Cavero Gracia",
+  "author_profile_url": "https://n8n.io/creators/carlosgracia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly publish image carousels to Instagram and TikTok with automated uploads. Save time, ensure consistency, and streamline your visual workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, merge"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST TO INSTAGRAM1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change name to photo1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change name to photo2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send as 1 merged file",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST TO TIKTOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image 2",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

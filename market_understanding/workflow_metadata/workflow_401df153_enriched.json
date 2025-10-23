@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/401df153",
+  "workflow_id": "401df153",
+  "workflow_id_display": "401df153",
+  "workflow_name": "Anomaly (images) detection tool [3/3 - anomaly]",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jenny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly detect anomalies in crop images with Qdrant and Voyage AI. Upload, analyze, and identify outliers instantly. Learn more about this tool!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, executeWorkflowTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables for medoids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Info About Crop Labeled Clusters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image URL hardcode",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embed image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get similarity of medoids",
+      "type": "Data Input"
+    },
+    {
+      "name": "Compare scores",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Total Points in Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Each Crop Counts",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

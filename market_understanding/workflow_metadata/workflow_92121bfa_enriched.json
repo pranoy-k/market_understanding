@@ -1,0 +1,437 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92121bfa",
+  "workflow_id": "92121bfa",
+  "workflow_id_display": "92121bfa",
+  "workflow_name": "Automate Salon Appointment Management with WhatsApp, GPT & Google Calendar",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "148",
+  "tools_integrations": "OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Denis",
+  "author_profile_url": "https://n8n.io/creators/koresoluciones/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Transform your salon or service business with an AI-powered WhatsApp bot for automated booking, smart routing, daily reminders, and seamless integrations.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleCalendar, googleCalendarTool, redis"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Schedule Events",
+      "type": "Process"
+    },
+    {
+      "name": "Search Schedule Events",
+      "type": "Data Output"
+    },
+    {
+      "name": "Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse General Inquiry Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Multiple Appointments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify Client Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify Client Error4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Information to be Saved in Airtable1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify Client Error2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Confirmation Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify Client Error5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify Client Error3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Intent JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Initial Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Image",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Audio Response",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Search Airtable Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Airtable Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Logs the confirmed booking details1",
+      "type": "Data Output"
+    },
+    {
+      "name": "list_services",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cancel Appointment",
+      "type": "Data Output"
+    },
+    {
+      "name": "list_services1",
+      "type": "Data Output"
+    },
+    {
+      "name": "list_services2",
+      "type": "Data Output"
+    },
+    {
+      "name": "list_services3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Airtable Bookings",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Configuration",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fix mimeType for Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "Intent Recognition Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "General Inquiry",
+      "type": "Process"
+    },
+    {
+      "name": "General Inquiry - Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    },
+    {
+      "name": "Customer Confirmation Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract JSON from Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory10",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory11",
+      "type": "Process"
+    },
+    {
+      "name": "Intent Recognition Agent - Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Set Processing Lock",
+      "type": "Process"
+    },
+    {
+      "name": "Get Current Processing Lock",
+      "type": "Process"
+    },
+    {
+      "name": "Pop All Batched Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Message List",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Processing Lock",
+      "type": "Process"
+    },
+    {
+      "name": "Push",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Tomorrow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Reminder Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model8",
+      "type": "Process"
+    },
+    {
+      "name": "Package Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory6",
+      "type": "Process"
+    },
+    {
+      "name": "check_availability",
+      "type": "Process"
+    },
+    {
+      "name": "Fix JSON Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Not Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Cancel Appointment1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get_events",
+      "type": "Process"
+    },
+    {
+      "name": "check_events",
+      "type": "Process"
+    },
+    {
+      "name": "set_appointments",
+      "type": "Process"
+    },
+    {
+      "name": "get_appointments",
+      "type": "Process"
+    },
+    {
+      "name": "get_customer_appointments",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model9",
+      "type": "Process"
+    },
+    {
+      "name": "check_events1",
+      "type": "Process"
+    },
+    {
+      "name": "set_appointments1",
+      "type": "Process"
+    },
+    {
+      "name": "get_appointments1",
+      "type": "Process"
+    },
+    {
+      "name": "Cancellation Agent - Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Extract JSON from Cancellation Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "get_events1",
+      "type": "Process"
+    },
+    {
+      "name": "Rate Limiter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Redis Hourly",
+      "type": "Process"
+    },
+    {
+      "name": "Increment Counter Hourly",
+      "type": "Process"
+    },
+    {
+      "name": "Cancellation Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Booking Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Booking Agent - Backup",
+      "type": "Process"
+    },
+    {
+      "name": "Get Calendar Events",
+      "type": "Process"
+    },
+    {
+      "name": "Detect Conflicts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Alert Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Update Agent - Backup",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

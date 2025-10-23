@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3a6e5693",
+  "workflow_id": "3a6e5693",
+  "workflow_id_display": "3a6e5693",
+  "workflow_name": "Extract & Summarize Bing Copilot Search Results with Gemini AI and Bright Data",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Bing Copilot searches with AI-powered data extraction, instant summaries, and webhook alerts—perfect for analysts, devs, and marketers. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Snapshot Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Snapshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Check Snapshot Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Concise Summary Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Data Webhook Notifier",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summary Webhook Notifier",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perform a Bing Copilot Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

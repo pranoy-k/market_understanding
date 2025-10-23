@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3b1dc14d",
+  "workflow_id": "3b1dc14d",
+  "workflow_id_display": "3b1dc14d",
+  "workflow_name": "Altcoin News to LinkedIn Posts with DeepSeek AI & Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Lawal Ridwan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate crypto content creation: fetch altcoin news, rewrite with DeepSeek AI, store in Google Sheets, and schedule LinkedIn posts—no manual work. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, interval, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Tweet",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Today & Script",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post From Gpt",
+      "type": "Data Output"
+    },
+    {
+      "name": "Romove post after posting",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Raw Rss In A Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Refine Text",
+      "type": "Data Output"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch RSS Feed",
+      "type": "Data Input"
+    },
+    {
+      "name": "Covert to normal text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Turn the rss into Linkedin post",
+      "type": "Process"
+    },
+    {
+      "name": "Post To LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

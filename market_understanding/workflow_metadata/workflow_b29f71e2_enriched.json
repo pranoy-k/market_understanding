@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b29f71e2",
+  "workflow_id": "b29f71e2",
+  "workflow_id_display": "b29f71e2",
+  "workflow_name": "Analyze tradingview.com charts with Chrome extension, N8N and OpenAI",
+  "category": "IT & Development",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "3",
+  "tools_integrations": "Google Analytics, OpenAI, Webhook",
+  "tags": [
+    "Webhook📊 Analytics🤖 AI"
+  ],
+  "author_name": "Hans Blaauw",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow enables automated technical analysis of trading charts from TradingView. It uses a Chrome extension to capture chart screenshots, processes them through OpenAI's vision capabilities, and provides detailed technical analysis for traders.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

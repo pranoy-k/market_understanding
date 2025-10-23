@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ee20caa3",
+  "workflow_id": "ee20caa3",
+  "workflow_id_display": "ee20caa3",
+  "workflow_name": "AI-Powered Asana Task Prioritization with GPT-4 and Pinecone Memory",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Asana task prioritization with AI that thinks like a COO. Get daily, strategic task insights with detailed reasoning. Boost team focus—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Daily 9AM Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Priority Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Task Reasoning Model",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Query Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Task Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Save Prioritized Task",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Tasks",
+      "type": "Process"
+    },
+    {
+      "name": "COO Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Task Knowledge Vector DB",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

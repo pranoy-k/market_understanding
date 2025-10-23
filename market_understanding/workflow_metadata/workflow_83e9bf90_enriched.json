@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/83e9bf90",
+  "workflow_id": "83e9bf90",
+  "workflow_id_display": "83e9bf90",
+  "workflow_name": "Flux AI Image Generator",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, AWS, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Max Tkacz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Vivid Pop Explosion",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Dystopia",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Analog Glitchscape",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Neon Fauvism",
+      "type": "Data Processing"
+    },
+    {
+      "name": "None",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hyper-Surreal Escape",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Serve webpage",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Upload image to S3",
+      "type": "Process"
+    },
+    {
+      "name": "Call hugginface inference api",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

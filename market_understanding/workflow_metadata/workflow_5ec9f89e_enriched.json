@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5ec9f89e",
+  "workflow_id": "5ec9f89e",
+  "workflow_id_display": "5ec9f89e",
+  "workflow_name": "Extract and Structure Hacker News Job Posts with Gemini AI and Save to Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Airtable",
+  "tags": [
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Puspak",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn \"Ask HN: Who is hiring?\" posts into structured job listings with AI automation—integrates with Airtable for smarter hiring insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get relevant data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write results to airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search for Who is hiring posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get latest post",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out children (jobs)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trun into structured data",
+      "type": "Process"
+    },
+    {
+      "name": "Clean text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit for testing (optional)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HI API: Get the individual job post",
+      "type": "Data Input"
+    },
+    {
+      "name": "HN API: Get Main Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "HI API: Get the individual job post",
+    "HN API: Get Main Post"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

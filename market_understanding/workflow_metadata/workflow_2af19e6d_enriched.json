@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2af19e6d",
+  "workflow_id": "2af19e6d",
+  "workflow_id_display": "2af19e6d",
+  "workflow_name": "Automate Photo Background Removal with Photoroom API and Google Drive",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "API, Google Drive",
+  "tags": [
+    "google",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Samir Saci",
+  "author_profile_url": "https://n8n.io/creators/samirsaci/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate image background removal for marketing teams and event agencies. Streamline photo processing with n8n and Photoroom API—get started today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Daily at 08:00 am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save to Remove Background",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Move to Original",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image",
+      "type": "Process"
+    },
+    {
+      "name": "Get all files",
+      "type": "Process"
+    },
+    {
+      "name": "Photoroom API Remove Background",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Photoroom API Remove Background"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

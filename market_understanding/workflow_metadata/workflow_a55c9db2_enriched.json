@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a55c9db2",
+  "workflow_id": "a55c9db2",
+  "workflow_id_display": "a55c9db2",
+  "workflow_name": "Email News Briefing by Keyword from Bright Data with AI Summary",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Gleb D",
+  "author_profile_url": "https://n8n.io/creators/glebd/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create custom Reuters news briefings: enter a keyword, get AI-powered summaries and styled email reports with clickable sources. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "When User Completes Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code - Parse and Clean JSON Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request- Post API call to Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Getting data from Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Code - Build HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini - Summary Analisys",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request- Post API call to Bright Data"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

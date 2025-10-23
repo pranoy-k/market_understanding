@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da61414f",
+  "workflow_id": "da61414f",
+  "workflow_id_display": "da61414f",
+  "workflow_name": "Google Maps business scraper with contact extraction via Apify and Firecrawl",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Naveen Choudhary",
+  "author_profile_url": "https://n8n.io/creators/n8nstein/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate business discovery with Google Maps scraping. Instantly extract and organize contact info for targeted outreach—perfect for lead generation teams.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Pending Queries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Business Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Contact Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark as Processed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Start Apify Scraping Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Scraping Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Scraped Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Businesses with Websites",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Batch Processing Logic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Website Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Contact Information",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

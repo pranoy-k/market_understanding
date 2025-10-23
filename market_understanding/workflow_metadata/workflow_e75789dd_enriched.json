@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e75789dd",
+  "workflow_id": "e75789dd",
+  "workflow_id_display": "e75789dd",
+  "workflow_name": "Scrape Crunchbase recent funding rounds",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lucasperret/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Track recent Crunchbase funding rounds in Google Sheets, enriched with 10+ data points for powerful lead generation. Build custom alerts—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger - Run Workflow Every Day",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare data before importing to Gsheets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split results",
+      "type": "Process"
+    },
+    {
+      "name": "Piloterr - Get Recent Fundraise - Serie A",
+      "type": "Data Input"
+    },
+    {
+      "name": "Piloterr - Get Recent Fundraise - Serie B",
+      "type": "Data Input"
+    },
+    {
+      "name": "Piloterr - Get Recent Fundraise - Seed",
+      "type": "Data Input"
+    },
+    {
+      "name": "Piloterr - Enrich company",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Linkedin URL from object",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

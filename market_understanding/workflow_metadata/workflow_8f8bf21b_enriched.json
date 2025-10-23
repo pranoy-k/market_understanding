@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8f8bf21b",
+  "workflow_id": "8f8bf21b",
+  "workflow_id_display": "8f8bf21b",
+  "workflow_name": "Find Reddit Prospects & Generate Personalized Responses with Llama3 AI and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets, Reddit",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Dhrumil Barot",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate high-quality leads on Reddit with AI automation. Discover, engage, and track prospects 24/7—start transforming your outreach now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking â€˜Test workflowâ€™",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse AI Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Post Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Existing Posts1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Irrelevant Post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Relevant Post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post Reddit Comment",
+      "type": "Process"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Relevance Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Process One Post at a Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter New Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Reddit Posts",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

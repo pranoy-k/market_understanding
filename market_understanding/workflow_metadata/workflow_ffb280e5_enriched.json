@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ffb280e5",
+  "workflow_id": "ffb280e5",
+  "workflow_id_display": "ffb280e5",
+  "workflow_name": "Scalable Multi-Agent Chat Using @mentions",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "Jon Doran",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly chat with multiple custom AI agents in one interface. Use @mentions, flexible OpenRouter model choices, and easy JSON setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, set, lmChatOpenRouter"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set last Assistant message as input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set user message as input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set lastAssistantMessage",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract mentions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Combine and format responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Global Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Agent Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

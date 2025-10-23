@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/415ac4f8",
+  "workflow_id": "415ac4f8",
+  "workflow_id_display": "415ac4f8",
+  "workflow_name": "VEO3 Video Generator with AI Optimization and Google Drive Storage",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": "https://n8n.io/creators/freddy-schuetz/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn text into polished 8-second videos with Google VEO3 AI. AI-powered prompts, fast delivery, and Google Drive integration—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "VEO3 Generator Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Save Video to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Video Prompt Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create VEO3 Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check VEO3 Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get VEO3 Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download VEO3 Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Video Output",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

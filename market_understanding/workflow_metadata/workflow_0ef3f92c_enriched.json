@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ef3f92c",
+  "workflow_id": "0ef3f92c",
+  "workflow_id_display": "0ef3f92c",
+  "workflow_name": "Create an invoice based on the Typeform submission",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily generate invoices from Typeform submissions with this workflow. Automate data collection and invoice creation using APITemplate.io. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with typeformTrigger, apiTemplateIo"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "APITemplate.io",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "APITemplate.io"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

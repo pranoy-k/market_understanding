@@ -1,0 +1,107 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7483279e",
+  "workflow_id": "7483279e",
+  "workflow_id_display": "7483279e",
+  "workflow_name": "Convert PDF to PNG with PDF.co API (Multi-Page Support)",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "Ludwig",
+  "author_profile_url": "https://n8n.io/creators/ludwig/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert every page of your PDFs to high-quality PNG images with this secure, fast, and customizable PDF.co-powered workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pass through binary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strip binary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Presigned Upload URL (PDF.co)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine binary and json data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload PDF to Presigned URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert PDF to PNG (PDF.co)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download PNG from PDF.co",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split multipage PDF files",
+      "type": "Data Input"
+    },
+    {
+      "name": "Compress into zip file",
+      "type": "Process"
+    },
+    {
+      "name": "Combine binaries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET example PDF files",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract PDF links",
+      "type": "Process"
+    },
+    {
+      "name": "Split links into items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Use two relevant PDF examples",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download example PDF Files",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split out urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over pdf files",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

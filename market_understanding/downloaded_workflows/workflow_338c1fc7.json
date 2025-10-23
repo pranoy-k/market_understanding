@@ -1,0 +1,53 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        540,
+        240
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "PayPal",
+      "type": "n8n-nodes-base.payPal",
+      "position": [
+        730,
+        240
+      ],
+      "parameters": {
+        "senderBatchId": "123",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "payPalApi": "paypal-credentials"
+      },
+      "typeVersion": 1,
+      "id": "a9bdbc66ff78f345"
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "PayPal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "f5fdbba3907dc149",
+  "staticData": null,
+  "tags": [
+    "gmail"
+  ]
+}

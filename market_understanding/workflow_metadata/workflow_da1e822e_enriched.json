@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da1e822e",
+  "workflow_id": "da1e822e",
+  "workflow_id_display": "da1e822e",
+  "workflow_name": "Sync new data between two apps",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, PostgreSQL",
+  "tags": [
+    "google",
+    "postgres"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, postgresTrigger, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Postgres Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On clicking \"Execute Node\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

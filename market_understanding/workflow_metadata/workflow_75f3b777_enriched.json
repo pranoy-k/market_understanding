@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/75f3b777",
+  "workflow_id": "75f3b777",
+  "workflow_id_display": "75f3b777",
+  "workflow_name": "Automatically add customers from Pipedrive to Stripe",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Stripe",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily sync closed deals from Pipedrive to Stripe as new customers, prevent duplicates, and streamline onboarding. Learn how to automate your workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, pipedriveTrigger, pipedrive"
+  ],
+  "nodes": [
+    {
+      "name": "On deal updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get organisation details",
+      "type": "Process"
+    },
+    {
+      "name": "Search customer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Continue with organisation data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create customer",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

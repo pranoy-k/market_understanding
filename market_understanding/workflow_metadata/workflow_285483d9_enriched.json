@@ -1,0 +1,113 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/285483d9",
+  "workflow_id": "285483d9",
+  "workflow_id_display": "285483d9",
+  "workflow_name": "Custom Discord Notifications for Radarr, Sonarr, Bazarr etc.",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "API, Discord, Webhook",
+  "tags": [
+    "discord",
+    "webhook"
+  ],
+  "author_name": "Pawel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Run Tests",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set subtitle properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Radarr properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Bazarr properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Sonarr properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set movie properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set series properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notify Discord",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set subtitle fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set movie fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set series fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Translate Bazarr description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Translate Radarr description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Translate Sonarr description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Evaluation",
+      "type": "Process"
+    },
+    {
+      "name": "Is Test",
+      "type": "Process"
+    },
+    {
+      "name": "Test is enabled",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare notification JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to JSON",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

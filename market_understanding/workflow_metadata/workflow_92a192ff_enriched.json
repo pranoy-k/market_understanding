@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92a192ff",
+  "workflow_id": "92a192ff",
+  "workflow_id_display": "92a192ff",
+  "workflow_name": "Audit & Generate JSON-LD Schema Markup for SEO with GPT-4.1-mini + Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "json"
+  ],
+  "author_name": "Ari Nakos",
+  "author_profile_url": "https://n8n.io/creators/just-aristides/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly audit and optimize your site's JSON-LD schema. Generate customized markup and receive step-by-step email guides. Learn more today!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Schema Markup Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Output",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

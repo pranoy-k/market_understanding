@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cd349e4b",
+  "workflow_id": "cd349e4b",
+  "workflow_id_display": "cd349e4b",
+  "workflow_name": "Sync tasks automatically from Todoist to Notion",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Todoist-to-Notion sync: Instantly create Notion pages from labeled Todoist tasks. Fast setup, seamless integration—learn how it works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with todoist, scheduleTrigger, notion"
+  ],
+  "nodes": [
+    {
+      "name": "On schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get all tasks with specific label",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Notion database",
+      "type": "Process"
+    },
+    {
+      "name": "Replace label on task",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

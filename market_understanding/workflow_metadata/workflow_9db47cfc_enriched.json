@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9db47cfc",
+  "workflow_id": "9db47cfc",
+  "workflow_id_display": "9db47cfc",
+  "workflow_name": "Telegram AI Chatbot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates an intelligent Telegram bot powered by AI that can understand natural language, answer questions, and perform automated tasks. The bot processes incoming messages, uses AI to generate contextual responses, and can integrate with other services to provide comprehensive assistance to users.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PreProcessing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat_mode",
+      "type": "Process"
+    },
+    {
+      "name": "Greeting",
+      "type": "Process"
+    },
+    {
+      "name": "Create an image",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d8b16fe",
+  "workflow_id": "3d8b16fe",
+  "workflow_id_display": "3d8b16fe",
+  "workflow_name": "Track Expenses by Parsing Telegram Transaction Messages to Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Mujtaba",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Telegram transaction tracking by logging key details to Google Sheets with n8n. Save time, avoid errors—perfect for freelancers and small businesses.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleSheets, if, telegramTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "transactions",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

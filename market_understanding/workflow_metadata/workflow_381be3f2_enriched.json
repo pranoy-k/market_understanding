@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/381be3f2",
+  "workflow_id": "381be3f2",
+  "workflow_id_display": "381be3f2",
+  "workflow_name": "Intelligent Email Organization with AI-Powered Content Classification for Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Niranjan G",
+  "author_profile_url": "https://n8n.io/creators/niranjan/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Gmail management with AI-powered auto-labeling. Organize emails by content, boost efficiency, reduce costs, and customize to your needs. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Email Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store AI Category",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if Label Exists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace Me",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Categorize Email with AI",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Emails Without Excluded Labels",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

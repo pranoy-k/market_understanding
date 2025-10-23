@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/912e08ab",
+  "workflow_id": "912e08ab",
+  "workflow_id_display": "912e08ab",
+  "workflow_name": "Automate Sports Betting Data with the Odds API",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Marketing Canopy",
+  "author_profile_url": "https://n8n.io/creators/johnmarketingcanopy/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate sports betting data in Airtable using TheOddsAPI. Sync real-time odds and results for any sport. Streamline model tracking—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Evening Trigger To Pull Data At 11:00pm",
+      "type": "Trigger"
+    },
+    {
+      "name": "Morning Trigger To Pull Data At 7:00am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Records Of Upcoming Events For The Day",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Table Records With Scores And Results For Sport Events",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Data Of Upcoming Sport Events For The Day",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Sport Results Data At The End Of The Day",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Sport Results With Upcoming Events Records By Matching ID",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

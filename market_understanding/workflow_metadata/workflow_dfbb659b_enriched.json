@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dfbb659b",
+  "workflow_id": "dfbb659b",
+  "workflow_id_display": "dfbb659b",
+  "workflow_name": "Chat with Postgresql Database",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "OpenAI, PostgreSQL",
+  "tags": [],
+  "author_name": "KumoHQ",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Enable natural language queries to your PostgreSQL database through an AI-powered chat interface.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get Table Definition",
+      "type": "Data Output"
+    },
+    {
+      "name": "Chat History",
+      "type": "Process"
+    },
+    {
+      "name": "Execute SQL Query",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get DB Schema and Tables List",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

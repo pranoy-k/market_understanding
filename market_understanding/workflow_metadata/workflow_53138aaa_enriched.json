@@ -1,0 +1,237 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/53138aaa",
+  "workflow_id": "53138aaa",
+  "workflow_id_display": "53138aaa",
+  "workflow_name": "AI-Powered Language and Coding Tutor with GPT-4 and Timed Telegram Messages",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "56",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "YungCEO",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Master a new language with MOTION TUTOR—AI-powered, personalized lessons, real-time progress tracking, and seamless Telegram integration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser4",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI4",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable5",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable6",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable7",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable8",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable9",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable10",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable11",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable12",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable13",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable14",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable15",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable16",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable17",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable18",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable19",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable21",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable20",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable22",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable23",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent3",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3fee0984",
+  "workflow_id": "3fee0984",
+  "workflow_id_display": "3fee0984",
+  "workflow_name": "Post New YouTube Videos to X",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mike Russell",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Check Every 30 Min",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Post for X with ChatGPT",
+      "type": "Process"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Latest Videos",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

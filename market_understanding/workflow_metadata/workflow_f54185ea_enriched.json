@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f54185ea",
+  "workflow_id": "f54185ea",
+  "workflow_id_display": "f54185ea",
+  "workflow_name": "Deploy Workflows from Google Drive to n8n Instance",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "json"
+  ],
+  "author_name": "Jason Guest",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-deploy n8n workflows via Google Drive. Bulk import, sanitize, tag, and archive JSON files—perfect for automation and version control.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Trigger -ToDeploy folder",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set n8n API URL & Tag ID variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set n8n URL variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Existing Workflow Tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract JSON object from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Clean JSON file ready for import",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create n8n Workflow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Workflow Tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Capture Name If Fails To Create Workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Move JSON file to Deployed folder",
+      "type": "Process"
+    },
+    {
+      "name": "Download n8n JSON File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Set n8n API URL & Tag ID variables"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

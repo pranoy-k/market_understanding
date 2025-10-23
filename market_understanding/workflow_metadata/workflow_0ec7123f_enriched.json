@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ec7123f",
+  "workflow_id": "0ec7123f",
+  "workflow_id_display": "0ec7123f",
+  "workflow_name": "Execute multiple Command Lines based on Text File Inputs",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": "https://n8n.io/creators/tephlon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate command execution for each line in your text file using n8n’s on-premise workflow. Easily customize file paths and streamline repetitive tasks.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Command",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

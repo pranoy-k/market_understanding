@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ba4d360",
+  "workflow_id": "8ba4d360",
+  "workflow_id_display": "8ba4d360",
+  "workflow_name": "WhatsApp Product Catalog Bot with PostgreSQL Database",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "PostgreSQL, WhatsApp",
+  "tags": [
+    "whatsapp🗄",
+    "postgres"
+  ],
+  "author_name": "Andrew",
+  "author_profile_url": "https://n8n.io/creators/boanse/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate product info sharing on WhatsApp! Connect your Postgres database, let users access details via a bot, and streamline customer queries. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with switch, whatsAppTrigger, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initialization",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union Number with Question",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Bot Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union list",
+      "type": "Process"
+    },
+    {
+      "name": "Get Card products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Card product",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Card products",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

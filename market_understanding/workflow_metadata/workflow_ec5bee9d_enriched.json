@@ -1,0 +1,155 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ec5bee9d",
+  "workflow_id": "ec5bee9d",
+  "workflow_id_display": "ec5bee9d",
+  "workflow_name": "Document Analysis & Chatbot Creation with Llama Parser, Gemini LLM & Pinecone DB",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Email, OpenAI, PDF",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "pavith",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly upload files for multilingual content analysis using N8N, Google Gemini, and Llama Cloud. Get insights and chatbot access delivered via email!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with markdown, textSplitterRecursiveCharacterTextSplitter, if"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission4",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "split the binary item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parsing the document",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check the parsing status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Provide the markdown",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pinecone Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Mistral Cloud",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Pinecone Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Mistral Cloud1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Translator Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Analyzer Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

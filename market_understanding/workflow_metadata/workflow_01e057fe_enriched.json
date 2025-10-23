@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01e057fe",
+  "workflow_id": "01e057fe",
+  "workflow_id_display": "01e057fe",
+  "workflow_name": "Get all members of a Discord server with a specific role",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Discord, Google Sheets",
+  "tags": [
+    "discord",
+    "google"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly get all Discord server members with a specific role using Google Sheets for batching and tracking. Simplify member management—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup: Edit this to get started",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "SaveID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "We're done",
+      "type": "Process"
+    },
+    {
+      "name": "Filter to only include members with role",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

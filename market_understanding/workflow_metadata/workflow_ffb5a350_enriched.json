@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ffb5a350",
+  "workflow_id": "ffb5a350",
+  "workflow_id_display": "ffb5a350",
+  "workflow_name": "Batch Process Prompts with Anthropic Claude API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API",
+  "tags": [
+    "api👥 anthropic"
+  ],
+  "author_name": "Greg Evseev",
+  "author_profile_url": "https://n8n.io/creators/greg/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Efficiently batch prompts with Anthropic Claude models via n8n. Automate large-scale content generation using the Batch API—setup, examples, and fast results!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, memoryManager, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Run example",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "One query example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete original properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set desired 'anthropic-version'",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Parsed Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append execution data for single query example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append execution data for chat memory example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Submit batch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check batch status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Construct 'requests' array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow 'Process Multiple Prompts in Parallel with Anthropic Claude Batch API'",
+      "type": "Process"
+    },
+    {
+      "name": "Build batch 'request' object for single query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory Store",
+      "type": "Process"
+    },
+    {
+      "name": "Fill Chat Memory with example data",
+      "type": "Process"
+    },
+    {
+      "name": "Build batch 'request' object from Chat Memory and execution data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Chat Memory Data",
+      "type": "Process"
+    },
+    {
+      "name": "First Prompt Result",
+      "type": "Process"
+    },
+    {
+      "name": "Second Prompt Result",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Second Prompt Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter First Prompt Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Join two example requests into array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Truncate Chat Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Execute Workflow 'Process Multiple Prompts in Parallel with Anthropic Claude Batch API'"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

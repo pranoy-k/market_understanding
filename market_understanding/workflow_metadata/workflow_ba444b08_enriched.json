@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ba444b08",
+  "workflow_id": "ba444b08",
+  "workflow_id_display": "ba444b08",
+  "workflow_name": "Automate Customer Support Emails using Gmail, OpenAI GPT-3.5, and Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Email, Gmail, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Èugui DragoÈ",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Data for Sheet Entry",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI: Categorize Customer Request",
+      "type": "Process"
+    },
+    {
+      "name": "Log Request in Google Sheets",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

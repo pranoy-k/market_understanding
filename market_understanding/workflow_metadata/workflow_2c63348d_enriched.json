@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2c63348d",
+  "workflow_id": "2c63348d",
+  "workflow_id_display": "2c63348d",
+  "workflow_name": "Get Binance Spot Market Financial Analysis via Telegram with GPT-4o",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "AI-powered Binance Spot Market workflow delivers real-time, multi-timeframe trading analysis with actionable reports to Telegram. Perfect for active traders—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM Financial Analyst Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM Price-24hrStats-OrderBook-Kline Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 15min Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 1hour Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 4hour Indicators Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Binance SM 1day Indicators Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,190 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/23b3e10a",
+  "workflow_id": "23b3e10a",
+  "workflow_id_display": "23b3e10a",
+  "workflow_name": "Personal Budget & Expense Tracker with Google Sheets and Alerts MCP",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "49",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Destiya Wijayanto",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage personal budgets and expenses with MCP tools, Google Sheets integration, and instant spend alerts. Easy setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, toolWorkflow, executionData"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets Filter Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get By ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "get by id",
+      "type": "Data Output"
+    },
+    {
+      "name": "remove transaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "get all transactions",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get existing budget",
+      "type": "Data Output"
+    },
+    {
+      "name": "add transaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Monthly Expenses",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update transaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Monthly Expenses1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Budget",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get existing budget2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add budget",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Budget1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Budget",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Budget2",
+      "type": "Data Output"
+    },
+    {
+      "name": "get all transactions1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove budget",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Budget3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get list transactions",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Transaction",
+      "type": "Process"
+    },
+    {
+      "name": "Crypto",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Transaction",
+      "type": "Process"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code6",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code7",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code8",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Transaction",
+      "type": "Process"
+    },
+    {
+      "name": "Add Budget",
+      "type": "Process"
+    },
+    {
+      "name": "Update Budget Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Budget",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Get Budget",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

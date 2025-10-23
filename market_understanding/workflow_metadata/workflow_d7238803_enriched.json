@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d7238803",
+  "workflow_id": "d7238803",
+  "workflow_id_display": "d7238803",
+  "workflow_name": "Spotify Sync Liked Songs to Playlist",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Dustin",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync your Spotify Liked Songs to a custom, shareable playlist. Easy setup and automation keep your favorites updated. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit set Vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit success to del",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit snapshot to added",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set pluri",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit set intern vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort first added to first item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop delete old",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Playlist x",
+      "type": "Data Processing"
+    },
+    {
+      "name": "count added",
+      "type": "Process"
+    },
+    {
+      "name": "Loop add missing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cound deleted",
+      "type": "Process"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

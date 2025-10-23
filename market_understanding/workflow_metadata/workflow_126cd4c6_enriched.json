@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/126cd4c6",
+  "workflow_id": "126cd4c6",
+  "workflow_id_display": "126cd4c6",
+  "workflow_name": "The Ultimate Instagram Automation for High-Quality Images & Text with GPT-Image",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Instagram, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram content creation with this n8n workflow—AI captions, custom images, & one-click publishing. Save time and boost engagement. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, switch, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission - Post Idea",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "SetImageURL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetImageURL2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "CreateContainerImage1",
+      "type": "Process"
+    },
+    {
+      "name": "PublishImageToIG1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Tavily WebSearch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Tavily WebSearch1",
+      "type": "Data Input"
+    },
+    {
+      "name": "CreateContainerImage",
+      "type": "Process"
+    },
+    {
+      "name": "PublishImageToIG",
+      "type": "Process"
+    },
+    {
+      "name": "Google Cloud Storage1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent realistic Image",
+      "type": "Process"
+    },
+    {
+      "name": "GPT Image Generation 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "GPT Image Generation 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Binary File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to Binary File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Cloud Storage 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ca1fdb8f",
+  "workflow_id": "ca1fdb8f",
+  "workflow_id_display": "ca1fdb8f",
+  "workflow_name": "Check Tron Wallet USDT Blacklist Status via Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "FORK SOFTWARE TECHNOLOGIES INC.",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily check if any Tron wallet is blacklisted on the USDT contract via a Telegram bot. Get instant blacklist status with clear, real-time feedback!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tron BlackList Stable Token Api Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Api Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Error Message (Wallet Address Format)",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

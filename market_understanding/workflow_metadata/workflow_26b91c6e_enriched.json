@@ -1,0 +1,228 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/26b91c6e",
+  "workflow_id": "26b91c6e",
+  "workflow_id_display": "26b91c6e",
+  "workflow_name": "Automate Microsoft Teams Meeting Analysis with GPT-4.1, Outlook & Mem.ai",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "51",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Wayne Simpson",
+  "author_profile_url": "https://n8n.io/creators/nocodecreative/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Microsoft Teams meeting analysis with AI. Extract key insights, update a knowledge base, and draft follow-up emails—fully customizable. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with markdown, postgres, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Time Range",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Transcription & Subject",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Transcription & Subject1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Transcription & Subject2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Save Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check if Processed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter No Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Keep Matches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mem Note",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Transcript Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Transcriptions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Summary HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Web Page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Next Action",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Meeting Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Meeting Row1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Filter for Join Url1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Online Meeting Details1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Meetings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search OneDrive for Meeting",
+      "type": "Data Input"
+    },
+    {
+      "name": "List Transcripts2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Transcript1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Call Records",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent Draft Follow Up",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent Create Summary",
+      "type": "Process"
+    },
+    {
+      "name": "End Analysis Notification",
+      "type": "Process"
+    },
+    {
+      "name": "Get Microsoft 365 Profile",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond With WebApp HTML",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Follow Up",
+      "type": "Process"
+    },
+    {
+      "name": "Respond With Code 200",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

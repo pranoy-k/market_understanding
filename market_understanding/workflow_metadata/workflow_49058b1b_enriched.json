@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/49058b1b",
+  "workflow_id": "49058b1b",
+  "workflow_id_display": "49058b1b",
+  "workflow_name": "🔥📈🤖 AI Agent for n8n Creators Leaderboard - Find Popular Workflows",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Joseph LePage",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Workflow Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Creators Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summary Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Creators Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflows Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save creator-summary.md",
+      "type": "Data Output"
+    },
+    {
+      "name": "stats_aggregate_creators",
+      "type": "Data Input"
+    },
+    {
+      "name": "stats_aggregate_workflows",
+      "type": "Data Input"
+    },
+    {
+      "name": "Take Top 25 Creators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter By Creator Username",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Tool",
+      "type": "Process"
+    },
+    {
+      "name": "creator-summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "n8n Creator Stats Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Creators & Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Creators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort By Top Weekly Creator Inserts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort By Top Weekly Workflow Inserts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take Top 300 Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

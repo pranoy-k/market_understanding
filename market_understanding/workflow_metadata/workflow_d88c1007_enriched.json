@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d88c1007",
+  "workflow_id": "d88c1007",
+  "workflow_id_display": "d88c1007",
+  "workflow_name": "N8N Español - Tratamiento de textos",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "The { AI } rtist",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatiza el tratamiento de textos con n8n. Aprende paso a paso con nuestra guía y únete a la comunidad para compartir y resolver dudas. ¡Descubre más!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, merge"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Minúsculas",
+      "type": "Process"
+    },
+    {
+      "name": "Mayúsculas",
+      "type": "Process"
+    },
+    {
+      "name": "Replace",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resultado",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

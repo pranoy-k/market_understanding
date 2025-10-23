@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d8ba5c1",
+  "workflow_id": "2d8ba5c1",
+  "workflow_id_display": "2d8ba5c1",
+  "workflow_name": "YouTube Video Transcription & Summary to Telegram with GPT-4o",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "OpenAI, Telegram, YouTube",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get instant, AI-powered YouTube video summaries via Telegram. Save time, learn key insights fast—perfect for researchers and busy professionals. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with supadata, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Input URL",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Make Transcribe",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize",
+      "type": "Process"
+    },
+    {
+      "name": "Parsing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

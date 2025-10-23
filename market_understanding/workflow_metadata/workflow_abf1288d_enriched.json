@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/abf1288d",
+  "workflow_id": "abf1288d",
+  "workflow_id_display": "abf1288d",
+  "workflow_name": "Effortless Job Hunting: Let this Automation Find Your Next Role",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Mateo Fiorito Rocha",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your job search with AI—find tailored opportunities from LinkedIn, Indeed, and Glassdoor, and save them to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analyse Resume",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Job Posts Organised in a Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Download Resume (PDF File)",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Relevant Information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Suitable Job Offers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Organise the Job Posts",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

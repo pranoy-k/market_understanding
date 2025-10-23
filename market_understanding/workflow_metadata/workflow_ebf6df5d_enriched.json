@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ebf6df5d",
+  "workflow_id": "ebf6df5d",
+  "workflow_id_display": "ebf6df5d",
+  "workflow_name": "Turn Monoprix Delivery Emails into Calendar Events using ChatGPT and Google Calendar",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [
+    "google",
+    "chatgpt"
+  ],
+  "author_name": "Mathieu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendar, lmChatOpenAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "Pull email from Gmail",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set GCal fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Update Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Extract key info",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

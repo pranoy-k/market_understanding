@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/627036a0",
+  "workflow_id": "627036a0",
+  "workflow_id_display": "627036a0",
+  "workflow_name": "Perform an email search with Icypeas (single)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Corentin Ribeyre",
+  "author_profile_url": "https://n8n.io/creators/corentinribeyre/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly find email addresses with Icypeas. Connect your account, trigger the workflow, and streamline prospecting. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Authenticates to your Icypeas account",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run email search (single)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

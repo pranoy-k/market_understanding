@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e9f9c9e1",
+  "workflow_id": "e9f9c9e1",
+  "workflow_id_display": "e9f9c9e1",
+  "workflow_name": "Log Daily Mood & Weather to Notion with Telegram and OpenWeatherMap",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Notion, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Issam AGGOUR",
+  "author_profile_url": "https://n8n.io/creators/devgor/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate daily mood and weather tracking in Notion while learning n8n automation—triggers, APIs, and data integration. Start your workflow now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, notion, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Wait for Mood Response1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wait for Mood Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve City Weather",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Weather using city name",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Weather using lat/lon",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add row into Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Database",
+      "type": "Process"
+    },
+    {
+      "name": "Add row into Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Database1",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve City Weather1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

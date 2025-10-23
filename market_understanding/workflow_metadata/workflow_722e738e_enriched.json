@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/722e738e",
+  "workflow_id": "722e738e",
+  "workflow_id_display": "722e738e",
+  "workflow_name": "Clone n8n Workflows between Instances using n8n API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly copy, sync, and migrate n8n workflows across projects or environments. Automate workflow transfers and boost collaboration—learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "SET Project ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET - Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "CREATE - Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "n8n - GET - Projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "PUT - Workflow in Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET - Destination Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Workflows1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Project",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

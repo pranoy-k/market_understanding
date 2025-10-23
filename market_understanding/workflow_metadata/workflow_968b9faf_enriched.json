@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/968b9faf",
+  "workflow_id": "968b9faf",
+  "workflow_id_display": "968b9faf",
+  "workflow_name": "Scrape Trustpilot Reviews Using Bright Data & GPT-4o-mini for Winning Ad Copy",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Facebook, Google Sheets, OpenAI",
+  "tags": [
+    "facebook",
+    "google🤖 openai"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze competitors’ Trustpilot reviews and generate high-impact Facebook ad copy. Automate insights with Google Sheets, Bright Data & OpenAI. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission - Discover Jobs",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Adding All Reviews",
+      "type": "Data Output"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request- Post API call to Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Getting data from Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Filtering only bad reviews",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregating all filtered reviews",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request- Post API call to Bright Data",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

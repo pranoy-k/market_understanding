@@ -1,0 +1,146 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/814dd049",
+  "workflow_id": "814dd049",
+  "workflow_id_display": "814dd049",
+  "workflow_name": "Adaptive RAG Strategy with Query Classification & Retrieval (Gemini & Qdrant)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": null,
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "dmr",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Boost answer relevance with this adaptive n8n RAG workflow—classifies queries, customizes retrieval, and integrates with your chat or automations. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, vectorStoreQdrant, embeddingsGoogleGemini"
+  ],
+  "nodes": [
+    {
+      "name": "Chat",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Factual Prompt and Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Contextual Prompt and Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Opinion Prompt and Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analytical Prompt and Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Prompt and Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combined Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Classification",
+      "type": "Process"
+    },
+    {
+      "name": "Factual Strategy - Focus on Precision",
+      "type": "Process"
+    },
+    {
+      "name": "Analytical Strategy - Comprehensive Coverage",
+      "type": "Process"
+    },
+    {
+      "name": "Opinion Strategy - Diverse Perspectives",
+      "type": "Process"
+    },
+    {
+      "name": "Contextual Strategy - User Context Integration",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Classification",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Factual",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Analytical",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory Analytical",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory Factual",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Opinion",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory Opinion",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Contextual",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory Contextual",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate Context",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Documents from Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini Answer",
+      "type": "Process"
+    },
+    {
+      "name": "Answer",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

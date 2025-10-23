@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6501a569",
+  "workflow_id": "6501a569",
+  "workflow_id_display": "6501a569",
+  "workflow_name": "Export all Strava Activity Data to Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Sherlockes",
+  "author_profile_url": "https://n8n.io/creators/sherlockes/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Strava activities to Google Sheets. Automate updates, customize data fields, and improve your fitness tracking. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, strava, limit"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "strava_last",
+      "type": "Data Processing"
+    },
+    {
+      "name": "saved_last",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "activities",
+      "type": "Data Output"
+    },
+    {
+      "name": "sort_saved",
+      "type": "Data Processing"
+    },
+    {
+      "name": "last_saved",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strava",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "sort_strava",
+      "type": "Data Processing"
+    },
+    {
+      "name": "last_strava",
+      "type": "Data Processing"
+    },
+    {
+      "name": "sort_results",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

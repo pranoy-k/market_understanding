@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2b112d6c",
+  "workflow_id": "2b112d6c",
+  "workflow_id_display": "2b112d6c",
+  "workflow_name": "Create Animated Illustrations from Text Prompts with Midjourney and Kling API",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PiAPI",
+  "author_profile_url": "https://n8n.io/creators/piapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create stunning animated illustrations for social media and marketing with PiAPI—no advanced skills needed. Learn more and get started!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Kling Video Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Midjourney Image Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Video URL",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

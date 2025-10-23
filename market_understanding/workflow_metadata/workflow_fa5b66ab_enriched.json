@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fa5b66ab",
+  "workflow_id": "fa5b66ab",
+  "workflow_id_display": "fa5b66ab",
+  "workflow_name": "Social Media Analysis and Automated Email Generation",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Google Analytics, Google Sheets, LinkedIn, OpenAI, Twitter",
+  "tags": [],
+  "author_name": "PollupAI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates your Twitter presence using AI to generate engaging content, monitor mentions, and interact with your audience. It can create tweets based on trending topics, respond to mentions intelligently, and analyze engagement metrics to optimize your social media strategy.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set your company's variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get linkedin Posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get twitter ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get tweets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract and limit Linkedin",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exract and limit X",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Subject and cover letter based on match",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

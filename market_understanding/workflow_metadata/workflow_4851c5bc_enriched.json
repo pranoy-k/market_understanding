@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4851c5bc",
+  "workflow_id": "4851c5bc",
+  "workflow_id_display": "4851c5bc",
+  "workflow_name": "AI-Powered Research Assistant with Perplexity Sonar API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "HoangSP",
+  "author_profile_url": "https://n8n.io/creators/hoangsp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "AI-powered research assistant using Perplexity Sonar delivers real-time, precise search results. Easily integrates with your automations. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with executeWorkflowTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Prompt Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract API Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity Research Content1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Extract API Response"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0dece834",
+  "workflow_id": "0dece834",
+  "workflow_id_display": "0dece834",
+  "workflow_name": "TwentyCRM event based updates on selective messaging channels with logs",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "sateshcharan",
+  "author_profile_url": "https://n8n.io/creators/sateshcharan/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline alerts from TwentyCRM by routing events by severity to Slack, email, or more. Ideal for DevOps & MSPs—log data in Google Sheets. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "filter required data #eventType mandatory",
+      "type": "Data Processing"
+    },
+    {
+      "name": "events log",
+      "type": "Data Output"
+    },
+    {
+      "name": "on new twentycrm event",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

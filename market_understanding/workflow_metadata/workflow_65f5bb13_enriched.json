@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/65f5bb13",
+  "workflow_id": "65f5bb13",
+  "workflow_id_display": "65f5bb13",
+  "workflow_name": "AI Marketing Agent for Lead Generation: Reddit + OpenRouter + Gmail",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, Gmail, Reddit",
+  "tags": [],
+  "author_name": "Ari Nakos",
+  "author_profile_url": "https://n8n.io/creators/just-aristides/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Discover an AI-powered n8n workflow that finds high-value Reddit leads for your business and emails you curated prospects. Learn how to set it up!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Pick Fields to Keep",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Fields from AI Agent' Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Competitor Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Keyword Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Posts",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Email HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Outputs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

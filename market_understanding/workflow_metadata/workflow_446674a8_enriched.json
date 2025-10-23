@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/446674a8",
+  "workflow_id": "446674a8",
+  "workflow_id_display": "446674a8",
+  "workflow_name": "Generate AI-Ready llms.txt Files from Screaming Frog Website Crawls",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Dataki",
+  "author_profile_url": "https://n8n.io/creators/dataki/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create an llms.txt file from your Screaming Frog export in n8n. Simple form, optional AI filtering, and instant download. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with textClassifier, lmChatOpenAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "Form - Screaming frog internal_html.csv upload",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set useful fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Fields - llms.txt Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Field - llms.txt Row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Filter URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize - Concatenate",
+      "type": "Process"
+    },
+    {
+      "name": "upload file anywhere",
+      "type": "Process"
+    },
+    {
+      "name": "Extract data from Screaming Frog file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate llms.txt file",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

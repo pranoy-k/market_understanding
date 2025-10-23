@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b548be0",
+  "workflow_id": "9b548be0",
+  "workflow_id_display": "9b548be0",
+  "workflow_name": "Enrich Pipedrive_s Organization Data with OpenAI GPT-4o & Notify it in Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "API, OpenAI, Slack",
+  "tags": [
+    "Slack🤖 AI"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Pipedrive Trigger - An Organization is created",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI - Message GPT-4o with Scraped Data",
+      "type": "Process"
+    },
+    {
+      "name": "Pipedrive - Create a Note with OpenAI output",
+      "type": "Process"
+    },
+    {
+      "name": "Code - Markdown to Slack Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrapingbee - Get Organization's URL content",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML To Markdown",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

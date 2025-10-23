@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c49240bc",
+  "workflow_id": "c49240bc",
+  "workflow_id_display": "c49240bc",
+  "workflow_name": "Veo 3 Ad Script Builder (GPT-4 + Google Docs Integration)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Veo 3 ad script creation in seconds—capture ideas, generate cinematic scenes, and save up to 90%. Boost quality and scale your video ads now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, openAi, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Build Persona",
+      "type": "Process"
+    },
+    {
+      "name": "Build Environment",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Copy",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

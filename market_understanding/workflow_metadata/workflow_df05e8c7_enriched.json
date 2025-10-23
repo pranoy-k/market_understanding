@@ -1,0 +1,190 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df05e8c7",
+  "workflow_id": "df05e8c7",
+  "workflow_id_display": "df05e8c7",
+  "workflow_name": "Automated SEO Keyword & SERP Analysis with DataForSEO for High-Converting Content",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "40",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate keyword research with Google Sheets & DataForSEO APIs. Get structured, in-depth keyword insights to boost SEO and drive business growth. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Main Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Related KW Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KW Suggestion Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KW Ideas Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Autocomplete Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Subtopics Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SERP Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set PAA Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets KW Research Template",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Related KWs to Related KWs Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Related KWs to Master all KW Variations Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add KWs to Keyword Suggestions Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add KWs to Master All KW Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add KWs to Master All KW Sheet1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add KWs to Keyword Ideas Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Autocomplete to Autocomplete Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Subtopics to Subtopics Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Subtopics to Master KWs Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Subtopics to Master KW sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add SERPs to SERP Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add PAA to PAA Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add PAA to Master KW Variations Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out Related KWs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive Create KW Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Copy KW Template",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Keyword Suggestions",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Related Keywords",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Keyword Ideas",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out KW Suggestions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out KW Ideas",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Autocomplete",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Autocomplete",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Subtopics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Subtopics",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter SERPs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter PAA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out PAA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP SERPs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out SERPs and PAA",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

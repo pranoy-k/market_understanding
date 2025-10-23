@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b4eb68f4",
+  "workflow_id": "b4eb68f4",
+  "workflow_id_display": "b4eb68f4",
+  "workflow_name": "Conversing with Data: Transforming Text into SQL Queries and Visual Curves",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "PostgreSQL",
+  "tags": [],
+  "author_name": "hippolyte-hu",
+  "author_profile_url": "https://n8n.io/creators/hippolyte-hu/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Interact with your PostgreSQL database using natural language—automate queries and generate instant visualizations. Discover seamless, code-free analysis.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add table name to output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine schema data and chat input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract SQL query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format query results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare final output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "deepseek-chat",
+      "type": "Process"
+    },
+    {
+      "name": "Deepseek-chat",
+      "type": "Process"
+    },
+    {
+      "name": "Save file locally",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Extract data from file",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Load the schema from the local file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Combine query result and chat answer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List all tables in a database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert data to Json",
+      "type": "Data Output"
+    },
+    {
+      "name": "Schema Extractor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Final SQL result",
+      "type": "Data Output"
+    },
+    {
+      "name": "plot agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

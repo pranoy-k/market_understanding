@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4490fb67",
+  "workflow_id": "4490fb67",
+  "workflow_id_display": "4490fb67",
+  "workflow_name": "Create an Image Enhancement API Endpoint with Nero AI Business API",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "nero",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate and enhance images with Nero AI and n8n. Upscale, compress, edit, and restore photos using seamless AI-powered workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, stickyNote, if"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query task status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

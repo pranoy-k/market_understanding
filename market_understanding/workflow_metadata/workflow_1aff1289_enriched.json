@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1aff1289",
+  "workflow_id": "1aff1289",
+  "workflow_id_display": "1aff1289",
+  "workflow_name": "Summarize SERPBear data with AI (via Openrouter) and save it to Baserow",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Keith Rumjahn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Analyze SEO ranking data from SERPBear using AI via Openrouter and store insights in Baserow.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse data from SerpBear",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send data to A.I. for analysis",
+      "type": "Data Input"
+    },
+    {
+      "name": "Save data to Baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get data from SerpBear",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Baserow API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

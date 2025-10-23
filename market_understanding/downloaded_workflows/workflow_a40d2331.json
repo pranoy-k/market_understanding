@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Extract domain name",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        700,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Take email and extract the domain name \nvar email = ($json[\"email\"]);\nvar name   = email.substring(0, email.lastIndexOf(\"@\"));\nvar domain = email.substring(email.lastIndexOf(\"@\") +1);\n\n//To display the final domain name. (result)\n\nreturn [{\n  json: { domain }\n}]"
+      },
+      "typeVersion": 1,
+      "id": "46c0e494e3245184"
+    },
+    {
+      "name": "Sample email",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "email",
+              "value": "email@domain2.com"
+            }
+          ]
+        },
+        "options": {},
+        "keepOnlySet": true
+      },
+      "typeVersion": 1,
+      "id": "5e983462d842bd45"
+    }
+  ],
+  "connections": {
+    "Sample email": {
+      "main": [
+        [
+          {
+            "node": "Extract domain name",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Sample email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "42c87d83868dfe76",
+  "name": "Extract URL from an email address",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

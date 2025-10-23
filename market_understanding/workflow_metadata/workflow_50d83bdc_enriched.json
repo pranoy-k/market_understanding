@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/50d83bdc",
+  "workflow_id": "50d83bdc",
+  "workflow_id_display": "50d83bdc",
+  "workflow_name": "Automated YouTube Channel Lead Generation & Email Outreach with Apify and ZeroBounce",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, Airtable, Email, Slack, YouTube",
+  "tags": [
+    "slack",
+    "api"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate SEO rank tracking with Airtable, Firecrawl API, and Slack. Get instant alerts on keyword ranking changes and streamline your SEO monitoring. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, airtableTrigger, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Fetch Keywords from Airtable",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Airtable Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Rank via Firecrawl",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Airtable + Firecrawl Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Ranks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

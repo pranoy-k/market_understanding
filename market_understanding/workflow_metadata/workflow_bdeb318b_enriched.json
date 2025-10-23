@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bdeb318b",
+  "workflow_id": "bdeb318b",
+  "workflow_id_display": "bdeb318b",
+  "workflow_name": "Chat with your event schedule from Google Sheets in Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "Daniel Nolde",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 google drive & google sheets Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule",
+      "type": "Data Output"
+    },
+    {
+      "name": "ScheduleToMarkdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ScheduleBot",
+      "type": "Process"
+    },
+    {
+      "name": "telegramInput",
+      "type": "Trigger"
+    },
+    {
+      "name": "n8nInput",
+      "type": "Trigger"
+    },
+    {
+      "name": "SetResponse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "n8nChatSettings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "telegramChatSettings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "n8nResponse",
+      "type": "Process"
+    },
+    {
+      "name": "Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

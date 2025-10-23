@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/256b0bad",
+  "workflow_id": "256b0bad",
+  "workflow_id_display": "256b0bad",
+  "workflow_name": "Create QuickBooks Online Customers With Sales Receipts For New Stripe Payments",
+  "category": "Finance & Accounting",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Stripe",
+  "tags": [],
+  "author_name": "Artur",
+  "author_profile_url": "https://n8n.io/creators/arlusm1/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Stripe payments to QuickBooks Online—automate customer creation, sales receipts, and accounting. Streamline your workflow in minutes.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, stripeTrigger, quickbooks"
+  ],
+  "nodes": [
+    {
+      "name": "New Payment",
+      "type": "Trigger"
+    },
+    {
+      "name": "POST Sales Receipt",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Quickbooks Customer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Stripe Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Use Stripe Customer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create QuickBooks Customer",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Stripe and QuickBooks Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Payment and QuickBooks Customer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST Sales Receipt To QuickBooks",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

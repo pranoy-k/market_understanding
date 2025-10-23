@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c72b6003",
+  "workflow_id": "c72b6003",
+  "workflow_id_display": "c72b6003",
+  "workflow_name": "SAP Service Layer Login",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Raquel Giugliano",
+  "author_profile_url": "https://n8n.io/creators/raquelgiugliano/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly verify SAP Business One Service Layer credentials and retrieve a session ID with this workflow—ideal for testing and reusable integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Login Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Failed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SAP Connection",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

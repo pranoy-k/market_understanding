@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aebd4c1f",
+  "workflow_id": "aebd4c1f",
+  "workflow_id_display": "aebd4c1f",
+  "workflow_name": "Get daily poems in Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Share a freshly translated poem in English to your Telegram chat every day. Enjoy endless variety with automated scheduling and seamless delivery.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lingvaNex, telegram, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "LingvaNex",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

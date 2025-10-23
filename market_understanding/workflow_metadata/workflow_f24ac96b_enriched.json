@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f24ac96b",
+  "workflow_id": "f24ac96b",
+  "workflow_id_display": "f24ac96b",
+  "workflow_name": "Generate Riddle Shorts & Post on YouTube with Sonnet 3.5, Pinecone & Creatomate",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate riddle-themed YouTube Shorts with AI: generate, render, and upload 9:16 videos using Creatomate—all on a budget. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Audio From Sheet (Ensuring Rotation)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Current Shorts Title (Numbered)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Audio Used Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Next Shorts title",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check if all audio tracks have been used",
+      "type": "Data Output"
+    },
+    {
+      "name": "get all track rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "update all track rows back to unused",
+      "type": "Data Output"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Riddle generation AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store to Find Previous Riddles",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Riddles to Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Riddles JSON to 1 Text item for Vector Insertion",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Next Shorts Title Number (To update at the end)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Render Youtube Short",
+      "type": "Data Input"
+    },
+    {
+      "name": "Youtube Upload HTTP request Setup",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Binary for Rendered Short",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Binary to Youtube HTTP",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfac9510",
+  "workflow_id": "cfac9510",
+  "workflow_id_display": "cfac9510",
+  "workflow_name": "One-way sync between Telegram, Notion, Google Drive, and Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Drive, Google Sheets, Notion, PDF, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Lakshit",
+  "author_profile_url": "https://n8n.io/creators/lakshit1996/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Telegram message management by syncing notes, images, and documents to Notion, Google Drive, and Google Sheets. Boost team productivity now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "📱 Telegram Message Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "📊 Record in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "🔄 Convert to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "🌐 Upload to ImgBB",
+      "type": "Data Input"
+    },
+    {
+      "name": "📝 Add Image to Notion",
+      "type": "Data Input"
+    },
+    {
+      "name": "📝 Add Text to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "☁️ Upload to Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

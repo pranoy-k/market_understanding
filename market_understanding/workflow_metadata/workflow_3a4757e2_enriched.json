@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3a4757e2",
+  "workflow_id": "3a4757e2",
+  "workflow_id_display": "3a4757e2",
+  "workflow_name": "Auto-Generate and Post Social Media Content to Bluesky using Groq LLM",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mehdi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Bluesky posts with AI-generated content using n8n and LLM APIs. Save time, ensure flawless publishing, and boost your social presence—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Bluesky Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Bluesky",
+      "type": "Data Input"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP error",
+      "type": "Data Input"
+    },
+    {
+      "name": "LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Count Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code code to cap posts at 300 characters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execution Count Code 2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

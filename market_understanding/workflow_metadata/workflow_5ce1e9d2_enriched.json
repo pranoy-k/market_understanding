@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5ce1e9d2",
+  "workflow_id": "5ce1e9d2",
+  "workflow_id_display": "5ce1e9d2",
+  "workflow_name": "LinkedIn Profile Finder via Form using Bright Data & GPT-4o-mini",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly find LinkedIn profiles by name and company, generate outreach strategies, and receive insights via email using this automated n8n workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, limit, if"
+  ],
+  "nodes": [
+    {
+      "name": "When User Completes Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Google Results",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Parsed Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Url LinkedIn",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Company Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Google Results for Company",
+      "type": "Process"
+    },
+    {
+      "name": "Parse Google Results",
+      "type": "Process"
+    },
+    {
+      "name": "Parse Google Results for Company",
+      "type": "Process"
+    },
+    {
+      "name": "Create a Followup for Company and Person",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Body and Title from Website",
+      "type": "Process"
+    },
+    {
+      "name": "Get LinkedIn Entry on Google",
+      "type": "Process"
+    },
+    {
+      "name": "Form Not Found",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get only Matching Profiles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit to 1 Profile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Body and Title from Website1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Company on Google",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Form Email Sent",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

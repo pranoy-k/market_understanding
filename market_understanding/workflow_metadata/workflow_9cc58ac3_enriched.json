@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9cc58ac3",
+  "workflow_id": "9cc58ac3",
+  "workflow_id_display": "9cc58ac3",
+  "workflow_name": "Sync OVH Invoices to Google Sheets and Save PDFs to Google Drive",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Google Drive, Google Sheets, PDF",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Oliver Bardenheier",
+  "author_profile_url": "https://n8n.io/creators/carlosgracia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync OVH invoices to Google Sheets and Drive. Automate retrieval, organize PDFs, and simplify record-keeping. Easy setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Record in OVH Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Record Data with FileID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Invoice Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Safe File",
+      "type": "Process"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Download PDF",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query Latest OVH Invoices",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check for FY Folder ID",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

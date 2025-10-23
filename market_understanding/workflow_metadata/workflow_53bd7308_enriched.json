@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/53bd7308",
+  "workflow_id": "53bd7308",
+  "workflow_id_display": "53bd7308",
+  "workflow_name": "Telegram User Registration Workflow",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Victor Gold",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage Telegram bot user registration with automatic lookup, personalized greetings, and secure Google Sheets storage. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with set, telegram, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger_Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data to Save",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data Example",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find User",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write to Data Base",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update status",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

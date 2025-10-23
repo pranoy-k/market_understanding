@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c29f19a7",
+  "workflow_id": "c29f19a7",
+  "workflow_id_display": "c29f19a7",
+  "workflow_name": "Receive updates for GitHub events",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "GitHub, PDF",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Explore a ready-to-use workflow for the Github Trigger node in n8n—learn best practices, accelerate automation, and simplify documentation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

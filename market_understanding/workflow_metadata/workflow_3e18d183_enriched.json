@@ -1,0 +1,107 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3e18d183",
+  "workflow_id": "3e18d183",
+  "workflow_id_display": "3e18d183",
+  "workflow_name": "Extract, Summarize & Analyze Amazon Price Drops with Bright Data & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "AWS",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Track Amazon price drops effortlessly with Bright Data MCP. Extract, summarize, and analyze pricing sentiment for actionable ecommerce insights. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set input fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Update Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Bright Data MCP Client List Tools",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize Content",
+      "type": "Process"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model for Summarize Content",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook Notification for Price Drop Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Structure Data Extract Using LLM",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client for Price Drop Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client for Price Drop Data Extract Within a Loop",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

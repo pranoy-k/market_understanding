@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc94ef63",
+  "workflow_id": "bc94ef63",
+  "workflow_id_display": "bc94ef63",
+  "workflow_name": "Track CVE Vulnerability Details & History with NVD API and Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Niranjan G",
+  "author_profile_url": "https://n8n.io/creators/niranjan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate CVE lookups & change tracking via NVD API. Streamline vulnerability management with real-time Google Sheets sync—ideal for security teams.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Parse CVE JSON → Flat Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse CVE History JSON → Flat Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log CVE Metadata to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log CVE History to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook: Get CVE Details",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch CVE from NVD API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook: Get CVE Change History",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch CVE History from NVD API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Fetch CVE from NVD API",
+    "Fetch CVE History from NVD API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

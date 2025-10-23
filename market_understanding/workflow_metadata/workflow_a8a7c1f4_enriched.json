@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8a7c1f4",
+  "workflow_id": "a8a7c1f4",
+  "workflow_id_display": "a8a7c1f4",
+  "workflow_name": "Generate Product Ad Copy & CTAs with GPT-4 for Slack and Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Airtable, OpenAI, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Instantly generate high-converting ad copy and CTAs with AI Copywriter Pro. Streamline marketing, automate team sharing, and boost campaign results—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with agent, lmChatOpenAi, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Product Info Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Ad Copy and CTAs",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

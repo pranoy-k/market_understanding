@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/517b2ce2",
+  "workflow_id": "517b2ce2",
+  "workflow_id_display": "517b2ce2",
+  "workflow_name": "Improve AI Agent System Prompts with GPT-4o Feedback Analysis and Email Delivery",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Email, OpenAI, RSS",
+  "tags": [],
+  "author_name": "Daniel Rosehill",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Accelerate AI agent prompt tuning with an automated system that analyzes, optimizes, and delivers improved prompts and feedback. Boost efficiency—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOpenAi, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "User inputs",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

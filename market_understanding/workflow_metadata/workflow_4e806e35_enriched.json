@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4e806e35",
+  "workflow_id": "4e806e35",
+  "workflow_id_display": "4e806e35",
+  "workflow_name": "Export WordPress posts to Spreadsheet",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "CSV, Excel, Google Sheets, WordPress",
+  "tags": [
+    "csv"
+  ],
+  "author_name": "Przemek Chojecki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Export WordPress posts to a spreadsheet and download as .csv. Simplify content management, automate exports, and boost your workflow efficiency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, writeBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

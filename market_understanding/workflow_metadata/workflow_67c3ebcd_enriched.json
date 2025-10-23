@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/67c3ebcd",
+  "workflow_id": "67c3ebcd",
+  "workflow_id_display": "67c3ebcd",
+  "workflow_name": "Share YouTube Videos with AI Summaries on Discord",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Discord, OpenAI, YouTube",
+  "tags": [
+    "Discord🤖 AI"
+  ],
+  "author_name": "Mike Russell",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Share YouTube videos on Discord with AI-generated summaries for quick content overview.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "YouTube Video Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Find English Captions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Caption Summary with ChatGPT",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Caption Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Captions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Caption File Conversion",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66055ea3",
+  "workflow_id": "66055ea3",
+  "workflow_id_display": "66055ea3",
+  "workflow_name": "AI Chatbot Call Center: Telegram Call In (Production-Ready, Part 1a)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "ChatPayLabs",
+  "author_profile_url": "https://n8n.io/creators/chatpaylabs/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly route Telegram messages to your call center with n8n. Supports scalable queue mode, voice-to-text, caching, and easy integration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, postgres, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Test Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Test Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram Voice Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Service",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Member",
+      "type": "Data Processing"
+    },
+    {
+      "name": "English",
+      "type": "Data Processing"
+    },
+    {
+      "name": "yue-Hant-HK",
+      "type": "Data Processing"
+    },
+    {
+      "name": "cmn-Hant-TW",
+      "type": "Data Processing"
+    },
+    {
+      "name": "cmn-Hans-CN",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ja-JP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Transcript Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Member Cache",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google STT",
+      "type": "Process"
+    },
+    {
+      "name": "Member Cache",
+      "type": "Process"
+    },
+    {
+      "name": "Load Memer Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Demo Call Back",
+      "type": "Process"
+    },
+    {
+      "name": "Demo Call Center",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

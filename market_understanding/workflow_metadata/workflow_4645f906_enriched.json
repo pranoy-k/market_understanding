@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4645f906",
+  "workflow_id": "4645f906",
+  "workflow_id_display": "4645f906",
+  "workflow_name": "AI-Powered Carousel Posts for Instagram, LinkedIn & Twitter with Blotato",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Instagram, LinkedIn, Twitter",
+  "tags": [
+    "linkedin",
+    "twitter",
+    "Scheduled"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate AI carousel posts on Instagram, LinkedIn & more with Blotato + n8n. Fast setup, custom AI content, multi-platform publishing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "SETUP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser 1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser 2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "[Instagram] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Facebook] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Linkedin] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Tiktok] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Threads] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Twitter] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Carousel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Carousel",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Bluesky] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Pinterest] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent - Specify Quote and Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - AI Writes Quote and Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

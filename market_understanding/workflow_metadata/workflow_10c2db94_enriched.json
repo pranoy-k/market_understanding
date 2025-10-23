@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/10c2db94",
+  "workflow_id": "10c2db94",
+  "workflow_id_display": "10c2db94",
+  "workflow_name": "Add a event to Google Calendar automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "sshaligr",
+  "author_profile_url": "https://n8n.io/creators/shraddha/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly add events to Google Calendar, boost productivity, and stay organized with instant, automated scheduling. Learn how to streamline your workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

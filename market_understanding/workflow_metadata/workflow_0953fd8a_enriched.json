@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0953fd8a",
+  "workflow_id": "0953fd8a",
+  "workflow_id_display": "0953fd8a",
+  "workflow_name": "Telegram bot starter template setup",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Victor Gold",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Kickstart Telegram bot development with a modular n8n template—handle messages, files, and payments. Easy to customize and extend. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "How to Configure Each Node",
+      "type": "Trigger",
+      "description": "Trigger"
+    },
+    {
+      "name": "Trigger Data for Payment",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trigger Data for Register",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Global data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data for Invoice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Register",
+      "type": "Process"
+    },
+    {
+      "name": "Payment Handler",
+      "type": "Process"
+    },
+    {
+      "name": "Send Invoice",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6549dc0b",
+  "workflow_id": "6549dc0b",
+  "workflow_id_display": "6549dc0b",
+  "workflow_name": "Automatically update n8n version",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Weilun",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate n8n updates on Ubuntu 24.04 with daily version checks, SSH status writes, and cron job triggers for effortless, up-to-date workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with ssh, if, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Local n8n version",
+      "type": "Data Input"
+    },
+    {
+      "name": "SSH1",
+      "type": "Process"
+    },
+    {
+      "name": "Get the latest n8n version",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

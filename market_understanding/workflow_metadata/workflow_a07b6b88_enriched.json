@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a07b6b88",
+  "workflow_id": "a07b6b88",
+  "workflow_id_display": "a07b6b88",
+  "workflow_name": "Parse DMARC reports, save them in database and notify on DKIM or SPF error",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Email, MySQL, Slack",
+  "tags": [
+    "slack🗄",
+    "mysql"
+  ],
+  "author_name": "Åukasz",
+  "author_profile_url": "https://n8n.io/creators/lukaszpp/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor DMARC reports, get alerts only on SPF/DKIM failures, and store results in MySQL/MariaDB. Stay informed via email or Slack. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with emailSend, xml, set"
+  ],
+  "nodes": [
+    {
+      "name": "Map fields for DB input and parse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename column for consistency",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse XML data to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "End date format",
+      "type": "Process"
+    },
+    {
+      "name": "Begin format date",
+      "type": "Process"
+    },
+    {
+      "name": "Input into database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "Process"
+    },
+    {
+      "name": "Unzip File",
+      "type": "Process"
+    },
+    {
+      "name": "Extract XML data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out For Separate Entries",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

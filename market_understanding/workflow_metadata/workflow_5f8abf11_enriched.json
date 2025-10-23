@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5f8abf11",
+  "workflow_id": "5f8abf11",
+  "workflow_id_display": "5f8abf11",
+  "workflow_name": "Generate Lessons Learned Reports from Jira Epics with AI and Google Docs",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Jira",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Tarek Mustafa",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Jira Lessons Learned or Retrospective reports with AI. Instantly gather, analyze, and deliver insights to Google Docs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, jira, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Jira Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Jira Get All Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Jira Get All Comments",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

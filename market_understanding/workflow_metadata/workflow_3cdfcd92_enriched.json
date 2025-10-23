@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3cdfcd92",
+  "workflow_id": "3cdfcd92",
+  "workflow_id_display": "3cdfcd92",
+  "workflow_name": "Automate AI Phone Booking & CRM Updates with GPT-4, VAPI.ai, and GHL",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Email, OpenAI",
+  "tags": [],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate AI-driven appointment booking with phone call confirmations, real-time lead validation, CRM syncing, and email alerts. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Validation AI",
+      "type": "Process"
+    },
+    {
+      "name": "Post-call Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "GHL Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent Core",
+      "type": "Process"
+    },
+    {
+      "name": "Conversation Memory",
+      "type": "Process"
+    },
+    {
+      "name": "VAPI Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "GHL Update",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "VAPI Call",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

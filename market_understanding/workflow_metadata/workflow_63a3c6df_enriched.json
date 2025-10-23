@@ -1,0 +1,117 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/63a3c6df",
+  "workflow_id": "63a3c6df",
+  "workflow_id_display": "63a3c6df",
+  "workflow_name": "Analyze Competitor Facebook Ads with AI (GPT-4 & Gemini) & Email Reports",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Email, Facebook, OpenAI",
+  "tags": [
+    "facebook",
+    "gemini"
+  ],
+  "author_name": "SamirLiu",
+  "author_profile_url": "https://n8n.io/creators/samir/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Facebook ad competitor analysis. Instantly get AI-driven insights, top ad previews, and expert reports delivered to your email. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, formTrigger, limit"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Select Image Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Video Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine all Ads information into a single text string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image duplicate key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image Duplicate Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Image",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape ads",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Media Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Download video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload video Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze video Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Video Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Image Limit 5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Video Limit 5",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

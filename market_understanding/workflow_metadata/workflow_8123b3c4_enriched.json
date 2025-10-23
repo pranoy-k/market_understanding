@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8123b3c4",
+  "workflow_id": "8123b3c4",
+  "workflow_id_display": "8123b3c4",
+  "workflow_name": "Post images and text from Google Drive and Sheets to LinkedIn",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Drive, Google Sheets, LinkedIn, Telegram",
+  "tags": [
+    "google",
+    "linkedin",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "papcy",
+  "author_profile_url": "https://n8n.io/creators/papcy/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate LinkedIn posts from Google Sheets with image previews, Telegram approvals, and full tracking—ideal for agencies and creators. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Find Next Post3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Sheet - Declined",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet - Posted",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

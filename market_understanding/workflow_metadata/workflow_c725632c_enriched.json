@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c725632c",
+  "workflow_id": "c725632c",
+  "workflow_id_display": "c725632c",
+  "workflow_name": "Visual Regression Testing with Apify and AI Vision Model",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "API",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Implement automated visual regression testing using Apify and AI vision models to detect UI changes.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Row and Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Base Image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get URLs with Missing Base Images",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Webpages List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Base Image",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run Webpage Screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Run Webpage Screenshot1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Has Changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Report",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Webpage...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download New Screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Screenshots",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Visual Regression Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

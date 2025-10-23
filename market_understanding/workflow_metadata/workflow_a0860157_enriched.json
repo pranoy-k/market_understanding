@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a0860157",
+  "workflow_id": "a0860157",
+  "workflow_id_display": "a0860157",
+  "workflow_name": "Add new clients from Notion to Clockify",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Manuel",
+  "author_profile_url": "https://n8n.io/creators/automate-everything/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync new clients from Notion to Clockify. Automate client updates for seamless project management and time tracking. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with notionTrigger, stickyNote, clockify"
+  ],
+  "nodes": [
+    {
+      "name": "Notion Trigger on new client",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

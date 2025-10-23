@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21a2e97d",
+  "workflow_id": "21a2e97d",
+  "workflow_id_display": "21a2e97d",
+  "workflow_name": "Receive updates for Stripe events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Stripe",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to set up the Stripe Trigger node in n8n for real-time event automation. Includes practical examples and visual guides for easy integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stripeTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Stripe Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

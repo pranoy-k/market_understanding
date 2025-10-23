@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0985b8db",
+  "workflow_id": "0985b8db",
+  "workflow_id_display": "0985b8db",
+  "workflow_name": "Automate Google OAuth2 Credential Creation in n8n",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jordan Haisley",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Google OAuth2 credential creation for multiple services in n8n. Save hours, reduce errors, and streamline team integrations—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Services",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "n8n Create Credentials",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

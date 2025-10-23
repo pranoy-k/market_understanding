@@ -1,0 +1,33 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/425313d9",
+  "workflow_id": "425313d9",
+  "workflow_id_display": "425313d9",
+  "workflow_name": "Listen and process search results from Icypeas in real-time",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Corentin Ribeyre",
+  "author_profile_url": "https://n8n.io/creators/corentinribeyre/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly integrate Icypeas with n8n for real-time search result processing. Connect via webhook, automate data handling, and streamline your workflow.",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, set, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

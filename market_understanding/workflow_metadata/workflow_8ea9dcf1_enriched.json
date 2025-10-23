@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ea9dcf1",
+  "workflow_id": "8ea9dcf1",
+  "workflow_id_display": "8ea9dcf1",
+  "workflow_name": "Automatic Travel Itinerary Generation via Email with Llama AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "OneClick IT Consultancy P Limited",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Set up an AI-powered auto-reply system for instant, 24/7 email responses, seamless integration, and boosted efficiency. Learn how with this simple guide!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, chainLlm, set"
+  ],
+  "nodes": [
+    {
+      "name": "Email Field Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ollama Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

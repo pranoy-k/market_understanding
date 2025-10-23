@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc6f81c1",
+  "workflow_id": "bc6f81c1",
+  "workflow_id_display": "bc6f81c1",
+  "workflow_name": "Automate GitHub PR Linting with Google Gemini AI and Auto-Fix PRs",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Adam Bertram",
+  "author_profile_url": "https://n8n.io/creators/adbertram/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub PR linting with LintGuardian's n8n & AI workflow. Instantly fix code style issues—streamline reviews, boost code quality. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Listen for Trigger from Github Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Code/FilePath Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get PR Files",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get File Contents",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Base64 to Text File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Collect All Files Changed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get PR GitHub Branch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create GitHub Blob",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create GitHub Tree",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create GitHub Commit",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Pull Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Branch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Latest Main Branch Commit SHA",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Latest Main Branch Tree Hash",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Branch",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Set Common Fields",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

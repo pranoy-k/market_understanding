@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9c9b3084",
+  "workflow_id": "9c9b3084",
+  "workflow_id_display": "9c9b3084",
+  "workflow_name": "Create an Automated Customer Support Assistant with GPT-4o and GoHighLevel SMS",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "OpenAI, SMS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Cyril Nicko Gaspar",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate customer support with an AI agent that uses website-scraped knowledge and GoHighLevel SMS for real-time, accurate, and customizable responses. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with memoryRedisChat, textSplitterRecursiveCharacterTextSplitter, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook from GHL - SMS Reply Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Website URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Website URL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Links1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML1",
+      "type": "Process"
+    },
+    {
+      "name": "Redis Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "BrightData",
+      "type": "Process"
+    },
+    {
+      "name": "BrightData1",
+      "type": "Process"
+    },
+    {
+      "name": "Send SMS via GHL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Simple Vector Store2",
+      "type": "Process"
+    },
+    {
+      "name": "Look Up GHL Contact by ID",
+      "type": "Process"
+    },
+    {
+      "name": "Direct API access via HTTP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Direct API access via HTTP1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get XML file",
+      "type": "Process"
+    },
+    {
+      "name": "Split out links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get sitemap",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Direct API access via HTTP",
+    "Direct API access via HTTP1",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

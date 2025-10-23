@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/931cfe41",
+  "workflow_id": "931cfe41",
+  "workflow_id_display": "931cfe41",
+  "workflow_name": "User verification and login using Auth0",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Jay Hartley",
+  "author_profile_url": "https://n8n.io/creators/jay/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly streamline user authentication with this Auth0 login template—quick setup, supports Gmail & email logins, and expandable to social providers.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Set Application Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Application Details1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Request Access Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Userinfo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Open Auth Webpage",
+      "type": "Trigger"
+    },
+    {
+      "name": "/login",
+      "type": "Trigger"
+    },
+    {
+      "name": "/receive-token",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

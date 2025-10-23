@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/acd5be75",
+  "workflow_id": "acd5be75",
+  "workflow_id_display": "acd5be75",
+  "workflow_name": "Automate NPM Package Installation and Updates for Self-Hosted Environments",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Joachim Brindeau",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate npm package installation in your self-hosted N8N Docker! Effortlessly add and update libraries in Code nodes—no manual setup required. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "trigger_schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "trigger_manual",
+      "type": "Trigger"
+    },
+    {
+      "name": "trigger_instance",
+      "type": "Trigger"
+    },
+    {
+      "name": "libraries_set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "libraries_array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "libraries_split",
+      "type": "Data Processing"
+    },
+    {
+      "name": "library_install",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

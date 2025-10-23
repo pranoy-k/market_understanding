@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3fada91d",
+  "workflow_id": "3fada91d",
+  "workflow_id_display": "3fada91d",
+  "workflow_name": "Connect AI to any chats in Kommo",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "yatolstoy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate customer service in Kommo with AI using n8n. Respond to queries on any channel, handle voice/text, and customize workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "setText",
+      "type": "Data Processing"
+    },
+    {
+      "name": "model",
+      "type": "Process"
+    },
+    {
+      "name": "transcribe voice",
+      "type": "Process"
+    },
+    {
+      "name": "get voice",
+      "type": "Data Input"
+    },
+    {
+      "name": "get_entity",
+      "type": "Data Input"
+    },
+    {
+      "name": "memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Recieve message",
+      "type": "Data Input"
+    },
+    {
+      "name": "new_message",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

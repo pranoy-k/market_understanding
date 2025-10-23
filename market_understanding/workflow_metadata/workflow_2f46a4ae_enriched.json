@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f46a4ae",
+  "workflow_id": "2f46a4ae",
+  "workflow_id_display": "2f46a4ae",
+  "workflow_name": "Automated Job Hunter: Upwork Opportunity Aggregator & AI-Powered Notifier",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly discover Upwork freelance jobs with AI-powered automation, smart filtering, and instant email alerts. Transform your job search today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Upwork Job Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Job Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Summary Output",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Job Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Log Jobs to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Upwork Jobs (Apify)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Job Listings",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

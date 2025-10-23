@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f9712d66",
+  "workflow_id": "f9712d66",
+  "workflow_id_display": "f9712d66",
+  "workflow_name": "Automatic Reminders For Follow-ups with AI and Human in the loop Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Flag to Follow Up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Model",
+      "type": "Process"
+    },
+    {
+      "name": "Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Past Events",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Follow Ups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output",
+      "type": "Process"
+    },
+    {
+      "name": "Availability",
+      "type": "Process"
+    },
+    {
+      "name": "Meeting Availability Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Meetings",
+      "type": "Process"
+    },
+    {
+      "name": "Meeting Booking Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Mark as Seen",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

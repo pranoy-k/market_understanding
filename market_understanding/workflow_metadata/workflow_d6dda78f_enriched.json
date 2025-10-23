@@ -1,0 +1,488 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d6dda78f",
+  "workflow_id": "d6dda78f",
+  "workflow_id_display": "d6dda78f",
+  "workflow_name": "WordPress Content Automation Machine with HUMAN-IN-THE-LOOP & DEEP RESEARCH",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "135",
+  "tools_integrations": "Airtable, WordPress",
+  "tags": [],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Supercharge WordPress content with AI + human control! Deep research, Airtable workflow, collaborative review & direct publishing. Discover more now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, markdown, if"
+  ],
+  "nodes": [
+    {
+      "name": "Create New Topic",
+      "type": "Trigger"
+    },
+    {
+      "name": "Select Chapters Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Select Content Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Finalize Post Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser4",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Parse Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Planner Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Article In Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FInal Article In HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Research Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate featured image",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Chapter Image",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable Chapters",
+      "type": "Data Output"
+    },
+    {
+      "name": "Confirm Topic",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Get Topic",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Settings",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Content - Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generate Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generate Content - Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters - Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generate Chapters",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generate Chapters - Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters - Create Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Finalize Post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Finalize Post - Delete Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Create Topic - Update Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Chapters1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Settings1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Get Topic1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Content1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generate Content1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Generated Content",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Content - Update Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Get Topic2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Content2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Settings2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Select Chapters2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Finalize Post1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Finalize Post - Update Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Backup Post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Finalize Post2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable Settings3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Initial Research",
+      "type": "Process"
+    },
+    {
+      "name": "Limit To First Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Content Process IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Content IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Chapter Process IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Chapters Process",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Chapter IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out All Records",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Content Process",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Post IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Records",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Copywriter",
+      "type": "Process"
+    },
+    {
+      "name": "Limit To First In Progress Topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Inbound Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Post Sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get XML File",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate internal links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Chapters1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit To First Item1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "New Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Blog Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Upload featured image to Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Resize featured image",
+      "type": "Process"
+    },
+    {
+      "name": "Update Feature Image Meta Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Drive Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Chapter Image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Chapter Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Chapter Image To Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Chapter Image Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Into Article",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown To HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Article And Feature Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Featured Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Featured Image Meta Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Settings2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit To First In Progress Topic1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit To First Item2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Chapters2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set featured image for post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set excerpt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post on Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Records",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Post Status And Confirmation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit To First Item3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PerplexityAI API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Wait For AI APIs",
+    "PerplexityAI API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

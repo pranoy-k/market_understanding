@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92a08b05",
+  "workflow_id": "92a08b05",
+  "workflow_id_display": "92a08b05",
+  "workflow_name": "Build your own Github MCP server",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Personalize a secure, lightweight GitHub MCP server for your team. Control access, comment on issues, and easily extend workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Github MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Issues",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Latest Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Add Issue Comment",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Issue Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Many Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Get Single Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Create Comment",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

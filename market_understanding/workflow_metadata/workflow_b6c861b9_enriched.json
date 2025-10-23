@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b6c861b9",
+  "workflow_id": "b6c861b9",
+  "workflow_id_display": "b6c861b9",
+  "workflow_name": "Convert FileMaker Data API to Flat File Array",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Dick",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert FileMaker Data API responses into clean, flat file arrays for seamless reporting, exports, and easy integration. Learn how now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with functionItem, function, itemLists"
+  ],
+  "nodes": [
+    {
+      "name": "Return item.fieldData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FileMaker Data API Contacts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FileMaker response.data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "FileMaker Data API Contacts"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

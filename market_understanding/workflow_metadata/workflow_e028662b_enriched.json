@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e028662b",
+  "workflow_id": "e028662b",
+  "workflow_id_display": "e028662b",
+  "workflow_name": "Smartlead to HubSpot Performance Analytics",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Analytics, HubSpot",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "victor de coster",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Smartlead data with HubSpot, automate performance reporting, and gain actionable outreach insights. Easy setup—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "SET SMARTLEAD API KEY",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "EXTRACT CAMPAIGN DATA",
+      "type": "Data Input"
+    },
+    {
+      "name": "FETCH ALL CAMPAIGNS",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UPDATE CAMPAIGN",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "UPSERT CAMPAIGN ACTIVITY",
+      "type": "Data Output"
+    },
+    {
+      "name": "HUBSPOT TABLE",
+      "type": "Data Output"
+    },
+    {
+      "name": "SEARCH",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres1",
+      "type": "Data Output"
+    },
+    {
+      "name": "UPDATE HUBSPOT ACTIVITY TABLE",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "SET SMARTLEAD API KEY"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

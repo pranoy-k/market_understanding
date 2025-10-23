@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bd0bb7af",
+  "workflow_id": "bd0bb7af",
+  "workflow_id_display": "bd0bb7af",
+  "workflow_name": "N8N Backup Flow to Nextcloud (7-Day Retention)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Joachim Hummel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily n8n workflow backups to Nextcloud, keep the latest 7 backups, and optimize storage with easy setup. Reliable, offsite backup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, nextCloud"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Backup Path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Backups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nextcloud Directory",
+      "type": "Process"
+    },
+    {
+      "name": "Nextcloud Upload",
+      "type": "Process"
+    },
+    {
+      "name": "Nextcloud List Dir",
+      "type": "Process"
+    },
+    {
+      "name": "Limits Backups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nextcloud - Delete old backups",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

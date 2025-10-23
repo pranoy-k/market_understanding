@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/15211e24",
+  "workflow_id": "15211e24",
+  "workflow_id_display": "15211e24",
+  "workflow_name": "Pattern for Multiple Triggers Combined to Continue Workflow",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Hubschrauber",
+  "author_profile_url": "https://n8n.io/creators/hubschrauber/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Seamlessly merge external process input with paused workflows using resumeUrl. Combine contexts for unified automation. Learn more about this template!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simulate Event that Hits the 2nd Trigger/Flow",
+      "type": "Data Input"
+    },
+    {
+      "name": "Demo \"Trigger\" Callback Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "This Node Can Access Primary and Secondary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Primary Execution Context",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request - Initiate Independent Process",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Resume Other Workflow Execution",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Input from External, Independent Process",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request - Get A Random Joke",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

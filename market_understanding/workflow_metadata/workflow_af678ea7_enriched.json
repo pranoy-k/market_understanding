@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/af678ea7",
+  "workflow_id": "af678ea7",
+  "workflow_id_display": "af678ea7",
+  "workflow_name": "AI agent for Instagram DM_inbox. Manychat + Open AI integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Instagram, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Alex Hi no code",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Set your system promt for AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ChatGPT model",
+      "type": "Process"
+    },
+    {
+      "name": "Local n8n memory",
+      "type": "Process"
+    },
+    {
+      "name": "Send respond",
+      "type": "Trigger"
+    },
+    {
+      "name": "Getting message from Instagram",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

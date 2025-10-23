@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/54678cea",
+  "workflow_id": "54678cea",
+  "workflow_id_display": "54678cea",
+  "workflow_name": "List social media activity of a company before a call",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, LinkedIn",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Milorad FilipoviÄ",
+  "author_profile_url": "https://n8n.io/creators/n8n_milorad/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Prepare for every sales call with automated daily emails summarizing your prospects’ latest LinkedIn and X posts. Boost meeting insights—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "Every morning @ 7",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get attendees email domains",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract data for email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get recetn tweets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get meetings for today",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get recent LinkedIn posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Enrich attendee company",
+      "type": "Process"
+    },
+    {
+      "name": "Format LinkedIn Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Tweets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine all activity for a company",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare email template",
+      "type": "Process"
+    },
+    {
+      "name": "Keep only ones with the domain",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

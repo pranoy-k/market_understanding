@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9375bd6e",
+  "workflow_id": "9375bd6e",
+  "workflow_id_display": "9375bd6e",
+  "workflow_name": "Sync blog posts from Notion to Webflow",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Giovanni Ruggieri",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Notion blog posts to Webflow daily. Transfer rich formatting, images, and properties with easy setup. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, webflow, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Take cover url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare by slug1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get simple page data",
+      "type": "Process"
+    },
+    {
+      "name": "Get all page data",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data transporter1",
+      "type": "Process"
+    },
+    {
+      "name": "Get all blog posts1",
+      "type": "Process"
+    },
+    {
+      "name": "Is sync checked?1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For each blog post1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create post1",
+      "type": "Process"
+    },
+    {
+      "name": "Update slug on posts1",
+      "type": "Process"
+    },
+    {
+      "name": "Slug uniqueness checker and differentiator1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add slug to posts1",
+      "type": "Process"
+    },
+    {
+      "name": "Get all collection posts1",
+      "type": "Process"
+    },
+    {
+      "name": "Data transporter, Notion posts to sync1",
+      "type": "Process"
+    },
+    {
+      "name": "Craft the rich text element1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Turn blocks into HTML1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get blocks1",
+      "type": "Process"
+    },
+    {
+      "name": "Update in \"Blog Posts\"",
+      "type": "Process"
+    },
+    {
+      "name": "Add Webflow item id to Notion data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Notion post data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

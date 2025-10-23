@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/13774070",
+  "workflow_id": "13774070",
+  "workflow_id_display": "13774070",
+  "workflow_name": "Periodically send data from HTTP Request node to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Email, Telegram",
+  "tags": [
+    "telegram",
+    "http",
+    "api"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate workflows with real-time data capture, API integration, custom outputs, and instant email reports. Reliable, seamless, and error-free. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with telegram, httpRequest, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

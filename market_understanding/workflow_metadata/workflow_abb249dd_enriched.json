@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/abb249dd",
+  "workflow_id": "abb249dd",
+  "workflow_id_display": "abb249dd",
+  "workflow_name": "Receive Google Sheet data via REST API",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Excel, Google Sheets, Webhook",
+  "tags": [
+    "google",
+    "rest",
+    "api",
+    "webhook"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly connect Google Sheets to any app via REST endpoint. Instantly fetch and deliver real-time spreadsheet data with a simple webhook call.",
+  "key_benefits": [
+    "API integration",
+    "Integration with webhook, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

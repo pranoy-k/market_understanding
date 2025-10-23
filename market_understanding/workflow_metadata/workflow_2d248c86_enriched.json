@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d248c86",
+  "workflow_id": "2d248c86",
+  "workflow_id_display": "2d248c86",
+  "workflow_name": "Filter the feedback from Typeform and store in Google Sheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly filter Typeform feedback by sentiment and auto-save responses into Google Sheets. Streamline review management and boost customer insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, set, typeformTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

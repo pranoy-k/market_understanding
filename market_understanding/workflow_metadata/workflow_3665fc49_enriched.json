@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3665fc49",
+  "workflow_id": "3665fc49",
+  "workflow_id_display": "3665fc49",
+  "workflow_name": "Automated Website Change Monitoring with Bright Data, GPT-4.1 & Google Workspace",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Daniel Shashko",
+  "author_profile_url": "https://n8n.io/creators/tomax/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate website content monitoring with AI-driven change detection, Google Workspace integration, and detailed weekly reports. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, googleDocs, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set workflow variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge workflow variables with Google Sheet data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set previous week and current week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "GPT-4.1",
+      "type": "Process"
+    },
+    {
+      "name": "Read from comparison spreadsheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update comparison sheet with current week file data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update comparison spreadsheet with comparison file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop over each comparison URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Web scraping and data extraction agent",
+      "type": "Process"
+    },
+    {
+      "name": "Upload current week JSON file",
+      "type": "Process"
+    },
+    {
+      "name": "Download previous week's file",
+      "type": "Process"
+    },
+    {
+      "name": "Convert previous week's file to JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mock previous week changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Detect changes between weeks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Markdown from detected changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Create comparison document",
+      "type": "Process"
+    },
+    {
+      "name": "Update comparison document with results",
+      "type": "Process"
+    },
+    {
+      "name": "scrape_as_markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Convert current week JSON response to file",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

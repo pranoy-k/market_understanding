@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/194c33bf",
+  "workflow_id": "194c33bf",
+  "workflow_id_display": "194c33bf",
+  "workflow_name": "Hacker News Job Listing Scraper and Parser",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Airtable, OpenAI",
+  "tags": [
+    "Web Scraping"
+  ],
+  "author_name": "Julian Kaiser",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 ai research rag & data analysis Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically scrape and parse job listings from Hacker News, extracting key information and organizing opportunities.",
+  "key_benefits": [
+    "Data extraction and monitoring"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get relevant data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Write results to airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search for Who is hiring posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get latest post",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out children (jobs)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Trun into structured data",
+      "type": "Process"
+    },
+    {
+      "name": "Clean text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit for testing (optional)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HI API: Get the individual job post",
+      "type": "Data Input"
+    },
+    {
+      "name": "HN API: Get Main Post",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "HI API: Get the individual job post",
+    "HN API: Get Main Post",
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

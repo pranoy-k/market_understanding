@@ -1,0 +1,123 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8c2b2232",
+  "workflow_id": "8c2b2232",
+  "workflow_id_display": "8c2b2232",
+  "workflow_name": "Analyze Email Headers for IPs and Spoofing",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "API, Email, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Analyze email headers with n8n: extract IPs, check fraud scores, parse SPF/DKIM/DMARC, and get detailed results via webhook. Learn more today!",
+  "key_benefits": [
+    "API integration",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Collect interesting data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Email Header from webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Authentication Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SPF Pass Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SPF Fail Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SPF Neutral Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SPF UnknownStatus",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receive Headers",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fraud Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Explode Email Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out IPs",
+      "type": "Process"
+    },
+    {
+      "name": "Extract IPs from \"received\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "IP Quality Score",
+      "type": "Data Input"
+    },
+    {
+      "name": "IP-API",
+      "type": "Data Input"
+    },
+    {
+      "name": "SPF/DKIM/DMARC from \"authentication-results\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SPF from \"received-spf\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DKIM from \"dkim-signature\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DMARC from \"received-dmarc\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "IP Data Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Security Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Join IP Analysis into one JSON object",
+      "type": "Process"
+    },
+    {
+      "name": "Join results into one JSON object",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "IP-API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18c3040a",
+  "workflow_id": "18c3040a",
+  "workflow_id_display": "18c3040a",
+  "workflow_name": "Hostinger Daily VPS Snapshot and server metrics",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Leandro Melo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly secure your Hostinger VPS with n8n: daily automated backups, real-time metrics, instant alerts, and easy setup. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, hostingerApi, evolutionApi"
+  ],
+  "nodes": [
+    {
+      "name": "Every day 4:00am",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Calculate metrics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hostinger API list VPS",
+      "type": "Process"
+    },
+    {
+      "name": "Avaliables VPS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get VPS Metrics",
+      "type": "Process"
+    },
+    {
+      "name": "WhatsApp Message (success)",
+      "type": "Process"
+    },
+    {
+      "name": "Create Snapshot",
+      "type": "Process"
+    },
+    {
+      "name": "Next VPS",
+      "type": "Process"
+    },
+    {
+      "name": "WhatsApp Message (error)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Hostinger API list VPS"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

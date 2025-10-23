@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1de5721d",
+  "workflow_id": "1de5721d",
+  "workflow_id_display": "1de5721d",
+  "workflow_name": "N8N Español - Telegram Welcome Bot",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "The { AI } rtist",
+  "author_profile_url": "https://n8n.io/creators/tuxed/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatiza mensajes de bienvenida y despedida en tu grupo de Telegram con este workflow n8n. Sigue la guía paso a paso y haz crecer tu comunidad.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, telegramTrigger, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Saludos-TelegramTrigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

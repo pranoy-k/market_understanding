@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cd200558",
+  "workflow_id": "cd200558",
+  "workflow_id_display": "cd200558",
+  "workflow_name": "Log meal nutrients from Telegram to Google Sheets using an AI agent",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets, OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google🤖 openai"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly log meals by voice or text with Telegram, OpenAI, and Google Sheets. Automate nutrition tracking for smarter, easier meal planning—learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receive Telegram message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set chatInput from message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set chatInput from voice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Recording",
+      "type": "Process"
+    },
+    {
+      "name": "Store in sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List of Ingredients and nutrients",
+      "type": "Process"
+    },
+    {
+      "name": "Explode the list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add date",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

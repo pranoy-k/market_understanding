@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4b6267f0",
+  "workflow_id": "4b6267f0",
+  "workflow_id_display": "4b6267f0",
+  "workflow_name": "Upload & Categorize Files with Supabase Storage and Secure URL Generation",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jan Willem Altink",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate file uploads to self-hosted Supabase Storage. Sort by type, create secure URLs, and enable easy n8n integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "temp form to test workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Upload Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Error Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "add domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sign Error Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload to Supabase Storage",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Signed Url",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

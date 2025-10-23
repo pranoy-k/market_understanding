@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2ae2ee3f",
+  "workflow_id": "2ae2ee3f",
+  "workflow_id_display": "2ae2ee3f",
+  "workflow_name": "Manage Calendar Events with Slack Using OpenAI-Powered Outlook Assistant",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [
+    "slack🤖 openai"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Outlook Calendar management in Slack with this n8n AI workflow. Streamline team scheduling—learn how to boost productivity today!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Get Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Search All Outlook Events",
+      "type": "Process"
+    },
+    {
+      "name": "Create New Calendar Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Available Calendars",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Outlook Calendar Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Challenge",
+      "type": "Trigger"
+    },
+    {
+      "name": "On BOT/APP Mention",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

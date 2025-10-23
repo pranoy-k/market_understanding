@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8912ff5",
+  "workflow_id": "c8912ff5",
+  "workflow_id_display": "c8912ff5",
+  "workflow_name": "Automated GitHub Scanner for Exposed AWS IAM Keys",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "AWS, GitHub, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Niranjan G",
+  "author_profile_url": "https://n8n.io/creators/niranjan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub scanning for exposed AWS IAM keys with real-time Slack alerts, detailed reports, and actionable steps. Protect your AWS—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split Users for Processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get User Access Keys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search GitHub for Exposed Keys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Search Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Security Report",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Continue Scanning",
+      "type": "Process"
+    },
+    {
+      "name": "Format Slack Alert",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Github Search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List AWS Users1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract AWS Usernames",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Disable Access Keys",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

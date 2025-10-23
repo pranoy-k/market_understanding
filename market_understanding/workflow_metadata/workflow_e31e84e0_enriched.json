@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e31e84e0",
+  "workflow_id": "e31e84e0",
+  "workflow_id_display": "e31e84e0",
+  "workflow_name": "Extract Amazon Best Seller Electronic Info with Bright Data and Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "AWS",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract Amazon Electronics best-seller data and get structured insights with AI. Automate competitor tracking—customize and integrate in minutes!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Amazon URL with the Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request to fetch the Amazon Best Seller Products",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook Notifier for structured data extractor",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

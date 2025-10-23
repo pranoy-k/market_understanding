@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86e3b1f8",
+  "workflow_id": "86e3b1f8",
+  "workflow_id_display": "86e3b1f8",
+  "workflow_name": "Plex automatic QBittorent throttler",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically throttle Plex bandwidth during remote access! Integrate Plex, n8n, and qBittorrent for seamless, optimized streaming. Learn more now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Resume",
+      "type": "Process"
+    },
+    {
+      "name": "Play",
+      "type": "Process"
+    },
+    {
+      "name": "Don't Do Anything",
+      "type": "Process"
+    },
+    {
+      "name": "Pause",
+      "type": "Process"
+    },
+    {
+      "name": "Stop",
+      "type": "Process"
+    },
+    {
+      "name": "Get QB Cookie",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get QB Cookie1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Throttle State",
+      "type": "Data Input"
+    },
+    {
+      "name": "Do Nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Check Throttle State2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Do Nothing1",
+      "type": "Process"
+    },
+    {
+      "name": "Throttle Connection",
+      "type": "Process"
+    },
+    {
+      "name": "Resume Downloads",
+      "type": "Process"
+    },
+    {
+      "name": "Disable Throttle",
+      "type": "Data Input"
+    },
+    {
+      "name": "Enable Throttle",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,200 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c8205cab",
+  "workflow_id": "c8205cab",
+  "workflow_id_display": "c8205cab",
+  "workflow_name": "AI Sales Agent: WhatsApp, FB, IG, OpenAI, Airtable, Supabase Auto-Booking",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "50",
+  "tools_integrations": "Airtable, OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp🤖 openai"
+  ],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate multi-channel, AI-powered sales engagement with instant lead qualification, CRM integration, and seamless booking across chat platforms. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Facebook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Instagram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "WhatsApp",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields - facebook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - instagram",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - chat1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - chat2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields - chat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output - chat",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Lead",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Contact",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook - facebook post",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook - facebook get",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook - instagram get",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook - instagram post",
+      "type": "Trigger"
+    },
+    {
+      "name": "Demo Supabase",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar Agent",
+      "type": "Process"
+    },
+    {
+      "name": "CRM Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "sales_technique_knowledge",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Airtable Form Submitted",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sales Agent Demo - typing_on",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Graph API - Sales Agent Demo",
+      "type": "Process"
+    },
+    {
+      "name": "Instagram Graph API - smb.sales.agent.demo",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Demo Supabase1",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory1",
+      "type": "Data Output"
+    },
+    {
+      "name": "sales_technique_knowledge1",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar Agent1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API - Sales Agent Demo",
+    "Instagram Graph API - smb.sales.agent.demo",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/44ca939f",
+  "workflow_id": "44ca939f",
+  "workflow_id_display": "44ca939f",
+  "workflow_name": "Multi-Agent PDF-to-Blog Content Generation",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "Derek Cheung",
+  "author_profile_url": "https://n8n.io/creators/derekcheungsa/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert dense PDFs into clear, engaging blog posts with a multi-agent AI workflow. Customize tone, length, and publish directly to Ghost.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Project Planner",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Ghost",
+      "type": "Process"
+    },
+    {
+      "name": "Delegate to Writers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Editor",
+      "type": "Process"
+    },
+    {
+      "name": "Create title",
+      "type": "Process"
+    },
+    {
+      "name": "Content Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "Writers",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

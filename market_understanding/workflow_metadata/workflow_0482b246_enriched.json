@@ -1,0 +1,492 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0482b246",
+  "workflow_id": "0482b246",
+  "workflow_id_display": "0482b246",
+  "workflow_name": "Generate Complete Business Plans with Customizable AI Models and Specialized Agents",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "116",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Sina",
+  "author_profile_url": "https://n8n.io/creators/sina2266/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create detailed, investor-ready business plans in minutes with AI. Fully automated, customizable, and compatible with major LLMs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, lmChatOllama, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1. Executive Summary Chapter Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2. Business Description Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3. Market Analysis Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4. Competitor Analysis Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "5. Customer Discovery & Validation Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "6. Products & Services Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7. Marketing & Sales Strategy Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8. Operations Plan Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "9. Team & Organization Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "10. Technology & Innovation Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11. Financial Plan Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12. Risk Management Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "13. Exit Strategy Outliner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.1 Mission Statement Final Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "1.2 Vision Statement Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.3 Business Model Overview Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.4 Product/Service Brief Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.5 Market Opportunity Snapshot Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.6 Financial Highlights Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.7 Current Status Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "1.8 Funding Needs Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.1 Company Overview Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.2 Legal Structure Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.3 Founders’ Background Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.4 History & Milestones Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.5 Core Values & Culture Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "2.6 Unique Selling Proposition (USP) Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3.1 Industry Overview Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3.2 Market Size & Growth Trends Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3.3 Customer Segments Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3.4 Market Needs & Problems Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "3.5 SWOT Analysis Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4.1 Direct Competitors Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4.2 Indirect Competitors Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4.3 Competitive Positioning Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4.4 Barriers to Entry Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "4.5 Competitive Advantage Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "5.1 Customer Interviews Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "5.2 Survey Analysis Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "5.3 Problem-Solution Fit Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "5.4 Proof of Demand Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "6.1 Product/Service Description Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "6.2 Key Features & Benefits Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "6.3 Development Roadmap Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "6.4 Intellectual Property (IP) Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.1 Brand Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.2 Go-To-Market Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.3 Acquisition Channels Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.4 Sales Funnel Stages Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.5 Pricing Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.6 Customer Retention Plans Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "7.7 Guerrilla / Viral Campaigns Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.1 Daily Operations Workflow Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.2 Tools and Systems Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.3 Supplier and Vendor Management Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.4 Legal Compliance Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.5 Logistics & Fulfillment Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "8.6 KPIs & Monitoring Systems Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "9.1 Organizational Chart Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "9.2 Founders & Key Roles Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "9.3 Hiring Plan Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "9.4 Advisory Board Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "10.1 Technical Architecture Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "10.2 Technology Stack Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "10.3 Innovation Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "10.4 IP and Patent Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.1 Revenue Model Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.2 3-5 Year Financial Projections Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.3 Cash Flow Management Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.4 Profit and Loss Statements Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.5 Cap Table Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.6 Funding Strategy Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.7 Break-Even Analysis Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "11.8 Sensitivity Analysis Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12.1 Operational Risks Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12.2 Market Risks Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12.3 Financial Risks Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12.4 Legal Risks Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "12.5 Contingency Planning Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "13.1 Potential Exit Routes Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "13.2 Exit Timeline Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "13.3 Success Metrics for Exit Final Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Chapter 1 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 2 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 3 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 4 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 5 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 6 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 7 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 8 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 9 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 10 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 11 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 13 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 12 Merger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 1 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 2 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 3 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 4 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 5 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 6 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 7 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 8 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 9 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 10 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 11 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 12 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter 13 Assembler",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results 1/2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results 1/",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Result organizer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

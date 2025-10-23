@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b635219e",
+  "workflow_id": "b635219e",
+  "workflow_id_display": "b635219e",
+  "workflow_name": "Monitor a file for changes and send an alert",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "SMS",
+  "tags": [],
+  "author_name": "Ron",
+  "author_profile_url": "https://n8n.io/creators/rons4/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly detect file changes and get real-time alerts via push, SMS, or call with SIGNL4. Ideal for log monitoring, data tracking, and system integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, writeBinaryFile, signl4"
+  ],
+  "nodes": [
+    {
+      "name": "Mark as Done",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Binary to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "JSON to Binary",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Resolve",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Alert",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

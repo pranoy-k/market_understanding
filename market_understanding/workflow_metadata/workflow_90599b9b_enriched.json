@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90599b9b",
+  "workflow_id": "90599b9b",
+  "workflow_id_display": "90599b9b",
+  "workflow_name": "Backup your workflows to GitHub -- in (subfolders)",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "GitHub",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Nazmy",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up n8n workflows to GitHub, auto-organized by tags. Smart updates keep backups current—perfect for migration or added security.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Return",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "isDiffOrNew",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Same file - Do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "File is different",
+      "type": "Process"
+    },
+    {
+      "name": "File is new",
+      "type": "Process"
+    },
+    {
+      "name": "Create new file",
+      "type": "Process"
+    },
+    {
+      "name": "Edit existing file",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get file data",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f7d2001e",
+  "workflow_id": "f7d2001e",
+  "workflow_id_display": "f7d2001e",
+  "workflow_name": "Automate Business Lead Scraping from Apify to Google Sheets with Data Cleaning",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead scraping with Apify, clean and export contacts to Google Sheets for fast outreach, prospecting, or CRM import. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Export to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Run Apify Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

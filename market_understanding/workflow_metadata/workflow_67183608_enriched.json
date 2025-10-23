@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/67183608",
+  "workflow_id": "67183608",
+  "workflow_id_display": "67183608",
+  "workflow_name": "Invoice Processor & Validator with OCR, AI & Google Sheets",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, PDF",
+  "tags": [
+    "google",
+    "pdf"
+  ],
+  "author_name": "Dhrumil Patel",
+  "author_profile_url": "https://n8n.io/creators/itechdp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate invoice processing from PDF to Google Sheets with AI and OCR. Eliminate manual checks, validate billing, and ensure error-free records. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Raw Text Again",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Unique Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Invoice Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Master Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Processing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Read/Write Files from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Validation",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f22ecf8",
+  "workflow_id": "6f22ecf8",
+  "workflow_id_display": "6f22ecf8",
+  "workflow_name": "Invoice data extraction with LlamaParse and OpenAI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Receiving Invoices",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to LlamaParse",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Parsed Invoice Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Map Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Append to Reconciliation Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Processing Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Apply Data Extraction Rules",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Label Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email with Label Names",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

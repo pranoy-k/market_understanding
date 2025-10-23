@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ccba93a",
+  "workflow_id": "8ccba93a",
+  "workflow_id_display": "8ccba93a",
+  "workflow_name": "Enhance Security Operations with the Qualys Slack Shortcut Bot! (1)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Slack, Webhook",
+  "tags": [
+    "Webhook",
+    "Slack🤖 Chatbot"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Team Communication Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Required Report Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Required Scan Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Qualys Create Report",
+      "type": "Process"
+    },
+    {
+      "name": "Qualys Start Vulnerability Scan",
+      "type": "Process"
+    },
+    {
+      "name": "Scan Report Task Modal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Vuln Scan Modal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Close Modal Popup",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Slack Webhook - Vulnerability",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Slack Webhook - Report",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

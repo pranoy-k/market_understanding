@@ -1,0 +1,859 @@
+{
+  "name": "Social Media Strategy Alignment Workflow",
+  "tags": [],
+  "nodes": [
+    {
+      "name": "Client Intake Form",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        250,
+        300
+      ],
+      "webhookId": "client-intake-form",
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "df7675b64be073e7"
+    },
+    {
+      "name": "Create SMART Goals",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "e5f3a5bf81004988"
+    },
+    {
+      "name": "Store Client Profile",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        650,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "3620e6081120125d"
+    },
+    {
+      "name": "Daily Data Collection",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        250,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "cf7008fb62fb1fe9"
+    },
+    {
+      "name": "Get All Clients",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        450,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "a8f41c5c4efdb1cf"
+    },
+    {
+      "name": "Split By Client",
+      "type": "n8n-nodes-base.splitInBatches",
+      "position": [
+        650,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "85c2bc2c2f6a8091"
+    },
+    {
+      "name": "Has Instagram?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        850,
+        400
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "8da36c5e69d7189d"
+    },
+    {
+      "name": "Instagram Data",
+      "type": "n8n-nodes-base.instagram",
+      "position": [
+        1050,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "d339fa9839fed9a0"
+    },
+    {
+      "name": "Has Facebook?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        850,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "ff2b5ac72f196bd6"
+    },
+    {
+      "name": "Facebook Data",
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "position": [
+        1050,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "928972873970a622"
+    },
+    {
+      "name": "Has LinkedIn?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        850,
+        600
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "91b47ab502225ab3"
+    },
+    {
+      "name": "LinkedIn Data",
+      "type": "n8n-nodes-base.linkedInCompanies",
+      "position": [
+        1050,
+        600
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "3a7e0f4dacd9e582"
+    },
+    {
+      "name": "Has Twitter/X?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        850,
+        700
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "5ced99a88d68fc6d"
+    },
+    {
+      "name": "Twitter/X Data",
+      "type": "n8n-nodes-base.twitter",
+      "position": [
+        1050,
+        700
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "dd7a3d38299ebaf1"
+    },
+    {
+      "name": "Process Performance Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1250,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "0ba9a949fe70adf8"
+    },
+    {
+      "name": "Store Performance Data",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        1450,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "99d3dc4d61c83bbc"
+    },
+    {
+      "name": "Check Alert Thresholds",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1650,
+        500
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "8d472c96629d9037"
+    },
+    {
+      "name": "Send Alert Email",
+      "type": "n8n-nodes-base.emailSend",
+      "position": [
+        1850,
+        400
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "e4f45d959905525d"
+    },
+    {
+      "name": "Check Milestone Achievements",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1650,
+        600
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "47ce19ef2b137cd9"
+    },
+    {
+      "name": "Send Milestone Email",
+      "type": "n8n-nodes-base.emailSend",
+      "position": [
+        1850,
+        600
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "c0b351d7fd68bb2c"
+    },
+    {
+      "name": "Monthly Report Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        250,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "be148f07412d3d00"
+    },
+    {
+      "name": "Get Clients for Reports",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        450,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "ac7f572e6738338e"
+    },
+    {
+      "name": "Split By Client for Reports",
+      "type": "n8n-nodes-base.splitInBatches",
+      "position": [
+        650,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "a2bfa6d16b693629"
+    },
+    {
+      "name": "Get Client Performance History",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        850,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "1c96e4fce81e7ca1"
+    },
+    {
+      "name": "Generate Monthly Report",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1050,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "23119ba9c1941dd1"
+    },
+    {
+      "name": "Create HTML Report",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1250,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "2915586a5bcb7026"
+    },
+    {
+      "name": "Send Monthly Report",
+      "type": "n8n-nodes-base.emailSend",
+      "position": [
+        1450,
+        800
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "61bf43e365ec25bd"
+    },
+    {
+      "name": "Quarterly Strategy Review",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        250,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "d3bc7d623208e682"
+    },
+    {
+      "name": "Get Clients for Strategy Review",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        450,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "cc18cabf0d9feeac"
+    },
+    {
+      "name": "Split By Client for Review",
+      "type": "n8n-nodes-base.splitInBatches",
+      "position": [
+        650,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "92bd6037b7acb1f1"
+    },
+    {
+      "name": "Get Quarterly Performance Data",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        850,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "9c99406e4b7107e4"
+    },
+    {
+      "name": "Generate Strategy Review",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1050,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "63f307c89c5e402b"
+    },
+    {
+      "name": "Create Strategy Review Document",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1250,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "939eabda12d61b88"
+    },
+    {
+      "name": "Send Strategy Review",
+      "type": "n8n-nodes-base.emailSend",
+      "position": [
+        1450,
+        1000
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "123ff2bdfb662e0d"
+    },
+    {
+      "name": "Content Calendar Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        250,
+        1200
+      ],
+      "webhookId": "content-calendar-webhook",
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "33a39dd04ebe343f"
+    },
+    {
+      "name": "Get Client for Content Calendar",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [
+        450,
+        1200
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "dd093433f4e5edae"
+    },
+    {
+      "name": "Generate Content Calendar",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        650,
+        1200
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "7fecb7245037518e"
+    },
+    {
+      "name": "Create Content Calendar HTML",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        850,
+        1200
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "d7f13256e3fa8ff1"
+    },
+    {
+      "name": "Return Content Calendar",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [
+        1050,
+        1200
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "d61beb5b8379b1d7"
+    }
+  ],
+  "pinData": {},
+  "settings": {},
+  "updatedAt": "2025-05-28T18:50:00.000Z",
+  "versionId": "1",
+  "staticData": null,
+  "connections": {
+    "Facebook Data": {
+      "main": [
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Has Facebook?": {
+      "main": [
+        [
+          {
+            "node": "Facebook Data",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Has LinkedIn?": {
+      "main": [
+        [
+          {
+            "node": "LinkedIn Data",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "LinkedIn Data": {
+      "main": [
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 5
+          }
+        ]
+      ]
+    },
+    "Has Instagram?": {
+      "main": [
+        [
+          {
+            "node": "Instagram Data",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Twitter/X?": {
+      "main": [
+        [
+          {
+            "node": "Twitter/X Data",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 6
+          }
+        ]
+      ]
+    },
+    "Instagram Data": {
+      "main": [
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Twitter/X Data": {
+      "main": [
+        [
+          {
+            "node": "Process Performance Data",
+            "type": "main",
+            "index": 7
+          }
+        ]
+      ]
+    },
+    "Get All Clients": {
+      "main": [
+        [
+          {
+            "node": "Split By Client",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split By Client": {
+      "main": [
+        [
+          {
+            "node": "Has Instagram?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Has Facebook?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Has LinkedIn?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Has Twitter/X?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Client Intake Form": {
+      "main": [
+        [
+          {
+            "node": "Create SMART Goals",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create HTML Report": {
+      "main": [
+        [
+          {
+            "node": "Send Monthly Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create SMART Goals": {
+      "main": [
+        [
+          {
+            "node": "Store Client Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily Data Collection": {
+      "main": [
+        [
+          {
+            "node": "Get All Clients",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Alert Thresholds": {
+      "main": [
+        [
+          {
+            "node": "Send Alert Email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Monthly Report Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get Clients for Reports",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Performance Data": {
+      "main": [
+        [
+          {
+            "node": "Check Alert Thresholds",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Check Milestone Achievements",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Monthly Report": {
+      "main": [
+        [
+          {
+            "node": "Create HTML Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Clients for Reports": {
+      "main": [
+        [
+          {
+            "node": "Split By Client for Reports",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Content Calendar Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get Client for Content Calendar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Strategy Review": {
+      "main": [
+        [
+          {
+            "node": "Create Strategy Review Document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Performance Data": {
+      "main": [
+        [
+          {
+            "node": "Store Performance Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Content Calendar": {
+      "main": [
+        [
+          {
+            "node": "Create Content Calendar HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Quarterly Strategy Review": {
+      "main": [
+        [
+          {
+            "node": "Get Clients for Strategy Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split By Client for Review": {
+      "main": [
+        [
+          {
+            "node": "Get Quarterly Performance Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split By Client for Reports": {
+      "main": [
+        [
+          {
+            "node": "Get Client Performance History",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Milestone Achievements": {
+      "main": [
+        [
+          {
+            "node": "Send Milestone Email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Create Content Calendar HTML": {
+      "main": [
+        [
+          {
+            "node": "Return Content Calendar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Client Performance History": {
+      "main": [
+        [
+          {
+            "node": "Generate Monthly Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Quarterly Performance Data": {
+      "main": [
+        [
+          {
+            "node": "Generate Strategy Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Strategy Review Document": {
+      "main": [
+        [
+          {
+            "node": "Send Strategy Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Client for Content Calendar": {
+      "main": [
+        [
+          {
+            "node": "Generate Content Calendar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Clients for Strategy Review": {
+      "main": [
+        [
+          {
+            "node": "Split By Client for Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "triggerCount": 5,
+  "id": "51f97ba224674bb7"
+}

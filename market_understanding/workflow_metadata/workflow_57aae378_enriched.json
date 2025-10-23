@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/57aae378",
+  "workflow_id": "57aae378",
+  "workflow_id_display": "57aae378",
+  "workflow_name": "Generate AI Prompts with Google Gemini and store them in Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [
+    "google",
+    "gemini🤖 openai"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/imperolq/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with outputParserStructured, set, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set prompt fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "add to airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Categorize and name Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Generate a new prompt",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

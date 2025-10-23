@@ -1,0 +1,163 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33d6d392",
+  "workflow_id": "33d6d392",
+  "workflow_id_display": "33d6d392",
+  "workflow_name": "Clone Viral TikToks with AI Avatars & Auto-Post to 9 Platforms using Perplexity & Blotato",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Clone viral TikToks with AI, auto-rebrand them with your avatar, and publish to 9 platforms in one workflow. Boost reach and save hours—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, openAi, set"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger: Get TikTok URL via Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Social Media IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze Thumbnail (GPT-4o Vision)",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Overlay Text (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Audio to Script (GPT)",
+      "type": "Process"
+    },
+    {
+      "name": "Rewrite Script, Caption, Overlay (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Save Original Video to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Rewritten Video to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Final Video URL in Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "INSTAGRAM",
+      "type": "Data Input"
+    },
+    {
+      "name": "YOUTUBE",
+      "type": "Data Input"
+    },
+    {
+      "name": "TIKTOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "FACEBOOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "THREADS",
+      "type": "Data Input"
+    },
+    {
+      "name": "TWETTER",
+      "type": "Data Input"
+    },
+    {
+      "name": "LINKEDIN",
+      "type": "Data Input"
+    },
+    {
+      "name": "BLUESKY",
+      "type": "Data Input"
+    },
+    {
+      "name": "PINTEREST",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download TikTok Video (RapidAPI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Video Thumbnail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Thumbnail to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download TikTok Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Unique Template ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Suggest Similar Idea (Perplexity)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Perplexity Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Rewritten Content into Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate New Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Available Avatars",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Video with Avatar",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Avatar Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Overlay Text with JSON2Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Final Video from JSON2Video",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Download TikTok Video (RapidAPI)",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

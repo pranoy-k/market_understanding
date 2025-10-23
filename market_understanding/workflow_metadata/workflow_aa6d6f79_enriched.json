@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa6d6f79",
+  "workflow_id": "aa6d6f79",
+  "workflow_id_display": "aa6d6f79",
+  "workflow_name": "Send Google Drive files to Notion database",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Google Drive, Notion",
+  "tags": [
+    "google🗄"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically sync new Google Drive files to your Notion database for seamless file management, collaboration, and archiving—no manual effort required.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDriveTrigger, notion"
+  ],
+  "nodes": [
+    {
+      "name": "On file upload",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

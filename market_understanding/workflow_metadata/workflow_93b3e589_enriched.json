@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/93b3e589",
+  "workflow_id": "93b3e589",
+  "workflow_id_display": "93b3e589",
+  "workflow_name": "Copy Folder Structure Without Files in Google Drive",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Builds.Cool",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Clone Google Drive folder structures without duplicating files. Streamline organization or reuse templates easily with this n8n workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "EDIT_THIS_NODE",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Destination Names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get_Folders_SOURCE",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Check if folder exists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get_Folders_DESTINATION",
+      "type": "Process"
+    },
+    {
+      "name": "Merge_Folder_Context",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

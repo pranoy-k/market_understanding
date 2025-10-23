@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9794f702",
+  "workflow_id": "9794f702",
+  "workflow_id_display": "9794f702",
+  "workflow_name": "Send Email if server has upgradable packages",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Hostinger",
+  "author_profile_url": "https://n8n.io/creators/hostinger/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate daily Ubuntu server package checks with instant email alerts. Save time, enhance security, and stay updated on critical software patches. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, ssh"
+  ],
+  "nodes": [
+    {
+      "name": "Run workflow every day",
+      "type": "Trigger"
+    },
+    {
+      "name": "List upgradable packages",
+      "type": "Process"
+    },
+    {
+      "name": "Format as HTML list",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

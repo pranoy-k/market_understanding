@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b205207e",
+  "workflow_id": "b205207e",
+  "workflow_id_display": "b205207e",
+  "workflow_name": "Auto-Respond to Gmail Inquiries using OpenAI, Google Sheet & AI Agent",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Watch Gmail for New Incoming Emails",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets Context Retrieval Tool",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Inquiries + Response to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Reply Generator AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

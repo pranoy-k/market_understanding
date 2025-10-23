@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/85f342be",
+  "workflow_id": "85f342be",
+  "workflow_id_display": "85f342be",
+  "workflow_name": "Convert RSS News to AI Avatar Videos with Heygen & GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets, OpenAI, RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate news-to-video content creation: Convert RSS news into AI avatar videos with scripts, logs, and easy Google Sheets integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup Heygen",
+      "type": "Data Processing"
+    },
+    {
+      "name": "parse caption",
+      "type": "Data Processing"
+    },
+    {
+      "name": "write script",
+      "type": "Process"
+    },
+    {
+      "name": "log news to sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log video url and title to sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Avatar Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Avatar Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

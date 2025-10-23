@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9a9f9519",
+  "workflow_id": "9a9f9519",
+  "workflow_id_display": "9a9f9519",
+  "workflow_name": "Hacker News Throwback Machine - See What Was Hot on This Day, Every Year!",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "ibrhdotme",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "CleanUpYearList",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetHeadlines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetDate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "CreateYearsList",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SplitOutYearList",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetFrontPage",
+      "type": "Data Input"
+    },
+    {
+      "name": "ExtractDetails",
+      "type": "Process"
+    },
+    {
+      "name": "MergeHeadlinesDate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SingleJson",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f9c85759",
+  "workflow_id": "f9c85759",
+  "workflow_id_display": "f9c85759",
+  "workflow_name": "Download TikTok Videos without Watermarks and Upload to Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Cameron Wills",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly download original TikTok videos without watermarks for analysis or repurposing. Secure, automated, and customizable—learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get TikTok Video Page Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scrape raw video URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output video file without watermark",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Set file permissions to public with link",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

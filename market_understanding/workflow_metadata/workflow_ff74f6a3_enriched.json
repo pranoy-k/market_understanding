@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ff74f6a3",
+  "workflow_id": "ff74f6a3",
+  "workflow_id_display": "ff74f6a3",
+  "workflow_name": "Find relevant X tweets based on your profile and suggest responses",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "@OnePromptMagic",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock personalized Twitter growth: Analyze tweets, discover trends, and get custom content in a sleek HTML dashboard. Start optimizing your profile now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "o3-mini",
+      "type": "Process"
+    },
+    {
+      "name": "4.1-mini",
+      "type": "Process"
+    },
+    {
+      "name": "o3-mini1",
+      "type": "Process"
+    },
+    {
+      "name": "Get User Tweets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Map Tweets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tweet Writer",
+      "type": "Process"
+    },
+    {
+      "name": "User Profile Analyser",
+      "type": "Process"
+    },
+    {
+      "name": "Keyword Analyser",
+      "type": "Process"
+    },
+    {
+      "name": "Get relevant tweets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Click to show Result",
+      "type": "Process"
+    },
+    {
+      "name": "Replace em dash",
+      "type": "Data Processing"
+    },
+    {
+      "name": "combine keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "profile schema",
+      "type": "Process"
+    },
+    {
+      "name": "keywords schema",
+      "type": "Process"
+    },
+    {
+      "name": "tweet schema",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Result",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

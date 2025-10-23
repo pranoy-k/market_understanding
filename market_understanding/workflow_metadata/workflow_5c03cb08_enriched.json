@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5c03cb08",
+  "workflow_id": "5c03cb08",
+  "workflow_id_display": "5c03cb08",
+  "workflow_name": "Monitor Authentication IPs from SaaS Alerts & Email Reports via SMTP2Go",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Benjamin Jones (SaaS Alerts)",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate SaaS authentication monitoring—collect sign-in IPs, detect suspicious logins, and get real-time email alerts with n8n and SMTP2Go. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, removeDuplicates"
+  ],
+  "nodes": [
+    {
+      "name": "Authentication Request Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter IP Information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Date and Form Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET Events - Login Successful",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Email Upon Completion (SMTP2Go)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Duplicate IPs",
+      "type": "Process"
+    },
+    {
+      "name": "Convert CSV to Base64",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Combine all Authentication Events",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET Events - OAuth Authentication",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Events - Office365 Shell WCSS",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

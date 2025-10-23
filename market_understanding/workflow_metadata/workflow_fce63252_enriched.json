@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fce63252",
+  "workflow_id": "fce63252",
+  "workflow_id_display": "fce63252",
+  "workflow_name": "Use AI to organize your Todoist Inbox",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Mutasem",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Your Projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Categorize",
+      "type": "Process"
+    },
+    {
+      "name": "Update priority in todoist",
+      "type": "Process"
+    },
+    {
+      "name": "Get inbox tasks",
+      "type": "Process"
+    },
+    {
+      "name": "If task is not a subtask",
+      "type": "Data Processing"
+    },
+    {
+      "name": "If other or ai hallucinates",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

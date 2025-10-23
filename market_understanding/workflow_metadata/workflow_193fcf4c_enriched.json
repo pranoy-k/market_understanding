@@ -1,0 +1,168 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/193fcf4c",
+  "workflow_id": "193fcf4c",
+  "workflow_id_display": "193fcf4c",
+  "workflow_name": "Startup Funding Research Automation with Claude, Perplexity AI, and Airtable",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "35",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Julian Kaiser",
+  "author_profile_url": "https://n8n.io/creators/jksr/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track newly funded startups with AI-powered research and Airtable automation. Get key funding data and in-depth company insights. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "TC HTML Parser",
+      "type": "Process"
+    },
+    {
+      "name": "VB HTML Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Collect Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pick data (Perplexity)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pick data (jina)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse TC XML",
+      "type": "Process"
+    },
+    {
+      "name": "Parse VB XML",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Results to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity",
+      "type": "Process"
+    },
+    {
+      "name": "Filter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Structured Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Research URL",
+      "type": "Process"
+    },
+    {
+      "name": "Extract URL",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Extracted Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split TC Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split VB Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Venturebeat (VB)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Techcrunch (TC)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Claude 3.5 Sonnet",
+      "type": "Process"
+    },
+    {
+      "name": "Claude 3.5 Haiku",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Structured JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Deep Research",
+      "type": "Data Input"
+    },
+    {
+      "name": "JINA Deep Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Structured Data",
+      "type": "Process"
+    },
+    {
+      "name": "Route to Deep Research",
+      "type": "Process"
+    },
+    {
+      "name": "Claude 3.5 Sonnet",
+      "type": "Process"
+    },
+    {
+      "name": "Get Funding Article HTML for scraping (TC)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Funding Article HTML for scraping (VB)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

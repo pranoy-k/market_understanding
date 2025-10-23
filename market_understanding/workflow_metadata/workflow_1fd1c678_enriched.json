@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1fd1c678",
+  "workflow_id": "1fd1c678",
+  "workflow_id_display": "1fd1c678",
+  "workflow_name": "Build an MCP Server with Google Calendar",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "GuanNan",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly integrate MCP with Google Calendar in n8n. Automate AI Agent updates, sync changes instantly, and streamline workflows with step-by-step setup.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, googleCalendarTool, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Google Calendar MCP",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "gpt-4o",
+      "type": "Process"
+    },
+    {
+      "name": "SearchEvent",
+      "type": "Process"
+    },
+    {
+      "name": "CreateEvent",
+      "type": "Process"
+    },
+    {
+      "name": "UpdateEvent",
+      "type": "Process"
+    },
+    {
+      "name": "DeleteEvent",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Calendar MCP",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

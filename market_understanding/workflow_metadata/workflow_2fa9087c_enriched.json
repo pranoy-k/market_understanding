@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2fa9087c",
+  "workflow_id": "2fa9087c",
+  "workflow_id_display": "2fa9087c",
+  "workflow_name": "AI Agent to chat with you Search Console Data, using OpenAI and Postgres",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, OpenAI, PostgreSQL, Webhook",
+  "tags": [
+    "Webhook🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow processes incoming webhook data in real-time, validates and transforms the information, then stores it in your database for further processing. It provides a reliable way to capture and persist data from external systems while maintaining data quality and consistency.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Tool calling",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - Consruct API CALL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - Create searchConsoleDataArray",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - Create searchConsoleDataArray 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook - ChatInput",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Call Search Console Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Search Console - Get Custom Insights",
+      "type": "Data Input"
+    },
+    {
+      "name": "## Search Console - Get List of Properties",
+      "type": "Data Input"
+    },
+    {
+      "name": "Array aggregation - response to AI Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Array aggregation - response to AI Agent1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Set fields - Consruct API CALL",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

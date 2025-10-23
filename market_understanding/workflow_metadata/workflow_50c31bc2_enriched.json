@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/50c31bc2",
+  "workflow_id": "50c31bc2",
+  "workflow_id_display": "50c31bc2",
+  "workflow_name": "Process Legal Documents with Ollama AI & Generate HTML Reports (100% Local)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "Rish",
+  "author_profile_url": "https://n8n.io/creators/b2brish/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock secure, automated AI document processing locally with Ollama models. Process files, generate reports, and keep data private. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, localFileTrigger, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Local File Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read/Write Files from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read/Write Files from Disk1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

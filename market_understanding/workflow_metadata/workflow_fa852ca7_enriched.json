@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fa852ca7",
+  "workflow_id": "fa852ca7",
+  "workflow_id_display": "fa852ca7",
+  "workflow_name": "Automate SAP Business Partner Analysis with OpenAI GPT-4o & Gmail Reporting",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [],
+  "author_name": "Ghufran Ridhawi",
+  "author_profile_url": "https://n8n.io/creators/ghufran-ridhawi/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Email Body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Summary",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

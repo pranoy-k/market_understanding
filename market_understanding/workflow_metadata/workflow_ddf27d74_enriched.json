@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ddf27d74",
+  "workflow_id": "ddf27d74",
+  "workflow_id_display": "ddf27d74",
+  "workflow_name": "Multiple Websites Monitoring with Notifications including Phone Calls",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, Slack, Telegram",
+  "tags": [
+    "slack",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "InfyOm Technologies",
+  "author_profile_url": "https://n8n.io/creators/infyom/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Monitor websites every 5 minutes, log downtime, and get instant alerts via Email, Slack, Telegram, and Voice Call. Easy, no-code setup. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Website URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Active Down Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Uptime and Total Downtime",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Downtime Record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Existing Down Records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check website status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Find Existing Record",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notify over Phone Call",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

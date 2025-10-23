@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/75895982",
+  "workflow_id": "75895982",
+  "workflow_id_display": "75895982",
+  "workflow_name": "Weekly N8N executions failures report to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Manu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate weekly workflow monitoring: fetch failures, get aggregated reports, and receive instant summaries in Telegram. Easy setup—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, aggregate, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set a message for each failed execution",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter for executions of the week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all previous executions",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate all messages",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

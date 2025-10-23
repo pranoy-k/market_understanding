@@ -1,0 +1,104 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2afd627e",
+  "workflow_id": "2afd627e",
+  "workflow_id_display": "2afd627e",
+  "workflow_name": "Analyze Crypto Market with CoinGecko: Volatility Metrics & Investment Signals",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Google Analytics",
+  "tags": [],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly get hourly crypto market data, advanced analytics, and actionable signals with risk ratings—no coding needed. Perfect for analysts and DeFi pros.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Calculate Market Metrics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Uptrend Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Downtrend Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Volatility Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Stable Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set High Risk Rating",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Medium Risk Rating",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Low Risk Rating",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Default Risk Rating",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Final Analysis",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Portfolio Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Crypto Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Results",
+      "type": "Process"
+    },
+    {
+      "name": "Final Merge",
+      "type": "Process"
+    },
+    {
+      "name": "Collect All Analyses",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

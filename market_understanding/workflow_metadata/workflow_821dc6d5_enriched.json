@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/821dc6d5",
+  "workflow_id": "821dc6d5",
+  "workflow_id_display": "821dc6d5",
+  "workflow_name": "Check dependencies before completing Awork tasks (Workaround)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Gregor",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly prevent tasks from being marked as done in Awork with automatic checks for open subtasks or dependencies. Easy setup and custom alerts!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch task changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load dependencies for task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate task dependencies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out task changes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter task status change",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook call by Awork",
+      "type": "Trigger"
+    },
+    {
+      "name": "Load all linked tasks",
+      "type": "Data Input"
+    },
+    {
+      "name": "Build filter params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter only open tasks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate open task IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add comment to tasks",
+      "type": "Data Input"
+    },
+    {
+      "name": "Roll back task status from done to previous state",
+      "type": "Data Input"
+    },
+    {
+      "name": "Load all open sub tasks",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate task IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add comment to tasks1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Roll back task status from done to previous state1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

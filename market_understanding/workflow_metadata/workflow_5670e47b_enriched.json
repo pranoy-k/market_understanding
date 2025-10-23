@@ -1,0 +1,175 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5670e47b",
+  "workflow_id": "5670e47b",
+  "workflow_id_display": "5670e47b",
+  "workflow_name": "Automate Agile Refinement Prep with Gmail, OpenAI & Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "42",
+  "tools_integrations": "Email, Gmail, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Willemijn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Start Here: Set Environment Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Business Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Technical Analyst",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Scrum Master Emailer",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Scrum Master Story Feedback",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Scrum Master DoR Check",
+      "type": "Process"
+    },
+    {
+      "name": "Read DoR criteria",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Business Validation in Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Technical Validation in Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Scrum feedback in Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Select Stories Ready for Refinement from Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Select Stories High Prio To Do from Backlog",
+      "type": "Data Output"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Load Calendar of Scrum Master",
+      "type": "Process"
+    },
+    {
+      "name": "Check for Refinement Project A",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items for DoR check",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare User Story to DoR Criterium",
+      "type": "Process"
+    },
+    {
+      "name": "Draft Email for Refinement",
+      "type": "Process"
+    },
+    {
+      "name": "Business Validation",
+      "type": "Process"
+    },
+    {
+      "name": "If no event do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Take backlog link for further referral",
+      "type": "Process"
+    },
+    {
+      "name": "Development Team Validation",
+      "type": "Process"
+    },
+    {
+      "name": "Join Potential Stories for Refinement",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Scrum Feedback to Story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Business feedback to Story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items Business Feedback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Technical feedback to the story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate DoR check to User Story Level",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add DoR feedback to User Story",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Provide Scrum Master Feedback on the story",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items Technical Feedback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine stories into one list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take DoR link for further referral",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

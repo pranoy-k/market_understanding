@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c9b76187",
+  "workflow_id": "c9b76187",
+  "workflow_id_display": "c9b76187",
+  "workflow_name": "Extract and process information directly from PDF using Claude and Gemini",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Google Drive, PDF",
+  "tags": [],
+  "author_name": "Agent Studio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Document Processing Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Call Gemini 2.0 Flash with PDF Capabilities",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call Claude 3.5 Sonnet with PDF Capabilities",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

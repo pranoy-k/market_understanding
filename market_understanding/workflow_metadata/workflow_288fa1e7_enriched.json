@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/288fa1e7",
+  "workflow_id": "288fa1e7",
+  "workflow_id_display": "288fa1e7",
+  "workflow_name": "Gmail to Telegram: Email Summaries with OpenAI GPT-4o",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "LucÃ­a Maio Brioso",
+  "author_profile_url": "https://n8n.io/creators/luciamb/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When a new email arrives",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare fields for agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set summary language",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Summary generation agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

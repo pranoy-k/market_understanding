@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3c3b1148",
+  "workflow_id": "3c3b1148",
+  "workflow_id_display": "3c3b1148",
+  "workflow_name": "Allow Users to Send a Sequence of Messages to an AI Agent in Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Telegram, WhatsApp",
+  "tags": [
+    "telegram",
+    "whatsapp"
+  ],
+  "author_name": "Chris Carr",
+  "author_profile_url": "https://n8n.io/creators/chriscarr/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly batch rapid-fire messages on Telegram & WhatsApp into one reply. Streamline chatbot conversations for clarity and efficiency. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Queued Messages",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Queued Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Sort by Message ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Queued Messages",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/84a0a4a0",
+  "workflow_id": "84a0a4a0",
+  "workflow_id_display": "84a0a4a0",
+  "workflow_name": "Chat Assistant (OpenAI assistant) with Postgres Memory And API Calling Capabalities",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, OpenAI, PostgreSQL",
+  "tags": [],
+  "author_name": "Fernanda Silva",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres Chat Memory1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Products in Daatabase",
+      "type": "Data Output"
+    },
+    {
+      "name": "Knowledge Base",
+      "type": "Data Input"
+    },
+    {
+      "name": "External API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "External API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3a05910a",
+  "workflow_id": "3a05910a",
+  "workflow_id_display": "3a05910a",
+  "workflow_name": "Store Retell transcripts in Sheets, Airtable or Notion from webhook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Airtable, Google Analytics, Google Sheets, Notion, Webhook",
+  "tags": [
+    "google",
+    "webhook"
+  ],
+  "author_name": "Agent Studio",
+  "author_profile_url": "https://n8n.io/creators/agentstudio/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically store Retell AI transcript and analytics in Google Sheets, Airtable, or Notion. Organize call history and insights—easy setup for voice agent builders!",
+  "key_benefits": [
+    "API integration",
+    "Integration with airtable, set, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Set fields to export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Excel",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter - only call ended",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

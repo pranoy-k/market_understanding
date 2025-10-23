@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ece30c00",
+  "workflow_id": "ece30c00",
+  "workflow_id_display": "ece30c00",
+  "workflow_name": "Send Cryptocurrency Price Threshold Alerts from CoinGecko to Discord",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/lukaszb/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Stay ahead of crypto price swings! Get instant Discord alerts when your chosen coin hits set thresholds. Fast setup, real-time data, fully automated.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Low and High",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CoinGecko",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

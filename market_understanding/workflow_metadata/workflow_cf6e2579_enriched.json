@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf6e2579",
+  "workflow_id": "cf6e2579",
+  "workflow_id_display": "cf6e2579",
+  "workflow_name": "Reconcile Rent Payments with Local Excel Spreadsheet and OpenAI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "CSV, Excel, Google Sheets, OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically reconcile rent payments from Excel spreadsheets using OpenAI for intelligent matching and error detection.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Watch For Bank Statements",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Tenant Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Bank Statement File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get CSV Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Alert Actions To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Property Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append To Spreadsheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reconcile Rental Payments",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

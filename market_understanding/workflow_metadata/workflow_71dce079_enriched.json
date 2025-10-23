@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/71dce079",
+  "workflow_id": "71dce079",
+  "workflow_id_display": "71dce079",
+  "workflow_name": "Compare Different LLM Responses Side-by-Side with Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly compare two language models side by side in a chat interface, with all results logged in Google Sheets for easy review and evaluation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with memoryManager, aggregate, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set model, sessionId, chatInput, sessionIdBase",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Data for Chat and Google Sheets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Models to Compare",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Output for Chat UI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Model Results to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory Manager",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate Chat Answers",
+      "type": "Process"
+    },
+    {
+      "name": "Group Model Outputs for Evaluation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Models into Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,133 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ccdc4736",
+  "workflow_id": "ccdc4736",
+  "workflow_id_display": "ccdc4736",
+  "workflow_name": "Automate LinkedIn Content from Twitter AI Posts with GPT-4 and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI, Twitter",
+  "tags": [
+    "linkedin",
+    "twitter",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Archit Jain",
+  "author_profile_url": "https://n8n.io/creators/architjn/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate your LinkedIn posts with trending AI tweets. Easy 30–45 min setup, detailed instructions, and seamless integration. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, limit"
+  ],
+  "nodes": [
+    {
+      "name": "6AM Daily",
+      "type": "Trigger"
+    },
+    {
+      "name": "5AM Everyday",
+      "type": "Trigger"
+    },
+    {
+      "name": "Updated News",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Find Existing Tweet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save New Tweet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set Posting",
+      "type": "Data Output"
+    },
+    {
+      "name": "Set Posted",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get AI Tweets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Tweets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Tweets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Already Exists, Ignore",
+      "type": "Process"
+    },
+    {
+      "name": "All Done, End",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Approved",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Max 20",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Post Timings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Approved Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

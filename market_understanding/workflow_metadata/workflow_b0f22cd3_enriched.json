@@ -1,0 +1,191 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0f22cd3",
+  "workflow_id": "b0f22cd3",
+  "workflow_id_display": "b0f22cd3",
+  "workflow_name": "New TheHive Case Slack Notification Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/n8nricardoe105/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline SOC case management by managing TheHive cases directly in Slack. Boost efficiency, minimize errors, and improve response times. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "TheHive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatting Dictionaries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For Slack",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Case Slack Block Rebuild",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Close Case Block Rebuild",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Severity Case Block Rebuild1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PAP Case Block Rebuild",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For PAP Slack",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Actions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Final Block",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For TLP Slack",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For Status Slack",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Status Case Block Rebuild",
+      "type": "Data Processing"
+    },
+    {
+      "name": "TLP Case Block Rebuild",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For Slack - Close",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For Slack - Assign",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Fields For Slack - Severity",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Task Modal",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Message with new Assignee",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Status in TheHive",
+      "type": "Process"
+    },
+    {
+      "name": "Close Case as False Positive",
+      "type": "Process"
+    },
+    {
+      "name": "No Action Needed",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case Severity",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case PAP",
+      "type": "Process"
+    },
+    {
+      "name": "Update Case TLP",
+      "type": "Process"
+    },
+    {
+      "name": "Acknowledge Close Case to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge Severity Update to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge PAP Update to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge TLP Update to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge Status Update to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge Modal Request to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond positive to Slack when someone clicks a link",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond 204 to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Close Modal with 204 response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update TheHive Case with new Assignee",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Slack with 200 response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add a task to TheHive",
+      "type": "Process"
+    },
+    {
+      "name": "Receive Button Press",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

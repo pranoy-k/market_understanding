@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82e9aa65",
+  "workflow_id": "82e9aa65",
+  "workflow_id_display": "82e9aa65",
+  "workflow_name": "Create Threads on Bluesky",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Gareth B. Davies",
+  "author_profile_url": "https://n8n.io/creators/garethbdavies/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Schedule and publish structured Bluesky threads with precise control over post timing and visibility. Ensure clean formatting and professional presentation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Run Daily at 9 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Bluesky Credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Bluesky Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Reply",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Reply Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sibling Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sibling",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Initial Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Post Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sibling Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sibling Text (Loop)",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

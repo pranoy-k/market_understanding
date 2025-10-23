@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37d142b4",
+  "workflow_id": "37d142b4",
+  "workflow_id_display": "37d142b4",
+  "workflow_name": "Share jokes on Twitter automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "API, RSS, Twitter",
+  "tags": [
+    "twitter",
+    "api"
+  ],
+  "author_name": "Deloge",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically share hilarious jokes and image-based humor on Twitter using DadJokes or BlaBlagues API. Keep your feed fresh and entertaining—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with twitter, httpRequest, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Request blablagues",
+      "type": "Data Input"
+    },
+    {
+      "name": "Recup image",
+      "type": "Data Input"
+    },
+    {
+      "name": "At 17H image jokes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tweet image jokes",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

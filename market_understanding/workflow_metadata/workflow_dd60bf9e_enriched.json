@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dd60bf9e",
+  "workflow_id": "dd60bf9e",
+  "workflow_id_display": "dd60bf9e",
+  "workflow_name": "Auto-Post Dev.to Articles to LinkedIn with Airtable Tracking & Telegram Alerts",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Airtable, LinkedIn, Telegram",
+  "tags": [
+    "linkedin",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Krishna Kumar Eswaran",
+  "author_profile_url": "https://n8n.io/creators/mrprogrammer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn posts with the latest Dev.to articles, avoid duplicates via Airtable, and get Telegram alerts. Boost your presence—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, linkedIn"
+  ],
+  "nodes": [
+    {
+      "name": "Morning 9 Clock",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get List of records used",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the used node",
+      "type": "Data Output"
+    },
+    {
+      "name": "map used articls ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "fetch articles from Url",
+      "type": "Data Input"
+    },
+    {
+      "name": "filter only unused Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get random articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get random tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "download image for post",
+      "type": "Data Input"
+    },
+    {
+      "name": "make Linkedin post",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

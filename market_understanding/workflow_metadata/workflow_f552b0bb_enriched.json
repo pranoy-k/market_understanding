@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f552b0bb",
+  "workflow_id": "f552b0bb",
+  "workflow_id_display": "f552b0bb",
+  "workflow_name": "Traveler Co-Pilot: AI-Powered Telegram for Easy Language and Image Translation",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Derek Cheung",
+  "author_profile_url": "https://n8n.io/creators/derekcheungsa/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly break language barriers with Traveler Co-Pilot—enjoy real-time speech and visual translation in 55 languages. Discover easy global travel!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, lmChatOpenAi, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Text to Speech",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-detect and translate",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Translate image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

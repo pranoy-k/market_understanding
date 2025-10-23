@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c1c3787a",
+  "workflow_id": "c1c3787a",
+  "workflow_id_display": "c1c3787a",
+  "workflow_name": "When specific event created in Google Calendar, duplicate & rename Google File",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Candice Capelle",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate meeting notes with this workflow: duplicate & rename templates for each calendar event. Perfect for HR, sales, recruiters & more. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendarTrigger, googleDrive, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "New event in Google Calendar",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter specific event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search folder",
+      "type": "Process"
+    },
+    {
+      "name": "Search file to duplicate",
+      "type": "Process"
+    },
+    {
+      "name": "Create and rename Google File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

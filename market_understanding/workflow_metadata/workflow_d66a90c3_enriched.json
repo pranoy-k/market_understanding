@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d66a90c3",
+  "workflow_id": "d66a90c3",
+  "workflow_id_display": "d66a90c3",
+  "workflow_name": "AI Agent Integration for Bubble Apps with MCP Protocol Data Access",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "chatgpt"
+  ],
+  "author_name": "Mohamed Salama",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with bubbleTool, mcpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Project details",
+      "type": "Process"
+    },
+    {
+      "name": "Get user info",
+      "type": "Process"
+    },
+    {
+      "name": "Get Plugin details",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

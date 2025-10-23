@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab6cf854",
+  "workflow_id": "ab6cf854",
+  "workflow_id_display": "ab6cf854",
+  "workflow_name": "Basic RAG chat",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "JustinLee",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline Retrieval-Augmented Generation in n8n: embed files, store vectors, and chat with context using Cohere API & Groq LLM. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, vectorStoreInMemory, lmChatGroq"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Test Workflow' button",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking 'Chat' button below",
+      "type": "Trigger"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Read/Write Files from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "In-Memory Vector Store1",
+      "type": "Process"
+    },
+    {
+      "name": "In-Memory Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Cohere",
+      "type": "Process"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Cohere1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

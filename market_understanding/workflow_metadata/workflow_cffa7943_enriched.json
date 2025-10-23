@@ -1,0 +1,201 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cffa7943",
+  "workflow_id": "cffa7943",
+  "workflow_id_display": "cffa7943",
+  "workflow_name": "AI-Powered Meta Ads Analysis & Creation with Gemini, GPT-4.1 Mini & Ads Manager",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "49",
+  "tools_integrations": "Facebook, OpenAI",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Daniel Setzermann",
+  "author_profile_url": "https://n8n.io/creators/danielsetzermann/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Meta ads with AI: analyze assets, generate conversion-focused ad copy, and launch campaigns seamlessly. Boost ROI—discover our workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Folder Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract File Specs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Create Asset",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Ads to Process",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Settings",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Video Analysis Output",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Image Analysis Output",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Video Ad Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Image Ad Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Ad Video",
+      "type": "Process"
+    },
+    {
+      "name": "Get Video Preview Image",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Video with Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gemini - Generate Upload URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gemini - Upload File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "AI Description is Empty",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check State",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get File Metadata",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Facebook Graph API",
+      "type": "Process"
+    },
+    {
+      "name": "Get image 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch All Files",
+      "type": "Process"
+    },
+    {
+      "name": "Get Files Metadata",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Unprocessed Ads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Video Ad Creative",
+      "type": "Process"
+    },
+    {
+      "name": "Create Video Ad",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Ad Image",
+      "type": "Process"
+    },
+    {
+      "name": "Create Multiple Image Creative",
+      "type": "Process"
+    },
+    {
+      "name": "Create Image Creative",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Second Ad Image",
+      "type": "Process"
+    },
+    {
+      "name": "Create Image Ad",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

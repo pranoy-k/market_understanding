@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ecee60f7",
+  "workflow_id": "ecee60f7",
+  "workflow_id_display": "ecee60f7",
+  "workflow_name": "Google Maps Phone Scraper via Bright Data API with Google Sheets Sync",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Incrementors",
+  "author_profile_url": "https://n8n.io/creators/incrementors/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly scrape business phone numbers from Google Maps using Bright Data API and sync results to Google Sheets. Automate lead collection—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, wait, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Form Trigger - Submit Location and Keywords",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Bright Data API - Request Business Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Scraping Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Business Data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Bright Data API - Request Business Data"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

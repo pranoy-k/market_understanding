@@ -1,0 +1,154 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33c88d8c",
+  "workflow_id": "33c88d8c",
+  "workflow_id_display": "33c88d8c",
+  "workflow_name": "KV - Cloudflare Key-Value Database Full API Integration Workflow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "API",
+  "tags": [
+    "api🗄"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage Cloudflare KV storage with this n8n workflow. Create, edit, or bulk manage KV pairs through simple, secure, API-driven automation. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "KV to Rename",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Account Path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (2)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (1)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (3)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (4)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (5)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (6)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (7)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set KV-NM Name (8)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete KV",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete KV1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete KVs inside NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create KV-NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write KVs inside NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "-Get Keys inside NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete KV inside NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read Value Of KV In NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (1)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (2)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (3)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write V & MD of KV In NM",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (4)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (5)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (6)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (7)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (8)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (9)",
+      "type": "Data Input"
+    },
+    {
+      "name": "List KV-NMs (10)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read MD from Key",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

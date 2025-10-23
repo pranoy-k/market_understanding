@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/244bb9cc",
+  "workflow_id": "244bb9cc",
+  "workflow_id_display": "244bb9cc",
+  "workflow_name": "Notify about Google Sheet changes in Slack and email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "etienne",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get real-time Slack and email alerts for any Google Sheet changes. Keep your team updated and responsive. Learn how to automate your notifications!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, typeformTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

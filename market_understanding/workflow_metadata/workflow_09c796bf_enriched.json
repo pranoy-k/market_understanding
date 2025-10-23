@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/09c796bf",
+  "workflow_id": "09c796bf",
+  "workflow_id_display": "09c796bf",
+  "workflow_name": "Score Company ICP (Ideal Customer Profile) with Airtop",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Airtop",
+  "author_profile_url": "https://n8n.io/creators/cesar-at-airtop/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate B2B lead qualification—score companies via LinkedIn using your custom ICP criteria. Get detailed scores and integrate with your CRM. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtop, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Unify params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse to JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flat json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate ICP",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

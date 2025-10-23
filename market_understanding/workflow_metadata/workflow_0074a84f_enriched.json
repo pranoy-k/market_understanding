@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0074a84f",
+  "workflow_id": "0074a84f",
+  "workflow_id_display": "0074a84f",
+  "workflow_name": "Auto-assign deals in Hubspot to fitting sales reps based on geo and company size",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "HubSpot",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Hubspot deal assignments by region and company size. Boost efficiency, reduce manual work, and ensure deals reach the right sales rep daily.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Deals",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get contact for deals",
+      "type": "Data Input"
+    },
+    {
+      "name": "Unassigned Deals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out deals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign deal to John",
+      "type": "Process"
+    },
+    {
+      "name": "Assign to Max",
+      "type": "Process"
+    },
+    {
+      "name": "Assign to Eeden",
+      "type": "Process"
+    },
+    {
+      "name": "Assign to Peter",
+      "type": "Process"
+    },
+    {
+      "name": "Get company of contact(s)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Assign deal to Edward",
+      "type": "Process"
+    },
+    {
+      "name": "Assign to Michael",
+      "type": "Process"
+    },
+    {
+      "name": "Assign to Suka",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3b6241f",
+  "workflow_id": "a3b6241f",
+  "workflow_id_display": "a3b6241f",
+  "workflow_name": "Extract Google Ads Creatives by Domain with SerpAPI and Export to CSV",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, CSV",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "Nikan Noorafkan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract, filter, and export Google ad creatives by domain and region. Perfect for marketing pros—discover transparent insights in CSVs.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, function"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Domain & Region",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Ad Creatives",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Ads Page 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Text Ads to CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert Image Ads to CSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert Video Ads to CSV1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8376eb61",
+  "workflow_id": "8376eb61",
+  "workflow_id_display": "8376eb61",
+  "workflow_name": "Track HDFC Credit Card Transactions with Google Sheets and Telegram Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Krishna Kumar Eswaran",
+  "author_profile_url": "https://n8n.io/creators/mrprogrammer/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track HDFC credit card expenses and share real-time Telegram alerts with your spouse. Automate logs, stay transparent, and boost security.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with gmailTrigger, splitInBatches, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "update the usage in sheet row",
+      "type": "Data Output"
+    },
+    {
+      "name": "map used articls ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "filter only unused Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract the required data from mail",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

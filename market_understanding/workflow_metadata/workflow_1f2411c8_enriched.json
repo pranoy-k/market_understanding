@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f2411c8",
+  "workflow_id": "1f2411c8",
+  "workflow_id_display": "1f2411c8",
+  "workflow_name": "Batch Airtable requests to send data 9x faster",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "Brahim HAMICHAN",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Supercharge Airtable data tasks with up to 9X faster bulk inserts and upserts. Boost workflow efficiency and scalability—learn more about this n8n template!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Batch_Airtable",
+      "type": "Trigger"
+    },
+    {
+      "name": "set_Batching_vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "upsert_airtable",
+      "type": "Data Input"
+    },
+    {
+      "name": "insert_airtable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Airtable_Batch_Processor",
+      "type": "Process"
+    },
+    {
+      "name": "compile_records",
+      "type": "Process"
+    },
+    {
+      "name": "compile_records1",
+      "type": "Process"
+    },
+    {
+      "name": "Each_10_items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Each_10_items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

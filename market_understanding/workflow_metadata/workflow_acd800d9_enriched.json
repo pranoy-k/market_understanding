@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/acd800d9",
+  "workflow_id": "acd800d9",
+  "workflow_id_display": "acd800d9",
+  "workflow_name": "Evaluation metric example: RAG document relevance",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "19",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly evaluate your n8n AI workflows with automated relevance scoring, test datasets, and performance insights. Optimize reliability—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with evaluationTrigger, manualTrigger, vectorStoreInMemory"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Match chat format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract documents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate doc relevance metric",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Get dataset",
+      "type": "Data Output"
+    },
+    {
+      "name": "Evaluating?",
+      "type": "Process"
+    },
+    {
+      "name": "Return chat response",
+      "type": "Process"
+    },
+    {
+      "name": "Set metrics",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Vector Store1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

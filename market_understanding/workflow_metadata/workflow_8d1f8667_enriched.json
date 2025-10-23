@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d1f8667",
+  "workflow_id": "8d1f8667",
+  "workflow_id_display": "8d1f8667",
+  "workflow_name": "Legal Case Research Extractor, Data Miner with Bright Data MCP & Google Gemini",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate legal case data extraction and structuring with AI. Scrape, parse, and export case insights—ideal for legal teams and tech professionals. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create a binary data for LinkedIn company info extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the Legal Case Research URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "List all tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client For Legal Case Research",
+      "type": "Process"
+    },
+    {
+      "name": "Case Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bright Data MCP Client For Legal Case Research Within Loop",
+      "type": "Process"
+    },
+    {
+      "name": "HTML to Textual Data Extract Within Loop",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook Notification for HTML to Textual Data Extract Within the Loop",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the case content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model For Case Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Code to output the collection of cases",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model for HTML to Textual Data Extract Within the Loop",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

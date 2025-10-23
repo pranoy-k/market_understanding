@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fe9bb4d8",
+  "workflow_id": "fe9bb4d8",
+  "workflow_id_display": "fe9bb4d8",
+  "workflow_name": "Telegram AI Chatbot Agent with InfraNodus GraphRAG Knowledge Base",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "InfraNodus",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Transform your Telegram bot into a multi-expert AI assistant with InfraNodus GraphRAG. Enjoy fast, holistic answers—no complex vector stores needed. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Receive a Message on Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Waves into Patterns Book Expert",
+      "type": "Data Input"
+    },
+    {
+      "name": "Special Agent's Manual Book Expert",
+      "type": "Data Input"
+    },
+    {
+      "name": "The Flow and the Notion Book",
+      "type": "Data Input"
+    },
+    {
+      "name": "The Polysingularity Letters Book",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

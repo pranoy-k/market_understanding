@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c1c4752d",
+  "workflow_id": "c1c4752d",
+  "workflow_id_display": "c1c4752d",
+  "workflow_name": "Send Onfleet driver signup messages in Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Instantly notify your team on Slack when new drivers sign up in Onfleet. Seamless integration, real-time alerts, and easy setup—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, onfleetTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

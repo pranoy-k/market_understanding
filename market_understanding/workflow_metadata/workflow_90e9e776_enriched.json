@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90e9e776",
+  "workflow_id": "90e9e776",
+  "workflow_id_display": "90e9e776",
+  "workflow_name": "AI-Powered Social Media Amplifier",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Facebook, LinkedIn",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Mudit Juneja",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Content",
+      "type": "Process"
+    },
+    {
+      "name": "Update X Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update L Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Item",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Item",
+      "type": "Data Output"
+    },
+    {
+      "name": "Crawl HN Home",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Meta",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Unposted Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Visit GH Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert HTML To Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Errored",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Validate Generate Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

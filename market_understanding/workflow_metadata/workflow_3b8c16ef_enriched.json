@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3b8c16ef",
+  "workflow_id": "3b8c16ef",
+  "workflow_id_display": "3b8c16ef",
+  "workflow_name": "Generate LinkedIn Posts with Text and Images using Google Gemini and Gen-Imager",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "gemini"
+  ],
+  "author_name": "Evoort Solutions",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate LinkedIn posts with AI-powered content and custom images. Quick setup, fully customizable—ideal for marketers and businesses. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mapper",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Decoder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normalizer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text to image",
+      "type": "Data Input"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

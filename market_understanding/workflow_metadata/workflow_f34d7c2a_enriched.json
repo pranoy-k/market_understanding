@@ -1,0 +1,30 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f34d7c2a",
+  "workflow_id": "f34d7c2a",
+  "workflow_id_display": "f34d7c2a",
+  "workflow_name": "Send email via Gmail on workflow error",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Trey",
+  "author_profile_url": "https://n8n.io/creators/trey/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Get instant Gmail alerts for workflow errors—receive detailed reports with error info, last node, and stacktrace. Simple setup. Stay informed, act fast!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fdbd558e",
+  "workflow_id": "fdbd558e",
+  "workflow_id_display": "fdbd558e",
+  "workflow_name": "Narrating over a Video using Multimodal AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Drive, OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Use Text-to-Speech",
+      "type": "Process"
+    },
+    {
+      "name": "Capture Frames",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Frames",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Binary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Combine Script",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload to GDrive",
+      "type": "Process"
+    },
+    {
+      "name": "For Every 15 Frames",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resize Frame",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate Frames",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Narration Script",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

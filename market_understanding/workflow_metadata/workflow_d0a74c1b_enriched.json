@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d0a74c1b",
+  "workflow_id": "d0a74c1b",
+  "workflow_id_display": "d0a74c1b",
+  "workflow_name": "Notify on Slack when new order is registered in WooCommerce",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically alerts your team in Slack when WooCommerce orders exceed $100. Easy setup—connect accounts, choose your channel, and stay informed.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, wooCommerceTrigger, if"
+  ],
+  "nodes": [
+    {
+      "name": "Order Created",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

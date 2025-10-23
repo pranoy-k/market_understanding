@@ -1,0 +1,34 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab1e5b0c",
+  "workflow_id": "ab1e5b0c",
+  "workflow_id_display": "ab1e5b0c",
+  "workflow_name": "Get email notifications for newly uploaded Google Drive files",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant email alerts for new Google Drive uploads. Automate file monitoring and stay updated effortlessly with real-time email notifications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, googleDriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

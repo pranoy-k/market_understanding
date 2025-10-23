@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b888f705",
+  "workflow_id": "b888f705",
+  "workflow_id_display": "b888f705",
+  "workflow_name": "Search LinkedIn companies, Score with AI and add them to Google Sheet CRM",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Matthieu",
+  "author_profile_url": "https://n8n.io/creators/yaznow/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn company searches, score leads with AI, and add them to your Google Sheet CRM. Build a high-quality B2B prospect list fast—learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Company Scoring",
+      "type": "Process"
+    },
+    {
+      "name": "Check If Company Exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Company to CRM",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process Each Company",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Company Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Companies",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Company Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

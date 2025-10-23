@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7550d1ea",
+  "workflow_id": "7550d1ea",
+  "workflow_id_display": "7550d1ea",
+  "workflow_name": "Crawl-and-Chat Customer Support Assistant with GPT-4o and WhatsApp for B2C Sites",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Mateo Fiorito Rocha",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Deploy an AI customer support bot in 15 min—auto-maps your website, answers WhatsApp, saves thousands on SaaS tools. Fast, no-code, context-smart. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, whatsAppTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "list_links",
+      "type": "Data Input"
+    },
+    {
+      "name": "cleanAnswer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get_page",
+      "type": "Data Input"
+    },
+    {
+      "name": "24-hour window check",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres Users Memory",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bbe1fedb",
+  "workflow_id": "bbe1fedb",
+  "workflow_id_display": "bbe1fedb",
+  "workflow_name": "Daily Personalized Air & Pollen Health Alerts with Ambee API and AI via Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "API, Email",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Ange Russell",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Get daily, personalized air quality & pollen reports via email, powered by Ambee’s real-time data and AI health tips. Perfect for asthma & allergy sufferers. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Your Location Coordinates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set User Profile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Air data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Pollen data",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

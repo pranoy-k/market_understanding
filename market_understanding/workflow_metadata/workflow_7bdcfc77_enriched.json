@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7bdcfc77",
+  "workflow_id": "7bdcfc77",
+  "workflow_id_display": "7bdcfc77",
+  "workflow_name": "Attach a default error handler to all active workflows",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, SMS, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "bartv",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Never miss workflow errors again! Get instant notifications for n8n errors via email, Slack, or SMS. Simple setup, automatic monitoring—learn more now.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, gmail, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "get error handler",
+      "type": "Process"
+    },
+    {
+      "name": "n8n | update",
+      "type": "Process"
+    },
+    {
+      "name": "set fields",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

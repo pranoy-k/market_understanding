@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8f5d329f",
+  "workflow_id": "8f5d329f",
+  "workflow_id_display": "8f5d329f",
+  "workflow_name": "Automatic Gmail Message Categorization with GPT-4 Content Analysis & Labels",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [],
+  "author_name": "Henry",
+  "author_profile_url": "https://n8n.io/creators/henry/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "JSON Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set label values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI GPT-4 Based",
+      "type": "Process"
+    },
+    {
+      "name": "Assign labels for message",
+      "type": "Process"
+    },
+    {
+      "name": "Split out assigned labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge corresponding labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate label IDs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

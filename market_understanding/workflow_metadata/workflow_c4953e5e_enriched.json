@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4953e5e",
+  "workflow_id": "c4953e5e",
+  "workflow_id_display": "c4953e5e",
+  "workflow_name": "Deep Research - Sales Lead Magnet Agent",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "google",
+    "linkedin"
+  ],
+  "author_name": "Max Mitcham",
+  "author_profile_url": "https://n8n.io/creators/maxmitcham/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead magnet content creation with multi-agent AI—real-time research, expert insights, and ready-to-share Google Docs for LinkedIn. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Share URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query Builder",
+      "type": "Process"
+    },
+    {
+      "name": "Research Leader",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity tool",
+      "type": "Process"
+    },
+    {
+      "name": "Project Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Team of Research Assistants",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Editor",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Trigify knowledge hub",
+      "type": "Data Input"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs1",
+      "type": "Process"
+    },
+    {
+      "name": "Trigify knowledge hub2",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

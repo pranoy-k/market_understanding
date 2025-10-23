@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bd28224e",
+  "workflow_id": "bd28224e",
+  "workflow_id_display": "bd28224e",
+  "workflow_name": "Receive updates for changes in the specified list in Trello",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Slack, Stripe",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Stripe data collection & real-time Slack alerts. Streamline sales updates, boost team collaboration, and keep everyone informed—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with trelloTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Trello Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

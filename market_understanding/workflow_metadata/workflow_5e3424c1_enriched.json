@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e3424c1",
+  "workflow_id": "5e3424c1",
+  "workflow_id_display": "5e3424c1",
+  "workflow_name": "Convert HTML to PDF using ConvertAPI",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "ConvertAPI",
+  "author_profile_url": "https://n8n.io/creators/convertapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert HTML to PDF, save directly to your local system, and customize the workflow to fit your needs. Perfect for developers—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Result File to Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert HTML to File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert File to PDF",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

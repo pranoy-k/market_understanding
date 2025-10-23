@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/346b7229",
+  "workflow_id": "346b7229",
+  "workflow_id_display": "346b7229",
+  "workflow_name": "Chinese Translator via Line x OpenRouter (Text & Image)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "[email protected]",
+  "author_profile_url": "https://n8n.io/creators/linlinmhee/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Seamlessly translate Chinese text and images to pinyin and English on LINE using OpenRouter.ai. Fast, accurate, and ideal for learners or businesses!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Line Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Line Loading Animation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter : qwen/qwen2.5-vl-72b-instruct:free",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter: qwen/qwen-2.5-72b-instruct:free",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Line Reply (image)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Reply (Text)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Reply (Not Supported 2)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Line Reply (Not Supported 1)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e5b30854",
+  "workflow_id": "e5b30854",
+  "workflow_id_display": "e5b30854",
+  "workflow_name": "Retrieve a Monday.com row and all data in a single node",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Joey DâAnna",
+  "author_profile_url": "https://n8n.io/creators/jdana/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly retrieve detailed monday.com item data in n8n. Get item info, column details, board relations, and subitems—discover easy setup now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, set, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ALL COLUMNS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ALL RELATIONS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PULL LINKEDPULSE1",
+      "type": "Process"
+    },
+    {
+      "name": "GET LINKEDPULSES1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SPLIT LINKED PULSES1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SPLIT SUBITEMS1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET EACH SUBITEM1",
+      "type": "Process"
+    },
+    {
+      "name": "GET ALL COLUMNS1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ALL COLUMNS2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PULL SUBITEMS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET ITEM",
+      "type": "Process"
+    },
+    {
+      "name": "GET ALL COLUMNS3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

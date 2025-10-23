@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b380d203",
+  "workflow_id": "b380d203",
+  "workflow_id_display": "b380d203",
+  "workflow_name": "Receive updates on events in JotForm",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate JotForm submissions with real-time workflows. Boost productivity, eliminate manual tasks, and streamline form processing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with jotFormTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "JotForm Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

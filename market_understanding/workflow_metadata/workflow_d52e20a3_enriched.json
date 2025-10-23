@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d52e20a3",
+  "workflow_id": "d52e20a3",
+  "workflow_id_display": "d52e20a3",
+  "workflow_name": "Google Maps Scraper",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly scrape Google Maps data with SerpAPI at a lower cost. Get detailed lists of places, including ratings and contacts. Learn how now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Run workflow every hours",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract keyword and location from URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add rows in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Get searches to scrap",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Status to Success",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Status to Error",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract next start value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge all values from SERPAPI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transform data in the right format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SERPAPI - Scrape Google Maps URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove duplicate items",
+      "type": "Process"
+    },
+    {
+      "name": "Split out items",
+      "type": "Process"
+    },
+    {
+      "name": "Remove empty values",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Merge all values from SERPAPI",
+    "SERPAPI - Scrape Google Maps URL"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

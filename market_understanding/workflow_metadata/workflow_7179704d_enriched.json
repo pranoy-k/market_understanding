@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7179704d",
+  "workflow_id": "7179704d",
+  "workflow_id_display": "7179704d",
+  "workflow_name": "Read a spreadsheet file",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Spreadsheet File node skills with a practical workflow example. Learn efficient configurations and automate spreadsheet data tasks easily.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, readBinaryFile, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

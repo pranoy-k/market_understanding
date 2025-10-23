@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/848f3849",
+  "workflow_id": "848f3849",
+  "workflow_id_display": "848f3849",
+  "workflow_name": "AI Fitness Coach Strava Data Analysis and Personalized Training Insights",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Gmail, Google Analytics, WhatsApp",
+  "tags": [],
+  "author_name": "Amjid Ali",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Strava Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Everything",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fitness Coach",
+      "type": "Process"
+    },
+    {
+      "name": "Structure Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Conver to HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

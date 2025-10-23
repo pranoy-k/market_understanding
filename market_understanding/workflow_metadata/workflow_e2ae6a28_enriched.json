@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2ae6a28",
+  "workflow_id": "e2ae6a28",
+  "workflow_id_display": "e2ae6a28",
+  "workflow_name": "Public Webhook Relay",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "Scheduled"
+  ],
+  "author_name": "Jay Hartley",
+  "author_profile_url": "https://n8n.io/creators/jay/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly catch public webhooks on your local n8n instance—no proxy needed. Perfect for secure, rapid testing. Learn how to set it up now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Local Webhook Address",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Auth Token",
+      "type": "Data Input"
+    },
+    {
+      "name": "Unprocessed Requests",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Latest Requests",
+      "type": "Data Input"
+    },
+    {
+      "name": "POST to n8n",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Latest Update Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Auth Token",
+      "type": "Process"
+    },
+    {
+      "name": "Store Last Processed",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Auth Token",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Last Processed",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

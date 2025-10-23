@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/936bebf6",
+  "workflow_id": "936bebf6",
+  "workflow_id_display": "936bebf6",
+  "workflow_name": "Create a Branded AI-Powered Website Chatbot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Wayne Simpson",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "varResponse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "varMessageResponse",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Make Appointment",
+      "type": "Data Input"
+    },
+    {
+      "name": "freeTimeSlots",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Events",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Availability",
+      "type": "Process"
+    },
+    {
+      "name": "Send Message",
+      "type": "Process"
+    },
+    {
+      "name": "Send Message1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Respond With Initial Message",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

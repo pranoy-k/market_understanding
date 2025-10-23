@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5afd3664",
+  "workflow_id": "5afd3664",
+  "workflow_id_display": "5afd3664",
+  "workflow_name": "Automated Brand Mentions Tracker With GPT-4o, Google Sheets, and Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "Email, Google Sheets, OpenAI",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Daniel Shashko",
+  "author_profile_url": "https://n8n.io/creators/tomax/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor your brand and competitors in AI responses with daily reports, Google Sheets logging, and automated alerts. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Setup Queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query ChatGPT (HTTP)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Email Report",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

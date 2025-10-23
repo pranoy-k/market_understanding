@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab0398ea",
+  "workflow_id": "ab0398ea",
+  "workflow_id_display": "ab0398ea",
+  "workflow_name": "Scheduled YouTube Video Uploads with Google Sheets & Drive Integration",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets, YouTube",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Rahul Joshi",
+  "author_profile_url": "https://n8n.io/creators/rahul08/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube uploads with scheduled publishing and seamless Google Sheets and Drive integration. Save time and streamline your video workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, googleDrive, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "M-F 9am,12pm,3pm",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Video File Id",
+      "type": "Process"
+    },
+    {
+      "name": "Download Video Data",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Get Folder Name",
+      "type": "Process"
+    },
+    {
+      "name": "Move Video File to Folder",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

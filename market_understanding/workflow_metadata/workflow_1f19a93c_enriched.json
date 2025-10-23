@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f19a93c",
+  "workflow_id": "1f19a93c",
+  "workflow_id_display": "1f19a93c",
+  "workflow_name": "Receive Bitcoin, Etherium, Solana, Binance Data With Gecko Coin and Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Gmail",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Ghufran Ridhawi",
+  "author_profile_url": "https://n8n.io/creators/ghufran-ridhawi/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get BITCOIN OHLC",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ETHEREUM OHLC",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get SOLANA OHLC",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get BINANCECOIN OHLC",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge 1 (BTC + ETH)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 2 (+SOL)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 3 (+BNB)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format BTC",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format ETH",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format SOL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format BNB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine All Coins",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

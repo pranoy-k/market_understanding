@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a11e3322",
+  "workflow_id": "a11e3322",
+  "workflow_id_display": "a11e3322",
+  "workflow_name": "Monitor SSL Certificate Expiry with Google Sheets and Multi-Channel Alert",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Jesse Davids",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Proactively monitor SSL certificates with automated checks, real-time Google Sheet updates, and email alerts. Prevent unexpected expiry—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "URLs to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check SSL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Ntfy4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

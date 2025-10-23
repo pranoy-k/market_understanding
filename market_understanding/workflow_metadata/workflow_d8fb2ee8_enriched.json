@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d8fb2ee8",
+  "workflow_id": "d8fb2ee8",
+  "workflow_id_display": "d8fb2ee8",
+  "workflow_name": "Scrape Competitor Reviews & Generate Ad Creatives with Bright Data & OpenAI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "AWS, OpenAI",
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with formTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission - Amazon Reviews",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI- Generating image",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets - Adding All Reviews",
+      "type": "Data Output"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request- Post API call to Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Getting data from Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregating all reviews",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain - Summary of Recent reviews",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request- Post API call to Bright Data",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

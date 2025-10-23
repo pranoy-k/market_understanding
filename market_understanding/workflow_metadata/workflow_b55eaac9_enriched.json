@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b55eaac9",
+  "workflow_id": "b55eaac9",
+  "workflow_id_display": "b55eaac9",
+  "workflow_name": "Automate Outbound Sales Calls to Qualified Leads with VAPI.ai and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate AI outbound calls to qualified leads by integrating Google Sheets and VAPI.ai. Boost efficiency and sales with seamless workflow setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger VAPI Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update AI Call Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Trigger VAPI Call"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43ba1a0b",
+  "workflow_id": "43ba1a0b",
+  "workflow_id_display": "43ba1a0b",
+  "workflow_name": "Save and Log Clipboard Content from macOS to Google Sheets using Shortcuts App",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Èugui DragoÈ",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly save your macOS clipboard to Google Sheets with a custom Shortcut and n8n workflow. Offline, private, and easy to set up. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, webhook, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Data Formatter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clipboard Logger Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Clipboard Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

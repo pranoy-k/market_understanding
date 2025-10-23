@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e39c7754",
+  "workflow_id": "e39c7754",
+  "workflow_id_display": "e39c7754",
+  "workflow_name": "Sync Notion database pages as ClickUp tasks",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Notion with ClickUp—auto-create or update ClickUp tasks as Notion pages change. Ensure seamless workflow and data consistency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with clickUp, notionTrigger, clickUpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On updated database page",
+      "type": "Trigger"
+    },
+    {
+      "name": "On task status updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update an existing task",
+      "type": "Process"
+    },
+    {
+      "name": "Get database page by ClickUp ID",
+      "type": "Process"
+    },
+    {
+      "name": "Update the status of found database page",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

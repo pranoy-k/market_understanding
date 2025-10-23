@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        680,
+        400
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "position": [
+        880,
+        400
+      ],
+      "parameters": {
+        "filePath": "/data/pdf.pdf"
+      },
+      "typeVersion": 1,
+      "id": "73c99f623f86df40"
+    },
+    {
+      "name": "Read PDF",
+      "type": "n8n-nodes-base.readPDF",
+      "position": [
+        1090,
+        400
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "a718720e988eaccf"
+    }
+  ],
+  "connections": {
+    "Read Binary File": {
+      "main": [
+        [
+          {
+            "node": "Read PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Read Binary File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "72ec0404551af987",
+  "name": "Extract text from a PDF file",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "pdf"
+  ]
+}

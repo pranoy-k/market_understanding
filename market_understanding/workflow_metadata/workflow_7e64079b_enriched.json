@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7e64079b",
+  "workflow_id": "7e64079b",
+  "workflow_id_display": "7e64079b",
+  "workflow_name": "Evaluation metric example: Correctness (judged by AI)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your n8n AI workflows with automated evaluation. Get reliable metrics, pinpoint improvements, and optimize costs. Learn more about evaluations!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with evaluationTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Match chat format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate correctness metric",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluating?",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Return chat response",
+      "type": "Process"
+    },
+    {
+      "name": "Set metrics",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b71fa12c",
+  "workflow_id": "b71fa12c",
+  "workflow_id_display": "b71fa12c",
+  "workflow_name": "Extract Information from a Logo Sheet using forms, AI, Google Sheet and Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Marcel Claus-Ahrens",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve and Parser Agent",
+      "type": "Process"
+    },
+    {
+      "name": "JSON it",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map Attribute ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "All Attributes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only what we need",
+      "type": "Data Processing"
+    },
+    {
+      "name": "All Similar",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Agent Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o",
+      "type": "Process"
+    },
+    {
+      "name": "Check if Attribute exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create if not Exist",
+      "type": "Data Output"
+    },
+    {
+      "name": "Determine Attributes we should save",
+      "type": "Data Processing"
+    },
+    {
+      "name": "It Should exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Determine Similar we should save",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save all this juicy data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Attributes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wait for Attribute Creation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change each Attribute to the corresponding RecID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Tools",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out each Attribute String",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Unique Hash for Name",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Old Data + RecID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out similar",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Unique Hash for Similar",
+      "type": "Process"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change each Smiliar to the corresponding RecID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Table: Tools",
+      "type": "Process"
+    },
+    {
+      "name": "Table: Attributes",
+      "type": "Process"
+    },
+    {
+      "name": "make it a readable list",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

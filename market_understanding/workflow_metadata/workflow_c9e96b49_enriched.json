@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c9e96b49",
+  "workflow_id": "c9e96b49",
+  "workflow_id_display": "c9e96b49",
+  "workflow_name": "Generate Text Images from the Free DummyJSON API Using the HTTP Request Node",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api",
+    "http"
+  ],
+  "author_name": "Akram Kadri",
+  "author_profile_url": "https://n8n.io/creators/akramkadri/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate custom text-based images with a no-code workflow—choose fonts, colors, and formats using a simple API. Try it for instant visuals!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Image Properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Image from API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Fetch Image from API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

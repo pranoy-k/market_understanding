@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/740b9dd0",
+  "workflow_id": "740b9dd0",
+  "workflow_id_display": "740b9dd0",
+  "workflow_name": "Daily Validated Business Ideas using n8n and Upwork",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Archit Jain",
+  "author_profile_url": "https://n8n.io/creators/architjn/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Upwork job searches with AI-driven filtering, budget selection, and Google Sheets logging. Quick setup with guided steps. Learn more here!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Job Description",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Business Idea Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Core Business Idea",
+      "type": "Process"
+    },
+    {
+      "name": "Code Idea Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Validator Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Big Total Projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Big Hourly Projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "oAI 4.1 - Nano",
+      "type": "Process"
+    },
+    {
+      "name": "oAI 4.1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eabe2824",
+  "workflow_id": "eabe2824",
+  "workflow_id_display": "eabe2824",
+  "workflow_name": "Enrich and manage candidates data in Notion",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "LinkedIn, Notion",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly streamline hiring: auto-import LinkedIn data, generate Humantic AI assessments, and organize candidate profiles in Notion before interviews.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with humanticAi, calendlyTrigger, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Humantic AI",
+      "type": "Process"
+    },
+    {
+      "name": "Humantic AI1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

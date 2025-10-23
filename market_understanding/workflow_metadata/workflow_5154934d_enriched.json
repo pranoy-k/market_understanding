@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5154934d",
+  "workflow_id": "5154934d",
+  "workflow_id_display": "5154934d",
+  "workflow_name": "Streamline Your Zoom Meetings with Secure, Automated Stripe Payments",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, Stripe, Zoom",
+  "tags": [],
+  "author_name": "Emmanuel Bernard",
+  "author_profile_url": "https://n8n.io/creators/n8ninja/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Zoom meeting setup, payments, and exclusive access with n8n. Effortlessly manage events, send emails, and track participants—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "Creation Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "On payment",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format participant",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create participant list",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add participant to list",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store event",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Zoom meeting",
+      "type": "Process"
+    },
+    {
+      "name": "Create Stripe Product",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create payment link",
+      "type": "Data Input"
+    },
+    {
+      "name": "the end",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

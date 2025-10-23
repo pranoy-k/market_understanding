@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9765504e",
+  "workflow_id": "9765504e",
+  "workflow_id_display": "9765504e",
+  "workflow_name": "Extend n8n with additional tools",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Telegram with a bot that delivers real-time weather charts using R’s ggplot2 and openweathermap API. Discover interactive updates now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "City List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert API response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filename",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get weather data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write csv",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run R script",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Convert API response",
+    "msg_errorAPI",
+    "Any errors API?",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

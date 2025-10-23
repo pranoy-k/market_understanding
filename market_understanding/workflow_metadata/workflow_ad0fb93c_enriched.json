@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ad0fb93c",
+  "workflow_id": "ad0fb93c",
+  "workflow_id_display": "ad0fb93c",
+  "workflow_name": "Creating a AI Slack Bot with Google Gemini",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI, Slack, Webhook",
+  "tags": [
+    "Webhook",
+    "Slack🤖 AI🤖 Chatbot"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook to receive message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

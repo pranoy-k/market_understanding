@@ -1,0 +1,33 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c3dcdfdf",
+  "workflow_id": "c3dcdfdf",
+  "workflow_id_display": "c3dcdfdf",
+  "workflow_name": "Send Typeforms leads via Whatsapp (Twilio)",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, SMS, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Jean-Elie Lecuy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically send personalized WhatsApp messages to new Typeform leads via Twilio. Boost engagement and sales with rapid, seamless automated follow-up.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with set, twilio, typeformTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,119 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c69185cd",
+  "workflow_id": "c69185cd",
+  "workflow_id_display": "c69185cd",
+  "workflow_name": "Enrich Seller Data with Email & Domain Lookup using Bright Data & Google Search",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "28",
+  "tools_integrations": "Email, PostgreSQL",
+  "tags": [
+    "google",
+    "postgres🗄",
+    "Scheduled"
+  ],
+  "author_name": "Cyril Nicko Gaspar",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate contact and domain discovery from your Postgres seller database using Google search and Bright Data. Enrich leads and boost CRM accuracy—learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, switch, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process by Batch",
+      "type": "Data Processing"
+    },
+    {
+      "name": "BrightData",
+      "type": "Process"
+    },
+    {
+      "name": "BrightData1",
+      "type": "Process"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "HTML1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read the Database",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

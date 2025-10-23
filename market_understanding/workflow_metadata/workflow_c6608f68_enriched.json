@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c6608f68",
+  "workflow_id": "c6608f68",
+  "workflow_id_display": "c6608f68",
+  "workflow_name": "Build your own CUSTOM API MCP server",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly build a secure MCP server to manage PayCaptain employee data—search, update, and audit records, with privacy and easy integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Paycaptain MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Strip Sensitive Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strip Sensitive Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Valid Fields Only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Error Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Call",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Employee",
+      "type": "Process"
+    },
+    {
+      "name": "Get Employee",
+      "type": "Process"
+    },
+    {
+      "name": "Get Employees",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Employees",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Matches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Search Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Employees1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Matching ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Employee1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Get Response",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b4312e2",
+  "workflow_id": "1b4312e2",
+  "workflow_id_display": "1b4312e2",
+  "workflow_name": "Automated Daily Customer Win-Back Campaign with AI Offers",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Onur",
+  "author_profile_url": "https://n8n.io/creators/onurpolat05/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Proactively reduce churn with automated, AI-personalized win-back offers sent daily to high-risk customers. Boost loyalty—discover seamless retention now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, gmail, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Scheduled Start: Daily Churn Check",
+      "type": "Trigger"
+    },
+    {
+      "name": "(Parse Offer JSON)",
+      "type": "Process"
+    },
+    {
+      "name": "Set 'Not Found' Status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Customer Data from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Sent Offer in System Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log 'Not Found' in System Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter High Churn Risk & No Campaign Customers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Each Eligible Customer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Win-Back Offer",
+      "type": "Process"
+    },
+    {
+      "name": "(LLM Model for Offer Generation)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

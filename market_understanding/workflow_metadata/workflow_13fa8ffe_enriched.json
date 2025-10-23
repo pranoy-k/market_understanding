@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/13fa8ffe",
+  "workflow_id": "13fa8ffe",
+  "workflow_id_display": "13fa8ffe",
+  "workflow_name": "Create dynamic Twitter profile banner",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Twitter",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Social Media Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch new followers",
+      "type": "Data Input"
+    },
+    {
+      "name": "Item Lists",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetching images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch bg",
+      "type": "Data Input"
+    },
+    {
+      "name": "Resize",
+      "type": "Process"
+    },
+    {
+      "name": "Crop",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Image",
+      "type": "Process"
+    },
+    {
+      "name": "Resize1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

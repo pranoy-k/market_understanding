@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/922932c2",
+  "workflow_id": "922932c2",
+  "workflow_id_display": "922932c2",
+  "workflow_name": "Deduplicate Scraping AI Grants for Eligibility using AI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Email, OpenAI",
+  "tags": [
+    "Web Scraping",
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Intelligently scrape grant opportunities and use AI to deduplicate and assess eligibility, ensuring you don't miss relevant funding opportunities.",
+  "key_benefits": [
+    "Data extraction and monitoring"
+  ],
+  "nodes": [
+    {
+      "name": "Everyday @ 8.30am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Everyday @ 9am",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Tracker",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get New Eligible Grants Today",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Subscribers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Grants to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Grant Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Synopsis",
+      "type": "Data Input"
+    },
+    {
+      "name": "Eligibility Factors",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only New Grants",
+      "type": "Process"
+    },
+    {
+      "name": "AI Grants since Yesterday",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

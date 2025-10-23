@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/102ab0bf",
+  "workflow_id": "102ab0bf",
+  "workflow_id_display": "102ab0bf",
+  "workflow_name": "Auto-Generate & Publish SEO Articles to WordPress with GPT-4 + Postgres Tracking",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "OpenAI, PostgreSQL, WordPress",
+  "tags": [
+    "postgres",
+    "Scheduled"
+  ],
+  "author_name": "AlexWantMoreB",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate and publish SEO-optimized WordPress articles with AI, automated category rotation, and cover images. Boost your content strategy—learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with scheduleTrigger, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare Post JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load Categories",
+      "type": "Data Input"
+    },
+    {
+      "name": "Category Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Selecting recent",
+      "type": "Data Output"
+    },
+    {
+      "name": "Picks Less Used",
+      "type": "Data Processing"
+    },
+    {
+      "name": "10 latest headlines",
+      "type": "Data Output"
+    },
+    {
+      "name": "New article title",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent SEO Headings",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent SEO writer",
+      "type": "Process"
+    },
+    {
+      "name": "Merge heading",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combines full post meta",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Updating posts DB",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extracting output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Placeholder creator",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Media Upload to WP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to WP",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

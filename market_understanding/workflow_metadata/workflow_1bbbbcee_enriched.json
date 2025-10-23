@@ -1,0 +1,106 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1bbbbcee",
+  "workflow_id": "1bbbbcee",
+  "workflow_id_display": "1bbbbcee",
+  "workflow_name": "Telegram Payment, Invoicing and Refund Workflow for Stars",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Victor Gold",
+  "author_profile_url": "https://n8n.io/creators/victorlucky/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Telegram Stars payments, invoices, and refunds with n8n. Fast setup, Google Sheets tracking, and easy integration for businesses—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Make a Refund",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Invoice Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bot API token (for refund)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Refund Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bot API token",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data for Invoice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Tlegram Payment Charge ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Refund",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Invoice",
+      "type": "Data Input"
+    },
+    {
+      "name": "Approove / Pre-Checkout Update",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add your logic here",
+      "type": "Process"
+    },
+    {
+      "name": "Add your logic",
+      "type": "Process"
+    },
+    {
+      "name": "Add your Refund logic here",
+      "type": "Process"
+    },
+    {
+      "name": "Start Payment Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Bot API token (for refund)",
+    "Bot API token",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

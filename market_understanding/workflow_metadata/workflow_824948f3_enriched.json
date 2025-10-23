@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/824948f3",
+  "workflow_id": "824948f3",
+  "workflow_id_display": "824948f3",
+  "workflow_name": "Gumroad Clientbell: Auto-Log Sales, Ping Telegram, & Thank via Email",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Email, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Velebit from Innovatio",
+  "author_profile_url": "https://n8n.io/creators/innovatio/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Gumroad sales tracking, client logging, and thank-you emails with this customizable n8n workflow—perfect for creators and freelancers. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with microsoftOutlook, emailSend, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Gumroad Sales Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "This is SET to Clean & Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare a manual email to replicate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Ready to take this to the next level? We at Innovatio are cheering for you!!! Best of luck and great successes to you all <3 Velebit from Innovatio",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook",
+      "type": "Process"
+    },
+    {
+      "name": "Email Writer Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

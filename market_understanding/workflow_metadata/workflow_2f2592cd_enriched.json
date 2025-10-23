@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f2592cd",
+  "workflow_id": "2f2592cd",
+  "workflow_id_display": "2f2592cd",
+  "workflow_name": "Send labeled email to a Notion database",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Gmail, Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "On updated database page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Derive last request time",
+      "type": "Process"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    },
+    {
+      "name": "Try get database page",
+      "type": "Process"
+    },
+    {
+      "name": "Not yet checked off, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "If found, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Find my email address",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/388e3587",
+  "workflow_id": "388e3587",
+  "workflow_id_display": "388e3587",
+  "workflow_name": "Send new Clockify invoice to Notion database",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync new Clockify invoices to Notion. Instantly generate detailed, customizable database pages for seamless, real-time invoice tracking. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, webhook, notion"
+  ],
+  "nodes": [
+    {
+      "name": "On new invoice in Clockify",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

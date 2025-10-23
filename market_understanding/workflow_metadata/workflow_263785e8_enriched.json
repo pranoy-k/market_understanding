@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/263785e8",
+  "workflow_id": "263785e8",
+  "workflow_id_display": "263785e8",
+  "workflow_name": "Qualify replies from Pipedrive persons with AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Mark de Jonge",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Email box 1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email box 2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Is interested?",
+      "type": "Process"
+    },
+    {
+      "name": "Search Person in CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Get person from CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Create deal in CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Get response",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

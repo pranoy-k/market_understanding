@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b68515b0",
+  "workflow_id": "b68515b0",
+  "workflow_id_display": "b68515b0",
+  "workflow_name": "Real Estate Lead Generation with BatchData Skip Tracing & CRM Integration",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Preston Zeller",
+  "author_profile_url": "https://n8n.io/creators/zellerhaus/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your real estate lead generation with BatchData: targeted property search, advanced lead scoring, skip tracing, and CRM-ready data—no coding needed.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure Search Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search Properties API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Property Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Owner Contact Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Lead Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Excel Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Push to CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Results",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Search Properties API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

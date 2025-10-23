@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/972a1d5e",
+  "workflow_id": "972a1d5e",
+  "workflow_id_display": "972a1d5e",
+  "workflow_name": "Automate testimonials in Strapi with n8n",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Twitter scanning, form response, and sentiment analysis with n8n. Unified workflow stores results in Strapi—efficient, real-time insights. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCloudNaturalLanguage, interval, if"
+  ],
+  "nodes": [
+    {
+      "name": "Simplify Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Webhook Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store in Strapi",
+      "type": "Process"
+    },
+    {
+      "name": "Every 30 Minutes",
+      "type": "Process"
+    },
+    {
+      "name": "Search Tweets",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analyze Form Submission",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Tweet",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Form Sentiment with Source",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Tweet Sentiment with Source",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Form Submission in Strapi",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

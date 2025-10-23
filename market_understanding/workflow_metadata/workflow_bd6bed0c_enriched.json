@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bd6bed0c",
+  "workflow_id": "bd6bed0c",
+  "workflow_id_display": "bd6bed0c",
+  "workflow_name": "Automate Google Analytics Reporting",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, Google Analytics",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Analytics reporting in n8n: fetch, format, and deliver HTML reports with color-coded stats via email or Google Docs. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Country views data for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Google Search Results for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Page Engagement Stats for this week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Page Engagement Stats for prior week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Google Search Results for prior week",
+      "type": "Process"
+    },
+    {
+      "name": "Get Country views data for prior week",
+      "type": "Process"
+    },
+    {
+      "name": "Parse - Get Page Engagement This Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse - Get Page Engagement Prior Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse - Get Google Search This Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse - Get Google Search Prior Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse - Country Views This Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse - Country Views Prior Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set urlStrings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input All",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

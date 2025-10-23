@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/176064ca",
+  "workflow_id": "176064ca",
+  "workflow_id_display": "176064ca",
+  "workflow_name": "WebSecScan: AI-Powered Website Security Auditor",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Dale Dunlop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Landing Page Url",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Headers Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Content Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape Website",
+      "type": "Data Input"
+    },
+    {
+      "name": "Security Vulnerabilities Audit",
+      "type": "Process"
+    },
+    {
+      "name": "Security Configuration Audit",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Security Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Audit Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Audit Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Headers for Debug",
+      "type": "Data Processing"
+    },
+    {
+      "name": "convert to HTML",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

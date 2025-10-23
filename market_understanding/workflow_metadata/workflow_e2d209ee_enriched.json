@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2d209ee",
+  "workflow_id": "e2d209ee",
+  "workflow_id_display": "e2d209ee",
+  "workflow_name": "AI-Powered Lead Scoring with Salesforce, GPT-4o, and Slack with Data Masking",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "7",
+  "tools_integrations": "OpenAI, Salesforce, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Le Nguyen",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Supercharge lead scoring with privacy-first AI, secure data masking, actionable Slack alerts, and easy no-code CRM integration. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, openAi, salesforceTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Salesforce Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "MASK DATA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "UNMASK Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

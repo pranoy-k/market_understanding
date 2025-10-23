@@ -1,0 +1,154 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/944b1d76",
+  "workflow_id": "944b1d76",
+  "workflow_id_display": "944b1d76",
+  "workflow_name": "Build & Sell AI Automations and Agents",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "46",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "NICKYAI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Master AI automation and agent building with hands-on projects, real-world integrations, and monetization tips. Join now for expert support and lifetime access!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set JSON Variable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set API Keys",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Idea Denied",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Script",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ideator 🧠",
+      "type": "Process"
+    },
+    {
+      "name": "Image Prompter 📷",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Chunk Script",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Final Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Video Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structure Model Output",
+      "type": "Process"
+    },
+    {
+      "name": "Track Conversation Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Discuss Ideas 💡",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Script to Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Request Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Request Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Render JSON",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Videos and Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send to Creatomate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Decode Base64 to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert Video to Base64",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to YouTube",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Set API Keys",
+    "If All API Keys Set",
+    "Telegram: API Keys Missing",
+    "Missing API Keys",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

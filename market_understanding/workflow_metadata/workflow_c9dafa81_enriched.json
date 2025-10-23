@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c9dafa81",
+  "workflow_id": "c9dafa81",
+  "workflow_id_display": "c9dafa81",
+  "workflow_name": "Convert HTML to PDF and Return via Webhook using CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, PDF, Webhook",
+  "tags": [
+    "webhook",
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily convert HTML to styled PDFs with n8n and CustomJS. Set up a webhook to receive HTML, convert to PDF, and auto-respond. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with html2Pdf, webhook, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

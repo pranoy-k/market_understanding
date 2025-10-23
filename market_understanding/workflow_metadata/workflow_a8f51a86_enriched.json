@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8f51a86",
+  "workflow_id": "a8f51a86",
+  "workflow_id_display": "a8f51a86",
+  "workflow_name": "Get first and last names from Facebook Graph API",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Facebook",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Master Facebook node workflows in n8n with step-by-step guides, annotated screenshots, and best practices. Streamline your automation—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, facebookGraphApi"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Facebook Graph API",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

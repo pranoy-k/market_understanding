@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9e0aa33",
+  "workflow_id": "d9e0aa33",
+  "workflow_id_display": "d9e0aa33",
+  "workflow_name": "Verify an email adress with Icypeas (single)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Corentin Ribeyre",
+  "author_profile_url": "https://n8n.io/creators/corentinribeyre/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly verify email addresses using Icypeas. Connect your account, trigger the workflow, and validate emails securely in real time. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Run email verification (single)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Authenticates to your Icypeas account",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

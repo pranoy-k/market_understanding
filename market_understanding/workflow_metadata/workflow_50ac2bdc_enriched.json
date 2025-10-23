@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/50ac2bdc",
+  "workflow_id": "50ac2bdc",
+  "workflow_id_display": "50ac2bdc",
+  "workflow_name": "Programmatically Retrieve Embeddable Getty Images",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ludwig",
+  "author_profile_url": "https://n8n.io/creators/ludwig/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline your content creation—automate legal Getty Images sourcing, embedding, and compliance for free. Easy setup for small publishers. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse results page for first image",
+      "type": "Process"
+    },
+    {
+      "name": "Extract the Getty image_id from url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Embeddable iframeSnippet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replaceable input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get photo details",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET img src",
+      "type": "Process"
+    },
+    {
+      "name": "Request Getty Images Embed code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Replace with CMS node",
+      "type": "Process"
+    },
+    {
+      "name": "Getty Images Editorial Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Preview image (view binary)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

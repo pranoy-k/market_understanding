@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/16dcb40f",
+  "workflow_id": "16dcb40f",
+  "workflow_id_display": "16dcb40f",
+  "workflow_name": "Generate Trend-Based Video Marketing Ideas with GPT-4, Tavily and Veo 3",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Automate With Marc",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate daily trending video ideas with AI in n8n—no coding needed. Perfect for marketers and creators. Boost your content pipeline now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with tavilyTool, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Idea Gen Agent (research)",
+      "type": "Process"
+    },
+    {
+      "name": "Video Prompt Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Tavily",
+      "type": "Process"
+    },
+    {
+      "name": "FAL Veo 3 Post Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Status from FAL / Veo 3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video URL request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

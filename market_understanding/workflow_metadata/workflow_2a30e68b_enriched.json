@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2a30e68b",
+  "workflow_id": "2a30e68b",
+  "workflow_id_display": "2a30e68b",
+  "workflow_name": "Chat with Your Email History using Telegram, Mistral and Pgvector for RAG",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Alfonso Corretti",
+  "author_profile_url": "https://n8n.io/creators/acorretti/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly search your e-mails by meaning or detail with local open-source tools. Enjoy full privacy and powerful semantic and factual search. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with toolWorkflow, agent, embeddingsOllama"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Beautify chat response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate session id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres PGVector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Call the SQL composer Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Ollama",
+      "type": "Process"
+    },
+    {
+      "name": "Split text into chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Escape Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

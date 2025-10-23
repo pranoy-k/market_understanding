@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d1fa589c",
+  "workflow_id": "d1fa589c",
+  "workflow_id_display": "d1fa589c",
+  "workflow_name": "Notify User in Slack of Quarantined Email and Create Jira Ticket if Opened",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Jira, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate incident response for malicious emails with n8n—real-time alerts from Sublime Security, Slack notifications, Jira integration, and setup tips. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, jira, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Sublime Security Alert",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get message details in Sublime Security",
+      "type": "Data Input"
+    },
+    {
+      "name": "Jira Software",
+      "type": "Process"
+    },
+    {
+      "name": "lookup slack user by email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Not Found, Do Nothing",
+      "type": "Process"
+    },
+    {
+      "name": "No, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Yes, prep flaggedRules table",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

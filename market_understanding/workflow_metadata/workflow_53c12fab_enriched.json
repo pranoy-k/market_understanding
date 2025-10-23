@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/53c12fab",
+  "workflow_id": "53c12fab",
+  "workflow_id_display": "53c12fab",
+  "workflow_name": "Create 2 XML files: with and without XML attributes",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "xml"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export SQL data to XML using two methods. Customize XML structure, add attributes, and save files locally. Learn how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, xml, writeBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Define file structure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define file structure1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show 16 random products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Concatenate Items",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to XML",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Concatenate Items1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to XML1",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data1",
+      "type": "Process"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

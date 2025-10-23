@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/caba137d",
+  "workflow_id": "caba137d",
+  "workflow_id_display": "caba137d",
+  "workflow_name": "Smart Shopify Agent: AI-Powered Abandoned Cart Recovery",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Google Analytics, Shopify",
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Recover abandoned carts automatically with AI-powered emails, smart timing, and advanced analytics. Boost conversions and ROI—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Email Writer",
+      "type": "Process"
+    },
+    {
+      "name": "Log Email Activity",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Recovery Email",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get Initial Abandoned Checkout",
+      "type": "Data Input"
+    },
+    {
+      "name": "Recheck Abandoned Checkouts",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b4dd5a3a",
+  "workflow_id": "b4dd5a3a",
+  "workflow_id_display": "b4dd5a3a",
+  "workflow_name": "Automated Image Optimizer: convert JPG/PNG to WebP with APYHub and Google Drive",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API, Google Drive, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate JPG/PNG to WEBP conversion with APYHub API. Integrate Google Sheets & Drive to save time, boost SEO, and optimize image performance. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set API KEY",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get images",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get extension",
+      "type": "Data Processing"
+    },
+    {
+      "name": "From JPG to WEBP",
+      "type": "Data Input"
+    },
+    {
+      "name": "PNG to WEBP",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get file image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Set API KEY"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

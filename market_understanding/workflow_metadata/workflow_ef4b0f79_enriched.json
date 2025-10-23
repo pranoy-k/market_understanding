@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ef4b0f79",
+  "workflow_id": "ef4b0f79",
+  "workflow_id_display": "ef4b0f79",
+  "workflow_name": "Extract And Decode Google News RSS URLs to Clean Article Links",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Miko",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly clean and decode Google News RSS links for easy sharing and analysis. Perfect for developers and journalists. Discover simple automation now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Decoded url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map needed keys",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reading Google News RSS",
+      "type": "Data Input"
+    },
+    {
+      "name": "Call decoding URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare decoding variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get encoded news URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract decoding keys",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate results in a single object",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

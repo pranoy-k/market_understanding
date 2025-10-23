@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/57d05527",
+  "workflow_id": "57d05527",
+  "workflow_id_display": "57d05527",
+  "workflow_name": "LinkedIn Profile Extract and Build JSON Resume with Bright Data & Google Gemini",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "google",
+    "json",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert LinkedIn profiles into accurate JSON resumes with Bright Data and Google Gemini. Automate candidate screening and enrich recruiting. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Data Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for Structured Skill Extract",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Markdown to Textual",
+      "type": "Process"
+    },
+    {
+      "name": "Skill Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model for Skill Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Write the structured content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Structured Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the structured skills content to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "JSON Resume Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

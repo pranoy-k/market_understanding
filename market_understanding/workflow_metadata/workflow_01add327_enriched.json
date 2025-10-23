@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01add327",
+  "workflow_id": "01add327",
+  "workflow_id_display": "01add327",
+  "workflow_name": "Receive updates for new events in Clockify",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Discover seamless automation with Clockify Trigger in n8n. Effortlessly integrate, track time events, and boost productivity. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with clockifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Clockify Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

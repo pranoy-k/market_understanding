@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa071e23",
+  "workflow_id": "aa071e23",
+  "workflow_id_display": "aa071e23",
+  "workflow_name": "Daily AI News Translation & Summary with GPT-4 and Telegram Delivery",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "SamirLiu",
+  "author_profile_url": "https://n8n.io/creators/samir/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get daily AI news in Traditional Chinese delivered to your Telegram. Top 15 articles summarized by GPT-4.1—fast, relevant, and easy to set up!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger at 8am daily",
+      "type": "Trigger"
+    },
+    {
+      "name": "GNews: Map to articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NewsAPI: Map to articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GPT-4.1 Model",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch GNews articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch NewsAPI articles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge GNews & NewsAPI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI summarizer & translator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "NewsAPI: Map to articles",
+    "Fetch NewsAPI articles",
+    "Merge GNews & NewsAPI",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

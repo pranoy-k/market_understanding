@@ -1,0 +1,234 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f96f6b7",
+  "workflow_id": "4f96f6b7",
+  "workflow_id_display": "4f96f6b7",
+  "workflow_name": "Automated Airtable to Postgres Migration with n8n",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "56",
+  "tools_integrations": "API, Airtable, PostgreSQL",
+  "tags": [
+    "api",
+    "postgres"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/imperolq/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow facilitates data migration between systems, handling data transformation, validation, and error handling. It reads from the source system, applies necessary transformations to match the target schema, and safely imports data while maintaining data integrity and relationships.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with switch, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Ser user data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ser user data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set columns",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ser user data2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass all data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set record fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set tables found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "success message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Failure message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass both responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit postgres fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "base id to delete",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set user data3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "postgres credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set webhook user data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "airtable fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Validate base id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Field mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create database",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert records",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get schema",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upsert records2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable - Postgres",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Claude",
+      "type": "Process"
+    },
+    {
+      "name": "Test credentials",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get records",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "New mapper",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable - Postgres system",
+      "type": "Trigger"
+    },
+    {
+      "name": "Test postgres credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get schema to delete",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete table",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit airtable fields1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit airtable fields2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Credential response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Credential response1",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

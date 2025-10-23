@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9d6aa0dd",
+  "workflow_id": "9d6aa0dd",
+  "workflow_id_display": "9d6aa0dd",
+  "workflow_name": "AI Icebreaker Builder: Scrape Sites with Dumpling AI and Save to Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Airtable, Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate cold outreach personalization with AI! Instantly generate tailored emails, summaries, and icebreakers for each lead. Boost your response rates now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Run Daily to Process New Leads",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Icebreaker, Summary & Email (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Search Cold Leads Without Icebreaker",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save AI Output Back to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Through Each Lead",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Lead Website with Dumpling AI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

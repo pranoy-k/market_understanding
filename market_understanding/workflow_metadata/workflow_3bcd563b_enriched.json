@@ -1,0 +1,145 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3bcd563b",
+  "workflow_id": "3bcd563b",
+  "workflow_id_display": "3bcd563b",
+  "workflow_name": "AI News Research Team: 24/7 Newsletter Automation with Citations with Perplexity",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Derek Cheung",
+  "author_profile_url": "https://n8n.io/creators/derekcheungsa/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create AI-powered, source-cited newsletters on topics like Bitcoin or Nvidia. Automated research, real-time insights, and easy integration—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "News to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Title",
+      "type": "Process"
+    },
+    {
+      "name": "News Reporter",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perplexity_tool",
+      "type": "Process"
+    },
+    {
+      "name": "Merge chapters title and text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final article text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Leader 🔬",
+      "type": "Process"
+    },
+    {
+      "name": "Delegate to Research Assistants",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Project Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Title1",
+      "type": "Process"
+    },
+    {
+      "name": "Editor",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity_tool2",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity_tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Perplexity API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

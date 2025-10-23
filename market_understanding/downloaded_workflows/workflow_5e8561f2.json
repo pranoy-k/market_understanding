@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        260,
+        320
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "position": [
+        460,
+        320
+      ],
+      "parameters": {
+        "url": "https://failedmachine.com/rss/"
+      },
+      "typeVersion": 1,
+      "id": "2346a955e5fdbc84"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "RSS Feed Read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "d95438161d0fc5e0",
+  "name": "Read an RSS Feed",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

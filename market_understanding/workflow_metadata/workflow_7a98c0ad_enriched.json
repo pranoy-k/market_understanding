@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7a98c0ad",
+  "workflow_id": "7a98c0ad",
+  "workflow_id_display": "7a98c0ad",
+  "workflow_name": "Venafi Cloud Slack Cert Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "API, Email, OpenAI, Slack, Webhook",
+  "tags": [
+    "Webhook",
+    "Slack🤖 Chatbot"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Slack User ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize output to save on tokens",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Slack Team ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Venafi TLS Protect Cloud",
+      "type": "Process"
+    },
+    {
+      "name": "Close Modal Popup",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Slack Webhook - Vulnerability",
+      "type": "Trigger"
+    },
+    {
+      "name": "Venafi Request Certificate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Translate Slack User ID to Email",
+      "type": "Process"
+    },
+    {
+      "name": "VirusTotal HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Auto Issue Certificate",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Report For Manual Approval",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Merge User and Team Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Requestor and VT Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Venafi TLS Protect Cloud1",
+      "type": "Process"
+    },
+    {
+      "name": "Manual Issue Certificate",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to webhook success",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

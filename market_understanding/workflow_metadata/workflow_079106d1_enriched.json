@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/079106d1",
+  "workflow_id": "079106d1",
+  "workflow_id_display": "079106d1",
+  "workflow_name": "Automate WooCommerce Image Product Background Removal using API and Google Sheet",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WooCommerce product image background removal with BackgroundCut API. Batch process, update Google Sheets, and boost store appeal. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, wooCommerce"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Image Url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Product Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ger Products",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remove from Image URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Filename",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update product",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

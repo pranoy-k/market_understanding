@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        260,
+        290
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        660,
+        290
+      ],
+      "parameters": {
+        "values": {
+          "number": [
+            {
+              "name": "id"
+            }
+          ],
+          "string": [
+            {
+              "name": "name",
+              "value": "n8n"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "typeVersion": 1,
+      "alwaysOutputData": false,
+      "id": "cf6ce6264a761b3d"
+    },
+    {
+      "name": "Postgres",
+      "type": "n8n-nodes-base.postgres",
+      "position": [
+        460,
+        290
+      ],
+      "parameters": {
+        "query": "CREATE TABLE test (id INT, name VARCHAR(255), PRIMARY KEY (id));",
+        "operation": "executeQuery"
+      },
+      "credentials": {
+        "postgres": "postgres_docker_creds"
+      },
+      "typeVersion": 1,
+      "alwaysOutputData": true,
+      "id": "5fc625a09c6d0eac"
+    },
+    {
+      "name": "Postgres1",
+      "type": "n8n-nodes-base.postgres",
+      "position": [
+        860,
+        290
+      ],
+      "parameters": {
+        "table": "test",
+        "columns": "id, name"
+      },
+      "credentials": {
+        "postgres": "postgres_docker_creds"
+      },
+      "typeVersion": 1,
+      "id": "7e1becefd63154c8"
+    }
+  ],
+  "connections": {
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Postgres1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Postgres",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "7a1618fe90c59879",
+  "name": "Create a table in Postgres and insert data",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "postgres"
+  ]
+}

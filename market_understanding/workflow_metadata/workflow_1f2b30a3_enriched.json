@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f2b30a3",
+  "workflow_id": "1f2b30a3",
+  "workflow_id_display": "1f2b30a3",
+  "workflow_name": "Rank Math Bulk Title & Description Optimizer for WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "WordPress",
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": "https://n8n.io/creators/phil/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly bulk-optimize WordPress SEO titles and descriptions using AI and Rank Math. Save time, boost rankings, and improve SEO quality—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, limit"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Posts ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Post Metas",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Meta Infos",
+      "type": "Process"
+    },
+    {
+      "name": "Finish 🚀",
+      "type": "Process"
+    },
+    {
+      "name": "Get post",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

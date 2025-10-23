@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a5ff1f4e",
+  "workflow_id": "a5ff1f4e",
+  "workflow_id_display": "a5ff1f4e",
+  "workflow_name": "Sync Customer Email Subscriptions Between Shopify and Mautic",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Email, Shopify",
+  "tags": [],
+  "author_name": "Sascha",
+  "author_profile_url": "https://n8n.io/creators/m3tam3re/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Shopify and Mautic email subscriptions in real time with n8n. Ensure compliance, accuracy, and easy automation—learn how now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with graphql, mautic, shopifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Shopify Subdomain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Add to confirmed segment",
+      "type": "Process"
+    },
+    {
+      "name": "Remove from confirmed segment",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Crypto",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing1",
+      "type": "Process"
+    },
+    {
+      "name": "GraphQL",
+      "type": "Process"
+    },
+    {
+      "name": "Marketing Consent - subscribed",
+      "type": "Process"
+    },
+    {
+      "name": "Marketing Consent - unsubscribed",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing2",
+      "type": "Process"
+    },
+    {
+      "name": "Search for Contact by Email",
+      "type": "Process"
+    },
+    {
+      "name": "Create a new contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

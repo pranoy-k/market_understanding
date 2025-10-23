@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/02923943",
+  "workflow_id": "02923943",
+  "workflow_id_display": "02923943",
+  "workflow_name": "Voice-to-Email Response System with Telegram, OpenAI Whisper & Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "Email, Gmail, OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 gmail🤖 openai",
+    "chatgpt"
+  ],
+  "author_name": "Adam Janes",
+  "author_profile_url": "https://n8n.io/creators/adamjanes/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Reply to long emails quickly by sending voice notes. ChatGPT transcribes and drafts responses, and Telegram alerts you when action is needed. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "New Email Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Bot Message Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Chat ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Does Email Need a Response?",
+      "type": "Process"
+    },
+    {
+      "name": "Write Polished Reply",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

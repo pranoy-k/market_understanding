@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/730cd785",
+  "workflow_id": "730cd785",
+  "workflow_id_display": "730cd785",
+  "workflow_name": "Weekly reminder on your notion tasks with a deadline",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Email, Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "David",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Never miss a Notion deadline! Get weekly, customizable email & push reminders for overdue and pending tasks. Easy setup—boost productivity now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Workflow vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Sort by closest deadline",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter for deadline",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate due to tasks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate overdue tasks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pushover",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML for Task",
+      "type": "Process"
+    },
+    {
+      "name": "HTML due to List",
+      "type": "Process"
+    },
+    {
+      "name": "HTML overdue List",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge groups",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

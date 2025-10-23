@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/caacaf5b",
+  "workflow_id": "caacaf5b",
+  "workflow_id_display": "caacaf5b",
+  "workflow_name": "Track Daily Product Hunt Launches with Website Verification in Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Ifeoluwa Ajetomobi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track daily Product Hunt launches—auto-fetch product details, check website redirects, and log results to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Date1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data 2 (website url)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Data 1 (product info)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Appends all details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetches today’s Product Hunt posts via API.",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extracts Product Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Resolve Website Redirection",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Fetches today’s Product Hunt posts via API."
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

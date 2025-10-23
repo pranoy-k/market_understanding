@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/29a0468b",
+  "workflow_id": "29a0468b",
+  "workflow_id_display": "29a0468b",
+  "workflow_name": "Automate Screenshots with URLbox & Analyze them with AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Google Analytics",
+  "tags": [],
+  "author_name": "Bela",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Execution",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze the Screenshot",
+      "type": "Process"
+    },
+    {
+      "name": "URLbox API Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Name & Description",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "URLbox API Request",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

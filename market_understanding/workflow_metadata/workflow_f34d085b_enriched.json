@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f34d085b",
+  "workflow_id": "f34d085b",
+  "workflow_id_display": "f34d085b",
+  "workflow_name": "Email Subscription Service with n8n Forms, Airtable and AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "Airtable, Email",
+  "tags": [
+    "Scheduled🤖 AI🤖 Email Automation"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Build an email subscription system with n8n forms, Airtable storage, and AI-powered content personalization.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Unsubscribe Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Subscribe Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Event",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email Vars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Process"
+    },
+    {
+      "name": "Search daily",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search weekly",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Last Sent",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search surprise",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Subscriber",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Subscriber",
+      "type": "Data Output"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Should Send = True",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Should Send?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Content Generation Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Resize Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

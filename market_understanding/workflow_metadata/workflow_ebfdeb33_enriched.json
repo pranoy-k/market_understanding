@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ebfdeb33",
+  "workflow_id": "ebfdeb33",
+  "workflow_id_display": "ebfdeb33",
+  "workflow_name": "Daily Business Idea Insights Aggregator from IdeaBrowser to Google Docs",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "mahavishnu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get a curated business idea report with market analysis delivered to Google Drive daily at 8AM—fully automated and organized for business success.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Markdown1",
+      "type": "Process"
+    },
+    {
+      "name": "Get the links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get URL data of idea",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create google doc",
+      "type": "Process"
+    },
+    {
+      "name": "Merge the data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split the url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get URL content of each page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update the google docs with the data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

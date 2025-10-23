@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e7787bea",
+  "workflow_id": "e7787bea",
+  "workflow_id_display": "e7787bea",
+  "workflow_name": "JSON String Validator via Webhook",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, RSS, Webhook",
+  "tags": [
+    "webhook",
+    "json"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily validate JSON strings in n8n with this template. Ensure data integrity, prevent errors, and receive instant, clear feedback via webhook. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, code, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook: Receive JSON String",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook with Result",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code: Validate JSON String",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

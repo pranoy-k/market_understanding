@@ -1,0 +1,440 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fd57f1f1",
+  "workflow_id": "fd57f1f1",
+  "workflow_id_display": "fd57f1f1",
+  "workflow_name": "Multi-Level WordPress Blog Generator with PerplexityAI Research & OpenAI Content",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "115",
+  "tools_integrations": "OpenAI, WordPress",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with googleDocs, limit, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser4",
+      "type": "Process"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser3",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser5",
+      "type": "Process"
+    },
+    {
+      "name": "Subchapters Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Chapters Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Subchapters Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Title Chapter and Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Title Chapter And Content1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Initial Research Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields Categories",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Article In Markdown",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FInal Article In HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields Final Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Research Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets Create Topics",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets Create Topic - Add New Topic",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets In Progress Topic",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets Final Blog",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets Status Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Texts To Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Topics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow - Create A Topic",
+      "type": "Process"
+    },
+    {
+      "name": "Resize Image",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Initial Research",
+      "type": "Process"
+    },
+    {
+      "name": "Blog Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Research Tool1",
+      "type": "Process"
+    },
+    {
+      "name": "Research Tool2",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Tool3",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Chapter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Sub-Chapter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Chapters2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chapter Research",
+      "type": "Process"
+    },
+    {
+      "name": "Subchapter Researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Subchapter Copywriter",
+      "type": "Process"
+    },
+    {
+      "name": "Chapter Copywriter",
+      "type": "Process"
+    },
+    {
+      "name": "Main Chapter Researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Subchapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Drive Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Chapter Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Image Meta Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Chapter Images To Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Resize Featured Image",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Featured Image To Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Post Sitemap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get XML File",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Internal Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Internal Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Main Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate All Chapters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request Get Categories",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Categories",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Doc",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Into Article",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown To HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Post On Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Wait Featured Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Featured Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Featured Image Meta Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Featured Image For Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Excerpt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request Create Tag",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Tag IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request Get Categories1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request Open AI Image 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Feature Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Feature Image Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request Open AI Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Chapter Image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Chapter Image Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Data To File",
+      "type": "Data Output"
+    },
+    {
+      "name": "PerplexityAI API",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "PerplexityAI API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

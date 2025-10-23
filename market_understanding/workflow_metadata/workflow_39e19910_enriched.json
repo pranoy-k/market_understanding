@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/39e19910",
+  "workflow_id": "39e19910",
+  "workflow_id_display": "39e19910",
+  "workflow_name": "Post RSS feed items from yesterday to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "RSS, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate daily RSS updates to your Slack channel. Connect your Slack account, select a channel, and input any RSS URL to stay informed.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, dateTime, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Build our message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Every Morning",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Yesterdays Date",
+      "type": "Process"
+    },
+    {
+      "name": "Get the RSS Feed",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

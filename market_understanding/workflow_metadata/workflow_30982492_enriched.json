@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/30982492",
+  "workflow_id": "30982492",
+  "workflow_id_display": "30982492",
+  "workflow_name": "Build a self-hosted URL shortener with a dashboard",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "mohamed ali",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly build a secure, self-hosted URL shortener with instant links, click tracking, and a real-time stats dashboard. Learn how to set it up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, airtable, set"
+  ],
+  "nodes": [
+    {
+      "name": "Extract URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set ID,shortUrl,longUrl",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Error output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Output1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Error output1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Output2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "404 Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare clicks count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract stats",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set dashboard",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Find by ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Find by ID1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update clicks",
+      "type": "Data Output"
+    },
+    {
+      "name": "Find by ID2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Crypto",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook2",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

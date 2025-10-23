@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d85efda",
+  "workflow_id": "2d85efda",
+  "workflow_id_display": "2d85efda",
+  "workflow_name": "Integrating AI with Open-Meteo API for Enhanced Weather Forecasting",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, OpenAI",
+  "tags": [],
+  "author_name": "Davi Saranszky Mesquita",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generic AI Tool Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory Buffer",
+      "type": "Process"
+    },
+    {
+      "name": "A tool to get the weather forecast based on geolocation",
+      "type": "Data Input"
+    },
+    {
+      "name": "A tool for inputting the city and obtaining geolocation",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

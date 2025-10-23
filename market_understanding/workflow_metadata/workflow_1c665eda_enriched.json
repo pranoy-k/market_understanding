@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c665eda",
+  "workflow_id": "1c665eda",
+  "workflow_id_display": "1c665eda",
+  "workflow_name": "Public Holiday Lookup with Nager.Date API via Webhook",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api",
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly fetch public holidays by year and country with this n8n template. Perfect for HR, planning, & automation. Simple setup—learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Get Public Holidays",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Holiday Request Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Holiday Data",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

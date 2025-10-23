@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/29816ef9",
+  "workflow_id": "29816ef9",
+  "workflow_id_display": "29816ef9",
+  "workflow_name": "Export new deals from HubSpot to Slack and Airtable",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Airtable, HubSpot, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate your HubSpot deal workflow: celebrate wins, generate presentations, analyze losses, and prioritize deals with seamless Slack, Google Slides, and Airtable integration.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, set, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Hubspot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "high-priority",
+      "type": "Process"
+    },
+    {
+      "name": "low-priority",
+      "type": "Process"
+    },
+    {
+      "name": "Google Slides",
+      "type": "Process"
+    },
+    {
+      "name": "Hubspot",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

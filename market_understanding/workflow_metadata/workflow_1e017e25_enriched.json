@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1e017e25",
+  "workflow_id": "1e017e25",
+  "workflow_id_display": "1e017e25",
+  "workflow_name": "Automated LinkedIn Lead Generation with AI Email Personalization (NOT FINISH)",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Email, LinkedIn",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Matthieu",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead generation with AI-driven prospecting, qualification, and personalized messaging—direct to your Google Sheet CRM. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Domain",
+      "type": "Process"
+    },
+    {
+      "name": "Select Top 3",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Valid Emails",
+      "type": "Process"
+    },
+    {
+      "name": "Create Personalization",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Emails Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Emails Subjects",
+      "type": "Process"
+    },
+    {
+      "name": "Not enough employees",
+      "type": "Data Output"
+    },
+    {
+      "name": "No mail founded",
+      "type": "Data Output"
+    },
+    {
+      "name": "Lead(s) found",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add lead(s)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Companies Recovery",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Employees",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Profiles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Profile Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Keep relevant information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Profiles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Mails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Verify Emails",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Profile Post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter Score and State",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

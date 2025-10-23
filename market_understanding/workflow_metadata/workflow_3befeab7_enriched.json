@@ -1,0 +1,154 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3befeab7",
+  "workflow_id": "3befeab7",
+  "workflow_id_display": "3befeab7",
+  "workflow_name": "Send a ChatGPT email reply and save responses to Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "40",
+  "tools_integrations": "Email, Excel, Google Sheets, OpenAI, RSS, Webhook",
+  "tags": [
+    "Webhook🤖 Chatbot🤖 AI🤖 Email Automation"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Generate and send email replies using ChatGPT while logging responses to Google Sheets.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "On email received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Identify trigger #2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Identify trigger #1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate reply",
+      "type": "Process"
+    },
+    {
+      "name": "Create spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Paste data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create or update rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send feedback for fine-tuned data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate UUID",
+      "type": "Process"
+    },
+    {
+      "name": "Thanks for your response!",
+      "type": "Process"
+    },
+    {
+      "name": "Extract message content (advanced)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Successfully created or updated row",
+      "type": "Process"
+    },
+    {
+      "name": "Store spreadsheet ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get data from `Format data`",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get data from `Format data` node",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send email reply",
+      "type": "Process"
+    },
+    {
+      "name": "On feedback given",
+      "type": "Trigger"
+    },
+    {
+      "name": "Show HTML page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get sheet IDs #1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store specific sheet IDs #2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get sheet IDs #2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store specific sheet IDs #1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email template",
+      "type": "Process"
+    },
+    {
+      "name": "Record feedback",
+      "type": "Process"
+    },
+    {
+      "name": "Fallback route",
+      "type": "Process"
+    },
+    {
+      "name": "Do not send unfinished email reply",
+      "type": "Process"
+    },
+    {
+      "name": "Do not send email to this recipient",
+      "type": "Process"
+    },
+    {
+      "name": "Send reply to database",
+      "type": "Process"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

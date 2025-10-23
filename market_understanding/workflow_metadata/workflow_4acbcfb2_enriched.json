@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4acbcfb2",
+  "workflow_id": "4acbcfb2",
+  "workflow_id_display": "4acbcfb2",
+  "workflow_name": "AI-powered WooCommerce Support-Agent",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Email, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "No email provided",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No customer found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Tracking Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No order found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Error Information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Example encrypted email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mock Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Orders",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Order and Tracking Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Tracking Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "WooCommerce - Get User",
+      "type": "Process"
+    },
+    {
+      "name": "WooCommerce Get Orders",
+      "type": "Data Input"
+    },
+    {
+      "name": "WooCommerce_Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Example Page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Decrypt email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Encrypt email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Decrypt email address",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

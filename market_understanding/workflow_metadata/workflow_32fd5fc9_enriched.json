@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/32fd5fc9",
+  "workflow_id": "32fd5fc9",
+  "workflow_id_display": "32fd5fc9",
+  "workflow_name": "Export & Organize Technology Stack Data From BuiltWith to Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export BuiltWith technology stack data to Google Sheets for real-time analysis, reporting, and team collaboration. Quick setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Domains from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch detail via BuiltWith",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Tech Stack Info",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

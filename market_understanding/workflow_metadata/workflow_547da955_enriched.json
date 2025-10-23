@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/547da955",
+  "workflow_id": "547da955",
+  "workflow_id_display": "547da955",
+  "workflow_name": "List recent ServiceNow Incidents in Slack Using Pop Up Modal",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate ServiceNow incident monitoring and reporting in Slack with interactive forms, instant results, and smart error handling. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Incident Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Slack Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Close Modal Popup",
+      "type": "Trigger"
+    },
+    {
+      "name": "ServiceNow Modal",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send 200",
+      "type": "Trigger"
+    },
+    {
+      "name": "ServiceNow",
+      "type": "Process"
+    },
+    {
+      "name": "Sort by Most Recent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retain First 5 Incidents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Concatenate Incident Details",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Slack Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,259 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0cb31ca1",
+  "workflow_id": "0cb31ca1",
+  "workflow_id_display": "0cb31ca1",
+  "workflow_name": "AI Personal Assistant with GPT-4o, RAG & Voice for WhatsApp using Supabase",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "64",
+  "tools_integrations": "OpenAI, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Amanda Benks",
+  "author_profile_url": "https://n8n.io/creators/amanda/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Transform WhatsApp with an AI assistant powered by GPT-4o & Supabase. Handle text, voice, docs & images. Multi-channel, easy setup, enterprise-ready—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with postgres, redis, textSplitterRecursiveCharacterTextSplitter"
+  ],
+  "nodes": [
+    {
+      "name": "edit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "edit2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "arquivo_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "exportar_texto",
+      "type": "Data Processing"
+    },
+    {
+      "name": "base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "base",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "tratamento",
+      "type": "Data Processing"
+    },
+    {
+      "name": "config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "mensagem_cliente",
+      "type": "Data Processing"
+    },
+    {
+      "name": "mensagem_cliente_inicial",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Puxar as Mensagens",
+      "type": "Process"
+    },
+    {
+      "name": "Database",
+      "type": "Process"
+    },
+    {
+      "name": "Lista Mensagens1",
+      "type": "Process"
+    },
+    {
+      "name": "setar_supabase_tabelas_vectoriais",
+      "type": "Data Output"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "deletar_arquivos_antigos",
+      "type": "Process"
+    },
+    {
+      "name": "extrair_pdf",
+      "type": "Data Output"
+    },
+    {
+      "name": "supabase_vectorstore",
+      "type": "Process"
+    },
+    {
+      "name": "agendamentos",
+      "type": "Process"
+    },
+    {
+      "name": "criar_cerebro",
+      "type": "Data Output"
+    },
+    {
+      "name": "puxar_prompt",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Deletar_todas_as_mensagens1",
+      "type": "Data Output"
+    },
+    {
+      "name": "convert_to_file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Database Data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "resumo",
+      "type": "Process"
+    },
+    {
+      "name": "criar_rag_controle",
+      "type": "Data Output"
+    },
+    {
+      "name": "atualizar_lista_de_arquivos",
+      "type": "Data Output"
+    },
+    {
+      "name": "rag_resumos",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Database Data2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "excluir_rag_arquivo",
+      "type": "Process"
+    },
+    {
+      "name": "emails",
+      "type": "Process"
+    },
+    {
+      "name": "adicionar_conhecimento",
+      "type": "Process"
+    },
+    {
+      "name": "buscar_conhecimento",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "atualizar_prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "recepcionista",
+      "type": "Process"
+    },
+    {
+      "name": "classificador_de_intencao",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Database Data3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "excluir_conhecimento",
+      "type": "Process"
+    },
+    {
+      "name": "deletar_arquivo",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres Chat Memory1",
+      "type": "Data Output"
+    },
+    {
+      "name": "deletar_conhecimento",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

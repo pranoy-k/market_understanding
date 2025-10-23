@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e1e9dc6f",
+  "workflow_id": "e1e9dc6f",
+  "workflow_id_display": "e1e9dc6f",
+  "workflow_name": "Transf meeting booking into Notion's Task with verified information",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Calendly bookings to Notion, enrich contacts, and centralize tasks for streamlined workflow management. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with calendlyTrigger, dropcontact, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

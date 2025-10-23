@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f633f9eb",
+  "workflow_id": "f633f9eb",
+  "workflow_id_display": "f633f9eb",
+  "workflow_name": "Send Motivational Quotes to Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "API, Slack",
+  "tags": [
+    "slack",
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Èugui DragoÈ",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Inspire your team with a Slack bot that shares 3 motivational quotes daily—no API key needed. Easy setup for more productivity and positive energy!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, code, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "18:00 – Evening Motivation",
+      "type": "Trigger"
+    },
+    {
+      "name": "13:00 – Midday Reminder",
+      "type": "Trigger"
+    },
+    {
+      "name": "08:00 – Morning Boost",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Slack Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Daily Quote (ZenQuotes API)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Fetch Daily Quote (ZenQuotes API)",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

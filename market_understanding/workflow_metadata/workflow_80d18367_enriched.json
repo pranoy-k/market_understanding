@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/80d18367",
+  "workflow_id": "80d18367",
+  "workflow_id_display": "80d18367",
+  "workflow_name": "Transcribe audio files with Google Gemini and Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "google",
+    "telegram",
+    "gemini"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transcribe Telegram audio messages for free using Google Gemini. Fast, accurate, and easy setup—perfect for creators, coaches, and educators. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Process every uploaded file in a folder",
+      "type": "Trigger"
+    },
+    {
+      "name": "initialize upload session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ask Gemini to transcribe",
+      "type": "Data Input"
+    },
+    {
+      "name": "Text messages go this way",
+      "type": "Process"
+    },
+    {
+      "name": "Read Files from Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download file from URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download file from Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Receive using webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4131473d",
+  "workflow_id": "4131473d",
+  "workflow_id_display": "4131473d",
+  "workflow_name": "SSL Certificate Expiry Notifier (No Paid APIs)",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Email, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Evoort Solutions",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor SSL expiry for multiple sites with daily automated checks, email alerts, and Google Sheets integration—no paid APIs needed. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "URLs to Monitor",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check SSL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

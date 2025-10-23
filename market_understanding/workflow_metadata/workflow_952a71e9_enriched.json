@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/952a71e9",
+  "workflow_id": "952a71e9",
+  "workflow_id_display": "952a71e9",
+  "workflow_name": "AI Speech Coach & Generator using Telegram, Open AI and Gemini",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "RSS, Telegram",
+  "tags": [
+    "telegram",
+    "gemini"
+  ],
+  "author_name": "NanaB",
+  "author_profile_url": "https://n8n.io/creators/nanabrown/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Transform your speechwriting with instant AI coaching on Telegram. Receive expert feedback, improve your drafts, and generate polished speeches fast. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, memoryManager, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Recieve Telegram Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check For Text or Voice Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set prompt to start a new speech",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set prompt to generate a speech based on the feedback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set prompt to provide feedback on speech",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transcribe Audio File",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Code to remove unwanted characters from LLM response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code to split output into chunks under 4000 characters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wipe Conversation Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Store Conversation Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

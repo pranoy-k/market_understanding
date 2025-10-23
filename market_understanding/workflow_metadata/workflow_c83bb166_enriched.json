@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c83bb166",
+  "workflow_id": "c83bb166",
+  "workflow_id_display": "c83bb166",
+  "workflow_name": "Insert Excel data to Postgres",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, PostgreSQL",
+  "tags": [
+    "postgres",
+    "excel",
+    "json"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert XLS files to JSON and import into Postgres. Streamline your data workflow with fast, accurate, and seamless integration. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with postgres, spreadsheetFile, readBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert Rows1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

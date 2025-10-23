@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/adfe3d66",
+  "workflow_id": "adfe3d66",
+  "workflow_id_display": "adfe3d66",
+  "workflow_name": "Search LinkedIn companies and add them to Airtable CRM",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Airtable, LinkedIn",
+  "tags": [
+    "linkedin🗄"
+  ],
+  "author_name": "Matthieu",
+  "author_profile_url": "https://n8n.io/creators/yaznow/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn company searches and add qualified leads to Airtable CRM. Save time, prevent errors, and build a robust, targeted prospect database. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check If Company Exists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Company to CRM",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process Each Company",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Company Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Companies",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Company Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

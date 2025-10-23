@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/347c277d",
+  "workflow_id": "347c277d",
+  "workflow_id_display": "347c277d",
+  "workflow_name": "Automated Facebook Comment Management with GPT-4o and LangChain",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Facebook, OpenAI",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "Amanda Benks",
+  "author_profile_url": "https://n8n.io/creators/amanda/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Facebook page engagement with AI. Instantly reply, message, and manage posts using Meta API, GPT-4o, and LangChain. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "🗂️ MCP Facebook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Facebook Mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Facebook",
+      "type": "Process"
+    },
+    {
+      "name": "Search Media",
+      "type": "Data Input"
+    },
+    {
+      "name": "Media Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Comment",
+      "type": "Data Input"
+    },
+    {
+      "name": "Reply Comment",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Direct Message",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,152 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a21c35af",
+  "workflow_id": "a21c35af",
+  "workflow_id_display": "a21c35af",
+  "workflow_name": "Compare Sequential, Agent-Based, and Parallel LLM Processing with Claude 3.7",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "31",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Eduard",
+  "author_profile_url": "https://n8n.io/creators/eduard/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover three effective LLM chaining methods with Claude 3.7 Sonnet. Compare simplicity, speed & context to optimize your AI workflows. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, memoryManager, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Initial prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reshape",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initial prompts1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Clean memory",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain4",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "CONNECT ME",
+      "type": "Process"
+    },
+    {
+      "name": "CONNECT ME1",
+      "type": "Process"
+    },
+    {
+      "name": "CONNECT ME2",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Chain - Step 1",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Chain - Step 2",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Chain - Step 3",
+      "type": "Process"
+    },
+    {
+      "name": "LLM Chain - Step 4",
+      "type": "Process"
+    },
+    {
+      "name": "All LLM steps here - sequentially",
+      "type": "Process"
+    },
+    {
+      "name": "LLM steps - parallel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge output with initial prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge output with initial prompts1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

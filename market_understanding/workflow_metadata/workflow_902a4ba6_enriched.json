@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/902a4ba6",
+  "workflow_id": "902a4ba6",
+  "workflow_id_display": "902a4ba6",
+  "workflow_name": "Backup Tag-Selected Workflows to Gitlab",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Hubschrauber",
+  "author_profile_url": "https://n8n.io/creators/hubschrauber/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up n8n workflows to GitLab by tags. Auto-detect changes, generate clean filenames, and track backups with date-stamped commits. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Backup Now - Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Derive Filename From Workflow Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create New File(s)",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Existing File(s)",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Existing File Content",
+      "type": "Process"
+    },
+    {
+      "name": "Skip Unchanged Files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch List of Existing Files",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Gitlab Existing Files as Single List Item",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

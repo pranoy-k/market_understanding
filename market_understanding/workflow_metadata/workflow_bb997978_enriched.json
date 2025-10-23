@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bb997978",
+  "workflow_id": "bb997978",
+  "workflow_id_display": "bb997978",
+  "workflow_name": "INSEE Company Data Enrichment for Agile CRM (For French companies only)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Johan Denoyer",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Agile CRM with French INSEE OpenData to enrich company records with verified addresses and SIREN IDs. Secure, easy, and reliable.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Insee API Key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Company in SIREN database",
+      "type": "Data Input"
+    },
+    {
+      "name": "Request all data from SIREN database",
+      "type": "Data Input"
+    },
+    {
+      "name": "FilterOut all Company that have the ReadOnly Key set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "clean_route",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Compagnies from Agile CRM",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich CRM with INSEE Data",
+      "type": "Process"
+    },
+    {
+      "name": "Merge data from CRM and SIREN database with enriched for the CRM",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Set Insee API Key"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

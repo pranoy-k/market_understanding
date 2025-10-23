@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b6ec10df",
+  "workflow_id": "b6ec10df",
+  "workflow_id_display": "b6ec10df",
+  "workflow_name": "Smart Job Search: Resume Scoring & Tailoring with OpenAI, Apify, and Airtable",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, Airtable, OpenAI",
+  "tags": [],
+  "author_name": "Ashish Kumar Swain",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, airtable, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "🕒 Trigger: Daily Job Fetch",
+      "type": "Trigger"
+    },
+    {
+      "name": "📄 Parse AI Score Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "✍️ AI: Revamp CV Based on Job",
+      "type": "Process"
+    },
+    {
+      "name": "📄 Fetch Job Preferences (Google Sheets)",
+      "type": "Data Output"
+    },
+    {
+      "name": "🗂️ Archive: Old Jobs (Airtable)",
+      "type": "Data Output"
+    },
+    {
+      "name": "🗂️ Save: Final Job Data (Airtable)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Job Preferences",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Job Extract with revamped scoring",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🔄 Loop: Search Jobs per Preference",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🔍 Apify: Scrape Jobs",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧹 Clean & Extract Job Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🔄 Loop: Score New Jobs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🤖 AI: Score CV vs Job",
+      "type": "Process"
+    },
+    {
+      "name": "🔄 Loop: Generate CV Suggestions",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "AI: Score CV vs Job",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

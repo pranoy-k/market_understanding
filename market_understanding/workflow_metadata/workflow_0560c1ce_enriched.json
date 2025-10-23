@@ -1,0 +1,144 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0560c1ce",
+  "workflow_id": "0560c1ce",
+  "workflow_id_display": "0560c1ce",
+  "workflow_name": "Convert n8n tags into folders and move workflows",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Imperol",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert n8n tags into folders to streamline workflow management. Beginner-friendly, fast setup—organize your workflows in just a few clicks!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "set credentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normalize names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set folder name + id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set folder name + id1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set global",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "pass all items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "extract name from form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "tags to string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "login n8n",
+      "type": "Data Input"
+    },
+    {
+      "name": "get tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "my-projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "filter owned projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get folders",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Move workflow to folder",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create folders",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "end import",
+      "type": "Data Input"
+    },
+    {
+      "name": "select tags to move",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out the tags",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/67c02f72",
+  "workflow_id": "67c02f72",
+  "workflow_id_display": "67c02f72",
+  "workflow_name": "Sync Zendesk tickets to Pipedrive contact owners",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Zendesk tickets with Pipedrive contacts daily at 09:00. Automate ticket updates, contact matching, and comment syncing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, if, set"
+  ],
+  "nodes": [
+    {
+      "name": "Get last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set new last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename fields and keep only needed fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set search email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Zendesk comments for tickets",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add comments to tickets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Pipedrive person Id to Zendesk tickets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get tickets updated after last execution",
+      "type": "Process"
+    },
+    {
+      "name": "Search persons by email",
+      "type": "Process"
+    },
+    {
+      "name": "Remove duplicates to make search efficient",
+      "type": "Process"
+    },
+    {
+      "name": "Process commenst per ticket",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split comments to seperate items",
+      "type": "Process"
+    },
+    {
+      "name": "Add comment as a note in Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp2",
+      "type": "Process"
+    },
+    {
+      "name": "Every day at 09:00",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

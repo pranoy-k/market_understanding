@@ -1,0 +1,32 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d605298e",
+  "workflow_id": "d605298e",
+  "workflow_id_display": "d605298e",
+  "workflow_name": "Receive updates for Bitbucket events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost productivity with our seamless companion workflow for Bitbucket Trigger. Instantly automate tasks, customize easily, and streamline integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with bitbucketTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Bitbucket Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

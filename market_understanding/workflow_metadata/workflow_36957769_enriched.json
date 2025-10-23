@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/36957769",
+  "workflow_id": "36957769",
+  "workflow_id_display": "36957769",
+  "workflow_name": "Facebook Ads Competitive Analysis using Gemini and Open AI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Facebook, Google Sheets",
+  "tags": [
+    "facebook",
+    "google",
+    "gemini"
+  ],
+  "author_name": "Archit Jain",
+  "author_profile_url": "https://n8n.io/creators/architjn/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Uncover Facebook ad insights with AI-powered analysis and effortless setup in n8n. Filter, analyze, and export ad data to Google Sheets in minutes.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Final Image Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Video Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Save",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Ads",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Gemini Video Decode",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

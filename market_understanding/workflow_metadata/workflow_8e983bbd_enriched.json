@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e983bbd",
+  "workflow_id": "8e983bbd",
+  "workflow_id_display": "8e983bbd",
+  "workflow_name": "Generate 360° Virtual Try-on Videos for Clothing with Kling API (unofficial)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PiAPI",
+  "author_profile_url": "https://n8n.io/creators/piapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create 360° virtual try-on videos with the Kling API workflow—ideal for fashion brands, e-commerce, and creators. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Preset Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Final Video URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Kling Virtual Try-On Task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Kling Video Task",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate kling video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Kling Virtual Try-On Task",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

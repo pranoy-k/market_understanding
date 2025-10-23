@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/942323c2",
+  "workflow_id": "942323c2",
+  "workflow_id_display": "942323c2",
+  "workflow_name": "Google Trend Data Extract & Summarization with Bright Data & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract, summarize, and distribute Google Trends data with automated AI insights—perfect for marketers, researchers, and SEO pros. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Markdown to Textual Data Extraction",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model for Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structured Data Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Google Trends",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Summarization",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the file to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model for Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Structured Data Extract",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

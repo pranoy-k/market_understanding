@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2a2af5bd",
+  "workflow_id": "2a2af5bd",
+  "workflow_id_display": "2a2af5bd",
+  "workflow_name": "Reliable AI Agent Output Without Structured Output Parser - w/ OpenAI & Switch",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "json🤖 openai"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": "https://n8n.io/creators/dataki/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Ensure reliable AI output in valid JSON format—no Structured Output Parser needed. Get accurate nutritional data using gpt-4.1-nano. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with switch, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Validate Output + Set `aiRunIndex`",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Schema Error Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Valid Schema Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set schemaValidationError & lastAgentOutput",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set chat Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

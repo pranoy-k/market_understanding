@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90042ae0",
+  "workflow_id": "90042ae0",
+  "workflow_id_display": "90042ae0",
+  "workflow_name": "Summarise MS Teams Channel Activity for Weekly Reports with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly summarize your team’s MS Teams chat activity with AI-powered weekly reports. Stay aligned, save time, and keep every insight on track. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge Report With User Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Latest Channel Messages",
+      "type": "Process"
+    },
+    {
+      "name": "Team Member Weekly Report Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Reports to Single List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Team Weekly Report Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Send Report to Channel",
+      "type": "Process"
+    },
+    {
+      "name": "Group Messages By UserId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Groups to Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

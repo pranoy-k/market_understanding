@@ -1,0 +1,77 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7f0ed6fb",
+  "workflow_id": "7f0ed6fb",
+  "workflow_id_display": "7f0ed6fb",
+  "workflow_name": "Auto-Generate AI News Commentary with Dumpling AI and GPT-4o",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "12",
+  "tools_integrations": "LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn trending news into insightful, first-person LinkedIn posts. Automate sourcing, writing, and drafting with AI for easy, daily content. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Run on Schedule (Daily)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate LinkedIn Commentary (GPT-4o)",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Topics with Empty Commentary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Append Commentary Back to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Through Each Topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search News with Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Returned News Articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Article Content with Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Scraped Article Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Article Content",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

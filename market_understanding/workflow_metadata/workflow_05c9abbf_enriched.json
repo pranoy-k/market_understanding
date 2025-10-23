@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/05c9abbf",
+  "workflow_id": "05c9abbf",
+  "workflow_id_display": "05c9abbf",
+  "workflow_name": "Backup workflows to GitHub",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate nightly workflows at 23:59 with customizable scheduling. Securely connect GitHub and n8n using Basic Auth. Learn how to set it up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, httpRequest, github"
+  ],
+  "nodes": [
+    {
+      "name": "Transform",
+      "type": "Data Processing"
+    },
+    {
+      "name": "transform",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GitHub Edit",
+      "type": "Process"
+    },
+    {
+      "name": "Get Files",
+      "type": "Process"
+    },
+    {
+      "name": "Create file",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get workflows",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get workflow data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Raw Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Daily at 23:59",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

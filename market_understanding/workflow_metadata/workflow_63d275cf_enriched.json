@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/63d275cf",
+  "workflow_id": "63d275cf",
+  "workflow_id_display": "63d275cf",
+  "workflow_name": "Perform email searches with Icypeas (bulk)",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Corentin Ribeyre",
+  "author_profile_url": "https://n8n.io/creators/corentinribeyre/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily verify email addresses by connecting Google Sheets to Icypeas. Secure, accurate, and fast email validation—no coding needed. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reads lastname,firstname and company from your sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Authenticates to your Icypeas account",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run bulk search (email-search)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

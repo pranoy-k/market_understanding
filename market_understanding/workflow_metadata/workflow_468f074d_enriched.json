@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/468f074d",
+  "workflow_id": "468f074d",
+  "workflow_id_display": "468f074d",
+  "workflow_name": "AI Testimonial Extractor Agent: Feedback to Marketing Gold",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn customer feedback into powerful testimonial quotes with AI. Instantly build a marketing-ready, searchable database. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, chainLlm, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "New Form Response Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save Extracted Testimonial",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Testimonial with Gemini",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b41abad",
+  "workflow_id": "9b41abad",
+  "workflow_id_display": "9b41abad",
+  "workflow_name": "Personalized Taiwan Indie Music Recommendations with AI, Star Sign & Weather via Spotify",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "clancy jack",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Discover personalized Taiwan indie music picks based on your city, mood, birthday, weather, and zodiac sign—plus Spotify links! Learn more now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lmChatOpenAi, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Final Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "infomation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get song recommendation",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

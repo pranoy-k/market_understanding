@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f3fc72d7",
+  "workflow_id": "f3fc72d7",
+  "workflow_id_display": "f3fc72d7",
+  "workflow_name": "Real-time Weather Forecasts with GPT-4o-mini and MCP Weather Tool",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "JaredCo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get real-time weather forecasts—no API key needed! Instantly integrate live weather updates into n8n workflows with this preconfigured MCP solution.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "🧪 Enter weather request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "MCP - WeatherTrax",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧪 View Results Here",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

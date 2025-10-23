@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/991a3c4c",
+  "workflow_id": "991a3c4c",
+  "workflow_id_display": "991a3c4c",
+  "workflow_name": "Find and share mentions from Twitter and Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Slack, Twitter",
+  "tags": [
+    "twitter",
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor Twitter for your company mentions and share them in Slack. Stay updated, boost team awareness, and never miss brand conversations!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, dateTime, set"
+  ],
+  "nodes": [
+    {
+      "name": "Filter Tweet Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run Every 10 Minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Now - 10 minutes",
+      "type": "Process"
+    },
+    {
+      "name": "Get last 50 mentions",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

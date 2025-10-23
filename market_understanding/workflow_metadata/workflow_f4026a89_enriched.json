@@ -1,0 +1,152 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f4026a89",
+  "workflow_id": "f4026a89",
+  "workflow_id_display": "f4026a89",
+  "workflow_name": "AI-Powered YouTube Meta Generator with GPT-4o, Gemini & Content Enrichment",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Facebook, OpenAI, YouTube",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate SEO-optimized YouTube titles, descriptions, tags, and affiliate links with AI in n8n. Boost discoverability—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, xml"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get all Posts for AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "EGet Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Vidoe List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Title Description Tags and Hashtags",
+      "type": "Process"
+    },
+    {
+      "name": "important_links",
+      "type": "Data Output"
+    },
+    {
+      "name": "Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Details of Video from Youtube",
+      "type": "Process"
+    },
+    {
+      "name": "Get Post SiteMap",
+      "type": "Data Input"
+    },
+    {
+      "name": "Conver to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Extract URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "URL Lists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Youtube Meta Data",
+      "type": "Process"
+    },
+    {
+      "name": "Get Youtube Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Videos",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Relevant Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Releated Blog",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Youtube Metadata Generator1",
+      "type": "Process"
+    },
+    {
+      "name": "Get Youtube Video Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Related Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Formatted Blog Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Video Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Related Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatted Hashtags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Formatted Tags",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

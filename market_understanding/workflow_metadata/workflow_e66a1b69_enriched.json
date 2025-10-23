@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e66a1b69",
+  "workflow_id": "e66a1b69",
+  "workflow_id_display": "e66a1b69",
+  "workflow_name": "Generate Sales Leads with Yelp & Trustpilot Scraping + AI-Powered Email Outreach",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "API, Email",
+  "tags": [],
+  "author_name": "Incrementors",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead generation by scraping Yelp & Trustpilot, analyzing reviews with AI, and sending personalized outreach emails. Fast setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Form Trigger - Get User Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Trustpilot Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Parse Email JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Yelp Data to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Yelp Sheet Websites",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Trustpilot Data to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Emails from Trustpilot Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Location Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "Split Sub-locations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Yelp Locations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Yelp Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Yelp Scrape Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Yelp Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean Unique Websites",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Make Trustpilot URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicate TP URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Trustpilot URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Trustpilot Scrape Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Trustpilot Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Unique Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Generate Email Content",
+      "type": "Process"
+    },
+    {
+      "name": "Gemini - Location AI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Claude - Email AI Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

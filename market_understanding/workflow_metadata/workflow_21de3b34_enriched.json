@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21de3b34",
+  "workflow_id": "21de3b34",
+  "workflow_id_display": "21de3b34",
+  "workflow_name": "Create Content from Form Inputs and Save it to Google Drive using AI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Google Drive, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Francis Njenga",
+  "author_profile_url": "https://n8n.io/creators/gatura/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate high-quality article creation with AI. Organize content in Google Drive, track progress in Google Sheets, and streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "receive_topic",
+      "type": "Trigger"
+    },
+    {
+      "name": "input_brief",
+      "type": "Data Processing"
+    },
+    {
+      "name": "new_lines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "input_sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "section_text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "final_article",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set_introduction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "topic_variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set_section_content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "section_paragraphs",
+      "type": "Process"
+    },
+    {
+      "name": "change_section_format",
+      "type": "Process"
+    },
+    {
+      "name": "create_outline",
+      "type": "Process"
+    },
+    {
+      "name": "add_row",
+      "type": "Data Output"
+    },
+    {
+      "name": "update_article_link",
+      "type": "Data Output"
+    },
+    {
+      "name": "create_folder",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "markdown_to_file",
+      "type": "Data Output"
+    },
+    {
+      "name": "split_out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "add_2_new_lines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "final_article_file",
+      "type": "Data Output"
+    },
+    {
+      "name": "upload_fiinalArticle",
+      "type": "Process"
+    },
+    {
+      "name": "upload_outline_file",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

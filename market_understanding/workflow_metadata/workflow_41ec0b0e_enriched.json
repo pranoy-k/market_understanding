@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/41ec0b0e",
+  "workflow_id": "41ec0b0e",
+  "workflow_id_display": "41ec0b0e",
+  "workflow_name": "Translate PDF documents from Google drive folder with DeepL",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "API, Google Drive, PDF",
+  "tags": [
+    "google",
+    "api",
+    "pdf"
+  ],
+  "author_name": "Milorad Filipovic",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly translate PDFs in your Google Drive with automatic uploads. Easy setup using DeepL API. Streamline document translation—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Run manually",
+      "type": "Trigger"
+    },
+    {
+      "name": "⚙️ config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get files from specified folder",
+      "type": "Process"
+    },
+    {
+      "name": "Use only PDF documents",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download files",
+      "type": "Process"
+    },
+    {
+      "name": "Send translate request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check translation status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get translated document from deepL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Uplad to original folder",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

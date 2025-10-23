@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df694d70",
+  "workflow_id": "df694d70",
+  "workflow_id_display": "df694d70",
+  "workflow_name": "TinyURL Shortener via Webhook",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "ist00dent",
+  "author_profile_url": "https://n8n.io/creators/ist00dent/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate URL shortening in n8n with this TinyURL template—create custom short links, streamline sharing, and boost your workflow efficiency. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with stickyNote, httpRequest, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Create TinyURL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Receive Link Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Shortened URL",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

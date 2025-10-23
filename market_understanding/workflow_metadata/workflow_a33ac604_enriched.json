@@ -1,0 +1,102 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a33ac604",
+  "workflow_id": "a33ac604",
+  "workflow_id_display": "a33ac604",
+  "workflow_name": "URL and IP lookups through Greynoise and VirusTotal",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Email, Gmail, Slack",
+  "tags": [
+    "slack🤖 gmail"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set IP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "VirusTotal Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Greynoise Summary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "VirusTotal result",
+      "type": "Data Input"
+    },
+    {
+      "name": "DNS Lookup",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set IP From Lookup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge VirusTotal & Greynoise results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start VirusTotal Scan",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get List of URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Greynoise results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine looped items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GreyNoise RIOT lookup",
+      "type": "Data Input"
+    },
+    {
+      "name": "GreyNoise IP Check",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

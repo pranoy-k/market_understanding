@@ -1,0 +1,71 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82e04d26",
+  "workflow_id": "82e04d26",
+  "workflow_id_display": "82e04d26",
+  "workflow_name": "Send a message to Telegram on a new item saved to Reader",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Nicolas",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically notify your Telegram channel of new Reader items. Easy n8n workflow setup, efficient, customizable, and prevents duplicate alerts. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set new update time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split into baches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Binary to json",
+      "type": "Process"
+    },
+    {
+      "name": "Json to binary",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

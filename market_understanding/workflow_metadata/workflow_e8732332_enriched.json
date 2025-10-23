@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e8732332",
+  "workflow_id": "e8732332",
+  "workflow_id_display": "e8732332",
+  "workflow_name": "Transform Images with AI Prompts using FLUX Kontext, Google Sheets and Drive",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Google Drive, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate AI-powered image creation from Google Sheets prompts using FLUX Kontext. Instantly save to Google Drive—perfect for e-commerce & social media!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update result",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get new image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image Url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Process"
+    },
+    {
+      "name": "Create Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image File",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

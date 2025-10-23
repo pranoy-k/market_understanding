@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2ba90467",
+  "workflow_id": "2ba90467",
+  "workflow_id_display": "2ba90467",
+  "workflow_name": "AI-Powered Crypto Analysis Using OpenRouter, Gemini, and SerpAPI",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API",
+  "tags": [
+    "gemini"
+  ],
+  "author_name": "Udit Rawat",
+  "author_profile_url": "https://n8n.io/creators/ailistmaster/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate crypto trend analysis with n8n: AI-powered candlestick chart insights, real-time data, and news integration for smarter trading decisions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with toolSerpApi, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Provide Crypto Symbol",
+      "type": "Trigger"
+    },
+    {
+      "name": "crypto_symbol",
+      "type": "Data Processing"
+    },
+    {
+      "name": "5m_Chart",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "1d_Chart",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Long Term Agent",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

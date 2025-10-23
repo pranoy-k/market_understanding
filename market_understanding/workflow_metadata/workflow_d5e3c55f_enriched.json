@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d5e3c55f",
+  "workflow_id": "d5e3c55f",
+  "workflow_id_display": "d5e3c55f",
+  "workflow_name": "Automatically prune n8n execution history",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Danger",
+  "author_profile_url": "https://n8n.io/creators/dangerblack/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Keep your n8n instance clean and efficient—automatically prune old workflow executions with customizable retention, daily scheduling, and easy setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "n8n1",
+      "type": "Process"
+    },
+    {
+      "name": "n8n list execution",
+      "type": "Process"
+    },
+    {
+      "name": "delete execution",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

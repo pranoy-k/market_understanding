@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f2373b16",
+  "workflow_id": "f2373b16",
+  "workflow_id_display": "f2373b16",
+  "workflow_name": "Auto-Post Breaking News Content Using Perplexity AI to X (Twitter)",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "twitter",
+    "Scheduled"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-generate and publish trending insights on X (Twitter) with n8n and Perplexity AI. Automate content, save time, and boost engagement!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with twitter, set, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "searchQuery",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set API key",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "set API key"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

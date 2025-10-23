@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a2627b24",
+  "workflow_id": "a2627b24",
+  "workflow_id_display": "a2627b24",
+  "workflow_name": "Auto-Ticket Maker: Convert Slack Conversations into Structured Project Tickets",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Cristiano Varriale",
+  "author_profile_url": "https://n8n.io/creators/varritech/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly turn Slack chats into detailed project tickets with AI. Cut PM time by 90%, standardize quality, and streamline workflows—no training needed.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI PM Wellington",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

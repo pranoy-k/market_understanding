@@ -1,0 +1,223 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b6ad2ff0",
+  "workflow_id": "b6ad2ff0",
+  "workflow_id_display": "b6ad2ff0",
+  "workflow_name": "Ultimate Scraper Workflow for n8n",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "56",
+  "tools_integrations": "API, OpenAI, Webhook",
+  "tags": [
+    "Web Scraping",
+    "Webhook"
+  ],
+  "author_name": "Pablo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 ai research rag & data analysis Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "A comprehensive web scraping solution for n8n that handles various website types and data extraction needs.",
+  "key_benefits": [
+    "Data extraction and monitoring"
+  ],
+  "nodes": [
+    {
+      "name": "Edit Fields (For testing prupose )",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Extract First Url Match",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Webdriver",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Session1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Success with cookie",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Session5",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Inject Cookie",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond to Webhook3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Go on url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session6",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google search Query",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Selenium Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ScreenShot 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Refresh browser",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ScreenShot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Session7",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ScreenShot 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Go on ip-api.com",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Session8",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error can't find url",
+      "type": "Trigger"
+    },
+    {
+      "name": "Resize browser window",
+      "type": "Data Input"
+    },
+    {
+      "name": "Information Extractor1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Information Extractor2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Go on url1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Go on url2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Go on url3",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

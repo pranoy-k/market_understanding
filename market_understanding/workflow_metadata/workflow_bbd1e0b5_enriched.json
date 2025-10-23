@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bbd1e0b5",
+  "workflow_id": "bbd1e0b5",
+  "workflow_id_display": "bbd1e0b5",
+  "workflow_name": "YouTube Comment Sentiment Analysis with Google Gemini AI and Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, YouTube",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically analyze YouTube comments with AI, track sentiment in Google Sheets, and monitor real-time trends. No coding required—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "nextPageToken",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ID Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save comments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get comments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update sentiment",
+      "type": "Data Output"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get API Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini",
+      "type": "Process"
+    },
+    {
+      "name": "QuickChart",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Get API Comments"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

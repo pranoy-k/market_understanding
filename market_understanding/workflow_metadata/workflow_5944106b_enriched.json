@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5944106b",
+  "workflow_id": "5944106b",
+  "workflow_id_display": "5944106b",
+  "workflow_name": "Set credentials dynamically using expressions",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Deborah",
+  "author_profile_url": "https://n8n.io/creators/deborah/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Set up dynamic NASA API authentication in n8n! Collect keys via form, automate credential use, and retrieve Astronomy Picture of the Day. Learn how.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with nasa, formTrigger, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "NASA",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

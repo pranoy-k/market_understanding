@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/899a4713",
+  "workflow_id": "899a4713",
+  "workflow_id_display": "899a4713",
+  "workflow_name": "Monitor and Track brand Sentiment on Facebook Groups with Bright data",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Facebook, Google Sheets",
+  "tags": [
+    "facebook",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Imperol",
+  "author_profile_url": "https://n8n.io/creators/imperolq/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Track brand mentions and sentiment across Facebook groups, analyze insights in Google Sheets, and get real-time updates. Ideal for brands and SaaS owners—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, limit, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set up KEYS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "pull group results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "insights and sentiments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Brand names",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get links",
+      "type": "Data Output"
+    },
+    {
+      "name": "update last Scrap",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update sentiments",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Brand names1",
+      "type": "Data Output"
+    },
+    {
+      "name": "facebook groups",
+      "type": "Data Input"
+    },
+    {
+      "name": "get progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Filter brand name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate brand names",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate group links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Receive results",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

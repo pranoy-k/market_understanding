@@ -1,0 +1,57 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8fc63d6",
+  "workflow_id": "a8fc63d6",
+  "workflow_id_display": "a8fc63d6",
+  "workflow_name": "AI-Powered Chatbot Workflow with MySQL Database Integration",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "MySQL, OpenAI",
+  "tags": [
+    "mysql🗄"
+  ],
+  "author_name": "Gegenfeld",
+  "author_profile_url": "https://n8n.io/creators/gegenfeld/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly deploy an AI chatbot to query your MySQL database using natural language. Integrate with n8n, store chat history, and customize easily. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with mySqlTool, agent, lmChatGroq"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat History",
+      "type": "Process"
+    },
+    {
+      "name": "MySQL",
+      "type": "Data Output"
+    },
+    {
+      "name": "MySQL Schema",
+      "type": "Data Output"
+    },
+    {
+      "name": "MySQL Definition",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cb37d5ee",
+  "workflow_id": "cb37d5ee",
+  "workflow_id_display": "cb37d5ee",
+  "workflow_name": "Extract and Save Invoice Data from Google Drive to Sheets with Dumpling AI",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive, Google Sheets, PDF",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate digital invoice processing: monitor Google Drive for new PDFs, extract data with Dumpling AI, and update Google Sheets—fast, error-free, customizable.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, code, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger – Watch Folder for New Files",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Dumpling AI JSON Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Data to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download Invoice File",
+      "type": "Process"
+    },
+    {
+      "name": "Convert invoice File to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Send file to Dumpling AI for Data Extraction",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split line Items from Invoice",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

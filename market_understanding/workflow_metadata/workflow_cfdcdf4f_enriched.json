@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfdcdf4f",
+  "workflow_id": "cfdcdf4f",
+  "workflow_id_display": "cfdcdf4f",
+  "workflow_name": "Indeed Data Scraper & Summarization with Airtable, Bright Data & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Airtable",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly scrape and summarize Indeed company data with Bright Data, Google Gemini, and Airtable. Streamline research and gain AI-powered insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model For Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Perform Indeed Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Indeed Expert AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Markdown to HTML Response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Indeed Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

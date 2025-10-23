@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4b0290e0",
+  "workflow_id": "4b0290e0",
+  "workflow_id_display": "4b0290e0",
+  "workflow_name": "Generate Youtube Video Metadata (Timestamps, Tags, Description, ...)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Facebook, YouTube",
+  "tags": [],
+  "author_name": "Nasser",
+  "author_profile_url": "https://n8n.io/creators/nasser/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube uploads: detect new videos, enrich metadata with AI, and update content—ideal for creators, marketers, and automation teams. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, youTube, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger New Video Posted",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing1",
+      "type": "Process"
+    },
+    {
+      "name": "Check IF Finished",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get DataSet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scrape Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Description",
+      "type": "Process"
+    },
+    {
+      "name": "Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update YTB Video",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

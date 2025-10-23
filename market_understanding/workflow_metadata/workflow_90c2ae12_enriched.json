@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/90c2ae12",
+  "workflow_id": "90c2ae12",
+  "workflow_id_display": "90c2ae12",
+  "workflow_name": "Database alerts with Notion and SIGNL4",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Ron",
+  "author_profile_url": "https://n8n.io/creators/rons4/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Monitor machine status in real time with Notion and SIGNL4. Get instant alerts on downtime, auto-close resolved issues, and streamline industrial monitoring.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, interval, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Notion Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion Update",
+      "type": "Process"
+    },
+    {
+      "name": "Interval",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Resolve",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Alert",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Update Read",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Read Open",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Read New",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Update Final",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Alert 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

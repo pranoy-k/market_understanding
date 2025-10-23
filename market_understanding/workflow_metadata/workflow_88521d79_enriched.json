@@ -1,0 +1,129 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/88521d79",
+  "workflow_id": "88521d79",
+  "workflow_id_display": "88521d79",
+  "workflow_name": "Jobs Newsletter Automation System (N8N, Bolt.new, RapidAPI, Mails.so & ChatGPT)",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "API, Email, OpenAI",
+  "tags": [
+    "chatgpt",
+    "Scheduled"
+  ],
+  "author_name": "Joseph",
+  "author_profile_url": "https://n8n.io/creators/mjomba/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarize Job Descriprions",
+      "type": "Process"
+    },
+    {
+      "name": "get rows in all subscribers sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "change status to unsubscribed",
+      "type": "Data Output"
+    },
+    {
+      "name": "add to unsubscribed sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "get row in subscribed sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "delete row from subscribed",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Subscribers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Subscribers",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Email to All Subscribers Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Email to Subscribed Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Confirm Email Validity",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Jobs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Newsletter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notification of Already Exists",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notification of Invalid Email",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notification of Successful Subscription",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

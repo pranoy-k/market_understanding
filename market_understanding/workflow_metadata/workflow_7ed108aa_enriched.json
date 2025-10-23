@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7ed108aa",
+  "workflow_id": "7ed108aa",
+  "workflow_id_display": "7ed108aa",
+  "workflow_name": "AI Client Onboarding Agent: Auto Welcome Email Generator",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate client onboarding: Trigger instant, personalized welcome emails from Google Forms with AI checklists. Boost response rates & save time—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gmail, chainLlm, set"
+  ],
+  "nodes": [
+    {
+      "name": "Error Handler",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger on New Client Form Submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Client Checklist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract and Structure Client Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Completed",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Failure",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Personalize Using Gemini",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

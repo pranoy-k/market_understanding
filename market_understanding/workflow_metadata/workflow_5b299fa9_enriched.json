@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5b299fa9",
+  "workflow_id": "5b299fa9",
+  "workflow_id_display": "5b299fa9",
+  "workflow_name": "Send Typeform results to Google Sheet, Slack and email",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Typeform responses: log data to Google Sheets, assess issue severity, send instant Slack alerts or emails. Streamline support—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, typeformTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

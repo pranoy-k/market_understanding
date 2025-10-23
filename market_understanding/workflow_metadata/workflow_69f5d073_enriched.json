@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/69f5d073",
+  "workflow_id": "69f5d073",
+  "workflow_id_display": "69f5d073",
+  "workflow_name": "Binance Spot Market Quant AI Agent | GPT-4o + Telegram (Main Interface)",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Unlock advanced Binance spot trading insights with AI-powered technical analysis, live data, and Telegram reports. Boost your crypto trading now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adds \"SessionId\"",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Binance Spot Market Quant AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "User Authentication (Replace Telegram ID)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Splits message is more than 4000 characters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "News and Sentiment Analysis Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Binance SM Financial Analyst Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

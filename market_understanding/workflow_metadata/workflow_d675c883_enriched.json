@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d675c883",
+  "workflow_id": "d675c883",
+  "workflow_id_display": "d675c883",
+  "workflow_name": "Convert Addresses to LatLong with Google Sheets and Google Maps API",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Boriwat Chanruang",
+  "author_profile_url": "https://n8n.io/creators/boriwatopal/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert address lists to latitude and longitude in Google Sheets with Google Maps API integration—ideal for routing, event planning, and analysis.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Lat-Long in Each Places",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract The Places from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Using Google Map API to Return Lat Long Back",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Using Google Map API to Return Lat Long Back"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ef4219c",
+  "workflow_id": "1ef4219c",
+  "workflow_id_display": "1ef4219c",
+  "workflow_name": "Automate Course Registration Leads from Facebook Ads to KlickTipp",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Facebook",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "KlickTipp",
+  "author_profile_url": "https://n8n.io/creators/KlickTipp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Facebook Lead Ads to KlickTipp for seamless course registration and targeted emails. Instantly capture, map, and segment leads—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with facebookLeadAdsTrigger, stickyNote, klicktipp"
+  ],
+  "nodes": [
+    {
+      "name": "Facebook Lead Ads Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Subscribe lead in KlickTipp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

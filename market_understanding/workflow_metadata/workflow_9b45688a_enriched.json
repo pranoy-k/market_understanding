@@ -1,0 +1,359 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b45688a",
+  "workflow_id": "9b45688a",
+  "workflow_id_display": "9b45688a",
+  "workflow_name": "2-way sync Notion and Google Calendar",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "98",
+  "tools_integrations": "Notion",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Sync multiple Notion databases with Google Calendar, bidirectionally. Supports all event types except recurring. Easy setup—keep schedules always updated!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "Every 3min",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event Updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Page Updated - Meetings",
+      "type": "Trigger"
+    },
+    {
+      "name": "Page Updated - Tasks",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event Updated1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event Created1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Deleted - Tasks",
+      "type": "Trigger"
+    },
+    {
+      "name": "Deleted - Meetings",
+      "type": "Trigger"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set some fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Calendar1",
+      "type": "Process"
+    },
+    {
+      "name": "Add GCal ID",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Remove GCal ID2",
+      "type": "Process"
+    },
+    {
+      "name": "Delete event1",
+      "type": "Process"
+    },
+    {
+      "name": "Find Task",
+      "type": "Process"
+    },
+    {
+      "name": "Remove GCal ID and Date",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar3",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Add GCal ID3",
+      "type": "Process"
+    },
+    {
+      "name": "Add GCal ID1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Creates defaultEndDate with 1h duration",
+      "type": "Process"
+    },
+    {
+      "name": "Delete event2",
+      "type": "Process"
+    },
+    {
+      "name": "Loop4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Calendar2",
+      "type": "Process"
+    },
+    {
+      "name": "Add GCal ID2",
+      "type": "Process"
+    },
+    {
+      "name": "Loop5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add 1 day to end date",
+      "type": "Process"
+    },
+    {
+      "name": "Format date",
+      "type": "Process"
+    },
+    {
+      "name": "Update to All Day event",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update to All Day event2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update dateTime event1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add 1 day to end date1",
+      "type": "Process"
+    },
+    {
+      "name": "Format date1",
+      "type": "Process"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get future events + yesterday",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate timeDifference between Google's updated_at and our own updated_at fields",
+      "type": "Process"
+    },
+    {
+      "name": "Only events that were edited 2s after the last update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subtract 1 day from end_date",
+      "type": "Process"
+    },
+    {
+      "name": "Format end_date",
+      "type": "Process"
+    },
+    {
+      "name": "Add extendedProperties to Google event",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event5",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event6",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event7",
+      "type": "Data Input"
+    },
+    {
+      "name": "Subtract 1 day from end_date1",
+      "type": "Process"
+    },
+    {
+      "name": "Format end_date1",
+      "type": "Process"
+    },
+    {
+      "name": "Create page1",
+      "type": "Process"
+    },
+    {
+      "name": "Create page2",
+      "type": "Process"
+    },
+    {
+      "name": "Add extendedProperties to Google event8",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event9",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add extendedProperties to Google event10",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set the current database and calendar IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the current database and calendar IDs2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update page1 - continue on error",
+      "type": "Process"
+    },
+    {
+      "name": "Find deleted pages1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete event3",
+      "type": "Process"
+    },
+    {
+      "name": "Get future events1",
+      "type": "Process"
+    },
+    {
+      "name": "Find related pages1",
+      "type": "Process"
+    },
+    {
+      "name": "extendedProperties exist?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the current database and calendar IDs1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update page2 - continue on error",
+      "type": "Process"
+    },
+    {
+      "name": "Update page - continue on error",
+      "type": "Process"
+    },
+    {
+      "name": "Create page",
+      "type": "Process"
+    },
+    {
+      "name": "Update dateTime event",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only calendarId",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

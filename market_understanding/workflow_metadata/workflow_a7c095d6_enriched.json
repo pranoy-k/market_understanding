@@ -1,0 +1,160 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a7c095d6",
+  "workflow_id": "a7c095d6",
+  "workflow_id_display": "a7c095d6",
+  "workflow_name": "Import Productboard Notes, Companies and Features into Snowflake",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Romain Jouhannet",
+  "author_profile_url": "https://n8n.io/creators/rjouhann/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Productboard data import into Snowflake with scheduled sync, data cleansing, and Slack insights. Streamline updates and boost team efficiency.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, snowflake"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Manual mapping feature",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping notes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Feature ID + Note ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping companies db",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping notes db",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping feature note IDs db",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual mapping features db",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get productboard companies",
+      "type": "Data Input"
+    },
+    {
+      "name": "get productboard notes",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split features",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split notes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split features in notes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get productboard features",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Productboard Notes",
+      "type": "Process"
+    },
+    {
+      "name": "Empty Table Productboard Notes",
+      "type": "Process"
+    },
+    {
+      "name": "[CREATE] PRODUCTBOARD_NOTES",
+      "type": "Process"
+    },
+    {
+      "name": "[CREATE] PRODUCTBOARD_COMPANIES",
+      "type": "Process"
+    },
+    {
+      "name": "Update Productboard Companies",
+      "type": "Process"
+    },
+    {
+      "name": "Empty Table Productboard Companies",
+      "type": "Process"
+    },
+    {
+      "name": "[CREATE] PRODUCTBOARD_NOTES_FEATURES",
+      "type": "Process"
+    },
+    {
+      "name": "Update Productboard Note and Feature IDs",
+      "type": "Process"
+    },
+    {
+      "name": "Empty Table Productboard Note and Feature IDs",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items notes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items features notes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "[CREATE] PRODUCTBOARD_FEATURES",
+      "type": "Process"
+    },
+    {
+      "name": "Empty Table Productboard Features",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items features",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Productboard Features",
+      "type": "Process"
+    },
+    {
+      "name": "Count Notes Last 7 days and Unprocessed",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

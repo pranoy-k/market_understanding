@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/499a0605",
+  "workflow_id": "499a0605",
+  "workflow_id_display": "499a0605",
+  "workflow_name": "✨ Vision-Based AI Agent Scraper - with Google Sheets, ScrapingBee, and Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "Web Scraping🤖 AI"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML-Scraping Tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set fields - from AI agent query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets - Get list of URLs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets - Create Rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "ScrapingBee- Get page HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ScrapingBee - Get page screenshot",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML-based Scraping Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Vision-based Scraping Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTML to Markdown",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

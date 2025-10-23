@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/990cee93",
+  "workflow_id": "990cee93",
+  "workflow_id_display": "990cee93",
+  "workflow_name": "Validate Auth0 JWT Tokens using JWKS or Signing Cert",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly validate Auth0 tokens in self-hosted n8n. Bypass JWT issues, support JWKS or signing cert, and automate secure API authentication. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, noOp, code"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Using JWK-RSA",
+      "type": "Data Processing"
+    },
+    {
+      "name": "401 Unauthorized",
+      "type": "Trigger"
+    },
+    {
+      "name": "Using Public Cert",
+      "type": "Data Processing"
+    },
+    {
+      "name": "401 Unauthorized1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Continue with Request",
+      "type": "Process"
+    },
+    {
+      "name": "Continue with Request1",
+      "type": "Process"
+    },
+    {
+      "name": "200 OK",
+      "type": "Trigger"
+    },
+    {
+      "name": "200 OK1",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

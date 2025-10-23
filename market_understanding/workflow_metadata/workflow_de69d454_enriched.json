@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de69d454",
+  "workflow_id": "de69d454",
+  "workflow_id_display": "de69d454",
+  "workflow_name": "Analyze BeyondPresence Video Calls with GPT-4o-mini and Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "M Shehroz Sajjad",
+  "author_profile_url": "https://n8n.io/creators/mshehrozsajjad/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically analyze BeyondPresence video calls with AI, capture 35+ key data points in Google Sheets, and save 30+ mins per call. Discover more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, webhook, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Parse AI Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Call Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "BeyondPresence Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Validate & Enrich Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

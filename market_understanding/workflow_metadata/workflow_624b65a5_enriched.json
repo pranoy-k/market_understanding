@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/624b65a5",
+  "workflow_id": "624b65a5",
+  "workflow_id_display": "624b65a5",
+  "workflow_name": "Push Multiple Files to GitHub Repository via Github REST API",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, GitHub",
+  "tags": [
+    "rest",
+    "api"
+  ],
+  "author_name": "Custom Workflows AI",
+  "author_profile_url": "https://n8n.io/creators/customworkflowsai/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate uploading multiple files to GitHub at once with n8n. Save time, ensure atomic commits, and streamline batch updates. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Github Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "File 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "File 2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get latest commit SHA",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get base tree SHA",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create new tree",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create commit",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update branch",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

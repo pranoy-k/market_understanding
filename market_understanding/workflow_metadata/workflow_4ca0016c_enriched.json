@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ca0016c",
+  "workflow_id": "4ca0016c",
+  "workflow_id_display": "4ca0016c",
+  "workflow_name": "Telegram AI Bot_ NeurochainAI Text & Image - NeurochainAI Basic API Integration",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "Telegram"
+  ],
+  "author_name": "NeurochainAI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates an intelligent Telegram bot powered by AI that can understand natural language, answer questions, and perform automated tasks. The bot processes incoming messages, uses AI to generate contextual responses, and can integrate with other services to provide comprehensive assistance to users.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request3",
+      "type": "Data Input"
+    },
+    {
+      "name": "NeurochainAI - REST API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NeurochainAI - Flux",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "NeurochainAI - REST API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

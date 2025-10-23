@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bf5d5fce",
+  "workflow_id": "bf5d5fce",
+  "workflow_id_display": "bf5d5fce",
+  "workflow_name": "Display ServiceNow Incident Details in Slack using Slash Commands",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly fetch ServiceNow incident details in Slack using a simple Slash Command. Boost team efficiency—no platform-switching needed. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, serviceNow, set"
+  ],
+  "nodes": [
+    {
+      "name": "Extract Incident ID from Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Search For Incident in ServiceNow",
+      "type": "Process"
+    },
+    {
+      "name": "Send Incident Details to Slack",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notify User no Incident was Found",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notify User of Error with ServiceNow",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

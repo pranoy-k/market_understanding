@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01075fe7",
+  "workflow_id": "01075fe7",
+  "workflow_id_display": "01075fe7",
+  "workflow_name": "MFA Multi-factor authentication (Voice call and Email) with ClickSend and SMTP",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, Email",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate secure user verification with voice calls and email codes using ClickSend API and SMTP. Seamless, customizable, and easy to set up—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set voice code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set email code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Voice",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code for voice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Verify voice code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fail voice code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Verify email code",
+      "type": "Data Input"
+    },
+    {
+      "name": "Success",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fail email code",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

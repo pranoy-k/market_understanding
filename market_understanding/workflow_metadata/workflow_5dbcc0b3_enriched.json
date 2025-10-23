@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5dbcc0b3",
+  "workflow_id": "5dbcc0b3",
+  "workflow_id_display": "5dbcc0b3",
+  "workflow_name": "Generate Dynamic Images with Text & Templates using ImageKit.",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ahmed Alnaqa",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock unlimited, fully customizable image generation with our free n8n workflow. No subscriptions, usage limits, or hidden fees—start creating today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Image Properties",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Image Extension",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Post Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate & Store Social IMG on Cloud",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Previewer",
+      "type": "Data Input"
+    },
+    {
+      "name": "APITemplate.io",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "APITemplate.io"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

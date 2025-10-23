@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5488cf04",
+  "workflow_id": "5488cf04",
+  "workflow_id_display": "5488cf04",
+  "workflow_name": "Create a new card in Trello",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate lead management: enrich leads, send personalized emails, alert sales via Slack, and track status in Google Sheets. Boost response and conversions!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, trello"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trello",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

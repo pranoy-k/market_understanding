@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e296aedc",
+  "workflow_id": "e296aedc",
+  "workflow_id_display": "e296aedc",
+  "workflow_name": "Receive and analyze emails with rules in Sublime Security",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate secure analysis of Outlook email attachments with n8n. Detect, convert, and scan .eml files, then send instant threat alerts to Slack. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format the message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Split to matched and unmatched",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze email with Sublime Security",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

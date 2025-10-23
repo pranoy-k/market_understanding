@@ -1,0 +1,138 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/60b09eaa",
+  "workflow_id": "60b09eaa",
+  "workflow_id_display": "60b09eaa",
+  "workflow_name": "Monthly Spotify Track Archiving and Playlist Classification",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Arnaud MARIE",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Monthly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve relevant info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Playlists informations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Tracks informations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get logged tracks",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get logged playlists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log new tracks",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log new playlists",
+      "type": "Data Output"
+    },
+    {
+      "name": "Batch preparation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Track details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Filter my playlist",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Batch preparation1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Excluding logged tracks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manual Verification",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate by 200 tracks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Excluding logged playlists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Classify new tracks",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain - AI Classification",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

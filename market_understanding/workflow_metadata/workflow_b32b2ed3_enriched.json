@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b32b2ed3",
+  "workflow_id": "b32b2ed3",
+  "workflow_id_display": "b32b2ed3",
+  "workflow_name": "Auto-assign Support Tickets with JIRA, Supabase and AI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "28",
+  "tools_integrations": "Jira",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate JIRA backlog management with AI: auto-assign unassigned issues, balance workloads, and keep tasks on track. Customizable and easy to integrate.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, jira, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Collect Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Tally In-Progress Issues per User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Issues Similarity Database",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Find Similar Issues + Assignees",
+      "type": "Process"
+    },
+    {
+      "name": "Check User Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "For Each User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign User to Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Get Unassigned Tickets more than 5 days",
+      "type": "Process"
+    },
+    {
+      "name": "For Each Issue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Issue Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment to Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Last 50 Resolved",
+      "type": "Process"
+    },
+    {
+      "name": "Issues to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "To Structured Output",
+      "type": "Data Input"
+    },
+    {
+      "name": "Count Assigned Open Issues per User",
+      "type": "Process"
+    },
+    {
+      "name": "Sort By Most Capacity",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Skip",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

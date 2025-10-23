@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ec805f0",
+  "workflow_id": "1ec805f0",
+  "workflow_id_display": "1ec805f0",
+  "workflow_name": "Enrich new leads in Pipedrive and send an alert to Slack for high-quality ones",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": "https://n8n.io/creators/nik8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically qualify Pipedrive leads every 5 minutes with Clearbit enrichment and instant Slack alerts for high-value opportunities. Easy, customizable setup.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger every 5 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add Organization ID to data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Setup",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enrich company",
+      "type": "Process"
+    },
+    {
+      "name": "Get all leads",
+      "type": "Process"
+    },
+    {
+      "name": "Keep leads that match the criteria",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get organization details",
+      "type": "Process"
+    },
+    {
+      "name": "Get all organization keys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get all lead keys",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split out lead field data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out organization field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show only custom lead fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show only custom organization fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark lead as enriched in Pipedrive",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

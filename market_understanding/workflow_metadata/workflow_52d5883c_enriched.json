@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/52d5883c",
+  "workflow_id": "52d5883c",
+  "workflow_id_display": "52d5883c",
+  "workflow_name": "Automated congratulations with Google Sheets, Twilio, and n8n",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Google Sheets, SMS, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "isa024787bel",
+  "author_profile_url": "https://n8n.io/creators/isabel/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline customer onboarding with automated emails, real-time Slack alerts, and secure data capture in Google Sheets. Learn how to boost efficiency today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with function, noOp, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Personalize Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Congratulations Calendar",
+      "type": "Data Output"
+    },
+    {
+      "name": "Congratulations Messages",
+      "type": "Data Output"
+    },
+    {
+      "name": "Do Nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a912cc9d",
+  "workflow_id": "a912cc9d",
+  "workflow_id_display": "a912cc9d",
+  "workflow_name": "Automated Web Scraping: email a CSV, save to Google Sheets & Microsoft Excel",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API, CSV, Email, Excel, Google Sheets",
+  "tags": [
+    "google",
+    "csv",
+    "excel"
+  ],
+  "author_name": "Mihai Farcas",
+  "author_profile_url": "https://n8n.io/creators/mihailtd/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily scrape website data, extract insights into a CSV, and auto-send results via email. Instantly save to Google Sheets & Excel. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save to Microsoft Excel 365",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to CSV File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract all books from the page",
+      "type": "Process"
+    },
+    {
+      "name": "Sort by price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract individual book price",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch website content",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

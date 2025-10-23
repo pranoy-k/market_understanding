@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9fc6e6b4",
+  "workflow_id": "9fc6e6b4",
+  "workflow_id_display": "9fc6e6b4",
+  "workflow_name": "LinkedIn Auto-Connect & Personalized Messaging for Sales",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "LinkedIn",
+  "tags": [
+    "linkedin",
+    "Scheduled"
+  ],
+  "author_name": "Electrabot",
+  "author_profile_url": "https://n8n.io/creators/vansh404/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead generation: find, connect, and engage prospects with personalized messages. Grow your network and boost sales. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, scheduleTrigger, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fill Out Keywords",
+      "type": "Trigger"
+    },
+    {
+      "name": "Run when profile is update",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Connection Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Organise Infomation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Stat Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Invite",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Profiles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "add browser flow if it gives error",
+      "type": "Process"
+    },
+    {
+      "name": "Scrap New Connection Profile",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Profile Scraper",
+      "type": "Process"
+    },
+    {
+      "name": "Connection Checker",
+      "type": "Process"
+    },
+    {
+      "name": "Invite Sender",
+      "type": "Process"
+    },
+    {
+      "name": "Check Connection",
+      "type": "Process"
+    },
+    {
+      "name": "Send Personalised Message",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f733401",
+  "workflow_id": "0f733401",
+  "workflow_id_display": "0f733401",
+  "workflow_name": "Replicate Line Items on New Deal in HubSpot and notify with Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Arnaud MARIE",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate HubSpot deal line item replication with this workflow—copy items, fetch product details, and get instant Slack alerts. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, webhook, set"
+  ],
+  "nodes": [
+    {
+      "name": "Retrieve deals Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get deal won line items",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get batch SKUs from line items",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Batch Product IDs by SKUs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Batch line items based on productId and associate to deals",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

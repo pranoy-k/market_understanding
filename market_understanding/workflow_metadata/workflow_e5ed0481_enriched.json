@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e5ed0481",
+  "workflow_id": "e5ed0481",
+  "workflow_id_display": "e5ed0481",
+  "workflow_name": "AI-Powered Product Research & Comparison with GPT-4o and SerpAPI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "API, OpenAI",
+  "tags": [],
+  "author_name": "AiAgent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Save hours on big purchases! Instantly compare top products—features, price, reviews—using AI and SerpAPI. Discover your best buy in minutes.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model6",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI3",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI4",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI5",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI2",
+      "type": "Process"
+    },
+    {
+      "name": "Item Finder",
+      "type": "Process"
+    },
+    {
+      "name": "Reviewer 1",
+      "type": "Process"
+    },
+    {
+      "name": "Reviewer 2",
+      "type": "Process"
+    },
+    {
+      "name": "Reviewer 3",
+      "type": "Process"
+    },
+    {
+      "name": "Reviewer 4",
+      "type": "Process"
+    },
+    {
+      "name": "Reviewer 5",
+      "type": "Process"
+    },
+    {
+      "name": "Compiler",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI1",
+    "SerpAPI",
+    "SerpAPI3",
+    "SerpAPI4",
+    "SerpAPI5",
+    "SerpAPI2",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

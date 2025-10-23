@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/365761d9",
+  "workflow_id": "365761d9",
+  "workflow_id_display": "365761d9",
+  "workflow_name": "Report phishing websites to Steam and CloudFlare",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "chaufnet",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly report phishing websites via webhook using Mailgun, alerting Steam & Cloudflare. Secure, customizable, and optimized for n8n Docker setups.",
+  "key_benefits": [
+    "API integration",
+    "Integration with if, webhook, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add bind-tools",
+      "type": "Process"
+    },
+    {
+      "name": "dig check CF",
+      "type": "Process"
+    },
+    {
+      "name": "Mail CloudFlare",
+      "type": "Process"
+    },
+    {
+      "name": "Mail Steam",
+      "type": "Process"
+    },
+    {
+      "name": "dig check if domain is valid",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

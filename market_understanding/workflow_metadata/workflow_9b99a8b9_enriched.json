@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b99a8b9",
+  "workflow_id": "9b99a8b9",
+  "workflow_id_display": "9b99a8b9",
+  "workflow_name": "Monitor Multiple Github Repos via Webhook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "API, GitHub, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "Jay Hartley",
+  "author_profile_url": "https://n8n.io/creators/jay/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor multiple GitHub repos in real time—no polling needed. Add/remove repos easily and get instant notifications. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Repos to Monitor",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Repos to Monitor1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hook URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Register Github Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete Github Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Existing Hook",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

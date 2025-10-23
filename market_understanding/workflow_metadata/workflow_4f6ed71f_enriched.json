@@ -1,0 +1,230 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f6ed71f",
+  "workflow_id": "4f6ed71f",
+  "workflow_id_display": "4f6ed71f",
+  "workflow_name": "Automate Call Scheduling with Voice AI Receptionist using Vapi, Google Calendar & Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "55",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "google"
+  ],
+  "author_name": "SuperAgent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate calls and appointment scheduling with an AI receptionist using Vapi, Google Calendar, and Airtable. Save time—discover effortless automation!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendar, webhook, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Input Arguments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Response Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Booking Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Error Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Error Response Payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Error Response Payload2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Time available (true) & Call_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract start, end and name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input Arguments from booking tools",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Information to be Saved in Airtable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input Arguments from updateslot tool",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response & call_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Input Arguments from cancelslot tool",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build Error Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Call_id & Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "All Input Arguments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Logs the confirmed booking details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Finds original appointment",
+      "type": "Data Output"
+    },
+    {
+      "name": "Updates Airtable record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Finds the appointment record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Airtable record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save all information",
+      "type": "Data Output"
+    },
+    {
+      "name": "Format response",
+      "type": "Process"
+    },
+    {
+      "name": "Sort",
+      "type": "Process"
+    },
+    {
+      "name": "Available Start Times & Ranges",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flatten Slots",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enrich Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Friendly Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Escape Json",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond with Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Getslot_tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check Availability",
+      "type": "Process"
+    },
+    {
+      "name": "Response",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get All Calendar Events",
+      "type": "Process"
+    },
+    {
+      "name": "Convert into Json format for Vapi",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response to Vapi",
+      "type": "Trigger"
+    },
+    {
+      "name": "bookslots_tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert time to CST America / Chicago",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Vapi",
+      "type": "Trigger"
+    },
+    {
+      "name": "Updateslots_tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "Response with Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Vapi about Updating slots",
+      "type": "Trigger"
+    },
+    {
+      "name": "CancelSlots_tool",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Error to Vapi",
+      "type": "Trigger"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Vapi about cancelation",
+      "type": "Trigger"
+    },
+    {
+      "name": "call_results",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

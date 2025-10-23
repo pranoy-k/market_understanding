@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7ab6c6ab",
+  "workflow_id": "7ab6c6ab",
+  "workflow_id_display": "7ab6c6ab",
+  "workflow_name": "create e-mail responses with fastmail and OpenAI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Vitali",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Generate email responses for Fastmail using OpenAI integration.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Get fields from source email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gather data for draft email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Session",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Mailbox IDs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter for drafts folder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "upload draft email",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

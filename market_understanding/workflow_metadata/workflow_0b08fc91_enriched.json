@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b08fc91",
+  "workflow_id": "0b08fc91",
+  "workflow_id_display": "0b08fc91",
+  "workflow_name": "Automated Resume Job Matching Engine with Bright Data MCP & OpenAI 4o mini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set the Input fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Create a binary data for AI Job Match",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model for Job Desc Extract",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for AI Job Match",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model for Paginated Job Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List all tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "Bright Data MCP Client For Jobs Extraction",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bright Data MCP Client For Jobs Extraction within a Loop",
+      "type": "Process"
+    },
+    {
+      "name": "Job Desc Information Extractor",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Job Match",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook Notification for AI Job Match",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the AI job matched response to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Paginated Job Data Extractor",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

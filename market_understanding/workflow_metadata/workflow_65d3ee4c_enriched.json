@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/65d3ee4c",
+  "workflow_id": "65d3ee4c",
+  "workflow_id_display": "65d3ee4c",
+  "workflow_name": "Extract Competitor SERP Rankings from Google Search to Sheets with Bright Data",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Dvir Sharon",
+  "author_profile_url": "https://n8n.io/creators/dvirsharon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract competitor SERP rankings by keyword and country to Google Sheets for powerful SEO and market analysis—automate and customize your research.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Execute workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Keywords from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "URL Encode Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Keywords in Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Google Search Results",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Competitor Data from HTML",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,159 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df7280f5",
+  "workflow_id": "df7280f5",
+  "workflow_id_display": "df7280f5",
+  "workflow_name": "Track n8n Workflow Changes Over Time with Compare Dataset & Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track n8n workflow changes daily. Get detailed reports in Google Sheets, ensure team visibility, and monitor client instances. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Current State",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Previous State",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Report Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Datasets1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Report Connections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "set non-update response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create New Entry",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Entry",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Added Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Same Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Different Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Removed Nodes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Added Connections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Same Connections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Different Connections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Removed Connections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Nodes Diff",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Connections Diff",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Reports",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Conn Previous",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Conn Current",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Nodes Current",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Nodes Previous",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Template Diffs",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Workflows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

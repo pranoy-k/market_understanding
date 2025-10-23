@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e16cc6c",
+  "workflow_id": "8e16cc6c",
+  "workflow_id_display": "8e16cc6c",
+  "workflow_name": "Advanced Telegram Bot, Ticketing System, LiveChat, User Management, Broadcasting",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "redis"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Telegram bot with n8n: automate support tickets, manage users in Redis, and broadcast messages efficiently. Learn more & boost productivity!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram-Bot",
+      "type": "Trigger"
+    },
+    {
+      "name": "Bot-Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bot-Config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Topic ID",
+      "type": "Process"
+    },
+    {
+      "name": "ReSave Topic ID",
+      "type": "Process"
+    },
+    {
+      "name": "Save User Data",
+      "type": "Process"
+    },
+    {
+      "name": "Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Topic (Chat Ticket)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get User Chat Topic",
+      "type": "Process"
+    },
+    {
+      "name": "Forward New Message",
+      "type": "Data Input"
+    },
+    {
+      "name": "ReCreate Topic (Chat Ticket)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update User Data",
+      "type": "Process"
+    },
+    {
+      "name": "Forward Support Reply To User",
+      "type": "Data Input"
+    },
+    {
+      "name": "Forward New Message to the recrated topic",
+      "type": "Data Input"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Check User in Database",
+      "type": "Process"
+    },
+    {
+      "name": "Split In Batches1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Broadcast Channel Post into Users",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Blocked Member",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Blocked Users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve all users in DB",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

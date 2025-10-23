@@ -1,0 +1,255 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/503fd7fe",
+  "workflow_id": "503fd7fe",
+  "workflow_id_display": "503fd7fe",
+  "workflow_name": "2-way Sync Google Contacts and Notion",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "60",
+  "tools_integrations": "Notion",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Contacts with Notion. Enjoy real-time, two-way updates and easy setup. Perfect for organized professionals. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Every day at 3am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Every 1min1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Page Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Page updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract phones and addresses1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract phones and addresses3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract phones and addresses4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Organize fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save ETag",
+      "type": "Process"
+    },
+    {
+      "name": "Save ETag1",
+      "type": "Process"
+    },
+    {
+      "name": "Save contact1",
+      "type": "Process"
+    },
+    {
+      "name": "Save ETag2",
+      "type": "Process"
+    },
+    {
+      "name": "Save contact2",
+      "type": "Process"
+    },
+    {
+      "name": "Filter by Group",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all contacts",
+      "type": "Process"
+    },
+    {
+      "name": "Set lastUpdatedByAutomation1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google | Create Contact",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Google ID",
+      "type": "Process"
+    },
+    {
+      "name": "Find contact",
+      "type": "Process"
+    },
+    {
+      "name": "Google | Update Contact",
+      "type": "Data Input"
+    },
+    {
+      "name": "List all groups1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notion1",
+      "type": "Process"
+    },
+    {
+      "name": "Delete contact",
+      "type": "Process"
+    },
+    {
+      "name": "Page was edited by user",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get syncToken",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google | Get updates",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Sync Token",
+      "type": "Process"
+    },
+    {
+      "name": "Update Sync Token",
+      "type": "Process"
+    },
+    {
+      "name": "Split Contacts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only type CONTACT1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google | Set lastUpdatedByAutomation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Contact was edited in Google1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update ETag2",
+      "type": "Process"
+    },
+    {
+      "name": "Google | Set lastUpdatedByAutomation3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update ETag3",
+      "type": "Process"
+    },
+    {
+      "name": "Update contact",
+      "type": "Process"
+    },
+    {
+      "name": "Find contacts1",
+      "type": "Process"
+    },
+    {
+      "name": "Filter by Group2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete contact2",
+      "type": "Process"
+    },
+    {
+      "name": "Only existing contacts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Has data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google | Add contact to specific group",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Groups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all contacts2",
+      "type": "Process"
+    },
+    {
+      "name": "Split userDefined",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only contacts that were automated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find contacts in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Deleted pages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Delete contact1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

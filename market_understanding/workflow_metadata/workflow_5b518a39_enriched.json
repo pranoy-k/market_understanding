@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5b518a39",
+  "workflow_id": "5b518a39",
+  "workflow_id_display": "5b518a39",
+  "workflow_name": "Send file to kindle with Telegram Bot and Outlook",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "CreativeCreature",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily send e-books to your Kindle using a Telegram bot and Outlook. Enjoy instant notifications, simple setup, and automated file delivery. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with microsoftOutlook, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "receive file message from telegram bot",
+      "type": "Trigger"
+    },
+    {
+      "name": "rename file to as attachment out email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "send email with the file as attchament to kindle",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

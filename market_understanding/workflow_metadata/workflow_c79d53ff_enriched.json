@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c79d53ff",
+  "workflow_id": "c79d53ff",
+  "workflow_id_display": "c79d53ff",
+  "workflow_name": "Get Airtable data via AI and Obsidian Notes",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Airtable, OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 Airtable🤖 AI"
+  ],
+  "author_name": "Obsidi8n",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Retrieve and process Airtable data using AI and sync with Obsidian notes for knowledge management.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Obsidian",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Set Up in Obsidian",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dff86700",
+  "workflow_id": "dff86700",
+  "workflow_id_display": "dff86700",
+  "workflow_name": "Jira MCP Server",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Jira",
+  "tags": [],
+  "author_name": "Tamer",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline Jira management with AI! Use natural language to create, update, and track tickets via Claude or AI assistants. Learn how to set up now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with jiraTool, httpRequestTool, mcpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Jira MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Jira ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment to Jira Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "Get Ticket transitions",
+      "type": "Process"
+    },
+    {
+      "name": "Add Attachment to Jira TIcket",
+      "type": "Process"
+    },
+    {
+      "name": "Change Jira Ticket Status",
+      "type": "Process"
+    },
+    {
+      "name": "Get Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Get Projects and Issue Types",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

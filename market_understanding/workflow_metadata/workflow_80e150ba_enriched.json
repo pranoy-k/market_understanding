@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/80e150ba",
+  "workflow_id": "80e150ba",
+  "workflow_id_display": "80e150ba",
+  "workflow_name": "Poll emails using JMAP",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock advanced email automation in n8n with JMAP. Retrieve unread email counts, message previews, and more. Learn how to set it up now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get mailboxes",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch API details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get unread messages",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Fetch API details"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

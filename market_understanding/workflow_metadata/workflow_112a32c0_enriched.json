@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/112a32c0",
+  "workflow_id": "112a32c0",
+  "workflow_id_display": "112a32c0",
+  "workflow_name": "Automated Financial Tracker: Telegram Invoices to Notion with Gemini AI Reports",
+  "category": "Finance & Accounting",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Notion, Telegram",
+  "tags": [
+    "telegram",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "Rizqi Pratama Ramadhani",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate expense tracking: snap receipts in Telegram, let AI log details to Notion, and get instant summaries plus insightful weekly reports. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, chainLlm, telegramTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger | for send chart report",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger | When recive photo",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse To your object | Table",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Get Recent Data from Notions",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Transaction Data",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Chart",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Data to JSON chart payload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image Info",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out | data transaction",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Record To Notion Database",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

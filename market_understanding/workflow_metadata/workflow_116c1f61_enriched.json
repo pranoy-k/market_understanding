@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/116c1f61",
+  "workflow_id": "116c1f61",
+  "workflow_id_display": "116c1f61",
+  "workflow_name": "Create a board, lists, and a card in Wekan",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, enrichment, and scoring. Instantly segment priority leads to your CRM and notify sales in Slack to boost efficiency. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, wekan"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wekan",
+      "type": "Process"
+    },
+    {
+      "name": "Wekan1",
+      "type": "Process"
+    },
+    {
+      "name": "Wekan2",
+      "type": "Process"
+    },
+    {
+      "name": "Wekan3",
+      "type": "Process"
+    },
+    {
+      "name": "Wekan4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

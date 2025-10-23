@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0924b5fc",
+  "workflow_id": "0924b5fc",
+  "workflow_id_display": "0924b5fc",
+  "workflow_name": "Send TheHive Alerts Using SIGNL4",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ron",
+  "author_profile_url": "https://n8n.io/creators/rons4/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly forward TheHive 5 alerts to SIGNL4 for instant, reliable team notifications. Automate, test, and resolve alerts in real time. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, theHive, signl4"
+  ],
+  "nodes": [
+    {
+      "name": "Start (Testing)",
+      "type": "Trigger"
+    },
+    {
+      "name": "TheHive Create Alert",
+      "type": "Process"
+    },
+    {
+      "name": "TheHive Read Alerts",
+      "type": "Process"
+    },
+    {
+      "name": "SIGNL4 Send Alert",
+      "type": "Process"
+    },
+    {
+      "name": "TheHive Webhook Request",
+      "type": "Trigger"
+    },
+    {
+      "name": "SIGNL4 Resolve Alert",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

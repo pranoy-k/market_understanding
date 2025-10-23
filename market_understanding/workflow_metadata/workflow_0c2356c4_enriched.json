@@ -1,0 +1,139 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0c2356c4",
+  "workflow_id": "0c2356c4",
+  "workflow_id_display": "0c2356c4",
+  "workflow_name": "Generate & Auto-Post Social Videos to Multiple Platforms with GPT-4 and Kling AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and auto-post AI-generated social videos with styled captions to 9 platforms—streamline your content in one automated workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger: Telegram Prompt",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Social Media IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Model Bridge",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Voice-Over Script",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Script to Audio (TTS)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Social Caption from Voiceover",
+      "type": "Process"
+    },
+    {
+      "name": "Generate YouTube-Style Title",
+      "type": "Process"
+    },
+    {
+      "name": "Save Video Metadata to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Prompt & Caption",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Transform Prompt for Kling (GPT-4)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Video via Kling API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Generated Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Audio to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge Audio + Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video URL with Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add Captions/Subtitles to Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Video URL (Audio + Captions)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Instagram",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to YouTube",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to TikTok",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Facebook Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Threads",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Twitter (X)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Bluesky",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Pinterest",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Generate Video via Kling API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

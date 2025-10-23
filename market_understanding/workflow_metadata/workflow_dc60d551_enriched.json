@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dc60d551",
+  "workflow_id": "dc60d551",
+  "workflow_id_display": "dc60d551",
+  "workflow_name": "Control Your 3D Printer with GPT-4o and OctoPrint API Conversations",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Liam",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage your 3D printer remotely via AI-powered chat. Get real-time OctoPrint updates, control prints, and monitor performance anywhere.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Stage OctoPrint Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "List OctoPrint Jobs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get OctoPrint Printer Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Pause OctoPrint Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cancel OctoPrint Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Resume OctoPrint Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Connect OctoPrint to Printer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get OctoPrint Printer Connection Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Start OctoPrint Job",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Current Print Job Details",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

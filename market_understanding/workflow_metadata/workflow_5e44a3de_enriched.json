@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e44a3de",
+  "workflow_id": "5e44a3de",
+  "workflow_id_display": "5e44a3de",
+  "workflow_name": "Automated LinkedIn Prospecting & Personalized Cold Email with OpenAI, Hunter & Gmail",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Email, Gmail, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin🤖 gmail🤖 openai"
+  ],
+  "author_name": "Abhijay Vuyyuru",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate a Boolean Search String",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Contact Details",
+      "type": "Process"
+    },
+    {
+      "name": "Personalized Cold-Email Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Create a new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add columns to new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Appends the results to the sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "set page number for google search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Boolean Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extracts fname, lname, domainname",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extracts all linkedin urls and workplace context from the google http response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Adds 10 to start - Go to next page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Columns to add: linkedin_url, first_name, last_name, email, context, domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract subject and email body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hunter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

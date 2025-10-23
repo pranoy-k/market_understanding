@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cb50fa6b",
+  "workflow_id": "cb50fa6b",
+  "workflow_id_display": "cb50fa6b",
+  "workflow_name": "Classify new bugs in Linear with OpenAI_s GPT-4 and move them to the right team",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [],
+  "author_name": "Niklas Hatje",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Linear Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set team ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set me up",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Only tickets that need to be classified",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update team",
+      "type": "Process"
+    },
+    {
+      "name": "Get all linear teams",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

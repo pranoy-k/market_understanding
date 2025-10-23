@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a47b6c29",
+  "workflow_id": "a47b6c29",
+  "workflow_id_display": "a47b6c29",
+  "workflow_name": "Convert Markdown Content to Contentful Rich Text with AI Formatting",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "Cristiano Varriale",
+  "author_profile_url": "https://n8n.io/creators/varritech/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "It looks like you haven't provided a workflow description. Please share the n8n workflow description you want summarized, and I'll craft an effective meta description for you!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Create newly formatted Contentful Entry",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown to Contentful format",
+      "type": "Process"
+    },
+    {
+      "name": "Split by Headings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Rich Text Objects",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

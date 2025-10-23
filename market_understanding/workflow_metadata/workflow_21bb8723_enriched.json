@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/21bb8723",
+  "workflow_id": "21bb8723",
+  "workflow_id_display": "21bb8723",
+  "workflow_name": "Make OpenAI Citation for File Retrieval RAG",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "RAG"
+  ],
+  "author_name": "Davi Saranszky Mesquita",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Implement proper citation handling for OpenAI-based file retrieval RAG systems to ensure accuracy and traceability.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Create a simple Trigger to have the Chat button within N8N",
+      "type": "Trigger"
+    },
+    {
+      "name": "Regularize output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Assistant with Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get ALL Thread Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split all message iterations from a thread",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split all content from a single message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split all citations from a single message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve file name from a file ID",
+      "type": "Data Input"
+    },
+    {
+      "name": "Optional Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Finnaly format the output",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

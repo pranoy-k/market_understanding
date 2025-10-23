@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3e46ab81",
+  "workflow_id": "3e46ab81",
+  "workflow_id_display": "3e46ab81",
+  "workflow_name": "Very quick quickstart",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Deborah",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn n8n basics quickly with our step-by-step beginner tutorial. Explore core features and build automations easily. Start your n8n journey today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, n8nTrainingCustomerDatastore"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Customer Datastore",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f8a11e11",
+  "workflow_id": "f8a11e11",
+  "workflow_id_display": "f8a11e11",
+  "workflow_name": "CallForge - 02 - Prep Gong Calls with Sheets & Notion for AI Summarization",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Gong.io sales call analysis with CallForge—extract, enrich, and refine transcripts for AI insights. Boost sales efficiency. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, aggregate, gong"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Comma Separate Integrations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Comma separate competitors",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Isolate Only Call IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Process New Calls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Integrations",
+      "type": "Data Output"
+    },
+    {
+      "name": "Gong",
+      "type": "Process"
+    },
+    {
+      "name": "Transcript Processor",
+      "type": "Process"
+    },
+    {
+      "name": "Call Aggregator",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Integration Aggregator",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get list of Competitors",
+      "type": "Process"
+    },
+    {
+      "name": "Merge 3 objects into one",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Call Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Call Data and Competitors",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reduce down to 1 object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Previous Phone Calls",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Calls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process All Call Transcripts",
+      "type": "Process"
+    },
+    {
+      "name": "Receive all Transcripts",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

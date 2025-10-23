@@ -1,0 +1,49 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/06108f9c",
+  "workflow_id": "06108f9c",
+  "workflow_id_display": "06108f9c",
+  "workflow_name": "YouTube to WhatsApp Sales Automation with WordPress, FluentCRM and Whinta",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "WhatsApp, WordPress, YouTube",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "GYANENDRA DWIVEDI",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate your lead nurturing from social media to sales with WordPress, FluentCRM, & WhatsApp. Boost conversions—discover seamless workflow integration!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets - Backup Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook - Lead Capture",
+      "type": "Trigger"
+    },
+    {
+      "name": "FluentCRM - Add Contact",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp via Whinta",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update CRM Tag to Customer",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/91320c55",
+  "workflow_id": "91320c55",
+  "workflow_id_display": "91320c55",
+  "workflow_name": "Learn Anything from HN - Get Top Resource Recommendations from Hacker News",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "ibrhdotme",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 ai research rag & data analysis Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Get curated learning resources from Hacker News discussions on any topic you want to master.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "GetTopicFromToLearn",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "SearchAskHN",
+      "type": "Process"
+    },
+    {
+      "name": "FindHNComments",
+      "type": "Data Input"
+    },
+    {
+      "name": "CombineIntoSingleText",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SplitOutChildrenIDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert2HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Finished",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

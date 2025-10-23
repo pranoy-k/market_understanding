@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ec831e92",
+  "workflow_id": "ec831e92",
+  "workflow_id_display": "ec831e92",
+  "workflow_name": "Convert Gumroad Sales to Beehiiv Subscribers with Sheets & Telegram Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn Gumroad sales into Beehiiv subscribers, log customer data in Google Sheets, and get instant Telegram notifications. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Gumroad Sale Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set ChatID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "append row in CRM",
+      "type": "Data Output"
+    },
+    {
+      "name": "List publications",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post subscription",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

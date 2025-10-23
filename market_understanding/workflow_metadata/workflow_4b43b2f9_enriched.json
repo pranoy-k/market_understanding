@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4b43b2f9",
+  "workflow_id": "4b43b2f9",
+  "workflow_id_display": "4b43b2f9",
+  "workflow_name": "Automatically optimise images added to a Google drive folder",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically optimize new Google Drive images with TinyPNG, save storage space, and streamline your workflow—easy setup and up to 500 free uses/month.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDriveTrigger, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Check GDrive for new images",
+      "type": "Trigger"
+    },
+    {
+      "name": "Download image",
+      "type": "Process"
+    },
+    {
+      "name": "Optimise - Send image to TinyPNG",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get optimised image from tinyPNG",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

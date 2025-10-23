@@ -1,0 +1,148 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0381e13c",
+  "workflow_id": "0381e13c",
+  "workflow_id_display": "0381e13c",
+  "workflow_name": "Sync HubSpot Contacts with LinkedIn URLs, Detect Changes & Send Gmail Alerts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "Email, Gmail, HubSpot, LinkedIn",
+  "tags": [
+    "linkedin🤖 gmail"
+  ],
+  "author_name": "PollupAI",
+  "author_profile_url": "https://n8n.io/creators/zeerobug/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Increment Page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set last_post",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set last_position",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set data here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the profile URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set the profile URL1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set post_updated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set position_updated",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create entry with email",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get rows from document",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update last post",
+      "type": "Data Output"
+    },
+    {
+      "name": "Updates last position",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get list of owners",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get list of clients for owner",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge al the entries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get list of clients",
+      "type": "Process"
+    },
+    {
+      "name": "Get last post",
+      "type": "Process"
+    },
+    {
+      "name": "Search for user by link",
+      "type": "Data Input"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Merge profileURL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change this for testing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search for user profile by names",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate the email text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge on email",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out owners",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get current owner",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,152 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea9d1d87",
+  "workflow_id": "ea9d1d87",
+  "workflow_id_display": "ea9d1d87",
+  "workflow_name": "Intelligent AI Digest for Security, Privacy, and Compliance Feeds",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Email, Gmail, RSS",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Niranjan G",
+  "author_profile_url": "https://n8n.io/creators/niranjan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Daily Digest",
+      "type": "Trigger"
+    },
+    {
+      "name": "Normalize Article Security Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normalize Article Privacy Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Normalize Article Compliance Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent - Privacy Intelligence",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Security Intelligence",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent - Compliance Intelligence",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Privacy Feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Compliance Feeds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Recent Security Articles (24h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Recent Privacy Articles (24h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Recent Compliance Articles (24h)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Security Articles into HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Privacy Articles into HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Compliance Articles into HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "LLM - Gemini Security Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "LLM - Gemini Privacy Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "LLM - Gemini Compliance Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Privacy Build Final Newsletter HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Security Build Final Newsletter HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compliance Build Final Newsletter HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort - Security Articles by Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort - Privacy Articles by Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort - Compliance Articles by Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Security RSS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Compliance RSS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Security RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Privacy RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Compliance RSS Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Privacy RSS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Security RSS",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

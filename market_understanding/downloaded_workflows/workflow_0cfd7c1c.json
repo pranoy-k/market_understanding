@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Microsoft Excel",
+      "type": "n8n-nodes-base.microsoftExcel",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "filters": {},
+        "operation": "getAll"
+      },
+      "credentials": {
+        "microsoftExcelOAuth2Api": "ms-oauth-creds"
+      },
+      "typeVersion": 1,
+      "id": "df0d705ee0b94286"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Microsoft Excel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "cd2105d9e3dc0ad8",
+  "name": "Get all Excel workbooks",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "excel"
+  ]
+}

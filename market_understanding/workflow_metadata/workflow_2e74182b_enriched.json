@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2e74182b",
+  "workflow_id": "2e74182b",
+  "workflow_id_display": "2e74182b",
+  "workflow_name": "AI Agent for realtime insights on meetings",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "OpenAI, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Scenario 1 Start - Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Transcription Part",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Note",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Recall bot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create OpenAI thread",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create data record",
+      "type": "Process"
+    },
+    {
+      "name": "Scenario 2 Start - Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

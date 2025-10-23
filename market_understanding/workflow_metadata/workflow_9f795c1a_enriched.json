@@ -1,0 +1,118 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9f795c1a",
+  "workflow_id": "9f795c1a",
+  "workflow_id_display": "9f795c1a",
+  "workflow_name": "Automate Email & Calendar Management with Gmail, Google Calendar & GPT-4o AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "AOE Agent Lab",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "sessionId-master",
+      "type": "Process"
+    },
+    {
+      "name": "Get calendar events",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Token Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - Summarize Email Thread as Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add an calender entry",
+      "type": "Process"
+    },
+    {
+      "name": "Research context and infos in previous conversations",
+      "type": "Process"
+    },
+    {
+      "name": "EMail Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Write - Threads History Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Read- Threads History Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Threads History Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Determine the name of the day of the week",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

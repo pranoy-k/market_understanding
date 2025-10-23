@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dd01b873",
+  "workflow_id": "dd01b873",
+  "workflow_id_display": "dd01b873",
+  "workflow_name": "Convert HTML & PDF Files to PNG Images with CustomJS PDF Toolkit",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert HTML to PDF and PDF to PNG in n8n with PDF Toolkit by CustomJS. Flexible, automated workflow—learn more about setup and benefits!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, PdfToPng, html2Pdf"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Convert PDF into PNG1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert PDF into PNG",
+      "type": "Process"
+    },
+    {
+      "name": "Set PDF URL",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

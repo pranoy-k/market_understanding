@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43158bc2",
+  "workflow_id": "43158bc2",
+  "workflow_id_display": "43158bc2",
+  "workflow_name": "Automated PDF Invoice Processing & Approval Flow using OpenAI and Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Google Sheets, OpenAI, PDF",
+  "tags": [
+    "google",
+    "pdf🤖 openai"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate invoice processing with AI-based data extraction, email approvals, and Google Sheets tracking. Boost accuracy, save time—learn more today!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with lmChatOpenAi, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Invoice Folder Monitor",
+      "type": "Trigger"
+    },
+    {
+      "name": "Monitor Email Attachments",
+      "type": "Trigger"
+    },
+    {
+      "name": "Upload Invoice (PDF) Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Invoice Parser AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Insert Invoice Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download Invoice PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Text from Drive PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Text from Email PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Text from Form PDF",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

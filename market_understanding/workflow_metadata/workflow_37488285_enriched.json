@@ -1,0 +1,153 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37488285",
+  "workflow_id": "37488285",
+  "workflow_id_display": "37488285",
+  "workflow_name": "Auto-Generate YouTube Shorts from Reddit Content with OpenAI Using MCP Server",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "OpenAI, Reddit, YouTube",
+  "tags": [],
+  "author_name": "jolonbankey",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with mcpClientTool, manualTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Map fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Map fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download the video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Share on YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Generate video",
+      "type": "Process"
+    },
+    {
+      "name": "Check video status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get top weekly posts",
+      "type": "Data Input"
+    },
+    {
+      "name": "MCP Client1",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download the video1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Share on YouTube1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate video1",
+      "type": "Process"
+    },
+    {
+      "name": "Check video status1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get top weekly posts1",
+      "type": "Data Input"
+    },
+    {
+      "name": "MCP Client2",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download the video2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Share on YouTube2",
+      "type": "Process"
+    },
+    {
+      "name": "Generate video2",
+      "type": "Process"
+    },
+    {
+      "name": "Check video status2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get top weekly posts2",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

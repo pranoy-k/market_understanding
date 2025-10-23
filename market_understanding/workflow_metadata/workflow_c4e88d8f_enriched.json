@@ -1,0 +1,41 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c4e88d8f",
+  "workflow_id": "c4e88d8f",
+  "workflow_id_display": "c4e88d8f",
+  "workflow_name": "Access execution data from an error workflow",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "David Roberts",
+  "author_profile_url": "https://n8n.io/creators/davidn8n/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly customize error handling in n8n by retrieving and parsing webhook node data after failures. Learn how to enable targeted, data-driven actions.",
+  "key_benefits": [
+    "API integration",
+    "Integration with errorTrigger, code, n8n"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract webhook data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get execution data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

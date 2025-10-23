@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da6572c1",
+  "workflow_id": "da6572c1",
+  "workflow_id_display": "da6572c1",
+  "workflow_name": "Send Github notifications to Discord Webhook",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Discord, GitHub, Webhook",
+  "tags": [
+    "discord",
+    "webhook"
+  ],
+  "author_name": "rangelstoilov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "@Get Date 1 min ago",
+      "type": "Data Processing"
+    },
+    {
+      "name": "@Get Issue",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

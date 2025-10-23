@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa17c751",
+  "workflow_id": "aa17c751",
+  "workflow_id_display": "aa17c751",
+  "workflow_name": "Auto Source LinkedIn Candidates with GPT-4 Boolean Search & Google X-ray",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Abdullah Maftah",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly source LinkedIn candidates with AI-powered Boolean search. Automate profile extraction and organization in Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, openAi, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate a Boolean Search String",
+      "type": "Process"
+    },
+    {
+      "name": "Create a new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add columns to new sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Appends the results to the sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "set page number for google search",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extracts all linkedin urls from the google http response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Boolean Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Adds 10 to start - Go to next page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Columns to add",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

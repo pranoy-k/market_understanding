@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/34761468",
+  "workflow_id": "34761468",
+  "workflow_id_display": "34761468",
+  "workflow_name": "Auto-Publish Latest News on X with AI Content Generation using Keywords and Bright Data",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "Dvir Sharon",
+  "author_profile_url": "https://n8n.io/creators/dvirsharon/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate news publishing to X (Twitter) with AI-powered content, real-time tracking, email alerts, and multi-country support. Effortless setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get News URL from Google News",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Latest News",
+      "type": "Data Input"
+    },
+    {
+      "name": "tweet to URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Snapshot ID Status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

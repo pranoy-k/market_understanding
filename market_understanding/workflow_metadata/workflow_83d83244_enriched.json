@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/83d83244",
+  "workflow_id": "83d83244",
+  "workflow_id_display": "83d83244",
+  "workflow_name": "Restore n8n Workflows from Google Drive Backups",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly restore all your n8n workflows from Google Drive backups. Save time, reduce errors, and ensure fast recovery or migration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, extractFromFile, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Clicking Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive Get All Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive Download Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "n8n Create Workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

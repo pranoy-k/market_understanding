@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/55d817dc",
+  "workflow_id": "55d817dc",
+  "workflow_id_display": "55d817dc",
+  "workflow_name": "Evaluation Metric: Summarization",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Evaluate LLM summaries with ease—measure accuracy and faithfulness in AI-generated YouTube transcripts using this n8n template. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with evaluationTrigger, lmChatOpenAi, evaluation"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Gdrive URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Is Evaluating?",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to User",
+      "type": "Process"
+    },
+    {
+      "name": "Output",
+      "type": "Process"
+    },
+    {
+      "name": "Set Outputs",
+      "type": "Process"
+    },
+    {
+      "name": "Set Metrics",
+      "type": "Process"
+    },
+    {
+      "name": "Download Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Summarise Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Evaluate Summarisation",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/65069ebd",
+  "workflow_id": "65069ebd",
+  "workflow_id_display": "65069ebd",
+  "workflow_name": "Analyze Email Headers for IP Reputation and Spoofing Detection - Gmail",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail - Extract Original From IP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Determine Auth Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Set SPF Value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - No SPF Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Format Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - DKIM Signature Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - No DKIM Signature Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Set DMARC Value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - No DMARC Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Gmail Headers Here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Individual Auth Outputs1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Combined Auth Output1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Set Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Gmail Webhook Headers Here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Extract Received Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Query IP Quality Score API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gmail - Query IP API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gmail - Extract Authentication-Results Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Extract Received-SPF Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Extract DMARC Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail - Remove Extra Received Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Gmail - Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate Received-SPF Headers1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Skip IP Check",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Gmail - Query IP Quality Score API",
+    "Gmail - Query IP API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

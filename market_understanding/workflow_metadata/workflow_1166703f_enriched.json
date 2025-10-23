@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1166703f",
+  "workflow_id": "1166703f",
+  "workflow_id_display": "1166703f",
+  "workflow_name": "Automated Lead Generation & Qualification with Google Maps, GPT-4 & HubSpot",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "API, Google Sheets, HubSpot, OpenAI",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate CVE tracking with n8n: fetch real-time vulnerability data from the NVD API, organize in Google Sheets, and trigger alerts. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "▶️ Start Lead Generation",
+      "type": "Trigger"
+    },
+    {
+      "name": "🔧 Configuration Hub",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🤖 AI Lead Qualification",
+      "type": "Process"
+    },
+    {
+      "name": "📊 Export Qualified Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "📋 Export All Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "📊 Export Analytics",
+      "type": "Data Output"
+    },
+    {
+      "name": "🗺️ Google Maps Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "📞 Yellow Pages Scraper",
+      "type": "Data Input"
+    },
+    {
+      "name": "🧹 Advanced Data Cleaner",
+      "type": "Data Processing"
+    },
+    {
+      "name": "✉️ Email Verification",
+      "type": "Data Input"
+    },
+    {
+      "name": "💎 Lead Enrichment Engine",
+      "type": "Data Processing"
+    },
+    {
+      "name": "🏢 Create HubSpot Contact",
+      "type": "Process"
+    },
+    {
+      "name": "📈 Analytics Engine",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "AI Lead Qualification",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

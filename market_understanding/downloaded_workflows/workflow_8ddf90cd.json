@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "name": "Run Query",
+      "type": "n8n-nodes-base.postgres",
+      "position": [
+        450,
+        450
+      ],
+      "parameters": {
+        "query": "SELECT name, ean FROM product",
+        "operation": "executeQuery"
+      },
+      "credentials": {
+        "postgres": "postgres"
+      },
+      "typeVersion": 1,
+      "id": "6134bc07a6a9c1ec"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "position": [
+        600,
+        450
+      ],
+      "parameters": {
+        "operation": "toFile"
+      },
+      "typeVersion": 1,
+      "id": "e41a6bcf65d8aa7d"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "position": [
+        750,
+        450
+      ],
+      "parameters": {
+        "fileName": "spreadsheet.xls"
+      },
+      "typeVersion": 1,
+      "id": "71e38fa94206825b"
+    }
+  ],
+  "connections": {
+    "Run Query": {
+      "main": [
+        [
+          {
+            "node": "Spreadsheet File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Spreadsheet File": {
+      "main": [
+        [
+          {
+            "node": "Write Binary File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "36a41da4051a226e",
+  "name": "Transfer data from Postgres to Excel",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "postgres",
+    "excel"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ea31d41a",
+  "workflow_id": "ea31d41a",
+  "workflow_id_display": "ea31d41a",
+  "workflow_name": "Build your own Qdrant Vector Store MCP server",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock advanced Qdrant features with a customizable n8n MCP server—supporting facet search, recommendations, and more for powerful business intelligence.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, manualTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Qdrant MCP Server",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Group Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Compare Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify Recommend Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Insert Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Compare Response1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Insert",
+      "type": "Process"
+    },
+    {
+      "name": "Search",
+      "type": "Process"
+    },
+    {
+      "name": "Recommend",
+      "type": "Process"
+    },
+    {
+      "name": "Compare",
+      "type": "Process"
+    },
+    {
+      "name": "Recommend API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Preferences to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Embeddings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Embeddings1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Embeddings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Group Search API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Compare Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Search Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert Reviews",
+      "type": "Process"
+    },
+    {
+      "name": "Search Reviews",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter By CompanyId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Recommend Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ListCompanies",
+      "type": "Process"
+    },
+    {
+      "name": "List by Facet API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Facet Index",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Collection",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Recommend API",
+    "Group Search API",
+    "List by Facet API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

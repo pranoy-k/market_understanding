@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0eeda247",
+  "workflow_id": "0eeda247",
+  "workflow_id_display": "0eeda247",
+  "workflow_name": "Auto-Generate & Distribute LinkedIn Posts with GPT-4 to Profile & Groups",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "13",
+  "tools_integrations": "LinkedIn, OpenAI",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and auto-distribute AI-powered LinkedIn posts to your profile and groups. Boost reach, engagement, and brand presence—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, httpRequest, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Linkedin-Post-Topic",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get-Group-id",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update-Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Linedin-Post-Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Format-Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Linkedin-User-Detail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Linkedin-post",
+      "type": "Data Input"
+    },
+    {
+      "name": "Pick 1 by 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post-Linkedin-Groups",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

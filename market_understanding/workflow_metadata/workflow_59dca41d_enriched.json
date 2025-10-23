@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/59dca41d",
+  "workflow_id": "59dca41d",
+  "workflow_id_display": "59dca41d",
+  "workflow_name": "Bulk Automated Google Drive Files Sharing and Direct Download Link Generation",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Drive file sharing with n8n: batch-process thousands of files, generate public links, and manage permissions efficiently. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Manual Execute Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Folder ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Download Links",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change Status",
+      "type": "Process"
+    },
+    {
+      "name": "Replace Me",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

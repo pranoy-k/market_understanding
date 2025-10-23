@@ -1,0 +1,123 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d8bfe5f0",
+  "workflow_id": "d8bfe5f0",
+  "workflow_id_display": "d8bfe5f0",
+  "workflow_name": "Automate Cryptocurrency Funding Fee Tracking with Binance API and Airtable",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "api",
+    "Scheduled"
+  ],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate funding statements and token price management by integrating Binance API with Airtable. Perfect for crypto pros—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields4",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Tokens",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Tokens1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Token Prices1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Token",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Statement",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Statement1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Crypto2",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Positions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate Positions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Fees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Tokens",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Crypto",
+      "type": "Process"
+    },
+    {
+      "name": "Get Price",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crypto3",
+      "type": "Process"
+    },
+    {
+      "name": "Get Fees2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Binance - Get Fees",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

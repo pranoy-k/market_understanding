@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0db65443",
+  "workflow_id": "0db65443",
+  "workflow_id_display": "0db65443",
+  "workflow_name": "Sell a Used Car with an AI Agent in Airtop",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Airtop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sell your used car with Airtop automation. Instantly get top offers from sites like Carvana and CarMax—no tedious forms. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, switch, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Offer received",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Type",
+      "type": "Process"
+    },
+    {
+      "name": "Click",
+      "type": "Process"
+    },
+    {
+      "name": "Create session",
+      "type": "Process"
+    },
+    {
+      "name": "Load website",
+      "type": "Process"
+    },
+    {
+      "name": "Click VIN button",
+      "type": "Process"
+    },
+    {
+      "name": "Terminate session",
+      "type": "Process"
+    },
+    {
+      "name": "Take screenshot",
+      "type": "Process"
+    },
+    {
+      "name": "Think next action",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

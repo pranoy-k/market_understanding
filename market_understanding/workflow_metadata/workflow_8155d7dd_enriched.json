@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8155d7dd",
+  "workflow_id": "8155d7dd",
+  "workflow_id_display": "8155d7dd",
+  "workflow_name": "Extract and Merge Twitter (X) Threads using TwitterAPI.io",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "API, Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "enes cingoz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Extract and merge complete Twitter (X) threads or single tweets in seconds! Automate thread fetching effortlessly in n8n—fast, accurate, and cost-effective.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Tweet ID and Username",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Conversation and Author ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge first tweet and others",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get first tweet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge all tweet infos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Tweet Replies",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch tweets which are connected to first tweet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter empty ones",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

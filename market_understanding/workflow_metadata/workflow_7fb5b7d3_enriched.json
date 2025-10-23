@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7fb5b7d3",
+  "workflow_id": "7fb5b7d3",
+  "workflow_id_display": "7fb5b7d3",
+  "workflow_name": "Transcribe Audio Files, Summarize with GPT-4, and Store in Notion",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Drive, Notion, OpenAI",
+  "tags": [
+    "Notion🤖 AI"
+  ],
+  "author_name": "Pat",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow enhances your Notion workspace with AI capabilities, automatically generating content, organizing information, and creating intelligent summaries. It can process Notion pages, use AI to analyze and enhance content, then update your workspace with enriched information.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

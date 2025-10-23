@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dce3b0e9",
+  "workflow_id": "dce3b0e9",
+  "workflow_id_display": "dce3b0e9",
+  "workflow_name": "Get all releases in Sentry",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate form submissions with instant thank-you emails, Airtable updates, and Slack notifications. Stay organized and respond fast—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, sentryIo"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sentry.io",
+      "type": "Process"
+    },
+    {
+      "name": "Sentry.io1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

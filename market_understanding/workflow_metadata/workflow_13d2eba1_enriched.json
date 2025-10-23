@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/13d2eba1",
+  "workflow_id": "13d2eba1",
+  "workflow_id_display": "13d2eba1",
+  "workflow_name": "Automated Email Assistant for Suppliers using OpenAI and Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, Facebook, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Omar Hdez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with mcpClientTool, googleSheetsTool, agent"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Entry Point: Chat with the Agent",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Model Open AI",
+      "type": "Process"
+    },
+    {
+      "name": "Supplier database.",
+      "type": "Data Output"
+    },
+    {
+      "name": "Personal Email Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Node that connects to the MCP server.",
+      "type": "Process"
+    },
+    {
+      "name": "Thinker, think before executing.",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

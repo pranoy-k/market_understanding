@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33039d11",
+  "workflow_id": "33039d11",
+  "workflow_id_display": "33039d11",
+  "workflow_name": "Store Chat Data in Supabase PostgreSQL for WhatsApp/Slack with Gemini AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Google Analytics, PostgreSQL, Slack, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "slack",
+    "gemini"
+  ],
+  "author_name": "JPres",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture and store WhatsApp or Slack chat data in Supabase PostgreSQL. Secure, scalable n8n template for analytics and user management—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with manualTrigger, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set sample Input Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GeminiFlash2.0",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Postgres Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update additonal Values e.g. Name, Address ...",
+      "type": "Process"
+    },
+    {
+      "name": "Sample Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

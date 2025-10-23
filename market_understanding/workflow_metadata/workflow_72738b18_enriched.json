@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/72738b18",
+  "workflow_id": "72738b18",
+  "workflow_id_display": "72738b18",
+  "workflow_name": "Get Real-time NFT Insights via Telegram with OpenSea & AI (Main Interface)",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Track NFT trends, analyze collections, and get real-time trade insights—right in Telegram. Powered by OpenSea API and AI. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, toolWorkflow, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adds SessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Opensea Supervisor Brain",
+      "type": "Process"
+    },
+    {
+      "name": "Opensea Supervisor Memory",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Analytics Agent Tool",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea NFT Agent Tool",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Marketplace Agent Tool",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea AI-Powered Insights Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

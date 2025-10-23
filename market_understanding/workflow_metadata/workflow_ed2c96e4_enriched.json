@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ed2c96e4",
+  "workflow_id": "ed2c96e4",
+  "workflow_id_display": "ed2c96e4",
+  "workflow_name": "Markdown timesheet report generation",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Eduard",
+  "author_profile_url": "https://n8n.io/creators/eduard/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Generate detailed HTML reports in n8n using the Markdown node. Easily convert text, download reports, or email them—learn the full workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, function"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "CreateMDReport",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetTimesheetRecords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SortElements",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "GetImg",
+      "type": "Process"
+    },
+    {
+      "name": "ImgBinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Move Binary Data1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

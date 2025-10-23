@@ -1,0 +1,37 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66a463c7",
+  "workflow_id": "66a463c7",
+  "workflow_id_display": "66a463c7",
+  "workflow_name": "Automated Customer Service Ticket Creation & Notifications with Asana & WhatsApp",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "Bela",
+  "author_profile_url": "https://n8n.io/creators/bwiertz/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate customer service with instant WhatsApp confirmations and Asana ticket creation. Easy setup and fully customizable workflow. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with formTrigger, stickyNote, whatsApp"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Form Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Asana",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

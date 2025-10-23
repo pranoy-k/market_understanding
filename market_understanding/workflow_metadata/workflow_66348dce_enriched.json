@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66348dce",
+  "workflow_id": "66348dce",
+  "workflow_id_display": "66348dce",
+  "workflow_name": "Monday.com Useful Utilities",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Joey DâAnna",
+  "author_profile_url": "https://n8n.io/creators/jdana/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock powerful Monday.com integrations: retrieve columns by name/ID, fetch related pulses & subitems, upload files, and boost workflow flexibility. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "PULL SUBITEMS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SPLIT SUBITEMS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET EACH SUBITEM",
+      "type": "Process"
+    },
+    {
+      "name": "MONDAY UPLOAD",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PULL LINKEDPULSE",
+      "type": "Process"
+    },
+    {
+      "name": "GET ITEM",
+      "type": "Process"
+    },
+    {
+      "name": "GET LINKEDPULSES",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET BOARD RELATION",
+      "type": "Data Processing"
+    },
+    {
+      "name": "COLUMN BY NAME",
+      "type": "Data Processing"
+    },
+    {
+      "name": "COLUMN BY ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SPLIT LINKED PULSES",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

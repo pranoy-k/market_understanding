@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9597700",
+  "workflow_id": "b9597700",
+  "workflow_id_display": "b9597700",
+  "workflow_name": "Automate Pinterest Analysis & AI-Powered Content Suggestions With Pinterest API",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API, Airtable, Google Analytics, OpenAI",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Marketing Canopy",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "8:00am Morning Scheduled Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Airtable2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Record Within Pinterest Data Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pull List of Pinterest Pins From Account",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Data Field To Include Organic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pinterest Analysis AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Pinterest Data Analysis Summary LLM",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Airtable API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

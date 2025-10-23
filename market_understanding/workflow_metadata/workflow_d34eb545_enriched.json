@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d34eb545",
+  "workflow_id": "d34eb545",
+  "workflow_id_display": "d34eb545",
+  "workflow_name": "Dynamically replace images in Google Slides via API",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "API",
+  "tags": [
+    "google",
+    "api"
+  ],
+  "author_name": "Emmanuel Bernard",
+  "author_profile_url": "https://n8n.io/creators/n8ninja/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily automate image updates in Google Slides via API—replace backgrounds or logos with a simple POST request. Streamline presentations effortlessly.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, if"
+  ],
+  "nodes": [
+    {
+      "name": "Replace Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Error Missing Fields",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve matching Images ObjectIds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve All Slide Elements",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

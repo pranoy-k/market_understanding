@@ -1,0 +1,82 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5047ce36",
+  "workflow_id": "5047ce36",
+  "workflow_id_display": "5047ce36",
+  "workflow_name": "Optimize Amazon Ads with GPT-4o for Bid, Budget & Keyword Recommendations",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "AWS, Email, OpenAI",
+  "tags": [],
+  "author_name": "Brian Money",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Amazon Sponsored Products analysis with AI. Instantly get campaign insights, bidding advice, and email reports—easy setup in 15 minutes. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lmChatOpenAi, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fileName",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Preserve File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Preserve CSV File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Email Options",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "List Files",
+      "type": "Process"
+    },
+    {
+      "name": "Get File",
+      "type": "Process"
+    },
+    {
+      "name": "Merge XLSX and CSV",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract XLSX Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract CSV Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Analyze",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

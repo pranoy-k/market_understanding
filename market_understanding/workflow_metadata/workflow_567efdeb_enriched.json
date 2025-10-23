@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/567efdeb",
+  "workflow_id": "567efdeb",
+  "workflow_id_display": "567efdeb",
+  "workflow_name": "Import multiple Manufacturers from Google Sheets to Shopware 6",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Manuel",
+  "author_profile_url": "https://n8n.io/creators/automate-everything/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import hundreds of manufacturers from Google Sheets to Shopware, including logos and translations. Save time, reduce errors—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Manufacturer from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Import Request Body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Manufacturer Logo",
+      "type": "Data Input"
+    },
+    {
+      "name": "Import Manufacturer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Manufacturers",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

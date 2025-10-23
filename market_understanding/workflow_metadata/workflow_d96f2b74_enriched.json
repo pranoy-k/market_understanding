@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d96f2b74",
+  "workflow_id": "d96f2b74",
+  "workflow_id_display": "d96f2b74",
+  "workflow_name": "Receive updates for the position of the ISS and push it to a Firbase",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "RSS, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Forms feedback with real-time sentiment analysis, smart categorization, and instant Slack reports. Empower your team—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleFirebaseRealtimeDatabase, set, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Cloud Realtime Database",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

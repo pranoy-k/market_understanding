@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d100e518",
+  "workflow_id": "d100e518",
+  "workflow_id_display": "d100e518",
+  "workflow_name": "Analyze Reddit Posts with AI to Identify Business Opportunities",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Google Sheets, Reddit",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Alex Huang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Discover high-potential business ideas fast—AI scans Reddit, filters trends, and delivers actionable insights in Google Sheets. Save time on market research!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lmChatOpenAi, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Select Key Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Find Proper Solutions",
+      "type": "Process"
+    },
+    {
+      "name": "Output The Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post Sentiment Analysis",
+      "type": "Process"
+    },
+    {
+      "name": "Post Summarization",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 3 Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analysis Content By AI",
+      "type": "Process"
+    },
+    {
+      "name": "Get Posts",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

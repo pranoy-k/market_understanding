@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/789cc17f",
+  "workflow_id": "789cc17f",
+  "workflow_id_display": "789cc17f",
+  "workflow_name": "AI-Powered Research Assistant for Platform Questions with GPT-4o and MCP",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Onur",
+  "author_profile_url": "https://n8n.io/creators/onurpolat05/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly get expert answers to n8n questions with this AI-powered workflow. Searches docs, forums & workflows for fast, reliable solutions. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, mcpClientTool, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "n8n Research AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "n8n-assistant Tool Lookup",
+      "type": "Process"
+    },
+    {
+      "name": "n8n-assistant Execute Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

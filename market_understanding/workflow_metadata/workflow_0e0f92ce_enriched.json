@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0e0f92ce",
+  "workflow_id": "0e0f92ce",
+  "workflow_id_display": "0e0f92ce",
+  "workflow_name": "Natural Language Task Management with Todoist and GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "max e",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Turn plain-language to-dos into organized Todoist tasks—no code needed. Auto-set due dates, priorities, labels & more with GPT-4o in minutes. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with todoistTool, agent, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Todoist Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Orchestrator",
+      "type": "Process"
+    },
+    {
+      "name": "Call Todoist Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Get a Task",
+      "type": "Process"
+    },
+    {
+      "name": "Create a Task",
+      "type": "Process"
+    },
+    {
+      "name": "Update a Task",
+      "type": "Process"
+    },
+    {
+      "name": "Mark Task as Done",
+      "type": "Process"
+    },
+    {
+      "name": "Reopen a Task",
+      "type": "Process"
+    },
+    {
+      "name": "Move a Task",
+      "type": "Process"
+    },
+    {
+      "name": "Get All Projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get a Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update a Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Archive a Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Archived Projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "Unarchive a Project",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get All Sections",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get a Section",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a Section",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update a Section",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete a Section",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get All Labels",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get a Label",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a Label",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update a Label",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete a Label",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add a Comment",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

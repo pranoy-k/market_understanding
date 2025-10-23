@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f660996d",
+  "workflow_id": "f660996d",
+  "workflow_id_display": "f660996d",
+  "workflow_name": "Create Onfleet tasks from local Spreadsheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import delivery tasks into Onfleet from spreadsheets. Automate one-time task creation, customize imports, and streamline last-mile logistics.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with onfleet, spreadsheetFile, readBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet",
+      "type": "Process"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

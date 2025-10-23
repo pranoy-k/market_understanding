@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6a47e655",
+  "workflow_id": "6a47e655",
+  "workflow_id_display": "6a47e655",
+  "workflow_name": "Screen and Evaluate Job Candidates with GPT-4, Airtable, and Google Drive",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Airtable, Google Drive, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Billy Christi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline hiring with an AI-powered workflow: automate resume screening, get data-backed candidate reports, and manage everything in Airtable. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, outputParserStructured"
+  ],
+  "nodes": [
+    {
+      "name": "Candidate Application Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set File Array for airtable",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Search Job Posting",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Candidate",
+      "type": "Data Output"
+    },
+    {
+      "name": "Candidate Screener AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload File",
+      "type": "Process"
+    },
+    {
+      "name": "Set File Permission",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Resume PDF",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

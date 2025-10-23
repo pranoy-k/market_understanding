@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7dc3cd13",
+  "workflow_id": "7dc3cd13",
+  "workflow_id_display": "7dc3cd13",
+  "workflow_name": "Enrich up to 1500 emails per hour with Dropcontact batch requests",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "victor de coster",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly enrich up to 1,500 emails/hour with Dropcontact batch processing. Integrate your data sources, automate formatting, and ensure accurate results.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "PROFILES QUERY",
+      "type": "Data Output"
+    },
+    {
+      "name": "BULK DROPCONTACT REQUESTS",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "BULK DROPCONTACT DOWNLOAD",
+      "type": "Data Input"
+    },
+    {
+      "name": "DATA TRANSFORMATION",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

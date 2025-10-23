@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/799c590a",
+  "workflow_id": "799c590a",
+  "workflow_id_display": "799c590a",
+  "workflow_name": "Notify on Slack when refund is registered in WooCommerce",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Monitor WooCommerce refunds over $100 and get instant Slack notifications. Easy setup—connect your accounts and stay updated on major returns. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, wooCommerceTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Order Updated",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

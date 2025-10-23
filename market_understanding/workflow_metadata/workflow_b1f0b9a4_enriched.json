@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b1f0b9a4",
+  "workflow_id": "b1f0b9a4",
+  "workflow_id_display": "b1f0b9a4",
+  "workflow_name": "Build a Financial Documents Assistant using Qdrant and Mistral.ai",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Build an AI-powered assistant for financial document analysis using Qdrant vector database and Mistral.ai. Perfect for analyzing financial reports, statements, and regulatory documents.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Local File Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Embedding Document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remap for File_Added Flow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Embeddings Mistral Cloud",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Question and Answer Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Mistral Cloud Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Retriever",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings Mistral Cloud1",
+      "type": "Process"
+    },
+    {
+      "name": "Search For Existing Point",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Existing Point",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search For Existing Point1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Delete Existing Point1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Qdrant Vector Store1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

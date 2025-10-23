@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/768a5bbb",
+  "workflow_id": "768a5bbb",
+  "workflow_id_display": "768a5bbb",
+  "workflow_name": "Todoist weekly email of completed tasks",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Email",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Martijn Smit",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get a clear weekly summary of your completed Todoist tasks via email, with easy setup, project exclusions, and daily task grouping. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Every Friday afternoon",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get completed tasks via Todoist API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Optional: Ignore specific projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format the email body",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Get completed tasks via Todoist API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e39146fa",
+  "workflow_id": "e39146fa",
+  "workflow_id_display": "e39146fa",
+  "workflow_name": "Track Partnerstack Affiliate Events with Google Sheets & Telegram Notifications",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "google",
+    "telegram"
+  ],
+  "author_name": "Aitor | 1node.ai",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Partnerstack event tracking with n8n: Log events to Google Sheets and get instant Telegram alerts. Simplify team monitoring—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, set, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Set Chat Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Row in Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

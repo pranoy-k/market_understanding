@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3d128f3",
+  "workflow_id": "a3d128f3",
+  "workflow_id_display": "a3d128f3",
+  "workflow_name": "Control your discord server with natural language via GPT4o and MCP Client",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Discord, OpenAI",
+  "tags": [
+    "discord🤖 openai"
+  ],
+  "author_name": "David Ashby",
+  "author_profile_url": "https://n8n.io/creators/cfomodz/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly connect your Discord MCP Server and OpenAI—set up in minutes, trigger actions via chat messages, and streamline integration. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Discord MCP Client",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

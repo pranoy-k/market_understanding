@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dca5adee",
+  "workflow_id": "dca5adee",
+  "workflow_id_display": "dca5adee",
+  "workflow_name": "🐋🤖 DeepSeek AI Agent + Telegram + LONG TERM Memory 🧠",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Telegram, Webhook",
+  "tags": [
+    "Webhook🤖 AI",
+    "Telegram"
+  ],
+  "author_name": "Joseph LePage",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Validation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DeepSeek-R1 Reasoning",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek-V3 Chat",
+      "type": "Process"
+    },
+    {
+      "name": "Save Long Term Memories",
+      "type": "Process"
+    },
+    {
+      "name": "Listen for Telegram Events",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Long Term Memories",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

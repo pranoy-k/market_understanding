@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e26ec5a0",
+  "workflow_id": "e26ec5a0",
+  "workflow_id_display": "e26ec5a0",
+  "workflow_name": "Convert Typeform data into Spreadsheet",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically update your NextCloud Problems.xls spreadsheet with each new Typeform submission—seamless syncing keeps your data organized and current. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with merge, typeformTrigger, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "NextCloud",
+      "type": "Process"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "NextCloud1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

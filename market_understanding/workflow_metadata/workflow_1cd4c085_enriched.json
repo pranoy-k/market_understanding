@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1cd4c085",
+  "workflow_id": "1cd4c085",
+  "workflow_id_display": "1cd4c085",
+  "workflow_name": "Backup n8n Workflows to Bitbucket",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Gareth B. Davies",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up and version-control your self-hosted n8n workflows with automated daily backups to Bitbucket’s free private repositories. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Run Daily at 2 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Bitbucket Workspace & Repository",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Wait Time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get All Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Existing Worfklow from Bitbucket",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Workflow to Bitbucket",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,157 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6c5145a6",
+  "workflow_id": "6c5145a6",
+  "workflow_id_display": "6c5145a6",
+  "workflow_name": "Test Webhooks in n8n Without Changing WEBHOOK_URL (PostBin & BambooHR Example)",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "Ludwig",
+  "author_profile_url": "https://n8n.io/creators/ludwig/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly test n8n webhooks on localhost using PostBin’s public endpoints—no `WEBHOOK_URL` changes needed. Streamline debugging and setup in minutes!",
+  "key_benefits": [
+    "API integration",
+    "Integration with postBin, noOp, outputParserAutofixing"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format url for webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format url for webhook1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SET BambooHR subdomain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format payload for BambooHR webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format displayName",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Bin",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Bin",
+      "type": "Process"
+    },
+    {
+      "name": "GET most recent request",
+      "type": "Process"
+    },
+    {
+      "name": "MOCK request",
+      "type": "Process"
+    },
+    {
+      "name": "Create Bin1",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET Bin1",
+      "type": "Process"
+    },
+    {
+      "name": "Split out fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine fields to monitor",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create webhook in BambooHR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create dummy data for employees",
+      "type": "Process"
+    },
+    {
+      "name": "Keep only new employee fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET all possible fields to monitor in BambooHR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Register and test webhook",
+      "type": "Process"
+    },
+    {
+      "name": "Check BambooHR for calls to webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create employee records with dummy data",
+      "type": "Process"
+    },
+    {
+      "name": "Split out employees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Combine employees into list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pluralize key",
+      "type": "Process"
+    },
+    {
+      "name": "DELETE BambooHR webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET most recent request1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

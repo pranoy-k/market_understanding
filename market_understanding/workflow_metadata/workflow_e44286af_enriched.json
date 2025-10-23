@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e44286af",
+  "workflow_id": "e44286af",
+  "workflow_id_display": "e44286af",
+  "workflow_name": "Context-Aware Discord Bot Replies to Mentions & DMs with GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Discord, OpenAI",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "Niten Musa",
+  "author_profile_url": "https://n8n.io/creators/nitenmusa/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Deploy an AI-powered Discord bot with GPT-4o for context-aware, real-time replies to mentions and DMs. Easy setup, full customization. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with toolHttpRequest, discordTool, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Public Mention",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mapping data for the Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "DM Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read last private messages",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

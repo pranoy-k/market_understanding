@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2721d5cf",
+  "workflow_id": "2721d5cf",
+  "workflow_id_display": "2721d5cf",
+  "workflow_name": "Sync Outlook Calendar events to Notion",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Notion",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Outlook Calendar events to Notion. Auto-create or update pages, avoid duplicates, and streamline project management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, dateTime"
+  ],
+  "nodes": [
+    {
+      "name": "On schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Try get database page",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    },
+    {
+      "name": "Update database page",
+      "type": "Process"
+    },
+    {
+      "name": "X days into the future",
+      "type": "Process"
+    },
+    {
+      "name": "Split out items",
+      "type": "Process"
+    },
+    {
+      "name": "Get Outlook Calendar events",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

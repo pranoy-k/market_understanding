@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c0b48219",
+  "workflow_id": "c0b48219",
+  "workflow_id_display": "c0b48219",
+  "workflow_name": "Automatically Create Trello Cards from Google Forms Lead Submissions",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Prompt and Paste",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your lead capture—turn Google Forms submissions into Trello cards instantly. Streamline lead management and boost productivity. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "New Form Submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Solo (1)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Small (2–10)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Medium (11–50)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Large (51–200)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enterprise (200+)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Youtube",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Facebook/Instagram",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Friendy/Family",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Lead",
+      "type": "Process"
+    },
+    {
+      "name": "Create Card",
+      "type": "Process"
+    },
+    {
+      "name": "Trello | Update Custom Fields",
+      "type": "Data Input"
+    },
+    {
+      "name": "Trello | Update Company Size",
+      "type": "Data Input"
+    },
+    {
+      "name": "Trello| Update Lead Source",
+      "type": "Data Input"
+    },
+    {
+      "name": "Trello| Update Company Industry",
+      "type": "Data Input"
+    },
+    {
+      "name": "Options for Company Industry",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

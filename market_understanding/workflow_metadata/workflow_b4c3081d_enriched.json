@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b4c3081d",
+  "workflow_id": "b4c3081d",
+  "workflow_id_display": "b4c3081d",
+  "workflow_name": "Automate GitHub Issue Assignments via Comment Commands",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Roshan Ramani",
+  "author_profile_url": "https://n8n.io/creators/rawsun007/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub issue assignment—let contributors claim tasks with \"assign me.\" Boost onboarding, reduce triage, and streamline your open source workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, noOp, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Issue Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Commenter",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

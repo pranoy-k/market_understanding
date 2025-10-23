@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ffe599d5",
+  "workflow_id": "ffe599d5",
+  "workflow_id_display": "ffe599d5",
+  "workflow_name": "Automate Digital Delivery After PayPal Purchase Using n8n",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Email, PayPal",
+  "tags": [],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate digital product delivery after PayPal purchases with n8n—no coding required. Instantly send branded emails and files. Learn how now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, emailSend, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Email Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Order Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "getJSON",
+      "type": "Data Input"
+    },
+    {
+      "name": "Conver to File",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

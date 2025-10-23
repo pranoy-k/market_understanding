@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c42974a1",
+  "workflow_id": "c42974a1",
+  "workflow_id_display": "c42974a1",
+  "workflow_name": "Website Content Analysis with GPT-4 and Storage to Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Nafiul hasan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate website content extraction with AI and save summaries to Google Sheets. No coding needed—customizable, fast, and perfect for data analysis. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, markdown, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Click to Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Process the Markdown to readable Contents",
+      "type": "Process"
+    },
+    {
+      "name": "Save the Website Scraping content to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Input Your Website URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Markdown Format",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

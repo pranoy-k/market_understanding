@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/229d4c00",
+  "workflow_id": "229d4c00",
+  "workflow_id_display": "229d4c00",
+  "workflow_name": "CoinMarketCap Telegram Price Bot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get live cryptocurrency prices on Telegram with real-time CoinMarketCap data. Perfect for traders needing instant, automated market insights—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with lmChatOpenAi, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Adds SessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Price Agent",
+      "type": "Process"
+    },
+    {
+      "name": "CoinMarketCap Price",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

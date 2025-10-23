@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f2ad22bc",
+  "workflow_id": "f2ad22bc",
+  "workflow_id_display": "f2ad22bc",
+  "workflow_name": "Update all Zammad Roles to default values",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sirhexalot",
+  "author_profile_url": "https://n8n.io/creators/sirhexalot/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Reset all Zammad user roles to default with this n8n workflow. Ensure role consistency, easily exclude users, and simplify setup. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, zammad, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zammad Univeral User Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Basic Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zammad Univeral Role Object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all Users",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Roles",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Excel Roles",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Users to default Role(s)",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

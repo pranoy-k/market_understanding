@@ -1,0 +1,108 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/82afe5ab",
+  "workflow_id": "82afe5ab",
+  "workflow_id_display": "82afe5ab",
+  "workflow_name": "Automate WhatsApp Booking System with GPT-4 Assistant, Cal.com and SMS Reminders",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "OpenAI, SMS, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "Scheduled"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate WhatsApp appointment bookings with AI. Qualify leads, schedule via Cal.com, and send instant SMS reminders. Perfect for consultants and clinics.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, googleSheetsTool, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger: Check Appointments Every Hour",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Trigger (WhatsApp Input)",
+      "type": "Trigger"
+    },
+    {
+      "name": "LLM: GPT-4o Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create New Prospect in Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Prospect with Booking Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Retrieve Prospect Details",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark Booking as Confirmed in Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Upcoming Appointments from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark SMS as Sent in Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Booking Assistant (Dr Firas)",
+      "type": "Process"
+    },
+    {
+      "name": "AI Conversation Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Available Time Slots",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Response to WhatsApp",
+      "type": "Trigger"
+    },
+    {
+      "name": "Normalize Booking Time (UTC Format)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Booking",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format Date for Readability (Display)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook Response: Booking Confirmed",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Response: Booking Failed",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter Appointments Within Next 2 Hours",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

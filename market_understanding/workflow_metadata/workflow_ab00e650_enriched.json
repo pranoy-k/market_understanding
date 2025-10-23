@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab00e650",
+  "workflow_id": "ab00e650",
+  "workflow_id_display": "ab00e650",
+  "workflow_name": "Sync New Shopify Products to Odoo Products",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "Evozard",
+  "author_profile_url": "https://n8n.io/creators/evozardconsulting/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync new Shopify products with Odoo, prevent duplicates, and streamline product creation by auto-transferring key details. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with shopifyTrigger, code, filter"
+  ],
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Odoo6",
+      "type": "Process"
+    },
+    {
+      "name": "Filter2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Odoo7",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

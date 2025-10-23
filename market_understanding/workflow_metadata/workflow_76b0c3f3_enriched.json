@@ -1,0 +1,144 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/76b0c3f3",
+  "workflow_id": "76b0c3f3",
+  "workflow_id_display": "76b0c3f3",
+  "workflow_name": "Autonomous AI crawler",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "28",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "Web Scraping🤖 AI"
+  ],
+  "author_name": "Oskar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An intelligent web crawler that autonomously navigates websites and extracts relevant information using AI. It can understand context, follow relevant links, and compile structured data from unstructured web content.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Execute workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "JSON Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map company name and website",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select company name and website",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set social media array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set domain to path",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set domain (text)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add protocool to domain (text)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set response (text)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set domain (URL)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set response (URL)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add protocool to domain (URL)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Text",
+      "type": "Process"
+    },
+    {
+      "name": "URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Get companies",
+      "type": "Process"
+    },
+    {
+      "name": "Merge all data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert new row",
+      "type": "Process"
+    },
+    {
+      "name": "Convert HTML to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve URLs",
+      "type": "Process"
+    },
+    {
+      "name": "Split out URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove duplicated",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out invalid URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out empty hrefs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get website (text)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get website (URL)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Crawl website",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

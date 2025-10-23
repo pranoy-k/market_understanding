@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/351a0b96",
+  "workflow_id": "351a0b96",
+  "workflow_id_display": "351a0b96",
+  "workflow_name": "AI image generator from text built on fal.ai",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert text prompts into AI-generated images with a secure, moderated API endpoint. Fast setup, content filtering, and reliable results. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, textClassifier, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Submit Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Result",
+      "type": "Data Input"
+    },
+    {
+      "name": "400 Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Success",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

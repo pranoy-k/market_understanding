@@ -1,0 +1,129 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e54f484e",
+  "workflow_id": "e54f484e",
+  "workflow_id_display": "e54f484e",
+  "workflow_name": "Automate Customer Support Issue Resolution using AI Text Classifier",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Facebook, OpenAI, RSS, Slack",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that runs on a schedule integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simplify Thread For AI",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Get Issue Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Get Issue Comments",
+      "type": "Process"
+    },
+    {
+      "name": "Close Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Send Reminder",
+      "type": "Process"
+    },
+    {
+      "name": "Join Comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Autoclose Message",
+      "type": "Process"
+    },
+    {
+      "name": "Ask For Feedback Message",
+      "type": "Process"
+    },
+    {
+      "name": "Reply to Issue",
+      "type": "Process"
+    },
+    {
+      "name": "Close Issue2",
+      "type": "Process"
+    },
+    {
+      "name": "Get List of Unresolved Long Lived Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Customer Satisfaction Agent",
+      "type": "Process"
+    },
+    {
+      "name": "KnowledgeBase Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Issue Reminder Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Find Simlar Issues",
+      "type": "Process"
+    },
+    {
+      "name": "Query KnowledgeBase",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e2525b15",
+  "workflow_id": "e2525b15",
+  "workflow_id_display": "e2525b15",
+  "workflow_name": "Create a Pipedrive activity on Calendly event scheduled",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your meetings with this n8n workflow: sync Calendly with Pipedrive and get Slack reminders to capture interview notes. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with dateTime, pipedrive, calendlyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "Date & Time",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

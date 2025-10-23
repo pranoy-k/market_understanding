@@ -1,0 +1,204 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18302af2",
+  "workflow_id": "18302af2",
+  "workflow_id_display": "18302af2",
+  "workflow_name": "AI Email Triage & Alert System with GPT-4 and Telegram Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "90",
+  "tools_integrations": "Email, OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Peter Joslyn",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate email triage, summaries, and real-time alerts with secure, self-hosted AI for n8n. Reclaim 5–10 hours weekly. Learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with noOp, outputParserAutofixing, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Email",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Webhook Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Telegram Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Email Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Escalation Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Priority Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Summary Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Newsletter Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Newsletter Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Priority Autofixing Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Escalate Autofixing Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Summary Autofixing Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Webhook Request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Telegram Request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Workflow Request",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Agent Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model (Summary)",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model (Agent)",
+      "type": "Process"
+    },
+    {
+      "name": "Add Summary to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Aggregate Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Request Complete",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini (OmniClassifier)",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini (Escalation)",
+      "type": "Process"
+    },
+    {
+      "name": "Human Intervention Check",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini (Priority)",
+      "type": "Process"
+    },
+    {
+      "name": "Priority Check",
+      "type": "Process"
+    },
+    {
+      "name": "Context & Summary Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini (Newsletter)",
+      "type": "Process"
+    },
+    {
+      "name": "Newsletter Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After Noise/Spam",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After Promotions",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After Social",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After Newsletters",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After High Priority",
+      "type": "Process"
+    },
+    {
+      "name": "Merge After Medium/Low Priority",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Call Sub-Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Master Email Coordinator",
+      "type": "Process"
+    },
+    {
+      "name": "Unsubscribe",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

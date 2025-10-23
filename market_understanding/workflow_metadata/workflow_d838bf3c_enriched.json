@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d838bf3c",
+  "workflow_id": "d838bf3c",
+  "workflow_id_display": "d838bf3c",
+  "workflow_name": "Qualys Scan Slack Report Subworkflow",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Qualys security report generation and delivery in Slack. Boost SOC efficiency with real-time updates, seamless integration, and error reduction. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, xml, set"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Demo Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Report IDs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert XML To JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Launch Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Status of Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Report Launch XML to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Report List to JSON",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

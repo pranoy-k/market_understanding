@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e7a3a59d",
+  "workflow_id": "e7a3a59d",
+  "workflow_id_display": "e7a3a59d",
+  "workflow_name": "Lonescale Hiring Signal - Send leads to lemlist and Hubspot",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lempire/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock job offers to boost outreach: personalize messages, gain fresh leads, and contact prospects at the right time. Learn how to maximize results!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with slack, hubspot, dropcontact"
+  ],
+  "nodes": [
+    {
+      "name": "Lemlist - Add lead to campaign",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Follow up task",
+      "type": "Process"
+    },
+    {
+      "name": "Lonescale - New Job Intent",
+      "type": "Trigger"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Search company",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot Update Account",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot Create Account",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Create/Update Contact",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Linkedin Outreach",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

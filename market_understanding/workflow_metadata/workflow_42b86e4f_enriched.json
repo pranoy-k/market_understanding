@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/42b86e4f",
+  "workflow_id": "42b86e4f",
+  "workflow_id_display": "42b86e4f",
+  "workflow_name": "Send specific PDF attachments from Gmail to Google Drive using OpenAI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Email, Gmail, Google Drive, OpenAI, PDF",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Use OpenAI to identify and route specific PDF attachments from Gmail to Google Drive.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "On email received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI matches PDF textual content",
+      "type": "Process"
+    },
+    {
+      "name": "Read PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Not a PDF",
+      "type": "Process"
+    },
+    {
+      "name": "This is a matched PDF",
+      "type": "Process"
+    },
+    {
+      "name": "This is not a matched PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Iterate over email attachments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload file to folder",
+      "type": "Process"
+    },
+    {
+      "name": "Ignore large PDFs",
+      "type": "Process"
+    },
+    {
+      "name": "There are no attachments",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

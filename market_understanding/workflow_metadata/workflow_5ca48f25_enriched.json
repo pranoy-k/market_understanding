@@ -1,0 +1,146 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5ca48f25",
+  "workflow_id": "5ca48f25",
+  "workflow_id_display": "5ca48f25",
+  "workflow_name": "Automate Competitor Research with Exa.ai, Notion and AI Agents",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline competitor research with this n8n workflow—automate data collection, gain insights, and save reports to Notion. Discover how it works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Set Source Company",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Collect Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Search Crunchbase",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search WellFound",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search LinkedIn",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webscraper Tool1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Results to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Company Profiles Exist",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webscraper Tool",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Company Website",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Product Review Sites",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webscraper Tool2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Insert Into Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Competitor Search via Exa.ai",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Company News",
+      "type": "Data Input"
+    },
+    {
+      "name": "Company Overview Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Company Product Offering Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Company Product Reviews Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

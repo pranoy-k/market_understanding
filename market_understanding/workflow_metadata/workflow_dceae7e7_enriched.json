@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dceae7e7",
+  "workflow_id": "dceae7e7",
+  "workflow_id_display": "dceae7e7",
+  "workflow_name": "Cold Outreach Automation: Scrape Local Leads with Dumpling AI & Call via Vapi",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate cold outreach: generate and call local business leads using AI. Scrape, dial, and log calls—ideal for sales teams and agencies. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Start Workflow Manually",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Business Name, Phone and website",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Phone Number for Calling",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Search Keywords from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Log Called Business Info to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Google Map Businesses using Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Each Business Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Valid Phone Numbers Only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Initiate Vapi AI Call to Business",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

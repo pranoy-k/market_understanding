@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9676842a",
+  "workflow_id": "9676842a",
+  "workflow_id_display": "9676842a",
+  "workflow_name": "Email Notifications to Telegram using Temporary HTML URL Hosting via GitHub Gist",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Email, GitHub, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Nskha",
+  "author_profile_url": "https://n8n.io/creators/nskha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate instant Telegram alerts for new emails with secure, temporary HTML previews. Get rapid, private access—learn more about this workflow!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, emailReadImap, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Github Gist",
+      "type": "Data Input"
+    },
+    {
+      "name": "Github Gist ‌",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

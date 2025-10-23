@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7009010e",
+  "workflow_id": "7009010e",
+  "workflow_id_display": "7009010e",
+  "workflow_name": "Enrich new accounts in Pipedrive using Datagma API",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lempire/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enrich new CRM accounts with ICP data from Datagma. Automate lead profiling, contact updates, and targeted sales—no coding required. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, pipedriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Pipedrive Trigger - New Company Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Prepare Data Before Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "list people",
+      "type": "Process"
+    },
+    {
+      "name": "Pipedrive - Enrich Organization",
+      "type": "Process"
+    },
+    {
+      "name": "Pipedrive - Add Person",
+      "type": "Process"
+    },
+    {
+      "name": "Datagma - Enrich Company",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Datagma - Find Emails",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

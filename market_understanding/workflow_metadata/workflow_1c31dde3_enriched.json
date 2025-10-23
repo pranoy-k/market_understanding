@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c31dde3",
+  "workflow_id": "1c31dde3",
+  "workflow_id_display": "1c31dde3",
+  "workflow_name": "Automate Instagram Content Discovery & Repurposing w/ Apify, GPT-4o & Perplexity",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Instagram, OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Nick Saraev",
+  "author_profile_url": "https://n8n.io/creators/nicksaraev/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly scale your Instagram with a fully automated workflow that finds trending content, generates original scripts, and boosts growth—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter & Generate Suggestions",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe Video",
+      "type": "Process"
+    },
+    {
+      "name": "Write New Script",
+      "type": "Process"
+    },
+    {
+      "name": "Search for Entries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Entries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Entries",
+      "type": "Data Output"
+    },
+    {
+      "name": "Run Actor Synchronously",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Drop Duplicates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search Perplexity",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

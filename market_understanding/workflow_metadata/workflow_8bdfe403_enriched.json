@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8bdfe403",
+  "workflow_id": "8bdfe403",
+  "workflow_id_display": "8bdfe403",
+  "workflow_name": "Auto-Generate Blog & AI Image from YouTube Videos with Dumpling AI & GPT-4o",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI, YouTube",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly repurpose YouTube videos into professional blog posts and visuals. Save hours with full automation—perfect for creators and marketing teams.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, openAi, extractFromFile"
+  ],
+  "nodes": [
+    {
+      "name": "Watch Folder for New YouTube Videos",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Blog & Image Prompt using GPT-4o",
+      "type": "Process"
+    },
+    {
+      "name": "Save Blog Post to Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download Video File",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Downloaded Video to Base64",
+      "type": "Data Output"
+    },
+    {
+      "name": "Transcribe Video with Dumpling AI (Full Transcript)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Visual from Blog Prompt with Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Blog post Image to Airtable",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

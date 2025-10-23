@@ -1,0 +1,130 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/422be404",
+  "workflow_id": "422be404",
+  "workflow_id_display": "422be404",
+  "workflow_name": "Shopify Orders to D365 Business Central Sales Orders / Sales Invoices",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Shopify",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Greg Lopez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily sync Shopify orders to MS Dynamics Business Central as Sales Invoices or Sales Orders. Simple setup, step-by-step guides, and expert support. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "SelectFields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Business Central Customer Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "D365 BC Environment Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Lines Invoice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Lines SO",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sales Invoice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sales Order Mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetFufillmentOrders",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Lookup Customers",
+      "type": "Data Input"
+    },
+    {
+      "name": "orderPreprocessing",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Customer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Order Lines",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DELETE Sales Order",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Sales Order",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out Invoice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Invoice Lines",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Sales Invoice",
+      "type": "Data Input"
+    },
+    {
+      "name": "End1",
+      "type": "Process"
+    },
+    {
+      "name": "Lookup Sales Order",
+      "type": "Data Input"
+    },
+    {
+      "name": "Lookup Sales Invoice",
+      "type": "Data Input"
+    },
+    {
+      "name": "DELETE Sales Invoice",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

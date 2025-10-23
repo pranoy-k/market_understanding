@@ -1,0 +1,180 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/adf42128",
+  "workflow_id": "adf42128",
+  "workflow_id_display": "adf42128",
+  "workflow_name": "BambooHR AI-Powered Company Policies and Benefits Chatbot",
+  "category": "HR & Operations",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "39",
+  "tools_integrations": "OpenAI, PDF",
+  "tags": [],
+  "author_name": "Ludwig",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Employee initiates a conversation",
+      "type": "Trigger"
+    },
+    {
+      "name": "AI-Powered HR Benefits and Company Policies Chatbot",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Stringify employee record for response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ensure uniqueness in department list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format name for response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model5",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Vector Store Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Employee Lookup Tool",
+      "type": "Process"
+    },
+    {
+      "name": "GET all files",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out files from undesired categories",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split out individual files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter out non-pdf files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download file from BambooHR",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Supabase Vector Store Retrieval",
+      "type": "Process"
+    },
+    {
+      "name": "GET all employees",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out other employees",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET all employees (second path)",
+      "type": "Process"
+    },
+    {
+      "name": "Extract departments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract department",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve all employees",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out other departments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract relevant employee fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Identify most senior employee",
+      "type": "Process"
+    },
+    {
+      "name": "HR AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

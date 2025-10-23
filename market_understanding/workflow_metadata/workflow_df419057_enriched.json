@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df419057",
+  "workflow_id": "df419057",
+  "workflow_id_display": "df419057",
+  "workflow_name": "Chat with PDF docs using AI (quoting sources)",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Facebook, Google Drive, OpenAI, PDF",
+  "tags": [],
+  "author_name": "David Roberts",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Customer service automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set file URL in Google Drive",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set max chunks to send to model",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Compose citations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Add in metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download file",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Answer the query based on chunks",
+      "type": "Process"
+    },
+    {
+      "name": "Get top chunks matching query",
+      "type": "Process"
+    },
+    {
+      "name": "Add to Pinecone vector store",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

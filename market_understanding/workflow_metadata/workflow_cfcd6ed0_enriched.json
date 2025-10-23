@@ -1,0 +1,75 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfcd6ed0",
+  "workflow_id": "cfcd6ed0",
+  "workflow_id_display": "cfcd6ed0",
+  "workflow_name": "Generate Azure VM Timeline Reports with Google Gemini AI Chat Assistant",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Adam Bertram",
+  "author_profile_url": "https://n8n.io/creators/adbertram/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Analyze Azure VM activity with an AI-powered assistant—get detailed timeline reports on state changes, performance, and events. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, set, toolCode"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Common Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get VM Performance Stats",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get Azure Resource Groups",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get VM Information",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get VM Events",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Current Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get VM Instance View",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

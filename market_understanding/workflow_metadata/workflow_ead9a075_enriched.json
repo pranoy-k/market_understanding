@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ead9a075",
+  "workflow_id": "ead9a075",
+  "workflow_id_display": "ead9a075",
+  "workflow_name": "Automate n8n User Invitations from a Google Spreadsheet",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "bangank36",
+  "author_profile_url": "https://n8n.io/creators/bangank36/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync n8n users with Google Sheets—compare, add users, and send invites automatically. Manual or scheduled runs. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create users list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all rows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get all Users",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get non-users",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Invite Users",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine all paginated results",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

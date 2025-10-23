@@ -1,0 +1,136 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e220e2cb",
+  "workflow_id": "e220e2cb",
+  "workflow_id_display": "e220e2cb",
+  "workflow_name": "Automated Tweet Generator & Publisher with GPT-4, Discord, and Google Sheets",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Discord, Google Sheets, OpenAI",
+  "tags": [
+    "discord",
+    "google"
+  ],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/lukaszb/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create, refine, and publish high-impact tweets with AI. Boost engagement and consistency on X—no writing needed. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, stickyNote, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Check History",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Examples",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update history",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add post to examples",
+      "type": "Data Output"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Get_Brand_Brief",
+      "type": "Process"
+    },
+    {
+      "name": "Get_Content_Fedback",
+      "type": "Process"
+    },
+    {
+      "name": "AI Content creator",
+      "type": "Process"
+    },
+    {
+      "name": "Get Brief",
+      "type": "Process"
+    },
+    {
+      "name": "Idea creator",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory1",
+      "type": "Process"
+    },
+    {
+      "name": "Rewriter",
+      "type": "Process"
+    },
+    {
+      "name": "Post on X",
+      "type": "Process"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get brand brief",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,152 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/989eb808",
+  "workflow_id": "989eb808",
+  "workflow_id_display": "989eb808",
+  "workflow_name": "Learn Anything, Write a Book, Design a Curriculum",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Mohammed Rifad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your learning & creativity with AI-powered n8n workflows. Instantly create detailed curricula, book outlines, or course content—seamlessly in Notion!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with aggregate, httpRequest, markdown"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse JSON blocks1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML to Array1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "JSONCreator",
+      "type": "Process"
+    },
+    {
+      "name": "HierarchyCreator",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Row",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Update Row",
+      "type": "Process"
+    },
+    {
+      "name": "CreateNotionBlocks",
+      "type": "Process"
+    },
+    {
+      "name": "Set Done",
+      "type": "Process"
+    },
+    {
+      "name": "SeniorWriter",
+      "type": "Process"
+    },
+    {
+      "name": "Add ToC",
+      "type": "Data Input"
+    },
+    {
+      "name": "NotionTopicGenerator",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to HTML1",
+      "type": "Process"
+    },
+    {
+      "name": "Tags to Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload to Notion Page1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Valid Blocks1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Blocks1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Block...1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenRouter Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Block Generator",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

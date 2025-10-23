@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c5608d7f",
+  "workflow_id": "c5608d7f",
+  "workflow_id_display": "c5608d7f",
+  "workflow_name": "Enhance Chat Responses with Real-Time Search Data via Bright Data & Gemini AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Supercharge chat with real-time, AI-driven responses using live search data from Bright Data MCP & Google Gemini. Stay updated—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, mcpClientTool, mcpClient"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set search query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client list all tools for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client Bright Data Search Tool",
+      "type": "Process"
+    },
+    {
+      "name": "Google Search Engine for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "Bing Search Engine for Bright Data",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client List all tools",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request for Webhook Notification",
+      "type": "Data Input"
+    },
+    {
+      "name": "Yandex Search Engine for Bright Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

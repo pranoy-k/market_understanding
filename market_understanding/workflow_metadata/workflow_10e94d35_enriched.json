@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/10e94d35",
+  "workflow_id": "10e94d35",
+  "workflow_id_display": "10e94d35",
+  "workflow_name": "Sync Zendesk tickets to your HubSpot contacts",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Zendesk tickets with HubSpot contacts every 5 minutes. Automate updates and data merging for seamless, up-to-date customer insights.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, hubspot, merge"
+  ],
+  "nodes": [
+    {
+      "name": "Set new last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get last execution timestamp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add Zendesk company data to Hubspot data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get modified companies",
+      "type": "Process"
+    },
+    {
+      "name": "Get all Zendesk organisations",
+      "type": "Process"
+    },
+    {
+      "name": "Create organisation",
+      "type": "Process"
+    },
+    {
+      "name": "Update organisation",
+      "type": "Process"
+    },
+    {
+      "name": "Every 5 minutes",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

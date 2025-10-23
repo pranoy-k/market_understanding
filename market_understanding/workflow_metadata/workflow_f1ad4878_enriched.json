@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f1ad4878",
+  "workflow_id": "f1ad4878",
+  "workflow_id_display": "f1ad4878",
+  "workflow_name": "Automatically promote your YouTube video on X",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Google Sheets, OpenAI, YouTube",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-promote new YouTube videos on X with engaging GPT-4 posts, character-limit checks, scheduling, Google Sheets logging, and more. Learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, if"
+  ],
+  "nodes": [
+    {
+      "name": "Check Every 2 Hours",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Final Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate X Post",
+      "type": "Process"
+    },
+    {
+      "name": "Rewrite X Post to 220 Characters",
+      "type": "Process"
+    },
+    {
+      "name": "GS - Add Tweet",
+      "type": "Data Output"
+    },
+    {
+      "name": "GS - Update Tweet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Latest Videos",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator2",
+      "type": "Process"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Wikipedia1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/072ef846",
+  "workflow_id": "072ef846",
+  "workflow_id_display": "072ef846",
+  "workflow_name": "Social Media Content Generator And Publisher | X, Linkedin",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "LinkedIn, Twitter",
+  "tags": [
+    "linkedin",
+    "twitter"
+  ],
+  "author_name": "Ã¶mer",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate AI-powered content creation and publishing to LinkedIn and X (Twitter) with n8n. Save time, boost engagement, and ensure secure posting. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with agent, outputParserStructured, linkedIn"
+  ],
+  "nodes": [
+    {
+      "name": "Receive Post Title",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Generate AI Content",
+      "type": "Process"
+    },
+    {
+      "name": "Format AI Output",
+      "type": "Process"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Append Linkedin And X Publishing Responses",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show Confirmation",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

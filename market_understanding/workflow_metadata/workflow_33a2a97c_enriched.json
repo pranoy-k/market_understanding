@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33a2a97c",
+  "workflow_id": "33a2a97c",
+  "workflow_id_display": "33a2a97c",
+  "workflow_name": "Sync your GitHub issues to your Notion database",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "GitHub, Notion",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync GitHub issues with Notion. Auto-create or update entries for every status change and keep project management seamlessly connected. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, function, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger on issues",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create custom Notion filters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create database page",
+      "type": "Process"
+    },
+    {
+      "name": "Find database page",
+      "type": "Process"
+    },
+    {
+      "name": "Edit issue",
+      "type": "Process"
+    },
+    {
+      "name": "Delete issue",
+      "type": "Process"
+    },
+    {
+      "name": "Close issue",
+      "type": "Process"
+    },
+    {
+      "name": "Reopen issue",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

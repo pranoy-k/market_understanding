@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fcaa227e",
+  "workflow_id": "fcaa227e",
+  "workflow_id_display": "fcaa227e",
+  "workflow_name": "Fetch Keyword From Google Sheet and Classify Them Using AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Polina Medvedieva",
+  "author_profile_url": "https://n8n.io/creators/polina-n8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly analyze and categorize keywords in Google Sheets for IT products using AI. Automate SEO campaigns with fast, customizable keyword classification.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Keywords from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet with Analysis Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Process Keywords in Batches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Prevent API Rate Limiting",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

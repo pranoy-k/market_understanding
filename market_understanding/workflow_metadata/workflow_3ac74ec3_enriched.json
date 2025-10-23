@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ac74ec3",
+  "workflow_id": "3ac74ec3",
+  "workflow_id_display": "3ac74ec3",
+  "workflow_name": "Automated Workflow Backup System with Google Drive and Archiving",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Niten Musa",
+  "author_profile_url": "https://n8n.io/creators/nitenmusa/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up and archive your n8n workflows to Google Drive on a custom schedule. Clean up clutter with auto-archive—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, googleDrive, n8n"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save 'ARCHIVE' Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Save all other Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Create to date folder",
+      "type": "Process"
+    },
+    {
+      "name": "GET Workflows",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to JSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to JSON'",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete 'ARCHIVE' Workflows",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

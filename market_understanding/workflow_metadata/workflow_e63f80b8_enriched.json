@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e63f80b8",
+  "workflow_id": "e63f80b8",
+  "workflow_id_display": "e63f80b8",
+  "workflow_name": "Turn Emails into AI-Enhanced Tasks in Notion (Multi-User Support) with Gmail, Airtable and Softr",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Airtable, Email, Facebook, Gmail, Notion, OpenAI",
+  "tags": [
+    "Notion🤖 AI🤖 Email Automation🤖 Gmail"
+  ],
+  "author_name": "Mario",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Route ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Globals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Deactivate Route",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Route by ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Active Routes Only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Notion Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter for unprocessed mails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Required labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Format Notion Page Blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculator1",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Actionable Task",
+      "type": "Process"
+    },
+    {
+      "name": "Get Summary & Meta Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Notion API",
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

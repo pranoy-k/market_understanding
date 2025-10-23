@@ -1,0 +1,53 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5c2a8456",
+  "workflow_id": "5c2a8456",
+  "workflow_id_display": "5c2a8456",
+  "workflow_name": "Schedule Appointments via Telegram with GPT-4o & Google Calendar",
+  "category": "Customer Support",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "6",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Automate With Marc",
+  "author_profile_url": "https://n8n.io/creators/marconi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate appointment booking and cancellations via Telegram using AI and Google Calendar. Effortless setup—perfect for solopreneurs and small businesses.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with googleCalendarTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab246c71",
+  "workflow_id": "ab246c71",
+  "workflow_id_display": "ab246c71",
+  "workflow_name": "AI Personal Assistant",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Max Mitcham",
+  "author_profile_url": "https://n8n.io/creators/maxmitcham/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Boost executive productivity with an AI-powered email assistant—monitor emails, meetings, and Slack, prioritize tasks, and get daily actionable briefings.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, googleCalendarTool"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Previous To Do",
+      "type": "Data Output"
+    },
+    {
+      "name": "Anthropic Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Email Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Follow Up Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch FireFlies",
+      "type": "Data Input"
+    },
+    {
+      "name": "Master Orchestrator Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Slack Assistant",
+      "type": "Process"
+    },
+    {
+      "name": "Anthropic Chat Model3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

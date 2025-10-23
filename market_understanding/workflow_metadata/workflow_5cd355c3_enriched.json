@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5cd355c3",
+  "workflow_id": "5cd355c3",
+  "workflow_id_display": "5cd355c3",
+  "workflow_name": "Conversational Telegram Bot with GPT-4o for Text and Voice Messages",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Roninimous",
+  "author_profile_url": "https://n8n.io/creators/aitoralonso/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Seamlessly integrate AI-powered, voice & text chat to your Telegram bot. Enjoy real-time replies, typing indicators, and easy setup. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send Context To AI Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Transcribe Context To AI Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Transcribe The Voice",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

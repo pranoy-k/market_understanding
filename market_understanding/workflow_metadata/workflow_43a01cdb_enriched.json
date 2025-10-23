@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/43a01cdb",
+  "workflow_id": "43a01cdb",
+  "workflow_id_display": "43a01cdb",
+  "workflow_name": "Find emails with Dropcontact on Typeform submission",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Airtable, Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate lead prospecting: capture Typeform leads, enrich contact info with Dropcontact, sync with Airtable, and get real-time Slack alerts. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with typeformTrigger, if, set"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set - Contacts to update",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set - Contacts to create",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable - Contact List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable - Update Contacts1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Airtable - Create Contacts",
+      "type": "Data Output"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

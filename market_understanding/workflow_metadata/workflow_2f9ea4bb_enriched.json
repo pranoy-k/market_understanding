@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f9ea4bb",
+  "workflow_id": "2f9ea4bb",
+  "workflow_id_display": "2f9ea4bb",
+  "workflow_name": "Analyze Crunchbase Startups by Keyword with Bright Data, Gemini AI & Google Sheets",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Gleb D",
+  "author_profile_url": "https://n8n.io/creators/glebd/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate startup discovery with n8n: filter Crunchbase data, get AI-powered comparative analysis, and export insights to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with formTrigger, httpRequest, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "When User Completes Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code - Parse and Clean JSON Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets - Export Results",
+      "type": "Data Output"
+    },
+    {
+      "name": "Snapshot Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request- Post API call to Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request - Getting data from Bright Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini - Comparative Analisys",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code - Combining JSON and AI outputs",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "HTTP Request- Post API call to Bright Data"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

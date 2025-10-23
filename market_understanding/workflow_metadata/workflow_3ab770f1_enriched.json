@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ab770f1",
+  "workflow_id": "3ab770f1",
+  "workflow_id_display": "3ab770f1",
+  "workflow_name": "Webhook returning XML",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "http",
+    "xml",
+    "json"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly capture HTTP webhook data, generate dummy data, convert JSON to XML, and return results with correct content type. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, respondToWebhook, xml"
+  ],
+  "nodes": [
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

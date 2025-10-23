@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5a55ca9a",
+  "workflow_id": "5a55ca9a",
+  "workflow_id_display": "5a55ca9a",
+  "workflow_name": "Automate Daily YouTrack Task Summaries to Discord by Assignee",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "Jezue",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Keep your team aligned with daily YouTrack \"In Progress\" task summaries, grouped by assignee and priority, automatically sent to Discord. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, discord"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Weekend checker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request YT",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Discord message",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

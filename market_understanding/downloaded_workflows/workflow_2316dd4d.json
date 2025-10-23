@@ -1,0 +1,59 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        600,
+        250
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "ActiveCampaign",
+      "type": "n8n-nodes-base.activeCampaign",
+      "position": [
+        800,
+        250
+      ],
+      "parameters": {
+        "email": "",
+        "updateIfExists": true,
+        "additionalFields": {
+          "lastName": "",
+          "firstName": ""
+        }
+      },
+      "credentials": {
+        "activeCampaignApi": "ActiveCampaign"
+      },
+      "typeVersion": 1,
+      "id": "10d230c3daafe82f"
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "ActiveCampaign",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "09ae258e7fc86da0",
+  "staticData": null,
+  "tags": [
+    "gmail",
+    "google",
+    "slack"
+  ]
+}

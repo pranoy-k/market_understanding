@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0a930b49",
+  "workflow_id": "0a930b49",
+  "workflow_id_display": "0a930b49",
+  "workflow_name": "Replace Data in Google Docs from n8n Form",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Krzysztof Kuzara",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Google Docs by merging n8n form data—generate contracts, invoices, or reports instantly. Streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, googleDrive, formTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Copy template file",
+      "type": "Process"
+    },
+    {
+      "name": "Format form data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format form data to Google Doc API",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Replace data in Google Doc",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Format form data to Google Doc API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

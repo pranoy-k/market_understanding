@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d94c58a2",
+  "workflow_id": "d94c58a2",
+  "workflow_id_display": "d94c58a2",
+  "workflow_name": "Automated Disqus Forum Reports with Gmail HTML Tables",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Ghufran Ridhawi",
+  "author_profile_url": "https://n8n.io/creators/ghufran-ridhawi/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Forum",
+      "type": "Process"
+    },
+    {
+      "name": "Get Posts Forum",
+      "type": "Process"
+    },
+    {
+      "name": "Get Threads Forum",
+      "type": "Process"
+    },
+    {
+      "name": "Get Categories Forum",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Threads + Forum",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Categories + Posts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge All",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Table",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f231caf1",
+  "workflow_id": "f231caf1",
+  "workflow_id_display": "f231caf1",
+  "workflow_name": "Automate Instagram Carousel Posts from Google Sheets with Gemini AI & Meta Graph API",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "API, Facebook, Google Sheets, Instagram",
+  "tags": [
+    "google",
+    "api",
+    "gemini",
+    "Scheduled"
+  ],
+  "author_name": "jacksonwells",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Instagram carousel posts from Google Sheets with AI captions, flexible image uploads, and Graph API integration. Discover the workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Carousel Media IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Mark Uploaded",
+      "type": "Data Output"
+    },
+    {
+      "name": "Is Uploaded?",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Post to IG",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Graph API",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Graph API2",
+      "type": "Process"
+    },
+    {
+      "name": "Facebook Graph API3",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Carousel Container",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Media + Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Facebook Graph API1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API",
+    "Facebook Graph API2",
+    "Facebook Graph API3",
+    "Facebook Graph API1"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

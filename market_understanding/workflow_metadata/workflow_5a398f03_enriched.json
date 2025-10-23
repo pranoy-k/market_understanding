@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5a398f03",
+  "workflow_id": "5a398f03",
+  "workflow_id_display": "5a398f03",
+  "workflow_name": "Auto-Publish Social Videos to 9 Platforms via Google Sheets and Blotato",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-publish social videos to 9 platforms using Google Sheets and Blotato. Streamline workflows, save time, and track status—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Assign Social Media IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get my video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "INSTAGRAM",
+      "type": "Data Input"
+    },
+    {
+      "name": "YOUTUBE",
+      "type": "Data Input"
+    },
+    {
+      "name": "TIKTOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "FACEBOOK",
+      "type": "Data Input"
+    },
+    {
+      "name": "THREADS",
+      "type": "Data Input"
+    },
+    {
+      "name": "TWETTER",
+      "type": "Data Input"
+    },
+    {
+      "name": "LINKEDIN",
+      "type": "Data Input"
+    },
+    {
+      "name": "BLUESKY",
+      "type": "Data Input"
+    },
+    {
+      "name": "PINTEREST",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

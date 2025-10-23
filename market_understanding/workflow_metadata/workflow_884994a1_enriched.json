@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/884994a1",
+  "workflow_id": "884994a1",
+  "workflow_id_display": "884994a1",
+  "workflow_name": "Upload leads from a CSV file to Pipedrive CRM",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "CSV",
+  "tags": [
+    "csv"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import and deduplicate leads from any CSV into Pipedrive CRM. Automate contact creation and keep your CRM updated with fresh, valuable leads.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, spreadsheetFile, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pipedrive",
+      "type": "Process"
+    },
+    {
+      "name": "Pipedrive1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Organization",
+      "type": "Process"
+    },
+    {
+      "name": "Create Person",
+      "type": "Process"
+    },
+    {
+      "name": "Create Lead",
+      "type": "Process"
+    },
+    {
+      "name": "Create Note",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

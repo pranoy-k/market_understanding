@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b9b8f09",
+  "workflow_id": "0b9b8f09",
+  "workflow_id_display": "0b9b8f09",
+  "workflow_name": "AI-Powered WhatsApp Chatbot for Text, Voice, Images, and PDF with RAG",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "32",
+  "tools_integrations": "PDF, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "pdf"
+  ],
+  "author_name": "NovaNode",
+  "author_profile_url": "https://n8n.io/creators/thomasgpt/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline support with AI-powered answers on WhatsApp. Automate product doc indexing and deliver instant, accurate responses across any message type. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, switch, googleDocs"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "WhatsApp Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map document prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map image prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map text prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Embeddings Generator",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "Knowledge Base Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDB Vector Search",
+      "type": "Data Output"
+    },
+    {
+      "name": "Document Section Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Document Chunker",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MongoDB Vector Store Inserter",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Docs Importer",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from XLS",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from XLSX",
+      "type": "Data Output"
+    },
+    {
+      "name": "Map file extensions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Voicemail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Document",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

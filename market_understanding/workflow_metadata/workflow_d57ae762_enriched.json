@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d57ae762",
+  "workflow_id": "d57ae762",
+  "workflow_id_display": "d57ae762",
+  "workflow_name": "Evaluate AI Agent Response Correctness with OpenAI and RAGAS Methodology",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with evaluationTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When fetching a dataset row",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Remap Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Input Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remap Embeddings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remap Embeddings1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Correctness Classifier",
+      "type": "Process"
+    },
+    {
+      "name": "Examples1",
+      "type": "Process"
+    },
+    {
+      "name": "Evaluation",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate F1 Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Correctness Score",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Metrics",
+      "type": "Process"
+    },
+    {
+      "name": "Update Outputs",
+      "type": "Process"
+    },
+    {
+      "name": "Get Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "GroundTruth to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Embeddings1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Embeddings Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Similarity Score",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

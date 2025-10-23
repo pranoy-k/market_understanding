@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/47395209",
+  "workflow_id": "47395209",
+  "workflow_id_display": "47395209",
+  "workflow_name": "Bulk Delete Slack Messages with Smart Filtering and Confirmations",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "48",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Elie Kattar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly bulk-delete Slack messages with Jedi Cleaner—automate, filter, and preview deletions safely. Boost efficiency and control. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, set, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Parse Command",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prase Set",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Messages by Search Term",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Pending Deletion",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check User Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code Count",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clean Up Workflow Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Message Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Messages for Deletion Node",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

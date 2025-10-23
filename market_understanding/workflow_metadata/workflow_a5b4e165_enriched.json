@@ -1,0 +1,137 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a5b4e165",
+  "workflow_id": "a5b4e165",
+  "workflow_id_display": "a5b4e165",
+  "workflow_name": "Generate Leads with Google Maps",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Alex Kim",
+  "author_profile_url": "https://n8n.io/creators/alexk1919/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Maps data collection by ZIP code with n8n. Organize, filter, and track results in Google Sheets with robust error handling. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, limit"
+  ],
+  "nodes": [
+    {
+      "name": "Run workflow every hours",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Row Number",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Zip",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Place ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subcategory",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zips",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Status to Success",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add rows in Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "GS - Get Subcategory",
+      "type": "Data Output"
+    },
+    {
+      "name": "GS - Get Zip Codes",
+      "type": "Data Output"
+    },
+    {
+      "name": "GS - Get Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "GMaps API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Exponential Backoff",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Duplicates",
+      "type": "Process"
+    },
+    {
+      "name": "Exponential Backoff1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Place Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Zips",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Subcats",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exponential Backoff2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Zips",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Subcategories",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "GMaps API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

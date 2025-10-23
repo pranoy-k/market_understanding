@@ -1,0 +1,147 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9e9fe711",
+  "workflow_id": "9e9fe711",
+  "workflow_id_display": "9e9fe711",
+  "workflow_name": "Extract data from resume and create PDF with Gotenberg",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "OpenAI, PDF, Telegram",
+  "tags": [],
+  "author_name": "Oskar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set parsed fileds",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Personal info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Technologies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Employment history",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Education",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Projects",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Volunteering",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set final data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse resume data",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Convert education to HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert employment history to HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert projects to HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert volunteering to HTML",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No operation (unauthorized)",
+      "type": "Process"
+    },
+    {
+      "name": "No operation (start message)",
+      "type": "Process"
+    },
+    {
+      "name": "Extract text from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge education and employment history",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge projects and volunteering",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge personal info and technologies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge all",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert raw to base64",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to HTML",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate plain PDF doc",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge other data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

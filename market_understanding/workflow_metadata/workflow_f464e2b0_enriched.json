@@ -1,0 +1,46 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f464e2b0",
+  "workflow_id": "f464e2b0",
+  "workflow_id_display": "f464e2b0",
+  "workflow_name": "Export SQL table into CSV file",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "CSV",
+  "tags": [
+    "csv"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate SQL query export to CSV—connect to MSSQL, use AdventureWorks data, and follow our easy step-by-step workflow. Learn more in our guide!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "TableName",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SaveCSV",
+      "type": "Data Output"
+    },
+    {
+      "name": "LoadMSSQLData",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

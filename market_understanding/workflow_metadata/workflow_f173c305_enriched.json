@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f173c305",
+  "workflow_id": "f173c305",
+  "workflow_id_display": "f173c305",
+  "workflow_name": "Find a new book recommendations",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get personalized book recommendations every Friday from Open Library. Choose from thousands of subjects and enjoy curated picks delivered automatically!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, function"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Subject",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Random Book",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Book Recommendation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filtered Book Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Author String",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Every Friday at 11:00 AM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Retrieve Book Count",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Detailed Book Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Basic Book Info",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

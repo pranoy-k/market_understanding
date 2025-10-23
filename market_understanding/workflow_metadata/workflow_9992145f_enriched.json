@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9992145f",
+  "workflow_id": "9992145f",
+  "workflow_id_display": "9992145f",
+  "workflow_name": "Automate Gym Lead Nurturing with Facebook Ads, WhatsApp & Google Sheets Tracking",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Facebook, Google Sheets, WhatsApp",
+  "tags": [
+    "facebook",
+    "whatsapp",
+    "google"
+  ],
+  "author_name": "mourya",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Capture leads from Facebook Ads, send instant WhatsApp messages, automate follow-ups, and boost gym bookings with seamless real-time nurturing. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, googleSheets, if"
+  ],
+  "nodes": [
+    {
+      "name": "Add to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Day 1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Day 2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Day 3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Day 4",
+      "type": "Data Output"
+    },
+    {
+      "name": "Check Booking Day 5",
+      "type": "Data Output"
+    },
+    {
+      "name": "FB Lead Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Send WhatsApp to Lead",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send Confirmation to Lead",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notify Gym Owner",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp Day 1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp Day 2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp Day 3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp Day 4",
+      "type": "Data Input"
+    },
+    {
+      "name": "Send WhatsApp Day 5",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

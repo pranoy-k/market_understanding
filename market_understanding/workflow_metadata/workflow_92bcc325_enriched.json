@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/92bcc325",
+  "workflow_id": "92bcc325",
+  "workflow_id_display": "92bcc325",
+  "workflow_name": "Enrich new Discourse members with Clearbit then notify in Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Max Tkacz",
+  "author_profile_url": "https://n8n.io/creators/max-n8n/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant Slack alerts when high-value users join your Discourse community. Automate prospect enrichment with Clearbit. Easy, no-code setup—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, noOp, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Filter out common personal emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No clearbit enrichment available",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich user with Clearbit",
+      "type": "Process"
+    },
+    {
+      "name": "Get company info",
+      "type": "Process"
+    },
+    {
+      "name": "Filter for high value leads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "On new Discourse user",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

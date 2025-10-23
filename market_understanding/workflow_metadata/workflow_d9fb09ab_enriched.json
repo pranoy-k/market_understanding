@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9fb09ab",
+  "workflow_id": "d9fb09ab",
+  "workflow_id_display": "d9fb09ab",
+  "workflow_name": "Automatically Create YouTube Metadata with AI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Facebook, YouTube",
+  "tags": [],
+  "author_name": "Amjid Ali",
+  "author_profile_url": "https://n8n.io/creators/amjid/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube metadata with AI—generate SEO-optimized titles, tags, and descriptions, plus integrate affiliate links. Boost video performance now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "syncbricks information",
+      "type": "Process"
+    },
+    {
+      "name": "Youtube Meta Generator",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Form",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

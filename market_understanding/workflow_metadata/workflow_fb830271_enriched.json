@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb830271",
+  "workflow_id": "fb830271",
+  "workflow_id_display": "fb830271",
+  "workflow_name": "Remote Job Updates Pipeline with RemoteOK, Airtable, and Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Airtable, RSS, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Puspak",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate remote job feeds with real-time updates from RemoteOK to Airtable and Telegram. Clean, filter, and broadcast jobs effortlessly—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "RemoteOK Jobs",
+      "type": "Data Output"
+    },
+    {
+      "name": "Remote ok",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clean text1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code5",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text-clean",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cleaning the received input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Salary to string",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Table to a single message",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

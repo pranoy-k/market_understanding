@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f3f5ec4f",
+  "workflow_id": "f3f5ec4f",
+  "workflow_id_display": "f3f5ec4f",
+  "workflow_name": "Structured Data Extract & Data Mining with Bright Data & Google Gemini",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Ranjan Dailata",
+  "author_profile_url": "https://n8n.io/creators/ranjancse/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract and mine trends from web content with AI-powered structured data workflows. Automate insights, real-time alerts, and easy integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set URL and Bright Data Zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary file for topics",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create a binary data for tends",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown to Textual Data Extractor",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate a Webhook Notification for Markdown to Textual Data Extraction",
+      "type": "Data Input"
+    },
+    {
+      "name": "Initiate a Webhook Notification for AI Sentiment Analyzer",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model for Data Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model for Sentiment Analyzer",
+      "type": "Process"
+    },
+    {
+      "name": "Perform Bright Data Web Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Topic Extractor with the structured response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Trends by location and category with the structured response",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Initiate a Webhook Notification for trends by location and category",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write the topics file to disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write the trends file to disk",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

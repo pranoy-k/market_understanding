@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/977e859c",
+  "workflow_id": "977e859c",
+  "workflow_id_display": "977e859c",
+  "workflow_name": "Convert Venmo Statement CSV File to QuickBooks CSV Import",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "CSV, Dropbox, Google Drive",
+  "tags": [
+    "google",
+    "csv"
+  ],
+  "author_name": "Jason Plaisted",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Venmo-to-QuickBooks CSV conversion and backup. Instantly process, standardize data, and save files to Google Drive or Dropbox. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with dropbox, extractFromFile, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "Generate File Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert Venmo to QB",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

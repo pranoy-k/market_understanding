@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df20d3ee",
+  "workflow_id": "df20d3ee",
+  "workflow_id_display": "df20d3ee",
+  "workflow_name": "CallForge - 04 - AI Workflow for Gong.io Sales Calls",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Gong.io sales call analysis with AI-driven insights, seamless CRM integration, and real-time Slack alerts. Boost sales ops—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, set, compareDatasets"
+  ],
+  "nodes": [
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Isolate Only Call IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Process New Calls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop to next call",
+      "type": "Process"
+    },
+    {
+      "name": "Create Notion DB Page",
+      "type": "Process"
+    },
+    {
+      "name": "AI Team Processor",
+      "type": "Process"
+    },
+    {
+      "name": "Merge call data and parent notion id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Reduce down to 1 object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all older Calls",
+      "type": "Process"
+    },
+    {
+      "name": "Reduce down to One object",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bundle Slack Message Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Slack and Call Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Calls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bundle Notion Parent Object Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bundle Processed Calls",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

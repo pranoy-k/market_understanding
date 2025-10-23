@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2e660e2e",
+  "workflow_id": "2e660e2e",
+  "workflow_id_display": "2e660e2e",
+  "workflow_name": "User Enablement Demo",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "jason",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Empower end-users to configure workflows with n8n & Baserow. Easily customize shopping lists, webforms, alerts, and automation schedules. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, set, itemLists"
+  ],
+  "nodes": [
+    {
+      "name": "Create Response Page",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set New Shopper Info",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Shopper Form",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Present Shopper",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Former Shopper",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Shopper",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Shopping List",
+      "type": "Data Output"
+    },
+    {
+      "name": "Baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Change Shopper Form Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Submit Shopper",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Shopping List",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

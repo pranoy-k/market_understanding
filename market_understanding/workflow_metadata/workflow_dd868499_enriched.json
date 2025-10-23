@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dd868499",
+  "workflow_id": "dd868499",
+  "workflow_id_display": "dd868499",
+  "workflow_name": "Automated Interview Scheduling with GPT-4o and Google Calendar Chat Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "22",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Robert Breen",
+  "author_profile_url": "https://n8n.io/creators/rahul08/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate interview scheduling with an AI assistant that syncs to Google Calendar, prevents conflicts, and offers full customization. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendar, lmChatOpenAi, toolWorkflow"
+  ],
+  "nodes": [
+    {
+      "name": "Interview Scheduler",
+      "type": "Process"
+    },
+    {
+      "name": "Get Availability",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Add Blocked Field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "Run Get Availability",
+      "type": "Process"
+    },
+    {
+      "name": "check day names",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Output to JSON",
+      "type": "Process"
+    },
+    {
+      "name": "Respond for More Info",
+      "type": "Process"
+    },
+    {
+      "name": "Set Meeting with Google",
+      "type": "Process"
+    },
+    {
+      "name": "Final Response to User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Interview Times",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check My Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Split Events into 30 min blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate 30 Minute Timeslots",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine My Calendar with All Slots",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return string of all available times",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

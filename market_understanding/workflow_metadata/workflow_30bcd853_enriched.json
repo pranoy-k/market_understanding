@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/30bcd853",
+  "workflow_id": "30bcd853",
+  "workflow_id_display": "30bcd853",
+  "workflow_name": "Google Autocomplete Keyword Scraper",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Ludovic Bablon",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover untapped keyword opportunities with this easy workflow for SEO specialists and digital marketers. Harness Google autocomplete to boost your strategy!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, splitInBatches, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Get Keyword",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate A-Z Queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Autocomplete",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Keywords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return Keywords",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

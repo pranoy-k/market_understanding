@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3fce549f",
+  "workflow_id": "3fce549f",
+  "workflow_id_display": "3fce549f",
+  "workflow_name": "Standardize US Phone Numbers with Multiple Format Options and Validation",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Sunny Thaper",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly validate and format US phone numbers with this n8n workflow. Standardizes inputs, separates extensions, and outputs in multiple formats. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, executeWorkflowTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add valid country code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Strip phone number formatting",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format phone numbers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clear invalid number",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

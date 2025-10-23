@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0e728950",
+  "workflow_id": "0e728950",
+  "workflow_id_display": "0e728950",
+  "workflow_name": "Send Hourly Crypto Market Analysis from Binance to Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Google Analytics, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "AurÃ©lien P.",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Get hourly Binance crypto market summaries for BTC, ETH, and SOL with key analytics, formatted updates on Telegram. Stay informed—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analyze & Format Market Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Binance 24h Price Change",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

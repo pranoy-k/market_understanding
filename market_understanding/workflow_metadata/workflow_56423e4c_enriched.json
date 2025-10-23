@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/56423e4c",
+  "workflow_id": "56423e4c",
+  "workflow_id_display": "56423e4c",
+  "workflow_name": "Convert HTML to PDF & Extract Text from PDFs with CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert HTML or remote PDF files to text in self-hosted n8n using the PDF Toolkit from customJS. Streamline document processing—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with PdfToText, manualTrigger, code"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert PDF into Text",
+      "type": "Process"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    },
+    {
+      "name": "Convert PDF into Text1",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

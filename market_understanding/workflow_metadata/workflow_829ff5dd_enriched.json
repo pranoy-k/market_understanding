@@ -1,0 +1,147 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/829ff5dd",
+  "workflow_id": "829ff5dd",
+  "workflow_id_display": "829ff5dd",
+  "workflow_name": "Analyze Email Headers for IP Reputation and Spoofing Detection - Outlook",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate email threat detection with real-time monitoring, SPF/DKIM/DMARC validation, IP reputation checks, and seamless SIEM integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger on New Email",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Original From IP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set SPF Value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DKIM Signature Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No DMARC Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set DMARC Value",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No DKIM Signature Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Determine Auth Values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No SPF Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Webhook Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Individual Auth Outputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Combined Auth Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Headers Here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Webhook Headers Here",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve Headers of Email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Received Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove Extra Received Headers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query IP Quality Score API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query IP API",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Authentication-Results Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Received-SPF Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract DMARC Header",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate Received-SPF Headers",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Query IP Quality Score API",
+    "Query IP API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

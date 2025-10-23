@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c70a4025",
+  "workflow_id": "c70a4025",
+  "workflow_id_display": "c70a4025",
+  "workflow_name": "Scrape Google Places via Dumpling AI and Auto-Save to Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate local business lead generation with Dumpling AI and Google Sheets. Get accurate, structured leads daily—no manual searching. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Run Every Day at 1 PM",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save Scraped Data to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Search Terms from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Google Places with Dumpling AI",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Resulting Places List",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

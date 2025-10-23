@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9bc0c65",
+  "workflow_id": "d9bc0c65",
+  "workflow_id_display": "d9bc0c65",
+  "workflow_name": "Snooze Todoist tasks until 3 days before due date",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mutasem",
+  "author_profile_url": "https://n8n.io/creators/mutasem/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly declutter your Todoist inbox—auto-move tasks to a Snoozed list and get them back 3 days before they're due. Stay focused. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with todoist, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "every 5 min",
+      "type": "Trigger"
+    },
+    {
+      "name": "at 5am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set inbox project id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set args to move",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set snoozed project id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get snoozed tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Get date to unsnooze",
+      "type": "Process"
+    },
+    {
+      "name": "Get inbox tasks to snooze",
+      "type": "Process"
+    },
+    {
+      "name": "If not same project",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate unique uuid for move",
+      "type": "Process"
+    },
+    {
+      "name": "Merge all items into a list",
+      "type": "Process"
+    },
+    {
+      "name": "Move the tasks",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

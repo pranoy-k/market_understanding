@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3cc2a8a0",
+  "workflow_id": "3cc2a8a0",
+  "workflow_id_display": "3cc2a8a0",
+  "workflow_name": "(De)activate n8n workflows using Telegram commands",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "9",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "MilanWR",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Remotely activate or deactivate your n8n workflows via Telegram with simple commands. Secure, fast, and easy setup—perfect for urgent workflow control.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, n8n, telegramTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Receive commands from Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Keep only messages from a specific chat id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Deactivate the marketing workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Deactivate the sales workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Activate the marketing workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Activate the sales workflow",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

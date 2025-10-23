@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37f2aa25",
+  "workflow_id": "37f2aa25",
+  "workflow_id_display": "37f2aa25",
+  "workflow_name": "Auto-Repost TikTok Videos to YouTube Shorts with Google Sheets & Telegram Alerts",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Google Sheets, Telegram, YouTube",
+  "tags": [
+    "google",
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Arkady Reveinz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly auto-post TikTok videos to YouTube Shorts, log uploads to Google Sheets, and trigger from Telegram with this no-code n8n automation workflow.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Manual Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetch TikTok Videos via TG trigger",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter New Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Video Information",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch TikTok Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "YouTube Upload Snippet",
+      "type": "Data Input"
+    },
+    {
+      "name": "YouTube Upload Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

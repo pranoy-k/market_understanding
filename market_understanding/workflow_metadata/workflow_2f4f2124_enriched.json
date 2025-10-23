@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f4f2124",
+  "workflow_id": "2f4f2124",
+  "workflow_id_display": "2f4f2124",
+  "workflow_name": "🎨 Interactive Image Editor with FLUX.1 Fill Tool for Inpainting",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that processes incoming requests integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Mockups",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "FLUX Fill",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check FLUX status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Fill Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Show the image to user",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Editor page",
+      "type": "Process"
+    },
+    {
+      "name": "NO OP",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

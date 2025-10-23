@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/be8c7b96",
+  "workflow_id": "be8c7b96",
+  "workflow_id_display": "be8c7b96",
+  "workflow_name": "Transforming Emails into Podcasts",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Email, Gmail, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "AlQaisi",
+  "author_profile_url": "https://n8n.io/creators/omar/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Delete the unnecessary items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate in same cell",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert from base64 to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Text with Audio",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarization Chain3",
+      "type": "Process"
+    },
+    {
+      "name": "Text to TTS",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

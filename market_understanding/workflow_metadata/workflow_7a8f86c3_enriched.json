@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7a8f86c3",
+  "workflow_id": "7a8f86c3",
+  "workflow_id_display": "7a8f86c3",
+  "workflow_name": "Enrich Company Data from Google Sheet with OpenAI Agent and ScrapingBee",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Excel, Google Sheets, OpenAI",
+  "tags": [
+    "google🤖 openai"
+  ],
+  "author_name": "Dataki",
+  "author_profile_url": "https://n8n.io/creators/dataki/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with httpRequest, markdown, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Tool called from Agent",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set company url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get rows from Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Company's Row on Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Call n8n workflow : Scrape companies homepage content",
+      "type": "Process"
+    },
+    {
+      "name": "ScrapingBee : Scrape company's homepage data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "HTML to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

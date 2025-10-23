@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c569e3b",
+  "workflow_id": "1c569e3b",
+  "workflow_id_display": "1c569e3b",
+  "workflow_name": "Conversational Interviews with AI Agents and n8n Forms",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "30",
+  "tools_integrations": "Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Create dynamic, conversational interview experiences using AI agents and n8n forms that adapt based on responses.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Start Interview",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate Row",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Row1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Reply To Agent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Interview Topic",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Row2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Messages To JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Clear For Next Interview",
+      "type": "Process"
+    },
+    {
+      "name": "Get Answer",
+      "type": "Data Input"
+    },
+    {
+      "name": "UUID",
+      "type": "Process"
+    },
+    {
+      "name": "Create Session",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session1",
+      "type": "Process"
+    },
+    {
+      "name": "Update Session2",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Window Buffer Memory2",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Redirect to Completion Screen",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "404 Not Found",
+      "type": "Process"
+    },
+    {
+      "name": "AI Researcher",
+      "type": "Process"
+    },
+    {
+      "name": "Groq Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Show Transcript",
+      "type": "Process"
+    },
+    {
+      "name": "Session to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Query By Session",
+      "type": "Process"
+    },
+    {
+      "name": "Get Session",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

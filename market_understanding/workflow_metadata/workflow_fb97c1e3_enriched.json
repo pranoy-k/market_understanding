@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb97c1e3",
+  "workflow_id": "fb97c1e3",
+  "workflow_id_display": "fb97c1e3",
+  "workflow_name": "Automate Blog Content Creation with Notion MCP, DeepSeek AI, and WordPress",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Notion, WordPress",
+  "tags": [],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate SEO article creation: Connect Notion to WordPress, generate AI-powered content, auto-publish, and get instant email updates. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, set"
+  ],
+  "nodes": [
+    {
+      "name": "Watch Notion Updates",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Workflow Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Task Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Publish Blog Post",
+      "type": "Process"
+    },
+    {
+      "name": "Notion List Available Tools",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Run a Tool",
+      "type": "Process"
+    },
+    {
+      "name": "DeepSeek Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

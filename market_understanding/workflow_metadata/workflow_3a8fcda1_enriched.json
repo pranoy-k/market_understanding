@@ -1,0 +1,143 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3a8fcda1",
+  "workflow_id": "3a8fcda1",
+  "workflow_id_display": "3a8fcda1",
+  "workflow_name": "🤖🧑_💻 AI Agent for Top n8n Creators Leaderboard Reporting",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Email, Gmail, Google Drive, OpenAI, Telegram",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Joseph LePage",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Global Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Workflow Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Creators Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Creators Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflows Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "gpt-4o-mini",
+      "type": "Process"
+    },
+    {
+      "name": "Save creator-summary.md",
+      "type": "Data Output"
+    },
+    {
+      "name": "stats_aggregate_creators",
+      "type": "Data Input"
+    },
+    {
+      "name": "stats_aggregate_workflows",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Workflow Tool",
+      "type": "Process"
+    },
+    {
+      "name": "creator-summary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Creators & Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Creators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort By Top Weekly Creator Inserts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort By Top Weekly Workflow Inserts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take Top 10 Creators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Take Top 50 Workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Markdown to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "n8n Creators Stats Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create Top 10 Workflows List",
+      "type": "Process"
+    },
+    {
+      "name": "Convert Top 10 Markdown to HTML",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

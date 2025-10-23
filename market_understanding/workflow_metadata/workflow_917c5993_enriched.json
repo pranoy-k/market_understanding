@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/917c5993",
+  "workflow_id": "917c5993",
+  "workflow_id_display": "917c5993",
+  "workflow_name": "YouTube Shorts Automation - The Game-Changer in Scroll-Stopping Short Clips",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Facebook, YouTube",
+  "tags": [],
+  "author_name": "Mateo Fiorito Rocha",
+  "author_profile_url": "https://n8n.io/creators/lemolex/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn podcasts and videos into optimized YouTube Shorts with AI-powered automation—highlight extraction, smart editing, metadata, and scheduling. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, wait, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "Fill information to Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Shorts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Structure Shorts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter the Best Shorts to Upload",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send shorts 1 at a time",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download the Short in the Right Format",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to your YouTube Account",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Shorts1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

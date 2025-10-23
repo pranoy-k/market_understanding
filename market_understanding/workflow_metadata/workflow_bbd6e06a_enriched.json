@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bbd6e06a",
+  "workflow_id": "bbd6e06a",
+  "workflow_id_display": "bbd6e06a",
+  "workflow_name": "Generate & Upload an Audio Summary of a WordPress (or Woocommerce) Article",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": "WordPress",
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": "https://n8n.io/creators/phil/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate WordPress article summaries or transcriptions, convert them to audio with Eleven Labs, and upload MP3s instantly. Boost engagement—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, wordpress, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve WordPress Article",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Summary or Transcription",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Speech",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload MP3",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update WordPress Post",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

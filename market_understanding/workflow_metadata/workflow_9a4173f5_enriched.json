@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9a4173f5",
+  "workflow_id": "9a4173f5",
+  "workflow_id_display": "9a4173f5",
+  "workflow_name": "Linear Project to Productboard feature Sync",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Romain Jouhannet",
+  "author_profile_url": "https://n8n.io/creators/rjouhann/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Linear project status and end dates with Productboard features and Slack. Keep teams aligned with real-time automated updates. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, if, linearTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Your Linear Project 2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Your Linear Project 1",
+      "type": "Trigger"
+    },
+    {
+      "name": "linear project id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "map linear to productboard status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get productboard feature id",
+      "type": "Data Input"
+    },
+    {
+      "name": "update productboard status & timeframe",
+      "type": "Data Input"
+    },
+    {
+      "name": "mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get productboard feature details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

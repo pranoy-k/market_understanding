@@ -1,0 +1,109 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d05f748",
+  "workflow_id": "2d05f748",
+  "workflow_id_display": "2d05f748",
+  "workflow_name": "Create a RAG System with Paul Essays, Milvus, and OpenAI for Cited Answers",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Cheney Zhang",
+  "author_profile_url": "https://n8n.io/creators/zc277584121/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compose citations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set max chunks to send to model",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI2",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Essay List",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract essay names",
+      "type": "Process"
+    },
+    {
+      "name": "Split out into items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch essay texts",
+      "type": "Data Input"
+    },
+    {
+      "name": "Limit to first 3",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Text Only",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Answer the query based on chunks",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare chunks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Milvus Vector Store in retrieval",
+      "type": "Process"
+    },
+    {
+      "name": "Milvus Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

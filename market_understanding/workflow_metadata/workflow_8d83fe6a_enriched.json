@@ -1,0 +1,150 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d83fe6a",
+  "workflow_id": "8d83fe6a",
+  "workflow_id_display": "8d83fe6a",
+  "workflow_name": "Payment Processing and Order Tracking with YooKassa and Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "39",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Sergey Skorobogatov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly accept YooKassa payments and track orders in Google Sheets—no coding needed. Streamline sales, automate logs, and boost your workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Get product_id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Product",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Handle Error (save order)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Order",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Transaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get transaction",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get products_1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update refund status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond Products",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get products",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sorting by price",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle Error (get product)",
+      "type": "Trigger"
+    },
+    {
+      "name": "YooKassa Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Payment",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error (product_id)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Idempotence Key Generation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Handle Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error (yookassa)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond Payment",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error (get product)_1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond payment event",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond refund event",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Status",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error status",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle Error (check request)",
+      "type": "Trigger"
+    },
+    {
+      "name": "YooKassa Request Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Respond status",
+      "type": "Trigger"
+    },
+    {
+      "name": "Handle YooKassa webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

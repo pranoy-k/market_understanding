@@ -1,0 +1,100 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c6a43941",
+  "workflow_id": "c6a43941",
+  "workflow_id_display": "c6a43941",
+  "workflow_name": "Track changes of product prices",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "25",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "sthosstudio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically track website price changes with custom URL watchers, scheduled checks, and instant email alerts. Ideal for e-commerce monitoring. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "getActualPrice",
+      "type": "Data Processing"
+    },
+    {
+      "name": "FunctionItem",
+      "type": "Data Processing"
+    },
+    {
+      "name": "changeME",
+      "type": "Data Processing"
+    },
+    {
+      "name": "initItem",
+      "type": "Data Processing"
+    },
+    {
+      "name": "initItem1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "updateSavedItems",
+      "type": "Data Processing"
+    },
+    {
+      "name": "updateSavedItems1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SaveToFile",
+      "type": "Data Output"
+    },
+    {
+      "name": "savedItems",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTML Extract",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "fetchWeb",
+      "type": "Data Input"
+    },
+    {
+      "name": "Write Binary File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move Binary Data1",
+      "type": "Process"
+    },
+    {
+      "name": "checkifexists",
+      "type": "Process"
+    },
+    {
+      "name": "JsonToBinary",
+      "type": "Process"
+    },
+    {
+      "name": "itemsToJSON",
+      "type": "Process"
+    },
+    {
+      "name": "cleanData",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

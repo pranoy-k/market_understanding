@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e5ac24a",
+  "workflow_id": "8e5ac24a",
+  "workflow_id_display": "8e5ac24a",
+  "workflow_name": "Web Site Scraper for LLMs with Airtop",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "18",
+  "tools_integrations": "API, OpenAI",
+  "tags": [],
+  "author_name": "Airtop",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate web scraping with recursive depth—collect content from linked pages, save results, and discover new links. Perfect for research and content aggregation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleDocs, airtop, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Info to upload into spreadsheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flag scraped link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Unify params",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Load info to spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read scraped webpages",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert new links",
+      "type": "Data Output"
+    },
+    {
+      "name": "Insert flag",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Spreadsheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape webpage",
+      "type": "Process"
+    },
+    {
+      "name": "Create Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Write scraped content",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve links to scrape",
+      "type": "Process"
+    },
+    {
+      "name": "Filter links to insert to Sheets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape webpage1",
+      "type": "Process"
+    },
+    {
+      "name": "Update with new scraped content",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

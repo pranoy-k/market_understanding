@@ -1,0 +1,45 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ae5cc9a7",
+  "workflow_id": "ae5cc9a7",
+  "workflow_id_display": "ae5cc9a7",
+  "workflow_name": "Send Personalized WhatsApp Templates Triggered by KlickTipp with Auto-Responses",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "KlickTipp",
+  "author_profile_url": "https://n8n.io/creators/KlickTipp/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate personalized WhatsApp campaigns triggered by KlickTipp. Send targeted promos, manage opt-ins/outs, and boost engagement with n8n workflow. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, whatsAppTrigger, whatsApp"
+  ],
+  "nodes": [
+    {
+      "name": "New message in WhatsApp",
+      "type": "Trigger"
+    },
+    {
+      "name": "KlickTipp Outbound triggered",
+      "type": "Trigger"
+    },
+    {
+      "name": "Subscribe number to opt-out from WA messages",
+      "type": "Process"
+    },
+    {
+      "name": "Filter user messages",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

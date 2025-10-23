@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/58c5ce07",
+  "workflow_id": "58c5ce07",
+  "workflow_id_display": "58c5ce07",
+  "workflow_name": "Automated n8n Credential Backups to Google Drive with Scheduled Execution",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Daniel Ng",
+  "author_profile_url": "https://n8n.io/creators/danielng/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate secure backups of n8n credentials to Google Drive with flexible scheduling. Ideal for self-hosted users—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "On Click Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Command Get All Cridentials",
+      "type": "Process"
+    },
+    {
+      "name": "JSON Formatting Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Cridentials",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert To File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive Upload File",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

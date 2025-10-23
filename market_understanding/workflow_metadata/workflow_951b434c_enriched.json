@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/951b434c",
+  "workflow_id": "951b434c",
+  "workflow_id_display": "951b434c",
+  "workflow_name": "Ask AI about your Meta Ads - ask questions about your Facebook Ads insights",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Facebook",
+  "tags": [
+    "facebook"
+  ],
+  "author_name": "Solomon",
+  "author_profile_url": "https://n8n.io/creators/solomon/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get instant AI analysis of your Meta Ads metrics—impressions, spend, reach, CTR & more. Supports 85+ languages and leading chat apps. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with memoryManager, agent, toolCalculator"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set sessionId",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Meta Ads Insights",
+      "type": "Data Input"
+    },
+    {
+      "name": "Filter by chat ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chat memory",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory Manager",
+      "type": "Process"
+    },
+    {
+      "name": "Chat Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

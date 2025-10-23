@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5678b832",
+  "workflow_id": "5678b832",
+  "workflow_id_display": "5678b832",
+  "workflow_name": "Calendly to KlickTipp Integration",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "18",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ricardo KlÃ¼nter",
+  "author_profile_url": "https://n8n.io/creators/KlickTipp/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Calendly bookings and cancellations with KlickTipp in your self-hosted n8n. Automate contact updates—customizable, accurate, and easy.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, noOp, splitOut"
+  ],
+  "nodes": [
+    {
+      "name": "New Calendly event",
+      "type": "Trigger"
+    },
+    {
+      "name": "Event was rescheduled",
+      "type": "Process"
+    },
+    {
+      "name": "Convert data for KlickTipp",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List guests for booking",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List guests for cancellation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subscribe invitee booking in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Subscribe guest booking in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Subscribe guest cancellation in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Subscribe invitee cancellation in KlickTipp",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out guest bookings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out guest cancellations",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Subscribe invitee to empty guest addresses field",
+      "type": "Process"
+    },
+    {
+      "name": "Invitee did not add guests to the booking",
+      "type": "Process"
+    },
+    {
+      "name": "No guest email addresses found",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

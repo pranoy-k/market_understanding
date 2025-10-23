@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/55fca92a",
+  "workflow_id": "55fca92a",
+  "workflow_id_display": "55fca92a",
+  "workflow_name": "AI Chatbot Call Center: Demo Call Back (Production-Ready, Part 6)",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram🗄"
+  ],
+  "author_name": "ChatPayLabs",
+  "author_profile_url": "https://n8n.io/creators/chatpaylabs/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline Telegram chatbot workflows with scalable queue processing, AI voice replies, multi-language support, error handling, and easy database integration.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Flow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Test Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Test Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Provider",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chinese,Yue",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Chinese",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Japanese",
+      "type": "Data Processing"
+    },
+    {
+      "name": "English",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Cache",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Provider Cache",
+      "type": "Process"
+    },
+    {
+      "name": "Download Minimax Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Provider Cache",
+      "type": "Process"
+    },
+    {
+      "name": "Load Provider Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Chat Log Output",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Chat Log Input",
+      "type": "Data Output"
+    },
+    {
+      "name": "Minimax TTS",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

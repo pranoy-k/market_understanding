@@ -1,0 +1,153 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6dbb6b69",
+  "workflow_id": "6dbb6b69",
+  "workflow_id_display": "6dbb6b69",
+  "workflow_name": "AI-Powered Restaurant Newsletter Creator with Mailchimp and Telegram Approval",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "38",
+  "tools_integrations": "Email, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Femi Ad",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate AI-powered, research-driven email newsletters for restaurants and businesses. Save time, boost engagement—discover how it works!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with tavilyTool, telegram, if"
+  ],
+  "nodes": [
+    {
+      "name": "Saturday 2pm Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Friday 2pm Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tuesday 4pm Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Monday 9am Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Determine Schedule Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Listen for Topic Reply",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge All Schedule Triggers1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Intent",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Topic from Reply",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Newsletter Section Planner",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Feedback AI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Restaurant Newsletter Expert",
+      "type": "Process"
+    },
+    {
+      "name": "Split Newsletter Sections",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Restaurant Content Research Team",
+      "type": "Process"
+    },
+    {
+      "name": "Merge Research Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate Newsletter Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Final Newsletter Editor",
+      "type": "Process"
+    },
+    {
+      "name": "Tavily1",
+      "type": "Process"
+    },
+    {
+      "name": "Tavily",
+      "type": "Process"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send_Campaign",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create_Campaign",
+      "type": "Data Input"
+    },
+    {
+      "name": "Correction Agent",
+      "type": "Process"
+    },
+    {
+      "name": "First Newsletter Editor1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set_Campaign",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

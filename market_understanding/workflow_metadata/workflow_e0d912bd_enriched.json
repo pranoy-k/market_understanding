@@ -1,0 +1,168 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e0d912bd",
+  "workflow_id": "e0d912bd",
+  "workflow_id_display": "e0d912bd",
+  "workflow_name": "Extract Trends, Auto-Generate Social Content with AI, Reddit and Google Trends",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "36",
+  "tools_integrations": "OpenAI, Reddit",
+  "tags": [
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Trigger Idea",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Default Inputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fix Translated Tweets Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fix Audience Mood Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fix News Sentiment Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Google Trends",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract News Headlines",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Trend Scores",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Social Media Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Retrieved Trend Scores",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Trends Fallback",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Analyze News Sentiment",
+      "type": "Process"
+    },
+    {
+      "name": "Detect Audience Mood",
+      "type": "Process"
+    },
+    {
+      "name": "Translate Tweets to English",
+      "type": "Process"
+    },
+    {
+      "name": "Trend Relevance Scoring (Wow Factor)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Social Media Content",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Images",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve Latest Trend Scores",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Selected Trend",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Twitter Trends",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Twitter Mentions",
+      "type": "Data Input"
+    },
+    {
+      "name": "SERP-Google Trends",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Breaking News",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine All Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Items into Single Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Log Reddit Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Posts from Reddit",
+      "type": "Process"
+    },
+    {
+      "name": "Exctract Reddit Trends",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Trends and UGCc",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Select Top Trends",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Trend Scoring Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "Post to Instagram",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Google Trends2",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

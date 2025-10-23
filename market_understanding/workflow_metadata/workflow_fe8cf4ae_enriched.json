@@ -1,0 +1,198 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fe8cf4ae",
+  "workflow_id": "fe8cf4ae",
+  "workflow_id_display": "fe8cf4ae",
+  "workflow_name": "Short Video Creation Suite with GPT, Leonardo AI, RunwayML & JSON2Video",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "56",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Adam Crafts",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create short, professional videos with AI-driven automation. Script, visuals, and editing—done in minutes, not days. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Scenes Mapping",
+      "type": "Data Processing"
+    },
+    {
+      "name": "output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "output image",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Baserow Processing",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Script",
+      "type": "Data Output"
+    },
+    {
+      "name": "Basic LLM Chain",
+      "type": "Process"
+    },
+    {
+      "name": "Leo - Improve Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Get imageId",
+      "type": "Data Input"
+    },
+    {
+      "name": "Leo - Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Runway - Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Runway - Get Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "loop_over_scenes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "json2video : Video Rendering",
+      "type": "Data Input"
+    },
+    {
+      "name": "json2video : Check Video Rendering",
+      "type": "Data Input"
+    },
+    {
+      "name": "Execute Workflow2",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow3",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow4",
+      "type": "Process"
+    },
+    {
+      "name": "HeyGen",
+      "type": "Data Input"
+    },
+    {
+      "name": "HeyGen : Check Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "CaptionsAI1",
+      "type": "Data Input"
+    },
+    {
+      "name": "CaptionsAI : Check Poll1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "json2video Execute ERROR",
+      "type": "Process"
+    },
+    {
+      "name": "json2video Execute ERROR1",
+      "type": "Process"
+    },
+    {
+      "name": "CAPTIONS Execute ERROR",
+      "type": "Process"
+    },
+    {
+      "name": "Code Add Sub",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "Code Heygen",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "heygen Execute ERROR",
+      "type": "Process"
+    },
+    {
+      "name": "heygen Execute ERROR2",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow5",
+      "type": "Process"
+    },
+    {
+      "name": "CAPTIONS Execute ERROR1",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow6",
+      "type": "Process"
+    },
+    {
+      "name": "Basic LLM Chain Manual",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

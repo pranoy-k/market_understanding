@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2431df60",
+  "workflow_id": "2431df60",
+  "workflow_id_display": "2431df60",
+  "workflow_name": "Turn Google Sheets Ideas into AI Videos with GPT-4o and Fal.AI Veo 3",
+  "category": "Other",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "9",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Maximiliano Rojas-Delgado",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn ideas into 8-second videos from Google Sheets—no tech skills needed. Generate, customize, and get video links instantly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set variables for Video generation",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate prompt for Veo 3 model",
+      "type": "Process"
+    },
+    {
+      "name": "Update sheet with video url and prompt used in Veo3",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get video url",
+      "type": "Data Input"
+    },
+    {
+      "name": "Submit Request to generate video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check video status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

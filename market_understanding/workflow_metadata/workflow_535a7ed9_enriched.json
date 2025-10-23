@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/535a7ed9",
+  "workflow_id": "535a7ed9",
+  "workflow_id_display": "535a7ed9",
+  "workflow_name": "Transfer data from website to Google Sheets",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "API, Google Sheets, Webhook",
+  "tags": [
+    "google",
+    "webhook"
+  ],
+  "author_name": "Mark Bowen",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture website form data via webhook and organize responses in Google Sheets for real-time access. Learn how to streamline your workflow!",
+  "key_benefits": [
+    "API integration",
+    "Integration with webhook, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

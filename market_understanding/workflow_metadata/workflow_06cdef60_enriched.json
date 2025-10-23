@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/06cdef60",
+  "workflow_id": "06cdef60",
+  "workflow_id_display": "06cdef60",
+  "workflow_name": "Get execute command data and transfer to JSON",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "jan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to import JSON from command line tools into your workflow and use it instantly in nodes. Note: 'Execute command' is for self-hosted n8n only.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, functionItem, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "To Flow Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Command",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

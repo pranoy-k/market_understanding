@@ -1,0 +1,73 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e9fd8fc4",
+  "workflow_id": "e9fd8fc4",
+  "workflow_id_display": "e9fd8fc4",
+  "workflow_name": "AI-Generated LinkedIn Posts with OpenAI, Google Sheets & Email Approval Workflow",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Aryan Shinde",
+  "author_profile_url": "https://n8n.io/creators/billy/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn post creation and approvals from Google Sheets. Use OpenAI for content, email for approvals, and streamline your marketing workflow. Learn more!",
+  "key_benefits": [
+    "AI automation",
+    "Integration with switch, scheduleTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Data Formatting 1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Get Data from Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Post Content",
+      "type": "Process"
+    },
+    {
+      "name": "Regenerate Post Content",
+      "type": "Process"
+    },
+    {
+      "name": "Post With Image",
+      "type": "Process"
+    },
+    {
+      "name": "Post Without Image",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

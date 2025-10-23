@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/805b5510",
+  "workflow_id": "805b5510",
+  "workflow_id_display": "805b5510",
+  "workflow_name": "Collect absences from Google Calendars",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "13",
+  "tools_integrations": "Email",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically scan your Google Calendar monthly for “Holiday” or “Illness” events, get a clear summary by person, and receive detailed email reports. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, emailSend, googleCalendar"
+  ],
+  "nodes": [
+    {
+      "name": "Filter Holiday Days",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Illness Days",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Previous Month",
+      "type": "Process"
+    },
+    {
+      "name": "1st of Every month at 8am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Holiday",
+      "type": "Process"
+    },
+    {
+      "name": "Illness",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get previous months events",
+      "type": "Process"
+    },
+    {
+      "name": "Combine Holiday Counts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Illness Counts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Build the message to send",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

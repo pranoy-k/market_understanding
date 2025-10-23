@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf2c8b45",
+  "workflow_id": "cf2c8b45",
+  "workflow_id_display": "cf2c8b45",
+  "workflow_name": "Create an AI-Powered Discord Assistant with GPT-4o for Multi-Channel Messaging",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Discord, OpenAI",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "YungCEO",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Transform your Discord server with AI-powered messaging, smart automation, and secure multi-channel workflows. Boost engagement—discover more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with discordTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

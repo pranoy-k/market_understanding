@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/84902ec6",
+  "workflow_id": "84902ec6",
+  "workflow_id_display": "84902ec6",
+  "workflow_name": "AI agent that can scrape webpages",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "Web Scraping🤖 AI"
+  ],
+  "author_name": "Eduard",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "On new manual Chat Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Exctract HTML Body",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Stringify error message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove extra tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Simplify output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "QUERY_PARAMS",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CONFIG",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Page Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "ReAct AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to Markdown",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP_Request_Tool",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a596dbbc",
+  "workflow_id": "a596dbbc",
+  "workflow_id_display": "a596dbbc",
+  "workflow_name": "Obsidian Notes Read Aloud using AI_ Available as a Podcast Feed",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "Google Sheets, OpenAI, RSS, Webhook",
+  "tags": [
+    "Webhook🤖 AI"
+  ],
+  "author_name": "Obsidi8n",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Give Audio Unique Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rename Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Manually Enter Other Data for Podcast Feed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Append Item to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Items from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook GET Note",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook GET Podcast Feed",
+      "type": "Trigger"
+    },
+    {
+      "name": "Upload Audio to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Audio to Obsidian",
+      "type": "Trigger"
+    },
+    {
+      "name": "Write RSS Feed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return Podcast Feed to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

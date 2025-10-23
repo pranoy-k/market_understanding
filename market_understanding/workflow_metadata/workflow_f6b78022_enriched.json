@@ -1,0 +1,151 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f6b78022",
+  "workflow_id": "f6b78022",
+  "workflow_id_display": "f6b78022",
+  "workflow_name": "Translate & Repost Twitter Threads in Multiple Languages with OpenAI",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "40",
+  "tools_integrations": "OpenAI, Twitter",
+  "tags": [
+    "twitter🤖 openai"
+  ],
+  "author_name": "enes cingoz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates your Twitter presence using AI to generate engaging content, monitor mentions, and interact with your audience. It can create tweets based on trending topics, respond to mentions intelligently, and analyze engagement metrics to optimize your social media strategy.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with manualTrigger, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set first tweet id and session",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set tweet infos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Tweet ID and Username",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Conversation and Author ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Execute Workflow",
+      "type": "Process"
+    },
+    {
+      "name": "config",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Translator_openai",
+      "type": "Process"
+    },
+    {
+      "name": "Rewriter",
+      "type": "Process"
+    },
+    {
+      "name": "Login Twitter",
+      "type": "Data Input"
+    },
+    {
+      "name": "Login Twitter with 2fa",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post first tweet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update twitter session",
+      "type": "Process"
+    },
+    {
+      "name": "Get twitter session",
+      "type": "Process"
+    },
+    {
+      "name": "Post reply tweet",
+      "type": "Data Input"
+    },
+    {
+      "name": "set_iteration_outputs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MAIN_LOOP",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract tweets list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send error message",
+      "type": "Process"
+    },
+    {
+      "name": "DONE",
+      "type": "Process"
+    },
+    {
+      "name": "Merge first tweet and others",
+      "type": "Data Processing"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get first tweet",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge all tweet infos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Tweet Replies",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch tweets which are connected to first tweet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter empty ones",
+      "type": "Data Processing"
+    },
+    {
+      "name": "REMOVE THIS NODE",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/165d437e",
+  "workflow_id": "165d437e",
+  "workflow_id_display": "165d437e",
+  "workflow_name": "Travel Planning Assistant with MongoDB Atlas, Gemini LLM and Vector Search",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "MongoDB, OpenAI",
+  "tags": [
+    "mongodb",
+    "gemini"
+  ],
+  "author_name": "Pavel Duchovny",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly build agentic AI workflows with n8n’s native MongoDB Atlas nodes—store, retrieve, and search vector data for smarter LLM automation. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with memoryMongoDbChat, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Embeddings OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDB Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDB Atlas Vector Store",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Traveling Planner Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MongoDB Atlas Vector Store1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

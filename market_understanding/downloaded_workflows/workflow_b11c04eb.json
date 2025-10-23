@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "name": "Wise",
+      "type": "n8n-nodes-base.wise",
+      "position": [
+        470,
+        320
+      ],
+      "parameters": {
+        "amount": 500,
+        "resource": "quote",
+        "operation": "create",
+        "profileId": 16138858,
+        "sourceCurrency": "EUR",
+        "targetCurrency": "EUR",
+        "targetAccountId": 147767974
+      },
+      "credentials": {
+        "wiseApi": "Wise API Credentials"
+      },
+      "typeVersion": 1,
+      "id": "d7d4ad0be472574d"
+    },
+    {
+      "name": "Wise1",
+      "type": "n8n-nodes-base.wise",
+      "position": [
+        660,
+        320
+      ],
+      "parameters": {
+        "quoteId": "={{$json[\"id\"]}}",
+        "resource": "transfer",
+        "operation": "create",
+        "profileId": 16138858,
+        "targetAccountId": 147767974,
+        "additionalFields": {
+          "reference": "Thank you for the contribution"
+        }
+      },
+      "credentials": {
+        "wiseApi": "Wise API Credentials"
+      },
+      "typeVersion": 1,
+      "id": "0d10ff373fc7cf1f"
+    },
+    {
+      "name": "Wise2",
+      "type": "n8n-nodes-base.wise",
+      "position": [
+        870,
+        320
+      ],
+      "parameters": {
+        "resource": "transfer",
+        "operation": "execute",
+        "profileId": 16138858,
+        "transferId": "={{$json[\"id\"]}}"
+      },
+      "credentials": {
+        "wiseApi": "Wise API Credentials"
+      },
+      "typeVersion": 1,
+      "id": "14f7a7ba67b4b5c0"
+    },
+    {
+      "name": "Wise3",
+      "type": "n8n-nodes-base.wise",
+      "position": [
+        1070,
+        320
+      ],
+      "parameters": {
+        "resource": "transfer",
+        "transferId": "={{$node[\"Wise1\"].json[\"id\"]}}"
+      },
+      "credentials": {
+        "wiseApi": "Wise API Credentials"
+      },
+      "typeVersion": 1,
+      "id": "7261df6a692b1fb3"
+    }
+  ],
+  "connections": {
+    "Wise": {
+      "main": [
+        [
+          {
+            "node": "Wise1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wise1": {
+      "main": [
+        [
+          {
+            "node": "Wise2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wise2": {
+      "main": [
+        [
+          {
+            "node": "Wise3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "c4390c55bc668262",
+  "name": "Manage transfers automatically in Wise",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

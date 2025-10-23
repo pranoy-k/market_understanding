@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dabf7f4c",
+  "workflow_id": "dabf7f4c",
+  "workflow_id_display": "dabf7f4c",
+  "workflow_name": "Build a Voice AI Chatbot with ElevenLabs and InfraNodus Knowledge Experts",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "InfraNodus",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Set up an AI voice chatbot with ElevenLabs and InfraNodus GraphRAG—easy integration, expert answers, and simple updates. Learn how to get started!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, lmChatOpenAi, agent"
+  ],
+  "nodes": [
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Waves into Patterns Book Expert",
+      "type": "Data Input"
+    },
+    {
+      "name": "Special Agent's Manual Book Expert",
+      "type": "Data Input"
+    },
+    {
+      "name": "The Flow and the Notion Book",
+      "type": "Data Input"
+    },
+    {
+      "name": "The Polysingularity Letters Book",
+      "type": "Data Input"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

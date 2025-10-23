@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7a21f0ca",
+  "workflow_id": "7a21f0ca",
+  "workflow_id_display": "7a21f0ca",
+  "workflow_name": "Auto-Respond to Gmail Enquiries using GPT-4o, Dumpling AI & LangChain Agent",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, Gmail, OpenAI",
+  "tags": [],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Watch Gmail for New Incoming Emails",
+      "type": "Trigger"
+    },
+    {
+      "name": "Classify Email Type with GPT-4o",
+      "type": "Process"
+    },
+    {
+      "name": "GPT-4o Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Only Proceed if Email is an Enquiry",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Memory Buffer (Past 10 Interactions)",
+      "type": "Process"
+    },
+    {
+      "name": "Dumpling AI Agent – Search for Relevant Info",
+      "type": "Data Input"
+    },
+    {
+      "name": "LangChain Agent Handles Reply Logic",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

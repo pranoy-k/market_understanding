@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/34b7f72b",
+  "workflow_id": "34b7f72b",
+  "workflow_id_display": "34b7f72b",
+  "workflow_name": "Airtable Base Backups to S3",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "AWS, Airtable, CSV, Slack",
+  "tags": [
+    "slack",
+    "csv",
+    "Scheduled"
+  ],
+  "author_name": "Autonomous Work",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate weekly Airtable CSV backups to Amazon S3, get Slack alerts, and auto-prune old copies. Flexible, easy setup—secure your data effortlessly!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with awsS3, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Weekly Backup",
+      "type": "Trigger"
+    },
+    {
+      "name": "Monthly Prune",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Table Metadata",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Timestamps",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Week",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Pull Records",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AWS S3",
+      "type": "Process"
+    },
+    {
+      "name": "Delete File",
+      "type": "Process"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "List Folders",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

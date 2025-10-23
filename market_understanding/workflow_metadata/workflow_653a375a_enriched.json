@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/653a375a",
+  "workflow_id": "653a375a",
+  "workflow_id_display": "653a375a",
+  "workflow_name": "Automated Discord Spam Moderation with AI and Human-in-the-Loop",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Discord moderation with this n8n template—detect spam using AI, involve moderators via actionable forms, and customize actions easily. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, scheduleTrigger, textClassifier"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Flag as Spam",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flag as Not Spam",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Model",
+      "type": "Process"
+    },
+    {
+      "name": "Only Once",
+      "type": "Process"
+    },
+    {
+      "name": "Group By User",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each User...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Message to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Spam Messages Only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Message IDs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Moderation Subworkflow",
+      "type": "Process"
+    },
+    {
+      "name": "No Action Taken",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

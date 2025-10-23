@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/099a9a07",
+  "workflow_id": "099a9a07",
+  "workflow_id_display": "099a9a07",
+  "workflow_name": "Automate YouTube Uploads with AI-Generated Metadata from Google Drive",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Facebook, Google Drive, YouTube",
+  "tags": [
+    "google"
+  ],
+  "author_name": "JPres",
+  "author_profile_url": "https://n8n.io/creators/stardawnai/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube uploads with AI-powered metadata from video transcripts. Save time, boost SEO, and streamline publishing—secure, hands-off workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "New Video?",
+      "type": "Trigger"
+    },
+    {
+      "name": "ApifyToken",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Description",
+      "type": "Process"
+    },
+    {
+      "name": "YT Title",
+      "type": "Process"
+    },
+    {
+      "name": "Download New Video",
+      "type": "Process"
+    },
+    {
+      "name": "2.5FlashPrev",
+      "type": "Process"
+    },
+    {
+      "name": "YT Tags",
+      "type": "Process"
+    },
+    {
+      "name": "Get Transcript",
+      "type": "Data Input"
+    },
+    {
+      "name": "Adjust Transcript Format",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Video's Metadata",
+      "type": "Process"
+    },
+    {
+      "name": "Delete File from Upload Folder (Optional)",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Video to Youtube",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

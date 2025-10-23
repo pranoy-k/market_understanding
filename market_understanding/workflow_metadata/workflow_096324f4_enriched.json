@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/096324f4",
+  "workflow_id": "096324f4",
+  "workflow_id_display": "096324f4",
+  "workflow_name": "Prompt-based Object Detection with Gemini 2.0",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 openai & llms Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Test Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Gemini 2.0 Object Detection",
+      "type": "Data Input"
+    },
+    {
+      "name": "Scale Normalised Coords",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Draw Bounding Boxes",
+      "type": "Process"
+    },
+    {
+      "name": "Get Image Info",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f9b6b39",
+  "workflow_id": "1f9b6b39",
+  "workflow_id_display": "1f9b6b39",
+  "workflow_name": "Extract insights & analyse YouTube comments via AI Agent chat",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "OpenAI, PostgreSQL, YouTube",
+  "tags": [],
+  "author_name": "Mark Shcherbakov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Extract and analyze YouTube comments using AI agents to gain insights into viewer sentiment, common questions, and engagement patterns.",
+  "key_benefits": [
+    "Intelligent task automation"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "get_channel_details",
+      "type": "Process"
+    },
+    {
+      "name": "get_video_description",
+      "type": "Process"
+    },
+    {
+      "name": "get_list_of_videos",
+      "type": "Process"
+    },
+    {
+      "name": "get_list_of_comments",
+      "type": "Process"
+    },
+    {
+      "name": "search",
+      "type": "Process"
+    },
+    {
+      "name": "analyze_thumbnail",
+      "type": "Process"
+    },
+    {
+      "name": "video_transcription",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get Comments",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Channel Details",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Description",
+      "type": "Data Input"
+    },
+    {
+      "name": "Run Query",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Videos by Channel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Transcription",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

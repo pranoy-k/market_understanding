@@ -1,0 +1,67 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5bd82cc8",
+  "workflow_id": "5bd82cc8",
+  "workflow_id_display": "5bd82cc8",
+  "workflow_name": "Error Handling System with PostgreSQL Logging and Rate-Limited Notifications",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "PostgreSQL",
+  "tags": [],
+  "author_name": "Davi Saranszky Mesquita",
+  "author_profile_url": "https://n8n.io/creators/frkr/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Efficient error logging workflow for PostgreSQL—logs all errors and limits alerts to one every 5 mins. Easy setup, cleanup, & custom notifications. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, emailSend, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sometimes... just cleanup",
+      "type": "Trigger"
+    },
+    {
+      "name": "See below to prepend this at your error handling",
+      "type": "Trigger"
+    },
+    {
+      "name": "Insert Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Count for 5 minutes",
+      "type": "Data Output"
+    },
+    {
+      "name": "Push mobile notification",
+      "type": "Process"
+    },
+    {
+      "name": "Truncate Log Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Call this Sample - Prepend to your error catcher",
+      "type": "Process"
+    },
+    {
+      "name": "CleanUp execution. See below if you will prepend this workflow",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Insert your error handling logic after this",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

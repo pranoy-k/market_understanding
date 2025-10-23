@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e8561f2",
+  "workflow_id": "5e8561f2",
+  "workflow_id_display": "5e8561f2",
+  "workflow_name": "Read an RSS Feed",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a practical RSS Feed Read node workflow for n8n. Learn step-by-step automation, best practices, and get inspired to customize your RSS processes.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, rssFeedRead"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

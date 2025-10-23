@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0428ed2",
+  "workflow_id": "b0428ed2",
+  "workflow_id_display": "b0428ed2",
+  "workflow_name": "AI-Powered Research with Jina AI Deep Search",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Leonard",
+  "author_profile_url": "https://n8n.io/creators/leonardvanhemert/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Unlock AI-driven research with Jina AI Deep Search—no API key needed! Generate structured, high-quality reports instantly and customize your workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with chatTrigger, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "User Research Query Input",
+      "type": "Trigger"
+    },
+    {
+      "name": "Jina AI DeepSearch Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format & Clean AI Response",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

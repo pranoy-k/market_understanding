@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0568cca0",
+  "workflow_id": "0568cca0",
+  "workflow_id_display": "0568cca0",
+  "workflow_name": "lemlist <> GPT-3: Supercharge your sales workflows",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Email, OpenAI, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Lucas Perret",
+  "author_profile_url": "https://n8n.io/creators/lempire/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Harness GPT-3 to classify email replies in lemlist, automate Slack alerts, task creation for OOO leads, and unsubscribe requests. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, httpRequest, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Lemlist - Lead Replied",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Lemlist - Unsubscribe",
+      "type": "Process"
+    },
+    {
+      "name": "follow up task",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "lemlist - Mark as interested",
+      "type": "Data Input"
+    },
+    {
+      "name": "HubSpot - Create Deal",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Get contact ID",
+      "type": "Process"
+    },
+    {
+      "name": "HubSpot - Get contact ID1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/84c1ca63",
+  "workflow_id": "84c1ca63",
+  "workflow_id_display": "84c1ca63",
+  "workflow_name": "Create AI News Videos with HeyGen Avatars and Auto-Post to Social Media",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Sam Yassine",
+  "author_profile_url": "https://n8n.io/creators/samyassine/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert trending news into AI avatar videos with automated scripts and captions, then post across social media—all fully automated. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, hackerNewsTool"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup Heygen",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare for Publish",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Write Script",
+      "type": "Process"
+    },
+    {
+      "name": "Write Long Caption",
+      "type": "Process"
+    },
+    {
+      "name": "Write Short Caption",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Instagram] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Facebook] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Linkedin] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Tiktok] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload to Blotato - Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Pinterest] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Youtube] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Threads] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Twitter] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "[Bluesky] Publish via Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch HN Article",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch HN Front Page",
+      "type": "Process"
+    },
+    {
+      "name": "Get Avatar Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Avatar Video",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

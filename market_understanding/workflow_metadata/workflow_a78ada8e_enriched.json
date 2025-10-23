@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a78ada8e",
+  "workflow_id": "a78ada8e",
+  "workflow_id_display": "a78ada8e",
+  "workflow_name": "Create Salesforce accounts based on Google Sheets data",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Google Sheets, Salesforce",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync contacts from Google Sheets to Salesforce—no coding needed. Automate account creation and updates for a streamlined CRM workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, renameKeys"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set new account name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search Salesforce accounts",
+      "type": "Process"
+    },
+    {
+      "name": "Keep new companies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge existing account data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove duplicate companies",
+      "type": "Process"
+    },
+    {
+      "name": "Set Account ID for existing accounts",
+      "type": "Process"
+    },
+    {
+      "name": "Retrieve new company contacts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Salesforce account",
+      "type": "Process"
+    },
+    {
+      "name": "Create Salesforce contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,155 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a1fdf35c",
+  "workflow_id": "a1fdf35c",
+  "workflow_id_display": "a1fdf35c",
+  "workflow_name": "Credit Card Payment Reminder & Tracking-For Taiwan Banks",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "API, Email, Google Sheets, PDF, Webhook",
+  "tags": [
+    "google",
+    "webhook",
+    "pdf"
+  ],
+  "author_name": "darrell_tw",
+  "author_profile_url": "https://n8n.io/creators/darrelltw/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate credit card bill tracking from 8 Taiwanese banks: extract email/PDF payment details, sync with Google Sheets & Calendar, and update via webhook.",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, googleCalendar, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking 'Test workflow'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-SINOPAC",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-CTBC",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-Cathay",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-Fubon",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-E.SUN",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-DBS",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-Union",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gmail-Taishin",
+      "type": "Trigger"
+    },
+    {
+      "name": "SINOPAC_set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Organize Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cathay_set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "CTBC _set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fubon_set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "E.SUN_set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DBS_set field",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Union_set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Taishin_set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheets pay status",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "SINOPAC_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Google Calendar Event",
+      "type": "Process"
+    },
+    {
+      "name": "Update Google Calendar - change status",
+      "type": "Process"
+    },
+    {
+      "name": "Fubon_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "E.SUN_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "DBS_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Union_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Taishin_PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Google Calendar Event by id",
+      "type": "Process"
+    },
+    {
+      "name": "Update Google Calendar event staus",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

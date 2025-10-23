@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1d5bab18",
+  "workflow_id": "1d5bab18",
+  "workflow_id_display": "1d5bab18",
+  "workflow_name": "Extract University Term Dates from Excel using CloudFlare Markdown Conversion",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "Excel",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert university term date Excel files into ICS calendars with AI-powered n8n automation. Import, extract & share events in seconds—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, gmail"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Target Sheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fix Dates",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Term Dates Excel",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Key Events and Dates",
+      "type": "Data Input"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create ICS File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Events to ICS Document",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort Events by Date",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Markdown Conversion Service",
+      "type": "Data Input"
+    },
+    {
+      "name": "Events to Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

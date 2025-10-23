@@ -1,0 +1,280 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c0850e44",
+  "workflow_id": "c0850e44",
+  "workflow_id_display": "c0850e44",
+  "workflow_name": "Generate Videos with AI, ElevenLabs,PIAPI Shotstack/Creatomate & Post to Youtube",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "71",
+  "tools_integrations": "API, YouTube",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Immanuel",
+  "author_profile_url": "https://n8n.io/creators/spectrabit/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate YouTube video creation with AI-driven scripting, visuals, and seamless posting. Boost productivity and quality—learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with limit, if, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse Ideas",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Parse Script Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MusicPrompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Music Prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "searchAirtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add Ideas",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store in Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Script",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Script in Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Status Ideas Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Updated Idea to Scripted",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Image Urls in Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Voice Urls",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update VoiceUrls",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update ImageUrls",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store Music Urls",
+      "type": "Data Output"
+    },
+    {
+      "name": "Final Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Final Video Update",
+      "type": "Data Output"
+    },
+    {
+      "name": "Final Video Creatomate",
+      "type": "Data Output"
+    },
+    {
+      "name": "Creatomate Final Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Music Urls",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search for Latest Ready Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Pepduction Table",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Script",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Idea",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Scenes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Text-to-Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Images",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get ImageUrls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scene Image Urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Narration",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Voice Generation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Store Sound",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregating Voice Urls",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare Video Assets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Allow Access",
+      "type": "Process"
+    },
+    {
+      "name": "ShotStack Render Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Build Shotstack Timeline",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Store video",
+      "type": "Process"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Music Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Text toMusic",
+      "type": "Data Input"
+    },
+    {
+      "name": "Music Store",
+      "type": "Process"
+    },
+    {
+      "name": "Access to Anyone with Link",
+      "type": "Process"
+    },
+    {
+      "name": "Add Aggregate Music URLs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Poll Rendered Videos",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Video Creatomate",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare Assets For Creatomate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List Elements",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Binary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Final Creatomate Video",
+      "type": "Process"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post YouTube",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

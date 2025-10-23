@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f0ef061d",
+  "workflow_id": "f0ef061d",
+  "workflow_id_display": "f0ef061d",
+  "workflow_name": "Telegram Chat Summarizer with AI - using @telepilotco/n8n-nodes-telepilot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Alexey",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly stay updated on Telegram chats with AI-driven summaries. Track trends and key updates in real time—save time and reduce message overload.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, scheduleTrigger, aggregate"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get message text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "MongoDB Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter Last 2 hours",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Skip Empty Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Send Summary To Chat",
+      "type": "Process"
+    },
+    {
+      "name": "Last Messages History",
+      "type": "Process"
+    },
+    {
+      "name": "Get Chat Id By Name",
+      "type": "Process"
+    },
+    {
+      "name": "Try this for check Login",
+      "type": "Process"
+    },
+    {
+      "name": "Telegram Login",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

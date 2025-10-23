@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1b75e97c",
+  "workflow_id": "1b75e97c",
+  "workflow_id_display": "1b75e97c",
+  "workflow_name": "Notify on Telegram and Twitter when new order is added in WooCommerce",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Telegram, Twitter",
+  "tags": [
+    "telegram",
+    "twitter"
+  ],
+  "author_name": "Jonathan",
+  "author_profile_url": "https://n8n.io/creators/jon-n8n/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate WooCommerce product updates by auto-posting new items to Telegram and Twitter. Effortless setup—connect your accounts and start sharing instantly!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with twitter, telegram, wooCommerceTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "WooCommerce Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Twitter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

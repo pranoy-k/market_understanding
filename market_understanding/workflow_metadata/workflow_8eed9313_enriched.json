@@ -1,0 +1,42 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8eed9313",
+  "workflow_id": "8eed9313",
+  "workflow_id_display": "8eed9313",
+  "workflow_name": "Email Summary Agent",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [
+    "Scheduled🤖 AI🤖 Email Automation"
+  ],
+  "author_name": "Vishal Kumar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Create an AI agent that summarizes email threads and extracts key action items.",
+  "key_benefits": [
+    "Automated email response management"
+  ],
+  "nodes": [
+    {
+      "name": "Daily 7AM Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summarize Emails with OpenAI - Morning",
+      "type": "Process"
+    },
+    {
+      "name": "Organize Email Data - Morning",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6237150",
+  "workflow_id": "a6237150",
+  "workflow_id_display": "a6237150",
+  "workflow_name": "Custom Deal Recommendations by Email using Forms, Bright Data & GPT-4o-mini",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Email, OpenAI",
+  "tags": [],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate personalized MediaMarkt deal alerts with this n8n workflow: scrape offers, tailor recommendations, and deliver curated emails—self-hosted only.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, openAi, html"
+  ],
+  "nodes": [
+    {
+      "name": "When User Completes Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Generate List of Deals by Category",
+      "type": "Process"
+    },
+    {
+      "name": "Get MediaMarkt Offers Website",
+      "type": "Process"
+    },
+    {
+      "name": "Create HTML for Email",
+      "type": "Process"
+    },
+    {
+      "name": "Extract items from results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Show Form Results Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Body and Title from Website",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

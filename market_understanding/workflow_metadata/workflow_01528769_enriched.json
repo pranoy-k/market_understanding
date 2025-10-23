@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/01528769",
+  "workflow_id": "01528769",
+  "workflow_id_display": "01528769",
+  "workflow_name": "Readable Workflow Export & Deployment Pipeline for Multi-Environment CI/CD",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Klaasjan te Voortwis",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export n8n workflows with readable names, organized by environment. Automate deployments—no extra setup required. Discover more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, executeCommand"
+  ],
+  "nodes": [
+    {
+      "name": "Start export workflows",
+      "type": "Trigger"
+    },
+    {
+      "name": "Remove root node",
+      "type": "Data Processing"
+    },
+    {
+      "name": "parse workflow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create folders and run n8n cli",
+      "type": "Process"
+    },
+    {
+      "name": "load exported workflows",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create JSON file with readable name",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store named workflow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create JSON file with readable name (dev)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create JSON file with readable name (prod)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store named workflow (dev)",
+      "type": "Data Output"
+    },
+    {
+      "name": "Store named workflow (prod)",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

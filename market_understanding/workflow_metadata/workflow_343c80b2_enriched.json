@@ -1,0 +1,74 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/343c80b2",
+  "workflow_id": "343c80b2",
+  "workflow_id_display": "343c80b2",
+  "workflow_name": "Fetch Dynamic Prompts from GitHub and Auto-Populate n8n Expressions in Prompt",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "RealSimple Solutions",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 openai & llms Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "setVars",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetPrompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Completed Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prompt Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GitHub",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "replace variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check All Prompt Vars Present",
+      "type": "Data Processing"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "GitHub API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

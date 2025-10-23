@@ -1,0 +1,155 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/07fdcdbf",
+  "workflow_id": "07fdcdbf",
+  "workflow_id_display": "07fdcdbf",
+  "workflow_name": "Automatic Youtube Shorts Generator",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "34",
+  "tools_integrations": "YouTube",
+  "tags": [
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Samautomation.work",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn trending Google News stories into compelling YouTube Shorts with AI-powered automation. Save time, boost reach, and streamline your workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Video Category",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Image Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Music",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map Public Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Correct Video Url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save images to GC",
+      "type": "Process"
+    },
+    {
+      "name": "Save Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Grab Video",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Elevenlabs",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Audio",
+      "type": "Data Input"
+    },
+    {
+      "name": "Open AI Whisper",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create a list of Image Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to Flux Prompt",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out - Image prompts",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get image Base 64",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Limit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Transcript",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Progress",
+      "type": "Data Input"
+    },
+    {
+      "name": "Code1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Caption By Deepseek",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Title By Deepseek",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Transcript By Deepseek",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

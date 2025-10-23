@@ -1,0 +1,160 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d5b5bddd",
+  "workflow_id": "d5b5bddd",
+  "workflow_id_display": "d5b5bddd",
+  "workflow_name": "AI-Powered Lead Enrichment with Bright Data MCP and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "39",
+  "tools_integrations": "Google Sheets, HubSpot",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Cyril Nicko Gaspar",
+  "author_profile_url": "https://n8n.io/creators/cngaspar/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate HubSpot lead enrichment with AI-driven workflows—connect Google Sheets & Bright Data MCP for real-time B2B insights. No coding needed! Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with outputParserAutofixing, noOp, if"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "New Contact in Hubpost (OAuth2)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Remove unneccessary fields for the prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract the AI results only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare the scraped output for Google Sheets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add confidence score to Google Sheet",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update row_id and status",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Judge the accuracy of scraped data",
+      "type": "Process"
+    },
+    {
+      "name": "Add record if the confidence score is below 85%",
+      "type": "Data Output"
+    },
+    {
+      "name": "Override the record if the confidence score is equal or greater than 85%",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the status of the record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update the status of the original record",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Process each leads one by one",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter the leads that needs enrichment",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Bright Data MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Not matched route",
+      "type": "Process"
+    },
+    {
+      "name": "Scraper AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Just to make the connection neat",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HubSpot",
+      "type": "Process"
+    },
+    {
+      "name": "New Contact in Hubpost (Private App)",
+      "type": "Trigger"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Update the Hubspot Contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

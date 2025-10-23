@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/aa4fee4a",
+  "workflow_id": "aa4fee4a",
+  "workflow_id_display": "aa4fee4a",
+  "workflow_name": "Screen and Score Resumes from Gmail to Sheets with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Email, Gmail, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Aditya Sharma",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger on new Email Received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model (GPT 4o-mini)",
+      "type": "Process"
+    },
+    {
+      "name": "Add Resume Evaluation to Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract text from PDF File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent to evaluate Resume",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

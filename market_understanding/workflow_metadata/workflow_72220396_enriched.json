@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/72220396",
+  "workflow_id": "72220396",
+  "workflow_id_display": "72220396",
+  "workflow_name": "n8n Subworkflow Dependency Graph & Auto-Tagging",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Ludwig",
+  "author_profile_url": "https://n8n.io/creators/ludwig/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily track n8n sub-workflow dependencies with auto-tagging, visualization, and effortless setup. Streamline updates and boost workflow clarity—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "And every Sunday",
+      "type": "Trigger"
+    },
+    {
+      "name": "When this workflow is activated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Count callers and identify new callers",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Remove existing tags from new_callers list",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create tag id:name dictionary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve tag ids and names from dictionary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return dependency graph data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SET instance_url",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update workflow tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET all workflows",
+      "type": "Process"
+    },
+    {
+      "name": "List callers of subworkflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exclude uncalled workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Exclude missing workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET workflow(s)",
+      "type": "Process"
+    },
+    {
+      "name": "Loop through workflows",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET all tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split out new callers as new tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Return original pass through values",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET all tags again",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine dependency graph values into labels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Visualize subworkflow dependency graph",
+      "type": "Process"
+    },
+    {
+      "name": "When viewed in a browser",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format workflow relationship data for rendering",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Visualize dependency graph with MermaidJS",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

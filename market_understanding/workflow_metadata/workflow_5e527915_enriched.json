@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5e527915",
+  "workflow_id": "5e527915",
+  "workflow_id_display": "5e527915",
+  "workflow_name": "Join data from Postgres and MySQL",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "MySQL, PostgreSQL",
+  "tags": [
+    "postgres",
+    "mysql"
+  ],
+  "author_name": "Hermilio",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly query and unify data from two databases. Seamlessly merge results into one streamlined output. Discover efficient data integration now!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with function, httpRequest, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "trataRetorno",
+      "type": "Data Processing"
+    },
+    {
+      "name": "emitirEtiqueta",
+      "type": "Trigger"
+    },
+    {
+      "name": "dadosProduto",
+      "type": "Data Output"
+    },
+    {
+      "name": "PegarConfiguracaoImpressao",
+      "type": "Data Input"
+    },
+    {
+      "name": "dadosRolo",
+      "type": "Data Output"
+    },
+    {
+      "name": "roloProduto",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

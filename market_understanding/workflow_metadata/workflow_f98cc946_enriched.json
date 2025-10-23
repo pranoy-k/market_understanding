@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f98cc946",
+  "workflow_id": "f98cc946",
+  "workflow_id_display": "f98cc946",
+  "workflow_name": "Create a Notion AI Assistant with Google Gemini for Managing Tasks & Content",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "Notion",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Laura Piraux",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Build a powerful AI assistant for your self-hosted Notion workspace with this n8n template. Automate tasks, boost productivity, and customize easily!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, chatTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "AI Task Planner",
+      "type": "Process"
+    },
+    {
+      "name": "Notion - execute tool",
+      "type": "Process"
+    },
+    {
+      "name": "Notion - list tools",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

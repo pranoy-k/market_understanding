@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fb5190a8",
+  "workflow_id": "fb5190a8",
+  "workflow_id_display": "fb5190a8",
+  "workflow_name": "Twitter Virtual AI Influencer",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "Scheduled🤖 AI"
+  ],
+  "author_name": "Alex Grozav",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule posting every 6 hours",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger posting manually",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure your influencer profile",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate tweet content",
+      "type": "Process"
+    },
+    {
+      "name": "Post tweet",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

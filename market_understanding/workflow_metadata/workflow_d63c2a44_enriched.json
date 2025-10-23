@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d63c2a44",
+  "workflow_id": "d63c2a44",
+  "workflow_id_display": "d63c2a44",
+  "workflow_name": "3D Figurine Orthographic Views with Midjourney and GPT-4o-image API",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "API, OpenAI",
+  "tags": [
+    "api"
+  ],
+  "author_name": "PiAPI",
+  "author_profile_url": "https://n8n.io/creators/piapi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate front, side, and top 3D model views with the GPT-4o API via PiAPI. Perfect for designers and e-commerce. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, if"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Midjourney Generator",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Midjourney URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Random Image URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generation 3-view Image with GPT-4o-Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

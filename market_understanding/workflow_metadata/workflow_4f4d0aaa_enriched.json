@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4f4d0aaa",
+  "workflow_id": "4f4d0aaa",
+  "workflow_id_display": "4f4d0aaa",
+  "workflow_name": "Auto-Generate LinkedIn Posts from Articles with Dumpling AI and GPT-4o",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Google Sheets, LinkedIn, OpenAI",
+  "tags": [
+    "linkedin",
+    "google"
+  ],
+  "author_name": "Yang",
+  "author_profile_url": "https://n8n.io/creators/yang/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn posts with AI: instantly summarize articles, create matching images, and update Google Sheets—perfect for marketers & social media managers!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Start Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Post Text and Image Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Enable GPT-4o for LangChain Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Get \"To do\" Topics from Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet with Post & Image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Articles via Dumpling AI Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize 3 Articles + Generate LinkedIn Post + Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Image with Dumpling AI",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

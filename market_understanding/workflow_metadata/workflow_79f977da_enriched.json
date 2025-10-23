@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/79f977da",
+  "workflow_id": "79f977da",
+  "workflow_id_display": "79f977da",
+  "workflow_name": "Sync Google Drive files to an InfraNodus Knowledge Graph",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "InfraNodus",
+  "author_profile_url": "https://n8n.io/creators/infranodus/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Drive files to InfraNodus graphs, unveil key topics and content gaps, and boost content optimization with powerful AI tools.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "New File Created in the Google Folder?",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map PDF to Text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "InfraNodus Save to Graph",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Retrieve File",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from PDF",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from Text File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract from Markdown",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert File to PDF",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

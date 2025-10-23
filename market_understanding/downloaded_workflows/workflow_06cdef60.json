@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "name": "Execute Command",
+      "type": "n8n-nodes-base.executeCommand",
+      "position": [
+        600,
+        350
+      ],
+      "parameters": {
+        "command": "echo \"{ \\\"value1\\\": true, \\\"value2\\\": 1 }\""
+      },
+      "typeVersion": 1,
+      "id": "6cc8e7ac187b1fe5"
+    },
+    {
+      "name": "IF",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        800,
+        450
+      ],
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{JSON.parse($node[\"Execute Command\"].data[\"stdout\"]).value1}}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "id": "842917c82ab03865"
+    },
+    {
+      "name": "To Flow Data",
+      "type": "n8n-nodes-base.functionItem",
+      "position": [
+        800,
+        250
+      ],
+      "parameters": {
+        "functionCode": "item = JSON.parse(item.stdout);\nreturn item;"
+      },
+      "typeVersion": 1,
+      "id": "4e9e2b896a412b88"
+    }
+  ],
+  "connections": {
+    "Execute Command": {
+      "main": [
+        [
+          {
+            "node": "To Flow Data",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "IF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "d937fe9f0213976e",
+  "name": "Get execute command data and transfer to JSON",
+  "settings": {},
+  "staticData": null,
+  "tags": [
+    "json"
+  ]
+}

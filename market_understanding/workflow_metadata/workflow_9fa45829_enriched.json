@@ -1,0 +1,181 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9fa45829",
+  "workflow_id": "9fa45829",
+  "workflow_id_display": "9fa45829",
+  "workflow_name": "Voice-Powered Marketing Assistant with ElevenLabs, OpenAI & Content Generation",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with telegram, if, toolHttpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Not Found",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Image Log",
+      "type": "Data Output"
+    },
+    {
+      "name": "Image Log1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Image Log2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Image Database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Image",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Image",
+      "type": "Process"
+    },
+    {
+      "name": "Search Images",
+      "type": "Process"
+    },
+    {
+      "name": "Blog Post",
+      "type": "Process"
+    },
+    {
+      "name": "Marketing Team Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Think",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Prompt",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Image",
+      "type": "Process"
+    },
+    {
+      "name": "Download",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Image1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Tavily",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Prompt Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to Binary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Blog Post Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Image & Title",
+      "type": "Process"
+    },
+    {
+      "name": "Upload",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Image1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Search Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Download File",
+      "type": "Process"
+    },
+    {
+      "name": "Name, ID, & Link",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

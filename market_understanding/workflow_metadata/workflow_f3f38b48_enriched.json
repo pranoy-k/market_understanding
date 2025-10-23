@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f3f38b48",
+  "workflow_id": "f3f38b48",
+  "workflow_id_display": "f3f38b48",
+  "workflow_name": "Assign issues to interested contributors",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage GitHub issues for your open-source project—auto-assign to contributors and customize workflows. Learn best practices on the n8n blog.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, noOp, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Issue Creator",
+      "type": "Process"
+    },
+    {
+      "name": "Add Comment",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp1",
+      "type": "Process"
+    },
+    {
+      "name": "Assign Commenter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

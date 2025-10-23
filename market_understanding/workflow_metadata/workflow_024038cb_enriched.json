@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/024038cb",
+  "workflow_id": "024038cb",
+  "workflow_id_display": "024038cb",
+  "workflow_name": "Upwork Job Aggregator with OpenAI Summaries & Multi-channel Notifications",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Upwork Job Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Format Job Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse Summary Output",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Job Summarizer",
+      "type": "Process"
+    },
+    {
+      "name": "Log Jobs to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Fetch Upwork Jobs (Apify)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Job Listings",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

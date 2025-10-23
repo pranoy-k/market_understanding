@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/98782666",
+  "workflow_id": "98782666",
+  "workflow_id_display": "98782666",
+  "workflow_name": "Download Media Files from Slack Messages",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Usman Liaqat",
+  "author_profile_url": "https://n8n.io/creators/usmanliaqat/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture Slack messages and auto-download attached media files with this n8n workflow. Streamline team file handling—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, stickyNote, slackTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Slack File Message",
+      "type": "Trigger"
+    },
+    {
+      "name": "Download Media from Slack",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

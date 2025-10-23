@@ -1,0 +1,38 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0f599389",
+  "workflow_id": "0f599389",
+  "workflow_id_display": "0f599389",
+  "workflow_name": "Create an Onfleet task when a file in Google Drive is updated",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate last-mile deliveries by syncing Google Drive updates with Onfleet. Real-time file monitoring, flexible setup, and seamless, secure integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with onfleet, googleDriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Onfleet",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/00c4c006",
+  "workflow_id": "00c4c006",
+  "workflow_id_display": "00c4c006",
+  "workflow_name": "Use a Custom URL for Recurring Zoom Meetings",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Slack, Zoom",
+  "tags": [
+    "slack",
+    "Scheduled"
+  ],
+  "author_name": "Eric",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Simplify Zoom invites with a branded URL! Auto-update your link yearly, get Slack alerts, and customize for any CMS. Stay organized—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with slack, wordpress, scheduleTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zoom",
+      "type": "Process"
+    },
+    {
+      "name": "Wordpress",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

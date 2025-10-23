@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ccb32996",
+  "workflow_id": "ccb32996",
+  "workflow_id_display": "ccb32996",
+  "workflow_name": "Automated Video Translation & Distribution with DubLab to Multiple Platforms",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Behram",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate video dubbing, translation, and uploads to top social platforms and cloud drives. Streamline sharing with n8n and DubLab integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, dropbox, youTube"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Init Dubbing",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Start Dubbing",
+      "type": "Data Input"
+    },
+    {
+      "name": "Fetch Projects",
+      "type": "Data Input"
+    },
+    {
+      "name": "Combine Videos and Languages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Proxy Videos",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Proxy Ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Original Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dubbed Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Postiz",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

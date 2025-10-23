@@ -1,0 +1,178 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1d559dc5",
+  "workflow_id": "1d559dc5",
+  "workflow_id_display": "1d559dc5",
+  "workflow_name": "Audio Conversation Analysis & Visualization with DeepGram and GPT-4o",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "38",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "RealSimple Solutions",
+  "author_profile_url": "https://n8n.io/creators/joeperes/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Transform transcripts with AI-powered analysis: automate audio-to-text, extract insights, track sentiment, and streamline reporting. Discover more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, googleDocs, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "SetJSONFields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "DeepGram",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Google Docs1",
+      "type": "Process"
+    },
+    {
+      "name": "HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Drive uploadAudio",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive downloadUploaded",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Webhook4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert to File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Json",
+      "type": "Process"
+    },
+    {
+      "name": "Create Google Docs",
+      "type": "Process"
+    },
+    {
+      "name": "Google Drive Download Audio",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RenameAudio",
+      "type": "Process"
+    },
+    {
+      "name": "MoveAudio",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MoveTranscriptAnalysis",
+      "type": "Process"
+    },
+    {
+      "name": "SETUP - TE Completed Audio",
+      "type": "Process"
+    },
+    {
+      "name": "SETUP - TE Summaries",
+      "type": "Process"
+    },
+    {
+      "name": "SETUP - TE Transcript_json",
+      "type": "Process"
+    },
+    {
+      "name": "Setup - Create Transcript-Evalu8r Folder",
+      "type": "Process"
+    },
+    {
+      "name": "GetJSONs",
+      "type": "Process"
+    },
+    {
+      "name": "GetJSON",
+      "type": "Process"
+    },
+    {
+      "name": "ExtractJSON",
+      "type": "Data Output"
+    },
+    {
+      "name": "ProcessJSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GetSpeakers",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

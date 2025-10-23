@@ -1,0 +1,72 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ff75795",
+  "workflow_id": "3ff75795",
+  "workflow_id_display": "3ff75795",
+  "workflow_name": "Automatically document and backup N8N workflows",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "17",
+  "tools_integrations": "GitHub, Notion, OpenAI, PDF, Slack",
+  "tags": [
+    "slack🤖 openai",
+    "Scheduled"
+  ],
+  "author_name": "Luke",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly back up and document workflows to GitHub and Notion, with OpenAI-powered summaries and instant Slack alerts. Learn more about setup!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Every Monday at 1am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Map fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summarize what the Workflow does",
+      "type": "Process"
+    },
+    {
+      "name": "Get notion page with workflow id",
+      "type": "Data Input"
+    },
+    {
+      "name": "Add to Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Update in Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Upload changes to repo",
+      "type": "Process"
+    },
+    {
+      "name": "Create new file in repo",
+      "type": "Process"
+    },
+    {
+      "name": "Get active workflows with internal-infra tag",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7980d0e1",
+  "workflow_id": "7980d0e1",
+  "workflow_id_display": "7980d0e1",
+  "workflow_name": "Android to N8N Automation | Save Links to with Readeck, Openrouter, SerpAPI",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "Udit Rawat",
+  "author_profile_url": "https://n8n.io/creators/ailistmaster/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and organize bookmarks with AI-powered tagging, seamless Android-to-Read Deck integration, and secure, clutter-free management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, webhook, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "SerpAPI",
+      "type": "Process"
+    },
+    {
+      "name": "Get Webhook Content",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extractor URL & Title",
+      "type": "Data Input"
+    },
+    {
+      "name": "Content Tagging Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter GPT 40 Mini",
+      "type": "Process"
+    },
+    {
+      "name": "Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Create Bookmark",
+      "type": "Data Input"
+    },
+    {
+      "name": "Bookmark Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Bookmark Not Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Title & URL Not Found",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "SerpAPI"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

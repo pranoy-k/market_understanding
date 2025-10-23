@@ -1,0 +1,52 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        150,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Contentful",
+      "type": "n8n-nodes-base.contentful",
+      "position": [
+        350,
+        300
+      ],
+      "parameters": {
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {}
+      },
+      "credentials": {
+        "contentfulApi": "contentful"
+      },
+      "typeVersion": 1,
+      "id": "55b0abf283e91554"
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Contentful",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "eee8e8feee3a2a61",
+  "staticData": null,
+  "tags": []
+}

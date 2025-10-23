@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/98ca1020",
+  "workflow_id": "98ca1020",
+  "workflow_id_display": "98ca1020",
+  "workflow_name": "3D Product Video Generator from 2D Image for E-Commerce Stores",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "InfyOm Technologies",
+  "author_profile_url": "https://n8n.io/creators/infyom/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn 2D images into stunning 3D product videos with this AI-powered, automated workflow—no coding or manual editing required. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, wait"
+  ],
+  "nodes": [
+    {
+      "name": "On Form Submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Insert New Product",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Remove BG URL",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Video Link",
+      "type": "Data Output"
+    },
+    {
+      "name": "Give Access to folder",
+      "type": "Process"
+    },
+    {
+      "name": "Get Image File",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Remove BG image",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Image ID from URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Upload Video",
+      "type": "Process"
+    },
+    {
+      "name": "Create Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create Slug",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Video Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Video Link",
+      "type": "Data Input"
+    },
+    {
+      "name": "Remove Image Background",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Original Image",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to Binary File",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

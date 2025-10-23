@@ -1,0 +1,79 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0130dd42",
+  "workflow_id": "0130dd42",
+  "workflow_id_display": "0130dd42",
+  "workflow_name": "Handle GDPR data deletion requests with Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "16",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate user data deletion across apps with a secure Slack slash command. Works with Mattermost. Learn how to streamline privacy compliance!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Prepare Log Entry",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Receive Slash Command",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reject",
+      "type": "Trigger"
+    },
+    {
+      "name": "Wrong Command Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Acknowledge",
+      "type": "Trigger"
+    },
+    {
+      "name": "Missing Email Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Paddle Data Deletion",
+      "type": "Process"
+    },
+    {
+      "name": "Customer.io Data Deletion",
+      "type": "Process"
+    },
+    {
+      "name": "Zendesk Data Deletion",
+      "type": "Process"
+    },
+    {
+      "name": "Crypto",
+      "type": "Process"
+    },
+    {
+      "name": "Respond to Slack",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

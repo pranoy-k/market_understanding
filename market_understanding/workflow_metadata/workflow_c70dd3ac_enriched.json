@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c70dd3ac",
+  "workflow_id": "c70dd3ac",
+  "workflow_id_display": "c70dd3ac",
+  "workflow_name": "Generate Multiple T-shirt Design Prompts From Images With GPT-4o",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "AiAgent",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate up to 50 unique AI image prompts from any design. Streamline your creative workflow and save time—perfect for designers and creators.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, localFileTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Local File Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze Image",
+      "type": "Process"
+    },
+    {
+      "name": "Save To File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Converter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Image From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Prompt/Text Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Convert To Text",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

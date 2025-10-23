@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "name": "Mock Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        802,
+        307
+      ],
+      "parameters": {
+        "functionCode": "return [\n  {\n    json: {\n      id: 1,\n      name: \"Jim\"\n    }\n  },\n  {\n    json: {\n      id: 2,\n      name: \"Stefan\"\n    }\n  },\n  {\n    json: {\n      id: 3,\n      name: \"Hans\"\n    }\n  }\n];"
+      },
+      "typeVersion": 1,
+      "id": "a14d85beebd18300"
+    },
+    {
+      "name": "Create an array of objects",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1052,
+        307
+      ],
+      "parameters": {
+        "functionCode": "return [\n  {\n    json: {\n      data_object: items.map(item => item.json),\n    },\n  }\n];\n"
+      },
+      "typeVersion": 1,
+      "id": "704242328f3bfc89"
+    }
+  ],
+  "connections": {
+    "Mock Data": {
+      "main": [
+        [
+          {
+            "node": "Create an array of objects",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "d20964dbf8d58e8b",
+  "name": "Create an array of objects",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

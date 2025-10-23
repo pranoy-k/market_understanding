@@ -1,0 +1,40 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6eb73d38",
+  "workflow_id": "6eb73d38",
+  "workflow_id_display": "6eb73d38",
+  "workflow_name": "Send automated daily reminders on Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Nicholas Lewanowicz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Stay motivated with daily Telegram reminders to log your accomplishments. Easily track progress with optional Google Sheets integration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with functionItem, telegram, cron"
+  ],
+  "nodes": [
+    {
+      "name": "format reminder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Morning reminder",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

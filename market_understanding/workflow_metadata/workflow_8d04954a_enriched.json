@@ -1,0 +1,54 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d04954a",
+  "workflow_id": "8d04954a",
+  "workflow_id_display": "8d04954a",
+  "workflow_name": "Demo Workflow - How to use workflowStaticData()",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": null,
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Ria",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Persist variables like access tokens in n8n workflows with `workflowStaticData()`. Enhance reliability for automated runs. Learn how to set it up!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "continue with valid token",
+      "type": "Process"
+    },
+    {
+      "name": "get new accessToken",
+      "type": "Data Input"
+    },
+    {
+      "name": "2. set token in static data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "1. initiate static data",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

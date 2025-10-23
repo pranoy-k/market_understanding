@@ -1,0 +1,35 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc5f3871",
+  "workflow_id": "bc5f3871",
+  "workflow_id_display": "bc5f3871",
+  "workflow_name": "Get Slack notifications when new product published on WooCommerce",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically notify your Slack channel when new WooCommerce products go live. Real-time alerts, easy setup, and customizable for your site. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, wooCommerceTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "On product creation",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

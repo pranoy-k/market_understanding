@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/24aafc08",
+  "workflow_id": "24aafc08",
+  "workflow_id_display": "24aafc08",
+  "workflow_name": "Automatically Sync Google Calendar Events to Google Sheets Tracker",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google",
+    "api🗄",
+    "Scheduled"
+  ],
+  "author_name": "Shi Varong",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Batch search Malaysian tax ID numbers (TIN) for multiple SSM or NRIC via LHDN API. Streamline e-invoicing and database prep—learn how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, googleCalendar, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Rows1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Add to Sheet1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Events1",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Events & Rows1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Match Events vs Rows1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

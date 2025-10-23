@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4e7dfe00",
+  "workflow_id": "4e7dfe00",
+  "workflow_id_display": "4e7dfe00",
+  "workflow_name": "Auto Categorise Outlook Emails with AI",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Wayne Simpson",
+  "author_profile_url": "https://n8n.io/creators/nocodecreative/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly organize your Outlook inbox with AI-powered email categorization and automation. Boost productivity—learn how to set it up today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, microsoftOutlook, switch"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "varEmal1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Catch Errors1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "varJSON1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "varID & Category1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ollama Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook10",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook12",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Microsoft Outlook13",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook15",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook16",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook17",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook18",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook19",
+      "type": "Process"
+    },
+    {
+      "name": "Markdown1",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook20",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook21",
+      "type": "Process"
+    },
+    {
+      "name": "Filter1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Microsoft Outlook22",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook23",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Outlook Move Message1",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent1",
+      "type": "Process"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

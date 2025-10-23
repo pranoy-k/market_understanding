@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8e048a90",
+  "workflow_id": "8e048a90",
+  "workflow_id_display": "8e048a90",
+  "workflow_name": "Merge PDF files using ConvertAPI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "ConvertAPI",
+  "author_profile_url": "https://n8n.io/creators/convertapi/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily merge PDF files by downloading and combining documents into one, with local storage and customizable options. Ideal for developers—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, stickyNote, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Write Result File to Disk",
+      "type": "Data Output"
+    },
+    {
+      "name": "Download first remote PDF File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download second PDF File",
+      "type": "Data Input"
+    },
+    {
+      "name": "PDF merge API HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "PDF merge API HTTP Request"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

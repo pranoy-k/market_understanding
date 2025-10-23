@@ -1,0 +1,130 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b2f3a77e",
+  "workflow_id": "b2f3a77e",
+  "workflow_id_display": "b2f3a77e",
+  "workflow_name": "Voiceflow Demo Support Chatbot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "29",
+  "tools_integrations": "Airtable, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Empower your Voiceflow AI chatbot with seamless Zendesk, Google Calendar, and Airtable integrations. Automate support tasks—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendar, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Extract Phone Number",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Zendesk Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Gcal Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Airtable Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Error Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Calendar Success Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Calendar Error Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Invalid Data Error",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Airtable Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Query Google Sheets for Phone",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create Ticket",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Customer in DB",
+      "type": "Data Input"
+    },
+    {
+      "name": "Ticket Created Successfully",
+      "type": "Trigger"
+    },
+    {
+      "name": "Error Creating Ticket",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gcal Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zendesk Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "Voiceflow Endpoint",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook with Customer Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook with Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check Calendar Availability",
+      "type": "Process"
+    },
+    {
+      "name": "Create Calendar Event",
+      "type": "Process"
+    },
+    {
+      "name": "Respond with Success",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond With Calendar Error data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond with Generic Error",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

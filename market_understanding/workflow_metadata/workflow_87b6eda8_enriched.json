@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/87b6eda8",
+  "workflow_id": "87b6eda8",
+  "workflow_id_display": "87b6eda8",
+  "workflow_name": "Auto-Tag Blog Posts in WordPress with AI",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "OpenAI, RSS, WordPress",
+  "tags": [
+    "WordPress🤖 AI"
+  ],
+  "author_name": "Ludwig",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "RSS Feed Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Demo Usage in Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Auto-fixing Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Return article details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SET initial record",
+      "type": "Data Processing"
+    },
+    {
+      "name": "MOCK article",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop over articles",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET WP tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "POST WP tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "GET updated WP tags",
+      "type": "Data Input"
+    },
+    {
+      "name": "Keep matches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine tag_ids",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine slugs",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Return missing tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wordpress",
+      "type": "Process"
+    },
+    {
+      "name": "Auto-Tag Posts in WordPress",
+      "type": "Process"
+    },
+    {
+      "name": "Generate tags for article",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

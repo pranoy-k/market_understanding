@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc6d4d02",
+  "workflow_id": "bc6d4d02",
+  "workflow_id_display": "bc6d4d02",
+  "workflow_name": "Generate a Legal Website Accessibility Statement with AI and WAVE",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Lukas Kunhardt",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate EAA-compliant Accessibility Statements for EU websites. Scan, analyze, and receive ready-to-use reports—no legal expertise needed.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, agent"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Parse output as html",
+      "type": "Process"
+    },
+    {
+      "name": "CHANGE THESE: dependencies",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Website HTML",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get WAVE Report",
+      "type": "Data Input"
+    },
+    {
+      "name": "Accessibility Statement Generator",
+      "type": "Process"
+    },
+    {
+      "name": "gemini 2.5 pro",
+      "type": "Process"
+    },
+    {
+      "name": "Create accesibility statement html file",
+      "type": "Process"
+    },
+    {
+      "name": "Map WAVE Report Items to Website selectors.",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

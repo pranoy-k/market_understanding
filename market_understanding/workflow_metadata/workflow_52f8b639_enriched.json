@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/52f8b639",
+  "workflow_id": "52f8b639",
+  "workflow_id_display": "52f8b639",
+  "workflow_name": "Enrich lead that booked a call on Calendly and save it on Hubspot",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "12",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "Ricardo Espinoza",
+  "author_profile_url": "https://n8n.io/creators/n8nricardoe105/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate pre-call research by enriching and updating customer data in Hubspot every time a Calendly meeting is booked. Save time—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with noOp, hubspot, calendlyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Enrich company",
+      "type": "Process"
+    },
+    {
+      "name": "Create company",
+      "type": "Process"
+    },
+    {
+      "name": "Upsert contact",
+      "type": "Process"
+    },
+    {
+      "name": "Update company",
+      "type": "Process"
+    },
+    {
+      "name": "Contact not found, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Enrich email",
+      "type": "Process"
+    },
+    {
+      "name": "Filter out personal emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Search company",
+      "type": "Process"
+    },
+    {
+      "name": "Upsert lead",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

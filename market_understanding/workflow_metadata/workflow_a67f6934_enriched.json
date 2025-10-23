@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a67f6934",
+  "workflow_id": "a67f6934",
+  "workflow_id_display": "a67f6934",
+  "workflow_name": "Generate AI Responses with Perplexity Sonar Models (Reusable Module)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "Aleksey Panov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly integrate the Perplexity API in n8n with a modular workflow. Secure, flexible, and easy to set up for dynamic conversational prompts. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with executeWorkflowTrigger, set, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "When Executed by Another Workflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parameters",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity API Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Perplexity API Request"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

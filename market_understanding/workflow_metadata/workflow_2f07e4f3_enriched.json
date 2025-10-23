@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2f07e4f3",
+  "workflow_id": "2f07e4f3",
+  "workflow_id_display": "2f07e4f3",
+  "workflow_name": "Build an AI IT Support Agent with Azure Search, Entra ID & Jira",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "Jira",
+  "tags": [],
+  "author_name": "Adam Bertram",
+  "author_profile_url": "https://n8n.io/creators/adbertram/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Supercharge IT support with an AI agent using Azure AI Search, Entra ID, and Jira. Enjoy secure, automated answers, admin tools, and seamless setup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, jiraTool, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "On Knowledge Upload",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Common Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Common Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Common Fields2",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Simple Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Create Jira Ticket",
+      "type": "Process"
+    },
+    {
+      "name": "IT Support Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out Binary Files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Embeddings",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prep Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Azure AI Search Service",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Azure AI Search Admin Key",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Azure AI Vector Index",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Azure AI Search Admin Key1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Embedding to Vector Store",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Embeddings1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Semantic Search",
+      "type": "Trigger"
+    },
+    {
+      "name": "Invoke Query Vector Store Webhook",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Azure AI Search Admin Key2",
+      "type": "Data Input"
+    },
+    {
+      "name": "Enable Semantic Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query Azure AI Search Index",
+      "type": "Data Input"
+    },
+    {
+      "name": "Reset User Password",
+      "type": "Data Input"
+    },
+    {
+      "name": "Query Microsoft Entra ID Users",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

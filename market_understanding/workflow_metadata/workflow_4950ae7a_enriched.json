@@ -1,0 +1,39 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4950ae7a",
+  "workflow_id": "4950ae7a",
+  "workflow_id_display": "4950ae7a",
+  "workflow_name": "Listen on new emails on a IMAP mailbox",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [
+    "xml",
+    "json"
+  ],
+  "author_name": "mail",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Monitor IMAP emails for XML attachments, auto-convert XML to JSON, and send data via POST. Ideal for EDI workflows and seamless data integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, xml, set"
+  ],
+  "nodes": [
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

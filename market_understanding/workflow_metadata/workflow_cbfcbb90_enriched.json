@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cbfcbb90",
+  "workflow_id": "cbfcbb90",
+  "workflow_id_display": "cbfcbb90",
+  "workflow_name": "Automated Notion Task Reminders via Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": "Notion, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Darryn",
+  "author_profile_url": "https://n8n.io/creators/optimus01/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily Notion task reminders in Slack! Fetches incomplete tasks and sends users direct reminders every weekday at 9 AM. Stay organized—learn more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, set, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Mon - Friday @ 09:00am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Notion User Emails",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Slack User Full Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter incomplete tasks only",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get To Dos from Tasks Database",
+      "type": "Process"
+    },
+    {
+      "name": "Filter Slack User 1 Full Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Slack User 2 Full Name",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

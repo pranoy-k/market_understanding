@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e0059940",
+  "workflow_id": "e0059940",
+  "workflow_id_display": "e0059940",
+  "workflow_name": "AI-Powered Loom Video Q&A with Gemini-2.5 and Slack Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "API, Slack",
+  "tags": [
+    "slack",
+    "api",
+    "gemini"
+  ],
+  "author_name": "GiovanniSegar",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Loom video analysis: Extract video IDs, download via API, send to Gemini, and get insights delivered to Slack. Easy setup—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, wait"
+  ],
+  "nodes": [
+    {
+      "name": "Loom URL Form",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Video ID",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract File Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract URL for Uploading",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Video Attributes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Download URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download Video Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Video Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Start Upload Session for Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Until Video Is Active",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Video Status",
+      "type": "Data Input"
+    },
+    {
+      "name": "Ask Gemini to Summarize Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculate File Size",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

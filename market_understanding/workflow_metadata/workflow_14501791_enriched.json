@@ -1,0 +1,110 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/14501791",
+  "workflow_id": "14501791",
+  "workflow_id_display": "14501791",
+  "workflow_name": "Zoom AI Meeting Assistant creates mail summary, ClickUp tasks and follow-up call",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "22",
+  "tools_integrations": "Email, OpenAI, Zoom",
+  "tags": [],
+  "author_name": "Friedemann Schuetz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An AI-powered workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter transcript URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format transcript text",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort for mail delivery",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Create meeting summary",
+      "type": "Process"
+    },
+    {
+      "name": "Zoom: Get data of last meeting",
+      "type": "Process"
+    },
+    {
+      "name": "Filter: Only 1 item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Zoom: Get transcript file",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract text from transcript file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Zoom: Get participants data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Format to html",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create tasks",
+      "type": "Process"
+    },
+    {
+      "name": "Create tasks and follow-up call",
+      "type": "Process"
+    },
+    {
+      "name": "Create follow-up call",
+      "type": "Process"
+    },
+    {
+      "name": "Filter: Last 24 hours",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ClickUp",
+      "type": "Process"
+    },
+    {
+      "name": "Zoom: Get transcripts data",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

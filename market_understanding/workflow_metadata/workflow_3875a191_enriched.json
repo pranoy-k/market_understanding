@@ -1,0 +1,126 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3875a191",
+  "workflow_id": "3875a191",
+  "workflow_id_display": "3875a191",
+  "workflow_name": "Customer Insights with Qdrant, Python and Information Extractor",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "24",
+  "tools_integrations": "OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Extract valuable customer insights from data using Qdrant vector database, Python processing, and AI-powered information extraction.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger Insights",
+      "type": "Process"
+    },
+    {
+      "name": "Prep Values For Trigger",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Execute Workflow Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Zip Entries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Variables1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prep Output For Export",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Embeddings OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Export To Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract Reviews",
+      "type": "Process"
+    },
+    {
+      "name": "Reviews to List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Default Data Loader",
+      "type": "Process"
+    },
+    {
+      "name": "Recursive Character Text Splitter",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Payload of Points",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clusters To List",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only Clusters With 3+ points",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Find Reviews",
+      "type": "Data Input"
+    },
+    {
+      "name": "Clear Existing Reviews",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get TrustPilot Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Qdrant Vector Store",
+      "type": "Process"
+    },
+    {
+      "name": "Apply K-means Clustering Algorithm",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Customer Insights Agent",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

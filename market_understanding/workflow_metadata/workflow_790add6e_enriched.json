@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/790add6e",
+  "workflow_id": "790add6e",
+  "workflow_id_display": "790add6e",
+  "workflow_name": "Invoices from Gmail to Drive and Google Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "Email, Gmail, Google Drive, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Juan Carlos Cavero Gracia",
+  "author_profile_url": "https://n8n.io/creators/carlosgracia/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Setup1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Map Output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Model",
+      "type": "Process"
+    },
+    {
+      "name": "Append to Reconciliation Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload PDF to Drive1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Rename file1",
+      "type": "Process"
+    },
+    {
+      "name": "Move to the correct folder1",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Apply Data Extraction Rules",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

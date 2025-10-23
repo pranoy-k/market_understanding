@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b184f08d",
+  "workflow_id": "b184f08d",
+  "workflow_id_display": "b184f08d",
+  "workflow_name": "Unique QRcode coupon assignment and validation for Lead Generation with SuiteCRM",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Davide",
+  "author_profile_url": "https://n8n.io/creators/n3witalia/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate unique QR code coupon assignment, validation, and lead management in SuiteCRM. Prevent duplicates and boost engagement. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Form Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set coupon",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Duplicate Lead?",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Coupon",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get Lead",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update coupon used",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Token SuiteCRM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Lead SuiteCRM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get QR",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Lead",
+      "type": "Data Input"
+    },
+    {
+      "name": "Coupon OK",
+      "type": "Trigger"
+    },
+    {
+      "name": "No coupon",
+      "type": "Trigger"
+    },
+    {
+      "name": "Coupon KO",
+      "type": "Trigger"
+    },
+    {
+      "name": "Token SuiteCRM 1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

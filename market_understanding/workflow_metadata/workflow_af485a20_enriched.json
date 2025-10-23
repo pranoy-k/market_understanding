@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/af485a20",
+  "workflow_id": "af485a20",
+  "workflow_id_display": "af485a20",
+  "workflow_name": "Convert Baserow rich text markdown field to HTML",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Ronald",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert rich text fields from Markdown to HTML and sync records individually or in bulk. Boost productivity—learn more with our quick tutorial!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with markdown, webhook, if"
+  ],
+  "nodes": [
+    {
+      "name": "Get single record from baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update single record in baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update all records in baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get all records from baserow",
+      "type": "Data Output"
+    },
+    {
+      "name": "Baserow sync video description",
+      "type": "Trigger"
+    },
+    {
+      "name": "Convert markdown to HTML (single)",
+      "type": "Process"
+    },
+    {
+      "name": "Convert markdown to HTML (all records)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

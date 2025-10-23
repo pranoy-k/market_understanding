@@ -1,0 +1,58 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0f32ecd",
+  "workflow_id": "b0f32ecd",
+  "workflow_id_display": "b0f32ecd",
+  "workflow_name": "AI-Optimized Content Posting to X, Discord & LinkedIn with OpenRouter",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Discord, LinkedIn",
+  "tags": [
+    "discord",
+    "linkedin"
+  ],
+  "author_name": "Khairul Muhtadin",
+  "author_profile_url": "https://n8n.io/creators/khmuhtadin/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Amplify your brand with BuzzBlast: AI-powered workflow for effortless posting to X, Discord, and LinkedIn. Optimize, engage, and reach more—learn how!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with switch, outputParserStructured, chainLlm"
+  ],
+  "nodes": [
+    {
+      "name": "Chat Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Content",
+      "type": "Process"
+    },
+    {
+      "name": "Split Platform Content",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Process"
+    },
+    {
+      "name": "AI Content Optimizer",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/45e5043c",
+  "workflow_id": "45e5043c",
+  "workflow_id_display": "45e5043c",
+  "workflow_name": "Analyze NFT Market Trends with AI-Powered OpenSea Analytics Agent Tool",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Google Analytics",
+  "tags": [],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get real-time NFT analytics with AI and OpenSea: track market trends, sales, and wallet activity. Perfect for traders and collectors—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with lmChatOpenAi, agent, memoryBufferWindow"
+  ],
+  "nodes": [
+    {
+      "name": "Workflow Input Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Analytics Agent Brain",
+      "type": "Process"
+    },
+    {
+      "name": "Analytics Agent Memory",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Get Collection Stats",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Analytics Agent",
+      "type": "Process"
+    },
+    {
+      "name": "OpenSea Get Events",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Events by Account",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Events by Collection",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenSea Get Events by NFT",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,68 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1f98e3fe",
+  "workflow_id": "1f98e3fe",
+  "workflow_id_display": "1f98e3fe",
+  "workflow_name": "Organize Email Attachments into Google Drive Folders by Company with Gmail & Sheets",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "13",
+  "tools_integrations": "Email, Gmail, Google Drive",
+  "tags": [
+    "google🤖 gmail"
+  ],
+  "author_name": "Ventsislav Minev",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Split Up Binary Data1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YYYY/MM",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Lookup in Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Search For Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Create Month Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Company Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Search Company Folder1",
+      "type": "Process"
+    },
+    {
+      "name": "Upload To Folder",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

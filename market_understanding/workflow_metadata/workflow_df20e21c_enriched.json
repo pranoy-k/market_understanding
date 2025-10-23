@@ -1,0 +1,44 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/df20e21c",
+  "workflow_id": "df20e21c",
+  "workflow_id_display": "df20e21c",
+  "workflow_name": "Score Contact Form Leads with GPT-4 and Send Slack Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "OpenAI, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead scoring with GPT-4: Instantly triage contact form leads as Hot, Warm, or Cold and alert your sales team in Slack. Boost conversions now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with webhook, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Extract Lead Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Rate Lead Interest",
+      "type": "Process"
+    },
+    {
+      "name": "Receive Form Submission",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

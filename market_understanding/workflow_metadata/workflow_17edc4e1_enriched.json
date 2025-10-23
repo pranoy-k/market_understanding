@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/17edc4e1",
+  "workflow_id": "17edc4e1",
+  "workflow_id_display": "17edc4e1",
+  "workflow_name": "Shopify VIP Alerts: AI Summary & Slack Notification for Big Orders",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Shopify, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "Yaron Been",
+  "author_profile_url": "https://n8n.io/creators/yaron-nofluff/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Instantly spot Shopify orders over $200, get AI-powered customer summaries, and receive real-time VIP alerts in Slack. Boost sales and support—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, shopifyTrigger, agent"
+  ],
+  "nodes": [
+    {
+      "name": "New Shopify Order",
+      "type": "Trigger"
+    },
+    {
+      "name": "Type conversion (Array to String)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Type conversion (String to Number)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ignore Low-Value Order",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Fetch Customer Order History",
+      "type": "Data Input"
+    },
+    {
+      "name": "Summarize Order History",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

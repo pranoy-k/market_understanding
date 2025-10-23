@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/139bf9b1",
+  "workflow_id": "139bf9b1",
+  "workflow_id_display": "139bf9b1",
+  "workflow_name": "AI Prospect Researcher +ISCP only need Company Name and Domain",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "27",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "LukaszB",
+  "author_profile_url": "https://n8n.io/creators/lukaszb/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate B2B prospect research: find emails, analyze companies, and generate actionable reports with ISCP scoring. Get fast, in-depth insights—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, formTrigger, googleDocs"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Results Company",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Hunter Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Perplexity Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set company name and domain",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Hunter",
+      "type": "Process"
+    },
+    {
+      "name": "Perplexity Search",
+      "type": "Data Input"
+    },
+    {
+      "name": "Company LinkedIn Account POST",
+      "type": "Data Input"
+    },
+    {
+      "name": "Company LinkedIn Account GET",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search profile",
+      "type": "Process"
+    },
+    {
+      "name": "Scrape webpage",
+      "type": "Process"
+    },
+    {
+      "name": "Analyze scraped Page",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add report to doc",
+      "type": "Process"
+    },
+    {
+      "name": "Create doc",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate report",
+      "type": "Process"
+    },
+    {
+      "name": "Get Offer",
+      "type": "Process"
+    },
+    {
+      "name": "ISCP score",
+      "type": "Process"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

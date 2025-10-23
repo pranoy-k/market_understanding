@@ -1,0 +1,66 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/02d55b8a",
+  "workflow_id": "02d55b8a",
+  "workflow_id_display": "02d55b8a",
+  "workflow_name": "Convert RSS to tweet with text and image using free Twitter API",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "API, RSS, Twitter",
+  "tags": [
+    "twitter",
+    "api"
+  ],
+  "author_name": "VÃ­ctor Manuel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate X (Twitter) posts from your RSS feed with AI-powered, image-rich tweets. Easy setup, no extra costs. Boost your growth—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, if, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Get the latest article from the feed",
+      "type": "Trigger"
+    },
+    {
+      "name": "Fetches the article’s HTML content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extracts the main image",
+      "type": "Process"
+    },
+    {
+      "name": "Downloads image",
+      "type": "Data Input"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize the Website API Perplexity",
+      "type": "Data Input"
+    },
+    {
+      "name": "OpenRouter Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Upload image to X server with Twitter API v1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Summarize the Website API Perplexity",
+    "Upload image to X server with Twitter API v1"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

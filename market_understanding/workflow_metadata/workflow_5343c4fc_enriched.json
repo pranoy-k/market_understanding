@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5343c4fc",
+  "workflow_id": "5343c4fc",
+  "workflow_id_display": "5343c4fc",
+  "workflow_name": "Create Leads in SuiteCRM, synchronize with Brevo and notify in NextCloud",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "algopi.io",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly capture, verify, and manage leads from forms. Auto-sync data to SuiteCRM, Brevo, and NextCloud for efficient marketing workflows—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, sendInBlue, if"
+  ],
+  "nodes": [
+    {
+      "name": "Tally Forms Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Token SuiteCRM",
+      "type": "Data Input"
+    },
+    {
+      "name": "CaptainMail",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notif Talk credits",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notif Talk bad email",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create Lead SuiteCRM",
+      "type": "Data Input"
+    },
+    {
+      "name": "Notif Talk Lead created",
+      "type": "Data Input"
+    },
+    {
+      "name": "Brevo Create Contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ffc0ad3",
+  "workflow_id": "1ffc0ad3",
+  "workflow_id_display": "1ffc0ad3",
+  "workflow_name": "Automated Document Translation Quality Verification with Straker, Google Drive & Slack",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Google Drive, PDF, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "Vijayeta Sinel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate & verify document translation with n8n, Straker Verify, Google Drive & Slack. Ensure translation quality and get instant notifications—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with aggregate, strakerVerify, googleDrive"
+  ],
+  "nodes": [
+    {
+      "name": "Watch Input Folder",
+      "type": "Trigger"
+    },
+    {
+      "name": "Save to Output Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Flatten",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Download Files",
+      "type": "Process"
+    },
+    {
+      "name": "Wait for Completion",
+      "type": "Trigger"
+    },
+    {
+      "name": "Aggregate",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

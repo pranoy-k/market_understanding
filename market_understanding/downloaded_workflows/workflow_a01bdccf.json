@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "id": "30ea5a94f08b42d3"
+    },
+    {
+      "name": "Hacker News",
+      "type": "n8n-nodes-base.hackerNews",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "resource": "all",
+        "additionalFields": {}
+      },
+      "typeVersion": 1,
+      "id": "28c128a93bf43495"
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Hacker News",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "4348c2b6d69e7eb4",
+  "name": "Get articles from Hacker News",
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

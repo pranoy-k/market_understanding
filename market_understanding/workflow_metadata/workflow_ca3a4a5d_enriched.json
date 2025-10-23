@@ -1,0 +1,31 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ca3a4a5d",
+  "workflow_id": "ca3a4a5d",
+  "workflow_id_display": "ca3a4a5d",
+  "workflow_name": "Deploy site when new content gets added",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically deploy your JAMstack site with every new database entry. Streamline publishing using webhooks, GraphCMS, and Netlify integration. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with webhook, netlify"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

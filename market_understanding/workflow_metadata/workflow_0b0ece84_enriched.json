@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0b0ece84",
+  "workflow_id": "0b0ece84",
+  "workflow_id_display": "0b0ece84",
+  "workflow_name": "Automated Resume Screening & Ranking with Llama 4 AI and Google Workspace",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "11",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Sean Lon",
+  "author_profile_url": "https://n8n.io/creators/seanlon/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline and automate bulk CV screening with AI. Get fast, accurate candidate evaluations, real-time tracking, and organized workflows for efficient hiring.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleSheetsTool, googleDocs, agent"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive - Resume CV File Created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gsheet: Update Candidate Tracker",
+      "type": "Data Output"
+    },
+    {
+      "name": "GDocs - Get Job Desc",
+      "type": "Process"
+    },
+    {
+      "name": "Download Resume File From Gdrive",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Extract from File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Gdrive:Move-To-Reject-Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Gdrive:Move-To-KIV-Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Gdrive:Move-To-Shortlisted-Folder",
+      "type": "Process"
+    },
+    {
+      "name": "Groq - llama 4 AI MODEL",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

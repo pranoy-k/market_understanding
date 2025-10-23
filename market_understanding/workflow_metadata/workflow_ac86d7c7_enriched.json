@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ac86d7c7",
+  "workflow_id": "ac86d7c7",
+  "workflow_id_display": "ac86d7c7",
+  "workflow_name": "Verify mailing address deliverability of new contacts in Groundhogg Using Lob",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Belmont Digital",
+  "author_profile_url": "https://n8n.io/creators/belmontdigital/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly validate mailing addresses in Groundhogg CRM with n8n and Lob integration. Eliminate undeliverable data—quick setup, instant results. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "CRM Webhook Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set Address Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Groundhogg - Deliverable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Update Groundhogg - NOT Deliverable",
+      "type": "Data Input"
+    },
+    {
+      "name": "Address Verification",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

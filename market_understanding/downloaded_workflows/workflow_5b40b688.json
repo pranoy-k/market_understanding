@@ -1,0 +1,54 @@
+{
+  "name": "Updating Shopify tags on Onfleet events",
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "n8n-nodes-base.onfleetTrigger",
+      "position": [
+        460,
+        300
+      ],
+      "webhookId": "6d6a2bee-f83e-4ebd-a1d5-8708c34393dc",
+      "parameters": {
+        "triggerOn": "taskDelayed",
+        "additionalFields": {}
+      },
+      "typeVersion": 1,
+      "id": "1f986c45854b7fed"
+    },
+    {
+      "name": "Shopify",
+      "type": "n8n-nodes-base.shopify",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "updateFields": {
+          "tags": ""
+        }
+      },
+      "typeVersion": 1,
+      "id": "f3a8f3eba98c0fbd"
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "Onfleet Trigger": {
+      "main": [
+        [
+          {
+            "node": "Shopify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "id": "8b4988e1aa9d1580",
+  "staticData": null,
+  "tags": []
+}

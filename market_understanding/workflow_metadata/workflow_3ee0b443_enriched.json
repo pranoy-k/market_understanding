@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ee0b443",
+  "workflow_id": "3ee0b443",
+  "workflow_id_display": "3ee0b443",
+  "workflow_name": "Get GitHub Issue Updates and Send Notifications to Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "GitHub, Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Prakash",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate GitHub issue tracking with real-time Telegram notifications. Stay updated instantly, boost team response, and customize alerts. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, set, github"
+  ],
+  "nodes": [
+    {
+      "name": "Run every 10 minutes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Map title, url, created, comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check for comments",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Github Issues",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,149 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/941a372c",
+  "workflow_id": "941a372c",
+  "workflow_id_display": "941a372c",
+  "workflow_name": "Multi-Agent AI Clinic Management with WhatsApp, Telegram, and Google Calendar",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "31",
+  "tools_integrations": "Telegram, WhatsApp",
+  "tags": [
+    "whatsapp",
+    "telegram",
+    "google",
+    "Scheduled"
+  ],
+  "author_name": "Luciano Gutierrez",
+  "author_profile_url": "https://n8n.io/creators/koresoluciones/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate clinic appointments and reminders via WhatsApp, streamline staff tasks with Telegram, and manage everything with AI-powered efficiency. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with mcpClientTool, switch, evolutionApi"
+  ],
+  "nodes": [
+    {
+      "name": "Gatilho diário",
+      "type": "Trigger"
+    },
+    {
+      "name": "Receber Mensagem Telegram",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Fields1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Assistente clinica interno",
+      "type": "Process"
+    },
+    {
+      "name": "Google Tasks",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Google Calendar",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory",
+      "type": "Data Output"
+    },
+    {
+      "name": "Assistente Clínica",
+      "type": "Process"
+    },
+    {
+      "name": "Assistente de confirmação",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres Chat Memory1",
+      "type": "Data Output"
+    },
+    {
+      "name": "MCP Google Calendar2",
+      "type": "Process"
+    },
+    {
+      "name": "MCP GMAIL",
+      "type": "Process"
+    },
+    {
+      "name": "MCP CALENDAR",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Evolution API",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenRouter Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "Evolution API2",
+      "type": "Process"
+    },
+    {
+      "name": "CallToHuman",
+      "type": "Process"
+    },
+    {
+      "name": "REMINDER",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Evolution API",
+    "Evolution API2",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cf0b0b85",
+  "workflow_id": "cf0b0b85",
+  "workflow_id_display": "cf0b0b85",
+  "workflow_name": "Authenticate a user in a workflow with openid connect",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "12",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "please-open.it",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Enable secure webhook authentication with OpenID Connect, PKCE login, and Keycloak setup. Fetch user details and personalize workflows. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, set, html"
+  ],
+  "nodes": [
+    {
+      "name": "Set variables : auth, token, userinfo, client id, scope",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "user info",
+      "type": "Data Input"
+    },
+    {
+      "name": "send back login page",
+      "type": "Trigger"
+    },
+    {
+      "name": "Welcome page",
+      "type": "Process"
+    },
+    {
+      "name": "send back welcome page",
+      "type": "Trigger"
+    },
+    {
+      "name": "login form",
+      "type": "Process"
+    },
+    {
+      "name": "get access_token from /token endpoint with code",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

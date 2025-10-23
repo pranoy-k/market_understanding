@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/064e7750",
+  "workflow_id": "064e7750",
+  "workflow_id_display": "064e7750",
+  "workflow_name": "Fetch a YouTube playlist and send new items Raindrop",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "YouTube",
+  "tags": [],
+  "author_name": "Alejandro AR",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate fetching new YouTube playlist videos and saving them to Raindrop. Secure, customizable, and easy to integrate with your favorite apps—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, raindrop"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter new items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Flatten JSON",
+      "type": "Data Processing"
+    },
+    {
+      "name": "YouTube",
+      "type": "Process"
+    },
+    {
+      "name": "Raindrop Bookmark",
+      "type": "Process"
+    },
+    {
+      "name": "Every 30 mins",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

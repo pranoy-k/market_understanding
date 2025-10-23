@@ -1,0 +1,48 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/12bedd89",
+  "workflow_id": "12bedd89",
+  "workflow_id_display": "12bedd89",
+  "workflow_name": "Tiny tiny Rss (aka tt-rss) Feed to Mastodon",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "dev",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically share your latest Tiny Tiny RSS news to Mastodon every 10 minutes. Easy setup—connect your Mastodon & RSS feed for instant updates!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, httpRequest, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

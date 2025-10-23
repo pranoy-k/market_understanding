@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/87e542df",
+  "workflow_id": "87e542df",
+  "workflow_id_display": "87e542df",
+  "workflow_name": "Add new contacts from HubSpot to the email list in Mailchimp",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, HubSpot",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync new HubSpot contacts to your Mailchimp list daily. Automate lead management and grow your audience with this easy, scheduled workflow.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with hubspot, mailchimp, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Every day at 07:00",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get new contacts",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

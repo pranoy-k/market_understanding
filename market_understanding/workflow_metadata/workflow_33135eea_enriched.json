@@ -1,0 +1,52 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/33135eea",
+  "workflow_id": "33135eea",
+  "workflow_id_display": "33135eea",
+  "workflow_name": "Sync Shopify orders with Zendesk tickets",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Shopify orders with Zendesk tickets. Automate updates, streamline support, and ensure accurate order info—discover how it works!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with shopifyTrigger, set, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "On order updated",
+      "type": "Trigger"
+    },
+    {
+      "name": "Keep only ticket Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Find if order already has a ticket in Zendesk",
+      "type": "Process"
+    },
+    {
+      "name": "Add ticket info to order data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create new ticket for new orders",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

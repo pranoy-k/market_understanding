@@ -1,0 +1,265 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/293e570a",
+  "workflow_id": "293e570a",
+  "workflow_id_display": "293e570a",
+  "workflow_name": "Host Your Own AI Deep Research Agent with n8n, Apify and OpenAI o3",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "64",
+  "tools_integrations": "API, Notion, OpenAI",
+  "tags": [],
+  "author_name": "Jimleuk",
+  "author_profile_url": "https://n8n.io/creators/jimleuk/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with markdown, noOp, if"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "DeepResearch Subworkflow",
+      "type": "Trigger"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser1",
+      "type": "Process"
+    },
+    {
+      "name": "Structured Output Parser2",
+      "type": "Process"
+    },
+    {
+      "name": "Set Initial Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Research Goal + Learnings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Accumulate Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "DeepResearch Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Next Queries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Initial Query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser4",
+      "type": "Process"
+    },
+    {
+      "name": "Get Research Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTML to Array",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse JSON blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Empty Response",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Markdown + URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model3",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model4",
+      "type": "Process"
+    },
+    {
+      "name": "Generate SERP Queries",
+      "type": "Process"
+    },
+    {
+      "name": "SERP to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Item Ref",
+      "type": "Process"
+    },
+    {
+      "name": "Results to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Query...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Feedback to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Ask Clarity Questions",
+      "type": "Data Input"
+    },
+    {
+      "name": "For Each Question...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Clarifying Questions",
+      "type": "Process"
+    },
+    {
+      "name": "End Form",
+      "type": "Data Input"
+    },
+    {
+      "name": "Initiate DeepResearch",
+      "type": "Process"
+    },
+    {
+      "name": "Execution Data",
+      "type": "Process"
+    },
+    {
+      "name": "Create Row",
+      "type": "Process"
+    },
+    {
+      "name": "Report Page Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Get Existing Row",
+      "type": "Process"
+    },
+    {
+      "name": "Set In-Progress",
+      "type": "Process"
+    },
+    {
+      "name": "Set Done",
+      "type": "Process"
+    },
+    {
+      "name": "Tags to Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Convert to HTML",
+      "type": "Process"
+    },
+    {
+      "name": "Notion Block Generator",
+      "type": "Process"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Upload to Notion Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Existing Row1",
+      "type": "Process"
+    },
+    {
+      "name": "DeepResearch Report",
+      "type": "Process"
+    },
+    {
+      "name": "DeepResearch Learnings",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Report",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Learnings",
+      "type": "Process"
+    },
+    {
+      "name": "Confirmation",
+      "type": "Data Input"
+    },
+    {
+      "name": "Research Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Valid Blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Append Blocks",
+      "type": "Data Processing"
+    },
+    {
+      "name": "URL Sources to Lists",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine & Send back to Loop",
+      "type": "Data Processing"
+    },
+    {
+      "name": "For Each Block...",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Valid Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RAG Web Browser",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

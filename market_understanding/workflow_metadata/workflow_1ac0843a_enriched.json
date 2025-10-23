@@ -1,0 +1,104 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ac0843a",
+  "workflow_id": "1ac0843a",
+  "workflow_id_display": "1ac0843a",
+  "workflow_name": "Get Scaleway Server Info with Dynamic Filtering",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "21",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Pablo",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly filter Scaleway servers by tags, name, IP, or zone. Automate status checks and monitoring with secure, real-time, customizable workflows. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with switch, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code search Tags",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code search Name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code search public_ip",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code search zone",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond Error",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook2",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook3",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Scalway Machines",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Respond to Webhook4",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get scw instance by zone",
+      "type": "Data Input"
+    },
+    {
+      "name": "Loop Over Zone Instance",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get scw baremetal by zone",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Out ZONE_INSTANCE",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

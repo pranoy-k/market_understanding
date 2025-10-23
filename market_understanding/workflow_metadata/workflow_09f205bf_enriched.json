@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/09f205bf",
+  "workflow_id": "09f205bf",
+  "workflow_id_display": "09f205bf",
+  "workflow_name": "Nightly Discord Channel Cleanup",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "Viktor",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Keep your Discord channels tidy and compliant—automatically delete messages older than 7 days every night. Easy setup. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, discord, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Every day at 9pm",
+      "type": "Trigger"
+    },
+    {
+      "name": "Loop Over Channels",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Loop Over Messages",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter Messages older than 7 days",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Cool down Discord API rate limits",
+    "Cool down Message deletion API rate limits",
+    "Cool down Get messages API rate limits"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

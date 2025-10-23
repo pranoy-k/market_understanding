@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e45ca930",
+  "workflow_id": "e45ca930",
+  "workflow_id_display": "e45ca930",
+  "workflow_name": "Spot Workplace Discrimination Patterns with AI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "26",
+  "tools_integrations": "API, OpenAI, RSS",
+  "tags": [],
+  "author_name": "Ludwig",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Use AI to identify patterns of workplace discrimination in communication and feedback data for HR compliance.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "SET company_name",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define dictionary of demographic keys",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define contributions to variance",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set variance and std_dev",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Sort Effect Sizes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Calculate Z-Scores and Effect Sizes",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Specify additional parameters for scatterplot",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model1",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model2",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "ScrapingBee Search Glassdoor",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract company url path",
+      "type": "Process"
+    },
+    {
+      "name": "ScrapingBee GET company page contents",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract reviews page url path",
+      "type": "Process"
+    },
+    {
+      "name": "ScrapingBee GET Glassdoor Reviews Content",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract Overall Review Summary",
+      "type": "Process"
+    },
+    {
+      "name": "Extract Demographics Module",
+      "type": "Process"
+    },
+    {
+      "name": "Extract overall ratings and distribution percentages",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract demographic distributions",
+      "type": "Data Input"
+    },
+    {
+      "name": "Calculate P-Scores",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format dataset for scatterplot",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Quickchart Scatterplot",
+      "type": "Data Input"
+    },
+    {
+      "name": "QuickChart Bar Chart",
+      "type": "Process"
+    },
+    {
+      "name": "Text Analysis of Bias Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

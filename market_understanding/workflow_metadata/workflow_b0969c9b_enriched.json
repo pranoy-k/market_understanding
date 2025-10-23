@@ -1,0 +1,55 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b0969c9b",
+  "workflow_id": "b0969c9b",
+  "workflow_id_display": "b0969c9b",
+  "workflow_name": "Convert boring images to stunning photos and videos",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Rish",
+  "author_profile_url": "https://n8n.io/creators/b2brish/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly edit and enhance photos via Telegram with advanced AI image models. Fast, professional results—no design skills needed. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, telegram, telegramTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Bot Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Image (OpenAI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert to Binary Image",
+      "type": "Data Output"
+    },
+    {
+      "name": "Generate Variation (Replicate)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Retrieve Generated Image",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get File Path",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

@@ -1,0 +1,105 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/36a4712e",
+  "workflow_id": "36a4712e",
+  "workflow_id_display": "36a4712e",
+  "workflow_name": "Email Assistant: Convert Natural Language to SQL Queries with Phi4-mini and PostgreSQL",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "23",
+  "tools_integrations": "Email, OpenAI, PostgreSQL",
+  "tags": [
+    "postgres"
+  ],
+  "author_name": "Alfonso Corretti",
+  "author_profile_url": "https://n8n.io/creators/acorretti/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert natural language requests to SQL queries with instant results. Private, customizable, and ideal for Postgres and LLM-powered workflows. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, agent, postgres"
+  ],
+  "nodes": [
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "When clicking \"Test workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "WorkflowTrigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Add table name to output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine schema data and chat input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract SQL query",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format query results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add trailing semicolon",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format empty output",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save file locally",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert data to binary",
+      "type": "Data Output"
+    },
+    {
+      "name": "Extract data from file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Load the schema from the local file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Combine query result and chat answer",
+      "type": "Data Processing"
+    },
+    {
+      "name": "List all columns in a table",
+      "type": "Data Output"
+    },
+    {
+      "name": "List all tables in a database",
+      "type": "Data Output"
+    },
+    {
+      "name": "Ollama Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

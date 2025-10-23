@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7c116b15",
+  "workflow_id": "7c116b15",
+  "workflow_id_display": "7c116b15",
+  "workflow_name": "Notify on Discord about New Epic Games Free Game Releases",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord",
+    "Scheduled"
+  ],
+  "author_name": "Pawel",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Monitor Epic Games for new free game offers and get instant, detailed Discord alerts. Easy setup with error handling. Learn how to automate updates!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract label",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Retries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Update Retries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Save Static Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract offers",
+      "type": "Process"
+    },
+    {
+      "name": "Split Out",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Prepare data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check if changed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Only when changed",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Success",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Wait for conditions",
+      "type": "Data Processing"
+    },
+    {
+      "name": "GET Epic Games Free Games page",
+      "type": "Process"
+    },
+    {
+      "name": "Extract title and image",
+      "type": "Process"
+    },
+    {
+      "name": "Notify Discord",
+      "type": "Data Input"
+    },
+    {
+      "name": "Prepare notification",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

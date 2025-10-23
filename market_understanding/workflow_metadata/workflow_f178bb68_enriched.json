@@ -1,0 +1,51 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f178bb68",
+  "workflow_id": "f178bb68",
+  "workflow_id_display": "f178bb68",
+  "workflow_name": "Auto-Notify on New Major n8n Releases via RSS, Email & Telegram",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "7",
+  "tools_integrations": "Email, GitHub, RSS, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Monitor n8n GitHub for new major releases and get instant notifications via email and Telegram. Easy setup, customizable, and runs 3x daily. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, function, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Filter by current day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS SES",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

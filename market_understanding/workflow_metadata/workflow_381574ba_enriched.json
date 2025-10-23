@@ -1,0 +1,50 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/381574ba",
+  "workflow_id": "381574ba",
+  "workflow_id_display": "381574ba",
+  "workflow_name": "Discord Channel Creation from Google Sheets with Member Notifications",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "Discord, Google Sheets",
+  "tags": [
+    "discord",
+    "google"
+  ],
+  "author_name": "Incrementors",
+  "author_profile_url": "https://n8n.io/creators/incrementors/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Discord channel creation from Google Sheets with n8n! Streamline team onboarding, send project notifications, and boost workflow efficiency—learn more.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with discord, googleSheets, googleSheetsTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Monitor New Project Entries",
+      "type": "Trigger"
+    },
+    {
+      "name": "Update Sheet with Discord Channel ID",
+      "type": "Data Output"
+    },
+    {
+      "name": "Mark Onboarding Complete",
+      "type": "Data Output"
+    },
+    {
+      "name": "Filter Valid Project Entries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check Message Sending Status",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

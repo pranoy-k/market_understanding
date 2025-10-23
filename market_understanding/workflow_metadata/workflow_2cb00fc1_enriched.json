@@ -1,0 +1,107 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2cb00fc1",
+  "workflow_id": "2cb00fc1",
+  "workflow_id_display": "2cb00fc1",
+  "workflow_name": "Analyze Meta Ad Library Video Ads with Gemini and store results in Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "20",
+  "tools_integrations": "Facebook, Google Sheets",
+  "tags": [
+    "google",
+    "gemini"
+  ],
+  "author_name": "Daniel Setzermann",
+  "author_profile_url": "https://n8n.io/creators/danielsetzermann/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly scrape, analyze, and extract actionable insights from Meta video ads using AI. Export results to Google Sheets—customizable and easy to use.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, limit, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass Values for Gemini",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Pass relevant Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parser",
+      "type": "Process"
+    },
+    {
+      "name": "Calculate Runtime in Days",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Store Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Gemini Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "Clean Prompt",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Structured Output Parsing Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Upload Video to Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Analyze Video with Gemini",
+      "type": "Data Input"
+    },
+    {
+      "name": "Download File",
+      "type": "Data Input"
+    },
+    {
+      "name": "Change Filetype to Video",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Scrape Meta Ad Library with Apify",
+      "type": "Data Input"
+    },
+    {
+      "name": "Sort by Reach or Days Running",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Filter only Video Ads",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Limit Videos to Analyze",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

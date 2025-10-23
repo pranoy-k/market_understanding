@@ -1,0 +1,37 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da7c7fde",
+  "workflow_id": "da7c7fde",
+  "workflow_id_display": "da7c7fde",
+  "workflow_name": "Telegram echo-bot",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "API, Telegram",
+  "tags": [
+    "telegram",
+    "api",
+    "json"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly test and debug Telegram’s API with an interactive echo bot. Send any message type, view formatted JSON, and streamline bot development.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with telegramTrigger, telegram, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Listen for incoming events",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

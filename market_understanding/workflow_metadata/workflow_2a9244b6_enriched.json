@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2a9244b6",
+  "workflow_id": "2a9244b6",
+  "workflow_id_display": "2a9244b6",
+  "workflow_name": "Generate & Edit Images with OpenAI GPT-Image-1 and Share via Telegram",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram🤖 openai"
+  ],
+  "author_name": "Alexey",
+  "author_profile_url": "https://n8n.io/creators/alexx/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Create stunning images or edit visuals instantly with AI & GPT-4 Vision. Easy web form, flexible inputs, dual storage, and Telegram delivery. Learn more!",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "On form submission",
+      "type": "Trigger"
+    },
+    {
+      "name": "File Link",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SETUP API KEY",
+      "type": "Data Processing"
+    },
+    {
+      "name": "File Link1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Access Permissions",
+      "type": "Process"
+    },
+    {
+      "name": "Edit Image (OpenAI)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert json binary to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert json binary to File final",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Result Image to imgbb",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Result Image to Google Drive",
+      "type": "Process"
+    },
+    {
+      "name": "Get Input Image by URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Image Generation",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "SETUP API KEY",
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

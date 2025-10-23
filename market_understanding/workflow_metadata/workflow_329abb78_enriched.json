@@ -1,0 +1,69 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/329abb78",
+  "workflow_id": "329abb78",
+  "workflow_id_display": "329abb78",
+  "workflow_name": "Automate Crypto News Posting to X & Telegram with AI Summarization",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "10",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram",
+    "Scheduled"
+  ],
+  "author_name": "Tianyi",
+  "author_profile_url": "https://n8n.io/creators/muzi/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate crypto news sharing on X & Telegram with AI-powered summaries. Save time, boost engagement, and keep your audience informed—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with scheduleTrigger, aggregate, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Set the posting interval",
+      "type": "Trigger"
+    },
+    {
+      "name": "Summary news GPT",
+      "type": "Process"
+    },
+    {
+      "name": "ContentExtraction GPT3.5",
+      "type": "Process"
+    },
+    {
+      "name": "No Operation, do nothing",
+      "type": "Process"
+    },
+    {
+      "name": "Get Crypto news from CryptoPanic",
+      "type": "Data Input"
+    },
+    {
+      "name": "Merge all the news together",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Automatically post to X",
+      "type": "Process"
+    },
+    {
+      "name": "Visit the News Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Extract title and URL",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

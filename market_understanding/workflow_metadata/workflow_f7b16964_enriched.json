@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f7b16964",
+  "workflow_id": "f7b16964",
+  "workflow_id_display": "f7b16964",
+  "workflow_name": "Extract Google My Business Leads by Service or Location with Bright Data",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "19",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Dvir Sharon",
+  "author_profile_url": "https://n8n.io/creators/dvirsharon/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract and organize Google My Business leads by service and location. Automate, deduplicate, and export targeted results to Google Sheets—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, agent, lmChatAnthropic"
+  ],
+  "nodes": [
+    {
+      "name": "Form Submission Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Existing Business Data",
+      "type": "Data Output"
+    },
+    {
+      "name": "Find Duplicate Row Number",
+      "type": "Data Output"
+    },
+    {
+      "name": "Delete Duplicate Row",
+      "type": "Data Output"
+    },
+    {
+      "name": "Save Business Data to Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Scrape Business Data from Google Maps",
+      "type": "Process"
+    },
+    {
+      "name": "Claude AI Model for Cities",
+      "type": "Process"
+    },
+    {
+      "name": "Separate Data by City",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate City List",
+      "type": "Process"
+    },
+    {
+      "name": "Claude AI Model for Categories",
+      "type": "Process"
+    },
+    {
+      "name": "Categorize Service Type",
+      "type": "Process"
+    },
+    {
+      "name": "Process Cities in Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Check for Duplicate Entries",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Process Duplicates in Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Fetch Scraped Data",
+      "type": "Data Input"
+    },
+    {
+      "name": "Check Data Collection Status",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

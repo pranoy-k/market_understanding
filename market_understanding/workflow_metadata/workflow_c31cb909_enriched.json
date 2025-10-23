@@ -1,0 +1,36 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c31cb909",
+  "workflow_id": "c31cb909",
+  "workflow_id_display": "c31cb909",
+  "workflow_name": "Import a JSON file from Gmail into a spreadsheet",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Excel, Gmail, Google Sheets",
+  "tags": [
+    "json"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import JSON email attachments and save data to organized spreadsheets. Streamline your workflow for accurate, efficient data management. Learn more!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "write spreadsheet file",
+      "type": "Data Output"
+    },
+    {
+      "name": "move binary data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

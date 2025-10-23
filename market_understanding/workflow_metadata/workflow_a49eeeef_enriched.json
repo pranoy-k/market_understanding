@@ -1,0 +1,148 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a49eeeef",
+  "workflow_id": "a49eeeef",
+  "workflow_id_display": "a49eeeef",
+  "workflow_name": "Auto-create and publish AI social videos with Telegram, GPT-4 and Blotato",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "37",
+  "tools_integrations": "OpenAI, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Dr. Firas",
+  "author_profile_url": "https://n8n.io/creators/drfiras/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Auto-create and publish AI-powered social videos from Telegram in minutes—custom music, captions, and multi-platform posting, no editing required. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, set, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Telegram Prompt or Image",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge Video Data (Image or Prompt)",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Assign Platform IDs for Blotato",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Script (GPT-4o-mini)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate Social Caption (GPT-4)",
+      "type": "Process"
+    },
+    {
+      "name": "Generate SEO Title (GPT-4)",
+      "type": "Process"
+    },
+    {
+      "name": "Append Video Data to Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Video to Blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Instagram",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to YouTube",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to TikTok",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Facebook Page",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Threads",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Twitter (X)",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to LinkedIn",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Bluesky",
+      "type": "Data Input"
+    },
+    {
+      "name": "Post to Pinterest",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Prompt or Image Input",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Image File URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Upload Image to Cloudinary",
+      "type": "Data Input"
+    },
+    {
+      "name": "Convert Image to Video",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Image-Based Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Video with blotato",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get blotato Video URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Generate Music with Piapi",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Music File URL",
+      "type": "Data Input"
+    },
+    {
+      "name": "Split Script",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge Video + Music",
+      "type": "Data Input"
+    },
+    {
+      "name": "Get Final Video URL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

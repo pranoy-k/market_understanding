@@ -1,0 +1,211 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a432fbe7",
+  "workflow_id": "a432fbe7",
+  "workflow_id_display": "a432fbe7",
+  "workflow_name": "Tesla Quant Technical Indicators Webhooks Tool",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "45",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "api",
+    "webhook",
+    "json"
+  ],
+  "author_name": "Don Jayamaha Jr",
+  "author_profile_url": "https://n8n.io/creators/don-the-gem-dealer/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Centralize Tesla trading signals with fast Alpha Vantage API fetches. Get clean RSI, MACD, and more—20-point JSON per timeframe via webhook. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with httpRequest, stickyNote, merge"
+  ],
+  "nodes": [
+    {
+      "name": "MACD 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "RSI 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "BBands 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "SMA 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "EMA 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "ADX 15min",
+      "type": "Data Input"
+    },
+    {
+      "name": "15min Data Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSI 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "MACD 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "BBands 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "SMA 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "EMA 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "ADX 1hour",
+      "type": "Data Input"
+    },
+    {
+      "name": "1hour Data Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "RSI 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "MACD 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "BBands 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "SMA 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "EMA 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "ADX 1day",
+      "type": "Data Input"
+    },
+    {
+      "name": "1day Data Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook 1day Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook 15min Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook 1hour Data",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge 1hour Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 15 min Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Merge 1day Indicators",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - MACD 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - RSI 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - BBANDS 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - SMA 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - EMA 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - ADX 15min",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - MACD 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - RSI 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - BBANDS 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - SMA 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - EMA 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - ADX 1hour",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - MACD 1day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - RSI 1day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - BBANDS 1day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - SMA 1day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - EMA 1day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format Response - ADX 1day",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

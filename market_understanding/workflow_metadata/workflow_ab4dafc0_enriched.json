@@ -1,0 +1,111 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab4dafc0",
+  "workflow_id": "ab4dafc0",
+  "workflow_id_display": "ab4dafc0",
+  "workflow_name": "Family Assistant: Schedule, Meal & Routine Management with Email & Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "33",
+  "tools_integrations": "Email, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Issam AGGOUR",
+  "author_profile_url": "https://n8n.io/creators/devgor/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline parenting with FamilyFlow Assistant: automate reminders, organize routines, and reduce mental load for a calmer, happier home. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with emailSend, gmail, set"
+  ],
+  "nodes": [
+    {
+      "name": "Daily Morning Trigger (Weekdays)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Daily Evening Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Weekly Planning Trigger (Sunday PM)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Screen Time Break Trigger (Optional)",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger: School/Daycare Comms Check",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger: Weekly Wins/Gratitude",
+      "type": "Trigger"
+    },
+    {
+      "name": "Trigger: Daily Evening Check-in",
+      "type": "Trigger"
+    },
+    {
+      "name": "Screen Time Break Trigger (Optional)1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Check Today's Schedule",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Daily Schedules",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Define Check-in Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Edit Fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Start",
+      "type": "Process"
+    },
+    {
+      "name": "Format Check-in Message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Positive Thought/Fact1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Daily Meal Idea",
+      "type": "Trigger"
+    },
+    {
+      "name": "Daily Meal Idea1",
+      "type": "Trigger"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Generate Meal Idea",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

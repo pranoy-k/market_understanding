@@ -1,0 +1,80 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f037180c",
+  "workflow_id": "f037180c",
+  "workflow_id_display": "f037180c",
+  "workflow_name": "GitHub Fork Status Monitor",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "14",
+  "tools_integrations": "GitHub, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Manish",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor your GitHub forks and receive real-time Telegram alerts on sync status. Get clear reports and easy setup—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, httpRequest, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Execute workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Loop Over Items",
+      "type": "Data Processing"
+    },
+    {
+      "name": "get-repo-details",
+      "type": "Process"
+    },
+    {
+      "name": "Prepare Upstream URL",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Compare Branches API Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Process Comparison Result",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Combine Results",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Format for Telegram",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Code",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get repos",
+      "type": "Process"
+    },
+    {
+      "name": "Filter forked repositories only",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Compare Branches API Call",
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

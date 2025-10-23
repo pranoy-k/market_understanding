@@ -1,0 +1,78 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3ce612db",
+  "workflow_id": "3ce612db",
+  "workflow_id_display": "3ce612db",
+  "workflow_name": "Sync Stripe charges to HubSpot contacts",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "HubSpot, Stripe",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Stripe charges with HubSpot contacts. Automate daily updates, track total amounts, and keep your CRM and payments data aligned. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with scheduleTrigger, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "On schedule",
+      "type": "Trigger"
+    },
+    {
+      "name": "Configure",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get customer",
+      "type": "Process"
+    },
+    {
+      "name": "Remove duplicate customers",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate `amount_captured`",
+      "type": "Process"
+    },
+    {
+      "name": "Aggregate totals",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create or update customer",
+      "type": "Process"
+    },
+    {
+      "name": "Merge data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get all charges",
+      "type": "Process"
+    },
+    {
+      "name": "Get HubSpot field",
+      "type": "Data Input"
+    },
+    {
+      "name": "Create field in HubSpot",
+      "type": "Data Input"
+    },
+    {
+      "name": "Do nothing",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}

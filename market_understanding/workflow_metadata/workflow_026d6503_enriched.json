@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/026d6503",
+  "workflow_id": "026d6503",
+  "workflow_id_display": "026d6503",
+  "workflow_name": "ERP AI chatbot for Odoo sales module with OpenAI",
+  "category": "Customer Support",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "15",
+  "tools_integrations": "OpenAI",
+  "tags": [
+    "Scheduled"
+  ],
+  "author_name": "Mihai Farcas",
+  "author_profile_url": "https://n8n.io/creators/mihailtd/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow provides on-demand AI processing capabilities. Trigger it manually to process data through AI models, generate content, analyze information, or get intelligent insights. It's perfect for tasks that require human initiation but benefit from AI-powered automation.",
+  "key_benefits": [
+    "AI automation",
+    "Integration with scheduleTrigger, aggregate, odoo"
+  ],
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Chat Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "OpenAI Summarization Model",
+      "type": "Process"
+    },
+    {
+      "name": "Save Summary to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Window Buffer Memory",
+      "type": "Process"
+    },
+    {
+      "name": "Calculator",
+      "type": "Process"
+    },
+    {
+      "name": "Convert to File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Get All Opportunities from Odoo",
+      "type": "Process"
+    },
+    {
+      "name": "Read Summary From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Merge Opportunities",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Extract Text From File",
+      "type": "Data Output"
+    },
+    {
+      "name": "AI Conversational Agent",
+      "type": "Process"
+    },
+    {
+      "name": "Summarize Opportunities",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI"
+}
