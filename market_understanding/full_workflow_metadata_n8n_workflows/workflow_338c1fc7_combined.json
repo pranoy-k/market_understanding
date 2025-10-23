@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/338c1fc7",
+  "workflow_id": "338c1fc7",
+  "workflow_id_display": "338c1fc7",
+  "workflow_name": "Create a PayPal batch payout",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Gmail, PayPal",
+  "tags": [],
+  "author_name": "ivov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "PayPal",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          540,
+          240
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "PayPal",
+        "type": "n8n-nodes-base.payPal",
+        "position": [
+          730,
+          240
+        ],
+        "parameters": {
+          "senderBatchId": "123",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "payPalApi": "paypal-credentials"
+        },
+        "typeVersion": 1,
+        "id": "a9bdbc66ff78f345"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "PayPal",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f5fdbba3907dc149",
+    "staticData": null,
+    "tags": [
+      "gmail"
+    ]
+  }
+}

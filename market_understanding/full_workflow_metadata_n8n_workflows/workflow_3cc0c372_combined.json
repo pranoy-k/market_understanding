@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3cc0c372",
+  "workflow_id": "3cc0c372",
+  "workflow_id_display": "3cc0c372",
+  "workflow_name": "Create a Onfleet task for a new added row in Airtable",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly connect Airtable and Onfleet—automate delivery tasks with every new row. Streamline last-mile delivery. Customize, integrate, and save time!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtableTrigger, onfleet"
+  ],
+  "nodes": [
+    {
+      "name": "Airtable Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Onfleet",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 9,
+    "name": "Airtable -> Onfleet",
+    "nodes": [
+      {
+        "name": "Airtable Trigger",
+        "type": "n8n-nodes-base.airtableTrigger",
+        "position": [
+          280,
+          600
+        ],
+        "parameters": {
+          "pollTimes": {
+            "item": [
+              {
+                "mode": "everyX",
+                "unit": "minutes",
+                "value": 10
+              }
+            ]
+          },
+          "triggerField": "Address_Line1",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "airtableApi": {
+            "id": "8",
+            "name": "Airtable account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet",
+        "type": "n8n-nodes-base.onfleet",
+        "position": [
+          500,
+          600
+        ],
+        "parameters": {
+          "operation": "create",
+          "destination": {
+            "destinationProperties": {
+              "address": "={{$node[\"Airtable Trigger\"].json[\"fields\"][\"Address_Line1\"]}}, {{$node[\"Airtable Trigger\"].json[\"fields\"][\"City/Town\"]}}, {{$node[\"Airtable Trigger\"].json[\"fields\"][\"State/Province\"]}}, {{$node[\"Airtable Trigger\"].json[\"fields\"][\"Country\"]}}, {{$node[\"Airtable Trigger\"].json[\"fields\"][\"Postal_Code\"]}}",
+              "unparsed": true
+            }
+          },
+          "additionalFields": {
+            "notes": "={{$node[\"Airtable Trigger\"].json[\"fields\"][\"Task_Details\"][1]}} \n{{$node[\"Airtable Trigger\"].json[\"fields\"][\"Task_Details\"][0]}}",
+            "recipient": {
+              "recipientProperties": {
+                "recipientName": "={{$node[\"Airtable Trigger\"].json[\"fields\"][\"Recipient_Name\"]}}",
+                "recipientNotes": "={{$node[\"Airtable Trigger\"].json[\"fields\"][\"Recipient_Notes\"]}}",
+                "recipientPhone": "=+1{{$node[\"Airtable Trigger\"].json[\"fields\"][\"Recipient_Phone\"]}}"
+              }
+            },
+            "completeAfter": "= {{$node[\"Airtable Trigger\"].json[\"fields\"][\"completeAfter\"]}}",
+            "completeBefore": "= {{$node[\"Airtable Trigger\"].json[\"fields\"][\"completeBefore\"]}}"
+          }
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Airtable Trigger": {
+        "main": [
+          [
+            {
+              "node": "Onfleet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

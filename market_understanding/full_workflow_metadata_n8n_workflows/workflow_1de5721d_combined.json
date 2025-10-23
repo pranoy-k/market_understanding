@@ -1,0 +1,176 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1de5721d",
+  "workflow_id": "1de5721d",
+  "workflow_id_display": "1de5721d",
+  "workflow_name": "N8N Español - Telegram Welcome Bot",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "The { AI } rtist",
+  "author_profile_url": "https://n8n.io/creators/tuxed/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatiza mensajes de bienvenida y despedida en tu grupo de Telegram con este workflow n8n. Sigue la guía paso a paso y haz crecer tu comunidad.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, telegramTrigger, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "Saludos-TelegramTrigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "27",
+    "name": "N8N Español - BOT",
+    "nodes": [
+      {
+        "name": "Saludos-IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          450,
+          450
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Saludos-TelegramTrigger\"].json[\"message\"][\"new_chat_member\"][\"first_name\"]}}",
+                "operation": "isEmpty"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Saludos-IF1",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          490,
+          630
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Saludos-TelegramTrigger\"].json[\"message\"][\"left_chat_member\"][\"first_name\"]}}",
+                "operation": "isEmpty"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "S-Telegram",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          700,
+          660
+        ],
+        "parameters": {
+          "text": "=✖️ {{$node[\"Saludos-TelegramTrigger\"].json[\"message\"][\"left_chat_member\"][\"first_name\"]}} DEP. 🙏 Que los Dioses te protejan.",
+          "chatId": "=@comunidadn8n",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": "N8N Español - BOT"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Saludos-TelegramTrigger",
+        "type": "n8n-nodes-base.telegramTrigger",
+        "position": [
+          260,
+          560
+        ],
+        "webhookId": "4ef8c98e-e617-4d36-9c6d-04fae7e9298c",
+        "parameters": {
+          "updates": [
+            "*"
+          ],
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": "N8N Español - BOT"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "S-Telegram2",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          730,
+          460
+        ],
+        "parameters": {
+          "text": "=✔️ {{$node[\"Saludos-TelegramTrigger\"].json[\"message\"][\"new_chat_member\"][\"first_name\"]}}, ¡bienvenid@ a N8N en Españoll!  🙌",
+          "chatId": "=@comunidadn8n",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": "N8N Español - BOT"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "Saludos-IF": {
+        "main": [
+          [],
+          [
+            {
+              "node": "S-Telegram2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Saludos-IF1": {
+        "main": [
+          [],
+          [
+            {
+              "node": "S-Telegram",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Saludos-TelegramTrigger": {
+        "main": [
+          [
+            {
+              "node": "Saludos-IF1",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Saludos-IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

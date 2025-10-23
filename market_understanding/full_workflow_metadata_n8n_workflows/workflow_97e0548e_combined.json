@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/97e0548e",
+  "workflow_id": "97e0548e",
+  "workflow_id_display": "97e0548e",
+  "workflow_name": "Invoke an AWS Lambda function",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "AWS, PDF",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline AWS Lambda docs with a companion workflow. Automate updates, enhance collaboration, and keep documentation accurate and accessible. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsLambda"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "AWS Lambda",
+        "type": "n8n-nodes-base.awsLambda",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "function": "arn:aws:lambda:ap-south-1:100558637562:function:hello-world-sample"
+        },
+        "credentials": {
+          "aws": "amudhan-aws"
+        },
+        "typeVersion": 1,
+        "id": "2e0735a931f1c51c"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS Lambda",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fa15d7d463f88808",
+    "name": "Invoke an AWS Lambda function",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

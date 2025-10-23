@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e0e0d9b5",
+  "workflow_id": "e0e0d9b5",
+  "workflow_id_display": "e0e0d9b5",
+  "workflow_name": "Write HTTP query string on image",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [
+    "http"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Instantly personalize images via HTTP requests—fetch, edit, and return images with custom data. Try it now with your own query parameters!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with editImage, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Edit Image",
+      "type": "Process"
+    },
+    {
+      "name": "Read File URL",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          700,
+          350
+        ],
+        "parameters": {
+          "path": "test",
+          "responseData": "firstEntryBinary",
+          "responseMode": "lastNode"
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      },
+      {
+        "name": "Edit Image",
+        "type": "n8n-nodes-base.editImage",
+        "position": [
+          1100,
+          350
+        ],
+        "parameters": {
+          "text": "=They found the killer it was {{$node[\"Webhook\"].data[\"query\"][\"name\"]}}!",
+          "fontSize": "=25",
+          "operation": "text",
+          "positionX": 150,
+          "positionY": 180,
+          "lineLength": 18
+        },
+        "typeVersion": 1,
+        "id": "9411c00ac38cda13"
+      },
+      {
+        "name": "Read File URL",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          900,
+          350
+        ],
+        "parameters": {
+          "url": "https://www.needpix.com/file_download.php?url=//storage.needpix.com/thumbs/newspaper-412809_1280.jpg",
+          "responseFormat": "file"
+        },
+        "typeVersion": 1,
+        "id": "1da1cffbd1d29f5f"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Read File URL",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read File URL": {
+        "main": [
+          [
+            {
+              "node": "Edit Image",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "12c133d55afd023f",
+    "name": "Write HTTP query string on image",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "http"
+    ]
+  }
+}

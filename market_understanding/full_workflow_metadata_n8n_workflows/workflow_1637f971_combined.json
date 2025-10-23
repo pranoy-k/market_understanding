@@ -1,0 +1,240 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1637f971",
+  "workflow_id": "1637f971",
+  "workflow_id_display": "1637f971",
+  "workflow_name": "Collects images from web search results and send to Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "AWS, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically collect images from web searches, extract and format text with AWS Rekognition, and log organized results directly into Google Sheets. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, httpRequest, set"
+  ],
+  "nodes": [
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function1",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "AWS Rekognition",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "AWS Rekognition",
+        "type": "n8n-nodes-base.awsRekognition",
+        "position": [
+          680,
+          700
+        ],
+        "parameters": {
+          "type": "detectText",
+          "binaryData": true,
+          "additionalFields": {}
+        },
+        "credentials": {
+          "aws": {
+            "id": "9",
+            "name": "aws"
+          }
+        },
+        "typeVersion": 1,
+        "id": "8c40d15af4121f21"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          500,
+          700
+        ],
+        "parameters": {
+          "url": "https://www.nicepng.com/png/detail/54-542069_motivational-quotes-png.png",
+          "options": {},
+          "responseFormat": "file",
+          "queryParametersUi": {
+            "parameter": []
+          },
+          "headerParametersUi": {
+            "parameter": []
+          }
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "HTTP Request1",
+        "type": "n8n-nodes-base.httpRequest",
+        "disabled": true,
+        "position": [
+          500,
+          860
+        ],
+        "parameters": {
+          "url": "https://www.googleapis.com/customsearch/v1?key=[YOUR_KEY]&cx=[YOUR_CX]&q=office&searchType=image",
+          "options": {},
+          "queryParametersUi": {
+            "parameter": []
+          },
+          "headerParametersUi": {
+            "parameter": []
+          }
+        },
+        "typeVersion": 1,
+        "id": "6cc25edc8046aeb7"
+      },
+      {
+        "name": "Set1",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          860,
+          700
+        ],
+        "parameters": {
+          "values": {
+            "number": [],
+            "string": [
+              {
+                "name": "img_name",
+                "value": "={{$node[\"HTTP Request\"].binary.data.fileName}}"
+              },
+              {
+                "name": "img_link",
+                "value": "={{$node[\"HTTP Request\"].parameter[\"url\"]}}"
+              },
+              {
+                "name": "img_txt",
+                "value": "={{$json[\"TextDetections\"][1][\"DetectedText\"]}} {{$json[\"TextDetections\"][2][\"DetectedText\"]}}{{$json[\"TextDetections\"][3][\"DetectedText\"]}} {{$json[\"TextDetections\"][4][\"DetectedText\"]}} {{$json[\"TextDetections\"][5][\"DetectedText\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "8ea69936312279b4"
+      },
+      {
+        "name": "Function1",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          1040,
+          700
+        ],
+        "parameters": {
+          "functionCode": "for (item of items) {\n  item.json.lowerText = $node[\"Set1\"].json[\"img_txt\"].toLowerCase();\n}\nconsole.log('Done!');\n\nreturn items;"
+        },
+        "typeVersion": 1,
+        "id": "fdaf663a833cda2a"
+      },
+      {
+        "name": "Google Sheets1",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          1220,
+          700
+        ],
+        "parameters": {
+          "options": {},
+          "sheetId": "qwertz",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "typeVersion": 1,
+        "id": "3ba231beb0bd332d"
+      }
+    ],
+    "connections": {
+      "Set1": {
+        "main": [
+          [
+            {
+              "node": "Function1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function1": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "AWS Rekognition",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "AWS Rekognition": {
+        "main": [
+          [
+            {
+              "node": "Set1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7b90edd6e5a98a7f",
+    "name": "Collects images from web search results and send to Google Sheets",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/864cf46e",
+  "workflow_id": "864cf46e",
+  "workflow_id_display": "864cf46e",
+  "workflow_name": "Execute Set node based on Function output",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover an interactive workflow guide for the Switch node in n8n. Explore step-by-step examples to master conditional routing and boost automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, function"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set1",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "functionCode": "return [\n  {\n    json: {\n      id: 0,\n    }\n  },\n  {\n    json: {\n      id: 1,\n    }\n  }\n];"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$node[\"Function\"].json[\"id\"]}}",
+                "operation": "equal"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "name",
+                "value": "n8n"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "Set1",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          400
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "name",
+                "value": "nodemation"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "8ea69936312279b4"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Set1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "8c30178fd77d5edf",
+    "name": "Execute Set node based on Function output",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

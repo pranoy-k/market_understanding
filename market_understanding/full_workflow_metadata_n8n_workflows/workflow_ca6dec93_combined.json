@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ca6dec93",
+  "workflow_id": "ca6dec93",
+  "workflow_id_display": "ca6dec93",
+  "workflow_name": "Send an email template using Mandrill",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to integrate Mandrill email automation in n8n. Step-by-step setup, clear examples, and tips for personalized transactional messaging.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, mandrill"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mandrill",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Mandrill",
+        "type": "n8n-nodes-base.mandrill",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "toEmail": "user@example.com",
+          "template": "welcomeemailv2",
+          "fromEmail": "example@yourdomain.com"
+        },
+        "credentials": {
+          "mandrillApi": "mandrill_creds"
+        },
+        "typeVersion": 1,
+        "id": "1685fda6b129ca31"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mandrill",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "e6f780ca46e4e838",
+    "name": "Send an email template using Mandrill",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

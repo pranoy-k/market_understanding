@@ -1,0 +1,181 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/807291b8",
+  "workflow_id": "807291b8",
+  "workflow_id_display": "807291b8",
+  "workflow_name": "Manage folders in Nextcloud",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Nextcloud workflows in n8n with detailed, actionable node docs. Streamline setup and boost automation efficiency—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, nextCloud"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "NextCloud",
+      "type": "Process"
+    },
+    {
+      "name": "NextCloud1",
+      "type": "Process"
+    },
+    {
+      "name": "NextCloud2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          20,
+          180
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          420,
+          180
+        ],
+        "parameters": {
+          "url": "https://n8n.io/n8n-logo.png",
+          "options": {},
+          "responseFormat": "file"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "NextCloud",
+        "type": "n8n-nodes-base.nextCloud",
+        "position": [
+          220,
+          180
+        ],
+        "parameters": {
+          "path": "n8n",
+          "resource": "folder"
+        },
+        "credentials": {
+          "nextCloudApi": "nextcloud_creds"
+        },
+        "typeVersion": 1,
+        "id": "eb86fe27c41673cc"
+      },
+      {
+        "name": "NextCloud1",
+        "type": "n8n-nodes-base.nextCloud",
+        "position": [
+          620,
+          180
+        ],
+        "parameters": {
+          "path": "n8n/logo.png",
+          "binaryDataUpload": true
+        },
+        "credentials": {
+          "nextCloudApi": "nextcloud_creds"
+        },
+        "typeVersion": 1,
+        "id": "8aa446d12af0435b"
+      },
+      {
+        "name": "NextCloud2",
+        "type": "n8n-nodes-base.nextCloud",
+        "position": [
+          820,
+          180
+        ],
+        "parameters": {
+          "path": "n8n",
+          "resource": "folder",
+          "operation": "list"
+        },
+        "credentials": {
+          "nextCloudApi": "nextcloud_creds"
+        },
+        "typeVersion": 1,
+        "id": "5185902dc1f30cd4"
+      }
+    ],
+    "connections": {
+      "NextCloud": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "NextCloud1": {
+        "main": [
+          [
+            {
+              "node": "NextCloud2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "NextCloud1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "NextCloud",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f667a93882d64178",
+    "name": "Manage folders in Nextcloud",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

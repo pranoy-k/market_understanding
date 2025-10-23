@@ -1,0 +1,96 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/39c2b9cf",
+  "workflow_id": "39c2b9cf",
+  "workflow_id_display": "39c2b9cf",
+  "workflow_name": "Get list of completed sale orders with Unleashed Software",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline support with automated ticket collection, AI prioritization, smart agent assignment, and Slack alerts. Boost team performance—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, unleashedSoftware"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Unleashed Software",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          390,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Unleashed Software",
+        "type": "n8n-nodes-base.unleashedSoftware",
+        "position": [
+          600,
+          220
+        ],
+        "parameters": {
+          "filters": {
+            "orderStatus": [
+              "Completed"
+            ]
+          },
+          "returnAll": true
+        },
+        "credentials": {
+          "unleashedSoftwareApi": "unleashed"
+        },
+        "typeVersion": 1,
+        "id": "5f7ff3f312c4e7ce"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Unleashed Software",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "562c29d31a1672c6",
+    "staticData": null,
+    "tags": [
+      "slack"
+    ]
+  }
+}

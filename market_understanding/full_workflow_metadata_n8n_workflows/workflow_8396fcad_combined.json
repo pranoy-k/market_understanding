@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8396fcad",
+  "workflow_id": "8396fcad",
+  "workflow_id_display": "8396fcad",
+  "workflow_name": "Create a new task in Asana",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Google Sheets, RSS, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline support: auto-collect Typeform feedback, create Zendesk tickets, notify on Slack, and log in Google Sheets for efficient, transparent response.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, asana"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Asana",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "98",
+    "name": "Create a new task in Asana",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Asana",
+        "type": "n8n-nodes-base.asana",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "name": "",
+          "workspace": "",
+          "otherProperties": {}
+        },
+        "credentials": {
+          "asanaApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Asana",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

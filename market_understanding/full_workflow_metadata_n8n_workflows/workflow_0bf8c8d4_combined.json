@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0bf8c8d4",
+  "workflow_id": "0bf8c8d4",
+  "workflow_id_display": "0bf8c8d4",
+  "workflow_name": "Send an email using AWS SES",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "AWS, Email",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Master AWS SES node integration with our companion workflow—visual guides, step-by-step instructions, and best practices for seamless email automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsSes"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS SES",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "AWS SES",
+        "type": "n8n-nodes-base.awsSes",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "body": "This is a sample message body in an email\n",
+          "subject": "n8n Rocks",
+          "fromEmail": "n8n@n8n.io",
+          "toAddresses": [
+            "user@example.com",
+            "user2@example.com"
+          ],
+          "additionalFields": {}
+        },
+        "credentials": {
+          "aws": "aws"
+        },
+        "typeVersion": 1,
+        "id": "07e042b09146c499"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS SES",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "b7328ce9fff4e75f",
+    "name": "Send an email using AWS SES",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

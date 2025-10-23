@@ -1,0 +1,169 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/55dfd9c9",
+  "workflow_id": "55dfd9c9",
+  "workflow_id_display": "55dfd9c9",
+  "workflow_name": "Manage users automatically in reqres.in",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "API",
+  "tags": [
+    "http",
+    "api"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your HTTP Request node docs with a ready-to-use workflow. Streamline API setup, learn best practices, and speed up your project implementation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request2",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          290,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          540,
+          300
+        ],
+        "parameters": {
+          "url": "https://reqres.in/api/users",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "HTTP Request1",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          790,
+          300
+        ],
+        "parameters": {
+          "url": "https://reqres.in/api/users",
+          "options": {},
+          "requestMethod": "POST",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "name",
+                "value": "Neo"
+              },
+              {
+                "name": "job",
+                "value": "Programmer"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "6cc25edc8046aeb7"
+      },
+      {
+        "name": "HTTP Request2",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          1050,
+          300
+        ],
+        "parameters": {
+          "url": "https://reqres.in/api/users/2",
+          "options": {},
+          "requestMethod": "PATCH",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "job",
+                "value": "The Chosen One"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "525d42d44f2ebaf8"
+      }
+    ],
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request1": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "86f60ca65e00771d",
+    "name": "Manage users automatically in reqres.in",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "http",
+      "api"
+    ]
+  }
+}

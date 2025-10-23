@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5b40b688",
+  "workflow_id": "5b40b688",
+  "workflow_id_display": "5b40b688",
+  "workflow_name": "Update Shopify order tags when a Onfleet event happens",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate Shopify order tags with Onfleet events. Seamless integration, easy setup, and customizable workflows for efficient last-mile deliveries. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with shopify, onfleetTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "Updating Shopify tags on Onfleet events",
+    "nodes": [
+      {
+        "name": "Onfleet Trigger",
+        "type": "n8n-nodes-base.onfleetTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "webhookId": "6d6a2bee-f83e-4ebd-a1d5-8708c34393dc",
+        "parameters": {
+          "triggerOn": "taskDelayed",
+          "additionalFields": {}
+        },
+        "typeVersion": 1,
+        "id": "1f986c45854b7fed"
+      },
+      {
+        "name": "Shopify",
+        "type": "n8n-nodes-base.shopify",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {
+          "operation": "update",
+          "updateFields": {
+            "tags": ""
+          }
+        },
+        "typeVersion": 1,
+        "id": "f3a8f3eba98c0fbd"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Onfleet Trigger": {
+        "main": [
+          [
+            {
+              "node": "Shopify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "8b4988e1aa9d1580",
+    "staticData": null,
+    "tags": []
+  }
+}

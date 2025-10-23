@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/47772d29",
+  "workflow_id": "47772d29",
+  "workflow_id_display": "47772d29",
+  "workflow_name": "Send daily weather updates to a phone number via Plivo",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "SMS",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate daily SMS weather updates at 9 AM with real-time data for any city via OpenWeatherMap and reliable Plivo SMS delivery. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with openWeatherMap, cron, plivo"
+  ],
+  "nodes": [
+    {
+      "name": "Plivo",
+      "type": "Process"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Plivo",
+        "type": "n8n-nodes-base.plivo",
+        "position": [
+          1030,
+          400
+        ],
+        "parameters": {
+          "message": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C."
+        },
+        "credentials": {
+          "plivoApi": "Plivo API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d2cd6eef84daee63"
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          830,
+          400
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "owm"
+        },
+        "typeVersion": 1,
+        "id": "8e4a7182f2f5bbdc"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          630,
+          400
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Plivo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "736d62d8fc000a5d",
+    "name": "Send daily weather updates to a phone number via Plivo",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/84233c9e",
+  "workflow_id": "84233c9e",
+  "workflow_id_display": "84233c9e",
+  "workflow_name": "Analyze feedback and send a message on Mattermost",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Analytics, RSS",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 other integrations & use cases Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Cloud Natural Language",
+      "type": "Process"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "133",
+    "name": "Analyze the sentiment of feedback and send a message on Mattermost",
+    "nodes": [
+      {
+        "name": "Typeform Trigger",
+        "type": "n8n-nodes-base.typeformTrigger",
+        "position": [
+          510,
+          260
+        ],
+        "webhookId": "ad8a87ef-d293-4e48-8d36-838d69ebce0f",
+        "parameters": {
+          "formId": ""
+        },
+        "credentials": {
+          "typeformApi": "typeform"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Google Cloud Natural Language",
+        "type": "n8n-nodes-base.googleCloudNaturalLanguage",
+        "position": [
+          710,
+          260
+        ],
+        "parameters": {
+          "content": "={{$node[\"Typeform Trigger\"].json[\"What did you think about the event?\"]}}",
+          "options": {}
+        },
+        "credentials": {
+          "googleCloudNaturalLanguageOAuth2Api": "cloud"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          910,
+          260
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$node[\"Google Cloud Natural Language\"].json[\"documentSentiment\"][\"score\"]}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          1110,
+          160
+        ],
+        "parameters": {
+          "message": "=You got a new feedback with a score of {{$node[\"Google Cloud Natural Language\"].json[\"documentSentiment\"][\"score\"]}}. Here is what it says:{{$node[\"Typeform Trigger\"].json[\"What did you think about the event?\"]}}",
+          "channelId": "4h1bz64cyifwxnzojkzh8hxh4a",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "mattermost"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          1110,
+          360
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Typeform Trigger": {
+        "main": [
+          [
+            {
+              "node": "Google Cloud Natural Language",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Cloud Natural Language": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

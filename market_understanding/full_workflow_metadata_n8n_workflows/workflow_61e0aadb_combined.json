@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/61e0aadb",
+  "workflow_id": "61e0aadb",
+  "workflow_id_display": "61e0aadb",
+  "workflow_name": "Create a new member on Mailchimp",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "eem2188",
+  "author_profile_url": "https://n8n.io/creators/erin2722/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover top tech jobs with automated scraping, customized filters, alerts, deadline tracking, and weekly digests. Find your next opportunity today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, mailchimp"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "3",
+    "name": "Mailchimp",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          480,
+          310
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Mailchimp",
+        "type": "n8n-nodes-base.mailchimp",
+        "position": [
+          780,
+          310
+        ],
+        "parameters": {
+          "list": "97542c5cf8",
+          "email": "xxxx@email.com",
+          "status": "subscribed",
+          "options": {},
+          "mergeFieldsUi": {
+            "mergeFieldsValues": [
+              {
+                "name": "FNAME",
+                "value": "Joe"
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "mailchimpApi": "mailchimpAPI"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mailchimp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

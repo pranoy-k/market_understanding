@@ -1,0 +1,183 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b55eaac9",
+  "workflow_id": "b55eaac9",
+  "workflow_id_display": "b55eaac9",
+  "workflow_name": "Automate Outbound Sales Calls to Qualified Leads with VAPI.ai and Google Sheets",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "API, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate AI outbound calls to qualified leads by integrating Google Sheets and VAPI.ai. Boost efficiency and sales with seamless workflow setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger VAPI Call",
+      "type": "Data Input"
+    },
+    {
+      "name": "Set Variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Leads",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update AI Call Status",
+      "type": "Data Output"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [
+    "Trigger VAPI Call"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "F9KpMhjDfaW8MG07",
+    "meta": {
+      "instanceId": "2000c64071c20843606b95c63795bb0797c41036047055a6586498e855b96efc",
+      "templateCredsSetupCompleted": true
+    },
+    "name": "CallQualifiedLeadsAI",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "149a69a7-7e9a-43b2-b3b0-79ca2882846f",
+        "name": "Read Leads",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          0,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "90b25491-1e7b-45cc-baf6-707eca0ee51d",
+        "name": "SplitInBatches",
+        "type": "n8n-nodes-base.splitInBatches",
+        "position": [
+          200,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "f9677c52-5f86-4325-8942-f853af14eb95",
+        "name": "Set Variables",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          400,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "32853540-f592-4a09-a160-5023ed1efa87",
+        "name": "Trigger VAPI Call",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          600,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "734eef41-6db2-402b-a0be-efcd804cb7d1",
+        "name": "Update AI Call Status",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          800,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "65b9181d-5171-4d78-9621-af4017326f94",
+        "name": "Sticky Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          -20,
+          -180
+        ],
+        "parameters": {
+          "content": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "fae3b5ee-d400-4f5a-a789-a5314df78dc9",
+    "connections": {
+      "Read Leads": {
+        "main": [
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Set Variables": {
+        "main": [
+          [
+            {
+              "node": "Trigger VAPI Call",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "SplitInBatches": {
+        "main": [
+          [
+            {
+              "node": "Set Variables",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Trigger VAPI Call": {
+        "main": [
+          [
+            {
+              "node": "Update AI Call Status",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

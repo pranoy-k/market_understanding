@@ -1,0 +1,131 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9535741d",
+  "workflow_id": "9535741d",
+  "workflow_id_display": "9535741d",
+  "workflow_name": "Create a campaign, add a contact, and get the campaign from Emelia",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create Emelia campaigns, add contacts from Google Sheets or Airtable, and retrieve campaign details. Streamline your workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emelia"
+  ],
+  "nodes": [
+    {
+      "name": "Emelia",
+      "type": "Process"
+    },
+    {
+      "name": "Emelia1",
+      "type": "Process"
+    },
+    {
+      "name": "Emelia2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Emelia",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          530,
+          310
+        ],
+        "parameters": {
+          "operation": "create",
+          "campaignName": "n8n-docs"
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "3b5b456591fa6f36"
+      },
+      {
+        "name": "Emelia1",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          730,
+          310
+        ],
+        "parameters": {
+          "operation": "addContact",
+          "campaignId": "603dfd70cbe34c3c9730fd09",
+          "contactEmail": "email@example.com",
+          "additionalFields": {
+            "firstName": "NAME"
+          }
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "e274dab7245021fb"
+      },
+      {
+        "name": "Emelia2",
+        "type": "n8n-nodes-base.emelia",
+        "position": [
+          930,
+          310
+        ],
+        "parameters": {
+          "campaignId": "={{$node[\"Emelia\"].json[\"_id\"]}}"
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "15d0eb9c7d18e5a6"
+      }
+    ],
+    "connections": {
+      "Emelia": {
+        "main": [
+          [
+            {
+              "node": "Emelia1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Emelia1": {
+        "main": [
+          [
+            {
+              "node": "Emelia2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "ba5c71a4a5ccd6dc",
+    "name": "Create a campaign, add a contact, and get the campaign from Emelia",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

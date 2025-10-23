@@ -1,0 +1,312 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f0264a3b",
+  "workflow_id": "f0264a3b",
+  "workflow_id_display": "f0264a3b",
+  "workflow_name": "ETL pipeline for text processing",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "9",
+  "tools_integrations": "MongoDB, PostgreSQL, Slack, Twitter",
+  "tags": [],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 Document Processing Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "An automated workflow that integrates multiple services for enhanced automation.",
+  "key_benefits": [
+    "Process automation",
+    "Data integration",
+    "Workflow optimization"
+  ],
+  "nodes": [
+    {
+      "name": "Twitter",
+      "type": "Process"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "MongoDB",
+      "type": "Data Output"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    },
+    {
+      "name": "Google Cloud Natural Language",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "6",
+    "name": "ETL pipeline",
+    "nodes": [
+      {
+        "name": "Twitter",
+        "type": "n8n-nodes-base.twitter",
+        "position": [
+          300,
+          300
+        ],
+        "parameters": {
+          "limit": 3,
+          "operation": "search",
+          "searchText": "=#OnThisDay",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "twitterOAuth1Api": "twitter_api"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Postgres",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          1100,
+          300
+        ],
+        "parameters": {
+          "table": "tweets",
+          "columns": "text, score, magnitude",
+          "returnFields": "=*"
+        },
+        "credentials": {
+          "postgres": "postgres"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "MongoDB",
+        "type": "n8n-nodes-base.mongoDb",
+        "position": [
+          500,
+          300
+        ],
+        "parameters": {
+          "fields": "text",
+          "options": {},
+          "operation": "insert",
+          "collection": "tweets"
+        },
+        "credentials": {
+          "mongoDb": "mongodb"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Slack",
+        "type": "n8n-nodes-base.slack",
+        "position": [
+          1500,
+          200
+        ],
+        "parameters": {
+          "text": "=🐦 NEW TWEET with sentiment score {{$json[\"score\"]}} and magnitude {{$json[\"magnitude\"]}} ⬇️\n{{$json[\"text\"]}}",
+          "channel": "tweets",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "slackApi": "slack"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1300,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$json[\"score\"]}}",
+                "operation": "larger"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          1500,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Google Cloud Natural Language",
+        "type": "n8n-nodes-base.googleCloudNaturalLanguage",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "content": "={{$node[\"MongoDB\"].json[\"text\"]}}",
+          "options": {}
+        },
+        "credentials": {
+          "googleCloudNaturalLanguageOAuth2Api": "google_nlp"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          900,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "score",
+                "value": "={{$json[\"documentSentiment\"][\"score\"]}}"
+              },
+              {
+                "name": "magnitude",
+                "value": "={{$json[\"documentSentiment\"][\"magnitude\"]}}"
+              }
+            ],
+            "string": [
+              {
+                "name": "text",
+                "value": "={{$node[\"Twitter\"].json[\"text\"]}}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          100,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 6
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Slack",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Postgres",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Twitter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "MongoDB": {
+        "main": [
+          [
+            {
+              "node": "Google Cloud Natural Language",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Twitter": {
+        "main": [
+          [
+            {
+              "node": "MongoDB",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Postgres": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Cloud Natural Language": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

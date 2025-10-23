@@ -1,0 +1,181 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/504f088a",
+  "workflow_id": "504f088a",
+  "workflow_id_display": "504f088a",
+  "workflow_name": "Manage folders automatically in Dropbox",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Dropbox",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Dropbox automation with a step-by-step n8n workflow guide. Visual docs simplify setup for all skill levels. Unlock Dropbox’s full power!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, dropbox, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "Dropbox1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Dropbox2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          50,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Dropbox",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          250,
+          200
+        ],
+        "parameters": {
+          "path": "/n8n",
+          "resource": "folder"
+        },
+        "credentials": {
+          "dropboxApi": "dropbox_accesstoken"
+        },
+        "typeVersion": 1,
+        "id": "82c9efdefd4e3dab"
+      },
+      {
+        "name": "Dropbox1",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "path": "/n8n/file.png",
+          "binaryData": true
+        },
+        "credentials": {
+          "dropboxApi": "dropbox_accesstoken"
+        },
+        "typeVersion": 1,
+        "id": "fbc16178cefd43ec"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "url": "https://n8n.io/n8n-logo.png",
+          "options": {},
+          "responseFormat": "file"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Dropbox2",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "path": "/n8n",
+          "resource": "folder",
+          "operation": "list"
+        },
+        "credentials": {
+          "dropboxApi": "dropbox_accesstoken"
+        },
+        "typeVersion": 1,
+        "id": "e63f805ed0565cfe"
+      }
+    ],
+    "connections": {
+      "Dropbox": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Dropbox1": {
+        "main": [
+          [
+            {
+              "node": "Dropbox2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Dropbox1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Dropbox",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "b88c270dc5e0390a",
+    "name": "Manage folders automatically in Dropbox",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

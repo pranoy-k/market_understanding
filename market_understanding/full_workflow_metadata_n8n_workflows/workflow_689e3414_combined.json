@@ -1,0 +1,183 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/689e3414",
+  "workflow_id": "689e3414",
+  "workflow_id_display": "689e3414",
+  "workflow_name": "Compress binary files to zip format",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily compress binary files to zip or gzip formats and automate uploads to Google Drive, Box, or local storage. Discover this flexible workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with dropbox, manualTrigger, compression"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Dropbox",
+      "type": "Process"
+    },
+    {
+      "name": "Compression",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Dropbox",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          1090,
+          290
+        ],
+        "parameters": {
+          "path": "/images.zip",
+          "binaryData": true
+        },
+        "credentials": {
+          "dropboxApi": "Dropbox Tokens Test"
+        },
+        "typeVersion": 1,
+        "id": "82c9efdefd4e3dab"
+      },
+      {
+        "name": "Compression",
+        "type": "n8n-nodes-base.compression",
+        "position": [
+          890,
+          290
+        ],
+        "parameters": {
+          "fileName": "images.zip",
+          "operation": "compress",
+          "outputFormat": "zip",
+          "binaryPropertyName": "logo, workflow_image"
+        },
+        "typeVersion": 1,
+        "id": "00190dc3bfc4bded"
+      },
+      {
+        "name": "HTTP Request1",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          690,
+          290
+        ],
+        "parameters": {
+          "url": "https://n8n.io/n8n-logo.png",
+          "options": {},
+          "responseFormat": "file",
+          "dataPropertyName": "logo"
+        },
+        "typeVersion": 1,
+        "id": "6cc25edc8046aeb7"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          490,
+          290
+        ],
+        "parameters": {
+          "url": "https://docs.n8n.io/assets/img/final-workflow.f380b957.png",
+          "options": {},
+          "responseFormat": "file",
+          "dataPropertyName": "workflow_image"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          290,
+          290
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      }
+    ],
+    "connections": {
+      "Compression": {
+        "main": [
+          [
+            {
+              "node": "Dropbox",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request1": {
+        "main": [
+          [
+            {
+              "node": "Compression",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "e2f1bf814225216f",
+    "name": "Compress binary files to zip format",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bb446310",
+  "workflow_id": "bb446310",
+  "workflow_id_display": "bb446310",
+  "workflow_name": "Enrich Google Sheet contacts with Dropcontact",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate contact outreach: extract leads from Google Sheets, verify and enrich emails with Dropcontact, and add them into Lemlist campaigns seamlessly.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, lemlist, dropcontact"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    },
+    {
+      "name": "Lemlist",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Dropcontact",
+        "type": "n8n-nodes-base.dropcontact",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "email": "={{$json[\"email\"]}}",
+          "options": {
+            "siren": true,
+            "language": "fr"
+          },
+          "additionalFields": {
+            "company": "={{$json[\"companyName\"]}}",
+            "website": "={{$json[\"website\"]}}",
+            "linkedin": "={{$json[\"LinkedIn\"]}}",
+            "full_name": "={{$json[\"fullName\"]}}",
+            "last_name": "={{$json[\"lastName\"]}}",
+            "first_name": "={{$json[\"firstName\"]}}"
+          }
+        },
+        "credentials": {
+          "dropcontactApi": {
+            "id": "6",
+            "name": ""
+          }
+        },
+        "typeVersion": 1,
+        "id": "757f3e99d05c35a0"
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "range": "A:K",
+          "options": {
+            "continue": false
+          },
+          "sheetId": "",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "7",
+            "name": "Google Sheets account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "0d5471e1b433e442"
+      },
+      {
+        "name": "Lemlist",
+        "type": "n8n-nodes-base.lemlist",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "email": "={{$node[\"Dropcontact\"].json[\"email\"][0][\"email\"]}}",
+          "resource": "lead",
+          "campaignId": "",
+          "additionalFields": {
+            "lastName": "={{$node[\"Dropcontact\"].json[\"last_name\"]}}",
+            "firstName": "={{$node[\"Dropcontact\"].json[\"first_name\"]}}",
+            "companyName": "={{$node[\"Dropcontact\"].json[\"company\"]}}"
+          }
+        },
+        "credentials": {
+          "lemlistApi": {
+            "id": "9",
+            "name": "Lemlist account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "0b7e539a16c9d621"
+      }
+    ],
+    "connections": {
+      "Dropcontact": {
+        "main": [
+          [
+            {
+              "node": "Lemlist",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Dropcontact",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "85c3147a8cbcdda1",
+    "name": "Enrich Google Sheet contacts with Dropcontact",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

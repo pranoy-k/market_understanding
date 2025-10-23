@@ -1,0 +1,422 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37f25679",
+  "workflow_id": "37f25679",
+  "workflow_id_display": "37f25679",
+  "workflow_name": "Move data between JSON and spreadsheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "10",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google",
+    "json"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily convert JSON to binary and import data into Google Sheets or local spreadsheets. Streamline your data management—learn how today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, gmail, writeBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets2",
+      "type": "Data Output"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move Binary Data1",
+      "type": "Process"
+    },
+    {
+      "name": "Move Binary Data2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          560,
+          700
+        ],
+        "parameters": {
+          "url": "https://randomuser.me/api/",
+          "options": {}
+        },
+        "typeVersion": 2,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          960,
+          560
+        ],
+        "parameters": {
+          "range": "A:C",
+          "options": {
+            "usePathForKeyRow": true
+          },
+          "sheetId": "qwertz",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "typeVersion": 1,
+        "id": "0d5471e1b433e442"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          760,
+          700
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "name",
+                "value": "={{$json[\"results\"][0][\"name\"][\"first\"]}} {{$json[\"results\"][0][\"name\"][\"last\"]}}"
+              },
+              {
+                "name": "country",
+                "value": "={{$json[\"results\"][0][\"location\"][\"country\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          960,
+          840
+        ],
+        "parameters": {
+          "options": {
+            "fileName": "users_spreadsheet"
+          },
+          "operation": "toFile",
+          "fileFormat": "csv"
+        },
+        "typeVersion": 1,
+        "id": "e41a6bcf65d8aa7d"
+      },
+      {
+        "name": "Spreadsheet File1",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          960,
+          1200
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "bb416a6701d9154b"
+      },
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          1360,
+          1200
+        ],
+        "parameters": {
+          "fileName": "randomusers.json"
+        },
+        "typeVersion": 1,
+        "id": "71e38fa94206825b"
+      },
+      {
+        "name": "Move Binary Data1",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          1160,
+          1200
+        ],
+        "parameters": {
+          "mode": "jsonToBinary",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "29a59c0f93b56aed"
+      },
+      {
+        "name": "Gmail1",
+        "type": "n8n-nodes-base.gmail",
+        "position": [
+          1360,
+          1420
+        ],
+        "parameters": {
+          "message": "Hello, attached is a JSON file with random user information.",
+          "subject": "JSON file with users",
+          "additionalFields": {
+            "attachmentsUi": {
+              "attachmentsBinary": [
+                {
+                  "property": "data"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "gmailOAuth2": {
+            "id": "16",
+            "name": "gmail"
+          }
+        },
+        "typeVersion": 1,
+        "id": "e2878f5eabb48c01"
+      },
+      {
+        "name": "Google Sheets2",
+        "type": "n8n-nodes-base.googleSheets",
+        "notes": "Append data to sheet",
+        "position": [
+          1760,
+          1420
+        ],
+        "parameters": {
+          "range": "A:C",
+          "options": {
+            "usePathForKeyRow": true
+          },
+          "sheetId": "qwertz",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "notesInFlow": true,
+        "typeVersion": 1,
+        "id": "7d0f15ababb31740"
+      },
+      {
+        "name": "Move Binary Data2",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          1560,
+          1420
+        ],
+        "parameters": {
+          "options": {},
+          "sourceKey": "attachment_0"
+        },
+        "typeVersion": 1,
+        "id": "56ddbfd07b0a8caf"
+      },
+      {
+        "name": "Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          1200,
+          560
+        ],
+        "parameters": {
+          "width": 320,
+          "height": 80,
+          "content": "## JSON > Google Sheets"
+        },
+        "typeVersion": 1,
+        "id": "f978ece47fdf5942"
+      },
+      {
+        "name": "Note1",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          1200,
+          860
+        ],
+        "parameters": {
+          "width": 320,
+          "height": 80,
+          "content": "## JSON > CSV"
+        },
+        "typeVersion": 1,
+        "id": "7adc781f3f04c8f5"
+      },
+      {
+        "name": "Note2",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          580,
+          1220
+        ],
+        "parameters": {
+          "width": 320,
+          "height": 80,
+          "content": "## CSV > JSON file"
+        },
+        "typeVersion": 1,
+        "id": "6c92b0d44e261339"
+      },
+      {
+        "name": "Note3",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          980,
+          1460
+        ],
+        "parameters": {
+          "width": 320,
+          "height": 80,
+          "content": "## JSON file > Google Sheets"
+        },
+        "typeVersion": 1,
+        "id": "728dd9ce279cd5a9"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Gmail1": {
+        "main": [
+          [
+            {
+              "node": "Move Binary Data2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Move Binary Data1": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Move Binary Data2": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File1": {
+        "main": [
+          [
+            {
+              "node": "Move Binary Data1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Write Binary File": {
+        "main": [
+          [
+            {
+              "node": "Gmail1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c7e8e3a713bbb7da",
+    "name": "Move data between JSON and spreadsheets",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google",
+      "json"
+    ]
+  }
+}

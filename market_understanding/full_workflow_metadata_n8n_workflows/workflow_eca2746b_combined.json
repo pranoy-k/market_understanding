@@ -1,0 +1,148 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eca2746b",
+  "workflow_id": "eca2746b",
+  "workflow_id_display": "eca2746b",
+  "workflow_name": "Store data received from Webhook in JSON",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "webhook",
+    "api",
+    "json"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Efficiently store and manage CocktailDB API data in structured JSON format for seamless access and easy processing of cocktail details. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with manualTrigger, writeBinaryFile, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "Store the data received from the CocktailDB API in JSON",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          400,
+          300
+        ],
+        "parameters": {
+          "url": "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Move Binary Data",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          550,
+          300
+        ],
+        "parameters": {
+          "mode": "jsonToBinary",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "5ff5d5e781ae2e1b"
+      },
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "fileName": "cocktail.json"
+        },
+        "typeVersion": 1,
+        "id": "71e38fa94206825b"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Move Binary Data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Move Binary Data": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "30c7f4284f1d47de",
+    "staticData": null,
+    "tags": [
+      "webhook",
+      "api",
+      "json"
+    ]
+  }
+}

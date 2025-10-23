@@ -1,0 +1,92 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f37010a7",
+  "workflow_id": "f37010a7",
+  "workflow_id_display": "f37010a7",
+  "workflow_name": "Send message on Mattermost when your n8n instance starts",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant Mattermost alerts when your n8n instance starts. Stay informed with automated, real-time notifications. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, n8nTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "n8n Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "n8n Trigger",
+        "type": "n8n-nodes-base.n8nTrigger",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "events": [
+            "init"
+          ]
+        },
+        "typeVersion": 1,
+        "id": "cf286f51e15a5666"
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "message": "=Your n8n instance started at {{$json[\"timestamp\"]}}",
+          "channelId": "toyi3uoycf8rirtm7d5jm15sso",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost Credentials"
+        },
+        "typeVersion": 1,
+        "id": "83ab5fd0ba394bde"
+      }
+    ],
+    "connections": {
+      "n8n Trigger": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fff0466833dfd6b8",
+    "name": "Send message on Mattermost when your n8n instance starts",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

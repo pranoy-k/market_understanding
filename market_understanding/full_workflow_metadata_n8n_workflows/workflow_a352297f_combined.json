@@ -1,0 +1,61 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a352297f",
+  "workflow_id": "a352297f",
+  "workflow_id_display": "a352297f",
+  "workflow_name": "Receive updates when an event occurs in Asana",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Google Analytics, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, enrichment, and follow-up with instant CRM updates, personalized emails, Slack alerts, and actionable analytics. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with asanaTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Asana-Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "47",
+    "name": "Receive updates when an event occurs in Asana",
+    "nodes": [
+      {
+        "name": "Asana-Trigger",
+        "type": "n8n-nodes-base.asanaTrigger",
+        "position": [
+          1490,
+          860
+        ],
+        "webhookId": "0de3b493-efb6-472c-9deb-80d28c89d28d",
+        "parameters": {
+          "resource": "Tweets",
+          "workspace": "Engineering"
+        },
+        "credentials": {
+          "asanaApi": "asana"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

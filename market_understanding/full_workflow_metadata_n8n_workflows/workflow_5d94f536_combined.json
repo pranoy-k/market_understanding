@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5d94f536",
+  "workflow_id": "5d94f536",
+  "workflow_id_display": "5d94f536",
+  "workflow_name": "Create a client in Harvest",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, CRM updates, Slack alerts, and Google Sheets logging—streamline your sales funnel and boost team efficiency. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, harvest"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Harvest",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "120",
+    "name": "Create a client in Harvest",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Harvest",
+        "type": "n8n-nodes-base.harvest",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "name": "",
+          "resource": "client",
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "harvestApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Harvest",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

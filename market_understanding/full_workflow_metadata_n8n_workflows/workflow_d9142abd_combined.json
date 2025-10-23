@@ -1,0 +1,165 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9142abd",
+  "workflow_id": "d9142abd",
+  "workflow_id_display": "d9142abd",
+  "workflow_name": "Convert JSON to an Excel file",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Excel",
+  "tags": [
+    "http",
+    "json",
+    "excel"
+  ],
+  "author_name": "Dick",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily convert a JSON array to an Excel file via HTTP POST. Set a custom filename or use the default Export.xlsx. Learn how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with spreadsheetFile, webhook, itemLists"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Item Lists",
+      "type": "Process"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          340,
+          0
+        ],
+        "webhookId": "c1616754-4dec-4b00-a8b5-d1cb5f75bf11",
+        "parameters": {
+          "path": "c1616754-4dec-4b00-a8b5-d1cb5f75bf11",
+          "options": {},
+          "httpMethod": "POST",
+          "responseMode": "responseNode"
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      },
+      {
+        "name": "Item Lists",
+        "type": "n8n-nodes-base.itemLists",
+        "position": [
+          560,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "fieldToSplitOut": "=body"
+        },
+        "typeVersion": 1,
+        "id": "5367fbbf79464178"
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          780,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "toFile",
+          "fileFormat": "xlsx"
+        },
+        "typeVersion": 1,
+        "id": "e41a6bcf65d8aa7d"
+      },
+      {
+        "name": "Respond to Webhook",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "position": [
+          1020,
+          0
+        ],
+        "parameters": {
+          "options": {
+            "responseHeaders": {
+              "entries": [
+                {
+                  "name": "content-disposition",
+                  "value": "=attachment; filename=\"{{$node[\"Webhook\"].json[\"query\"][\"filename\"]? $node[\"Webhook\"].json[\"query\"][\"filename\"] : \"Export\"}}.xlsx\""
+                }
+              ]
+            }
+          },
+          "respondWith": "binary"
+        },
+        "typeVersion": 1,
+        "id": "69dfee3583af604b"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Item Lists",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Item Lists": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "4d9879baf9c87fa1",
+    "name": "Convert JSON to an Excel file",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "http",
+      "json",
+      "excel"
+    ]
+  }
+}

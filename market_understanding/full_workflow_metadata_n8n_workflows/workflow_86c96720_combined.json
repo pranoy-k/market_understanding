@@ -1,0 +1,204 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/86c96720",
+  "workflow_id": "86c96720",
+  "workflow_id_display": "86c96720",
+  "workflow_name": "Manage Adobe Acrobat e-signatures with webhooks",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "Aaron Smusz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and streamline Acrobat Sign signature management. Instantly respond to webhooks, customize workflows, and boost efficiency. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with set, function, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "SetWebhookData",
+      "type": "Data Processing"
+    },
+    {
+      "name": "POST",
+      "type": "Trigger"
+    },
+    {
+      "name": "reg-GET",
+      "type": "Trigger"
+    },
+    {
+      "name": "webhook-response",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          -280,
+          -80
+        ],
+        "parameters": {
+          "functionCode": "// Code here will run only once, no matter how many input items there are.\n// More info and help: https://docs.n8n.io/nodes/n8n-nodes-base.function\n\n// Loop over inputs and add a new field called 'myNewField' to the JSON of each one\nc_id = items[0].json.headers['x-adobesign-clientid'];\n\nfor (item of items) {\n  item.json.myNewField = 1;\n  item.json.clientID = c_id;\n}\n\nreturn items;"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      },
+      {
+        "name": "POST",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          -540,
+          -160
+        ],
+        "webhookId": "dfe2a7a8-c0f7-41e1-9bf7-15e2b6e98741",
+        "parameters": {
+          "path": "test1",
+          "options": {},
+          "httpMethod": "POST",
+          "responseMode": "responseNode"
+        },
+        "typeVersion": 1,
+        "id": "e1db906fe818ea74"
+      },
+      {
+        "name": "reg-GET",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          -540,
+          20
+        ],
+        "webhookId": "5356a36b-1090-4470-ad87-7cfdb6c18daf",
+        "parameters": {
+          "path": "test1",
+          "options": {},
+          "responseMode": "responseNode"
+        },
+        "typeVersion": 1,
+        "id": "71b5b3710b8b6597"
+      },
+      {
+        "name": "webhook-response",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "position": [
+          -100,
+          -80
+        ],
+        "parameters": {
+          "options": {
+            "responseHeaders": {
+              "entries": [
+                {
+                  "name": "x-adobesign-clientid",
+                  "value": "={{$node[\"Function\"].json[\"clientID\"]}}"
+                }
+              ]
+            }
+          }
+        },
+        "typeVersion": 1,
+        "id": "f2f9ee34a314fba1"
+      },
+      {
+        "name": "SetWebhookData",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          60,
+          -80
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "webhookData",
+                "value": "={{ $item(\"0\").$node[\"webhook-response\"].json[\"body\"] }}"
+              },
+              {
+                "name": "agreement_ID",
+                "value": "={{ $item(\"0\").$node[\"webhook-response\"].json[\"body\"][\"agreement\"][\"id\"] }}"
+              },
+              {
+                "name": "all_participants",
+                "value": "={{ $item(\"0\").$node[\"webhook-response\"].json[\"body\"][\"agreement\"][\"participantSetsInfo\"] }}"
+              },
+              {
+                "name": "agreement_status",
+                "value": "={{ $item(\"0\").$node[\"webhook-response\"].json[\"body\"][\"agreement\"][\"status\"] }}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "f4a06a3490a0f624"
+      }
+    ],
+    "connections": {
+      "POST": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "reg-GET": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function": {
+        "main": [
+          [
+            {
+              "node": "webhook-response",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "webhook-response": {
+        "main": [
+          [
+            {
+              "node": "SetWebhookData",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "2a5b6e7c727bfdd4",
+    "name": "Manage Adobe Acrobat e-signatures with webhooks",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

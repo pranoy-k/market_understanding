@@ -1,0 +1,263 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f10e365",
+  "workflow_id": "6f10e365",
+  "workflow_id_display": "6f10e365",
+  "workflow_name": "Send trending \"Show HN\" to email",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Get daily Hacker News highlights at 1pm. See top submissions, “Show HN” picks, and key info—summarized in a concise email delivered to your inbox.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, function, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML Extract Items",
+      "type": "Process"
+    },
+    {
+      "name": "HTML Extract Data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1050,
+          500
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"HTML Extract Data\"].data[\"title\"]}}",
+                "value2": "Show HN:",
+                "operation": "contains"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          1450,
+          400
+        ],
+        "parameters": {
+          "text": "={{$node[\"Function\"].data[\"emailText\"]}}",
+          "options": {},
+          "subject": "Trending Show HN"
+        },
+        "typeVersion": 1,
+        "id": "63035b782d75860b"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          250,
+          500
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 13
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          1250,
+          400
+        ],
+        "parameters": {
+          "functionCode": "let emailText = 'Currently trending \"Show HN\":\\n\\n';\n\nfor (let item of items) {\n  emailText += `${item.json.rank} ${item.json.title}\\n${item.json.url}\\n\\n`;\n}\n\nreturn [{json: {emailText}}]\n"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          500
+        ],
+        "parameters": {
+          "url": "https://news.ycombinator.com/",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "HTML Extract Items",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          650,
+          500
+        ],
+        "parameters": {
+          "options": {},
+          "extractionValues": {
+            "values": [
+              {
+                "key": "item",
+                "cssSelector": "tr.athing",
+                "returnArray": true,
+                "returnValue": "html"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "d4096216dff7ab8d"
+      },
+      {
+        "name": "HTML Extract Data",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          850,
+          500
+        ],
+        "parameters": {
+          "options": {},
+          "dataPropertyName": "item",
+          "extractionValues": {
+            "values": [
+              {
+                "key": "title",
+                "cssSelector": "a"
+              },
+              {
+                "key": "url",
+                "attribute": "href",
+                "cssSelector": "a.storylink",
+                "returnValue": "attribute"
+              },
+              {
+                "key": "rank",
+                "cssSelector": ".rank"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "e8035a6d8481a292"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract Items",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTML Extract Data": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTML Extract Items": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract Data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "b9dde2dca3eedaa4",
+    "name": "Send trending \"Show HN\" to email",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

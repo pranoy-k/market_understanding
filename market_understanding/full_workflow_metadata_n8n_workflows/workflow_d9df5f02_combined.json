@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9df5f02",
+  "workflow_id": "d9df5f02",
+  "workflow_id_display": "d9df5f02",
+  "workflow_name": "Create a Onfleet task for a new Shopify fulfilment",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "OpenAI, Shopify",
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate last-mile delivery by creating Onfleet tasks for new Shopify fulfillments. Streamline route planning and dispatch—customize and integrate easily!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with onfleet, shopifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Onfleet",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 13,
+    "name": "Creating an Onfleet Task for a new Shopify Fulfillment",
+    "nodes": [
+      {
+        "name": "Shopify Trigger",
+        "type": "n8n-nodes-base.shopifyTrigger",
+        "position": [
+          240,
+          440
+        ],
+        "webhookId": "576e8785-bbb4-426b-a922-da671efced68",
+        "parameters": {
+          "topic": "fulfillments/create"
+        },
+        "credentials": {
+          "shopifyApi": {
+            "id": "6",
+            "name": "Shopify account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet",
+        "type": "n8n-nodes-base.onfleet",
+        "position": [
+          460,
+          440
+        ],
+        "parameters": {
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Shopify Trigger": {
+        "main": [
+          [
+            {
+              "node": "Onfleet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

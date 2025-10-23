@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6f190fbb",
+  "workflow_id": "6f190fbb",
+  "workflow_id_display": "6f190fbb",
+  "workflow_name": "Create multiple JSON items from an array",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert arrays to multiple JSON items with the Function node. Streamline data processing and automate bulk tasks with precision. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function"
+  ],
+  "nodes": [
+    {
+      "name": "Mock Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create JSON-items",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Mock Data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          670,
+          371
+        ],
+        "parameters": {
+          "functionCode": "return [\n  {\n    json:[\n      {\n        id: 1,\n        name: \"Jim\"\n      }, \n      {\n        id: 2,\n        name: \"Stefan\"\n      },\n      {\n        id: 3,\n        name: \"Hans\"\n      }\n    ]\n  }\n];"
+        },
+        "typeVersion": 1,
+        "id": "a14d85beebd18300"
+      },
+      {
+        "name": "Create JSON-items",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          910,
+          371
+        ],
+        "parameters": {
+          "functionCode": "return items[0].json.map(item => { \n  return {\n    json: item,\n  }\n})\n"
+        },
+        "typeVersion": 1,
+        "id": "62237283ee7c19d6"
+      }
+    ],
+    "connections": {
+      "Mock Data": {
+        "main": [
+          [
+            {
+              "node": "Create JSON-items",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7c599c1009330eee",
+    "name": "Create multiple JSON items from an array",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "json"
+    ]
+  }
+}

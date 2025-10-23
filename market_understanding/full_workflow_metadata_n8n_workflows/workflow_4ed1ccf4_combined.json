@@ -1,0 +1,149 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ed1ccf4",
+  "workflow_id": "4ed1ccf4",
+  "workflow_id_display": "4ed1ccf4",
+  "workflow_name": "Automate Audio/Video Transcription in Any Language with the New ElevenLabs Model",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": "https://n8n.io/creators/phil/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Transform audio or video to text with ElevenLabs Scribe—fast, accurate, 99+ languages, easy n8n integration. Ideal for content, podcasts, subtitles & more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, readWriteFile"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Transcript1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Read/Write Files from Disk",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "c911aed9995230b93fd0d9bc41c258d697c2fe97a3bab8c02baf85963eeda618"
+    },
+    "nodes": [
+      {
+        "id": "fe599878-c955-4354-bbd0-a24fc1e3e933",
+        "name": "When clicking ‘Test workflow’",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          -340,
+          -40
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "e03c7cef-4897-4234-b285-7be69e3c970d",
+        "name": "Create Transcript1",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          100,
+          -40
+        ],
+        "parameters": {
+          "url": "https://api.elevenlabs.io/v1/speech-to-text",
+          "method": "POST",
+          "options": {},
+          "sendBody": true,
+          "contentType": "multipart-form-data",
+          "sendHeaders": true,
+          "authentication": "genericCredentialType",
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "file",
+                "parameterType": "formBinaryData",
+                "inputDataFieldName": "data"
+              },
+              {
+                "name": "model_id",
+                "value": "scribe_v1"
+              }
+            ]
+          },
+          "genericAuthType": "httpCustomAuth",
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "multipart/form-data"
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "httpCustomAuth": {
+            "id": "rDkSKjIA0mjmEv5k",
+            "name": "Eleven Labs"
+          }
+        },
+        "typeVersion": 4.2
+      },
+      {
+        "id": "ea48aabf-1d93-41b4-84a0-53115aba53b4",
+        "name": "Read/Write Files from Disk",
+        "type": "n8n-nodes-base.readWriteFile",
+        "position": [
+          -120,
+          -40
+        ],
+        "parameters": {
+          "options": {},
+          "fileSelector": "/files/tmp/tst1.mp4"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "pinData": {},
+    "connections": {
+      "Read/Write Files from Disk": {
+        "main": [
+          [
+            {
+              "node": "Create Transcript1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "node": "Read/Write Files from Disk",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "9d4d9c91346f26e8",
+    "name": "Automate Audio/Video Transcription in Any Language with the New ElevenLabs Model",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

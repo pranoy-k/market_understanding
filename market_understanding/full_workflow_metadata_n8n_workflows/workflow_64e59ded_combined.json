@@ -1,0 +1,97 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/64e59ded",
+  "workflow_id": "64e59ded",
+  "workflow_id_display": "64e59ded",
+  "workflow_name": "Send a message on Mattermost when you get a reply in Emelia",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically notify your team on Mattermost when a lead replies to campaign emails. Streamline lead follow-ups with this customizable workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, emeliaTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Emelia Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "message": "={{$json[\"contact\"][\"firstName\"]}} from {{$json[\"contact\"][\"company\"]}} has replied back to your campaign.",
+          "channelId": "qx9yo1i9z3bg5qcy5a1oxnh69c",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost Credentials"
+        },
+        "typeVersion": 1,
+        "id": "83ab5fd0ba394bde"
+      },
+      {
+        "name": "Emelia Trigger",
+        "type": "n8n-nodes-base.emeliaTrigger",
+        "position": [
+          450,
+          200
+        ],
+        "webhookId": "f53bc370-a8cb-4748-8f81-be7ae9b94972",
+        "parameters": {
+          "events": [
+            "replied"
+          ],
+          "campaignId": "6054d068b374b64365740101"
+        },
+        "credentials": {
+          "emeliaApi": "Emelia API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "b8faa20d64200626"
+      }
+    ],
+    "connections": {
+      "Emelia Trigger": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "6909abf1b7597518",
+    "name": "Send a message on Mattermost when you get a reply in Emelia",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

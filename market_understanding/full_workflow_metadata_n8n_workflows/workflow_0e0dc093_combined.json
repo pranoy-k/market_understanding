@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0e0dc093",
+  "workflow_id": "0e0dc093",
+  "workflow_id_display": "0e0dc093",
+  "workflow_name": "Receive updates when an event occurs in TheHive",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "1",
+  "tools_integrations": "Airtable, Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Airtable record capture, real-time Slack alerts, and Google Sheets logging to streamline your workflow and boost team productivity. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with theHiveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "TheHive Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "161",
+    "name": "Receive updates when an event occurs in TheHive",
+    "nodes": [
+      {
+        "name": "TheHive Trigger",
+        "type": "n8n-nodes-base.theHiveTrigger",
+        "position": [
+          690,
+          220
+        ],
+        "webhookId": "bef3fea8-2d68-43e8-9061-6c17c1059c86",
+        "parameters": {
+          "events": [
+            "*"
+          ]
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

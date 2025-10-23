@@ -1,0 +1,143 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ffacf50",
+  "workflow_id": "8ffacf50",
+  "workflow_id_display": "8ffacf50",
+  "workflow_name": "SmartLead Sheet Sync: Auto-Capture Client Inquiries to Airtable",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Airtable",
+  "tags": [
+    "api"
+  ],
+  "author_name": "David Olusola",
+  "author_profile_url": "https://n8n.io/creators/dae221/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily automate adding cleaned form leads to Airtable. Step-by-step guide covers setup, field mapping, API integration, and real-time testing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtable, code, stickyNote"
+  ],
+  "nodes": [
+    {
+      "name": "Parse + Clean Lead Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Form Submission Hook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "bdce0nHPmO7XTznp",
+    "meta": {
+      "instanceId": "2000c64071c20843606b95c63795bb0797c41036047055a6586498e855b96efc",
+      "templateCredsSetupCompleted": true
+    },
+    "name": "SmartLead Sheet Sync: Auto-Capture Client Inquiries to Airtable",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "b19aeac4-715b-44ea-9470-6bfac9db3dd7",
+        "name": "Sticky Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          -840,
+          160
+        ],
+        "parameters": {
+          "content": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "64282f86-0998-4d4b-b7c4-650a1e322de4",
+        "name": "Sticky Note1",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          -840,
+          260
+        ],
+        "parameters": {
+          "content": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "76147af0-fac5-4d1c-95b3-5317b7f44f16",
+        "name": "Form Submission Hook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          -660,
+          440
+        ],
+        "webhookId": "34e9fb3f-f6bd-4a44-bb58-6fe58ffe4a78",
+        "parameters": {},
+        "typeVersion": 2
+      },
+      {
+        "id": "36815153-cc90-4df3-ad47-f464482ee55e",
+        "name": "Parse + Clean Lead Data",
+        "type": "n8n-nodes-base.code",
+        "position": [
+          -340,
+          440
+        ],
+        "parameters": {},
+        "typeVersion": 2
+      },
+      {
+        "id": "dcfaf2cf-806a-4633-a128-5d885b16395f",
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          -80,
+          440
+        ],
+        "parameters": {},
+        "typeVersion": 2.1
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "69a0c778-ef58-45d2-b3a5-02ffcc769342",
+    "connections": {
+      "Form Submission Hook": {
+        "main": [
+          [
+            {
+              "node": "Parse + Clean Lead Data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Parse + Clean Lead Data": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

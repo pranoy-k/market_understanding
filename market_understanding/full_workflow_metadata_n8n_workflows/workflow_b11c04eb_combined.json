@@ -1,0 +1,169 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b11c04eb",
+  "workflow_id": "b11c04eb",
+  "workflow_id_display": "b11c04eb",
+  "workflow_name": "Manage transfers automatically in Wise",
+  "category": "Finance & Accounting",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Wise international payments: generate quotes, create and execute transfers, and get instant transfer details. Streamline your payment process now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with wise"
+  ],
+  "nodes": [
+    {
+      "name": "Wise",
+      "type": "Process"
+    },
+    {
+      "name": "Wise1",
+      "type": "Process"
+    },
+    {
+      "name": "Wise2",
+      "type": "Process"
+    },
+    {
+      "name": "Wise3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Wise",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          470,
+          320
+        ],
+        "parameters": {
+          "amount": 500,
+          "resource": "quote",
+          "operation": "create",
+          "profileId": 16138858,
+          "sourceCurrency": "EUR",
+          "targetCurrency": "EUR",
+          "targetAccountId": 147767974
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d7d4ad0be472574d"
+      },
+      {
+        "name": "Wise1",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          660,
+          320
+        ],
+        "parameters": {
+          "quoteId": "={{$json[\"id\"]}}",
+          "resource": "transfer",
+          "operation": "create",
+          "profileId": 16138858,
+          "targetAccountId": 147767974,
+          "additionalFields": {
+            "reference": "Thank you for the contribution"
+          }
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "0d10ff373fc7cf1f"
+      },
+      {
+        "name": "Wise2",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          870,
+          320
+        ],
+        "parameters": {
+          "resource": "transfer",
+          "operation": "execute",
+          "profileId": 16138858,
+          "transferId": "={{$json[\"id\"]}}"
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "14f7a7ba67b4b5c0"
+      },
+      {
+        "name": "Wise3",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          1070,
+          320
+        ],
+        "parameters": {
+          "resource": "transfer",
+          "transferId": "={{$node[\"Wise1\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "7261df6a692b1fb3"
+      }
+    ],
+    "connections": {
+      "Wise": {
+        "main": [
+          [
+            {
+              "node": "Wise1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise1": {
+        "main": [
+          [
+            {
+              "node": "Wise2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise2": {
+        "main": [
+          [
+            {
+              "node": "Wise3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c4390c55bc668262",
+    "name": "Manage transfers automatically in Wise",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

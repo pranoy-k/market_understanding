@@ -1,0 +1,346 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/70a4fbad",
+  "workflow_id": "70a4fbad",
+  "workflow_id_display": "70a4fbad",
+  "workflow_name": "Convert Documents to Markdown with MinerU API and GPT-4o-mini",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "API, OpenAI, PDF",
+  "tags": [
+    "api"
+  ],
+  "author_name": "AdrianWang",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert PDFs, Word docs, and PPTs to Markdown with advanced OCR and table recognition. Simple n8n setup—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mcpClientTool, agent, lmChatOpenAi"
+  ],
+  "nodes": [
+    {
+      "name": "When chat message received",
+      "type": "Trigger"
+    },
+    {
+      "name": "初始化files",
+      "type": "Data Processing"
+    },
+    {
+      "name": "添加文件路径到",
+      "type": "Data Processing"
+    },
+    {
+      "name": "OpenAI Chat Model",
+      "type": "Process"
+    },
+    {
+      "name": "MCP Client",
+      "type": "Process"
+    },
+    {
+      "name": "AI Agent",
+      "type": "Process"
+    },
+    {
+      "name": "文件保存到本地",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "DTa0EWl9cqgHmtr0",
+    "meta": {
+      "instanceId": "cb6f138be356037cca9c5015c01fbd380ee577d60f6a9a99c5f49d49b784b365"
+    },
+    "name": "Mineu MCP 对话流程展示",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "7c2da246-19a8-420f-8cd9-651e00937607",
+        "name": "If 还没遍历结束",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          220,
+          580
+        ],
+        "parameters": {
+          "options": {},
+          "conditions": {
+            "options": {
+              "version": 2,
+              "leftValue": "",
+              "caseSensitive": true,
+              "typeValidation": "strict"
+            },
+            "combinator": "or",
+            "conditions": [
+              {
+                "id": "4893fc89-9a8b-4f8d-8f11-3e937d6f8f3d",
+                "operator": {
+                  "type": "number",
+                  "operation": "lt"
+                },
+                "leftValue": "={{ $json.index }}",
+                "rightValue": "={{ $('When chat message received').item.binary.values().length}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 2.2
+      },
+      {
+        "id": "dae9bcd0-2b1e-4091-bbd4-591af5e26a95",
+        "name": "初始化files",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          0,
+          580
+        ],
+        "parameters": {
+          "options": {},
+          "assignments": {
+            "assignments": [
+              {
+                "id": "4ff468f4-ee0a-40c2-af55-43013882284c",
+                "name": "files",
+                "type": "array",
+                "value": "={{ [] }}"
+              },
+              {
+                "id": "7251c904-f32a-486f-9e41-77d76de784ae",
+                "name": "index",
+                "type": "number",
+                "value": 0
+              }
+            ]
+          },
+          "includeOtherFields": true
+        },
+        "typeVersion": 3.4
+      },
+      {
+        "id": "28758f62-e99d-4025-a487-0150ca60e2c7",
+        "name": "MCP Client",
+        "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+        "position": [
+          600,
+          400
+        ],
+        "parameters": {
+          "include": "selected",
+          "sseEndpoint": "http://127.0.0.1:8001/sse"
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "2e4a3ba3-a040-4a99-a71f-867c11255a58",
+        "name": "OpenAI Chat Model",
+        "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+        "position": [
+          460,
+          400
+        ],
+        "parameters": {
+          "model": {
+            "__rl": true,
+            "mode": "list",
+            "value": "gpt-4o-mini",
+            "cachedResultName": "gpt-4o-mini"
+          },
+          "options": {}
+        },
+        "credentials": {
+          "openAiApi": {
+            "id": "FQI5xJxXdkaGofLN",
+            "name": "ailab"
+          }
+        },
+        "typeVersion": 1.2
+      },
+      {
+        "id": "d2942fd4-d799-47e9-ac24-0eff094c27c2",
+        "name": "AI Agent",
+        "type": "@n8n/n8n-nodes-langchain.agent",
+        "position": [
+          440,
+          180
+        ],
+        "parameters": {
+          "text": "=\n---\n以下为用户的对话信息：\n{{ $('When chat message received').item.json.chatInput }}\n\n",
+          "options": {
+            "systemMessage": "=你是一个具备文件阅读能力的AI，用户如果请求对于文件进行处理，就请使用系统中已有的文档解析工具进行解析后，按照用户要求进行处理\n---\n下面为用户上传的文件列表：\n{{ $json.files }}"
+          },
+          "promptType": "define"
+        },
+        "typeVersion": 1.9
+      },
+      {
+        "id": "895ff140-8a3e-48af-b0bb-d23c8c8d119d",
+        "name": "When chat message received",
+        "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+        "position": [
+          -280,
+          580
+        ],
+        "webhookId": "a3b417ce-42b4-43c1-bc53-21bdeed75457",
+        "parameters": {
+          "options": {
+            "allowFileUploads": true,
+            "allowedFilesMimeTypes": "*"
+          }
+        },
+        "typeVersion": 1.1
+      },
+      {
+        "id": "1e410edb-5434-40ab-8cdd-2a25574fcccc",
+        "name": "添加文件路径到",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          820,
+          660
+        ],
+        "parameters": {
+          "options": {},
+          "assignments": {
+            "assignments": [
+              {
+                "id": "232ad617-f398-434f-b138-a76b0adbf55b",
+                "name": "files",
+                "type": "array",
+                "value": "={{ $json.files.append($json.fileName) }}"
+              },
+              {
+                "id": "765fde8c-6212-4a70-9e67-eb1dbb3a152c",
+                "name": "index",
+                "type": "number",
+                "value": "={{ $json.index + 1 }}"
+              }
+            ]
+          },
+          "includeOtherFields": true
+        },
+        "typeVersion": 3.4
+      },
+      {
+        "id": "ebdf5ef1-45f2-478e-abad-6235b260dee9",
+        "name": "文件保存到本地",
+        "type": "n8n-nodes-base.readWriteFile",
+        "position": [
+          520,
+          580
+        ],
+        "parameters": {
+          "options": {},
+          "fileName": "=/Users/adrianwang/Documents/ailab/minerU-mcp/downloads/file_{{$now.toMillis()}}.{{ $('When chat message received').item.binary.values()[$json.index].fileName.split('.').pop()}}",
+          "operation": "write",
+          "dataPropertyName": "=data{{ $json.index }}"
+        },
+        "notesInFlow": false,
+        "typeVersion": 1,
+        "alwaysOutputData": true
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "88a5af39-f11f-4dd1-a374-623a1d4c8f8d",
+    "connections": {
+      "MCP Client": {
+        "ai_tool": [
+          [
+            {
+              "node": "AI Agent",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "初始化files": {
+        "main": [
+          [
+            {
+              "node": "If 还没遍历结束",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenAI Chat Model": {
+        "ai_languageModel": [
+          [
+            {
+              "node": "AI Agent",
+              "type": "ai_languageModel",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "If 还没遍历结束": {
+        "main": [
+          [
+            {
+              "node": "文件保存到本地",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "AI Agent",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "文件保存到本地": {
+        "main": [
+          [
+            {
+              "node": "添加文件路径到",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "添加文件路径到": {
+        "main": [
+          [
+            {
+              "node": "If 还没遍历结束",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "When chat message received": {
+        "main": [
+          [
+            {
+              "node": "初始化files",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

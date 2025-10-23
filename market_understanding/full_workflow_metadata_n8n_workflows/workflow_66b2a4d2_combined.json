@@ -1,0 +1,137 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/66b2a4d2",
+  "workflow_id": "66b2a4d2",
+  "workflow_id_display": "66b2a4d2",
+  "workflow_name": "Add subscribed customers to Airtable automatically",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily sync new GetResponse subscribers to Airtable or your preferred CRM. Automate updates and keep your contact lists up-to-date. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, airtable, getResponseTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "GetResponse Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          1090,
+          340
+        ],
+        "parameters": {
+          "table": "Table 1",
+          "options": {},
+          "operation": "append",
+          "application": ""
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1,
+        "id": "d32657f7680d71f4"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          890,
+          340
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "Name",
+                "value": "={{$json[\"contact_name\"]}}"
+              },
+              {
+                "name": "Email",
+                "value": "={{$json[\"contact_email\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "GetResponse Trigger",
+        "type": "n8n-nodes-base.getResponseTrigger",
+        "position": [
+          690,
+          340
+        ],
+        "webhookId": "4bdfc1fa-44bc-4293-987c-fb512327e845",
+        "parameters": {
+          "events": [
+            "subscribe"
+          ],
+          "listIds": [
+            "qtPk7"
+          ],
+          "options": {}
+        },
+        "credentials": {
+          "getResponseApi": "GetResponse API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "2ab5e3a11e8e1cac"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "GetResponse Trigger": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c4c89883756f8b5f",
+    "name": "Add subscribed customers to Airtable automatically",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de0e2dfd",
+  "workflow_id": "de0e2dfd",
+  "workflow_id_display": "de0e2dfd",
+  "workflow_name": "Send daily weather updates via a push notification using the Pushcut node",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get personalized daily weather updates via push notifications. Stay effortlessly informed every day with seamless Pushcut integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with openWeatherMap, pushcut, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Pushcut",
+      "type": "Process"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "82",
+    "name": "Send daily weather updates via a push notification using the Pushcut node",
+    "nodes": [
+      {
+        "name": "Pushcut",
+        "type": "n8n-nodes-base.pushcut",
+        "position": [
+          1050,
+          420
+        ],
+        "parameters": {
+          "additionalFields": {
+            "text": "=Hey! The temperature outside is {{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}°C.",
+            "title": "Today's Weather Update"
+          },
+          "notificationName": "n8n"
+        },
+        "credentials": {
+          "pushcutApi": "Pushcut Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          850,
+          420
+        ],
+        "parameters": {
+          "cityName": "berlin"
+        },
+        "credentials": {
+          "openWeatherMapApi": "open-weather-map"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          650,
+          420
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 9
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Pushcut",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

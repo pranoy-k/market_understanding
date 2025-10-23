@@ -1,0 +1,205 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/cfcfe598",
+  "workflow_id": "cfcfe598",
+  "workflow_id_display": "cfcfe598",
+  "workflow_name": "Merge data for multiple executions",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "RSS",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly merge multiple RSS Feed Read executions into one unified dataset in n8n. Simplify data processing—learn more about this powerful workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, function, splitInBatches"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "RSS Feed Read",
+      "type": "Data Input"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          330
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Merge Data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          1230,
+          430
+        ],
+        "parameters": {
+          "functionCode": "const allData = []\n\nlet counter = 0;\ndo {\n  try {\n    const items = $items(\"RSS Feed Read\", 0, counter).map(item => item.json);\n    allData.push.apply(allData, items);\n  } catch (error) {\n    return [{json: {allData}}];  \n  }\n\n  counter++;\n} while(true);\n\n\n"
+        },
+        "typeVersion": 1,
+        "id": "cb3f9caf2cb43eed"
+      },
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          470,
+          330
+        ],
+        "parameters": {
+          "functionCode": "return [\n  {\n    json: {\n      url: 'https://medium.com/feed/n8n-io',\n    }\n  },\n  {\n    json: {\n      url: 'https://dev.to/feed/n8n',\n    }\n  }\n];"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      },
+      {
+        "name": "RSS Feed Read",
+        "type": "n8n-nodes-base.rssFeedRead",
+        "position": [
+          870,
+          330
+        ],
+        "parameters": {
+          "url": "={{$json[\"url\"]}}"
+        },
+        "typeVersion": 1,
+        "id": "2346a955e5fdbc84"
+      },
+      {
+        "name": "SplitInBatches",
+        "type": "n8n-nodes-base.splitInBatches",
+        "position": [
+          670,
+          330
+        ],
+        "parameters": {
+          "options": {},
+          "batchSize": 1
+        },
+        "typeVersion": 1,
+        "id": "4401baed7c080285"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1070,
+          520
+        ],
+        "parameters": {
+          "conditions": {
+            "boolean": [
+              {
+                "value1": true,
+                "value2": "={{$node[\"SplitInBatches\"].context[\"noItemsLeft\"]}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Merge Data",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function": {
+        "main": [
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "RSS Feed Read": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "SplitInBatches": {
+        "main": [
+          [
+            {
+              "node": "RSS Feed Read",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "03fea22931110252",
+    "name": "Merge data for multiple executions",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

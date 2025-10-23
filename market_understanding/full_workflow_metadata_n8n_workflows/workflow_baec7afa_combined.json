@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/baec7afa",
+  "workflow_id": "baec7afa",
+  "workflow_id_display": "baec7afa",
+  "workflow_name": "Receive updates when a billing plan is activated in PayPal",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "PayPal, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Connect Webflow form submissions to Slack for instant lead notifications. Automate updates, streamline management, and boost response times effortlessly.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with payPalTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "PayPal Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "46",
+    "name": "Receive updates when a billing plan is activated in PayPal",
+    "nodes": [
+      {
+        "name": "PayPal Trigger",
+        "type": "n8n-nodes-base.payPalTrigger",
+        "position": [
+          1130,
+          620
+        ],
+        "webhookId": "242a300e-b5a0-45a2-87bc-40def6fe56ef",
+        "parameters": {
+          "events": [
+            "BILLING.PLAN.ACTIVATED"
+          ]
+        },
+        "credentials": {
+          "payPalApi": "paypal"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

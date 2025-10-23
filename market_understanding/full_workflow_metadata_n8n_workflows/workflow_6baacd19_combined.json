@@ -1,0 +1,70 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6baacd19",
+  "workflow_id": "6baacd19",
+  "workflow_id_display": "6baacd19",
+  "workflow_name": "Receive updates when an email is bounced or opened",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead collection, data enrichment, instant emails, Slack alerts, and CRM updates. Boost accuracy and speed—discover the workflow benefits now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with postmarkTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Postmark Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "48",
+    "name": "Receive updates when an email is bounced or opened",
+    "nodes": [
+      {
+        "name": "Postmark Trigger",
+        "type": "n8n-nodes-base.postmarkTrigger",
+        "position": [
+          690,
+          260
+        ],
+        "webhookId": "1422ac7a-62ba-4f7c-8e22-4e8ecb4950ce",
+        "parameters": {
+          "events": [
+            "bounce",
+            "open"
+          ],
+          "includeContent": true
+        },
+        "credentials": {
+          "postmarkApi": "postmark"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Postmark Trigger": {
+        "main": [
+          []
+        ]
+      }
+    }
+  }
+}

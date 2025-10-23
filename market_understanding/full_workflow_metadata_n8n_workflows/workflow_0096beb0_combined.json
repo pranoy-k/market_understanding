@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0096beb0",
+  "workflow_id": "0096beb0",
+  "workflow_id_display": "0096beb0",
+  "workflow_name": "Receive updates for events in ClickUp",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead management—instantly collect leads, notify your sales team, and update Google Sheets in real time. Streamline your pipeline today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with clickUpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "ClickUp Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "110",
+    "name": "Receive updates for events in ClickUp",
+    "nodes": [
+      {
+        "name": "ClickUp Trigger",
+        "type": "n8n-nodes-base.clickUpTrigger",
+        "position": [
+          700,
+          250
+        ],
+        "parameters": {
+          "team": "",
+          "events": [
+            "*"
+          ],
+          "filters": {}
+        },
+        "credentials": {
+          "clickUpApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

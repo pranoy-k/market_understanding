@@ -1,0 +1,130 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f9184f5c",
+  "workflow_id": "f9184f5c",
+  "workflow_id_display": "f9184f5c",
+  "workflow_name": "Generate and queue factory sensor data in AMQP",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate sensor data generation for factory incident reporting. Learn how to set up real-time workflows and streamline operations with step-by-step guides.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, interval, amqp"
+  ],
+  "nodes": [
+    {
+      "name": "Interval",
+      "type": "Process"
+    },
+    {
+      "name": "AMQP Sender",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "167",
+    "name": "Smart Factory Data Generator",
+    "nodes": [
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "number": [],
+            "string": [
+              {
+                "name": "machine_id.name",
+                "value": "n8n_cr8"
+              },
+              {
+                "name": "temperature_celsius",
+                "value": "={{Math.floor(Math.random() * 100);}}"
+              },
+              {
+                "name": "machine_id.uptime",
+                "value": "={{Math.floor(Math.random() * 100);}}"
+              },
+              {
+                "name": "time_stamp",
+                "value": "={{Date.now();}}"
+              }
+            ],
+            "boolean": []
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Interval",
+        "type": "n8n-nodes-base.interval",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "AMQP Sender",
+        "type": "n8n-nodes-base.amqp",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "sink": "berlin_factory_01",
+          "options": {
+            "dataAsObject": true
+          }
+        },
+        "credentials": {
+          "amqp": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "AMQP Sender",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Interval": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8bae505d",
+  "workflow_id": "8bae505d",
+  "workflow_id_display": "8bae505d",
+  "workflow_name": "Get updates when a response is created in SurveyMonkey",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your SurveyMonkey integrations with our step-by-step companion workflow. Discover best practices and automate surveys efficiently—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with surveyMonkeyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "SurveyMonkey Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "SurveyMonkey Trigger",
+        "type": "n8n-nodes-base.surveyMonkeyTrigger",
+        "position": [
+          880,
+          390
+        ],
+        "webhookId": "52754661-725a-49e0-88fc-a8e5dbbea5a5",
+        "parameters": {
+          "event": "response_created",
+          "surveyIds": [
+            "288506979"
+          ],
+          "objectType": "survey",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "surveyMonkeyOAuth2Api": "surveymonkey_oauth"
+        },
+        "typeVersion": 1,
+        "id": "39e58d2e35e5384b"
+      }
+    ],
+    "connections": {},
+    "id": "15b6d8f0adf25706",
+    "name": "Get updates when a response is created in SurveyMonkey",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

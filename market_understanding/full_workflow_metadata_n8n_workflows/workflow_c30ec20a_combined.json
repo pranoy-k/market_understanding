@@ -1,0 +1,85 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c30ec20a",
+  "workflow_id": "c30ec20a",
+  "workflow_id_display": "c30ec20a",
+  "workflow_name": "Execute a job on Rundeck",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance Rundeck node documentation with automated workflows, streamlined data collection, and clear process visualization. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, rundeck"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Rundeck",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Rundeck",
+        "type": "n8n-nodes-base.rundeck",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "jobid": "f02c7661-6f75-4ffe-958c-c0ed5f9bc9e6"
+        },
+        "credentials": {
+          "rundeckApi": "rundeck_creds"
+        },
+        "typeVersion": 1,
+        "id": "22044ef3bfcb3cea"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Rundeck",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "1fe40261906f50d9",
+    "name": "Execute a job on Rundeck",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

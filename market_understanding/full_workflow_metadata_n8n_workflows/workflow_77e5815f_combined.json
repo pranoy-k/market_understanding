@@ -1,0 +1,127 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/77e5815f",
+  "workflow_id": "77e5815f",
+  "workflow_id_display": "77e5815f",
+  "workflow_name": "Insert data into a new row for a table in Coda",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Airtable, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily track Google Sheets updates, enrich data via APIs, get Slack alerts, and organize info in Airtable. Optimize your workflow today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, set, coda"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Coda",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "102",
+    "name": "Insert data into a new row for a table in Coda",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Coda",
+        "type": "n8n-nodes-base.coda",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "docId": "",
+          "options": {},
+          "tableId": ""
+        },
+        "credentials": {
+          "codaApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "Column 1",
+                "value": "This is column 1 data"
+              },
+              {
+                "name": "Column 2",
+                "value": "This is column 2 data"
+              },
+              {
+                "name": "Column 3",
+                "value": "This is column 3 data"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Coda",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

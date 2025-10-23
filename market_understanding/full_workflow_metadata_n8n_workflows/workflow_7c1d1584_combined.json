@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7c1d1584",
+  "workflow_id": "7c1d1584",
+  "workflow_id_display": "7c1d1584",
+  "workflow_name": "Send a Discord message when a certain Onfleet event happens",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Discord",
+  "tags": [
+    "discord"
+  ],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Connect Onfleet's powerful delivery software with Discord for real-time event alerts. Streamline route planning and updates—learn how to integrate now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with discord, onfleetTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 10,
+    "name": "Onfleet --> Discord",
+    "nodes": [
+      {
+        "name": "Discord",
+        "type": "n8n-nodes-base.discord",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet Trigger",
+        "type": "n8n-nodes-base.onfleetTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "webhookId": "58f99515-a1d6-4c56-8ecc-e9d921fa3276",
+        "parameters": {
+          "triggerOn": "taskStarted",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Onfleet Trigger": {
+        "main": [
+          [
+            {
+              "node": "Discord",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

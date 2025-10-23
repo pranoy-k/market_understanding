@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6de0c61c",
+  "workflow_id": "6de0c61c",
+  "workflow_id_display": "6de0c61c",
+  "workflow_name": "Create a new DigitalOcean Droplet",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create and customize DigitalOcean Droplets with your Personal Access Token. Choose size, set options, and launch in minutes. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "url": "https://api.digitalocean.com/v2/droplets",
+          "options": {
+            "bodyContentType": "json"
+          },
+          "requestMethod": "POST",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "name",
+                "value": "API-creation-test"
+              },
+              {
+                "name": "region",
+                "value": "blr1"
+              },
+              {
+                "name": "size",
+                "value": "s-1vcpu-1gb"
+              },
+              {
+                "name": "image",
+                "value": "ubuntu-20-04-x64"
+              }
+            ]
+          },
+          "headerParametersUi": {
+            "parameter": [
+              {
+                "name": "Authorization",
+                "value": "Bearer {your_personal_access_token}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      }
+    ],
+    "connections": {},
+    "id": "582c464f3028a9ee",
+    "name": "Create a new DigitalOcean Droplet",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

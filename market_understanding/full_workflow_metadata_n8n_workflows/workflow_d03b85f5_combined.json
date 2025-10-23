@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d03b85f5",
+  "workflow_id": "d03b85f5",
+  "workflow_id_display": "d03b85f5",
+  "workflow_name": "Promote new Shopify products on Twitter and Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Shopify, Telegram, Twitter",
+  "tags": [
+    "twitter",
+    "telegram"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly promote new Shopify products on Twitter & Telegram. Boost sales, drive traffic, and automate social sharing. Learn more about this workflow!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with twitter, telegram, shopifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "product created",
+      "type": "Trigger"
+    },
+    {
+      "name": "Twitter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Twitter",
+        "type": "n8n-nodes-base.twitter",
+        "position": [
+          720,
+          -220
+        ],
+        "parameters": {
+          "text": "=Hey there, my design is now on a new product ✨\nVisit my {{$json[\"vendor\"]}} shop to get this cool{{$json[\"title\"]}} (and check out more {{$json[\"product_type\"]}}) 🛍️",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "twitterOAuth1Api": "twitter"
+        },
+        "typeVersion": 1,
+        "id": "ba8d46a4c1fd19a6"
+      },
+      {
+        "name": "Telegram",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          720,
+          -20
+        ],
+        "parameters": {
+          "text": "=Hey there, my design is now on a new product!\nVisit my {{$json[\"vendor\"]}} shop to get this cool{{$json[\"title\"]}} (and check out more {{$json[\"product_type\"]}})",
+          "chatId": "123456",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": "telegram_habot"
+        },
+        "typeVersion": 1,
+        "id": "27021a2de10ce73a"
+      },
+      {
+        "name": "product created",
+        "type": "n8n-nodes-base.shopifyTrigger",
+        "position": [
+          540,
+          -110
+        ],
+        "webhookId": "2a7e0e50-8f09-4a2b-bf54-a849a6ac4fe0",
+        "parameters": {
+          "topic": "products/create"
+        },
+        "credentials": {
+          "shopifyApi": "shopify_nodeqa"
+        },
+        "typeVersion": 1,
+        "id": "2f933153ba928773"
+      }
+    ],
+    "connections": {
+      "product created": {
+        "main": [
+          [
+            {
+              "node": "Twitter",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Telegram",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "b92fb7b61f8484ee",
+    "name": "Promote new Shopify products on Twitter and Telegram",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "twitter",
+      "telegram"
+    ]
+  }
+}

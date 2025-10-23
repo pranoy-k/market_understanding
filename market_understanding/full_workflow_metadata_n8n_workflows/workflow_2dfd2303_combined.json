@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2dfd2303",
+  "workflow_id": "2dfd2303",
+  "workflow_id_display": "2dfd2303",
+  "workflow_name": "Create, update and get a task in Microsoft To Do",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage tasks in Microsoft To Do—create, update, and retrieve with ease. Organize priorities and boost productivity. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, microsoftToDo"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Microsoft To Do",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft To Do1",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft To Do2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Microsoft To Do",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "title": "Document Microsoft To Do node",
+          "operation": "create",
+          "taskListId": "AQMkADAwATNiZmYAZC0zOTkAMy02ZWZjLTAwAi0wMAoALgAAA3i1fHMTrftIhQBzhywL64UBAFB0wRiJW1FJmmlvlAkVFQA-AAACARIAAAA=",
+          "additionalFields": {
+            "importance": "high"
+          }
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "0b206b60d96e6269"
+      },
+      {
+        "name": "Microsoft To Do1",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "taskId": "={{$json[\"id\"]}}",
+          "operation": "update",
+          "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}",
+          "updateFields": {
+            "status": "inProgress"
+          }
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "bc430010d5d05339"
+      },
+      {
+        "name": "Microsoft To Do2",
+        "type": "n8n-nodes-base.microsoftToDo",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "taskId": "={{$json[\"id\"]}}",
+          "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}"
+        },
+        "credentials": {
+          "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "9ff35c10f5841660"
+      }
+    ],
+    "connections": {
+      "Microsoft To Do": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Microsoft To Do1": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft To Do",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "b73db905b7c251c0",
+    "name": "Create, update and get a task in Microsoft To Do",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

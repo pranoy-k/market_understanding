@@ -1,0 +1,173 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/de579142",
+  "workflow_id": "de579142",
+  "workflow_id_display": "de579142",
+  "workflow_name": "Get all the contacts from GetResponse and update them",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline customer support with AI-driven email monitoring, automated ticket creation, Slack notifications, and smart workflows for faster issue resolution.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, noOp, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "GetResponse",
+      "type": "Process"
+    },
+    {
+      "name": "GetResponse1",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "116",
+    "name": "Get all the contacts from GetResponse and update them",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "GetResponse",
+        "type": "n8n-nodes-base.getResponse",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll",
+          "returnAll": true
+        },
+        "credentials": {
+          "getResponseApi": "getresponse-api"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"GetResponse\"].json[\"campaign\"][\"name\"]}}",
+                "value2": "n8n",
+                "operation": "notEqual"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "GetResponse1",
+        "type": "n8n-nodes-base.getResponse",
+        "position": [
+          860,
+          200
+        ],
+        "parameters": {
+          "contactId": "={{$node[\"IF\"].json[\"contactId\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "campaignId": "WRVXO"
+          }
+        },
+        "credentials": {
+          "getResponseApi": "getresponse-api"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          860,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "GetResponse1",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "GetResponse": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "GetResponse",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

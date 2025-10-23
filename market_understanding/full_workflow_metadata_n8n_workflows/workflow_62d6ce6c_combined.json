@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62d6ce6c",
+  "workflow_id": "62d6ce6c",
+  "workflow_id_display": "62d6ce6c",
+  "workflow_name": "Receive the weather information of any city",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture with seamless Typeform to HubSpot integration. Boost insights, enable real-time alerts, and streamline your sales workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with set, openWeatherMap, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "OpenWeatherMap",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "158",
+    "name": "Receive the weather information of any city",
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          580,
+          340
+        ],
+        "webhookId": "45690b6a-2b01-472d-8839-5e83a74858e5",
+        "parameters": {
+          "path": "45690b6a-2b01-472d-8839-5e83a74858e5",
+          "options": {},
+          "responseData": "allEntries",
+          "responseMode": "lastNode"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "OpenWeatherMap",
+        "type": "n8n-nodes-base.openWeatherMap",
+        "position": [
+          770,
+          340
+        ],
+        "parameters": {
+          "cityName": "={{$node[\"Webhook\"].json[\"query\"][\"city\"]}}"
+        },
+        "credentials": {
+          "openWeatherMapApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          970,
+          340
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "temp",
+                "value": "={{$node[\"OpenWeatherMap\"].json[\"main\"][\"temp\"]}}"
+              },
+              {
+                "name": "description",
+                "value": "={{$node[\"OpenWeatherMap\"].json[\"weather\"][0][\"description\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "OpenWeatherMap",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "OpenWeatherMap": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

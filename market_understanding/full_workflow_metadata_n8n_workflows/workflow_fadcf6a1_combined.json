@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fadcf6a1",
+  "workflow_id": "fadcf6a1",
+  "workflow_id_display": "fadcf6a1",
+  "workflow_name": "Receive updates when a new list is created in Affinity",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline lead management: capture, validate, and assign leads to your CRM automatically. Improve sales efficiency and never miss an opportunity. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with affinityTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Affinity-Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "63",
+    "name": "Receive updates when a new list is created in Affinity",
+    "nodes": [
+      {
+        "name": "Affinity-Trigger",
+        "type": "n8n-nodes-base.affinityTrigger",
+        "position": [
+          690,
+          260
+        ],
+        "webhookId": "e9d2b8f0-9fa9-43c2-b45d-dc96c869bd20",
+        "parameters": {
+          "events": [
+            "list.created"
+          ]
+        },
+        "credentials": {
+          "affinityApi": "affinity"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

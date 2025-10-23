@@ -1,0 +1,123 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/95d609ae",
+  "workflow_id": "95d609ae",
+  "workflow_id_display": "95d609ae",
+  "workflow_name": "Create Monday item on a new Mautic contact",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically add new Mautic contacts to your Monday.com board. Syncs names and emails by default—customize to send even more fields. Learn how!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mondayCom, stickyNote, mauticTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On created contact",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create item",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
+    },
+    "nodes": [
+      {
+        "id": "4da16859-d29b-4eb7-90a4-3904c1bfff68",
+        "name": "Create item",
+        "type": "n8n-nodes-base.mondayCom",
+        "position": [
+          620,
+          240
+        ],
+        "parameters": {
+          "name": "={{$node[\"On created contact\"].json[\"mautic.lead_post_save_new\"][0][\"contact\"][\"fields\"][\"core\"][\"firstname\"][\"value\"]}} {{$node[\"On created contact\"].json[\"mautic.lead_post_save_new\"][0][\"contact\"][\"fields\"][\"core\"][\"lastname\"][\"value\"]}}",
+          "boardId": "3461879764",
+          "groupId": "topics",
+          "resource": "boardItem",
+          "additionalFields": {
+            "columnValues": "={\n  \"email\": {\n    \"email\": \"{{$node[\"On created contact\"].json[\"mautic.lead_post_save_new\"][0][\"contact\"][\"fields\"][\"core\"][\"email\"][\"value\"]}}\",\n    \"text\" : \"{{$node[\"On created contact\"].json[\"mautic.lead_post_save_new\"][0][\"contact\"][\"fields\"][\"core\"][\"email\"][\"value\"]}}\"\n  }\n}"
+          }
+        },
+        "credentials": {
+          "mondayComApi": {
+            "id": "26",
+            "name": "[UPDATE ME]"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "88655428-439e-4324-8d8f-865625650c7a",
+        "name": "On created contact",
+        "type": "n8n-nodes-base.mauticTrigger",
+        "position": [
+          400,
+          240
+        ],
+        "webhookId": "8c80d932-4c37-4ebe-92ad-e456249db2c5",
+        "parameters": {
+          "events": [
+            "mautic.lead_post_save_new"
+          ]
+        },
+        "credentials": {
+          "mauticApi": {
+            "id": "34",
+            "name": "[UPDATE ME]"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "bff916e6-2ddc-456b-a8fa-c8841f47abed",
+        "name": "Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          620,
+          400
+        ],
+        "parameters": {
+          "width": 301,
+          "height": 309,
+          "content": "## How to add more fields to Monday\nBy default, this `Create item` node only adds the name of the item and the email to Monday (provided that there is an email field already created).\n\nIdeally, you would like to share more fields than just the name and email. Refer to the [community discussion here](https://community.n8n.io/t/change-multiple-column-values-with-monday/4262) for more information on how to set up more column values in the `Create item` Monday node."
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On created contact": {
+        "main": [
+          [
+            {
+              "node": "Create item",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fbfbd31fd783c37c",
+    "name": "Create Monday item on a new Mautic contact",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

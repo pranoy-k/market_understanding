@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e66ba461",
+  "workflow_id": "e66ba461",
+  "workflow_id_display": "e66ba461",
+  "workflow_name": "Get the job details using the Cortex node",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract, enrich, and track leads from multiple CRMs. Get real-time Slack alerts, sync with Google Sheets, and ensure data privacy. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, cortex"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Cortex",
+      "type": "Process"
+    },
+    {
+      "name": "Cortex1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "160",
+    "name": "Analyze a URL and get the job details using the Cortex node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          370,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Cortex",
+        "type": "n8n-nodes-base.cortex",
+        "position": [
+          570,
+          220
+        ],
+        "parameters": {
+          "analyzer": "f4abc1b633b80f45af165970793fd4fd::Abuse_Finder_3_0",
+          "observableType": "url",
+          "observableValue": "https://n8n.io",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "cortexApi": "cortex"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Cortex1",
+        "type": "n8n-nodes-base.cortex",
+        "position": [
+          770,
+          220
+        ],
+        "parameters": {
+          "jobId": "={{$node[\"Cortex\"].json[\"_id\"]}}",
+          "resource": "job"
+        },
+        "credentials": {
+          "cortexApi": "cortex"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Cortex": {
+        "main": [
+          [
+            {
+              "node": "Cortex1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Cortex",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

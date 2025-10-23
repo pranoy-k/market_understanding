@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/5da8b2c0",
+  "workflow_id": "5da8b2c0",
+  "workflow_id_display": "5da8b2c0",
+  "workflow_name": "Receive updates when a new contact is added in Keap",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Simplify Keap automation with this workflow companion. Enjoy easy integration, real-time updates, and streamlined contact management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with keapTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Keap Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Keap Trigger",
+        "type": "n8n-nodes-base.keapTrigger",
+        "position": [
+          440,
+          320
+        ],
+        "webhookId": "1df33e6f-7e5c-4d70-b90d-d5666aaf63e7",
+        "parameters": {
+          "eventId": "contact.add"
+        },
+        "credentials": {
+          "keapOAuth2Api": "keap_creds"
+        },
+        "typeVersion": 1,
+        "id": "e0d0c616cf164d98"
+      }
+    ],
+    "connections": {},
+    "id": "acbcb1ed1700c303",
+    "name": "Receive updates when a new contact is added in Keap",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

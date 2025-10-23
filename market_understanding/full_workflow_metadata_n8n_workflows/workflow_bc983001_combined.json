@@ -1,0 +1,119 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc983001",
+  "workflow_id": "bc983001",
+  "workflow_id_display": "bc983001",
+  "workflow_name": "Sending SMS to users",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Gmail, Google Sheets, LinkedIn, SMS",
+  "tags": [
+    "google",
+    "linkedin🤖 gmail"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "1",
+    "name": "Send SMS to numbers stored in Airtable with Twilio",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "table": "",
+          "operation": "list",
+          "application": "",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "airtableApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "to": "={{$node[\"Airtable\"].json[\"fields\"][\"Number\"]}}",
+          "from": "",
+          "message": "=Hello, {{$node[\"Airtable\"].json[\"fields\"][\"Name\"]}}!\nSending this SMS from n8n!"
+        },
+        "credentials": {
+          "twilioApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Twilio": {
+        "main": [
+          []
+        ]
+      },
+      "Airtable": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

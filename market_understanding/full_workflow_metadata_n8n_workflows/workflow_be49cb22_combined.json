@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/be49cb22",
+  "workflow_id": "be49cb22",
+  "workflow_id_display": "be49cb22",
+  "workflow_name": "Create a short URL and get the statistics of the URL",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Slack, Twitter",
+  "tags": [
+    "twitter",
+    "slack",
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Twitter monitoring: track mentions, analyze sentiment, get Slack alerts, and save insights to Google Sheets—easy, real-time social listening.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, yourls"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Yourls",
+      "type": "Process"
+    },
+    {
+      "name": "Yourls1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "167",
+    "name": "Create a short URL and get the statistics of the URL",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          370,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Yourls",
+        "type": "n8n-nodes-base.yourls",
+        "position": [
+          570,
+          300
+        ],
+        "parameters": {
+          "url": "https://medium.com/n8n-io/sending-sms-the-low-code-way-with-airtable-twilio-programmable-sms-and-n8n-90dbde74223e?source=---------4-----------------------",
+          "additionalFields": {
+            "title": "Sending SMS the Low-Code Way with Airtable, Twilio Programmable SMS, and n8n"
+          }
+        },
+        "credentials": {
+          "yourlsApi": "Yourls"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Yourls1",
+        "type": "n8n-nodes-base.yourls",
+        "position": [
+          770,
+          300
+        ],
+        "parameters": {
+          "shortUrl": "={{$node[\"Yourls\"].json[\"shorturl\"]}}",
+          "operation": "stats"
+        },
+        "credentials": {
+          "yourlsApi": "Yourls"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Yourls": {
+        "main": [
+          [
+            {
+              "node": "Yourls1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Yourls",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

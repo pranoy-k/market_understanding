@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f22e7725",
+  "workflow_id": "f22e7725",
+  "workflow_id_display": "f22e7725",
+  "workflow_name": "Get details of a GitLab repository",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Airtable, Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "sshaligr",
+  "author_profile_url": "https://n8n.io/creators/shraddha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate Airtable, Slack, and Google Sheets with real-time alerts, summary reports, and hourly updates. Boost team productivity—learn more now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, gitlab"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Gitlab",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "7",
+    "name": "6",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          440,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Gitlab",
+        "type": "n8n-nodes-base.gitlab",
+        "position": [
+          780,
+          320
+        ],
+        "parameters": {
+          "owner": "shaligramshraddha",
+          "resource": "repository",
+          "operation": "get",
+          "repository": "trial"
+        },
+        "credentials": {
+          "gitlabApi": "new"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Gitlab",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/528127cf",
+  "workflow_id": "528127cf",
+  "workflow_id_display": "528127cf",
+  "workflow_name": "Receive updates on a new invoice via Invoice Ninja",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a companion workflow for Invoice Ninja Trigger node docs—get practical tips, visual guides, and streamline your invoice management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with invoiceNinjaTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Invoice Ninja Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Invoice Ninja Trigger",
+        "type": "n8n-nodes-base.invoiceNinjaTrigger",
+        "position": [
+          890,
+          400
+        ],
+        "webhookId": "97be21b3-ebf5-48cf-b291-5d954657a544",
+        "parameters": {
+          "event": "create_invoice"
+        },
+        "credentials": {
+          "invoiceNinjaApi": "invoice_ninja_creds"
+        },
+        "typeVersion": 1,
+        "id": "9ae7d653726f7b62"
+      }
+    ],
+    "connections": {},
+    "id": "402c24942bbfb168",
+    "name": "Receive updates on a new invoice via Invoice Ninja",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/406a2276",
+  "workflow_id": "406a2276",
+  "workflow_id_display": "406a2276",
+  "workflow_name": "Insert a document in MongoDB",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "MongoDB, PDF",
+  "tags": [
+    "mongodb"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline MongoDB node tasks in n8n with practical examples and ready-to-use snippets. Simplify learning, testing, and workflow automation—discover more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, set, mongoDb"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "MongoDB",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          220,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          420,
+          320
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "my_key",
+                "value": "my_value"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "MongoDB",
+        "type": "n8n-nodes-base.mongoDb",
+        "position": [
+          620,
+          320
+        ],
+        "parameters": {
+          "fields": "my_key",
+          "operation": "insert",
+          "collection": "n8n-collection"
+        },
+        "credentials": {
+          "mongoDb": "mongodb_credentials"
+        },
+        "typeVersion": 1,
+        "id": "1635c0bec09d8ee7"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "MongoDB",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "9ea4488777cf93a9",
+    "name": "Insert a document in MongoDB",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "mongodb"
+    ]
+  }
+}

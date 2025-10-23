@@ -1,0 +1,240 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9b9aa251",
+  "workflow_id": "9b9aa251",
+  "workflow_id_display": "9b9aa251",
+  "workflow_name": "Message on website content changed in Telegram",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "7",
+  "tools_integrations": "Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "MC Naveen",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly monitor website changes and competitor blog updates with automated web crawling and instant Telegram alerts. Learn more about this workflow!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with httpRequest, noOp, telegram"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTTP Request1",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          520,
+          440
+        ],
+        "parameters": {
+          "url": "https://news.ycombinator.com/",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Wait",
+        "type": "n8n-nodes-base.wait",
+        "position": [
+          680,
+          440
+        ],
+        "webhookId": "e5f84b2f-2568-4f5b-a72b-ed54838c768b",
+        "parameters": {
+          "unit": "minutes",
+          "amount": 5
+        },
+        "typeVersion": 1,
+        "id": "c1099d7686e1b371"
+      },
+      {
+        "name": "HTTP Request1",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          880,
+          440
+        ],
+        "parameters": {
+          "url": "https://news.ycombinator.com/",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1,
+        "id": "6cc25edc8046aeb7"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1100,
+          440
+        ],
+        "parameters": {
+          "conditions": {
+            "boolean": [
+              {
+                "value1": "={{$node[\"HTTP Request\"].json[\"data\"]}} {{$node[\"HTTP Request\"].json[\"data\"]}}",
+                "value2": "="
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          320,
+          440
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyX",
+                "unit": "minutes",
+                "value": 5
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Telegram1",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          1320,
+          520
+        ],
+        "parameters": {
+          "text": "Something got changed",
+          "chatId": "1234",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": {
+            "id": "4",
+            "name": "n8n test bot"
+          }
+        },
+        "typeVersion": 1,
+        "id": "e20f157cb1c2f80c"
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          1320,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "f4b80294a7bd7d23"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Telegram1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wait": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Wait",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request1": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fd4f02628fc4e386",
+    "name": "Message on website content changed in Telegram",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "telegram"
+    ]
+  }
+}

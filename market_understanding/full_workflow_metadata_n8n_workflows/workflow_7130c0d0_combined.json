@@ -1,0 +1,154 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7130c0d0",
+  "workflow_id": "7130c0d0",
+  "workflow_id_display": "7130c0d0",
+  "workflow_name": "Receive a Mattermost message when new record gets added to Notion",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant Mattermost notifications when new meeting notes are added to Notion. Filter by team, automate updates, and customize for any channel.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, notionTrigger, mattermost"
+  ],
+  "nodes": [
+    {
+      "name": "Notion Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Notion Trigger",
+        "type": "n8n-nodes-base.notionTrigger",
+        "position": [
+          270,
+          350
+        ],
+        "parameters": {
+          "event": "pageAddedToDatabase",
+          "pollTimes": {
+            "item": [
+              {
+                "mode": "everyHour"
+              }
+            ]
+          },
+          "databaseId": "6ea34c0d-67e8-4614-ad5c-68c665a34763"
+        },
+        "credentials": {
+          "notionApi": ""
+        },
+        "typeVersion": 1,
+        "id": "5b9f6e1c59a40fee"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          470,
+          350
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json[\"Team\"]}}",
+                "value2": "Marketing"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          670,
+          250
+        ],
+        "parameters": {
+          "message": "=New meeting notes were added.\nAgenda: {{$json[\"Agenda\"]}}\nDate: {{$json[\"Date\"][\"start\"]}}\nLink: https://notion.so/{{$json[\"id\"].replace(/-/g,'')}}",
+          "channelId": "64cae1bh6pggtcupfd4ztwby4r",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": ""
+        },
+        "typeVersion": 1,
+        "id": "83ab5fd0ba394bde"
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          668,
+          495
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "f4b80294a7bd7d23"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Notion Trigger": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "1f61266708c1f725",
+    "name": "Receive a Mattermost message when new record gets added to Notion",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

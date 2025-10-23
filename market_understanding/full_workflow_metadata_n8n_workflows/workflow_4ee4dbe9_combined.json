@@ -1,0 +1,124 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ee4dbe9",
+  "workflow_id": "4ee4dbe9",
+  "workflow_id_display": "4ee4dbe9",
+  "workflow_name": "Create a document in outline for each new GitLab release",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "PDF",
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically generate Outline documents for each new GitLab release. Streamline release documentation and keep your team organized and up to date. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, gitlabTrigger, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Gitlab Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Gitlab Trigger",
+        "type": "n8n-nodes-base.gitlabTrigger",
+        "position": [
+          240,
+          140
+        ],
+        "parameters": {
+          "owner": "tennox",
+          "events": [
+            "tag_push"
+          ],
+          "repository": "ci-test"
+        },
+        "typeVersion": 1,
+        "id": "e56a884a8923be5a"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          820,
+          40
+        ],
+        "parameters": {
+          "url": "https://app.getoutline.com/api/documents.create",
+          "options": {},
+          "requestMethod": "POST",
+          "authentication": "headerAuth",
+          "jsonParameters": true,
+          "bodyParametersJson": "={ \n\"collectionId\": \"PLACEHOLDER\",\n\"parentDocumentId\": \"PLACEHOLDER\",\n\"publish\": true, \n\"title\": {{JSON.stringify(\"Release \" + $json.body.name)}},\n\"text\": {{JSON.stringify($json.body.description + '\\n\\n\\\\\\n[More info](' + $json.body.url + ')')}}\n}"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          540,
+          140
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json.body.object_kind}}",
+                "value2": "release"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Gitlab Trigger": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "30dcb3fdfb87c192",
+    "name": "Create a document in outline for each new GitLab release",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

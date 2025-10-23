@@ -1,0 +1,178 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f925900c",
+  "workflow_id": "f925900c",
+  "workflow_id_display": "f925900c",
+  "workflow_name": "Send location updates of the ISS every minute to a queue in AWS SQS",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Track the ISS in real time with automated minute-by-minute updates sent to AWS SQS. Streamline data collection and distribution—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, awsSqs"
+  ],
+  "nodes": [
+    {
+      "name": "AWS SQS",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "AWS SQS",
+        "type": "n8n-nodes-base.awsSqs",
+        "position": [
+          1050,
+          360
+        ],
+        "parameters": {
+          "queue": "",
+          "options": {}
+        },
+        "credentials": {
+          "aws": "AWS SQS Credentials"
+        },
+        "typeVersion": 1,
+        "id": "b655bd4b1fd83405"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          360
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "Latitude",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"latitude\"]}}"
+              },
+              {
+                "name": "Longitude",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"longitude\"]}}"
+              },
+              {
+                "name": "Timestamp",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"timestamp\"]}}"
+              }
+            ],
+            "string": [
+              {
+                "name": "Name",
+                "value": "={{$node[\"HTTP Request\"].json[\"0\"][\"name\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          650,
+          360
+        ],
+        "parameters": {
+          "url": "https://api.wheretheiss.at/v1/satellites/25544/positions",
+          "options": {},
+          "queryParametersUi": {
+            "parameter": [
+              {
+                "name": "timestamps",
+                "value": "={{Date.now();}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          450,
+          360
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyMinute"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "AWS SQS",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "a5c17121bd205a66",
+    "name": "Send location updates of the ISS every minute to a queue in AWS SQS",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

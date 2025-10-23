@@ -1,0 +1,167 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bc5f3871",
+  "workflow_id": "bc5f3871",
+  "workflow_id_display": "bc5f3871",
+  "workflow_name": "Get Slack notifications when new product published on WooCommerce",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically notify your Slack channel when new WooCommerce products go live. Real-time alerts, easy setup, and customizable for your site. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with if, wooCommerceTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "On product creation",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 1016,
+    "name": "Woocommerce to slack: notify new product created",
+    "tags": [
+      {
+        "id": "5",
+        "name": "FVF",
+        "createdAt": "2022-07-30T07:43:44.795Z",
+        "updatedAt": "2022-07-30T07:43:44.795Z"
+      }
+    ],
+    "nodes": [
+      {
+        "name": "If URL has /product/",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          640,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json[\"permalink\"]}}",
+                "value2": "https://[add-your-url-here]/product/",
+                "operation": "startsWith"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Send message to slack",
+        "type": "n8n-nodes-base.slack",
+        "position": [
+          920,
+          260
+        ],
+        "parameters": {
+          "text": ":new: A new product has been added! :new:",
+          "channel": "newproducts",
+          "blocksUi": {
+            "blocksValues": []
+          },
+          "attachments": [
+            {
+              "color": "#66FF00",
+              "fields": {
+                "item": [
+                  {
+                    "short": false,
+                    "title": "Name",
+                    "value": "={{$json[\"name\"]}}"
+                  },
+                  {
+                    "short": true,
+                    "title": "Price",
+                    "value": "={{$json[\"regular_price\"]}}"
+                  },
+                  {
+                    "short": true,
+                    "title": "Sale Price",
+                    "value": "={{$json[\"sale_price\"]}}"
+                  },
+                  {
+                    "short": false,
+                    "title": "Link",
+                    "value": "={{$json[\"permalink\"]}}"
+                  }
+                ]
+              },
+              "footer": "=Added: {{$json[\"date_created\"]}}"
+            }
+          ],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "slackApi": {
+            "id": "21",
+            "name": "FVF bot"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "On product creation",
+        "type": "n8n-nodes-base.wooCommerceTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "webhookId": "267c4855-6227-4d33-867e-74600097473e",
+        "parameters": {
+          "event": "product.created"
+        },
+        "credentials": {
+          "wooCommerceApi": {
+            "id": "20",
+            "name": "WooCommerce account FVF"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "On product creation": {
+        "main": [
+          [
+            {
+              "node": "If URL has /product/",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "If URL has /product/": {
+        "main": [
+          [
+            {
+              "node": "Send message to slack",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

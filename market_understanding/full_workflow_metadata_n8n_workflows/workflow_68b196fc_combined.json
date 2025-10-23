@@ -1,0 +1,184 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/68b196fc",
+  "workflow_id": "68b196fc",
+  "workflow_id_display": "68b196fc",
+  "workflow_name": "Create an invoice in Google Sheets based on Typeform submission",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "alex",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly turn Typeform submissions into Google Sheets invoices. Automate data collection and invoicing for a streamlined workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, typeformTrigger, slack"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Typeform Trigger",
+        "type": "n8n-nodes-base.typeformTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "formId": "UXuY0A"
+        },
+        "credentials": {
+          "typeformApi": ""
+        },
+        "typeVersion": 1,
+        "id": "85d46f6f3ec7fc4e"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "number": [
+              {
+                "value1": "={{$node[\"Google Sheets\"].data[\"Severity\"]}}",
+                "value2": 7,
+                "operation": "larger"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "range": "Problems!A:D",
+          "sheetId": "17fzSFl1BZ1njldTfp5lvh8HtS0-pNXH66b7qGZIiGRU",
+          "operation": "append"
+        },
+        "credentials": {
+          "googleApi": ""
+        },
+        "typeVersion": 1,
+        "id": "0d5471e1b433e442"
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          1050,
+          400
+        ],
+        "parameters": {
+          "text": "=Email: {{$node[\"IF\"].data[\"Email\"]}}\nName: {{$node[\"IF\"].data[\"Name\"]}}\nSeverity: {{$node[\"IF\"].data[\"Severity\"]}}\n\nProblem:\n{{$node[\"IF\"].data[\"Problem\"]}}",
+          "subject": "User Reported Problem",
+          "toEmail": "",
+          "fromEmail": ""
+        },
+        "credentials": {
+          "smtp": ""
+        },
+        "typeVersion": 1,
+        "id": "63035b782d75860b"
+      },
+      {
+        "name": "Slack",
+        "type": "n8n-nodes-base.slack",
+        "position": [
+          1050,
+          200
+        ],
+        "parameters": {
+          "text": "=Email: {{$node[\"IF\"].data[\"Email\"]}}\nName: {{$node[\"IF\"].data[\"Name\"]}}\nSeverity: {{$node[\"IF\"].data[\"Severity\"]}}\n\nProblem:\n{{$node[\"IF\"].data[\"Problem\"]}}",
+          "channel": "problems",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "slackApi": ""
+        },
+        "typeVersion": 1,
+        "id": "890078bbe936cf82"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Slack",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Typeform Trigger": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "ca60e925e7b45ad5",
+    "name": "Create an invoice in Google Sheets based on Typeform submission",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/002b02c4",
+  "workflow_id": "002b02c4",
+  "workflow_id_display": "002b02c4",
+  "workflow_name": "Send SMS alerts based on database queries (Twilio and Postgres)",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "PostgreSQL, SMS",
+  "tags": [
+    "postgres"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically detect outliers in your Postgres database and send SMS alerts with n8n. Real-time monitoring and easy Twilio integration. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with set, postgres, twilio"
+  ],
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Postgres",
+      "type": "Data Output"
+    },
+    {
+      "name": "Postgres1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "34",
+    "name": "Monitoring and alerting",
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          250,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Postgres",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          450,
+          200
+        ],
+        "parameters": {
+          "query": "SELECT * FROM n8n WHERE value > 70 AND notification = false;",
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "postgres": "Postgres"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "to": "",
+          "from": "",
+          "message": "=🚨 The Sensor ({{$node[\"Postgres\"].json[\"sensor_id\"]}}) showed a reading of {{$node[\"Postgres\"].json[\"value\"]}}."
+        },
+        "credentials": {
+          "twilioApi": "Twilio"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "id",
+                "value": "={{$node[\"Postgres\"].json[\"id\"]}}"
+              }
+            ],
+            "boolean": [
+              {
+                "name": "notification",
+                "value": true
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Postgres1",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          1050,
+          200
+        ],
+        "parameters": {
+          "table": "n8n",
+          "columns": "notification",
+          "operation": "update"
+        },
+        "credentials": {
+          "postgres": "Postgres"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Postgres1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Postgres",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Twilio": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Postgres": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

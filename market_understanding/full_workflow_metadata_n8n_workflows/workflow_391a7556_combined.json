@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/391a7556",
+  "workflow_id": "391a7556",
+  "workflow_id_display": "391a7556",
+  "workflow_name": "Create an event in PostHog when a request is made to a webhook URL",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Google Analytics, Webhook",
+  "tags": [
+    "webhook"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track real-time events in PostHog with this n8n workflow. Instantly log data via webhook for seamless analytics automation. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with postHog, webhook"
+  ],
+  "nodes": [
+    {
+      "name": "PostHog",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "PostHog",
+        "type": "n8n-nodes-base.postHog",
+        "position": [
+          640,
+          280
+        ],
+        "parameters": {
+          "eventName": "={{$json[\"query\"][\"event\"]}}",
+          "distinctId": "n8n",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "postHogApi": "PostHog Credentials"
+        },
+        "typeVersion": 1,
+        "id": "aed289adef4bff4c"
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          440,
+          280
+        ],
+        "webhookId": "f6d0071e-3cf9-49fd-8bbd-afdbea6b0c67",
+        "parameters": {
+          "path": "f6d0071e-3cf9-49fd-8bbd-afdbea6b0c67",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "PostHog",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "47954e4a4ae91c92",
+    "name": "Create an event in PostHog when a request is made to a webhook URL",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "webhook"
+    ]
+  }
+}

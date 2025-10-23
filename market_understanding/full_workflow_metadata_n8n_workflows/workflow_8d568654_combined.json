@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8d568654",
+  "workflow_id": "8d568654",
+  "workflow_id_display": "8d568654",
+  "workflow_name": "Sum or aggregate a column of spreadsheet or table data",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Excel, Google Sheets, PostgreSQL",
+  "tags": [
+    "google",
+    "postgres"
+  ],
+  "author_name": "Max Tkacz",
+  "author_profile_url": "https://n8n.io/creators/maxt/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sum numeric data from Airtable, Google Sheets, Postgres, and more—no credentials needed. Customizable JavaScript for easy workflow use.",
+  "key_benefits": [
+    "Data integration",
+    "Integration with manualTrigger, function"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mock data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Summing function",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          220,
+          80
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Mock data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          420,
+          80
+        ],
+        "parameters": {
+          "functionCode": "// Code here will run only once, no matter how many input items there are.\n// More info and help: https://docs.n8n.io/nodes/n8n-nodes-base.function\n\n\nreturn [ { json: { amount_USD: 50 } }, { json: { amount_USD: 20 } }, { json: { amount_USD: 60 } } ];"
+        },
+        "typeVersion": 1,
+        "id": "887bb6cb02a6cc07"
+      },
+      {
+        "name": "Summing function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          660,
+          80
+        ],
+        "parameters": {
+          "functionCode": "// Code here will run only once, no matter how many input items there are.\n// More info and help: https://docs.n8n.io/nodes/n8n-nodes-base.function\n\n//Setup an empty variable to hold the count\nlet total = 0;\n\n//Loop over the incoming items of data\nfor (item of items) {\n  //For each item of data, add the amount_USD to our total counter\n  total += item.json.amount_USD;\n}\n\n//Returns a well formed JSON object with just the total_value . You can either add more data to this returned object OR use the set node afterwards to do it in a no-code way.\nreturn [ { json: { total_value: total } } ];"
+        },
+        "typeVersion": 1,
+        "id": "35ef55a13a33182c"
+      }
+    ],
+    "connections": {
+      "Mock data": {
+        "main": [
+          [
+            {
+              "node": "Summing function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Mock data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "da47ba6634fcfa2d",
+    "name": "Sum or aggregate a column of spreadsheet or table data",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google",
+      "postgres"
+    ]
+  }
+}

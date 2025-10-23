@@ -1,0 +1,191 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4ac7877a",
+  "workflow_id": "4ac7877a",
+  "workflow_id_display": "4ac7877a",
+  "workflow_name": "Generate and Content From Google Sheets to X with GPT-4",
+  "category": "Marketing & Sales",
+  "difficulty": "⚡ Intermediate",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, OpenAI",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Subham SIngh",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 AI Content Generation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate social media content creation with AI! Effortlessly generate, schedule, and track posts across platforms—save time and boost engagement. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, twitter, openAi"
+  ],
+  "nodes": [
+    {
+      "name": "Generate Post with OpenAI",
+      "type": "Process"
+    },
+    {
+      "name": "Get Content Ideas",
+      "type": "Data Output"
+    },
+    {
+      "name": "Update Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Post to Twitter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Get Content Ideas",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          200,
+          300
+        ],
+        "parameters": {
+          "range": "Sheet1!A:C",
+          "sheetId": "YOUR_GOOGLE_SHEET_ID"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "YOUR_GOOGLE_SHEETS_CREDENTIALS"
+        },
+        "typeVersion": 1,
+        "id": "ed074504b5dd3aff"
+      },
+      {
+        "name": "Generate Post with OpenAI",
+        "type": "n8n-nodes-base.openAi",
+        "position": [
+          500,
+          300
+        ],
+        "parameters": {
+          "model": "gpt-4",
+          "prompt": "Create a social media post for {{$node[\"Get Content Ideas\"].json[\"Platform\"]}} based on this idea: {{$node[\"Get Content Ideas\"].json[\"Idea\"]}}. Keep it engaging and concise."
+        },
+        "credentials": {
+          "openAIApi": "YOUR_OPENAI_CREDENTIALS"
+        },
+        "typeVersion": 1,
+        "id": "42eb0c56b624fa74"
+      },
+      {
+        "name": "Check Platform",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          800,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "{{$node[\"Get Content Ideas\"].json[\"Platform\"]}}",
+                "value2": "Twitter",
+                "operation": "equal"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "82970b730f77a53a"
+      },
+      {
+        "name": "Post to Twitter",
+        "type": "n8n-nodes-base.twitter",
+        "position": [
+          1000,
+          200
+        ],
+        "parameters": {
+          "text": "{{$node[\"Generate Post with OpenAI\"].json[\"text\"]}}"
+        },
+        "credentials": {
+          "twitterOAuth1Api": "YOUR_TWITTER_CREDENTIALS"
+        },
+        "typeVersion": 1,
+        "id": "c5456e67f2ca359e"
+      },
+      {
+        "name": "Update Google Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          1200,
+          300
+        ],
+        "parameters": {
+          "range": "Sheet1!D:F",
+          "values": "Posted,{{$node[\"Generate Post with OpenAI\"].json[\"text\"]}},{{Date.now()}}",
+          "sheetId": "YOUR_GOOGLE_SHEET_ID",
+          "updateOperation": "append"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "YOUR_GOOGLE_SHEETS_CREDENTIALS"
+        },
+        "typeVersion": 1,
+        "id": "42dc451ccfbadbfe"
+      }
+    ],
+    "connections": {
+      "Check Platform": {
+        "main": [
+          [
+            {
+              "node": "Post to Twitter",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Post to Twitter": {
+        "main": [
+          [
+            {
+              "node": "Update Google Sheet",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Get Content Ideas": {
+        "main": [
+          [
+            {
+              "node": "Generate Post with OpenAI",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Generate Post with OpenAI": {
+        "main": [
+          [
+            {
+              "node": "Check Platform",
+              "type": "main"
+            }
+          ]
+        ]
+      }
+    },
+    "id": "adafe4133489552a",
+    "name": "Generate and Content From Google Sheets to X with GPT-4",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

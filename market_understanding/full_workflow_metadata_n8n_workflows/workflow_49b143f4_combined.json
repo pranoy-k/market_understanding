@@ -1,0 +1,150 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/49b143f4",
+  "workflow_id": "49b143f4",
+  "workflow_id_display": "49b143f4",
+  "workflow_name": "Create, update, and get an issue on Taiga",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Capture and qualify leads instantly with automated routing, real-time CRM updates, and personalized emails. Streamline your sales process and boost conversions.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, taiga"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Taiga",
+      "type": "Process"
+    },
+    {
+      "name": "Taiga1",
+      "type": "Process"
+    },
+    {
+      "name": "Taiga2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "69",
+    "name": "Create, update, and get an issue on Taiga",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          430,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Taiga",
+        "type": "n8n-nodes-base.taiga",
+        "position": [
+          630,
+          260
+        ],
+        "parameters": {
+          "subject": "n8n-docs",
+          "projectId": 385605,
+          "additionalFields": {}
+        },
+        "credentials": {
+          "taigaCloudApi": "taiga"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Taiga1",
+        "type": "n8n-nodes-base.taiga",
+        "position": [
+          830,
+          260
+        ],
+        "parameters": {
+          "issueId": "={{$node[\"Taiga\"].json[\"id\"]}}",
+          "operation": "update",
+          "projectId": "={{$node[\"Taiga\"].json[\"project\"]}}",
+          "updateFields": {
+            "description": "This ticket is for the documentation for the Taiga node"
+          }
+        },
+        "credentials": {
+          "taigaCloudApi": "taiga"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Taiga2",
+        "type": "n8n-nodes-base.taiga",
+        "position": [
+          1030,
+          260
+        ],
+        "parameters": {
+          "issueId": "={{$node[\"Taiga\"].json[\"id\"]}}",
+          "operation": "get"
+        },
+        "credentials": {
+          "taigaCloudApi": "taiga"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Taiga": {
+        "main": [
+          [
+            {
+              "node": "Taiga1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Taiga1": {
+        "main": [
+          [
+            {
+              "node": "Taiga2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Taiga",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/da6572c1",
+  "workflow_id": "da6572c1",
+  "workflow_id_display": "da6572c1",
+  "workflow_name": "Send Github notifications to Discord Webhook",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "6",
+  "tools_integrations": "API, Discord, GitHub, Webhook",
+  "tags": [
+    "discord",
+    "webhook"
+  ],
+  "author_name": "rangelstoilov",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow receives webhooks from external services and instantly sends formatted notifications to your team communication channels. It acts as a real-time alert system, keeping your team informed of important events, system status changes, or customer actions as they happen.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    },
+    {
+      "name": "@Get Date 1 min ago",
+      "type": "Data Processing"
+    },
+    {
+      "name": "@Get Issue",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "@Get Issue",
+        "type": "n8n-nodes-base.httpRequest",
+        "maxTries": 3,
+        "position": [
+          1050,
+          590
+        ],
+        "parameters": {
+          "url": "https://api.github.com/notifications",
+          "options": {},
+          "authentication": "basicAuth",
+          "queryParametersUi": {
+            "parameter": [
+              {
+                "name": "since",
+                "value": "={{$node[\"@Get Date 1 min ago\"].json[\"since\"]}}"
+              }
+            ]
+          },
+          "headerParametersUi": {
+            "parameter": [
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "httpBasicAuth": "Github Auth"
+        },
+        "retryOnFail": true,
+        "typeVersion": 1,
+        "id": "677b240c0f42ebb2"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          710,
+          590
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyX",
+                "unit": "minutes",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Discord",
+        "type": "n8n-nodes-base.discord",
+        "position": [
+          1610,
+          580
+        ],
+        "parameters": {
+          "text": "=Notifications In last minutes: <@userIdForTagging>\n{{$node[\"Function\"].json[\"reportMessage\"]}}"
+        },
+        "typeVersion": 1,
+        "id": "99f1baad5089a603"
+      },
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          1230,
+          590
+        ],
+        "parameters": {
+          "functionCode": "const newItems = [];\n\nfor (const item of items[0].json) {\n     newItems.push(`- [${item.reason}] => ${item.subject.title} @ ${item.subject.url.replace('api.','').replace('/repos','')}`);\n  }\n\nreturn [{json: {reportMessage: `${newItems.join('\\r\\n')}`, hasNotifications: items[0].json.length > 0}}];\n"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1400,
+          590
+        ],
+        "parameters": {
+          "conditions": {
+            "boolean": [
+              {
+                "value1": "={{$node[\"Function\"].json[\"hasNotifications\"]}}",
+                "value2": true
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "@Get Date 1 min ago",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          860,
+          590
+        ],
+        "parameters": {
+          "functionCode": "const date = new Date(new Date().setMinutes(new Date().getMinutes() - (1))).toISOString()\nreturn [{json: {since: date}}];"
+        },
+        "typeVersion": 1,
+        "id": "a330c1b115c04e0b"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Discord",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "@Get Date 1 min ago",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Function": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "@Get Issue": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "@Get Date 1 min ago": {
+        "main": [
+          [
+            {
+              "node": "@Get Issue",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "ca4ad4409a7a649f",
+    "name": "Send Github notifications to Discord Webhook",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "discord",
+      "webhook"
+    ]
+  }
+}

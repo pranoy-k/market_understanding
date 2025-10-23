@@ -1,0 +1,125 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8be2d0d3",
+  "workflow_id": "8be2d0d3",
+  "workflow_id_display": "8be2d0d3",
+  "workflow_name": "Get all the stories and publish them in Storyblok",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "slack",
+    "google"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate form responses, personalized emails, real-time Slack alerts, and follow-ups—all managed in Google Sheets. Learn more today!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, storyblok"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Storyblok",
+      "type": "Process"
+    },
+    {
+      "name": "Storyblok1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "110",
+    "name": "Get all the stories starting with `release` and publish them",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Storyblok",
+        "type": "n8n-nodes-base.storyblok",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "space": 96940,
+          "source": "managementApi",
+          "filters": {
+            "starts_with": "release"
+          },
+          "operation": "getAll"
+        },
+        "credentials": {
+          "storyblokManagementApi": "storyblok-tanay"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Storyblok1",
+        "type": "n8n-nodes-base.storyblok",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "space": "={{$node[\"Storyblok\"].parameter[\"space\"]}}",
+          "source": "managementApi",
+          "options": {},
+          "storyId": "={{$node[\"Storyblok\"].json[\"id\"]}}",
+          "operation": "publish"
+        },
+        "credentials": {
+          "storyblokManagementApi": "storyblok-tanay"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Storyblok": {
+        "main": [
+          [
+            {
+              "node": "Storyblok1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Storyblok",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

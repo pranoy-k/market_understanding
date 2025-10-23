@@ -1,0 +1,195 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/396d62ac",
+  "workflow_id": "396d62ac",
+  "workflow_id_display": "396d62ac",
+  "workflow_name": "MCP AI Agent Google Calendar - Create, Update & Manage Events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Amanda Benks",
+  "author_profile_url": "https://n8n.io/creators/amanda/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage your Google Calendar with an AI-powered agent—create, update, and check events using natural language. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleCalendarTool, mcpTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "MCP Server Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Event with Attendee",
+      "type": "Process"
+    },
+    {
+      "name": "Create Event",
+      "type": "Process"
+    },
+    {
+      "name": "Get Events",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Event",
+      "type": "Process"
+    },
+    {
+      "name": "Update Event",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "9np0mcrtxQ8Zk9fQ",
+    "meta": {
+      "instanceId": "6a52f06a38696cfa8d3a5b70f84891fab02c428a5c2d448dcef39b1f17adf12b",
+      "templateCredsSetupCompleted": true
+    },
+    "name": "MCP Google Calendar",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "9d5a8ad9-68ec-4bcb-928e-d016b78c58ec",
+        "name": "MCP Server Trigger",
+        "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+        "position": [
+          80,
+          -60
+        ],
+        "webhookId": "23a95c27-5a91-49b1-8d99-1f64dfe04b2d",
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "e9b03b81-c28a-4fd0-b8ff-f514c82449da",
+        "name": "Create Event with Attendee",
+        "type": "n8n-nodes-base.googleCalendarTool",
+        "position": [
+          480,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1.3
+      },
+      {
+        "id": "ba53e659-005f-48a2-ac83-c263e2f85bdb",
+        "name": "Create Event",
+        "type": "n8n-nodes-base.googleCalendarTool",
+        "position": [
+          360,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1.3
+      },
+      {
+        "id": "a65c0783-9be7-498d-80b2-be6a81bfe81f",
+        "name": "Get Events",
+        "type": "n8n-nodes-base.googleCalendarTool",
+        "position": [
+          240,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1.3
+      },
+      {
+        "id": "06ad460f-b6a8-44be-8c5c-68ac0370771e",
+        "name": "Delete Event",
+        "type": "n8n-nodes-base.googleCalendarTool",
+        "position": [
+          120,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1.3
+      },
+      {
+        "id": "d0afcce9-0cee-4b74-9424-a94de98e78dd",
+        "name": "Update Event",
+        "type": "n8n-nodes-base.googleCalendarTool",
+        "position": [
+          0,
+          220
+        ],
+        "parameters": {},
+        "typeVersion": 1.3
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "ac760115-997f-4a45-a76a-f3aeb544f1f5",
+    "connections": {
+      "Get Events": {
+        "ai_tool": [
+          [
+            {
+              "node": "MCP Server Trigger",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create Event": {
+        "ai_tool": [
+          [
+            {
+              "node": "MCP Server Trigger",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Delete Event": {
+        "ai_tool": [
+          [
+            {
+              "node": "MCP Server Trigger",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Update Event": {
+        "ai_tool": [
+          [
+            {
+              "node": "MCP Server Trigger",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create Event with Attendee": {
+        "ai_tool": [
+          [
+            {
+              "node": "MCP Server Trigger",
+              "type": "ai_tool",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

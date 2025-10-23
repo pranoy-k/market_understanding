@@ -1,0 +1,88 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37e9b713",
+  "workflow_id": "37e9b713",
+  "workflow_id_display": "37e9b713",
+  "workflow_name": "Create an alert on SIGNL4",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate SIGNL4 alerts and real-time team notifications. Streamline incident management and ensure urgent events never go unnoticed—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, signl4"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "SIGNL4",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "SIGNL4",
+        "type": "n8n-nodes-base.signl4",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "message": "This is a test alert sent from n8n to SIGNL4",
+          "additionalFields": {
+            "title": "Sample Title"
+          }
+        },
+        "credentials": {
+          "signl4Api": "Signl4 Team Secret"
+        },
+        "typeVersion": 1,
+        "id": "1674bd81e5566974"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "SIGNL4",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "37e4c9f080af725f",
+    "name": "Create an alert on SIGNL4",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

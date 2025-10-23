@@ -1,0 +1,93 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/911639d6",
+  "workflow_id": "911639d6",
+  "workflow_id_display": "911639d6",
+  "workflow_name": "Receive updates on form submission in Mautic and send SMS notification",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Google Sheets, OpenAI, SMS, Slack, Twitter",
+  "tags": [
+    "google",
+    "twitter",
+    "slack🤖 openai"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates your Twitter presence using AI to generate engaging content, monitor mentions, and interact with your audience. It can create tweets based on trending topics, respond to mentions intelligently, and analyze engagement metrics to optimize your social media strategy.",
+  "key_benefits": [
+    "Communication automation"
+  ],
+  "nodes": [
+    {
+      "name": "Mautic Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "OpenAI API",
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "13",
+    "name": "Receive updates when a form is submitted in Mautic, and send a confirmation SMS",
+    "nodes": [
+      {
+        "name": "Mautic Trigger",
+        "type": "n8n-nodes-base.mauticTrigger",
+        "position": [
+          510,
+          300
+        ],
+        "webhookId": "9dce2b84-33fe-4816-ae4b-301c208b5384",
+        "parameters": {
+          "events": [
+            "mautic.form_on_submit"
+          ]
+        },
+        "credentials": {
+          "mauticApi": "mautic"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "to": "={{$node[\"Mautic Trigger\"].json[\"mautic.form_on_submit\"][0][\"submission\"][\"results\"][\"phone_number\"]}}",
+          "from": "1234",
+          "message": "=Hey, {{$node[\"Mautic Trigger\"].json[\"mautic.form_on_submit\"][0][\"submission\"][\"results\"][\"first_name\"]}} 👋\nThank you for signing up for the Webinar - Getting Started with n8n. The webinar will start at 1800 CEST on 31st October 2020.\nSee you there!"
+        },
+        "credentials": {
+          "twilioApi": "twilio"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Mautic Trigger": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

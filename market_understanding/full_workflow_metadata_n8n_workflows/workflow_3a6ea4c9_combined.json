@@ -1,0 +1,205 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3a6ea4c9",
+  "workflow_id": "3a6ea4c9",
+  "workflow_id_display": "3a6ea4c9",
+  "workflow_name": "Bulk Emails with personalized attachment",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "CSV, Email",
+  "tags": [
+    "csv"
+  ],
+  "author_name": "Bhavabhuthi",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly send personalized emails with attachments. Upload a CSV to automate accurate, efficient email delivery to each recipient. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "SplitInBatches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Read Binary File1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 1,
+    "name": "My workflow",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          320,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          1520,
+          300
+        ],
+        "parameters": {
+          "options": {
+            "allowUnauthorizedCerts": true
+          },
+          "subject": "Certificate For Course",
+          "toEmail": "={{$node[\"SplitInBatches\"].json[\"email\"]}}",
+          "fromEmail": "bhavabhuthi@riseup.net",
+          "attachments": "data"
+        },
+        "credentials": {
+          "smtp": {
+            "id": "1",
+            "name": "SMTP account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Read Binary File",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          560,
+          300
+        ],
+        "parameters": {
+          "filePath": "/home/shashikanth/Documents/Cert-Gen-Test/data.csv",
+          "dataPropertyName": "csv"
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": false
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          840,
+          300
+        ],
+        "parameters": {
+          "options": {
+            "headerRow": true
+          },
+          "binaryPropertyName": "csv"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "SplitInBatches",
+        "type": "n8n-nodes-base.splitInBatches",
+        "position": [
+          1080,
+          300
+        ],
+        "parameters": {
+          "options": {
+            "reset": false
+          },
+          "batchSize": 5
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Read Binary File1",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          1300,
+          300
+        ],
+        "parameters": {
+          "filePath": "=/home/shashikanth/Documents/Cert-Gen-Test/generator-output/{{$json[\"name\"]}}.png"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "SplitInBatches": {
+        "main": [
+          [
+            {
+              "node": "Read Binary File1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read Binary File": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File": {
+        "main": [
+          [
+            {
+              "node": "SplitInBatches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read Binary File1": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Read Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

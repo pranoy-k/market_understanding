@@ -1,0 +1,155 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a7740fb1",
+  "workflow_id": "a7740fb1",
+  "workflow_id_display": "a7740fb1",
+  "workflow_name": "Create, update, and get an incident on PagerDuty",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate lead capture, validate emails, trigger welcome messages, sync with Google Sheets, and get real-time Slack alerts. Streamline your workflow now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, pagerDuty"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "PagerDuty",
+      "type": "Process"
+    },
+    {
+      "name": "PagerDuty2",
+      "type": "Process"
+    },
+    {
+      "name": "PagerDuty1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "158",
+    "name": "Create, update, and get an incident on PagerDuty",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          240,
+          260
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "PagerDuty",
+        "type": "n8n-nodes-base.pagerDuty",
+        "position": [
+          440,
+          260
+        ],
+        "parameters": {
+          "email": "",
+          "title": "Firewall on Fire",
+          "serviceId": "",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "pagerDutyApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "PagerDuty2",
+        "type": "n8n-nodes-base.pagerDuty",
+        "position": [
+          840,
+          260
+        ],
+        "parameters": {
+          "operation": "get",
+          "incidentId": "={{$node[\"PagerDuty1\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "pagerDutyApi": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "PagerDuty1",
+        "type": "n8n-nodes-base.pagerDuty",
+        "position": [
+          640,
+          260
+        ],
+        "parameters": {
+          "email": "={{$node[\"PagerDuty\"].parameter[\"email\"]}}",
+          "operation": "update",
+          "incidentId": "={{$node[\"PagerDuty\"].json[\"id\"]}}",
+          "updateFields": {
+            "title": "Firewalls on Fire"
+          }
+        },
+        "credentials": {
+          "pagerDutyApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "PagerDuty": {
+        "main": [
+          [
+            {
+              "node": "PagerDuty1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "PagerDuty1": {
+        "main": [
+          [
+            {
+              "node": "PagerDuty2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "PagerDuty",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

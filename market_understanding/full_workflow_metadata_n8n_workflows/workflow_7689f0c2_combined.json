@@ -1,0 +1,175 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7689f0c2",
+  "workflow_id": "7689f0c2",
+  "workflow_id_display": "7689f0c2",
+  "workflow_name": "Extract and store text from chat images using AWS S3",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "AWS, Airtable, Telegram",
+  "tags": [
+    "telegram"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Extract text from Telegram images, upload to AWS S3, and organize results in Airtable. Automate image-to-text workflows. Learn more here!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with awsS3, telegramTrigger, awsTextract"
+  ],
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "AWS Textract",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "AWS Textract",
+        "type": "n8n-nodes-base.awsTextract",
+        "position": [
+          700,
+          340
+        ],
+        "parameters": {},
+        "credentials": {
+          "aws": {
+            "id": "9",
+            "name": "aws"
+          }
+        },
+        "typeVersion": 1,
+        "id": "2a9fec80a01c2045"
+      },
+      {
+        "name": "Telegram Trigger",
+        "type": "n8n-nodes-base.telegramTrigger",
+        "position": [
+          520,
+          220
+        ],
+        "webhookId": "12345",
+        "parameters": {
+          "updates": [
+            "*"
+          ],
+          "additionalFields": {
+            "download": true,
+            "imageSize": "medium"
+          }
+        },
+        "credentials": {
+          "telegramApi": {
+            "id": "49",
+            "name": "Telegram mybot"
+          }
+        },
+        "typeVersion": 1,
+        "id": "ef3715e99a8e8e4b"
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          880,
+          340
+        ],
+        "parameters": {
+          "table": "receipts",
+          "options": {},
+          "operation": "append",
+          "application": "qwertz",
+          "addAllFields": false
+        },
+        "credentials": {
+          "airtableApi": {
+            "id": "6",
+            "name": "airtable_nodeqa"
+          }
+        },
+        "typeVersion": 1,
+        "id": "d32657f7680d71f4"
+      },
+      {
+        "name": "AWS S3",
+        "type": "n8n-nodes-base.awsS3",
+        "position": [
+          700,
+          100
+        ],
+        "parameters": {
+          "fileName": "={{$binary.data.fileName}}",
+          "operation": "upload",
+          "bucketName": "textract-demodata",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "aws": {
+            "id": "9",
+            "name": "aws"
+          }
+        },
+        "typeVersion": 1,
+        "id": "8edbbb102bad0a41"
+      }
+    ],
+    "connections": {
+      "AWS Textract": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Telegram Trigger": {
+        "main": [
+          [
+            {
+              "node": "AWS S3",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "AWS Textract",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "28397aa4aaa2406c",
+    "name": "Extract and store text from chat images using AWS S3",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "telegram"
+    ]
+  }
+}

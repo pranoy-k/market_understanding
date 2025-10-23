@@ -1,0 +1,216 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8a1ef217",
+  "workflow_id": "8a1ef217",
+  "workflow_id_display": "8a1ef217",
+  "workflow_name": "Compare SQL datasets",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly compare two summary reports from the same payments table and analyze unique, matching, and differing records. Learn more now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, mySql"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Compare Datasets",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Change ordercount",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Orders from 2003 and 2004",
+      "type": "Data Output"
+    },
+    {
+      "name": "Orders from 2004 and 2005",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "emPRhyWgxygwHgWh",
+    "meta": {
+      "instanceId": "fb924c73af8f703905bc09c9ee8076f48c17b596ed05b18c0ff86915ef8a7c4a"
+    },
+    "name": "Compare 2 SQL datasets",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "df04c503-d4af-4e8f-bcc3-f1fd02d3a332",
+        "name": "When clicking \"Execute Workflow\"",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          780,
+          340
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "6fe78ae6-7325-4062-ab58-457dc1d985c4",
+        "name": "Compare Datasets",
+        "type": "n8n-nodes-base.compareDatasets",
+        "position": [
+          1560,
+          320
+        ],
+        "parameters": {
+          "options": {
+            "multipleMatches": "all"
+          },
+          "mergeByFields": {
+            "values": [
+              {
+                "field1": "customerNumber",
+                "field2": "customerNumber"
+              },
+              {
+                "field1": "year",
+                "field2": "year"
+              }
+            ]
+          }
+        },
+        "typeVersion": 2.3
+      },
+      {
+        "id": "0dae008c-242d-4757-a5a4-a075bde54cb6",
+        "name": "Orders from 2003 and 2004",
+        "type": "n8n-nodes-base.mySql",
+        "position": [
+          1080,
+          220
+        ],
+        "parameters": {
+          "query": "SELECT customerNumber, SUM(amount) as Total, COUNT(*) as ordercount, YEAR(paymentDate) as year\nFROM payments\nWHERE YEAR(paymentDate) = '2003' OR YEAR(paymentDate) = '2004'\nGROUP BY customerNumber, year\n;",
+          "options": {},
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "mySql": {
+            "id": "EEPqCgKBDiRRZ3ua",
+            "name": "db4free MySQL"
+          }
+        },
+        "typeVersion": 2.1
+      },
+      {
+        "id": "c162e9b5-6e26-4a81-b90d-a5709e73019c",
+        "name": "Orders from 2004 and 2005",
+        "type": "n8n-nodes-base.mySql",
+        "position": [
+          1080,
+          440
+        ],
+        "parameters": {
+          "query": "SELECT customerNumber, SUM(amount) as Total, COUNT(*) as ordercount, YEAR(paymentDate) as year\nFROM payments\nWHERE YEAR(paymentDate) = '2004' OR YEAR(paymentDate) = '2005'\nGROUP BY customerNumber, year\n;",
+          "options": {},
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "mySql": {
+            "id": "EEPqCgKBDiRRZ3ua",
+            "name": "db4free MySQL"
+          }
+        },
+        "typeVersion": 2.1
+      },
+      {
+        "id": "05547a67-2c53-43df-8abd-ee356f12742b",
+        "name": "Change ordercount",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1300,
+          440
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "ordercount",
+                "value": 1
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 2
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "9680b087-de3a-4179-8f48-5e2ae9dc6fac",
+    "connections": {
+      "Change ordercount": {
+        "main": [
+          [
+            {
+              "node": "Compare Datasets",
+              "type": "main",
+              "index": 1
+            }
+          ]
+        ]
+      },
+      "Orders from 2003 and 2004": {
+        "main": [
+          [
+            {
+              "node": "Compare Datasets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Orders from 2004 and 2005": {
+        "main": [
+          [
+            {
+              "node": "Change ordercount",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "When clicking \"Execute Workflow\"": {
+        "main": [
+          [
+            {
+              "node": "Orders from 2003 and 2004",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Orders from 2004 and 2005",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

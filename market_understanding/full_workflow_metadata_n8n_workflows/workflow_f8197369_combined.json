@@ -1,0 +1,205 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f8197369",
+  "workflow_id": "f8197369",
+  "workflow_id_display": "f8197369",
+  "workflow_name": "Preparing data to be sent to a service",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Jonathan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Ensure seamless data imports by formatting and mapping fields to match your database or CRM. Clean, rename, and select only the data you need—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, n8nTrainingCustomerDatastore"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set - Prepare fields",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create or Update record in Google Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Customer Datastore - Generate some data",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          1160,
+          480
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          800,
+          420
+        ],
+        "parameters": {
+          "width": 320,
+          "height": 200,
+          "content": "### Very often your data is not in the right format to insert in a node. you can use the set node to fix it.\n\n### Click the `Execute Workflow` button and double click on the nodes to see the input and output items."
+        },
+        "typeVersion": 1,
+        "id": "f978ece47fdf5942"
+      },
+      {
+        "name": "Create or Update record in Google Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          1920,
+          480
+        ],
+        "parameters": {
+          "range": "A:C",
+          "options": {},
+          "sheetId": "13_bAEYNTzVXVY6SfAkBa9ijtJGSxPd8D-hcXXwXtdDo",
+          "operation": "upsert",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "8",
+            "name": "Sheets"
+          }
+        },
+        "typeVersion": 1,
+        "id": "ab2550d6a01d5fa3"
+      },
+      {
+        "name": "Note1",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          1480,
+          360
+        ],
+        "parameters": {
+          "width": 400,
+          "height": 280,
+          "content": "\nThis is where we put the data in the format that Google Sheets expect. \nThis means changing the field name from `name` to `Full name`, dropping all fields except `ID`, `Email` and adding a `Created time` field"
+        },
+        "typeVersion": 1,
+        "id": "7adc781f3f04c8f5"
+      },
+      {
+        "name": "Set - Prepare fields",
+        "type": "n8n-nodes-base.set",
+        "notes": "Prepare fields",
+        "position": [
+          1620,
+          480
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "ID",
+                "value": "={{$json[\"id\"]}}"
+              }
+            ],
+            "string": [
+              {
+                "name": "Full name",
+                "value": "={{$json[\"name\"]}}"
+              },
+              {
+                "name": "Email",
+                "value": "={{$json[\"email\"]}}"
+              },
+              {
+                "name": "Created time",
+                "value": "={{$now}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "notesInFlow": false,
+        "typeVersion": 1,
+        "id": "1d3a55fac19c48d0"
+      },
+      {
+        "name": "Customer Datastore - Generate some data",
+        "type": "n8n-nodes-base.n8nTrainingCustomerDatastore",
+        "position": [
+          1340,
+          480
+        ],
+        "parameters": {
+          "operation": "getAllPeople"
+        },
+        "typeVersion": 1,
+        "id": "4a093bfd5096316f"
+      }
+    ],
+    "connections": {
+      "Set - Prepare fields": {
+        "main": [
+          [
+            {
+              "node": "Create or Update record in Google Sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Customer Datastore - Generate some data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Customer Datastore - Generate some data": {
+        "main": [
+          [
+            {
+              "node": "Set - Prepare fields",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "0f414e14db57a384",
+    "name": "Preparing data to be sent to a service",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "database"
+    ]
+  }
+}

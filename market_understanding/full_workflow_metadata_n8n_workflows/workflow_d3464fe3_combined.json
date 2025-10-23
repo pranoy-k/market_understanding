@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d3464fe3",
+  "workflow_id": "d3464fe3",
+  "workflow_id_display": "d3464fe3",
+  "workflow_name": "Save Telegram daily messages to Google Sheets",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Nicholas Lewanowicz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Stay on track with your 2022 goals—get daily Telegram reminders, reply to log achievements, and save entries automatically to Google Sheets. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with functionItem, telegramTrigger, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Get journal reply",
+      "type": "Trigger"
+    },
+    {
+      "name": "Parse message",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Add entry to sheet",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 4,
+    "name": "Save Telegram reply to journal spreadsheet",
+    "nodes": [
+      {
+        "name": "Add entry to sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          700,
+          240
+        ],
+        "parameters": {
+          "options": {},
+          "sheetId": "YOUR_SPREADSHEET_ID",
+          "operation": "append"
+        },
+        "credentials": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Get journal reply",
+        "type": "n8n-nodes-base.telegramTrigger",
+        "position": [
+          220,
+          240
+        ],
+        "webhookId": "fe4a6042-d343-4a02-b443-6d32c38e094d",
+        "parameters": {
+          "updates": [
+            "message"
+          ],
+          "additionalFields": {}
+        },
+        "credentials": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Parse message",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          460,
+          240
+        ],
+        "parameters": {
+          "functionCode": "// When telgram sees a message it will make sure its a reply to its message and from the user. \n// If thats the case then it will return {entry: string, date: string}\n\nconst botUsername = 'BOT_USERNAME'\nconst user = 'YOUR_USERNAME'\n\nconst res = item.message\n\nconst isReplyToBot = res.reply_to_message.from.username === botUsername\nconst isFromUser = res.from.username === user\n\n// This assumes your message is formatted as follows: \"SOME CUSTOM MESSAGE: YYYY-MM-DD\"\nconst date = res.reply_to_message.text.split(':')[1].replace(/\\s/g, '');\n\nconst journalEntry = res.text\n\nif (isReplyToBot && isFromUser) {\n  return {entry: journalEntry, date}\n}\n\nreturn undefined;"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Parse message": {
+        "main": [
+          [
+            {
+              "node": "Add entry to sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get journal reply": {
+        "main": [
+          [
+            {
+              "node": "Parse message",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

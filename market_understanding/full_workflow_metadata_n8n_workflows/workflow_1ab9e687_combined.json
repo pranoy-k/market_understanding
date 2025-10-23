@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1ab9e687",
+  "workflow_id": "1ab9e687",
+  "workflow_id_display": "1ab9e687",
+  "workflow_name": "Write JSON to Disk (Binary)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [
+    "json"
+  ],
+  "author_name": "mike",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert JSON to binary with a custom Function node—seamlessly bridge data formats and streamline workflows. Learn how it works now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with writeBinaryFile, function"
+  ],
+  "nodes": [
+    {
+      "name": "Make Binary",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Example Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          800,
+          350
+        ],
+        "parameters": {
+          "fileName": "test.json"
+        },
+        "typeVersion": 1,
+        "id": "71e38fa94206825b"
+      },
+      {
+        "name": "Make Binary",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          600,
+          350
+        ],
+        "parameters": {
+          "functionCode": "items[0].binary = {\n  data: {\n    data: new Buffer(JSON.stringify(items[0].json, null, 2)).toString('base64')\n  }\n};\nreturn items;"
+        },
+        "typeVersion": 1,
+        "id": "8274aed849e8c50d"
+      },
+      {
+        "name": "Create Example Data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          390,
+          350
+        ],
+        "parameters": {
+          "functionCode": "items[0].json = {\n  \"text\": \"asdf\",\n  \"number\": 1\n};\nreturn items;"
+        },
+        "typeVersion": 1,
+        "id": "860d8ce76224a3d0"
+      }
+    ],
+    "connections": {
+      "Make Binary": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create Example Data": {
+        "main": [
+          [
+            {
+              "node": "Make Binary",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fc3590c1705a1166",
+    "name": "Write JSON to Disk (Binary)",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "json"
+    ]
+  }
+}

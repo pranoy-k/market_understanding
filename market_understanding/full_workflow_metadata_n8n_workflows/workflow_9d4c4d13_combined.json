@@ -1,0 +1,153 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9d4c4d13",
+  "workflow_id": "9d4c4d13",
+  "workflow_id_display": "9d4c4d13",
+  "workflow_name": "Generate, retrieve and download a report using the SecurityScorecard",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly generate, fetch, and download detailed SecurityScorecard reports. Automate delivery via cloud or email. Learn more about this workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, securityScorecard"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "SecurityScorecard",
+      "type": "Process"
+    },
+    {
+      "name": "SecurityScorecard1",
+      "type": "Process"
+    },
+    {
+      "name": "SecurityScorecard2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "SecurityScorecard",
+        "type": "n8n-nodes-base.securityScorecard",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "report": "full-scorecard-json",
+          "resource": "report",
+          "operation": "generate",
+          "scorecardIdentifier": "n8n.io"
+        },
+        "credentials": {
+          "securityScorecardApi": "SecurityScorecard Credentials"
+        },
+        "typeVersion": 1,
+        "id": "6dffe6357526ee1c"
+      },
+      {
+        "name": "SecurityScorecard1",
+        "type": "n8n-nodes-base.securityScorecard",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "limit": 1,
+          "resource": "report"
+        },
+        "credentials": {
+          "securityScorecardApi": "SecurityScorecard Credentials"
+        },
+        "typeVersion": 1,
+        "id": "947684381c9a4413"
+      },
+      {
+        "name": "SecurityScorecard2",
+        "type": "n8n-nodes-base.securityScorecard",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "url": "={{$json[\"download_url\"]}}",
+          "resource": "report",
+          "operation": "download"
+        },
+        "credentials": {
+          "securityScorecardApi": "SecurityScorecard Credentials"
+        },
+        "typeVersion": 1,
+        "id": "cb766a55960490bb"
+      }
+    ],
+    "connections": {
+      "SecurityScorecard": {
+        "main": [
+          [
+            {
+              "node": "SecurityScorecard1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "SecurityScorecard1": {
+        "main": [
+          [
+            {
+              "node": "SecurityScorecard2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "SecurityScorecard",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "72d9eac1c9454f56",
+    "name": "Generate, retrieve and download a report using the SecurityScorecard",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c3d675d9",
+  "workflow_id": "c3d675d9",
+  "workflow_id_display": "c3d675d9",
+  "workflow_name": "Translate cocktail instructions using DeepL",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Translate cocktail recipes instantly! Fetch a random drink, auto-translate instructions to French with DeepL, and customize for any language. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, deepL"
+  ],
+  "nodes": [
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "DeepL",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          510,
+          320
+        ],
+        "parameters": {
+          "url": "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "DeepL",
+        "type": "n8n-nodes-base.deepL",
+        "position": [
+          710,
+          320
+        ],
+        "parameters": {
+          "text": "={{$json[\"drinks\"][0][\"strInstructions\"]}}",
+          "translateTo": "FR",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "deepLApi": "DeepL API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "89bcd55f926bee1a"
+      }
+    ],
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "DeepL",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7bbf2cdaf20a7c0a",
+    "name": "Translate cocktail instructions using DeepL",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

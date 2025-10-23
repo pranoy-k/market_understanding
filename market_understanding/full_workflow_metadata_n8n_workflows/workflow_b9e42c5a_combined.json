@@ -1,0 +1,166 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9e42c5a",
+  "workflow_id": "b9e42c5a",
+  "workflow_id_display": "b9e42c5a",
+  "workflow_name": "Create a collection and create, update, and get a bookmark in Raindrop",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage Raindrop collections and bookmarks—create, update, and retrieve bookmarks in one streamlined workflow. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with raindrop"
+  ],
+  "nodes": [
+    {
+      "name": "Raindrop",
+      "type": "Process"
+    },
+    {
+      "name": "Raindrop1",
+      "type": "Process"
+    },
+    {
+      "name": "Raindrop2",
+      "type": "Process"
+    },
+    {
+      "name": "Raindrop3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Raindrop",
+        "type": "n8n-nodes-base.raindrop",
+        "position": [
+          470,
+          320
+        ],
+        "parameters": {
+          "title": "n8n-docs",
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "raindropOAuth2Api": "Raindrop OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d535774f56dd74fe"
+      },
+      {
+        "name": "Raindrop1",
+        "type": "n8n-nodes-base.raindrop",
+        "position": [
+          670,
+          320
+        ],
+        "parameters": {
+          "link": "https://docs.n8n.io",
+          "resource": "bookmark",
+          "operation": "create",
+          "collectionId": "={{$json[\"_id\"]}}",
+          "additionalFields": {
+            "title": "Documentation"
+          }
+        },
+        "credentials": {
+          "raindropOAuth2Api": "Raindrop OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "676b568c80c8b364"
+      },
+      {
+        "name": "Raindrop2",
+        "type": "n8n-nodes-base.raindrop",
+        "position": [
+          870,
+          320
+        ],
+        "parameters": {
+          "resource": "bookmark",
+          "operation": "update",
+          "bookmarkId": "={{$json[\"_id\"]}}",
+          "updateFields": {
+            "title": "n8n Documentation"
+          }
+        },
+        "credentials": {
+          "raindropOAuth2Api": "Raindrop OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "4a89e24768c3c4cc"
+      },
+      {
+        "name": "Raindrop3",
+        "type": "n8n-nodes-base.raindrop",
+        "position": [
+          1070,
+          320
+        ],
+        "parameters": {
+          "resource": "bookmark",
+          "bookmarkId": "={{$json[\"_id\"]}}"
+        },
+        "credentials": {
+          "raindropOAuth2Api": "Raindrop OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "c4f1a5d82053c9a3"
+      }
+    ],
+    "connections": {
+      "Raindrop": {
+        "main": [
+          [
+            {
+              "node": "Raindrop1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Raindrop1": {
+        "main": [
+          [
+            {
+              "node": "Raindrop2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Raindrop2": {
+        "main": [
+          [
+            {
+              "node": "Raindrop3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "9ec9b76c67997e37",
+    "name": "Create a collection and create, update, and get a bookmark in Raindrop",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

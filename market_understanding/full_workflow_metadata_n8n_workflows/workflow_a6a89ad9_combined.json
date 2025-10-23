@@ -1,0 +1,157 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a6a89ad9",
+  "workflow_id": "a6a89ad9",
+  "workflow_id_display": "a6a89ad9",
+  "workflow_name": "Create, update, and get a post in Ghost",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline client onboarding: automate data collection, welcome emails, Trello board setup, and Slack alerts. Boost efficiency and deliver a seamless experience.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, ghost"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Ghost",
+      "type": "Process"
+    },
+    {
+      "name": "Ghost1",
+      "type": "Process"
+    },
+    {
+      "name": "Ghost2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "170",
+    "name": "Create, update, and get a post in Ghost",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "title": "Running ghost with n8n!",
+          "source": "adminApi",
+          "content": "<p>In this article, you will learn how to automate your Ghost site with n8n!</p>",
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost1",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "postId": "={{$node[\"Ghost\"].json[\"id\"]}}",
+          "source": "adminApi",
+          "operation": "update",
+          "updateFields": {
+            "status": "published"
+          }
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Ghost2",
+        "type": "n8n-nodes-base.ghost",
+        "position": [
+          910,
+          300
+        ],
+        "parameters": {
+          "by": "id",
+          "source": "adminApi",
+          "options": {},
+          "identifier": "={{$node[\"Ghost\"].json[\"id\"]}}"
+        },
+        "credentials": {
+          "ghostAdminApi": "Ghost Admin API"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Ghost": {
+        "main": [
+          [
+            {
+              "node": "Ghost1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ghost1": {
+        "main": [
+          [
+            {
+              "node": "Ghost2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Ghost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

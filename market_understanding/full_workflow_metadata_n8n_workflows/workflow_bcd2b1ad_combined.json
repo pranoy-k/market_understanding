@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bcd2b1ad",
+  "workflow_id": "bcd2b1ad",
+  "workflow_id_display": "bcd2b1ad",
+  "workflow_name": "Trigger a build using the TravisCI node",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead collection, scoring, and assignment with real-time updates, Slack alerts, and personalized emails. Streamline your sales pipeline now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, travisCi"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "TravisCI",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "52",
+    "name": "Trigger a build using the TravisCI node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          510,
+          350
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "TravisCI",
+        "type": "n8n-nodes-base.travisCi",
+        "position": [
+          710,
+          350
+        ],
+        "parameters": {
+          "slug": "",
+          "branch": "",
+          "operation": "trigger",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "travisCiApi": "travisCI"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "TravisCI": {
+        "main": [
+          []
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "TravisCI",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

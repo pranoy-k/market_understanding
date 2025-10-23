@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e53caa49",
+  "workflow_id": "e53caa49",
+  "workflow_id_display": "e53caa49",
+  "workflow_name": "Add contacts to SendGrid automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily create, update, or retrieve SendGrid contacts with seamless automation. Integrate CRM or email data for streamlined contact management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, sendGrid"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "209",
+    "name": "Create, update and get a contact using the SendGrid node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "SendGrid",
+        "type": "n8n-nodes-base.sendGrid",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "email": "",
+          "resource": "contact",
+          "additionalFields": {
+            "firstName": ""
+          }
+        },
+        "credentials": {
+          "sendGridApi": "SendGrid Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "SendGrid1",
+        "type": "n8n-nodes-base.sendGrid",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "email": "={{$node[\"SendGrid\"].parameter[\"email\"]}}",
+          "resource": "contact",
+          "additionalFields": {
+            "lastName": ""
+          }
+        },
+        "credentials": {
+          "sendGridApi": "SendGrid Credentials"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "SendGrid2",
+        "type": "n8n-nodes-base.sendGrid",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "by": "email",
+          "email": "={{$node[\"SendGrid\"].parameter[\"email\"]}}",
+          "resource": "contact",
+          "operation": "get"
+        },
+        "credentials": {
+          "sendGridApi": "SendGrid Credentials"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "SendGrid": {
+        "main": [
+          [
+            {
+              "node": "SendGrid1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "SendGrid1": {
+        "main": [
+          [
+            {
+              "node": "SendGrid2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "SendGrid",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

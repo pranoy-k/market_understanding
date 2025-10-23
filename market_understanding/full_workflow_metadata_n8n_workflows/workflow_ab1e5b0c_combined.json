@@ -1,0 +1,103 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ab1e5b0c",
+  "workflow_id": "ab1e5b0c",
+  "workflow_id_display": "ab1e5b0c",
+  "workflow_name": "Get email notifications for newly uploaded Google Drive files",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Google Drive",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant email alerts for new Google Drive uploads. Automate file monitoring and stay updated effortlessly with real-time email notifications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with emailSend, googleDriveTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Google Drive Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Google Drive Trigger",
+        "type": "n8n-nodes-base.googleDriveTrigger",
+        "position": [
+          250,
+          150
+        ],
+        "parameters": {
+          "event": "fileCreated",
+          "options": {},
+          "triggerOn": "specificFolder",
+          "folderToWatch": "1HwOAKkkgveLji8vVpW9Xrg1EsBskwMNb"
+        },
+        "credentials": {
+          "googleDriveOAuth2Api": {
+            "id": "28",
+            "name": "Google Drive account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "ff91917e2545d1c3"
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          450,
+          150
+        ],
+        "parameters": {
+          "text": "=A file in your Google Drive file folder has been created: {{$json[\"name\"]}}",
+          "options": {},
+          "subject": "File Update",
+          "toEmail": "mutedjam@n8n.io",
+          "fromEmail": "mutedjam@n8n.io"
+        },
+        "credentials": {
+          "smtp": {
+            "id": "14",
+            "name": "SMTP account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "63035b782d75860b"
+      }
+    ],
+    "connections": {
+      "Google Drive Trigger": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "cdfb5bbf01356b31",
+    "name": "Get email notifications for newly uploaded Google Drive files",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

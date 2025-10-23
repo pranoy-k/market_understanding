@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f15dcd53",
+  "workflow_id": "f15dcd53",
+  "workflow_id_display": "f15dcd53",
+  "workflow_name": "Read in an Excel spreadsheet file",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "Tien De",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily import local Excel files into n8n by specifying the file path—streamline automation with direct, efficient data integration and processing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, readBinaryFile, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          650,
+          320
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "e41a6bcf65d8aa7d"
+      },
+      {
+        "name": "Read Binary File",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          450,
+          320
+        ],
+        "parameters": {
+          "filePath": "/data/sample_spreadsheet.csv"
+        },
+        "typeVersion": 1,
+        "id": "73c99f623f86df40"
+      }
+    ],
+    "connections": {
+      "Read Binary File": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Read Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f0879486ff06c55d",
+    "name": "Read in an Excel spreadsheet file",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "excel"
+    ]
+  }
+}

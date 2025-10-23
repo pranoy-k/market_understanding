@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4087bd2f",
+  "workflow_id": "4087bd2f",
+  "workflow_id_display": "4087bd2f",
+  "workflow_name": "Extract Specific Pages from PDFs with CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "API, PDF",
+  "tags": [
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract selected PDF pages in n8n using the powerful CustomJS PDF Toolkit. Fast setup, flexible triggers—perfect for seamless PDF management!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, ExtractPages"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Extract Pages From PDF1",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "rLoXUoKSZ4a9XUAv",
+    "meta": {
+      "instanceId": "7599ed929ea25767a019b87ecbc83b90e16a268cb51892887b450656ac4518a2"
+    },
+    "name": "My workflow 6",
+    "tags": [],
+    "nodes": [
+      {
+        "id": "dad32e79-af45-4255-90d9-845a5357395a",
+        "name": "When clicking ‘Test workflow’",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          -580,
+          920
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "1cadea33-7c6a-4282-be84-e127fc7437c2",
+        "name": "Extract Pages From PDF1",
+        "type": "@custom-js/n8n-nodes-pdf-toolkit.ExtractPages",
+        "position": [
+          -140,
+          920
+        ],
+        "parameters": {
+          "pageRange": "2-3",
+          "field_name": "=data"
+        },
+        "credentials": {
+          "customJsApi": {
+            "id": "h29wo2anYKdANAzm",
+            "name": "CustomJS account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "a8554e6b-6e2d-4a26-909c-25e74e618480",
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          -360,
+          920
+        ],
+        "parameters": {
+          "url": "https://www.sldttc.org/allpdf/21583473018.pdf",
+          "options": {}
+        },
+        "typeVersion": 4.2
+      }
+    ],
+    "active": false,
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "versionId": "82cbb24e-e907-419a-97d6-bdb577269927",
+    "connections": {
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Extract Pages From PDF1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

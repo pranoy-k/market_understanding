@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4cb43c2c",
+  "workflow_id": "4cb43c2c",
+  "workflow_id_display": "4cb43c2c",
+  "workflow_name": "Get multiple clients' data from Invoice Ninja",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Invoice Ninja setup with a companion workflow—visual guidance, practical demo, and clear steps for seamless integration and automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, invoiceNinja"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Invoice Ninja",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          220,
+          310
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Invoice Ninja",
+        "type": "n8n-nodes-base.invoiceNinja",
+        "position": [
+          410,
+          310
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll"
+        },
+        "credentials": {
+          "invoiceNinjaApi": "invoice_ninja_creds"
+        },
+        "typeVersion": 1,
+        "id": "9a26d248330c7957"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Invoice Ninja",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "944c7470b158c6b3",
+    "name": "Get multiple clients' data from Invoice Ninja",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

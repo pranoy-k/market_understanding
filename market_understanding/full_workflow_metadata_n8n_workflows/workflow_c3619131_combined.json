@@ -1,0 +1,153 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c3619131",
+  "workflow_id": "c3619131",
+  "workflow_id_display": "c3619131",
+  "workflow_name": "Create a post with comments in Reddit automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Reddit",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily create and comment on Reddit posts automatically. Customize your subreddit, track post details, and boost engagement with seamless automation.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, reddit"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Reddit",
+      "type": "Process"
+    },
+    {
+      "name": "Reddit1",
+      "type": "Process"
+    },
+    {
+      "name": "Reddit2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          340
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Reddit",
+        "type": "n8n-nodes-base.reddit",
+        "position": [
+          470,
+          340
+        ],
+        "parameters": {
+          "text": "This post was created using the Reddit node in n8n",
+          "title": "Created from n8n",
+          "subreddit": "n8n"
+        },
+        "credentials": {
+          "redditOAuth2Api": "Reddit OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "7909ef0fc47da142"
+      },
+      {
+        "name": "Reddit1",
+        "type": "n8n-nodes-base.reddit",
+        "position": [
+          670,
+          340
+        ],
+        "parameters": {
+          "postId": "={{$json[\"id\"]}}",
+          "operation": "get",
+          "subreddit": "={{$node[\"Reddit\"].parameter[\"subreddit\"]}}"
+        },
+        "credentials": {
+          "redditOAuth2Api": "Reddit OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "51a4b7a6c3983c79"
+      },
+      {
+        "name": "Reddit2",
+        "type": "n8n-nodes-base.reddit",
+        "position": [
+          870,
+          340
+        ],
+        "parameters": {
+          "postId": "={{$json[\"id\"]}}",
+          "resource": "postComment",
+          "commentText": "This comment was added from n8n!"
+        },
+        "credentials": {
+          "redditOAuth2Api": "Reddit OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d9ad851d2729e3a2"
+      }
+    ],
+    "connections": {
+      "Reddit": {
+        "main": [
+          [
+            {
+              "node": "Reddit1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Reddit1": {
+        "main": [
+          [
+            {
+              "node": "Reddit2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Reddit",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "79d3af7b9195898e",
+    "name": "Create a post with comments in Reddit automatically",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

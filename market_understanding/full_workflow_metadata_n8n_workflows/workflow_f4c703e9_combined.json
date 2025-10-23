@@ -1,0 +1,112 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f4c703e9",
+  "workflow_id": "f4c703e9",
+  "workflow_id_display": "f4c703e9",
+  "workflow_name": "Extract text from a PDF file",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "PDF",
+  "tags": [
+    "pdf"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a companion workflow for the Read PDF node: step-by-step integration, automation tips, and best practices for seamless PDF data extraction.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, readBinaryFile, readPDF"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Read PDF",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          680,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Read Binary File",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          880,
+          400
+        ],
+        "parameters": {
+          "filePath": "/data/pdf.pdf"
+        },
+        "typeVersion": 1,
+        "id": "73c99f623f86df40"
+      },
+      {
+        "name": "Read PDF",
+        "type": "n8n-nodes-base.readPDF",
+        "position": [
+          1090,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "a718720e988eaccf"
+      }
+    ],
+    "connections": {
+      "Read Binary File": {
+        "main": [
+          [
+            {
+              "node": "Read PDF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Read Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "72ec0404551af987",
+    "name": "Extract text from a PDF file",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "pdf"
+    ]
+  }
+}

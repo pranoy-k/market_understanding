@@ -1,0 +1,119 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb18ef67",
+  "workflow_id": "eb18ef67",
+  "workflow_id_display": "eb18ef67",
+  "workflow_name": "Count the items returned by a node",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily count items from any node in n8n with a simple workflow using Set node and `$input.all().length`. Streamline your data processing—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, n8nTrainingCustomerDatastore"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "Trigger"
+    },
+    {
+      "name": "Customer Datastore (n8n training)",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "id": "41e0d0a9-9bd4-4ece-a204-5e1bf507b0eb",
+        "meta": {
+          "instanceId": "cb9c144f2050b3f9b30bf379399398f9061341e3665eb2faf2b1092a42b38b14"
+        },
+        "name": "When clicking \"Execute Workflow\"",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          820,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "aa373efa-d493-44cd-91ee-e07630309675",
+        "name": "Customer Datastore (n8n training)",
+        "type": "n8n-nodes-base.n8nTrainingCustomerDatastore",
+        "position": [
+          1040,
+          400
+        ],
+        "parameters": {
+          "operation": "getAllPeople"
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "29555ae0-ad6c-4888-8865-c1e097b3b44e",
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1260,
+          400
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "itemCount",
+                "value": "={{ $input.all().length }}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "executeOnce": true,
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "When clicking \"Execute Workflow\"": {
+        "main": [
+          [
+            {
+              "node": "Customer Datastore (n8n training)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Customer Datastore (n8n training)": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "40564ea2aaef3ef0",
+    "name": "Count the items returned by a node",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d9de54b",
+  "workflow_id": "3d9de54b",
+  "workflow_id_display": "3d9de54b",
+  "workflow_name": "Rename a key in n8n",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Master key renaming in workflows with our visual guide—streamline data transformation and simplify the Rename Keys node. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, renameKeys, set"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Rename Keys",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          450,
+          320
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "key",
+                "value": "somevalue"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "Rename Keys",
+        "type": "n8n-nodes-base.renameKeys",
+        "position": [
+          650,
+          320
+        ],
+        "parameters": {
+          "keys": {
+            "key": [
+              {
+                "newKey": "newkey",
+                "currentKey": "key"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "2bcb7a58f581f4d9"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Rename Keys",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "d0717b1c6e6fbc66",
+    "name": "Rename a key in n8n",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

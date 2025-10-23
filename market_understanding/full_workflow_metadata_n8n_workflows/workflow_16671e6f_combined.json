@@ -1,0 +1,317 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/16671e6f",
+  "workflow_id": "16671e6f",
+  "workflow_id_display": "16671e6f",
+  "workflow_name": "Sync Google Calendar tasks to Trello every day",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "8",
+  "tools_integrations": null,
+  "tags": [
+    "google"
+  ],
+  "author_name": "Angel Menendez",
+  "author_profile_url": "https://n8n.io/creators/djangelic/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Google Calendar events to Trello daily, take notes, automate tasks, and customize labels. Start each day organized—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, googleCalendar, set"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger Every Day at 8am",
+      "type": "Trigger"
+    },
+    {
+      "name": "Get Start & End of day",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Set Trello Card Details",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get Todays Events",
+      "type": "Process"
+    },
+    {
+      "name": "Split Events In Batches",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create Trello Cards",
+      "type": "Process"
+    },
+    {
+      "name": "Delete Task",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Get Start & End of day",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          850,
+          450
+        ],
+        "parameters": {
+          "functionCode": "var curr = new Date;\nvar first = (curr.getDate());\nvar last = first;\n\nvar firstday = new Date(curr.setDate(first));\nvar lastday = new Date(curr.setDate(last));\n\nbeginning = new Date(firstday.setHours(0,0,0,0));\nending = new Date(lastday.setHours(23,59,59,99));\n\nitems[0].json.from = beginning.toISOString();\nitems[0].json.to = ending.toISOString();\n\nreturn items;items[0].json.myVariable = 1;\nreturn items;"
+        },
+        "typeVersion": 1,
+        "id": "86a6390415cf3135"
+      },
+      {
+        "name": "Set Trello Card Details",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1460,
+          640
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "name",
+                "value": "={{$node[\"Split Events In Batches\"].json[\"summary\"]}}"
+              },
+              {
+                "name": "description",
+                "value": "={{$node[\"Split Events In Batches\"].json[\"description\"]}}"
+              },
+              {
+                "name": "duedate",
+                "value": "={{$node[\"Split Events In Batches\"].json[\"start\"][\"dateTime\"]}}"
+              },
+              {
+                "name": "URL",
+                "value": "={{$node[\"Split Events In Batches\"].json[\"htmlLink\"]}}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "2751256d9a63630e"
+      },
+      {
+        "name": "Remove Recurring Tasks",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1650,
+          640
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Split Events In Batches\"].json[\"summary\"]}}",
+                "value2": "Check email and start day"
+              },
+              {
+                "value1": "={{$node[\"Split Events In Batches\"].json[\"summary\"]}}",
+                "value2": "Lunch"
+              },
+              {
+                "value1": "={{$node[\"Split Events In Batches\"].json[\"summary\"]}}",
+                "value2": "Wrap Up & Clear Desk"
+              },
+              {
+                "value1": "={{$node[\"Split Events In Batches\"].json[\"summary\"]}}",
+                "value2": "Beers and Griping"
+              }
+            ],
+            "boolean": []
+          },
+          "combineOperation": "any"
+        },
+        "typeVersion": 1,
+        "id": "80d72cd2eba9fd0d"
+      },
+      {
+        "name": "Get Todays Events",
+        "type": "n8n-nodes-base.googleCalendar",
+        "position": [
+          1060,
+          450
+        ],
+        "parameters": {
+          "options": {
+            "timeMax": "={{$node[\"Get Start & End of day\"].json[\"to\"]}}",
+            "timeMin": "={{$node[\"Get Start & End of day\"].json[\"from\"]}}",
+            "singleEvents": true
+          },
+          "calendar": "amenendez@threatconnect.com",
+          "operation": "getAll"
+        },
+        "credentials": {
+          "googleCalendarOAuth2Api": "Angel TC Calendar API"
+        },
+        "typeVersion": 1,
+        "id": "d7e911b93fd3f3a4"
+      },
+      {
+        "name": "Split Events In Batches",
+        "type": "n8n-nodes-base.splitInBatches",
+        "position": [
+          1260,
+          640
+        ],
+        "parameters": {
+          "options": {},
+          "batchSize": 1
+        },
+        "typeVersion": 1,
+        "id": "57b4610ac4eba7ae"
+      },
+      {
+        "name": "Create Trello Cards",
+        "type": "n8n-nodes-base.trello",
+        "position": [
+          1830,
+          730
+        ],
+        "parameters": {
+          "name": "={{$node[\"Set Trello Card Details\"].json[\"name\"]}}",
+          "description": "=**Meeting purpose (*Integrations, Playbooks, UI Issues, Project*):**\n\n- Task\n\n**Next Steps (*Task, Assigned to, Checkpoint Date*):**\n\n- Task\n\n**Decisions Made: (*What, Why, Impacts*):**\n\n- Task\n\n**Discussion: (*Items/Knowledge Shared*):**\n\n- Task",
+          "additionalFields": {
+            "due": "={{$node[\"Set Trello Card Details\"].json[\"duedate\"]}}",
+            "idLabels": "",
+            "urlSource": "={{$node[\"Set Trello Card Details\"].json[\"URL\"]}}"
+          }
+        },
+        "credentials": {
+          "trelloApi": "Angel Work Trello"
+        },
+        "typeVersion": 1,
+        "id": "8d76a53753abff01"
+      },
+      {
+        "name": "Delete Task",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          1830,
+          560
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "e2b103a6d9436f26"
+      },
+      {
+        "name": "Trigger Every Day at 8am",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          650,
+          450
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 8
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "44c415377e722fb0"
+      }
+    ],
+    "connections": {
+      "Get Todays Events": {
+        "main": [
+          [
+            {
+              "node": "Split Events In Batches",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Start & End of day": {
+        "main": [
+          [
+            {
+              "node": "Get Todays Events",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Remove Recurring Tasks": {
+        "main": [
+          [
+            {
+              "node": "Delete Task",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Create Trello Cards",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Set Trello Card Details": {
+        "main": [
+          [
+            {
+              "node": "Remove Recurring Tasks",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Split Events In Batches": {
+        "main": [
+          [
+            {
+              "node": "Set Trello Card Details",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Get Todays Events",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Trigger Every Day at 8am": {
+        "main": [
+          [
+            {
+              "node": "Get Start & End of day",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "5c1947851ccce917",
+    "name": "Sync Google Calendar tasks to Trello every day",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

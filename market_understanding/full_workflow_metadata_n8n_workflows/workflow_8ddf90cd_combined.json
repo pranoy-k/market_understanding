@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8ddf90cd",
+  "workflow_id": "8ddf90cd",
+  "workflow_id_display": "8ddf90cd",
+  "workflow_name": "Transfer data from Postgres to Excel",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, PostgreSQL",
+  "tags": [
+    "postgres",
+    "excel"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily export data from Postgres to XLS files and save them to disk. Streamline data workflows for quick access and sharing. Learn more now!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with postgres, writeBinaryFile, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "Run Query",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Run Query",
+        "type": "n8n-nodes-base.postgres",
+        "position": [
+          450,
+          450
+        ],
+        "parameters": {
+          "query": "SELECT name, ean FROM product",
+          "operation": "executeQuery"
+        },
+        "credentials": {
+          "postgres": "postgres"
+        },
+        "typeVersion": 1,
+        "id": "6134bc07a6a9c1ec"
+      },
+      {
+        "name": "Spreadsheet File",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          600,
+          450
+        ],
+        "parameters": {
+          "operation": "toFile"
+        },
+        "typeVersion": 1,
+        "id": "e41a6bcf65d8aa7d"
+      },
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          750,
+          450
+        ],
+        "parameters": {
+          "fileName": "spreadsheet.xls"
+        },
+        "typeVersion": 1,
+        "id": "71e38fa94206825b"
+      }
+    ],
+    "connections": {
+      "Run Query": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "36a41da4051a226e",
+    "name": "Transfer data from Postgres to Excel",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "postgres",
+      "excel"
+    ]
+  }
+}

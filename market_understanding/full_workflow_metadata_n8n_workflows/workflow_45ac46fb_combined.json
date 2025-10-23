@@ -1,0 +1,144 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/45ac46fb",
+  "workflow_id": "45ac46fb",
+  "workflow_id_display": "45ac46fb",
+  "workflow_name": "Import data from Google Sheets into MySQL",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, MySQL",
+  "tags": [
+    "google",
+    "mysql🗄"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/lorenanda/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily import Google Sheets data into MySQL. Automate transfers, save time, reduce errors, and keep your database always up to date. Learn more!",
+  "key_benefits": [
+    "Data integration",
+    "Integration with mySql, googleSheets, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets - read",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "MySQL - insert",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          100,
+          160
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 5,
+                "mode": "everyWeek"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "MySQL - insert",
+        "type": "n8n-nodes-base.mySql",
+        "position": [
+          500,
+          160
+        ],
+        "parameters": {
+          "table": "books",
+          "columns": "title, price",
+          "options": {
+            "ignore": true,
+            "priority": "LOW_PRIORITY"
+          }
+        },
+        "credentials": {
+          "mySql": {
+            "id": "82",
+            "name": "MySQL account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "36e48f5beb339aa7"
+      },
+      {
+        "name": "Google Sheets - read",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          300,
+          160
+        ],
+        "parameters": {
+          "options": {},
+          "sheetId": "qwertz",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "typeVersion": 1,
+        "id": "a61d0815655ad31f"
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets - read",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets - read": {
+        "main": [
+          [
+            {
+              "node": "MySQL - insert",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7d1a8edb0538b960",
+    "name": "Import data from Google Sheets into MySQL",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google",
+      "mysql",
+      "database"
+    ]
+  }
+}

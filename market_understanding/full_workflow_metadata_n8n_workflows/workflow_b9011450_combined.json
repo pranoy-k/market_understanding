@@ -1,0 +1,176 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b9011450",
+  "workflow_id": "b9011450",
+  "workflow_id_display": "b9011450",
+  "workflow_name": "Monitor SSL certificate of any domain with uProc",
+  "category": "IT & Development",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Google Sheets, MySQL, Telegram",
+  "tags": [
+    "telegram",
+    "google",
+    "mysql"
+  ],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow creates a two-way sync between Google Sheets and your database, ensuring data consistency across both platforms. Changes in either system are automatically reflected in the other, eliminating manual data entry and reducing the risk of data discrepancies.",
+  "key_benefits": [
+    "Communication automation",
+    "Data integration",
+    "Integration with manualTrigger, if, uproc"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Domain Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get SSL Certificate",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "110",
+    "name": "Get SSL Certificate",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          240,
+          290
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Domain Item",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          450,
+          290
+        ],
+        "parameters": {
+          "functionCode": "item.domain = \"n8n.io\";\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Get SSL Certificate",
+        "type": "n8n-nodes-base.uproc",
+        "position": [
+          650,
+          290
+        ],
+        "parameters": {
+          "tool": "getDomainCertificate",
+          "group": "internet",
+          "domain": "= {{$node[\"Create Domain Item\"].json[\"domain\"]}}",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "uprocApi": "miquel-uproc"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Send Expired Alarm",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          1070,
+          270
+        ],
+        "parameters": {
+          "text": "=The certificate of the domain {{$node[\"Create Domain Item\"].json[\"domain\"]}} has expired!",
+          "chatId": "-1415703867",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "telegramApi": "test killia bot"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Certificate  has  expired?",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          840,
+          290
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Get SSL Certificate\"].json[\"message\"][\"valid\"]+\"\"}}",
+                "value2": "false"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Create Domain Item": {
+        "main": [
+          [
+            {
+              "node": "Get SSL Certificate",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get SSL Certificate": {
+        "main": [
+          [
+            {
+              "node": "Certificate  has  expired?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Create Domain Item",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Certificate  has  expired?": {
+        "main": [
+          [
+            {
+              "node": "Send Expired Alarm",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

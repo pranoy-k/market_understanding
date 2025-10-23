@@ -1,0 +1,161 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c063083a",
+  "workflow_id": "c063083a",
+  "workflow_id_display": "c063083a",
+  "workflow_name": "Automate Rank Math SEO Field Updates for Posts and Products",
+  "category": "Content & Documentation",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Facebook, WordPress",
+  "tags": [],
+  "author_name": "phil",
+  "author_profile_url": "https://n8n.io/creators/phil/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Rank Math SEO meta updates for WordPress & WooCommerce via n8n. Save time, boost accuracy, & streamline bulk SEO management. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "When clicking ‘Test workflow’",
+      "type": "Trigger"
+    },
+    {
+      "name": "Settings",
+      "type": "Data Processing"
+    },
+    {
+      "name": "HTTP Request - Update Rank Math Meta",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "c911aed9995230b93fd0d9bc41c258d697c2fe97a3bab8c02baf85963eeda618",
+      "templateCredsSetupCompleted": true
+    },
+    "nodes": [
+      {
+        "id": "83c6d7e3-ae2e-4576-8bc6-1e1a7b553fca",
+        "name": "Settings",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          260,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "assignments": {
+            "assignments": [
+              {
+                "id": "080b234c-a753-409d-9d2d-3322678a01f2",
+                "name": "woocommerce url",
+                "type": "string",
+                "value": "https://mydom.com/"
+              }
+            ]
+          }
+        },
+        "typeVersion": 3.4
+      },
+      {
+        "id": "7018ae65-bb9d-4bac-8746-01193cb0e523",
+        "name": "When clicking ‘Test workflow’",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          0,
+          0
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "223ed34b-3e26-406c-a5a5-34f8408e3fe6",
+        "name": "HTTP Request - Update Rank Math Meta",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          500,
+          0
+        ],
+        "parameters": {
+          "url": "={{ $('Settings').item.json[\"woocommerce url\"] }}wp-json/rank-math-api/v1/update-meta",
+          "method": "POST",
+          "options": {},
+          "sendBody": true,
+          "authentication": "predefinedCredentialType",
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "post_id",
+                "value": "246"
+              },
+              {
+                "name": "rank_math_title",
+                "value": "Demo SEO Title"
+              },
+              {
+                "name": "rank_math_description",
+                "value": "Demo SEO Description"
+              },
+              {
+                "name": "rank_math_canonical_url",
+                "value": "https://example.com/demo-product"
+              }
+            ]
+          },
+          "nodeCredentialType": "wordpressApi"
+        },
+        "credentials": {
+          "wordpressApi": {
+            "id": "6rPlJdCaIXaVciGM",
+            "name": "Wordpress account"
+          },
+          "wooCommerceApi": {
+            "id": "klGFZkgHrRfC8BVg",
+            "name": "WooCommerce account"
+          }
+        },
+        "retryOnFail": true,
+        "typeVersion": 4.2
+      }
+    ],
+    "pinData": {},
+    "connections": {
+      "Settings": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request - Update Rank Math Meta",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "node": "Settings",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "23c45df5e894f546",
+    "name": "Automate Rank Math SEO Field Updates for Posts and Products",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

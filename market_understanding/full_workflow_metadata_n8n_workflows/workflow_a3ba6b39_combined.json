@@ -1,0 +1,94 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a3ba6b39",
+  "workflow_id": "a3ba6b39",
+  "workflow_id_display": "a3ba6b39",
+  "workflow_name": "Send a Whatsapp message via Twilio when a certain Onfleet event happens",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "SMS, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly integrate Onfleet with WhatsApp or SMS alerts for real-time delivery updates. Streamline communications and customize workflows. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with twilio, onfleetTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 7,
+    "name": "Onfleet Trigger --> Twilio Whatsapp",
+    "nodes": [
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {
+          "message": "=Your delivery is on the way, please visit {{$json[\"body\"][\"data\"][\"task\"][\"trackingURL\"]}} to track your driver's location.",
+          "options": {},
+          "toWhatsapp": true
+        },
+        "credentials": {
+          "twilioApi": {
+            "id": "5",
+            "name": "Twilio account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Onfleet Trigger",
+        "type": "n8n-nodes-base.onfleetTrigger",
+        "position": [
+          460,
+          300
+        ],
+        "webhookId": "db02ef2c-fda1-43f0-84d5-ba4ad7d5dea3",
+        "parameters": {
+          "triggerOn": "taskCreated",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Onfleet Trigger": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

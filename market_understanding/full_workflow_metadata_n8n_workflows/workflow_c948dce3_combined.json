@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c948dce3",
+  "workflow_id": "c948dce3",
+  "workflow_id_display": "c948dce3",
+  "workflow_name": "Receive updates on appointments via Acuity Scheduling",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost n8n automation with an Acuity Scheduling Trigger workflow. Get clear setup steps, visual guides, and seamless appointment event integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with acuitySchedulingTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Acuity Scheduling Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Acuity Scheduling Trigger",
+        "type": "n8n-nodes-base.acuitySchedulingTrigger",
+        "position": [
+          880,
+          400
+        ],
+        "webhookId": "b326732d-9473-469f-a421-dd823d26b945",
+        "parameters": {
+          "event": "appointment.scheduled"
+        },
+        "credentials": {
+          "acuitySchedulingApi": "acuity_creds"
+        },
+        "typeVersion": 1,
+        "id": "13f1375877593ebd"
+      }
+    ],
+    "connections": {},
+    "id": "3e27a3b92d1be28a",
+    "name": "Receive updates on appointments via Acuity Scheduling",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62a84d22",
+  "workflow_id": "62a84d22",
+  "workflow_id_display": "62a84d22",
+  "workflow_name": "Send feedback from Google Sheets to Mattermost",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, RSS",
+  "tags": [
+    "google"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate and streamline your n8nConf blog with this companion workflow—sync, schedule, and manage posts efficiently. Discover seamless content management!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, googleSheets, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "custom",
+                "cronExpression": "0 0 17 28 9 *"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "range": "Sessions!A:D",
+          "options": {},
+          "sheetId": "1nlnsTQKGgQZN-Rtd07K9bn0ROm0aFBC2O4kzM2YaTBI",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "n8ndocsburner-googlesheets"
+        },
+        "typeVersion": 1,
+        "id": "0d5471e1b433e442"
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "message": "= Hey @channel, we hope you had a great time at **{{$node[\"Google Sheets\"].json[\"Session\"]}}**.\nLet us know how we did by sharing your feedback with us on the link below!",
+          "channelId": "={{$node[\"Google Sheets\"].json[\"Mattermost Channel ID\"]}}",
+          "attachments": [
+            {
+              "title": "=Feedback Form - {{$node[\"Google Sheets\"].json[\"Session\"]}}",
+              "title_link": "={{$node[\"Google Sheets\"].json[\"Feedback Form Link\"]}}"
+            }
+          ],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "mm_failedmachine"
+        },
+        "typeVersion": 1,
+        "id": "83ab5fd0ba394bde"
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "03b9a4ad03e28a72",
+    "name": "Send feedback from Google Sheets to Mattermost",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

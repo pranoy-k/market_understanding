@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a01bdccf",
+  "workflow_id": "a01bdccf",
+  "workflow_id_display": "a01bdccf",
+  "workflow_name": "Get articles from Hacker News",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a practical companion to Hacker News node docs—visual workflow guidance for easy integration, setup steps, and best practices in n8n.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, hackerNews"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hacker News",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Hacker News",
+        "type": "n8n-nodes-base.hackerNews",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "resource": "all",
+          "additionalFields": {}
+        },
+        "typeVersion": 1,
+        "id": "28c128a93bf43495"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Hacker News",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "4348c2b6d69e7eb4",
+    "name": "Get articles from Hacker News",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

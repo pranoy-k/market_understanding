@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fad4c94f",
+  "workflow_id": "fad4c94f",
+  "workflow_id_display": "fad4c94f",
+  "workflow_name": "Sample error workflow",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "SMS",
+  "tags": [],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Get instant error alerts via Mattermost & SMS. Ensure your team never misses critical issues with seamless, multi-channel notifications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with mattermost, errorTrigger, twilio"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Mattermost",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          900,
+          300
+        ],
+        "parameters": {
+          "message": "=The workflow named '{{$node[\"Error Trigger\"].json[\"workflow\"][\"name\"]}}' with the ID {{$node[\"Error Trigger\"].json[\"workflow\"][\"id\"]}} has encountered an error."
+        },
+        "credentials": {
+          "twilioApi": "Twilio"
+        },
+        "typeVersion": 1,
+        "id": "a798fbdfad58db2a"
+      },
+      {
+        "name": "Mattermost",
+        "type": "n8n-nodes-base.mattermost",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "message": "=The workflow named '{{$json[\"workflow\"][\"name\"]}}' with the ID {{$json[\"workflow\"][\"id\"]}} has encountered an error. The last node that was executed was {{$json[\"execution\"][\"lastNodeExecuted\"]}}.",
+          "attachments": [],
+          "otherOptions": {}
+        },
+        "credentials": {
+          "mattermostApi": "Mattermost"
+        },
+        "typeVersion": 1,
+        "id": "83ab5fd0ba394bde"
+      },
+      {
+        "name": "Error Trigger",
+        "type": "n8n-nodes-base.errorTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "e52d87eecd5831ad"
+      }
+    ],
+    "connections": {
+      "Mattermost": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Error Trigger": {
+        "main": [
+          [
+            {
+              "node": "Mattermost",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "0f559111233e1786",
+    "name": "Sample error workflow",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

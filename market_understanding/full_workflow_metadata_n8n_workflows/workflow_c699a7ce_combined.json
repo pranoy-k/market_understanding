@@ -1,0 +1,60 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c699a7ce",
+  "workflow_id": "c699a7ce",
+  "workflow_id_display": "c699a7ce",
+  "workflow_name": "Receive updates on a new project created in Copper",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate lead management in Copper CRM with this companion workflow—integrate triggers, boost productivity, and optimize your sales process effortlessly.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with copperTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Copper Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Copper Trigger",
+        "type": "n8n-nodes-base.copperTrigger",
+        "position": [
+          890,
+          400
+        ],
+        "webhookId": "493ce79a-6a08-4062-86d9-7f4618b6c1ea",
+        "parameters": {
+          "event": "new",
+          "resource": "project"
+        },
+        "credentials": {
+          "copperApi": "copper_creds"
+        },
+        "typeVersion": 1,
+        "id": "48975df4045f0194"
+      }
+    ],
+    "connections": {},
+    "id": "8b3ecb06dceceac2",
+    "name": "Receive updates on a new project created in Copper",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

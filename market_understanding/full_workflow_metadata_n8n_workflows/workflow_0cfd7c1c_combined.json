@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0cfd7c1c",
+  "workflow_id": "0cfd7c1c",
+  "workflow_id_display": "0cfd7c1c",
+  "workflow_name": "Get all Excel workbooks",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Excel, PDF",
+  "tags": [
+    "excel"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Excel data tasks with this workflow—integrate documented steps, follow a visual guide, and simplify automation. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, microsoftExcel"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Microsoft Excel",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "n8n-nodes-base.microsoftExcel",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "filters": {},
+          "operation": "getAll"
+        },
+        "credentials": {
+          "microsoftExcelOAuth2Api": "ms-oauth-creds"
+        },
+        "typeVersion": 1,
+        "id": "df0d705ee0b94286"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Excel",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "cd2105d9e3dc0ad8",
+    "name": "Get all Excel workbooks",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "excel"
+    ]
+  }
+}

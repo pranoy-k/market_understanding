@@ -1,0 +1,56 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/76fe1078",
+  "workflow_id": "76fe1078",
+  "workflow_id_display": "76fe1078",
+  "workflow_name": "Receive server-sent events",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your SSE integration with a visual workflow for the SSE Trigger node. See step-by-step setup, perfect for developers starting event-driven automations.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with sseTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "SSE Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "",
+    "nodes": [
+      {
+        "name": "SSE Trigger",
+        "type": "n8n-nodes-base.sseTrigger",
+        "position": [
+          850,
+          420
+        ],
+        "parameters": {
+          "url": "https://n8n.io"
+        },
+        "typeVersion": 1,
+        "id": "a1ed7d7cfe1a0fd8"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {},
+    "id": "96268d4006e8d83b",
+    "staticData": null,
+    "tags": []
+  }
+}

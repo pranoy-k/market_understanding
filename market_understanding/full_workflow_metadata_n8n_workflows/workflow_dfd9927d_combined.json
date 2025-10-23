@@ -1,0 +1,337 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dfd9927d",
+  "workflow_id": "dfd9927d",
+  "workflow_id_display": "dfd9927d",
+  "workflow_name": "Add a new lead to Pipedrive once GitHub repo is forked",
+  "category": "Marketing & Sales",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "8",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically add new leads to Pipedrive from GitHub forks. Capture user info, prevent duplicates, and boost sales opportunities effortlessly. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, githubTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On fork",
+      "type": "Trigger"
+    },
+    {
+      "name": "Set person Id",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create lead",
+      "type": "Process"
+    },
+    {
+      "name": "Create person",
+      "type": "Process"
+    },
+    {
+      "name": "Create note with github url",
+      "type": "Process"
+    },
+    {
+      "name": "Get Github user information",
+      "type": "Data Input"
+    },
+    {
+      "name": "Search forkee in Pipedrive by email",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
+    },
+    "nodes": [
+      {
+        "id": "a84fa822-fd74-45db-93c6-f51be75ef307",
+        "name": "person exists",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          920,
+          340
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json[\"name\"]}}",
+                "operation": "isNotEmpty"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "500ef1bd-8965-4245-81d7-14c3897b4275",
+        "name": "Set person Id",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1480,
+          320
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "PipedrivePersonId",
+                "value": "={{ $json[\"id\"] }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "ab1a1335-92c8-41f8-b008-5b19530f08e9",
+        "name": "Create lead",
+        "type": "n8n-nodes-base.pipedrive",
+        "position": [
+          1740,
+          320
+        ],
+        "parameters": {
+          "title": "=Repo '{{$node[\"On fork\"].json[\"body\"][\"repository\"][\"full_name\"]}}' forked by {{$json[\"name\"]}}",
+          "resource": "lead",
+          "person_id": "={{$json[\"PipedrivePersonId\"]}}",
+          "associateWith": "person",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "pipedriveApi": {
+            "id": "1",
+            "name": "Pipedrive account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "4fd06c6a-4975-4a6a-95f3-bb48f3e9bdf6",
+        "name": "On fork",
+        "type": "n8n-nodes-base.githubTrigger",
+        "position": [
+          180,
+          340
+        ],
+        "webhookId": "ff05ca29-9ed3-4b97-a4ce-4f9b1c05255f",
+        "parameters": {
+          "owner": "John-n8n",
+          "events": [
+            "fork"
+          ],
+          "repository": "DemoRepo"
+        },
+        "credentials": {
+          "githubApi": {
+            "id": "7",
+            "name": "GitHub account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "86554078-ce7c-4dd3-b36f-d1bf22530f7b",
+        "name": "Create person",
+        "type": "n8n-nodes-base.pipedrive",
+        "position": [
+          1200,
+          440
+        ],
+        "parameters": {
+          "name": "={{ $node[\"On fork\"].json[\"body\"].forkee.owner.login }}",
+          "resource": "person",
+          "additionalFields": {
+            "email": [
+              "={{$node[\"Get Github user information\"].email}}"
+            ]
+          }
+        },
+        "credentials": {
+          "pipedriveApi": {
+            "id": "1",
+            "name": "Pipedrive account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "c4a8dae8-d6f3-4309-8fa5-78d69cf1b1e8",
+        "name": "Create note with github url",
+        "type": "n8n-nodes-base.pipedrive",
+        "position": [
+          1980,
+          320
+        ],
+        "parameters": {
+          "content": "=Github user url: {{ $node[\"On fork\"].json[\"body\"].sender.html_url }}",
+          "resource": "note",
+          "additionalFields": {
+            "lead_id": "={{ $json[\"id\"] }}"
+          }
+        },
+        "credentials": {
+          "pipedriveApi": {
+            "id": "1",
+            "name": "Pipedrive account"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "8dfa3e8e-29d8-4098-825d-8ec915ca6f3f",
+        "name": "Get Github user information",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          440,
+          340
+        ],
+        "parameters": {
+          "url": "={{$json[\"body\"].sender.url}}",
+          "options": {},
+          "authentication": "predefinedCredentialType",
+          "nodeCredentialType": "githubApi"
+        },
+        "credentials": {
+          "githubApi": {
+            "id": "7",
+            "name": "GitHub account"
+          }
+        },
+        "typeVersion": 2
+      },
+      {
+        "id": "c4c2538a-28e8-4c75-856d-000a727a4f13",
+        "name": "Search forkee in Pipedrive by email",
+        "type": "n8n-nodes-base.pipedrive",
+        "position": [
+          680,
+          340
+        ],
+        "parameters": {
+          "term": "={{ $json[\"email\"]}}",
+          "resource": "person",
+          "operation": "search",
+          "additionalFields": {
+            "fields": "email"
+          }
+        },
+        "credentials": {
+          "pipedriveApi": {
+            "id": "1",
+            "name": "Pipedrive account"
+          }
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": true
+      }
+    ],
+    "connections": {
+      "On fork": {
+        "main": [
+          [
+            {
+              "node": "Get Github user information",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create lead": {
+        "main": [
+          [
+            {
+              "node": "Create note with github url",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Create person": {
+        "main": [
+          [
+            {
+              "node": "Set person Id",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Set person Id": {
+        "main": [
+          [
+            {
+              "node": "Create lead",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "person exists": {
+        "main": [
+          [
+            {
+              "node": "Set person Id",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Create person",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Github user information": {
+        "main": [
+          [
+            {
+              "node": "Search forkee in Pipedrive by email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Search forkee in Pipedrive by email": {
+        "main": [
+          [
+            {
+              "node": "person exists",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7d25c3c6436508d0",
+    "name": "Add a new lead to Pipedrive once GitHub repo is forked",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

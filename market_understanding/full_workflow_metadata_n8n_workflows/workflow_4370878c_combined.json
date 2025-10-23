@@ -1,0 +1,121 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4370878c",
+  "workflow_id": "4370878c",
+  "workflow_id_display": "4370878c",
+  "workflow_name": "Send a file from S3 to AWS Textract",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "Tom",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily download receipt images from AWS S3 and extract text with Amazon Textract in a simple two-node workflow. Discover how to automate now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsTextract, awsS3"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS Textract",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "AWS Textract",
+        "type": "n8n-nodes-base.awsTextract",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {},
+        "credentials": {
+          "aws": {
+            "id": "12",
+            "name": "AWS account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "2a9fec80a01c2045"
+      },
+      {
+        "name": "AWS S3",
+        "type": "n8n-nodes-base.awsS3",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "fileKey": "Rechnung.jpg",
+          "bucketName": "textract-demodata"
+        },
+        "credentials": {
+          "aws": {
+            "id": "12",
+            "name": "AWS account"
+          }
+        },
+        "typeVersion": 1,
+        "id": "8edbbb102bad0a41"
+      }
+    ],
+    "connections": {
+      "AWS S3": {
+        "main": [
+          [
+            {
+              "node": "AWS Textract",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS S3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "64d0b4ad00b0f04c",
+    "name": "Send a file from S3 to AWS Textract",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

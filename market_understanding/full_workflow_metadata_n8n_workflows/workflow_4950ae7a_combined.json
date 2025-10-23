@@ -1,0 +1,188 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4950ae7a",
+  "workflow_id": "4950ae7a",
+  "workflow_id_display": "4950ae7a",
+  "workflow_name": "Listen on new emails on a IMAP mailbox",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "5",
+  "tools_integrations": "Email",
+  "tags": [
+    "xml",
+    "json"
+  ],
+  "author_name": "mail",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Monitor IMAP emails for XML attachments, auto-convert XML to JSON, and send data via POST. Ideal for EDI workflows and seamless data integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, xml, set"
+  ],
+  "nodes": [
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "1",
+    "name": "ImapEmail, XmlToJson, POST-HTTP-Request",
+    "nodes": [
+      {
+        "name": "IMAP Email",
+        "type": "n8n-nodes-base.emailReadImap",
+        "position": [
+          450,
+          450
+        ],
+        "parameters": {
+          "options": {
+            "allowUnauthorizedCerts": true
+          },
+          "downloadAttachments": true
+        },
+        "credentials": {
+          "imap": ""
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Move Binary Data",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          600,
+          450
+        ],
+        "parameters": {
+          "options": {
+            "encoding": "utf8",
+            "keepSource": false
+          },
+          "sourceKey": "attachment_0",
+          "setAllData": false,
+          "destinationKey": "xml"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "XML",
+        "type": "n8n-nodes-base.xml",
+        "position": [
+          800,
+          450
+        ],
+        "parameters": {
+          "options": {
+            "ignoreAttrs": true,
+            "explicitRoot": true
+          },
+          "dataPropertyName": "xml"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          1210,
+          450
+        ],
+        "parameters": {
+          "url": "http://localhost:5679/api/sales-order",
+          "options": {
+            "bodyContentType": "form-urlencoded"
+          },
+          "requestMethod": "POST",
+          "responseFormat": "string",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "orderRequest",
+                "value": "={{$node[\"Set\"].data}}"
+              }
+            ]
+          },
+          "dataPropertyName": "status",
+          "allowUnauthorizedCerts": true
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          960,
+          450
+        ],
+        "parameters": {
+          "values": {
+            "number": []
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {
+      "errorWorkflow": "2"
+    },
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "XML": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "IMAP Email": {
+        "main": [
+          [
+            {
+              "node": "Move Binary Data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Move Binary Data": {
+        "main": [
+          [
+            {
+              "node": "XML",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

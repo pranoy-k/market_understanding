@@ -1,0 +1,176 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/2d7d8e60",
+  "workflow_id": "2d7d8e60",
+  "workflow_id_display": "2d7d8e60",
+  "workflow_name": "Check for preview for a link",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly check if a link preview exists and fetch rich previews for valid URLs. Seamlessly integrate results with Slack, Mattermost, and more. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, peekalink, if"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Peekalink",
+      "type": "Process"
+    },
+    {
+      "name": "Peekalink1",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Peekalink",
+        "type": "n8n-nodes-base.peekalink",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "url": "https://n8n1.io",
+          "operation": "isAvailable"
+        },
+        "credentials": {
+          "peekalinkApi": "Peekalink API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "7f54b8aa97b229e0"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [],
+            "boolean": [
+              {
+                "value1": "={{$json[\"isAvailable\"]}}",
+                "value2": true
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "Peekalink1",
+        "type": "n8n-nodes-base.peekalink",
+        "position": [
+          910,
+          200
+        ],
+        "parameters": {
+          "url": "={{$node[\"Peekalink\"].parameter[\"url\"]}}"
+        },
+        "credentials": {
+          "peekalinkApi": "Peekalink API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "352c798f36c77f3c"
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          910,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "f4b80294a7bd7d23"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "Peekalink1",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Peekalink": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Peekalink",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "abe3a7c3f9a1dcb4",
+    "name": "Check for preview for a link",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "slack"
+    ]
+  }
+}

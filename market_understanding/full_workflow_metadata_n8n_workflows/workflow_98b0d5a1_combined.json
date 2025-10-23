@@ -1,0 +1,232 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/98b0d5a1",
+  "workflow_id": "98b0d5a1",
+  "workflow_id_display": "98b0d5a1",
+  "workflow_name": "Create an issue on GitLab on every GitHub release",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "6",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically create GitLab issues for every new GitHub release. Easy n8n setup, supports repos you don't own. Streamline workflows—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, github, merge"
+  ],
+  "nodes": [
+    {
+      "name": "No issue for release?",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Get latest release",
+      "type": "Process"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    },
+    {
+      "name": "Merge",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Create issue",
+      "type": "Process"
+    },
+    {
+      "name": "List issues",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Get latest release",
+        "type": "n8n-nodes-base.github",
+        "position": [
+          540,
+          340
+        ],
+        "parameters": {
+          "limit": 1,
+          "resource": "release",
+          "operation": "getAll"
+        },
+        "typeVersion": 1,
+        "id": "f3bb38be68b110ee"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          240,
+          500
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyWeek"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Merge",
+        "type": "n8n-nodes-base.merge",
+        "position": [
+          740,
+          420
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "a763e120c92d1c00"
+      },
+      {
+        "name": "No issue for release?",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          920,
+          420
+        ],
+        "parameters": {
+          "functionCode": "const _ = require('lodash')\n\n// differentiate merged inputs (didnt find a way to get both inputs into one function invocation)\nconst releases = _.filter(items, i => _.has(i, 'json.assets'))\nif (releases.length != 1) throw new Error(`Invalid release count: ${releases.length}`)\nconst release = releases[0]\nconst issues = _.without(items, release)\n//console.log({release,issues})\n\n// check if there's an issue for the release\nconst matchingIssue = _.find(issues, i => i.json.title.includes(release.json.tag_name))\n//console.log({release,issues,matchingIssue})\n\nif (matchingIssue)\n  return []\nelse\n  return [release]"
+        },
+        "executeOnce": false,
+        "typeVersion": 1,
+        "id": "56801b2b6717afdb"
+      },
+      {
+        "name": "Create issue",
+        "type": "n8n-nodes-base.gitlab",
+        "position": [
+          1100,
+          420
+        ],
+        "parameters": {
+          "body": "={{$json[\"url\"]}}\n\n{{$json[\"body\"]}}",
+          "owner": "txlab",
+          "title": "=Upstream release: {{$json[\"tag_name\"]}}",
+          "labels": [],
+          "repository": "docker-linkcheck",
+          "assignee_ids": []
+        },
+        "typeVersion": 1,
+        "id": "2b2d236711a81db5"
+      },
+      {
+        "name": "List issues",
+        "type": "n8n-nodes-base.gitlab",
+        "position": [
+          540,
+          500
+        ],
+        "parameters": {
+          "owner": "txlab",
+          "resource": "repository",
+          "repository": "docker-linkcheck",
+          "getRepositoryIssuesFilters": {}
+        },
+        "typeVersion": 1,
+        "id": "42abb29b236d17ef"
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Get latest release",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "List issues",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge": {
+        "main": [
+          [
+            {
+              "node": "No release for issue?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Start": {
+        "main": [
+          [
+            {
+              "node": "Get latest release",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "List issues",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "List issues": {
+        "main": [
+          [
+            {
+              "node": "Merge",
+              "type": "main",
+              "index": 1
+            }
+          ]
+        ]
+      },
+      "Get latest release": {
+        "main": [
+          [
+            {
+              "node": "Merge",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "No release for issue?": {
+        "main": [
+          [
+            {
+              "node": "Create issue",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "37607eb5fcd9eb03",
+    "name": "Create an issue on GitLab on every GitHub release",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

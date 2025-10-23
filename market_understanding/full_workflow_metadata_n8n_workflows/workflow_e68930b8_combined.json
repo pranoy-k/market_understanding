@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e68930b8",
+  "workflow_id": "e68930b8",
+  "workflow_id_display": "e68930b8",
+  "workflow_name": "Verify email deliverability with Hunter",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Essential companion to Hunter node docs: step-by-step visual workflow, real-world example, and fast onboarding. Explore seamless integration now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, hunter"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Hunter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Hunter",
+        "type": "n8n-nodes-base.hunter",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "email": "user@example.com",
+          "operation": "emailVerifier"
+        },
+        "credentials": {
+          "hunterApi": "hunter api creds"
+        },
+        "typeVersion": 1,
+        "id": "1c300ee2ce73d854"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Hunter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "8657ad6ff87a51a3",
+    "name": "Verify email deliverability with Hunter",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

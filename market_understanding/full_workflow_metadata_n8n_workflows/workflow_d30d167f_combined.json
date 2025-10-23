@@ -1,0 +1,162 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d30d167f",
+  "workflow_id": "d30d167f",
+  "workflow_id_display": "d30d167f",
+  "workflow_name": "Add the affiliate to a program automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Facebook",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily create and onboard affiliates in Tapfiliate, enrich profiles with metadata, and assign programs—all in one streamlined workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, tapfiliate"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tapfiliate2",
+      "type": "Process"
+    },
+    {
+      "name": "Tapfiliate1",
+      "type": "Process"
+    },
+    {
+      "name": "Tapfiliate",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Tapfiliate2",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "resource": "programAffiliate",
+          "programId": "testing-program-5",
+          "affiliateId": "={{$node[\"Tapfiliate\"].json[\"id\"]}}",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1,
+        "id": "7b49be9fe5f8a600"
+      },
+      {
+        "name": "Tapfiliate1",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "resource": "affiliateMetadata",
+          "metadataUi": {
+            "metadataValues": [
+              {
+                "key": "tag",
+                "value": "n8n"
+              }
+            ]
+          },
+          "affiliateId": "={{$json[\"id\"]}}"
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1,
+        "id": "597b7189af2ef86d"
+      },
+      {
+        "name": "Tapfiliate",
+        "type": "n8n-nodes-base.tapfiliate",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "email": "n8ndocsburner@gmail.com",
+          "lastname": "Ryan",
+          "firstname": "Jack",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "tapfiliateApi": "Tapfiliate API credentials"
+        },
+        "typeVersion": 1,
+        "id": "66d88ed840c78805"
+      },
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      }
+    ],
+    "connections": {
+      "Tapfiliate": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Tapfiliate1": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Tapfiliate",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "5edb8f9a8325fa1c",
+    "name": "Add the affiliate to a program automatically",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

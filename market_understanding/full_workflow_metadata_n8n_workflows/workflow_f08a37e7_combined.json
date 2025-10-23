@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f08a37e7",
+  "workflow_id": "f08a37e7",
+  "workflow_id_display": "f08a37e7",
+  "workflow_name": "Receive updates from HubSpot on a new contact creation",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "HubSpot",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Seamlessly sync data with HubSpot. Use the companion workflow to automate triggers, simplify setup, and streamline onboarding. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with hubspotTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Hubspot Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Hubspot Trigger",
+        "type": "n8n-nodes-base.hubspotTrigger",
+        "position": [
+          700,
+          260
+        ],
+        "webhookId": "9fe8c037-be4f-4809-a7c2-96e509bfc52e",
+        "parameters": {
+          "appId": "dghert3",
+          "additionalFields": {
+            "maxConcurrentRequests": 5
+          }
+        },
+        "credentials": {
+          "hubspotDeveloperApi": "hubspot_trigger"
+        },
+        "typeVersion": 1,
+        "id": "271249cd615cd9b0"
+      }
+    ],
+    "connections": {},
+    "id": "0e10c942862f6c32",
+    "name": "Receive updates from HubSpot on a new contact creation",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

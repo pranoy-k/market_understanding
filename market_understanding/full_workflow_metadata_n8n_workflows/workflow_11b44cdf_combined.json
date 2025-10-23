@@ -1,0 +1,62 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/11b44cdf",
+  "workflow_id": "11b44cdf",
+  "workflow_id_display": "11b44cdf",
+  "workflow_name": "Receive updates for Calendly events",
+  "category": "HR & Operations",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate Calendly event management with this ready-to-use n8n workflow. Customize actions, boost productivity, and keep your team updated.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with calendlyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Calendly Trigger",
+        "type": "n8n-nodes-base.calendlyTrigger",
+        "position": [
+          880,
+          400
+        ],
+        "webhookId": "9d13bcea-781a-4462-a9af-44bfb1fb6891",
+        "parameters": {
+          "events": [
+            "invitee.created",
+            "invitee.canceled"
+          ]
+        },
+        "credentials": {
+          "calendlyApi": "calendly_creds"
+        },
+        "typeVersion": 1,
+        "id": "2bf0f40586f0ad6c"
+      }
+    ],
+    "connections": {},
+    "id": "a128145945a8283d",
+    "name": "Receive updates for Calendly events",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

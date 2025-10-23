@@ -1,0 +1,98 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/382ec9ba",
+  "workflow_id": "382ec9ba",
+  "workflow_id_display": "382ec9ba",
+  "workflow_name": "Create an image procedurally using Bannerbear",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a practical companion to Bannerbear node docs—featuring real-world workflows, automation examples, and visual guides to streamline your projects.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, bannerbear"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Bannerbear",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Bannerbear",
+        "type": "n8n-nodes-base.bannerbear",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "templateId": "8BK3vWZJ7Wl5Jzk1aX",
+          "modificationsUi": {
+            "modificationsValues": [
+              {
+                "name": "message",
+                "text": "this is some text",
+                "color": "#3097BC",
+                "background": "#28A96F"
+              }
+            ]
+          },
+          "additionalFields": {
+            "waitForImage": true
+          }
+        },
+        "credentials": {
+          "bannerbearApi": "bannerbear_creds"
+        },
+        "typeVersion": 1,
+        "id": "125d1dc076f39694"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Bannerbear",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f58e445d6a1095c6",
+    "name": "Create an image procedurally using Bannerbear",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/fea2fad6",
+  "workflow_id": "fea2fad6",
+  "workflow_id_display": "fea2fad6",
+  "workflow_name": "Create a task in ClickUp",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Airtable, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead management: collect Typeform leads, enrich data with Clearbit, notify sales on Slack, and organize in Airtable. Streamline your workflow now!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, clickUp"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "ClickUp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "105",
+    "name": "Create a task in ClickUp",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "ClickUp",
+        "type": "n8n-nodes-base.clickUp",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "list": "",
+          "name": "",
+          "team": "",
+          "space": "",
+          "folder": "",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "clickUpApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "ClickUp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

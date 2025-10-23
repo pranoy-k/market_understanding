@@ -1,0 +1,173 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/17a0d08f",
+  "workflow_id": "17a0d08f",
+  "workflow_id_display": "17a0d08f",
+  "workflow_name": "Export CSV file to JSON",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "5",
+  "tools_integrations": "CSV",
+  "tags": [
+    "csv",
+    "json"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Easily convert your local CSV files to structured JSON. Streamline data handling, save time, and simplify integration with modern applications. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, writeBinaryFile, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Move Binary Data",
+      "type": "Process"
+    },
+    {
+      "name": "Write Binary File",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          -240,
+          180
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Read Binary File",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          -60,
+          180
+        ],
+        "parameters": {
+          "filePath": "/username/n8n_spreadsheet.csv"
+        },
+        "typeVersion": 1,
+        "id": "73c99f623f86df40"
+      },
+      {
+        "name": "Spreadsheet File1",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          120,
+          180
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "bb416a6701d9154b"
+      },
+      {
+        "name": "Move Binary Data",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          300,
+          180
+        ],
+        "parameters": {
+          "mode": "jsonToBinary",
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "5ff5d5e781ae2e1b"
+      },
+      {
+        "name": "Write Binary File",
+        "type": "n8n-nodes-base.writeBinaryFile",
+        "position": [
+          480,
+          180
+        ],
+        "parameters": {
+          "fileName": "/username/n8n_spreadsheet.json"
+        },
+        "typeVersion": 1,
+        "id": "71e38fa94206825b"
+      }
+    ],
+    "connections": {
+      "Move Binary Data": {
+        "main": [
+          [
+            {
+              "node": "Write Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read Binary File": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File1": {
+        "main": [
+          [
+            {
+              "node": "Move Binary Data",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Read Binary File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "bf4f3324291b7821",
+    "name": "Export CSV file to JSON",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "csv",
+      "json"
+    ]
+  }
+}

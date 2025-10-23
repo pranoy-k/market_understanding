@@ -1,0 +1,99 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/8683dd4f",
+  "workflow_id": "8683dd4f",
+  "workflow_id_display": "8683dd4f",
+  "workflow_name": "Assign values to variables using the Set node",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Airtable, Google Sheets, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Boost team efficiency with real-time Google Sheets updates, automated Slack alerts, and seamless approvals—track every action in Airtable. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, set"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "141",
+    "name": "Assign values to variables using the Set node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "number",
+                "value": 20
+              }
+            ],
+            "string": [
+              {
+                "name": "string",
+                "value": "From n8n with love"
+              }
+            ],
+            "boolean": [
+              {
+                "name": "boolean",
+                "value": true
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a8f51a86",
+  "workflow_id": "a8f51a86",
+  "workflow_id_display": "a8f51a86",
+  "workflow_name": "Get first and last names from Facebook Graph API",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Facebook",
+  "tags": [
+    "facebook",
+    "api"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Master Facebook node workflows in n8n with step-by-step guides, annotated screenshots, and best practices. Streamline your automation—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, facebookGraphApi"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Facebook Graph API",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Facebook Graph API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Facebook Graph API",
+        "type": "n8n-nodes-base.facebookGraphApi",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "node": "me",
+          "options": {
+            "fields": {
+              "field": [
+                {
+                  "name": "last_name"
+                },
+                {
+                  "name": "first_name"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "facebookGraphApi": "graph_credentials"
+        },
+        "typeVersion": 1,
+        "id": "e669fae7de64143d"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Facebook Graph API",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "711965ce60e3be70",
+    "name": "Get first and last names from Facebook Graph API",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "facebook",
+      "api"
+    ]
+  }
+}

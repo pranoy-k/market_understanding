@@ -1,0 +1,141 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/806e68b4",
+  "workflow_id": "806e68b4",
+  "workflow_id_display": "806e68b4",
+  "workflow_name": "Verify a phone number with uProc",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Miquel Colomer",
+  "author_profile_url": "https://n8n.io/creators/mcolomer/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically validate global landline and mobile numbers with uProc and n8n. Improve call accuracy, reduce errors, and keep your contacts up-to-date.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, uproc, functionItem"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create Phone Item",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Parse and Validate Phone",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "114",
+    "name": "Verify phone numbers",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          440,
+          510
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Create Phone Item",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          640,
+          510
+        ],
+        "parameters": {
+          "functionCode": "item.phone = \"+34605281220\";\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Parse and Validate Phone",
+        "type": "n8n-nodes-base.uproc",
+        "position": [
+          850,
+          510
+        ],
+        "parameters": {
+          "tool": "getPhoneParsed",
+          "phone": "={{$node[\"Create Phone Item\"].json[\"phone\"]}}",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "uprocApi": "miquel-uproc"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Phone is Valid?",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          1050,
+          510
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$node[\"Parse and Validate Phone\"].json[\"message\"][\"valid\"]+\"\"}}",
+                "value2": "true"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Create Phone Item": {
+        "main": [
+          [
+            {
+              "node": "Parse and Validate Phone",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Create Phone Item",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Parse and Validate Phone": {
+        "main": [
+          [
+            {
+              "node": "Phone is Valid?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

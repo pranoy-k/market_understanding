@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9fabcf15",
+  "workflow_id": "9fabcf15",
+  "workflow_id_display": "9fabcf15",
+  "workflow_name": "Trigger a build in Travis CI when code changes are push to a GitHub repo",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "GitHub",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically trigger Travis CI builds on GitHub code pushes or new pull requests. Smart filtering avoids wasteful builds. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with if, travisCi, noOp"
+  ],
+  "nodes": [
+    {
+      "name": "Github Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "TravisCI",
+      "type": "Process"
+    },
+    {
+      "name": "NoOp",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Github Trigger",
+        "type": "n8n-nodes-base.githubTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "01518289-14b1-4a45-9d33-39be08f7a544",
+        "parameters": {
+          "owner": "n8n-io",
+          "events": [
+            "push",
+            "pull_request"
+          ],
+          "repository": "n8n",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "githubOAuth2Api": "GitHub Credentials"
+        },
+        "typeVersion": 1,
+        "id": "46941086647b5247"
+      },
+      {
+        "name": "IF",
+        "type": "n8n-nodes-base.if",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "conditions": {
+            "string": [
+              {
+                "value1": "={{$json[\"headers\"][\"x-github-event\"]}}",
+                "value2": "push"
+              },
+              {
+                "value1": "={{$json[\"body\"][\"action\"]}}",
+                "value2": "opened"
+              }
+            ]
+          },
+          "combineOperation": "any"
+        },
+        "typeVersion": 1,
+        "id": "842917c82ab03865"
+      },
+      {
+        "name": "TravisCI",
+        "type": "n8n-nodes-base.travisCi",
+        "position": [
+          850,
+          200
+        ],
+        "parameters": {
+          "slug": "={{$json[\"body\"][\"repository\"][\"full_name\"]}}",
+          "branch": "=",
+          "operation": "trigger",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "travisCiApi": "Travis API"
+        },
+        "typeVersion": 1,
+        "id": "77050cfe3dcfc4e7"
+      },
+      {
+        "name": "NoOp",
+        "type": "n8n-nodes-base.noOp",
+        "position": [
+          850,
+          400
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "f4b80294a7bd7d23"
+      }
+    ],
+    "connections": {
+      "IF": {
+        "main": [
+          [
+            {
+              "node": "TravisCI",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "NoOp",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Github Trigger": {
+        "main": [
+          [
+            {
+              "node": "IF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "3591a9d6f1145d5b",
+    "name": "Trigger a build in Travis CI when code changes are push to a GitHub repo",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

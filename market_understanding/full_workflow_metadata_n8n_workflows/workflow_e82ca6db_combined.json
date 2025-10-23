@@ -1,0 +1,65 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e82ca6db",
+  "workflow_id": "e82ca6db",
+  "workflow_id_display": "e82ca6db",
+  "workflow_name": "Receive updates for support in Zendesk",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Airtable, Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Streamline support with instant webform capture, Airtable tracking, auto-emails, and Slack alerts. Enhance team coordination and customer satisfaction.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with zendeskTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Zendesk Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "33",
+    "name": "Receive updates for support in Zendesk",
+    "nodes": [
+      {
+        "name": "Zendesk Trigger",
+        "type": "n8n-nodes-base.zendeskTrigger",
+        "position": [
+          690,
+          300
+        ],
+        "webhookId": "7d01a119-83c7-43b7-8668-a2f26b95d225",
+        "parameters": {
+          "options": {},
+          "conditions": {
+            "all": [
+              {}
+            ]
+          }
+        },
+        "credentials": {
+          "zendeskApi": "zendesk-token"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3d28ed7f",
+  "workflow_id": "3d28ed7f",
+  "workflow_id_display": "3d28ed7f",
+  "workflow_name": "Extract post titles from a blog",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly extract all post titles from the Hackernoon homepage using n8n. Save time with automated scraping and get a full list in seconds.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, httpRequest, htmlExtract"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "HTML Extract",
+      "type": "Process"
+    },
+    {
+      "name": "HTML Extract1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "url": "https://hackernoon.com/",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "HTML Extract",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "extractionValues": {
+            "values": [
+              {
+                "key": "item",
+                "cssSelector": "h2",
+                "returnArray": true,
+                "returnValue": "html"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "c89482b5eef605af"
+      },
+      {
+        "name": "HTML Extract1",
+        "type": "n8n-nodes-base.htmlExtract",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "dataPropertyName": "item",
+          "extractionValues": {
+            "values": [
+              {
+                "key": "title",
+                "cssSelector": "a"
+              },
+              {
+                "key": "url",
+                "attribute": "href",
+                "cssSelector": "a",
+                "returnValue": "attribute"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "5c38128f07e10568"
+      }
+    ],
+    "connections": {
+      "HTML Extract": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "HTML Extract",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "dd839b9ce99d8d65",
+    "name": "Extract post titles from a blog",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

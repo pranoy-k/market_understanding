@@ -1,0 +1,89 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/143eeff2",
+  "workflow_id": "143eeff2",
+  "workflow_id_display": "143eeff2",
+  "workflow_name": "Create a new issue in Jira",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Jira, Slack",
+  "tags": [
+    "google",
+    "slack"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Google Form responses with real-time data processing and instant Slack notifications. Keep your team updated and act faster—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, jira"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Jira",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "87",
+    "name": "Create a new issue in Jira",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          350,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Jira",
+        "type": "n8n-nodes-base.jira",
+        "position": [
+          550,
+          300
+        ],
+        "parameters": {
+          "project": "",
+          "summary": "Firewall on fire",
+          "issueType": "10001",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "jiraSoftwareCloudApi": ""
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Jira",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

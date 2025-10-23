@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/bbc12bbd",
+  "workflow_id": "bbc12bbd",
+  "workflow_id_display": "bbc12bbd",
+  "workflow_name": "Send an email",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly send emails with n8n’s Send Email node. Step-by-step workflow ensures easy setup, testing, and integration. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "text": "This is a message to demonstrate the n8n Send Email workflow!",
+          "options": {
+            "allowUnauthorizedCerts": false
+          },
+          "subject": "n8n rocks!",
+          "toEmail": "user@example.com",
+          "fromEmail": "user@from.email"
+        },
+        "credentials": {
+          "smtp": "your@smtp_creds.here"
+        },
+        "typeVersion": 1,
+        "id": "63035b782d75860b"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "25a29f94837a4457",
+    "name": "Send an email",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

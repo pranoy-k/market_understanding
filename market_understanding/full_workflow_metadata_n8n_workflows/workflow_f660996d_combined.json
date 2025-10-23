@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f660996d",
+  "workflow_id": "f660996d",
+  "workflow_id_display": "f660996d",
+  "workflow_name": "Create Onfleet tasks from local Spreadsheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [],
+  "author_name": "James Li",
+  "author_profile_url": "https://n8n.io/creators/ilsemaj/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly import delivery tasks into Onfleet from spreadsheets. Automate one-time task creation, customize imports, and streamline last-mile logistics.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with onfleet, spreadsheetFile, readBinaryFile"
+  ],
+  "nodes": [
+    {
+      "name": "Onfleet",
+      "type": "Process"
+    },
+    {
+      "name": "Read Binary File",
+      "type": "Data Output"
+    },
+    {
+      "name": "Spreadsheet File1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 12,
+    "name": "Create Onfleet tasks from Spreadsheets",
+    "nodes": [
+      {
+        "name": "Onfleet",
+        "type": "n8n-nodes-base.onfleet",
+        "position": [
+          900,
+          280
+        ],
+        "parameters": {
+          "operation": "create",
+          "destination": {
+            "destinationProperties": {
+              "address": "={{$json[\"Address_Line1\"]}}, {{$json[\"Address_Line2\"]}}, {{$json[\"City/Town\"]}} {{$json[\"State/Province\"]}}, {{$json[\"Country\"]}}, {{$json[\"Postal_Code\"]}}",
+              "unparsed": true,
+              "addressNotes": "=",
+              "addressApartment": "={{$json[\"Address_Line2\"]}}"
+            }
+          },
+          "additionalFields": {
+            "notes": "={{$json[\"Task_Details\"]}}",
+            "recipient": {
+              "recipientProperties": {
+                "recipientName": "={{$json[\"Recipient_Name\"]}}",
+                "recipientNotes": "={{$json[\"Recipient_Notes\"]}}",
+                "recipientPhone": "=+1{{$json[\"Recipient_Phone\"]}}"
+              }
+            }
+          }
+        },
+        "credentials": {
+          "onfleetApi": {
+            "id": "2",
+            "name": "Onfleet API Key"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Read Binary File",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          500,
+          280
+        ],
+        "parameters": {
+          "filePath": "=/Users/jamesli/Downloads/Onfleet Import Google Sheet.xlsx"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Spreadsheet File1",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          700,
+          280
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Read Binary File": {
+        "main": [
+          [
+            {
+              "node": "Spreadsheet File1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Spreadsheet File1": {
+        "main": [
+          [
+            {
+              "node": "Onfleet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

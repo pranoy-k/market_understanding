@@ -1,0 +1,101 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0ef3f92c",
+  "workflow_id": "0ef3f92c",
+  "workflow_id_display": "0ef3f92c",
+  "workflow_name": "Create an invoice based on the Typeform submission",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily generate invoices from Typeform submissions with this workflow. Automate data collection and invoice creation using APITemplate.io. Learn more.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with typeformTrigger, apiTemplateIo"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "APITemplate.io",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "APITemplate.io"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Typeform Trigger",
+        "type": "n8n-nodes-base.typeformTrigger",
+        "position": [
+          490,
+          280
+        ],
+        "webhookId": "6c4b1aa0-226a-4875-bdc3-85bf2313085b",
+        "parameters": {
+          "formId": "dpr2kxSL",
+          "simplifyAnswers": false
+        },
+        "credentials": {
+          "typeformApi": "Typeform Burner Account"
+        },
+        "typeVersion": 1,
+        "id": "85d46f6f3ec7fc4e"
+      },
+      {
+        "name": "APITemplate.io",
+        "type": "n8n-nodes-base.apiTemplateIo",
+        "position": [
+          690,
+          280
+        ],
+        "parameters": {
+          "options": {
+            "fileName": "invoice.pdf"
+          },
+          "download": true,
+          "resource": "pdf",
+          "pdfTemplateId": "96c77b2b1ab6ac88",
+          "jsonParameters": true,
+          "propertiesJson": "={\n  \"company\": \"n8n\",\n  \"email\": \"{{$json[\"1\"][\"email\"]}}\",\n  \"invoice_no\": \"213223444\",\n  \"invoice_date\": \"18-03-2021\",\n  \"invoice_due_date\": \"17-04-2021\",\n  \"address\": \"Berlin, Germany\",\n  \"company_bill_to\": \"{{$json[\"0\"][\"text\"]}}\",\n  \"website\": \"https://n8n.io\",\n  \"document_id\": \"889856789012\",\n  \"items\": [\n    {\n      \"item_name\": \"{{$json[\"2\"][\"text\"]}}\",\n      \"price\": \"EUR {{$json[\"3\"][\"number\"]}}\"\n    },\n    {\n      \"item_name\": \"{{$json[\"4\"][\"text\"]}}\",\n      \"price\": \"EUR {{$json[\"5\"][\"number\"]}}\"\n    }    \n    ]\n}"
+        },
+        "credentials": {
+          "apiTemplateIoApi": "APITemplate Credentials"
+        },
+        "typeVersion": 1,
+        "id": "4ddceab844205f18"
+      }
+    ],
+    "connections": {
+      "Typeform Trigger": {
+        "main": [
+          [
+            {
+              "node": "APITemplate.io",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "5c4fbf5b1dbfe393",
+    "name": "Create an invoice based on the Typeform submission",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

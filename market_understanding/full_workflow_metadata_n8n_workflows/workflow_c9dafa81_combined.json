@@ -1,0 +1,134 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/c9dafa81",
+  "workflow_id": "c9dafa81",
+  "workflow_id_display": "c9dafa81",
+  "workflow_name": "Convert HTML to PDF and Return via Webhook using CustomJS API",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, PDF, Webhook",
+  "tags": [
+    "webhook",
+    "api",
+    "pdf"
+  ],
+  "author_name": "CustomJS",
+  "author_profile_url": "https://n8n.io/creators/customjs/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Easily convert HTML to styled PDFs with n8n and CustomJS. Set up a webhook to receive HTML, convert to PDF, and auto-respond. Learn more now!",
+  "key_benefits": [
+    "API integration",
+    "Integration with html2Pdf, webhook, respondToWebhook"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "Respond to Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTML to PDF",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "fcf18fc485cc336a31bc65574fd28e124660f468281b7aad773616b17903afe6",
+      "templateCredsSetupCompleted": true
+    },
+    "nodes": [
+      {
+        "id": "37bd6cc9-3cc4-442e-94c1-42972c0fce0d",
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          80,
+          0
+        ],
+        "webhookId": "060dbacf-0feb-43d4-b4ac-44011a7dd1a4",
+        "parameters": {
+          "path": "060dbacf-0feb-43d4-b4ac-44011a7dd1a4",
+          "options": {},
+          "responseMode": "responseNode"
+        },
+        "typeVersion": 2
+      },
+      {
+        "id": "3c05c0e4-7121-46d0-b35c-fc39cdd35ae7",
+        "name": "Respond to Webhook",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "position": [
+          580,
+          0
+        ],
+        "parameters": {
+          "options": {},
+          "respondWith": "binary"
+        },
+        "typeVersion": 1.1
+      },
+      {
+        "id": "3f5ba2a7-148d-4921-b2ca-9dee17a2b278",
+        "name": "HTML to PDF",
+        "type": "@custom-js/n8n-nodes-pdf-toolkit.html2Pdf",
+        "position": [
+          340,
+          0
+        ],
+        "parameters": {
+          "htmlInput": "<h1>Hello CustomJS!</h1>\n<h2>CustomJS provides the missing toolset for your no-code projects</h2>"
+        },
+        "credentials": {
+          "customJsApi": {
+            "id": "SZkqeEHVYyWhaGem",
+            "name": "CustomJS account"
+          }
+        },
+        "typeVersion": 1
+      }
+    ],
+    "pinData": {},
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "HTML to PDF",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTML to PDF": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c960a4207e177ea0",
+    "name": "Convert HTML to PDF and Return via Webhook using CustomJS API",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "webhook",
+      "api",
+      "pdf"
+    ]
+  }
+}

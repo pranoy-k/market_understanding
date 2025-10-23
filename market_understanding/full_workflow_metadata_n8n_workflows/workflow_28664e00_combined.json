@@ -1,0 +1,119 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/28664e00",
+  "workflow_id": "28664e00",
+  "workflow_id_display": "28664e00",
+  "workflow_name": "n8n Nodemation basic - creating your first simple workflow (2/3)",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API, Webhook",
+  "tags": [
+    "http"
+  ],
+  "author_name": "sven",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to build an n8n workflow to receive, transform, and send data using webhooks, function, and HTTP request nodes. Watch now for easy automation!",
+  "key_benefits": [
+    "API integration",
+    "Integration with functionItem, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "FunctionItem",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "4",
+    "name": "greeting",
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          720,
+          410
+        ],
+        "parameters": {
+          "path": "greetinghook"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          1120,
+          410
+        ],
+        "parameters": {
+          "url": "https://webhook.site/c0a47a6f-6a71-4d18-baef-51f694f7c56b",
+          "requestMethod": "POST",
+          "responseFormat": "string",
+          "bodyParametersUi": {
+            "parameter": [
+              {
+                "name": "greeting",
+                "value": "={{$node[\"FunctionItem\"].data[\"greeting\"]}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "FunctionItem",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          930,
+          410
+        ],
+        "parameters": {
+          "functionCode": "item.greeting = `Hello ${item.query.name}, have fun at the ${item.query.event}!`;\nitem.greeting = \"Hello \" + item.query.name + \", have fun at the \" + item.query.event + \"!\";\nreturn item;"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "FunctionItem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "FunctionItem": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

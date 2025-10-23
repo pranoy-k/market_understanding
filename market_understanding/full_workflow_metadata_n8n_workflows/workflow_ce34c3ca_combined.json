@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ce34c3ca",
+  "workflow_id": "ce34c3ca",
+  "workflow_id_display": "ce34c3ca",
+  "workflow_name": "Create Mautic contact on a new Shopify customer",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Shopify",
+  "tags": [],
+  "author_name": "n8n Team",
+  "author_profile_url": "https://n8n.io/creators/n8n-team/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync new Shopify customers to Mautic. Auto-create contacts with first name, last name, and email. Easy setup—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with stickyNote, mautic, shopifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "On new customer",
+      "type": "Trigger"
+    },
+    {
+      "name": "Create contact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "237600ca44303ce91fa31ee72babcdc8493f55ee2c0e8aa2b78b3b4ce6f70bd9"
+    },
+    "nodes": [
+      {
+        "id": "a5f74e05-acea-4ff4-b3b2-5997850be036",
+        "name": "On new customer",
+        "type": "n8n-nodes-base.shopifyTrigger",
+        "position": [
+          180,
+          420
+        ],
+        "webhookId": "8efd263c-73fb-481b-90d8-8ae0db929548",
+        "parameters": {
+          "topic": "customers/create",
+          "authentication": "accessToken"
+        },
+        "credentials": {
+          "shopifyAccessTokenApi": {
+            "id": "37",
+            "name": "[UPDATE ME]"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "5b4a9e71-3aa7-40d8-a439-79a504c60a46",
+        "name": "Create contact",
+        "type": "n8n-nodes-base.mautic",
+        "position": [
+          400,
+          420
+        ],
+        "parameters": {
+          "email": "={{$node[\"On new customer\"].json[\"email\"]}}",
+          "options": {},
+          "lastName": "={{$node[\"On new customer\"].json[\"last_name\"]}}",
+          "firstName": "={{$node[\"On new customer\"].json[\"first_name\"]}}",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "mauticApi": {
+            "id": "34",
+            "name": "[UPDATE ME]"
+          }
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "4b7b306e-1b4c-464f-b8f0-373167ded16f",
+        "name": "Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "position": [
+          400,
+          600
+        ],
+        "parameters": {
+          "width": 332,
+          "height": 116,
+          "content": "### Add more fields to Mautic\nBy default, the first name, last name and email are pushed to Mautic. If you require more fields, add it in the `Create contact` node."
+        },
+        "typeVersion": 1
+      }
+    ],
+    "connections": {
+      "On new customer": {
+        "main": [
+          [
+            {
+              "node": "Create contact",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "fd99878fd45a3188",
+    "name": "Create Mautic contact on a new Shopify customer",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

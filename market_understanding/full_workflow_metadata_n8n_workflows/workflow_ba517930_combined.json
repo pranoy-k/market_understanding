@@ -1,0 +1,159 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ba517930",
+  "workflow_id": "ba517930",
+  "workflow_id_display": "ba517930",
+  "workflow_name": "Create, update and get a user from Iterable",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": "Airtable, Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automate your lead workflow: collect Typeform responses, enrich with Airtable CRM, send personalized emails, alert sales on Slack, and track every action.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, iterable"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Iterable",
+      "type": "Process"
+    },
+    {
+      "name": "Iterable1",
+      "type": "Process"
+    },
+    {
+      "name": "Iterable2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "165",
+    "name": "Create, update and get a user from Iterable",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          340
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Iterable",
+        "type": "n8n-nodes-base.iterable",
+        "position": [
+          510,
+          340
+        ],
+        "parameters": {
+          "value": "",
+          "identifier": "email",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "iterableApi": "Iterable"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Iterable1",
+        "type": "n8n-nodes-base.iterable",
+        "position": [
+          710,
+          340
+        ],
+        "parameters": {
+          "value": "={{$node[\"Iterable\"].parameter[\"value\"]}}",
+          "identifier": "email",
+          "additionalFields": {
+            "dataFieldsUi": {
+              "dataFieldValues": [
+                {
+                  "key": "Name",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "iterableApi": "Iterable"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Iterable2",
+        "type": "n8n-nodes-base.iterable",
+        "position": [
+          910,
+          340
+        ],
+        "parameters": {
+          "email": "={{$node[\"Iterable\"].parameter[\"value\"]}}",
+          "operation": "get"
+        },
+        "credentials": {
+          "iterableApi": "Iterable"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Iterable": {
+        "main": [
+          [
+            {
+              "node": "Iterable1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Iterable1": {
+        "main": [
+          [
+            {
+              "node": "Iterable2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Iterable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

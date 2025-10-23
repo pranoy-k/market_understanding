@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b3331a0c",
+  "workflow_id": "b3331a0c",
+  "workflow_id_display": "b3331a0c",
+  "workflow_name": "Receive updates when an event occurs in Taiga",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email, LinkedIn",
+  "tags": [
+    "linkedin"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate LinkedIn lead generation, enrich prospects with real-time data, send personalized emails, and streamline your sales funnel. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with taigaTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Taiga Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "70",
+    "name": "Receive updates when an event occurs in Taiga",
+    "nodes": [
+      {
+        "name": "Taiga Trigger",
+        "type": "n8n-nodes-base.taigaTrigger",
+        "position": [
+          690,
+          260
+        ],
+        "webhookId": "53939c3e-7dc6-4fdf-94d8-d29f92f8fa12",
+        "parameters": {
+          "projectId": 385605
+        },
+        "credentials": {
+          "taigaCloudApi": "taiga"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/62b1167b",
+  "workflow_id": "62b1167b",
+  "workflow_id_display": "62b1167b",
+  "workflow_name": "Receive updates when a customer is created in HelpScout",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate customer support email handling: monitor mailboxes, prioritize requests, auto-generate tickets, notify teams, and integrate seamlessly with your CRM.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with helpScoutTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "HelpScout Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "61",
+    "name": "Receive updates when a customer is created in HelpScout",
+    "nodes": [
+      {
+        "name": "HelpScout Trigger",
+        "type": "n8n-nodes-base.helpScoutTrigger",
+        "position": [
+          690,
+          260
+        ],
+        "webhookId": "aaaf8b3f-8247-4d98-ae65-8c6626aade95",
+        "parameters": {
+          "events": [
+            "customer.created"
+          ]
+        },
+        "credentials": {
+          "helpScoutOAuth2Api": "helpscout"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {}
+  }
+}

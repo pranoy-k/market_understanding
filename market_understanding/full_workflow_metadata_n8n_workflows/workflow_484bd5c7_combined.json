@@ -1,0 +1,158 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/484bd5c7",
+  "workflow_id": "484bd5c7",
+  "workflow_id_display": "484bd5c7",
+  "workflow_name": "Create, update and send a message to a channel in Microsoft Teams",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Microsoft Teams tasks with this workflow—seamlessly integrates tools, features visual design, and perfect for n8n node docs. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, microsoftTeams"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Microsoft Teams",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Teams1",
+      "type": "Process"
+    },
+    {
+      "name": "Microsoft Teams2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          540,
+          360
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Microsoft Teams",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          740,
+          360
+        ],
+        "parameters": {
+          "name": "n8n-docs-demo",
+          "teamId": "d6b83b00-085d-472c-a6d9-8c2c32c1424e",
+          "options": {}
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1,
+        "id": "1147b42e247b0c1f"
+      },
+      {
+        "name": "Microsoft Teams1",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          940,
+          360
+        ],
+        "parameters": {
+          "teamId": "={{$node[\"Microsoft Teams\"].parameter[\"teamId\"]}}",
+          "channelId": "={{$node[\"Microsoft Teams\"].json[\"id\"]}}",
+          "operation": "update",
+          "updateFields": {
+            "name": "n8n-documentation-demo"
+          }
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1,
+        "id": "776224f9c157d7ab"
+      },
+      {
+        "name": "Microsoft Teams2",
+        "type": "n8n-nodes-base.microsoftTeams",
+        "position": [
+          1140,
+          360
+        ],
+        "parameters": {
+          "teamId": "={{$node[\"Microsoft Teams\"].parameter[\"teamId\"]}}",
+          "message": "n8n rocks!",
+          "resource": "channelMessage",
+          "channelId": "={{$node[\"Microsoft Teams\"].json[\"id\"]}}",
+          "messageType": "text"
+        },
+        "credentials": {
+          "microsoftTeamsOAuth2Api": "teams_n8n"
+        },
+        "typeVersion": 1,
+        "id": "4c01f6922400a9b5"
+      }
+    ],
+    "connections": {
+      "Microsoft Teams": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Microsoft Teams1": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Microsoft Teams",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c150df1927cbfe29",
+    "name": "Create, update and send a message to a channel in Microsoft Teams",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

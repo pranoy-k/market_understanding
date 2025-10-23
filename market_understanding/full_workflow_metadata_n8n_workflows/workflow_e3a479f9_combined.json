@@ -1,0 +1,83 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e3a479f9",
+  "workflow_id": "e3a479f9",
+  "workflow_id_display": "e3a479f9",
+  "workflow_name": "Send an SMS/Whatsapp message with Twilio",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "SMS, WhatsApp",
+  "tags": [
+    "whatsapp"
+  ],
+  "author_name": "tanaypant",
+  "author_profile_url": "https://n8n.io/creators/tanay1337/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate SMS alerts with Twilio, personalize messages, and streamline real-time notifications. Integrate seamlessly for smarter, dynamic communication.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, twilio"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "name": "A workflow with the Twilio node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Twilio",
+        "type": "n8n-nodes-base.twilio",
+        "position": [
+          430,
+          300
+        ],
+        "parameters": {},
+        "credentials": {
+          "twilioApi": ""
+        },
+        "typeVersion": 1,
+        "id": "a798fbdfad58db2a"
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Twilio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "1d9f9a17c904a204",
+    "staticData": null,
+    "tags": [
+      "whatsapp"
+    ]
+  }
+}

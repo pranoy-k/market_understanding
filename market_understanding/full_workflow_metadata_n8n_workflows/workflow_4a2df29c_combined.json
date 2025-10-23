@@ -1,0 +1,139 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/4a2df29c",
+  "workflow_id": "4a2df29c",
+  "workflow_id_display": "4a2df29c",
+  "workflow_name": "Create a customer and send the invoice automatically",
+  "category": "Finance & Accounting",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily create customers, generate invoices, and send them via QuickBooks—all automated to streamline onboarding and speed up your billing process.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with quickbooks"
+  ],
+  "nodes": [
+    {
+      "name": "QuickBooks2",
+      "type": "Process"
+    },
+    {
+      "name": "QuickBooks1",
+      "type": "Process"
+    },
+    {
+      "name": "QuickBooks",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "QuickBooks2",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          870,
+          300
+        ],
+        "parameters": {
+          "email": "",
+          "resource": "invoice",
+          "invoiceId": "={{$json[\"Id\"]}}",
+          "operation": "send"
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "aea2ea9ee4cb9b40"
+      },
+      {
+        "name": "QuickBooks1",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          670,
+          300
+        ],
+        "parameters": {
+          "Line": [
+            {
+              "Amount": 100,
+              "itemId": "1",
+              "DetailType": "SalesItemLineDetail",
+              "Description": "Consulting service"
+            }
+          ],
+          "resource": "invoice",
+          "operation": "create",
+          "CustomerRef": "={{$json[\"Id\"]}}",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "1481dcbf449caef0"
+      },
+      {
+        "name": "QuickBooks",
+        "type": "n8n-nodes-base.quickbooks",
+        "position": [
+          470,
+          300
+        ],
+        "parameters": {
+          "operation": "create",
+          "displayName": "Jack Ryan",
+          "additionalFields": {
+            "PrimaryEmailAddr": "jack@ryan.com"
+          }
+        },
+        "credentials": {
+          "quickBooksOAuth2Api": "QuickBooks OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "78c915dc63da9d5c"
+      }
+    ],
+    "connections": {
+      "QuickBooks": {
+        "main": [
+          [
+            {
+              "node": "QuickBooks1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "QuickBooks1": {
+        "main": [
+          [
+            {
+              "node": "QuickBooks2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f73e0d144408c892",
+    "name": "Create a customer and send the invoice automatically",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

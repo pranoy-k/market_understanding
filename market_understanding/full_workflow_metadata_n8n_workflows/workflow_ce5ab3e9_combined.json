@@ -1,0 +1,122 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ce5ab3e9",
+  "workflow_id": "ce5ab3e9",
+  "workflow_id_display": "ce5ab3e9",
+  "workflow_name": "Create transcription jobs using AWS Transcribe",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily transcribe all your audio and video files from AWS S3 with automated AWS Transcribe jobs. Save time and streamline your workflow—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsS3, awsTranscribe"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS Transcribe",
+      "type": "Process"
+    },
+    {
+      "name": "AWS S3",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          190,
+          160
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "AWS Transcribe",
+        "type": "n8n-nodes-base.awsTranscribe",
+        "position": [
+          590,
+          160
+        ],
+        "parameters": {
+          "options": {},
+          "mediaFileUri": "=s3://{{$node[\"AWS S3\"].parameter[\"bucketName\"]}}/{{$json[\"Key\"]}}",
+          "detectLanguage": true,
+          "transcriptionJobName": "={{$json[\"Key\"].replace(/\\s/g,'-')}}"
+        },
+        "credentials": {
+          "aws": "AWS Transcribe Credentials"
+        },
+        "typeVersion": 1,
+        "id": "066bbc3f0dffbf1e"
+      },
+      {
+        "name": "AWS S3",
+        "type": "n8n-nodes-base.awsS3",
+        "position": [
+          390,
+          160
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll",
+          "returnAll": true,
+          "bucketName": "n8n-docs"
+        },
+        "credentials": {
+          "aws": "AWS S3 Credentials"
+        },
+        "typeVersion": 1,
+        "id": "8edbbb102bad0a41"
+      }
+    ],
+    "connections": {
+      "AWS S3": {
+        "main": [
+          [
+            {
+              "node": "AWS Transcribe",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS S3",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "637a43f8b94c87db",
+    "name": "Create transcription jobs using AWS Transcribe",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

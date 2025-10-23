@@ -1,0 +1,86 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/02696b9e",
+  "workflow_id": "02696b9e",
+  "workflow_id_display": "02696b9e",
+  "workflow_name": "Get a board from monday.com",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Boost your monday.com integration with a companion workflow. Demo, test, and visualize node features in real time for seamless automation and onboarding.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, mondayCom"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Monday.com",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Monday.com",
+        "type": "n8n-nodes-base.mondayCom",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "boardId": "663435997",
+          "operation": "get"
+        },
+        "credentials": {
+          "mondayComApi": "monday"
+        },
+        "typeVersion": 1,
+        "id": "7b565aa154e55773"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Monday.com",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "03d26452e03c497c",
+    "name": "Get a board from monday.com",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

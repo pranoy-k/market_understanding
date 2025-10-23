@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18296c58",
+  "workflow_id": "18296c58",
+  "workflow_id_display": "18296c58",
+  "workflow_name": "Get the value of a key from Redis",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [
+    "redis"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Discover a companion workflow for Redis node docs—get step-by-step setup guides, real-world examples, and best practices for seamless Redis integration.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, redis"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Redis",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          270,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Redis",
+        "type": "n8n-nodes-base.redis",
+        "position": [
+          470,
+          320
+        ],
+        "parameters": {
+          "key": "hello",
+          "options": {},
+          "operation": "get"
+        },
+        "credentials": {
+          "redis": "redis-docker_creds"
+        },
+        "typeVersion": 1,
+        "id": "a99aa8b83f14b0da"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Redis",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "d6d8f82d00beea50",
+    "name": "Get the value of a key from Redis",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "redis"
+    ]
+  }
+}

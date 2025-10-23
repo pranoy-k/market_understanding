@@ -1,0 +1,132 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/3c5126c8",
+  "workflow_id": "3c5126c8",
+  "workflow_id_display": "3c5126c8",
+  "workflow_name": "Export JSON file to Google Sheets",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google",
+    "json"
+  ],
+  "author_name": "Lorena",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly export JSON data to Google Sheets with automated workflows. Save time, reduce manual work, and ensure seamless data integration. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with moveBinaryData, readBinaryFile, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    },
+    {
+      "name": "read json file",
+      "type": "Data Output"
+    },
+    {
+      "name": "move binary data 2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Google Sheets1",
+        "type": "n8n-nodes-base.googleSheets",
+        "notes": "Append data to sheet",
+        "position": [
+          980,
+          -120
+        ],
+        "parameters": {
+          "range": "A:C",
+          "options": {
+            "usePathForKeyRow": true
+          },
+          "sheetId": "qwertz",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "2",
+            "name": "google_sheets_oauth"
+          }
+        },
+        "notesInFlow": true,
+        "typeVersion": 1,
+        "id": "3ba231beb0bd332d"
+      },
+      {
+        "name": "read json file",
+        "type": "n8n-nodes-base.readBinaryFile",
+        "position": [
+          620,
+          -120
+        ],
+        "parameters": {
+          "filePath": "/username/users_spreadsheet.json"
+        },
+        "typeVersion": 1,
+        "id": "ee118955e2a18fbf"
+      },
+      {
+        "name": "move binary data 2",
+        "type": "n8n-nodes-base.moveBinaryData",
+        "position": [
+          800,
+          -120
+        ],
+        "parameters": {
+          "options": {}
+        },
+        "typeVersion": 1,
+        "id": "201add8143a0de5f"
+      }
+    ],
+    "connections": {
+      "read json file": {
+        "main": [
+          [
+            {
+              "node": "move binary data 2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "move binary data 2": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c37c8e3e781a236e",
+    "name": "Export JSON file to Google Sheets",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google",
+      "json"
+    ]
+  }
+}

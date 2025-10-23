@@ -1,0 +1,165 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/37d142b4",
+  "workflow_id": "37d142b4",
+  "workflow_id_display": "37d142b4",
+  "workflow_name": "Share jokes on Twitter automatically",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "API, RSS, Twitter",
+  "tags": [
+    "twitter",
+    "api"
+  ],
+  "author_name": "Deloge",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "Automatically share hilarious jokes and image-based humor on Twitter using DadJokes or BlaBlagues API. Keep your feed fresh and entertaining—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with twitter, httpRequest, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Request blablagues",
+      "type": "Data Input"
+    },
+    {
+      "name": "Recup image",
+      "type": "Data Input"
+    },
+    {
+      "name": "At 17H image jokes",
+      "type": "Trigger"
+    },
+    {
+      "name": "Tweet image jokes",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Request blablagues",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          750,
+          250
+        ],
+        "parameters": {
+          "url": "https://api.blablagues.net/?rub=images",
+          "options": {},
+          "responseFormat": "string"
+        },
+        "typeVersion": 1,
+        "id": "f25ec9077b3a78ec"
+      },
+      {
+        "name": "Recup image",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          1000,
+          250
+        ],
+        "parameters": {
+          "url": "={{$node[\"Request blablagues\"].json[\"data\"][\"data\"][\"content\"][\"media\"]}}",
+          "options": {},
+          "responseFormat": "file"
+        },
+        "typeVersion": 1,
+        "id": "1d85b7a8593b572a"
+      },
+      {
+        "name": "At 17H image jokes",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          500,
+          250
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 17
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "3772aee1c93125b3"
+      },
+      {
+        "name": "Tweet image jokes",
+        "type": "n8n-nodes-base.twitter",
+        "position": [
+          1250,
+          250
+        ],
+        "parameters": {
+          "text": "={{$node[\"Request blablagues\"].json[\"data\"][\"data\"][\"content\"][\"text\"]}}",
+          "additionalFields": {
+            "attachments": "data"
+          }
+        },
+        "credentials": {
+          "twitterOAuth1Api": {
+            "id": "",
+            "name": ""
+          }
+        },
+        "typeVersion": 1,
+        "id": "35d1d3340079ca6b"
+      }
+    ],
+    "connections": {
+      "Recup image": {
+        "main": [
+          [
+            {
+              "node": "Tweet image jokes",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "At 17H image jokes": {
+        "main": [
+          [
+            {
+              "node": "Request blablagues",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Request blablagues": {
+        "main": [
+          [
+            {
+              "node": "Recup image",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "2c59f53e99399ec0",
+    "name": "Share jokes on Twitter automatically",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "twitter",
+      "api"
+    ]
+  }
+}

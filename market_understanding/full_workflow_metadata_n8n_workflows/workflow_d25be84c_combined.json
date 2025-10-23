@@ -1,0 +1,95 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d25be84c",
+  "workflow_id": "d25be84c",
+  "workflow_id_display": "d25be84c",
+  "workflow_name": "Register users to an event on Demio via Typeform",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Easily automate Demio event registrations from Typeform submissions. Seamless integration, instant attendee capture, and customizable workflow. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with typeformTrigger, demio"
+  ],
+  "nodes": [
+    {
+      "name": "Typeform Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Demio",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Typeform Trigger",
+        "type": "n8n-nodes-base.typeformTrigger",
+        "position": [
+          510,
+          260
+        ],
+        "webhookId": "1cbca674-78fb-402e-b225-2aa6f92b5338",
+        "parameters": {
+          "formId": ""
+        },
+        "credentials": {
+          "typeformApi": "Typeform Burner Account"
+        },
+        "typeVersion": 1,
+        "id": "85d46f6f3ec7fc4e"
+      },
+      {
+        "name": "Demio",
+        "type": "n8n-nodes-base.demio",
+        "position": [
+          710,
+          260
+        ],
+        "parameters": {
+          "email": "={{$json[\"What's your email address?\"]}}",
+          "eventId": 357191,
+          "firstName": "={{$json[\"Let's start with your name.\"]}}",
+          "operation": "register",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "demioApi": "Demio API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "b7c5fce243c8559b"
+      }
+    ],
+    "connections": {
+      "Typeform Trigger": {
+        "main": [
+          [
+            {
+              "node": "Demio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "7c31b59218429c68",
+    "name": "Register users to an event on Demio via Typeform",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

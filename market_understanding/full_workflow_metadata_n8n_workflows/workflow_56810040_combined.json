@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/56810040",
+  "workflow_id": "56810040",
+  "workflow_id_display": "56810040",
+  "workflow_name": "Send a message via AWS SNS",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "AWS",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly automate AWS SNS notifications with customizable workflows. Trigger alerts on events, streamline setup, and enhance communication efficiency.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, awsSns"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "AWS SNS",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "AWS SNS",
+        "type": "n8n-nodes-base.awsSns",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "topic": "n8n-rocks",
+          "message": "This is a test message",
+          "subject": "This is a test subject"
+        },
+        "credentials": {
+          "aws": "aws"
+        },
+        "typeVersion": 1,
+        "id": "bb7f31dedd5dbfcf"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "AWS SNS",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "a1a890594c148a0d",
+    "name": "Send a message via AWS SNS",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/e1e9dc6f",
+  "workflow_id": "e1e9dc6f",
+  "workflow_id_display": "e1e9dc6f",
+  "workflow_name": "Transf meeting booking into Notion's Task with verified information",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Notion",
+  "tags": [],
+  "author_name": "Pauline",
+  "author_profile_url": "https://n8n.io/creators/pauline/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Calendly bookings to Notion, enrich contacts, and centralize tasks for streamlined workflow management. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with calendlyTrigger, dropcontact, notion"
+  ],
+  "nodes": [
+    {
+      "name": "Calendly Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Notion",
+      "type": "Process"
+    },
+    {
+      "name": "Dropcontact",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Notion",
+        "type": "n8n-nodes-base.notion",
+        "position": [
+          850,
+          400
+        ],
+        "parameters": {
+          "resource": "databasePage",
+          "databaseId": "",
+          "propertiesUi": {
+            "propertyValues": [
+              {
+                "key": "Date|date",
+                "range": true,
+                "dateEnd": "={{$node[\"Function\"].json[\"payload\"][\"event\"][\"end_time\"]}}",
+                "dateStart": "={{$node[\"Function\"].json[\"payload\"][\"event\"][\"invitee_start_time\"]}}"
+              },
+              {
+                "key": "email|email",
+                "emailValue": "={{$json[\"email\"][0][\"email\"]}}"
+              },
+              {
+                "key": "Leads|name",
+                "title": "={{$json[\"full_name\"]}}"
+              },
+              {
+                "key": "LinkedIn Profile|url",
+                "urlValue": "={{$json[\"linkedin\"]}}"
+              },
+              {
+                "key": "Person|people",
+                "peopleValue": [
+                  "22ad678a-175a-405c-b504-978d7804ebb8"
+                ]
+              },
+              {
+                "key": "Website|url",
+                "urlValue": "={{$json[\"website\"]}}"
+              },
+              {
+                "key": "LinkedIn Company|url",
+                "urlValue": "={{$json[\"company_linkedin\"]}}"
+              },
+              {
+                "key": "Civility|rich_text",
+                "textContent": "={{$json[\"civility\"]}}"
+              }
+            ]
+          }
+        },
+        "credentials": {
+          "notionApi": {
+            "id": "",
+            "name": ""
+          }
+        },
+        "typeVersion": 1,
+        "id": "e40d610427ca9de8"
+      },
+      {
+        "name": "Dropcontact",
+        "type": "n8n-nodes-base.dropcontact",
+        "position": [
+          650,
+          400
+        ],
+        "parameters": {
+          "email": "={{$json[\"payload\"][\"invitee\"][\"email\"]}}",
+          "options": {
+            "siren": true,
+            "language": "fr"
+          },
+          "additionalFields": {
+            "full_name": "={{$json[\"payload\"][\"invitee\"][\"name\"]}}",
+            "last_name": "={{$json[\"payload\"][\"invitee\"][\"last_name\"]}}",
+            "first_name": "={{$json[\"payload\"][\"invitee\"][\"first_name\"]}}"
+          }
+        },
+        "credentials": {
+          "dropcontactApi": {
+            "id": "",
+            "name": ""
+          }
+        },
+        "typeVersion": 1,
+        "id": "757f3e99d05c35a0"
+      },
+      {
+        "name": "Calendly Trigger",
+        "type": "n8n-nodes-base.calendlyTrigger",
+        "position": [
+          460,
+          400
+        ],
+        "webhookId": "",
+        "parameters": {
+          "events": [
+            "invitee.created"
+          ]
+        },
+        "typeVersion": 1,
+        "id": "2bf0f40586f0ad6c"
+      }
+    ],
+    "connections": {
+      "Dropcontact": {
+        "main": [
+          [
+            {
+              "node": "Notion",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Calendly Trigger": {
+        "main": [
+          [
+            {
+              "node": "Dropcontact",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "647a80cae6bed0b6",
+    "name": "Transf meeting booking into Notion's Task with verified information",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/38fdd63d",
+  "workflow_id": "38fdd63d",
+  "workflow_id_display": "38fdd63d",
+  "workflow_name": "Add new leads in Lemlist from Airtable",
+  "category": "Marketing & Sales",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync leads from Airtable to Lemlist, automate new lead creation, and streamline email campaigns. Discover seamless lead management now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with airtable, lemlist"
+  ],
+  "nodes": [
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Lemlist",
+      "type": "Process"
+    },
+    {
+      "name": "Lemlist1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          440,
+          320
+        ],
+        "parameters": {
+          "operation": "list",
+          "additionalOptions": {}
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1,
+        "id": "d32657f7680d71f4"
+      },
+      {
+        "name": "Lemlist",
+        "type": "n8n-nodes-base.lemlist",
+        "position": [
+          640,
+          320
+        ],
+        "parameters": {
+          "email": "={{$json[\"fields\"][\"Email\"]}}",
+          "resource": "lead",
+          "campaignId": "cam_H5pYEryq6mRKBiy5v",
+          "additionalFields": {
+            "firstName": "={{$json[\"fields\"][\"Name\"]}}"
+          }
+        },
+        "credentials": {
+          "lemlistApi": "Lemlist API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "0b7e539a16c9d621"
+      },
+      {
+        "name": "Lemlist1",
+        "type": "n8n-nodes-base.lemlist",
+        "position": [
+          840,
+          320
+        ],
+        "parameters": {
+          "email": "={{$node[\"Airtable\"].json[\"fields\"][\"Email\"]}}",
+          "resource": "lead",
+          "operation": "get"
+        },
+        "credentials": {
+          "lemlistApi": "Lemlist API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "b63f40b339248a53"
+      }
+    ],
+    "connections": {
+      "Lemlist": {
+        "main": [
+          [
+            {
+              "node": "Lemlist1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Airtable": {
+        "main": [
+          [
+            {
+              "node": "Lemlist",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c39621251e133a29",
+    "name": "Add new leads in Lemlist from Airtable",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

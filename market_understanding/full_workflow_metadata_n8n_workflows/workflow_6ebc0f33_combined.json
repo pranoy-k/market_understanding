@@ -1,0 +1,138 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6ebc0f33",
+  "workflow_id": "6ebc0f33",
+  "workflow_id_display": "6ebc0f33",
+  "workflow_name": "Create, update, and get a webinar in GoToWebinar",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly manage GoToWebinar events—create, update, and retrieve webinar details in one streamlined workflow. Boost efficiency and learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with goToWebinar"
+  ],
+  "nodes": [
+    {
+      "name": "GoToWebinar2",
+      "type": "Process"
+    },
+    {
+      "name": "GoToWebinar1",
+      "type": "Process"
+    },
+    {
+      "name": "GoToWebinar",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "GoToWebinar2",
+        "type": "n8n-nodes-base.goToWebinar",
+        "position": [
+          930,
+          280
+        ],
+        "parameters": {
+          "resource": "webinar",
+          "webinarKey": "={{$node[\"GoToWebinar\"].json[\"webinarKey\"]}}"
+        },
+        "credentials": {
+          "goToWebinarOAuth2Api": "GoToWebinar OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "37d4c41d9ee49d8a"
+      },
+      {
+        "name": "GoToWebinar1",
+        "type": "n8n-nodes-base.goToWebinar",
+        "position": [
+          730,
+          280
+        ],
+        "parameters": {
+          "resource": "webinar",
+          "operation": "update",
+          "webinarKey": "={{$json[\"webinarKey\"]}}",
+          "updateFields": {
+            "description": "Get started with n8n and create your first automation workflow"
+          }
+        },
+        "credentials": {
+          "goToWebinarOAuth2Api": "GoToWebinar OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d8cae452d596ff71"
+      },
+      {
+        "name": "GoToWebinar",
+        "type": "n8n-nodes-base.goToWebinar",
+        "position": [
+          520,
+          280
+        ],
+        "parameters": {
+          "times": {
+            "timesProperties": [
+              {
+                "endTime": "2021-03-02T10:00:00.000Z",
+                "startTime": "2021-03-02T09:00:00.000Z"
+              }
+            ]
+          },
+          "subject": "Getting started with n8n",
+          "resource": "webinar",
+          "operation": "create",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "goToWebinarOAuth2Api": "GoToWebinar OAuth Credentials"
+        },
+        "typeVersion": 1,
+        "id": "5c436f72feb4d454"
+      }
+    ],
+    "connections": {
+      "GoToWebinar": {
+        "main": [
+          [
+            {
+              "node": "GoToWebinar1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "GoToWebinar1": {
+        "main": [
+          [
+            {
+              "node": "GoToWebinar2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "c93c559c66ce9b52",
+    "name": "Create, update, and get a webinar in GoToWebinar",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/b939f356",
+  "workflow_id": "b939f356",
+  "workflow_id_display": "b939f356",
+  "workflow_name": "Save email attachments to Nextcloud",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "Manu",
+  "author_profile_url": "https://n8n.io/creators/tennox/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly upload email attachments from any folder to Nextcloud with automatic renaming and customizable filters. Streamline your workflow today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function, nextCloud, emailReadImap"
+  ],
+  "nodes": [
+    {
+      "name": "Map each attachment",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Nextcloud",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "IMAP Email",
+        "type": "n8n-nodes-base.emailReadImap",
+        "position": [
+          240,
+          420
+        ],
+        "parameters": {
+          "format": "resolved",
+          "mailbox": "Invoices",
+          "options": {
+            "customEmailConfig": "[\"ALL\"]"
+          }
+        },
+        "typeVersion": 1,
+        "id": "7a9689634f5d8e26"
+      },
+      {
+        "name": "Nextcloud",
+        "type": "n8n-nodes-base.nextCloud",
+        "position": [
+          940,
+          420
+        ],
+        "parameters": {
+          "path": "=Documents/Invoices/{{$json[\"date\"]}}_{{$json[\"from\"]}}_{{$binary.file.fileName}}",
+          "binaryDataUpload": true,
+          "binaryPropertyName": "file"
+        },
+        "typeVersion": 1,
+        "id": "4287f29c3be56d41"
+      },
+      {
+        "name": "Map each attachment",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          620,
+          420
+        ],
+        "parameters": {
+          "functionCode": "const _ = require('lodash')\n\nconst sanitize = str => _.chain(str)\n  .replace(/[^A-Za-z0-9&.-]/g, '-') // sanitise via whitelist of characters\n  .replace(/-(?=-)/g, '') // remove repeated dashes - https://regexr.com/6ag8h\n  .trim('-') // trim any leading/trailing dashes\n  .truncate({\n    length: 60,\n    omission: '-' // when the string ends with '-', you'll know it was truncated\n  })\n  .value()\n\nconst result = _.flatMap(items.map(item => {\n  //console.log({item})\n\n  // Maps each attachment to a separate item\n  return _.values(item.binary).map(file => {\n    console.log(\"Saving attachement:\", file.fileName, 'from:', ...item.json.from.value)\n    \n    // sanitize filename but exclude extension\n    const filename_parts = file.fileName.split('.')\n    const ext = _.slice(filename_parts, filename_parts.length-1)\n    const filename_main = _.join(_.dropRight(filename_parts), '.')\n    file.fileName = sanitize(filename_main) + '.' + ext\n    \n    return {\n      json: {\n        from: sanitize(item.json.from.value[0].name),\n        date: sanitize(new Date(item.json.date).toISOString().split(\"T\")[0]) // get date part \"2020-01-01\"\n      }, \n      binary: { file }\n    }\n  })\n}))\n\n//console.log(result)\nreturn result"
+        },
+        "typeVersion": 1,
+        "id": "95dc9e41fa9493b2"
+      }
+    ],
+    "connections": {
+      "IMAP Email": {
+        "main": [
+          [
+            {
+              "node": "Map each attachment",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Map each attachment": {
+        "main": [
+          [
+            {
+              "node": "Nextcloud",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "ba23d6781451982e",
+    "name": "Save email attachments to Nextcloud",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

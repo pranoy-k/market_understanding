@@ -1,0 +1,120 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/6eb73d38",
+  "workflow_id": "6eb73d38",
+  "workflow_id_display": "6eb73d38",
+  "workflow_name": "Send automated daily reminders on Telegram",
+  "category": "Customer Support",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Google Sheets, Telegram",
+  "tags": [
+    "telegram",
+    "google"
+  ],
+  "author_name": "Nicholas Lewanowicz",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Stay motivated with daily Telegram reminders to log your accomplishments. Easily track progress with optional Google Sheets integration. Learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with functionItem, telegram, cron"
+  ],
+  "nodes": [
+    {
+      "name": "format reminder",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Morning reminder",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Telegram Bot"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": 1,
+    "name": "Daily Journal Reminder",
+    "nodes": [
+      {
+        "name": "Morning reminder",
+        "type": "n8n-nodes-base.cron",
+        "notes": "Trigger very morning",
+        "position": [
+          220,
+          60
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 6
+              }
+            ]
+          }
+        },
+        "notesInFlow": true,
+        "typeVersion": 1,
+        "alwaysOutputData": true
+      },
+      {
+        "name": "format reminder",
+        "type": "n8n-nodes-base.functionItem",
+        "position": [
+          460,
+          60
+        ],
+        "parameters": {
+          "functionCode": "\n// Creates message with todays date\nconst today = new Date()\nconst yesterday = new Date(today)\n\nyesterday.setDate(yesterday.getDate() - 1)\nconst message = `What did you do: ${yesterday.toISOString().split('T')[0]}`\n\nreturn {message};"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Send journal reminder",
+        "type": "n8n-nodes-base.telegram",
+        "position": [
+          700,
+          60
+        ],
+        "parameters": {
+          "text": "={{$node[\"format reminder\"].json[\"message\"]}}",
+          "chatId": "666884239",
+          "additionalFields": {}
+        },
+        "credentials": {},
+        "typeVersion": 1
+      }
+    ],
+    "active": true,
+    "settings": {},
+    "connections": {
+      "format reminder": {
+        "main": [
+          [
+            {
+              "node": "Send journal reminder",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Morning reminder": {
+        "main": [
+          [
+            {
+              "node": "format reminder",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

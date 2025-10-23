@@ -1,0 +1,172 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1bae460a",
+  "workflow_id": "1bae460a",
+  "workflow_id_display": "1bae460a",
+  "workflow_name": "Create, update, and get a person from Copper",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create, update, and retrieve contacts in Copper. Streamline your contact management with quick automations. Learn more today!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, copper"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Copper",
+      "type": "Process"
+    },
+    {
+      "name": "Copper1",
+      "type": "Process"
+    },
+    {
+      "name": "Copper2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          320
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Copper",
+        "type": "n8n-nodes-base.copper",
+        "position": [
+          450,
+          320
+        ],
+        "parameters": {
+          "name": "Harshil",
+          "resource": "person",
+          "additionalFields": {
+            "emails": {
+              "emailFields": [
+                {
+                  "email": "harshil@n8n.io",
+                  "category": "work"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "copperApi": "Copper API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "49eb00a352c7b837"
+      },
+      {
+        "name": "Copper1",
+        "type": "n8n-nodes-base.copper",
+        "position": [
+          650,
+          320
+        ],
+        "parameters": {
+          "personId": "={{$json[\"id\"]}}",
+          "resource": "person",
+          "operation": "update",
+          "updateFields": {
+            "phone_numbers": {
+              "phoneFields": [
+                {
+                  "number": "1234567890",
+                  "category": "work"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "copperApi": "Copper API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "a69abc5f5074ea23"
+      },
+      {
+        "name": "Copper2",
+        "type": "n8n-nodes-base.copper",
+        "position": [
+          850,
+          320
+        ],
+        "parameters": {
+          "personId": "={{$json[\"id\"]}}",
+          "resource": "person",
+          "operation": "get"
+        },
+        "credentials": {
+          "copperApi": "Copper API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "6c3b65bfce3cb53f"
+      }
+    ],
+    "connections": {
+      "Copper": {
+        "main": [
+          [
+            {
+              "node": "Copper1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Copper1": {
+        "main": [
+          [
+            {
+              "node": "Copper2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Copper",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "797508a0b7264bfc",
+    "name": "Create, update, and get a person from Copper",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/db134a4c",
+  "workflow_id": "db134a4c",
+  "workflow_id_display": "db134a4c",
+  "workflow_name": "Insert and read data from Google Sheets",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Streamline Google Sheets automation with this companion workflow. Follow official docs easily, simplify setup, and boost your n8n mastery—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Google Sheets1",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "range": "A:B",
+          "options": {},
+          "sheetId": "1ijnLMy6htVTX_68e2lsdGYiA5_6ZG72FXUbxAy_DC94",
+          "operation": "append",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "Amudhan-GoogleSheets"
+        },
+        "typeVersion": 1,
+        "id": "0d5471e1b433e442"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "values": {
+            "number": [
+              {
+                "name": "id"
+              }
+            ],
+            "string": [
+              {
+                "name": "name",
+                "value": "n8n"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": true,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "Google Sheets1",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "range": "A:B",
+          "options": {},
+          "sheetId": "1ijnLMy6htVTX_68e2lsdGYiA5_6ZG72FXUbxAy_DC94",
+          "authentication": "oAuth2"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": "Amudhan-GoogleSheets"
+        },
+        "typeVersion": 1,
+        "id": "3ba231beb0bd332d"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Google Sheets1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "90af9729c82c089b",
+    "name": "Insert and read data from Google Sheets",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

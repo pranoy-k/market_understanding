@@ -1,0 +1,146 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/54f8ec58",
+  "workflow_id": "54f8ec58",
+  "workflow_id_display": "54f8ec58",
+  "workflow_name": "Convert Text to Speech with Local KOKORO TTS",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "Stas",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Unlock powerful, free text-to-speech with Kokoro TTS! Run locally on any device, no GPU needed. Perfect for creators—discover the full setup now.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, set, readBinaryFiles"
+  ],
+  "nodes": [
+    {
+      "name": "Start",
+      "type": "Trigger"
+    },
+    {
+      "name": "Passing variables",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Run python script",
+      "type": "Process"
+    },
+    {
+      "name": "Play sound",
+      "type": "Data Output"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "meta": {
+      "instanceId": "a6d5191e58fd6be87222f47435e6f9df8f98ec0d945d3e7b7f6373c59a6c3f37",
+      "templateCredsSetupCompleted": true
+    },
+    "nodes": [
+      {
+        "id": "fcf1064e-557f-4514-9109-bb10ac837f8b",
+        "name": "Run python script",
+        "type": "n8n-nodes-base.executeCommand",
+        "position": [
+          -100,
+          20
+        ],
+        "parameters": {
+          "command": "=python C:\\KOKORO\\voicegen.py \"{{ $json.text }}\" \"{{ $json.voice }}\" 1\n"
+        },
+        "typeVersion": 1
+      },
+      {
+        "id": "199a3212-69c0-4314-92c8-783573f165d7",
+        "name": "Passing variables",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          -320,
+          20
+        ],
+        "parameters": {
+          "mode": "raw",
+          "options": {},
+          "jsonOutput": "{\n  \"voice\": \"af_sarah\",\n  \"text\": \"Hello world!\"\n}\n"
+        },
+        "typeVersion": 3.4
+      },
+      {
+        "id": "deb008d0-53ae-4348-a555-9e54b6e0efd4",
+        "name": "Start",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          -540,
+          20
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "id": "ffa1b2bf-abc3-45d8-8b7b-de4c0780a609",
+        "name": "Play sound",
+        "type": "n8n-nodes-base.readBinaryFiles",
+        "position": [
+          120,
+          20
+        ],
+        "parameters": {
+          "fileSelector": "D:/output.mp3"
+        },
+        "typeVersion": 1,
+        "alwaysOutputData": false
+      }
+    ],
+    "pinData": {},
+    "connections": {
+      "Start": {
+        "main": [
+          [
+            {
+              "node": "Passing variables",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Passing variables": {
+        "main": [
+          [
+            {
+              "node": "Run python script",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Run python script": {
+        "main": [
+          [
+            {
+              "node": "Play sound",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "6d2ff3571ec6dc49",
+    "name": "Convert Text to Speech with Local KOKORO TTS",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

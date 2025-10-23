@@ -1,0 +1,63 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f194ad41",
+  "workflow_id": "f194ad41",
+  "workflow_id_display": "f194ad41",
+  "workflow_name": "Receive updates for GitLab events",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline your GitLab automation with our companion workflow. Easy setup, visual guides, and practical examples for seamless integration—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with gitlabTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Gitlab Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Gitlab Trigger",
+        "type": "n8n-nodes-base.gitlabTrigger",
+        "position": [
+          460,
+          480
+        ],
+        "webhookId": "0e855b27-6465-42be-9610-c61b2e09cef9",
+        "parameters": {
+          "owner": "n8n-io",
+          "events": [
+            "*"
+          ],
+          "repository": "n8n-docs"
+        },
+        "credentials": {
+          "gitlabApi": "gitlab_creds"
+        },
+        "typeVersion": 1,
+        "id": "e56a884a8923be5a"
+      }
+    ],
+    "connections": {},
+    "id": "e7894c7c09a46c55",
+    "name": "Receive updates for GitLab events",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

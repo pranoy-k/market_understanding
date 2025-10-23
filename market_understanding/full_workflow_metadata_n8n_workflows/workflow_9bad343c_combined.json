@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/9bad343c",
+  "workflow_id": "9bad343c",
+  "workflow_id_display": "9bad343c",
+  "workflow_name": "Get the community profile of a repository",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Gmail, HubSpot, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "sshaligr",
+  "author_profile_url": "https://n8n.io/creators/shraddha/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Github",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "5",
+    "name": "new",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          540,
+          350
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Github",
+        "type": "n8n-nodes-base.github",
+        "position": [
+          790,
+          350
+        ],
+        "parameters": {
+          "owner": "n8n-io",
+          "resource": "repository",
+          "operation": "getProfile",
+          "repository": "n8n"
+        },
+        "credentials": {
+          "githubApi": "shraddha"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Github",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

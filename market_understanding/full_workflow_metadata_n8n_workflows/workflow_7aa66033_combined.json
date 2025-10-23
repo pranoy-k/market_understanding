@@ -1,0 +1,115 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7aa66033",
+  "workflow_id": "7aa66033",
+  "workflow_id_display": "7aa66033",
+  "workflow_name": "Create an event file and send it as an email attachment",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Email",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly create event files and send them as email attachments with this automated workflow. Streamline your event management—learn more today.",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, emailSend, iCal"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "iCalendar",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          350,
+          200
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "iCalendar",
+        "type": "n8n-nodes-base.iCal",
+        "position": [
+          550,
+          200
+        ],
+        "parameters": {
+          "end": "2021-06-11T16:15:00.000Z",
+          "start": "2021-06-11T15:30:00.000Z",
+          "title": "n8n Community Meetup",
+          "additionalFields": {}
+        },
+        "typeVersion": 1,
+        "id": "6c623da0cdd79b30"
+      },
+      {
+        "name": "Send Email",
+        "type": "n8n-nodes-base.emailSend",
+        "position": [
+          750,
+          200
+        ],
+        "parameters": {
+          "text": "Hey Harshil,\n\nWe are excited to invite you to the n8n community meetup!\n\nWith this email you will find the invite attached.\n\nLooking forward to seeing you at the meetup!\n\nCheers,\nHarshil",
+          "options": {},
+          "subject": "n8n Community Meetup 🚀",
+          "attachments": "data"
+        },
+        "credentials": {
+          "smtp": "Outlook Burner Credentials"
+        },
+        "typeVersion": 1,
+        "id": "63035b782d75860b"
+      }
+    ],
+    "connections": {
+      "iCalendar": {
+        "main": [
+          [
+            {
+              "node": "Send Email",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "iCalendar",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "af0ecd63144934d8",
+    "name": "Create an event file and send it as an email attachment",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

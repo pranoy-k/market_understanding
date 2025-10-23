@@ -1,0 +1,129 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ac9c885d",
+  "workflow_id": "ac9c885d",
+  "workflow_id_display": "ac9c885d",
+  "workflow_name": "Google Spreadsheet to HTML - Variant with Spreadsheet File",
+  "category": "Other",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "3",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Tom",
+  "author_profile_url": "https://n8n.io/creators/mutedjam/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Easily convert Google Sheets data into a professional HTML table—no coding needed. Streamline data display online. Learn more about this no-code workflow!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with webhook, spreadsheetFile, googleSheets"
+  ],
+  "nodes": [
+    {
+      "name": "Read from Google Sheets",
+      "type": "Data Output"
+    },
+    {
+      "name": "Create HTML file",
+      "type": "Data Output"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Read from Google Sheets",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          460,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "sheetId": "1uFISwZJ1rzkOnOSNocX-_n-ASSAznWGdpcPK3_KCvVo"
+        },
+        "credentials": {
+          "googleSheetsOAuth2Api": {
+            "id": "19",
+            "name": "Tom's Google Sheets account"
+          }
+        },
+        "typeVersion": 2,
+        "id": "f646d37f9910d152"
+      },
+      {
+        "name": "Create HTML file",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          680,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "toFile",
+          "fileFormat": "html"
+        },
+        "typeVersion": 1,
+        "id": "37edf048d653a606"
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          240,
+          300
+        ],
+        "webhookId": "08569699-fea2-4856-80aa-fe878ab9dd4f",
+        "parameters": {
+          "path": "08569699-fea2-4856-80aa-fe878ab9dd4f",
+          "options": {},
+          "responseData": "firstEntryBinary",
+          "responseMode": "lastNode"
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Read from Google Sheets",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read from Google Sheets": {
+        "main": [
+          [
+            {
+              "node": "Create HTML file",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "a90bd090b9bce5bc",
+    "name": "Google Spreadsheet to HTML - Variant with Spreadsheet File",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

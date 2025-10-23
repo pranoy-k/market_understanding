@@ -1,0 +1,127 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/dce3b0e9",
+  "workflow_id": "dce3b0e9",
+  "workflow_id_display": "dce3b0e9",
+  "workflow_name": "Get all releases in Sentry",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "Airtable, Email, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate form submissions with instant thank-you emails, Airtable updates, and Slack notifications. Stay organized and respond fast—learn more!",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, sentryIo"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Sentry.io",
+      "type": "Process"
+    },
+    {
+      "name": "Sentry.io1",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "27",
+    "name": "Create a release and get all releases",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          210,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Sentry.io",
+        "type": "n8n-nodes-base.sentryIo",
+        "position": [
+          410,
+          300
+        ],
+        "parameters": {
+          "url": "",
+          "version": "0.0.1",
+          "projects": [
+            ""
+          ],
+          "resource": "release",
+          "operation": "create",
+          "additionalFields": {},
+          "organizationSlug": ""
+        },
+        "credentials": {
+          "sentryIoApi": "sentry"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Sentry.io1",
+        "type": "n8n-nodes-base.sentryIo",
+        "position": [
+          610,
+          300
+        ],
+        "parameters": {
+          "resource": "release",
+          "operation": "getAll",
+          "returnAll": true,
+          "additionalFields": {},
+          "organizationSlug": ""
+        },
+        "credentials": {
+          "sentryIoApi": "sentry"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "Sentry.io": {
+        "main": [
+          [
+            {
+              "node": "Sentry.io1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Sentry.io",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

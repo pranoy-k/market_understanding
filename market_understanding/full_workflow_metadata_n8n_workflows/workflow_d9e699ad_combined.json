@@ -1,0 +1,128 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/d9e699ad",
+  "workflow_id": "d9e699ad",
+  "workflow_id_display": "d9e699ad",
+  "workflow_name": "Cross-post your blog posts",
+  "category": "Content & Documentation",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": "API",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Streamline content management with Strapi CMS and auto-crosspost blogs to Medium & Dev.to. Boost reach with easy multi-platform publishing—learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with medium, webhook, httpRequest"
+  ],
+  "nodes": [
+    {
+      "name": "Medium",
+      "type": "Process"
+    },
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Medium",
+        "type": "n8n-nodes-base.medium",
+        "position": [
+          650,
+          450
+        ],
+        "parameters": {
+          "title": "={{$json[\"body\"][\"entry\"][\"Title\"]}}",
+          "content": "={{$json[\"body\"][\"entry\"][\"PostContent\"]}}",
+          "contentFormat": "markdown",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "mediumApi": "Medium Credentials"
+        },
+        "typeVersion": 1,
+        "id": "b1020b8e822211b7"
+      },
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "",
+        "parameters": {
+          "path": "",
+          "options": {},
+          "httpMethod": "POST",
+          "authentication": "headerAuth"
+        },
+        "credentials": {
+          "httpHeaderAuth": "Strapi Webhook Credentials"
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          650,
+          200
+        ],
+        "parameters": {
+          "url": "https://dev.to/api/articles",
+          "options": {},
+          "requestMethod": "POST",
+          "authentication": "headerAuth",
+          "jsonParameters": true,
+          "bodyParametersJson": "={\n\t\"article\": {\n\t\t\"title\": \"{{$json[\"body\"][\"entry\"][\"Title\"]}}\",\n\t\t\"published\": true,\n\t\t\"body_markdown\": \"{{$json[\"body\"][\"entry\"][\"PostContent\"]}}\",\n\t\t\"tags\":[\"{{$json[\"body\"][\"entry\"][\"Tag\"]}}\"]\n\t}\n}",
+          "headerParametersJson": "{\"Content-Type\": \"application/json\"}"
+        },
+        "credentials": {
+          "httpHeaderAuth": "Dev.to Credentials"
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Medium",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "91da1ddbe0780fd5",
+    "name": "Cross-post your blog posts",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

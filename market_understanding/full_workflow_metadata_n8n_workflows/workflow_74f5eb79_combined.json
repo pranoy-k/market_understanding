@@ -1,0 +1,81 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/74f5eb79",
+  "workflow_id": "74f5eb79",
+  "workflow_id_display": "74f5eb79",
+  "workflow_name": "Send a message with a Discord Bot",
+  "category": "Communication & Collaboration",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": "Discord, Email, Google Sheets, Slack",
+  "tags": [
+    "discord",
+    "google",
+    "slack"
+  ],
+  "author_name": "eem2188",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 AI Chatbot Development",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automate lead management: pull leads from Google Sheets, enrich with Clearbit, send emails via SendGrid, update statuses, and notify sales on Slack.",
+  "key_benefits": [
+    "Communication automation",
+    "Integration with manualTrigger, discord"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "2",
+    "name": "Discord Intro",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          510,
+          330
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "Discord",
+        "type": "n8n-nodes-base.discord",
+        "position": [
+          800,
+          330
+        ],
+        "parameters": {
+          "text": "Hello World!",
+          "webhookUri": "https://discordapp.com/api/webhooks/XXX/XXX"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Discord",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

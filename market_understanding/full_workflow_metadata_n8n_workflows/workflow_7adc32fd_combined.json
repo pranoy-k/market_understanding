@@ -1,0 +1,152 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/7adc32fd",
+  "workflow_id": "7adc32fd",
+  "workflow_id_display": "7adc32fd",
+  "workflow_name": "Add data from Google Sheet to Dropbox",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Dropbox, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate your workflow: fetch Google Sheets data every 15 mins, convert to XLS, and upload to Dropbox for seamless access and backup. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with dropbox, interval, spreadsheetFile"
+  ],
+  "nodes": [
+    {
+      "name": "Trigger all 15 min",
+      "type": "Process"
+    },
+    {
+      "name": "Read Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Convert to XLS",
+      "type": "Data Output"
+    },
+    {
+      "name": "Upload Dropbox",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Read Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "sheetId": "1GT2dc0dOkAC1apY0UlTKY9vitBl8PtKrILvFiAy5VBs"
+        },
+        "credentials": {
+          "googleApi": ""
+        },
+        "typeVersion": 1,
+        "id": "5fd52039414d2a30"
+      },
+      {
+        "name": "Convert to XLS",
+        "type": "n8n-nodes-base.spreadsheetFile",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "operation": "toFile"
+        },
+        "typeVersion": 1,
+        "id": "a08e8aa93f2e9777"
+      },
+      {
+        "name": "Upload Dropbox",
+        "type": "n8n-nodes-base.dropbox",
+        "position": [
+          850,
+          300
+        ],
+        "parameters": {
+          "path": "/my-sheets/prices.xls",
+          "binaryData": true
+        },
+        "credentials": {
+          "dropboxApi": ""
+        },
+        "typeVersion": 1,
+        "id": "b59215248ed867a7"
+      },
+      {
+        "name": "Trigger all 15 min",
+        "type": "n8n-nodes-base.interval",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {
+          "unit": "minutes",
+          "interval": 15
+        },
+        "typeVersion": 1,
+        "id": "f0f55154a689cbec"
+      }
+    ],
+    "connections": {
+      "Read Sheet": {
+        "main": [
+          [
+            {
+              "node": "Convert to XLS",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Convert to XLS": {
+        "main": [
+          [
+            {
+              "node": "Upload Dropbox",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Trigger all 15 min": {
+        "main": [
+          [
+            {
+              "node": "Read Sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "36a52b55149e3c51",
+    "name": "Add data from Google Sheet to Dropbox",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/ca3a4a5d",
+  "workflow_id": "ca3a4a5d",
+  "workflow_id_display": "ca3a4a5d",
+  "workflow_name": "Deploy site when new content gets added",
+  "category": "IT & Development",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API, Webhook",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Automatically deploy your JAMstack site with every new database entry. Streamline publishing using webhooks, GraphCMS, and Netlify integration. Learn more!",
+  "key_benefits": [
+    "API integration",
+    "Integration with webhook, netlify"
+  ],
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Webhook",
+        "type": "n8n-nodes-base.webhook",
+        "position": [
+          450,
+          300
+        ],
+        "webhookId": "0d36a8db-0177-4501-9f7a-e46b6829d07a",
+        "parameters": {
+          "path": "0d36a8db-0177-4501-9f7a-e46b6829d07a",
+          "options": {},
+          "httpMethod": "POST"
+        },
+        "typeVersion": 1,
+        "id": "173c2e39565b5df7"
+      },
+      {
+        "name": "Netlify",
+        "type": "n8n-nodes-base.netlify",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "siteId": "5e15e032-9345-41b8-a98f-509e545f061c",
+          "operation": "create",
+          "additionalFields": {
+            "title": "={{$json[\"body\"][\"data\"][\"title\"]}}"
+          }
+        },
+        "credentials": {
+          "netlifyApi": "Netlify account"
+        },
+        "typeVersion": 1,
+        "id": "9bdde651deb3e364"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Netlify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "0e7fabd453e1a375",
+    "name": "Deploy site when new content gets added",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "database"
+    ]
+  }
+}

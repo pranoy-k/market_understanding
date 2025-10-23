@@ -1,0 +1,172 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/eb5e3997",
+  "workflow_id": "eb5e3997",
+  "workflow_id_display": "eb5e3997",
+  "workflow_name": "Receive transfer updates from Wise and add to Airtable",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Airtable",
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Automatically track Wise transfer updates and sync key details—ID, date, reference, amount—straight to Airtable. Streamline your workflow now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with wise, set, airtable"
+  ],
+  "nodes": [
+    {
+      "name": "Wise Trigger",
+      "type": "Trigger"
+    },
+    {
+      "name": "Airtable",
+      "type": "Data Output"
+    },
+    {
+      "name": "Wise",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Wise Trigger",
+        "type": "n8n-nodes-base.wiseTrigger",
+        "position": [
+          450,
+          280
+        ],
+        "webhookId": "df8c0c06-7d40-4e57-aaff-60f458e6997c",
+        "parameters": {
+          "event": "tranferStateChange",
+          "profileId": 16138858
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "6b132b7c3129324d"
+      },
+      {
+        "name": "Wise",
+        "type": "n8n-nodes-base.wise",
+        "position": [
+          650,
+          280
+        ],
+        "parameters": {
+          "resource": "transfer",
+          "transferId": "={{$json[\"data\"][\"resource\"][\"id\"]}}"
+        },
+        "credentials": {
+          "wiseApi": "Wise API Credentials"
+        },
+        "typeVersion": 1,
+        "id": "d7d4ad0be472574d"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          850,
+          280
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "Transfer ID",
+                "value": "={{$json[\"id\"]}}"
+              },
+              {
+                "name": "Date",
+                "value": "={{$json[\"created\"]}}"
+              },
+              {
+                "name": "Reference",
+                "value": "={{$json[\"reference\"]}}"
+              },
+              {
+                "name": "Amount",
+                "value": "={{$json[\"sourceValue\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "Airtable",
+        "type": "n8n-nodes-base.airtable",
+        "position": [
+          1050,
+          280
+        ],
+        "parameters": {
+          "table": "Table 1",
+          "options": {},
+          "operation": "append",
+          "application": ""
+        },
+        "credentials": {
+          "airtableApi": "Airtable Credentials n8n"
+        },
+        "typeVersion": 1,
+        "id": "d32657f7680d71f4"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "Airtable",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Wise Trigger": {
+        "main": [
+          [
+            {
+              "node": "Wise",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "dc6354e71c960a15",
+    "name": "Receive transfer updates from Wise and add to Airtable",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/af018d64",
+  "workflow_id": "af018d64",
+  "workflow_id_display": "af018d64",
+  "workflow_name": "Convert an array into an array of objects",
+  "category": "Data & Analytics",
+  "difficulty": "🎯 Advanced",
+  "total_nodes": "2",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly convert arrays to structured objects with the Function node. Enhance automation workflows and streamline data processing. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with function"
+  ],
+  "nodes": [
+    {
+      "name": "Mock Data",
+      "type": "Data Processing"
+    },
+    {
+      "name": "Function",
+      "type": "Data Processing"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Mock Data",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          550,
+          300
+        ],
+        "parameters": {
+          "functionCode": "return [{json:[\"item-1\", \"item-2\", \"item-3\", \"item-4\"]}];"
+        },
+        "typeVersion": 1,
+        "id": "a14d85beebd18300"
+      },
+      {
+        "name": "Function",
+        "type": "n8n-nodes-base.function",
+        "position": [
+          750,
+          300
+        ],
+        "parameters": {
+          "functionCode": "return items[0].json.map(item => {\n  return {\n    json: {\n      data:item\n    },\n  }\n});\n"
+        },
+        "typeVersion": 1,
+        "id": "15c7535d0f6085cf"
+      }
+    ],
+    "connections": {
+      "Mock Data": {
+        "main": [
+          [
+            {
+              "node": "Function",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f13917d9346f84a2",
+    "name": "Convert an array into an array of objects",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

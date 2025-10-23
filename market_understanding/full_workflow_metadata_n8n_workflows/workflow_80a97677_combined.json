@@ -1,0 +1,90 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/80a97677",
+  "workflow_id": "80a97677",
+  "workflow_id_display": "80a97677",
+  "workflow_name": "Send a tweet to Twitter",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Twitter",
+  "tags": [
+    "twitter"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Twitter node skills with our step-by-step companion workflow. Visual guides, real-world examples, and seamless learning. Learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, twitter"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Twitter",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Twitter",
+        "type": "n8n-nodes-base.twitter",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "text": "This is a test workflow for the twitter node",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "twitterOAuth1Api": "twitter-credentials"
+        },
+        "typeVersion": 1,
+        "id": "ba8d46a4c1fd19a6"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Twitter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "58c8038a1ed447ae",
+    "name": "Send a tweet to Twitter",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "twitter"
+    ]
+  }
+}

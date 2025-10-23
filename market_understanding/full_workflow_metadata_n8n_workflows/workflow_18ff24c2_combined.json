@@ -1,0 +1,59 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/18ff24c2",
+  "workflow_id": "18ff24c2",
+  "workflow_id_display": "18ff24c2",
+  "workflow_name": "Receive updates on an order created in Shopify",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "1",
+  "tools_integrations": "Shopify",
+  "tags": [],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 E-commerce Automation",
+  "setup_time": "⏱️ 1-2 hrs",
+  "use_cases": [],
+  "what_it_does": "Effortlessly sync Shopify events, automate tasks, and integrate data with custom triggers. Enhance your workflow—discover more in our companion guide!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with shopifyTrigger"
+  ],
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Shopify Trigger",
+        "type": "n8n-nodes-base.shopifyTrigger",
+        "position": [
+          450,
+          450
+        ],
+        "webhookId": "fd11b3d8-ff82-4902-89cc-c93b36ae38e7",
+        "parameters": {
+          "topic": "orders/create"
+        },
+        "credentials": {
+          "shopifyApi": "shopify_creds"
+        },
+        "typeVersion": 1,
+        "id": "e177f688c74ad2f8"
+      }
+    ],
+    "connections": {},
+    "id": "95036ef992141a39",
+    "name": "Receive updates on an order created in Shopify",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

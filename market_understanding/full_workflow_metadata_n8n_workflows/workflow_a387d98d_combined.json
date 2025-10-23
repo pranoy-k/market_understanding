@@ -1,0 +1,91 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/a387d98d",
+  "workflow_id": "a387d98d",
+  "workflow_id_display": "a387d98d",
+  "workflow_name": "Get invoices from Xero",
+  "category": "Finance & Accounting",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "API",
+  "tags": [
+    "api"
+  ],
+  "author_name": "amudhan",
+  "author_profile_url": "https://n8n.io/creators/sm-amudhan/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Enhance your Xero API integration with a clear, visual workflow guide. Boost understanding and automate accounting confidently—learn more now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with manualTrigger, xero"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "Xero",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          250,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "30ea5a94f08b42d3"
+      },
+      {
+        "name": "Xero",
+        "type": "n8n-nodes-base.xero",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "options": {},
+          "operation": "getAll",
+          "organizationId": "ab7e9014-5d01-418f-a64c-dbb6bf5ba2ea"
+        },
+        "credentials": {
+          "xeroOAuth2Api": "n8n_xero"
+        },
+        "typeVersion": 1,
+        "id": "ed2332cb2a9428c8"
+      }
+    ],
+    "connections": {
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "Xero",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f96f1541627519da",
+    "name": "Get invoices from Xero",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "api"
+    ]
+  }
+}

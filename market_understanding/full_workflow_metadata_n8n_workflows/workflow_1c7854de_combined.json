@@ -1,0 +1,172 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/1c7854de",
+  "workflow_id": "1c7854de",
+  "workflow_id_display": "1c7854de",
+  "workflow_name": "Receive updates of the position of the ISS and add it to a table in TimescaleDB",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Effortlessly track the ISS in real time. Automate position updates to TimescaleDB for analysis with customizable, easy-to-configure workflow steps. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with httpRequest, set, timescaleDb"
+  ],
+  "nodes": [
+    {
+      "name": "TimescaleDB",
+      "type": "Process"
+    },
+    {
+      "name": "HTTP Request",
+      "type": "Data Input"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "TimescaleDB",
+        "type": "n8n-nodes-base.timescaleDb",
+        "position": [
+          1110,
+          260
+        ],
+        "parameters": {
+          "table": "iss",
+          "columns": "latitude, longitude, timestamp"
+        },
+        "credentials": {
+          "timescaleDb": "TimescaleDB"
+        },
+        "typeVersion": 1,
+        "id": "1b6baf4bb5346bf9"
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          910,
+          260
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "latitude",
+                "value": "={{$json[\"0\"][\"latitude\"]}}"
+              },
+              {
+                "name": "longitude",
+                "value": "={{$json[\"0\"][\"longitude\"]}}"
+              },
+              {
+                "name": "timestamp",
+                "value": "={{$json[\"0\"][\"timestamp\"]}}"
+              }
+            ]
+          },
+          "options": {},
+          "keepOnlySet": true
+        },
+        "typeVersion": 1,
+        "id": "cf6ce6264a761b3d"
+      },
+      {
+        "name": "HTTP Request",
+        "type": "n8n-nodes-base.httpRequest",
+        "position": [
+          710,
+          260
+        ],
+        "parameters": {
+          "url": "https://api.wheretheiss.at/v1/satellites/25544/positions",
+          "options": {},
+          "queryParametersUi": {
+            "parameter": [
+              {
+                "name": "timestamps",
+                "value": "={{Date.now()}}"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "c1c178a01f6f445f"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          510,
+          260
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "everyMinute"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      }
+    ],
+    "connections": {
+      "Set": {
+        "main": [
+          [
+            {
+              "node": "TimescaleDB",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "HTTP Request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP Request": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "9c6c78069937ca57",
+    "name": "Receive updates of the position of the ISS and add it to a table in TimescaleDB",
+    "settings": {},
+    "staticData": null,
+    "tags": []
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/f34d7c2a",
+  "workflow_id": "f34d7c2a",
+  "workflow_id_display": "f34d7c2a",
+  "workflow_name": "Send email via Gmail on workflow error",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "2",
+  "tools_integrations": "Email, Gmail",
+  "tags": [],
+  "author_name": "Trey",
+  "author_profile_url": "https://n8n.io/creators/trey/",
+  "primary_use_case": "🎯 AI Process Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Get instant Gmail alerts for workflow errors—receive detailed reports with error info, last node, and stacktrace. Simple setup. Stay informed, act fast!",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Error Trigger",
+        "type": "n8n-nodes-base.errorTrigger",
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1,
+        "id": "e52d87eecd5831ad"
+      },
+      {
+        "name": "Gmail",
+        "type": "n8n-nodes-base.gmail",
+        "position": [
+          650,
+          300
+        ],
+        "parameters": {
+          "toList": [
+            "recipient@email.com"
+          ],
+          "message": "=Workflow: {{$json[\"workflow\"][\"name\"]}}\nError: {{$json[\"execution\"][\"error\"][\"message\"]}}\nLast node executed: {{$json[\"execution\"][\"lastNodeExecuted\"]}}\nExecution URL: {{$json[\"execution\"][\"url\"]}}\nStacktrace:\n{{$json[\"execution\"][\"error\"][\"stack\"]}}",
+          "subject": "=n8n Workflow Failure:  {{$json[\"workflow\"][\"name\"]}}",
+          "resource": "message",
+          "additionalFields": {}
+        },
+        "credentials": {
+          "gmailOAuth2": "TBD"
+        },
+        "typeVersion": 1,
+        "id": "d1e4dc8e66ce1429"
+      }
+    ],
+    "connections": {
+      "Error Trigger": {
+        "main": [
+          [
+            {
+              "node": "Gmail",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "4c412f73670c5027",
+    "name": "Send email via Gmail on workflow error",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "gmail"
+    ]
+  }
+}

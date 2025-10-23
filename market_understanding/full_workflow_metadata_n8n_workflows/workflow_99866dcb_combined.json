@@ -1,0 +1,116 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/99866dcb",
+  "workflow_id": "99866dcb",
+  "workflow_id_display": "99866dcb",
+  "workflow_name": "n8n Nodemation basic - getting started on the workflow canvas (1/3)",
+  "category": "Other",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "3",
+  "tools_integrations": null,
+  "tags": [],
+  "author_name": "sven",
+  "author_profile_url": null,
+  "primary_use_case": "🎯 miscellaneous Automation",
+  "setup_time": "⏱️ <15 mins",
+  "use_cases": [],
+  "what_it_does": "Learn how to use the n8n workflow canvas, add nodes, and build your first automation. Ideal step-by-step guide for beginners—watch the tutorial now!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with functionItem, set, interval"
+  ],
+  "nodes": [
+    {
+      "name": "FunctionItem",
+      "type": "Data Processing"
+    },
+    {
+      "name": "2 hours Interval",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "5",
+    "name": "testworkflow",
+    "nodes": [
+      {
+        "name": "FunctionItem",
+        "type": "n8n-nodes-base.functionItem",
+        "color": "#067325",
+        "position": [
+          860,
+          680
+        ],
+        "parameters": {
+          "functionCode": "item.myVariable = 1;\nitem.myVariable2 = \"this is exciting\";\nreturn item;"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "2 hours Interval",
+        "type": "n8n-nodes-base.interval",
+        "color": "#FF2A00",
+        "notes": "It is the 4 hours interval in which this node gets executed",
+        "position": [
+          630,
+          680
+        ],
+        "parameters": {
+          "unit": "hours",
+          "interval": 2
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "Set",
+        "type": "n8n-nodes-base.set",
+        "position": [
+          1040,
+          680
+        ],
+        "parameters": {
+          "values": {
+            "string": [
+              {
+                "name": "data",
+                "value": "={{$node[\"FunctionItem\"].data[\"myVariable2\"]}}"
+              }
+            ]
+          },
+          "keepOnlySet": true
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "FunctionItem": {
+        "main": [
+          [
+            {
+              "node": "Set",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "2 hours Interval": {
+        "main": [
+          [
+            {
+              "node": "FunctionItem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/0493d090",
+  "workflow_id": "0493d090",
+  "workflow_id_display": "0493d090",
+  "workflow_name": "Create, update and get a subscriber using the MailerLite node",
+  "category": "Communication & Collaboration",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Email, Gmail, Slack",
+  "tags": [
+    "slack"
+  ],
+  "author_name": "ghagrawal17",
+  "author_profile_url": "https://n8n.io/creators/harshil1712/",
+  "primary_use_case": "🎯 AI Data Analysis",
+  "setup_time": "⏱️ 30 mins - 1 hr",
+  "use_cases": [],
+  "what_it_does": "This workflow automates email processing using AI to intelligently categorize, respond to, and route messages. It monitors your inbox, uses AI to understand email content and intent, then takes appropriate actions like auto-responding, forwarding to the right person, or creating tasks in your project management system.",
+  "key_benefits": [
+    "Email automation"
+  ],
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "Trigger"
+    },
+    {
+      "name": "MailerLite",
+      "type": "Process"
+    },
+    {
+      "name": "MailerLite1",
+      "type": "Process"
+    },
+    {
+      "name": "MailerLite2",
+      "type": "Process"
+    }
+  ],
+  "api_connections": [
+    "Slack API"
+  ],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "id": "96",
+    "name": "Create, update and get a subscriber using the MailerLite node",
+    "nodes": [
+      {
+        "name": "On clicking 'execute'",
+        "type": "n8n-nodes-base.manualTrigger",
+        "position": [
+          310,
+          300
+        ],
+        "parameters": {},
+        "typeVersion": 1
+      },
+      {
+        "name": "MailerLite",
+        "type": "n8n-nodes-base.mailerLite",
+        "position": [
+          510,
+          300
+        ],
+        "parameters": {
+          "email": "harshil@n8n.io",
+          "additionalFields": {
+            "name": "Harshil"
+          }
+        },
+        "credentials": {
+          "mailerLiteApi": "mailerlite"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "MailerLite1",
+        "type": "n8n-nodes-base.mailerLite",
+        "position": [
+          710,
+          300
+        ],
+        "parameters": {
+          "operation": "update",
+          "subscriberId": "={{$node[\"MailerLite\"].json[\"email\"]}}",
+          "updateFields": {
+            "customFieldsUi": {
+              "customFieldsValues": [
+                {
+                  "value": "Berlin",
+                  "fieldId": "city"
+                }
+              ]
+            }
+          }
+        },
+        "credentials": {
+          "mailerLiteApi": "mailerlite"
+        },
+        "typeVersion": 1
+      },
+      {
+        "name": "MailerLite2",
+        "type": "n8n-nodes-base.mailerLite",
+        "position": [
+          910,
+          300
+        ],
+        "parameters": {
+          "operation": "get",
+          "subscriberId": "={{$node[\"MailerLite\"].json[\"email\"]}}"
+        },
+        "credentials": {
+          "mailerLiteApi": "mailerlite"
+        },
+        "typeVersion": 1
+      }
+    ],
+    "active": false,
+    "settings": {},
+    "connections": {
+      "MailerLite": {
+        "main": [
+          [
+            {
+              "node": "MailerLite1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "MailerLite1": {
+        "main": [
+          [
+            {
+              "node": "MailerLite2",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "On clicking 'execute'": {
+        "main": [
+          [
+            {
+              "node": "MailerLite",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

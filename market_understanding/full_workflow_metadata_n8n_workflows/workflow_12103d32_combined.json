@@ -1,0 +1,150 @@
+{
+  "url": "https://www.thevibemarketer.com/members/workflow-id/12103d32",
+  "workflow_id": "12103d32",
+  "workflow_id_display": "12103d32",
+  "workflow_name": "Sync data between multiple Google Spreadsheets",
+  "category": "Data & Analytics",
+  "difficulty": "✅ Beginner",
+  "total_nodes": "4",
+  "tools_integrations": "Excel, Google Sheets",
+  "tags": [
+    "google"
+  ],
+  "author_name": "Jan Oberhauser",
+  "author_profile_url": "https://n8n.io/creators/jan/",
+  "primary_use_case": "🎯 Data Management Automation",
+  "setup_time": "⏱️ 15-30 mins",
+  "use_cases": [],
+  "what_it_does": "Automate Google Sheets data sync every 2 minutes—read, duplicate, and update columns A–G across two sheets without manual work. Learn more!",
+  "key_benefits": [
+    "Process automation",
+    "Workflow optimization",
+    "Integration with googleSheets, cron"
+  ],
+  "nodes": [
+    {
+      "name": "Read Sheet",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Sheet 2",
+      "type": "Data Output"
+    },
+    {
+      "name": "Write Sheet 1",
+      "type": "Data Output"
+    },
+    {
+      "name": "Cron",
+      "type": "Trigger"
+    }
+  ],
+  "api_connections": [],
+  "rating": null,
+  "review_count": 0,
+  "page_title": "The Vibe Marketer - 10x Your Speed To Market With AI",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "name": "Read Sheet",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          700,
+          300
+        ],
+        "parameters": {
+          "range": "Data!A:G",
+          "rawData": true
+        },
+        "typeVersion": 1,
+        "id": "5fd52039414d2a30"
+      },
+      {
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "position": [
+          500,
+          300
+        ],
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "mode": "custom",
+                "cronExpression": "0 */2 * * * *"
+              }
+            ]
+          }
+        },
+        "typeVersion": 1,
+        "id": "22a5e6e9685b9184"
+      },
+      {
+        "name": "Write Sheet 2",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          900,
+          400
+        ],
+        "parameters": {
+          "range": "={{$node[\"Read Sheet\"].parameter[\"range\"]}}",
+          "rawData": true,
+          "operation": "update"
+        },
+        "typeVersion": 1,
+        "id": "db8999031cab4b0a"
+      },
+      {
+        "name": "Write Sheet 1",
+        "type": "n8n-nodes-base.googleSheets",
+        "position": [
+          900,
+          200
+        ],
+        "parameters": {
+          "range": "={{$node[\"Read Sheet\"].parameter[\"range\"]}}",
+          "rawData": true,
+          "operation": "update"
+        },
+        "typeVersion": 1,
+        "id": "da71cea672ace18a"
+      }
+    ],
+    "connections": {
+      "Cron": {
+        "main": [
+          [
+            {
+              "node": "Read Sheet",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Read Sheet": {
+        "main": [
+          [
+            {
+              "node": "Write Sheet 2",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Write Sheet 1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "id": "f5226cbaee1a5b2f",
+    "name": "Sync data between multiple Google Spreadsheets",
+    "settings": {},
+    "staticData": null,
+    "tags": [
+      "google"
+    ]
+  }
+}
